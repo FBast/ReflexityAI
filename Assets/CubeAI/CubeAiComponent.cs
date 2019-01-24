@@ -34,15 +34,13 @@ namespace CubeAI {
         
         private void Start() {
             CubeEntity = GetComponent<CubeEntity>();
-            InvokeRepeating("ThinkAndAct", 0, 0.5f);
+            InvokeRepeating("ThinkAndAct", 0, 0.2f);
         }
-        
+
         public void ThinkAndAct() {
+            if (CubeEntity.IsDead) return;
             UtilityReasoner utilityReasoner = ChooseAction();
             if (utilityReasoner == null) return;
-//            Debug.Log(utilityReasoner.CubeActionNode.name 
-//                      + " : Utility [" + utilityReasoner.Utility 
-//                      + "] Weight [" + utilityReasoner.Weight + "]");
             utilityReasoner.CubeActionNode.Execute(this);
         }
         

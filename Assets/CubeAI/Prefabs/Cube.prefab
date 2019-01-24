@@ -185,13 +185,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MeshRenderer: {fileID: 1656194801054802154}
+  Stats: {fileID: 0}
+  IsDead: 0
   MaxHp: 10
   CurrentHp: 10
   CanonOutTransform: {fileID: 8906623469812580785}
   ProjectilePrefab: {fileID: 7260015363683014243, guid: ac4721d0400892a498cf9de33ae7627b,
     type: 3}
   ProjectilePower: 30
-  MaxAmmo: 30
+  MaxAmmo: 10
   CurrentAmmo: 0
 --- !u!114 &1656194801054802152
 MonoBehaviour:

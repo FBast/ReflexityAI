@@ -7,16 +7,17 @@ namespace CubeAI {
 
         public MeshRenderer MeshRenderer;
         public Text Stats;
+        public bool IsDead; 
         
         [Header("Health")]
-        public int MaxHp = 10;
+        public int MaxHp;
         public int CurrentHp;
 
         [Header("Weapon")] 
         public Transform CanonOutTransform;
         public GameObject ProjectilePrefab;
         public int ProjectilePower;
-        public int MaxAmmo = 30;
+        public int MaxAmmo;
         public int CurrentAmmo;
 
         private Color _startingColor;
@@ -26,12 +27,15 @@ namespace CubeAI {
         }
 
         private void Update() {
-            Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
+            if (IsDead)
+                Stats.text = "DEAD !";
+            else
+                Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
         }
 
         public void FireForward() {
             if (CurrentAmmo == 0)
-                throw new Exception("No more ammo, impossible to Fire");
+                throw new Exception("No more ammo, the AI should not fire !");
             GameObject instantiate = Instantiate(ProjectilePrefab, CanonOutTransform.position, Quaternion.identity);
             instantiate.GetComponent<Rigidbody>().AddForce(transform.forward * ProjectilePower, ForceMode.Impulse);
             CurrentAmmo--;
@@ -40,24 +44,31 @@ namespace CubeAI {
         public void Reload() {
             MeshRenderer.material.color = Color.blue;
             CurrentAmmo = MaxAmmo;
-            Invoke("RollBackColor", 1f);
+            Invoke("RollBackColor", 0.1f);
         }
 
         public void Heal() {
+            if (CurrentHp == MaxHp)
+                throw new Exception("Maximum health, the AI should not heal !");
             MeshRenderer.material.color = Color.green;
-            CurrentHp = MaxHp;
+            CurrentHp += 2;
+            if (CurrentHp > MaxHp) 
+                CurrentHp = MaxHp;
             Invoke("RollBackColor", 1f);
         }
 
         private void RollBackColor() {
-            MeshRenderer.material.color = _startingColor;
+            if (IsDead)
+                MeshRenderer.material.color = Color.black;
+            else
+                MeshRenderer.material.color = _startingColor;
         }
         
         private void OnTriggerEnter(Collider other) {
             MeshRenderer.material.color = Color.red;
             CurrentHp--;
             if (CurrentHp <= 0)
-                MeshRenderer.material.color = Color.black;
+                IsDead = true;
         }
 
         private void OnTriggerExit(Collider other) {
