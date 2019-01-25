@@ -1,10 +1,10 @@
 ﻿using UtilityAI.Nodes;
 
 namespace CubeAI.Nodes {
-    public class MaxAmmoCountNode : SimpleEntryNode<CubeAiComponent> {
+    public class MaxAmmoCountNode : SimpleEntryNode<CubeEntity> {
 
-        public override void SetContext(CubeAiComponent context) {
-            Value = context.CubeEntity.MaxAmmo;
+        public override void SetContext(CubeEntity context) {
+            Value = context.MaxAmmo;
         }
         
     }

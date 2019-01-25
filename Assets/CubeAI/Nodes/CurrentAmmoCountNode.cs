@@ -1,10 +1,10 @@
 ﻿using UtilityAI.Nodes;
 
 namespace CubeAI.Nodes {
-    public class CurrentAmmoCountNode : SimpleEntryNode<CubeAiComponent> {
+    public class CurrentAmmoCountNode : SimpleEntryNode<CubeEntity> {
 
-        public override void SetContext(CubeAiComponent context) {
-            Value = context.CubeEntity.CurrentAmmo;
+        public override void SetContext(CubeEntity context) {
+            Value = context.CurrentAmmo;
         }
         
     }

@@ -1,10 +1,10 @@
 ﻿using UtilityAI.Nodes;
 
 namespace CubeAI.Nodes {
-    public class CurrentHpCountNode : SimpleEntryNode<CubeAiComponent> {
+    public class CurrentHpCountNode : SimpleEntryNode<CubeEntity> {
 
-        public override void SetContext(CubeAiComponent context) {
-            Value = context.CubeEntity.CurrentHp;
+        public override void SetContext(CubeEntity context) {
+            Value = context.CurrentHp;
         }
     }
 }

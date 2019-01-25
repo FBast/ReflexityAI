@@ -1,10 +1,10 @@
 ﻿using UtilityAI.Nodes;
 
 namespace CubeAI.Nodes {
-    public class HealNode : ActionNode<CubeAiComponent> {
+    public class HealNode : ActionNode<CubeEntity> {
 
-        public override void Execute(CubeAiComponent context) {
-            context.CubeEntity.Heal();
+        public override void Execute(CubeEntity context) {
+            context.Heal();
         }
         
     }

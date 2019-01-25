@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
+using CubeAI;
 using UtilityAI.Nodes;
 using XNode;
 
 namespace UtilityAI {
-    public class UtilityAIGraph<T> : NodeGraph {
+    public abstract class UtilityAIBrain<T> : NodeGraph {
         
         public List<EntryNode<T>> GetEntryNode() {
             List<EntryNode<T>> entryNodes = new List<EntryNode<T>>();
@@ -24,5 +25,4 @@ namespace UtilityAI {
         }
 
     }
-
 }

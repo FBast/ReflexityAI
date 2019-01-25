@@ -1,10 +1,10 @@
 ﻿using UtilityAI.Nodes;
 
 namespace CubeAI.Nodes {
-    public class ReloadNode : ActionNode<CubeAiComponent> {
+    public class ReloadNode : ActionNode<CubeEntity> {
 
-        public override void Execute(CubeAiComponent context) {
-            context.CubeEntity.Reload();
+        public override void Execute(CubeEntity context) {
+            context.Reload();
         }
         
     }

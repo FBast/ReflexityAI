@@ -1,10 +1,10 @@
 ﻿using UtilityAI.Nodes;
 
 namespace CubeAI.Nodes {
-    public class MaxHpCountNode : SimpleEntryNode<CubeAiComponent> {
+    public class MaxHpCountNode : SimpleEntryNode<CubeEntity> {
 
-        public override void SetContext(CubeAiComponent context) {
-            Value = context.CubeEntity.MaxHp;
+        public override void SetContext(CubeEntity context) {
+            Value = context.MaxHp;
         }
         
     }

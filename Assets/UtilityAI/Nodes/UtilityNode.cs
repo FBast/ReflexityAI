@@ -10,7 +10,7 @@ namespace UtilityAI.Nodes {
 
         public AnimationCurve Function = AnimationCurve.Linear(0, 0, 1, 1);
 
-        [Output] public float Utility;
+        [Output] public float UtilityY;
         
         public override object GetValue(NodePort port) {
             
@@ -18,12 +18,12 @@ namespace UtilityAI.Nodes {
             float maxX = GetInputValue("MaxX", MaxX);
             float x = GetInputValue("X", X);
 
-            Utility = 0f;
-            if (port.fieldName == "Utility") {
+            UtilityY = 0f;
+            if (port.fieldName == "UtilityY") {
                 float scaledX = ScaleX(minX, maxX, x);
-                Utility = Function.Evaluate(scaledX);
+                UtilityY = Function.Evaluate(scaledX);
             }
-            return Utility;
+            return UtilityY;
         }
         
         protected float ScaleX(float MinValue, float MaxValue, float x) {

@@ -3,13 +3,12 @@
   <component name="ContentModelStore">
     <e p="C:\Local Repository\xNodeUtilityAI" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="CubeAI" t="Include">
+          <e p="CubeAiBrain.cs" t="Include" />
           <e p="CubeAiComponent.cs" t="Include" />
-          <e p="CubeAIGraph.cs" t="Include" />
           <e p="CubeEntity.cs" t="Include" />
           <e p="Nodes" t="Include">
             <e p="CurrentAmmoCountNode.cs" t="Include" />
@@ -52,9 +51,7 @@
           </e>
         </e>
         <e p="UtilityAI" t="Include">
-          <e p="Editor" t="Include">
-            <e p="UtilityAIGraphEditor.cs" t="Include" />
-          </e>
+          <e p="AbstractAiComponent.cs" t="Include" />
           <e p="Nodes" t="Include">
             <e p="ActionNode.cs" t="Include" />
             <e p="EntryNode.cs" t="Include" />
@@ -66,7 +63,7 @@
             <e p="SimpleEntryNode.cs" t="Include" />
             <e p="UtilityNode.cs" t="Include" />
           </e>
-          <e p="UtilityAIGraph.cs" t="Include" />
+          <e p="UtilityAIBrain.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
