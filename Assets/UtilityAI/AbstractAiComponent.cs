@@ -7,51 +7,54 @@ using Random = UnityEngine.Random;
 
 namespace UtilityAI {
     public class AbstractAiComponent<T, U> : MonoBehaviour 
-        where U : UtilityAIBrain<T> {
+        where U : AbstractAIBrain<T> {
         
         [Serializable]
-        public class UtilityReasoner {
+        public class DualUtility {
 
             public ActionNode<T> ActionNode;
             public string ActionName;
-            public float Utility;
+            public float Rank;
             public float Weight;
 
-            public UtilityReasoner(ActionNode<T> actionNode, float utility) {
+            public DualUtility(ActionNode<T> actionNode, float rank) {
                 ActionNode = actionNode;
                 ActionName = actionNode.name;
-                Utility = utility;
+                Rank = rank;
             }
 			
         }
         
         public U UtilityAiBrain;
         public float LastProbabilityResult;
-        public List<UtilityReasoner> UtilityReasoners;
+        public List<DualUtility> DualUtilityReasoners;
         
-        protected UtilityReasoner ChooseAction(T context) {
+        protected DualUtility ChooseAction(T context) {
             if (UtilityAiBrain == null) return null;
             UtilityAiBrain.GetEntryNode().ForEach(node => node.SetContext(context));
-            // Fill the UtilityY Reasoner
-            UtilityReasoners = new List<UtilityReasoner>();
-            UtilityAiBrain.GetActionNode().ForEach(node => UtilityReasoners.Add(new UtilityReasoner(node, node.GetValue())));
+            // Fill the Dual Utilities
+            DualUtilityReasoners = new List<DualUtility>();
+            UtilityAiBrain.GetActionNode().ForEach(node => DualUtilityReasoners.Add(new DualUtility(node, node.GetValue())));
             // Remove ImpossibleDecisionValue Utilities
-            UtilityReasoners.RemoveAll(reasoner => reasoner.Utility <= 0f);
+            DualUtilityReasoners.RemoveAll(reasoner => reasoner.Rank <= 0f);
             // If no more decision then return
-            if (UtilityReasoners.Count == 0)
+            if (DualUtilityReasoners.Count == 0)
                 return null;
             // Calculating Weights
-            foreach (UtilityReasoner utilityReasoner in UtilityReasoners) {
-                utilityReasoner.Weight = utilityReasoner.Utility / UtilityReasoners.Sum(reasoner => reasoner.Utility);
+            foreach (DualUtility dualreasoner in DualUtilityReasoners) {
+                dualreasoner.Weight = dualreasoner.Rank / DualUtilityReasoners.Sum(reasoner => reasoner.Rank);
             }
-            // Sorting by Weights values
-            UtilityReasoners = UtilityReasoners.OrderByDescending(tuple => tuple.Weight).ToList();
+            // Sorting by Utility values
+            DualUtilityReasoners = DualUtilityReasoners.OrderByDescending(tuple => tuple.Rank).ToList();
+            // Removing lesser value than maximum rank
+            DualUtilityReasoners.RemoveAll(reasoner => reasoner.Rank < DualUtilityReasoners[0].Rank);
+            // Rolling probability on weighted random
             LastProbabilityResult = Random.Range(0f, 1f);
             float weightSum = 0f;
-            foreach (UtilityReasoner utilityReasoner in UtilityReasoners) {
-                weightSum += utilityReasoner.Weight;
+            foreach (DualUtility dualReasoner in DualUtilityReasoners) {
+                weightSum += dualReasoner.Weight;
                 if (weightSum >= LastProbabilityResult)
-                    return utilityReasoner;
+                    return dualReasoner;
             }
             return null;
         }

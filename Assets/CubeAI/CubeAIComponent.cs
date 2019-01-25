@@ -8,13 +8,13 @@ namespace CubeAI {
         
         private void Start() {
             _cubeEntity = GetComponent<CubeEntity>();
-            InvokeRepeating("ThinkAndAct", 0, 0.2f);
+            InvokeRepeating("ThinkAndAct", 0, 0.1f);
         }
 
         private void ThinkAndAct() {
-            UtilityReasoner utilityReasoner = ChooseAction(_cubeEntity);
-            if (utilityReasoner == null) return;
-            utilityReasoner.ActionNode.Execute(_cubeEntity);
+            DualUtility dualUtility = ChooseAction(_cubeEntity);
+            if (dualUtility == null) return;
+            dualUtility.ActionNode.Execute(_cubeEntity);
         }
         
     }

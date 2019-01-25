@@ -4,7 +4,7 @@ using UtilityAI.Nodes;
 using XNode;
 
 namespace UtilityAI {
-    public abstract class UtilityAIBrain<T> : NodeGraph {
+    public abstract class AbstractAIBrain<T> : NodeGraph {
         
         public List<EntryNode<T>> GetEntryNode() {
             List<EntryNode<T>> entryNodes = new List<EntryNode<T>>();
