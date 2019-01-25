@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/UtilityAI/Nodes/RankWeightNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/UtilityAI/Nodes/RankWeightNode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CubeAI/CubeAIBrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CubeAI/CubeAIBrain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CubeAI/CubeAIComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CubeAI/CubeAIComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CubeAI/CubeAiBrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CubeAI/CubeAiBrain.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UtilityAI/AbstractAIBrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UtilityAI/AbstractAIBrain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UtilityAI/AbstractAiComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UtilityAI/AbstractAiComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UtilityAI/Nodes/ActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UtilityAI/Nodes/ActionNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UtilityAI/Nodes/UtilityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UtilityAI/Nodes/UtilityNode.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,30 +15,31 @@
     <session id="-1127256971">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="49" />
+          <entry key="cs" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="49" />
+          <entry key="C#" value="55" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1274" />
+          <entry key="cs" value="1299" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1274" />
+          <entry key="C#" value="1299" />
         </counts>
       </usages-collector>
     </session>
@@ -57,15 +48,15 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/ActionNode.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
                   <folding>
-                    <marker date="1548421260178" expanded="true" signature="26:254" ph="{...}" />
-                    <marker date="1548421260178" expanded="true" signature="82:252" ph="{...}" />
-                    <marker date="1548421260178" expanded="true" signature="185:245" ph="{...}" />
+                    <marker date="1548423937085" expanded="true" signature="26:260" ph="{...}" />
+                    <marker date="1548423937085" expanded="true" signature="82:258" ph="{...}" />
+                    <marker date="1548423937085" expanded="true" signature="188:251" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -74,10 +65,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/UtilityNode.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+                <state relative-caret-position="272">
+                  <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
                   <folding>
-                    <marker date="1548422348320" expanded="false" signature="6:31" ph="..." />
+                    <marker date="1548422348320" expanded="true" signature="6:31" ph="..." />
                     <marker date="1548422348320" expanded="true" signature="59:1279" ph="{...}" />
                     <marker date="1548422348320" expanded="true" signature="103:1276" ph="{...}" />
                     <marker date="1548422348320" expanded="true" signature="563:969" ph="{...}" />
@@ -88,14 +79,72 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/RankWeightNode.cs">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+                <state relative-caret-position="493">
+                  <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
                   <folding>
-                    <marker date="1548423712167" expanded="true" signature="26:295" ph="{...}" />
-                    <marker date="1548423712167" expanded="true" signature="73:293" ph="{...}" />
+                    <marker date="1540844237000" expanded="false" signature="6:66" ph="..." />
+                    <marker date="1540844237000" expanded="true" signature="90:700" ph="/// Base class for all nodes ... " />
+                    <marker date="1540844237000" expanded="true" signature="770:15275" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="999:1322" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="1359:1553" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="3349:3413" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="3571:3634" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="3887:3969" ph="{...}" />
+                    <marker date="1540844237000" expanded="false" signature="3971:6626" ph="Instance Ports" />
+                    <marker date="1540844237000" expanded="true" signature="4002:4142" ph="///Convenience function. ... " />
+                    <marker date="1540844237000" expanded="true" signature="4287:4386" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="4396:4535" ph="///Convenience function. ... " />
+                    <marker date="1540844237000" expanded="true" signature="4681:4781" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="4791:4955" ph="///Add a dynamic, serialized port to this node. ... " />
+                    <marker date="1540844237000" expanded="true" signature="5123:5677" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="5160:5330" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="5360:5510" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="5807:5870" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="5997:6252" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="6415:6615" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="6548:6605" ph="{...}" />
+                    <marker date="1540844237000" expanded="false" signature="6628:7629" ph="Ports" />
+                    <marker date="1540844237000" expanded="true" signature="6775:6947" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="7080:7251" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="7373:7510" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="7558:7618" ph="{...}" />
+                    <marker date="1540844237000" expanded="false" signature="7631:9158" ph="Inputs/Outputs" />
+                    <marker date="1540844237000" expanded="true" signature="7662:7953" ph="///Return input value for a specified port. Returns fallback value if no ports are connected ... " />
+                    <marker date="1540844237000" expanded="true" signature="8031:8206" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="8216:8512" ph="///Return all input values for a specified port. Returns fallback value if no ports are connected ... " />
+                    <marker date="1540844237000" expanded="true" signature="8589:8765" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="8775:8962" ph="///Returns a value based on requested port output. Should be overridden in all derived nodes with outputs. ... " />
+                    <marker date="1540844237000" expanded="true" signature="9017:9147" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="9168:9342" ph="///Called after a connection between two &lt;see cref=&quot;NodePort&quot;/&gt;s is created ... " />
+                    <marker date="1540844237000" expanded="true" signature="9431:9562" ph="///Called after a connection is removed from this port ... " />
+                    <marker date="1540844237000" expanded="true" signature="9739:9820" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="9864:9934" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="10195:11069" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="10352:10697" ph="///Mark a serializable field as an input port. You can access this through &lt;see cref=&quot;GetInputPort(string)&quot;/&gt; ... " />
+                    <marker date="1540844237000" expanded="true" signature="10882:11059" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="11333:12204" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="11490:11837" ph="///Mark a serializable field as an output port. You can access this through &lt;see cref=&quot;GetOutputPort(string)&quot;/&gt; ... " />
+                    <marker date="1540844237000" expanded="true" signature="12017:12194" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="12335:12701" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="12385:12573" ph="///Manually supply node class with a context menu path ... " />
+                    <marker date="1540844237000" expanded="true" signature="12634:12691" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="12817:13863" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="12863:13108" ph="///Specify a color for this node type ... " />
+                    <marker date="1540844237000" expanded="true" signature="13164:13223" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="13237:13356" ph="///Specify a color for this node type ... " />
+                    <marker date="1540844237000" expanded="true" signature="13397:13477" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="13491:13724" ph="///Specify a color for this node type ... " />
+                    <marker date="1540844237000" expanded="true" signature="13777:13853" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="13980:14237" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="14024:14135" ph="///Specify a width for this node type ... " />
+                    <marker date="1540844237000" expanded="true" signature="14176:14227" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="14358:15269" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="14565:14816" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="14699:14802" ph="{...}" />
+                    <marker date="1540844237000" expanded="true" signature="14863:15259" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -107,7 +156,6 @@
                 <state relative-caret-position="136">
                   <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
                   <folding>
-                    <marker date="1548415124424" expanded="true" signature="47:223" ph="{...}" />
                     <marker date="1548415124424" expanded="true" signature="100:221" ph="{...}" />
                     <marker date="1548415124424" expanded="true" signature="160:206" ph="{...}" />
                   </folding>
@@ -122,7 +170,6 @@
                   <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
                   <folding>
                     <marker date="1548420762276" expanded="true" signature="6:49" ph="..." />
-                    <marker date="1548420762276" expanded="true" signature="68:236" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -134,7 +181,6 @@
                 <state relative-caret-position="51">
                   <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
                   <folding>
-                    <marker date="1548415124442" expanded="true" signature="47:220" ph="{...}" />
                     <marker date="1548415124442" expanded="true" signature="102:218" ph="{...}" />
                     <marker date="1548415124442" expanded="true" signature="162:203" ph="{...}" />
                   </folding>
@@ -145,30 +191,16 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/AbstractAIBrain.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+                <state>
+                  <caret column="33" selection-start-column="33" selection-end-column="33" />
                   <folding>
-                    <marker date="1548420762337" expanded="false" signature="6:83" ph="..." />
-                    <marker date="1548420762337" expanded="true" signature="105:839" ph="{...}" />
-                    <marker date="1548420762337" expanded="true" signature="164:837" ph="{...}" />
-                    <marker date="1548420762337" expanded="true" signature="224:493" ph="{...}" />
-                    <marker date="1548420762337" expanded="true" signature="337:452" ph="{...}" />
-                    <marker date="1548420762337" expanded="true" signature="554:830" ph="{...}" />
-                    <marker date="1548420762337" expanded="true" signature="670:788" ph="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/CurrentAmmoCountNode.cs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" selection-start-line="11" selection-end-line="11" />
-                  <folding>
-                    <marker date="1548414715131" expanded="true" signature="47:249" ph="{...}" />
-                    <marker date="1548414715131" expanded="true" signature="117:247" ph="{...}" />
-                    <marker date="1548414715131" expanded="true" signature="180:232" ph="{...}" />
+                    <marker date="1548435090407" expanded="true" signature="6:69" ph="..." />
+                    <marker date="1548435090407" expanded="true" signature="91:825" ph="{...}" />
+                    <marker date="1548435090407" expanded="true" signature="150:823" ph="{...}" />
+                    <marker date="1548435090407" expanded="true" signature="210:479" ph="{...}" />
+                    <marker date="1548435090407" expanded="true" signature="323:438" ph="{...}" />
+                    <marker date="1548435090407" expanded="true" signature="540:816" ph="{...}" />
+                    <marker date="1548435090407" expanded="true" signature="656:774" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -180,7 +212,6 @@
                 <state relative-caret-position="136">
                   <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
                   <folding>
-                    <marker date="1548414715118" expanded="true" signature="47:236" ph="{...}" />
                     <marker date="1548414715118" expanded="true" signature="115:234" ph="{...}" />
                     <marker date="1548414715118" expanded="true" signature="178:228" ph="{...}" />
                   </folding>
@@ -204,14 +235,13 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/HealNode.cs">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="68">
                   <caret line="4" selection-start-line="4" selection-end-line="4" />
                   <folding>
-                    <marker date="1548415124455" expanded="true" signature="47:216" ph="{...}" />
                     <marker date="1548415124455" expanded="true" signature="100:214" ph="{...}" />
                     <marker date="1548415124455" expanded="true" signature="160:199" ph="{...}" />
                   </folding>
@@ -234,20 +264,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/AbstractAiComponent.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="273">
-                  <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+                <state relative-caret-position="17">
+                  <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
                   <folding>
-                    <marker date="1548421542553" expanded="true" signature="6:143" ph="..." />
-                    <marker date="1548421542553" expanded="true" signature="165:2488" ph="{...}" />
-                    <marker date="1548421542553" expanded="true" signature="226:2486" ph="{...}" />
-                    <marker date="1548421542553" expanded="true" signature="331:696" ph="{...}" />
-                    <marker date="1548421542553" expanded="true" signature="551:682" ph="{...}" />
-                    <marker date="1548421542553" expanded="true" signature="901:2471" ph="{...}" />
-                    <marker date="1548421542553" expanded="true" signature="1630:1756" ph="{...}" />
-                    <marker date="1548421542553" expanded="true" signature="2274:2436" ph="{...}" />
+                    <marker date="1548423937069" expanded="false" signature="6:143" ph="..." />
+                    <marker date="1548423937069" expanded="true" signature="165:2491" ph="{...}" />
+                    <marker date="1548423937069" expanded="true" signature="226:2489" ph="{...}" />
+                    <marker date="1548423937069" expanded="true" signature="331:696" ph="{...}" />
+                    <marker date="1548423937069" expanded="true" signature="551:682" ph="{...}" />
+                    <marker date="1548423937069" expanded="true" signature="901:2474" ph="{...}" />
+                    <marker date="1548423937069" expanded="true" signature="1630:1756" ph="{...}" />
+                    <marker date="1548423937069" expanded="true" signature="2277:2439" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -263,6 +293,76 @@
                     <marker date="1548358980598" expanded="true" signature="103:554" ph="{...}" />
                     <marker date="1548358980598" expanded="true" signature="412:537" ph="{...}" />
                     <marker date="1548358980598" expanded="true" signature="457:502" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/MultiEntryNode.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <marker date="1548420221959" expanded="true" signature="6:79" ph="..." />
+                    <marker date="1548420221959" expanded="true" signature="107:934" ph="{...}" />
+                    <marker date="1548420221959" expanded="true" signature="171:932" ph="{...}" />
+                    <marker date="1548420221959" expanded="true" signature="424:632" ph="{...}" />
+                    <marker date="1548420221959" expanded="true" signature="685:850" ph="{...}" />
+                    <marker date="1548420221959" expanded="true" signature="731:840" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/MiddleNode.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <marker date="1548358980645" expanded="true" signature="40:121" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/InverterNode.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <marker date="1548358980612" expanded="true" signature="40:470" ph="{...}" />
+                    <marker date="1548358980612" expanded="true" signature="85:468" ph="{...}" />
+                    <marker date="1548358980612" expanded="true" signature="291:453" ph="{...}" />
+                    <marker date="1548358980612" expanded="true" signature="341:418" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/FilterNode.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <marker date="1548358980719" expanded="true" signature="6:64" ph="..." />
+                    <marker date="1548358980719" expanded="true" signature="92:1059" ph="{...}" />
+                    <marker date="1548358980719" expanded="true" signature="135:1056" ph="{...}" />
+                    <marker date="1548358980719" expanded="true" signature="171:236" ph="{...}" />
+                    <marker date="1548358980719" expanded="true" signature="440:1041" ph="{...}" />
+                    <marker date="1548358980719" expanded="true" signature="490:1006" ph="{...}" />
+                    <marker date="1548358980719" expanded="true" signature="597:992" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/ExitNode.cs">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <marker date="1548358980705" expanded="true" signature="40:193" ph="{...}" />
+                    <marker date="1548358980705" expanded="true" signature="117:191" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -287,7 +387,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/09/4e257e9d/UnitySynchronizationContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/SimpleEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/ExitNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/RankWeightNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B140E050-1769-43F4-A096-6C7CFA9CC579/be/47746856/Canvas.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/MiddleNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/InverterNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -300,6 +400,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/MaxHpCountNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/ReloadNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/CurrentHpCountNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/MultiEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/3a/bfe6d395/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CubeAI/CubeAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -330,11 +431,12 @@
         <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAlBrain.cs" />
         <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAIBrain.cs" />
         <option value="$PROJECT_DIR$/Assets/CubeAI/AbstractAiComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/AbstractAIBrain.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/ActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAIComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/UtilityAI/AbstractAiComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/UtilityNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/RankWeightNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/ActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/UtilityAI/AbstractAIBrain.cs" />
       </list>
     </option>
   </component>
@@ -350,13 +452,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
       <pane id="FileSystemExplorer" />
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,12 +505,13 @@
       <option name="presentableId" value="Default" />
       <updated>1548358733217</updated>
       <workItem from="1548358736775" duration="2250000" />
-      <workItem from="1548409421383" duration="12028000" />
+      <workItem from="1548409421383" duration="12513000" />
+      <workItem from="1548435030415" duration="60000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14278000" />
+    <option name="totallyTimeSpent" value="14823000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -426,8 +529,6 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.3336887" />
       <window_info id="Structure" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Debug" weight="0.329718" />
       <window_info anchor="bottom" id="NuGet" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
@@ -438,6 +539,8 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Build" order="9" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="10" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.329718" />
       <window_info anchor="right" id="Errors In Solution" order="0" />
       <window_info anchor="right" id="Database" order="1" />
     </layout>
@@ -458,69 +561,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/MultiEntryNode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/MiddleNode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/InverterNode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/ExitNode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-          <folding>
-            <marker date="1548358980705" expanded="true" signature="117:191" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/FilterNode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding>
-            <marker date="1548358980719" expanded="true" signature="6:64" ph="..." />
-            <marker date="1548358980719" expanded="true" signature="135:1056" ph="{...}" />
-            <marker date="1548358980719" expanded="true" signature="171:236" ph="{...}" />
-            <marker date="1548358980719" expanded="true" signature="440:1041" ph="{...}" />
-            <marker date="1548358980719" expanded="true" signature="490:1006" ph="{...}" />
-            <marker date="1548358980719" expanded="true" signature="597:992" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/CubeAI/CubeEntity.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-342">
           <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <marker date="1548364182902" expanded="false" signature="6:54" ph="..." />
-            <marker date="1548364182902" expanded="true" signature="73:2384" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="119:2382" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="602:671" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="703:871" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="907:1291" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="1322:1465" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="1494:1817" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="1856:2029" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="2091:2243" ph="{...}" />
-            <marker date="1548364182902" expanded="true" signature="2296:2375" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -528,11 +572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <marker date="1548414715104" expanded="true" signature="47:237" ph="{...}" />
-            <marker date="1548414715104" expanded="true" signature="111:235" ph="{...}" />
-            <marker date="1548414715104" expanded="true" signature="174:220" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,11 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <marker date="1548414715144" expanded="true" signature="47:241" ph="{...}" />
-            <marker date="1548414715144" expanded="true" signature="113:239" ph="{...}" />
-            <marker date="1548414715144" expanded="true" signature="176:224" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,39 +586,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <marker date="1548414715131" expanded="true" signature="47:249" ph="{...}" />
-            <marker date="1548414715131" expanded="true" signature="117:247" ph="{...}" />
-            <marker date="1548414715131" expanded="true" signature="180:232" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/FireNode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <marker date="1548415124424" expanded="true" signature="47:223" ph="{...}" />
-            <marker date="1548415124424" expanded="true" signature="100:221" ph="{...}" />
-            <marker date="1548415124424" expanded="true" signature="160:206" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Hundred Tales/Assets/Scripts/Utils/AI/UtilityBased/AbstractAiDecision.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Editor/UtilityAIGraphEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/CubeAI/AbstractAiComponent.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Editor/UtilityAIGraphEditor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/CubeAI/AbstractAiComponent.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/09/4e257e9d/UnitySynchronizationContext.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -606,37 +615,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/EntryNode.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="248">
+          <caret line="72" column="53" lean-forward="true" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/RankWeightNode.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           <folding>
-            <marker date="1548358980749" expanded="true" signature="40:197" ph="{...}" />
-            <marker date="1548358980749" expanded="true" signature="118:195" ph="{...}" />
+            <marker date="1540844237000" expanded="false" signature="6:66" ph="..." />
+            <marker date="1540844237000" expanded="true" signature="90:700" ph="/// Base class for all nodes ... " />
+            <marker date="1540844237000" expanded="true" signature="770:15275" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="999:1322" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="1359:1553" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="3349:3413" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="3571:3634" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="3887:3969" ph="{...}" />
+            <marker date="1540844237000" expanded="false" signature="3971:6626" ph="Instance Ports" />
+            <marker date="1540844237000" expanded="true" signature="4002:4142" ph="///Convenience function. ... " />
+            <marker date="1540844237000" expanded="true" signature="4287:4386" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="4396:4535" ph="///Convenience function. ... " />
+            <marker date="1540844237000" expanded="true" signature="4681:4781" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="4791:4955" ph="///Add a dynamic, serialized port to this node. ... " />
+            <marker date="1540844237000" expanded="true" signature="5123:5677" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="5160:5330" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="5360:5510" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="5807:5870" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="5997:6252" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="6415:6615" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="6548:6605" ph="{...}" />
+            <marker date="1540844237000" expanded="false" signature="6628:7629" ph="Ports" />
+            <marker date="1540844237000" expanded="true" signature="6775:6947" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="7080:7251" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="7373:7510" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="7558:7618" ph="{...}" />
+            <marker date="1540844237000" expanded="false" signature="7631:9158" ph="Inputs/Outputs" />
+            <marker date="1540844237000" expanded="true" signature="7662:7953" ph="///Return input value for a specified port. Returns fallback value if no ports are connected ... " />
+            <marker date="1540844237000" expanded="true" signature="8031:8206" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="8216:8512" ph="///Return all input values for a specified port. Returns fallback value if no ports are connected ... " />
+            <marker date="1540844237000" expanded="true" signature="8589:8765" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="8775:8962" ph="///Returns a value based on requested port output. Should be overridden in all derived nodes with outputs. ... " />
+            <marker date="1540844237000" expanded="true" signature="9017:9147" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="9168:9342" ph="///Called after a connection between two &lt;see cref=&quot;NodePort&quot;/&gt;s is created ... " />
+            <marker date="1540844237000" expanded="true" signature="9431:9562" ph="///Called after a connection is removed from this port ... " />
+            <marker date="1540844237000" expanded="true" signature="9739:9820" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="9864:9934" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="10195:11069" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="10352:10697" ph="///Mark a serializable field as an input port. You can access this through &lt;see cref=&quot;GetInputPort(string)&quot;/&gt; ... " />
+            <marker date="1540844237000" expanded="true" signature="10882:11059" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="11333:12204" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="11490:11837" ph="///Mark a serializable field as an output port. You can access this through &lt;see cref=&quot;GetOutputPort(string)&quot;/&gt; ... " />
+            <marker date="1540844237000" expanded="true" signature="12017:12194" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="12335:12701" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="12385:12573" ph="///Manually supply node class with a context menu path ... " />
+            <marker date="1540844237000" expanded="true" signature="12634:12691" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="12817:13863" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="12863:13108" ph="///Specify a color for this node type ... " />
+            <marker date="1540844237000" expanded="true" signature="13164:13223" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="13237:13356" ph="///Specify a color for this node type ... " />
+            <marker date="1540844237000" expanded="true" signature="13397:13477" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="13491:13724" ph="///Specify a color for this node type ... " />
+            <marker date="1540844237000" expanded="true" signature="13777:13853" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="13980:14237" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="14024:14135" ph="///Specify a width for this node type ... " />
+            <marker date="1540844237000" expanded="true" signature="14176:14227" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="14358:15269" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="14565:14816" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="14699:14802" ph="{...}" />
+            <marker date="1540844237000" expanded="true" signature="14863:15259" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/ReloadNode.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/FireNode.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
-            <marker date="1548415124442" expanded="true" signature="47:220" ph="{...}" />
-            <marker date="1548415124442" expanded="true" signature="102:218" ph="{...}" />
-            <marker date="1548415124442" expanded="true" signature="162:203" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/HealNode.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <marker date="1548415124455" expanded="true" signature="47:216" ph="{...}" />
-            <marker date="1548415124455" expanded="true" signature="100:214" ph="{...}" />
-            <marker date="1548415124455" expanded="true" signature="160:199" ph="{...}" />
+            <marker date="1548415124424" expanded="true" signature="100:221" ph="{...}" />
+            <marker date="1548415124424" expanded="true" signature="160:206" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -647,63 +709,17 @@
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
           <folding>
             <marker date="1548420762276" expanded="true" signature="6:49" ph="..." />
-            <marker date="1548420762276" expanded="true" signature="68:236" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/AbstractAIBrain.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/ReloadNode.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        <state relative-caret-position="51">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
           <folding>
-            <marker date="1548420762337" expanded="false" signature="6:83" ph="..." />
-            <marker date="1548420762337" expanded="true" signature="105:839" ph="{...}" />
-            <marker date="1548420762337" expanded="true" signature="164:837" ph="{...}" />
-            <marker date="1548420762337" expanded="true" signature="224:493" ph="{...}" />
-            <marker date="1548420762337" expanded="true" signature="337:452" ph="{...}" />
-            <marker date="1548420762337" expanded="true" signature="554:830" ph="{...}" />
-            <marker date="1548420762337" expanded="true" signature="670:788" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="72" column="53" lean-forward="true" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
-          <folding>
-            <marker date="1540844237000" expanded="false" signature="6:100" ph="..." />
-            <marker date="1540844237000" expanded="true" signature="124:6747" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="206:6745" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="773:1250" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="944:1042" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="1092:1240" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="1129:1181" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="1285:1794" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="1600:1784" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="1828:2260" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="1976:2250" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="2027:2236" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="2791:3003" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="3105:3320" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="3349:3579" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="3398:3554" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="3610:4192" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="3774:4182" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="4245:4286" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="4356:4457" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="4525:4624" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="4687:4809" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="4863:5011" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="5088:5360" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="5420:5688" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="5443:5630" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="5740:5914" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="6001:6417" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="6143:6381" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="6528:6739" ph="{...}" />
-            <marker date="1540844237000" expanded="true" signature="6676:6729" ph="{...}" />
+            <marker date="1548415124442" expanded="true" signature="102:218" ph="{...}" />
+            <marker date="1548415124442" expanded="true" signature="162:203" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -713,22 +729,19 @@
         <state relative-caret-position="136">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
-            <marker date="1548414715118" expanded="true" signature="47:236" ph="{...}" />
             <marker date="1548414715118" expanded="true" signature="115:234" ph="{...}" />
             <marker date="1548414715118" expanded="true" signature="178:228" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/SimpleEntryNode.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/CubeAI/Nodes/HealNode.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
-            <marker date="1548358980598" expanded="true" signature="40:557" ph="{...}" />
-            <marker date="1548358980598" expanded="true" signature="103:554" ph="{...}" />
-            <marker date="1548358980598" expanded="true" signature="412:537" ph="{...}" />
-            <marker date="1548358980598" expanded="true" signature="457:502" ph="{...}" />
+            <marker date="1548415124455" expanded="true" signature="100:214" ph="{...}" />
+            <marker date="1548415124455" expanded="true" signature="160:199" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -746,41 +759,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/AbstractAiComponent.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/AbstractAIBrain.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state>
+          <caret column="33" selection-start-column="33" selection-end-column="33" />
           <folding>
-            <marker date="1548421542553" expanded="true" signature="6:143" ph="..." />
-            <marker date="1548421542553" expanded="true" signature="165:2488" ph="{...}" />
-            <marker date="1548421542553" expanded="true" signature="226:2486" ph="{...}" />
-            <marker date="1548421542553" expanded="true" signature="331:696" ph="{...}" />
-            <marker date="1548421542553" expanded="true" signature="551:682" ph="{...}" />
-            <marker date="1548421542553" expanded="true" signature="901:2471" ph="{...}" />
-            <marker date="1548421542553" expanded="true" signature="1630:1756" ph="{...}" />
-            <marker date="1548421542553" expanded="true" signature="2274:2436" ph="{...}" />
+            <marker date="1548435090407" expanded="true" signature="6:69" ph="..." />
+            <marker date="1548435090407" expanded="true" signature="91:825" ph="{...}" />
+            <marker date="1548435090407" expanded="true" signature="150:823" ph="{...}" />
+            <marker date="1548435090407" expanded="true" signature="210:479" ph="{...}" />
+            <marker date="1548435090407" expanded="true" signature="323:438" ph="{...}" />
+            <marker date="1548435090407" expanded="true" signature="540:816" ph="{...}" />
+            <marker date="1548435090407" expanded="true" signature="656:774" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/ActionNode.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/AbstractAiComponent.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <marker date="1548421260178" expanded="true" signature="26:254" ph="{...}" />
-            <marker date="1548421260178" expanded="true" signature="82:252" ph="{...}" />
-            <marker date="1548421260178" expanded="true" signature="185:245" ph="{...}" />
+            <marker date="1548423937069" expanded="false" signature="6:143" ph="..." />
+            <marker date="1548423937069" expanded="true" signature="165:2491" ph="{...}" />
+            <marker date="1548423937069" expanded="true" signature="226:2489" ph="{...}" />
+            <marker date="1548423937069" expanded="true" signature="331:696" ph="{...}" />
+            <marker date="1548423937069" expanded="true" signature="551:682" ph="{...}" />
+            <marker date="1548423937069" expanded="true" signature="901:2474" ph="{...}" />
+            <marker date="1548423937069" expanded="true" signature="1630:1756" ph="{...}" />
+            <marker date="1548423937069" expanded="true" signature="2277:2439" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/SimpleEntryNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <marker date="1548358980598" expanded="true" signature="40:557" ph="{...}" />
+            <marker date="1548358980598" expanded="true" signature="103:554" ph="{...}" />
+            <marker date="1548358980598" expanded="true" signature="412:537" ph="{...}" />
+            <marker date="1548358980598" expanded="true" signature="457:502" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/MultiEntryNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1548420221959" expanded="true" signature="6:79" ph="..." />
+            <marker date="1548420221959" expanded="true" signature="107:934" ph="{...}" />
+            <marker date="1548420221959" expanded="true" signature="171:932" ph="{...}" />
+            <marker date="1548420221959" expanded="true" signature="424:632" ph="{...}" />
+            <marker date="1548420221959" expanded="true" signature="685:850" ph="{...}" />
+            <marker date="1548420221959" expanded="true" signature="731:840" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/MiddleNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1548358980645" expanded="true" signature="40:121" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/InverterNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1548358980612" expanded="true" signature="40:470" ph="{...}" />
+            <marker date="1548358980612" expanded="true" signature="85:468" ph="{...}" />
+            <marker date="1548358980612" expanded="true" signature="291:453" ph="{...}" />
+            <marker date="1548358980612" expanded="true" signature="341:418" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/FilterNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1548358980719" expanded="true" signature="6:64" ph="..." />
+            <marker date="1548358980719" expanded="true" signature="92:1059" ph="{...}" />
+            <marker date="1548358980719" expanded="true" signature="135:1056" ph="{...}" />
+            <marker date="1548358980719" expanded="true" signature="171:236" ph="{...}" />
+            <marker date="1548358980719" expanded="true" signature="440:1041" ph="{...}" />
+            <marker date="1548358980719" expanded="true" signature="490:1006" ph="{...}" />
+            <marker date="1548358980719" expanded="true" signature="597:992" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/ExitNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1548358980705" expanded="true" signature="40:193" ph="{...}" />
+            <marker date="1548358980705" expanded="true" signature="117:191" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/UtilityNode.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding>
-            <marker date="1548422348320" expanded="false" signature="6:31" ph="..." />
+            <marker date="1548422348320" expanded="true" signature="6:31" ph="..." />
             <marker date="1548422348320" expanded="true" signature="59:1279" ph="{...}" />
             <marker date="1548422348320" expanded="true" signature="103:1276" ph="{...}" />
             <marker date="1548422348320" expanded="true" signature="563:969" ph="{...}" />
@@ -790,13 +880,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/RankWeightNode.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/EntryNode.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding>
-            <marker date="1548423712167" expanded="true" signature="26:295" ph="{...}" />
-            <marker date="1548423712167" expanded="true" signature="73:293" ph="{...}" />
+            <marker date="1548358980749" expanded="true" signature="40:197" ph="{...}" />
+            <marker date="1548358980749" expanded="true" signature="118:195" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/UtilityAI/Nodes/ActionNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <marker date="1548423937085" expanded="true" signature="26:260" ph="{...}" />
+            <marker date="1548423937085" expanded="true" signature="82:258" ph="{...}" />
+            <marker date="1548423937085" expanded="true" signature="188:251" ph="{...}" />
           </folding>
         </state>
       </provider>
