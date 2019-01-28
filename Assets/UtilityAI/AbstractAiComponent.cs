@@ -12,15 +12,17 @@ namespace UtilityAI {
         [Serializable]
         public class DualUtility {
 
-            public ActionNode<T> ActionNode;
+            public OptionNode<T> OptionNode;
             public string ActionName;
-            public float Rank;
+            public float Utility;
+            public int Rank;
             public float Weight;
 
-            public DualUtility(ActionNode<T> actionNode, float rank) {
-                ActionNode = actionNode;
-                ActionName = actionNode.name;
-                Rank = rank;
+            public DualUtility(OptionNode<T> optionNode, Tuple<float, int> utilityAndRank) {
+                OptionNode = optionNode;
+                ActionName = optionNode.name;
+                Utility = utilityAndRank.Item1;
+                Rank = utilityAndRank.Item2;
             }
 			
         }
@@ -31,30 +33,27 @@ namespace UtilityAI {
         
         protected DualUtility ChooseAction(T context) {
             if (UtilityAiBrain == null) return null;
-            UtilityAiBrain.GetEntryNode().ForEach(node => node.SetContext(context));
+            UtilityAiBrain.GetEntryNodes().ForEach(node => node.SetContext(context));
             // Fill the Dual Utilities
             DualUtilityReasoners = new List<DualUtility>();
-            UtilityAiBrain.GetActionNode().ForEach(node => DualUtilityReasoners.Add(new DualUtility(node, node.GetValue())));
-            // Remove ImpossibleDecisionValue Utilities
+            UtilityAiBrain.GetOptionNodes().ForEach(node => DualUtilityReasoners.Add(new DualUtility(node, node.GetValue())));
+            // Remove ImpossibleDecisionValue Ranks
             DualUtilityReasoners.RemoveAll(reasoner => reasoner.Rank <= 0f);
-            // If no more decision then return
-            if (DualUtilityReasoners.Count == 0)
-                return null;
-            // Calculating Weights
-            foreach (DualUtility dualreasoner in DualUtilityReasoners) {
-                dualreasoner.Weight = dualreasoner.Rank / DualUtilityReasoners.Sum(reasoner => reasoner.Rank);
-            }
-            // Sorting by Utility values
-            DualUtilityReasoners = DualUtilityReasoners.OrderByDescending(tuple => tuple.Rank).ToList();
-            // Removing lesser value than maximum rank
-            DualUtilityReasoners.RemoveAll(reasoner => reasoner.Rank < DualUtilityReasoners[0].Rank);
-            // Rolling probability on weighted random
-            LastProbabilityResult = Random.Range(0f, 1f);
-            float weightSum = 0f;
-            foreach (DualUtility dualReasoner in DualUtilityReasoners) {
-                weightSum += dualReasoner.Weight;
-                if (weightSum >= LastProbabilityResult)
-                    return dualReasoner;
+            // Get max Rank
+            int maxRank = DualUtilityReasoners.Max(utility => utility.Rank);
+            for (int i = maxRank; i > 0; i--) {
+                List<DualUtility> dualUtilities = DualUtilityReasoners.FindAll(utility => utility.Rank == i);
+                if (dualUtilities.Count == 0 || dualUtilities.Sum(utility => utility.Utility) <= 0) continue;
+                // Calculating Weight
+                dualUtilities.ForEach(dualUtility => dualUtility.Weight = dualUtility.Utility / DualUtilityReasoners.Sum(utility => utility.Utility));
+                // Rolling probability on weighted random
+                LastProbabilityResult = Random.Range(0f, 1f);
+                float weightSum = 0f;
+                foreach (DualUtility dualUtility in dualUtilities) {
+                    weightSum += dualUtility.Weight;
+                    if (weightSum >= LastProbabilityResult)
+                        return dualUtility;
+                }
             }
             return null;
         }

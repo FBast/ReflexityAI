@@ -5,7 +5,7 @@ using XNode;
 namespace UtilityAI {
     public abstract class AbstractAIBrain<T> : NodeGraph {
         
-        public List<EntryNode<T>> GetEntryNode() {
+        public List<EntryNode<T>> GetEntryNodes() {
             List<EntryNode<T>> entryNodes = new List<EntryNode<T>>();
             foreach (Node node in nodes) {
                 if (node as EntryNode<T>) 
@@ -14,13 +14,13 @@ namespace UtilityAI {
             return entryNodes;
         }
         
-        public List<ActionNode<T>> GetActionNode() {
-            List<ActionNode<T>> actionNodes = new List<ActionNode<T>>();
+        public List<OptionNode<T>> GetOptionNodes() {
+            List<OptionNode<T>> optionNodes = new List<OptionNode<T>>();
             foreach (Node node in nodes) {
-                if (node as ActionNode<T>) 
-                    actionNodes.Add((ActionNode<T>) node);
+                if (node as OptionNode<T>) 
+                    optionNodes.Add((OptionNode<T>) node);
             }
-            return actionNodes;
+            return optionNodes;
         }
 
     }

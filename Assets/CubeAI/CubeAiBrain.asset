@@ -83,7 +83,7 @@ MonoBehaviour:
       - fieldName: UtilityIn
         node: {fileID: 114772341107064234}
         reroutePoints: []
-      - fieldName: Utility
+      - fieldName: Utilities
         node: {fileID: 114633683028179442}
         reroutePoints: []
       _direction: 1
@@ -116,7 +116,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.777119
+  UtilityY: 0.85995084
 --- !u!114 &114035367965374220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,12 +130,14 @@ MonoBehaviour:
   m_Name: Reload Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -264, y: -600}
+  position: {x: -264, y: -616}
   ports:
     keys:
-    - Utility
+    - Utilities
+    - Bonus
+    - Multiplier
     values:
-    - _fieldName: Utility
+    - _fieldName: Utilities
       _node: {fileID: 114035367965374220}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
@@ -146,7 +148,26 @@ MonoBehaviour:
       _direction: 0
       _connectionType: 0
       _dynamic: 0
-  Utility: 0
+    - _fieldName: Bonus
+      _node: {fileID: 114035367965374220}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Multiplier
+      _node: {fileID: 114035367965374220}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  UtilityMerge: 0
+  Utilities: 0
+  Bonus: 1
+  Multiplier: 1
 --- !u!114 &114073236173937912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,7 +181,7 @@ MonoBehaviour:
   m_Name: Inverter Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -664, y: -888}
+  position: {x: -632, y: -888}
   ports:
     keys:
     - UtilityIn
@@ -182,7 +203,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Utility
+      - fieldName: Utilities
         node: {fileID: 114151904399273600}
         reroutePoints: []
       _direction: 1
@@ -203,12 +224,14 @@ MonoBehaviour:
   m_Name: Heal Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -264, y: -888}
+  position: {x: -264, y: -936}
   ports:
     keys:
-    - Utility
+    - Utilities
+    - Bonus
+    - Multiplier
     values:
-    - _fieldName: Utility
+    - _fieldName: Utilities
       _node: {fileID: 114151904399273600}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
@@ -219,7 +242,26 @@ MonoBehaviour:
       _direction: 0
       _connectionType: 0
       _dynamic: 0
-  Utility: 0
+    - _fieldName: Bonus
+      _node: {fileID: 114151904399273600}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Multiplier
+      _node: {fileID: 114151904399273600}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  UtilityMerge: 0
+  Utilities: 0
+  Bonus: 2
+  Multiplier: 1
 --- !u!114 &114174744681457496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,7 +291,7 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _dynamic: 0
-  Value: 6
+  Value: 9
 --- !u!114 &114183592416133370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +381,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.14135437
+  UtilityY: 0.5470427
 --- !u!114 &114619418477469794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,12 +425,14 @@ MonoBehaviour:
   m_Name: Fire Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -264, y: -760}
+  position: {x: -264, y: -776}
   ports:
     keys:
-    - Utility
+    - Utilities
+    - Bonus
+    - Multiplier
     values:
-    - _fieldName: Utility
+    - _fieldName: Utilities
       _node: {fileID: 114633683028179442}
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
@@ -399,7 +443,26 @@ MonoBehaviour:
       _direction: 0
       _connectionType: 0
       _dynamic: 0
-  Utility: 0
+    - _fieldName: Bonus
+      _node: {fileID: 114633683028179442}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+    - _fieldName: Multiplier
+      _node: {fileID: 114633683028179442}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _dynamic: 0
+  UtilityMerge: 0
+  Utilities: 0
+  Bonus: 1
+  Multiplier: 1
 --- !u!114 &114760315785877220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,7 +506,7 @@ MonoBehaviour:
   m_Name: Inverter Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -664, y: -600}
+  position: {x: -632, y: -600}
   ports:
     keys:
     - UtilityIn
@@ -465,7 +528,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Utility
+      - fieldName: Utilities
         node: {fileID: 114035367965374220}
         reroutePoints: []
       _direction: 1
@@ -502,4 +565,4 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 0
       _dynamic: 0
-  Value: 3
+  Value: 4

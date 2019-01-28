@@ -14,7 +14,7 @@ namespace CubeAI {
         private void ThinkAndAct() {
             DualUtility dualUtility = ChooseAction(_cubeEntity);
             if (dualUtility == null) return;
-            dualUtility.ActionNode.Execute(_cubeEntity);
+            dualUtility.OptionNode.Execute(_cubeEntity);
         }
         
     }

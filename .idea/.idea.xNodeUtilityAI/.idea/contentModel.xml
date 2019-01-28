@@ -54,13 +54,13 @@
           <e p="AbstractAIBrain.cs" t="Include" />
           <e p="AbstractAiComponent.cs" t="Include" />
           <e p="Nodes" t="Include">
-            <e p="ActionNode.cs" t="Include" />
             <e p="EntryNode.cs" t="Include" />
             <e p="ExitNode.cs" t="Include" />
             <e p="FilterNode.cs" t="Include" />
             <e p="InverterNode.cs" t="Include" />
             <e p="MiddleNode.cs" t="Include" />
             <e p="MultiEntryNode.cs" t="Include" />
+            <e p="OptionNode.cs" t="Include" />
             <e p="SimpleEntryNode.cs" t="Include" />
             <e p="UtilityNode.cs" t="Include" />
           </e>
