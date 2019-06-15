@@ -1,5 +1,5 @@
-This framework allow you to design an AI using a node graph editor provided by xNode. It is a free asset compatible with the Unity Engine.
-If you found any bugs please use the Issues tab.
+**This framework allow you to design an AI using a node graph editor provided by xNode. It is a free asset compatible with the Unity Engine.
+If you found any bugs or have any requested features please use the Issues tab.**
 
 # When to use an Utility AI ?
 
