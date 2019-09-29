@@ -23,6 +23,7 @@ namespace NodeUtilityAi.Nodes {
                 return this;
             }
             if (port.fieldName == "DataOut") {
+				if (_context == null) return null;
                 List<Object> collection = CollectionProvider(_context);
                 if (collection != null && collection.Count > Index)
                     return GetData();

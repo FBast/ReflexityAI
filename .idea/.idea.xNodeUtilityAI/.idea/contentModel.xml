@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Local Repository\xNodeUtilityAI" t="IncludeRecursive">
+    <e p="C:\Users\Dizy\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Dizy\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_xNodeUtilityAI.-435112455.00" t="ExcludeRecursive" />
+    <e p="D:\Local Repository\xNodeUtilityAI" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -82,15 +84,10 @@
           </e>
         </e>
       </e>
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="xNodeUtilityAI.sln" t="IncludeFlat" />
     </e>
-    <e p="C:\Users\Dizy\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Dizy\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_xNodeUtilityAI.1490420856.00" t="ExcludeRecursive" />
   </component>
 </project>
