@@ -1,9 +1,13 @@
-﻿using NodeUtilityAi.Framework;
+﻿using XNode;
 
 namespace NodeUtilityAi.Nodes {
     public abstract class SimpleActionNode : ActionNode {
 
-        [Input(ShowBackingValue.Never)] public TaggedData Data;
+        public override object GetValue(NodePort port) {
+            if (port.fieldName == "LinkedOption")
+                return this;
+            return null;
+        }
         
     }
 

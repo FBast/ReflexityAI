@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using NodeUtilityAi.Framework;
@@ -10,37 +11,84 @@ using Random = UnityEngine.Random;
 namespace NodeUtilityAi {
     public class AbstractAIComponent : MonoBehaviour {
         
-        public AbstractAIBrain UtilityAiBrain;
-        public float LastProbabilityResult;
-        public List<AIOption> Options;
-        public Dictionary<string, Object> Memory = new Dictionary<string, Object>();
+        [Range(0.1f, 5f)] public float TimeBetweenRefresh = 0.5f;
+        public bool AlwaysPickBestChoice;
+        public List<AbstractAIBrain> UtilityAiBrains;
+
+        public readonly Dictionary<AbstractAIBrain, List<AIOption>> Options = new Dictionary<AbstractAIBrain, List<AIOption>>();
+        public Dictionary<AbstractAIBrain, AIOption> SelectedOptions = new Dictionary<AbstractAIBrain, AIOption>();
         
-        protected AIOption ChooseOption() {
-            if (UtilityAiBrain == null) return null;
-            UtilityAiBrain.GetNodes<EntryNode>().ForEach(node => node.SetContext(this));
-            UtilityAiBrain.GetNodes<ActionNode>().ForEach(node => node.SetContext(this));
-            // Fill the Ranked Options
-            Options = new List<AIOption>();
-            UtilityAiBrain.GetNodes<OptionNode>().ForEach(node => Options.AddRange(node.GetOptions()));
-            // Remove ImpossibleDecisionValue Ranks
-            Options.RemoveAll(option => option.Rank <= 0f);
-            if (Options.Count == 0)
-                return null;
-            // Get max Rank
-            int maxRank = Options.Max(option => option.Rank);
-            for (int i = maxRank; i > 0; i--) {
-                List<AIOption> options = Options.FindAll(utility => utility.Rank == i);
-                if (options.Count == 0 || options.Sum(utility => utility.Utility) <= 0) continue;
-                // Calculating Weight
-                options.ForEach(dualUtility => dualUtility.Weight = dualUtility.Utility / Options.Sum(utility => utility.Utility));
-                // Rolling probability on weighted random
-                LastProbabilityResult = Random.Range(0f, 1f);
-                float weightSum = 0f;
-                foreach (AIOption dualUtility in options) {
-                    weightSum += dualUtility.Weight;
-                    if (weightSum >= LastProbabilityResult)
-                        return dualUtility;
+        private readonly Dictionary<string, Object> _memory = new Dictionary<string, Object>();
+        private float _lastProbabilityResult;
+        private bool _isThinking;
+        private float _timeSinceLastRefresh;
+
+        private void Update() {
+            _timeSinceLastRefresh += Time.deltaTime;
+            if (_isThinking || _timeSinceLastRefresh <= TimeBetweenRefresh) return;
+            StartCoroutine(ThinkAndAct());
+            _timeSinceLastRefresh = 0;
+        }
+
+        IEnumerator ThinkAndAct() {
+            _isThinking = true;
+            foreach (AbstractAIBrain utilityAiBrain in UtilityAiBrains) {
+                CalculateOptions(utilityAiBrain);
+                yield return null;
+                AIOption aiOption = ChooseOption(utilityAiBrain);
+                if (aiOption == null) continue;
+                if (SelectedOptions.ContainsKey(utilityAiBrain)) {
+                    SelectedOptions[utilityAiBrain] = aiOption;
+                } else {
+                    SelectedOptions.Add(utilityAiBrain, aiOption);
                 }
+                aiOption.ExecuteActions(this);
+                yield return null;
+            }
+            _isThinking = false;
+        }
+
+        private void CalculateOptions(AbstractAIBrain utilityAiBrain) {
+            if (utilityAiBrain == null) return;
+            // Setup Contexts
+            utilityAiBrain.GetNodes<EntryNode>().ForEach(node => node.SetContext(this));
+            utilityAiBrain.GetNodes<ActionNode>().ForEach(node => node.SetContext(this));
+            // Add the brain to the option dictionary
+            if (Options.ContainsKey(utilityAiBrain)) {
+                Options[utilityAiBrain].Clear();
+            }
+            else {
+                Options.Add(utilityAiBrain, new List<AIOption>());
+            }
+            utilityAiBrain.GetNodes<OptionNode>().ForEach(node => Options[utilityAiBrain]
+                .AddRange(node.GetOptions()));
+            // Return if no option found
+            if (Options[utilityAiBrain].Count == 0) return;
+            // Calculate Probability
+            foreach (AIOption aiOption in Options[utilityAiBrain]) {
+                aiOption.Probability = aiOption.Utility / Options[utilityAiBrain]
+                                           .Where(option => option.Weight == aiOption.Weight)
+                                           .Sum(option => option.Utility);
+            }
+            // Order by Weight then Utility
+            Options[utilityAiBrain] = Options[utilityAiBrain].OrderByDescending(option => option.Weight).ThenByDescending(option => option.Utility).ToList();
+        }
+
+        private AIOption ChooseOption(AbstractAIBrain abstractAiBrain) {
+            // Calcul maxWeight and return null if equal to zero
+            int maxWeight = Options[abstractAiBrain].Max(option => option.Weight);
+            if (maxWeight == 0) return null;
+            // Returning best option for no random
+            if (AlwaysPickBestChoice) {
+                return Options[abstractAiBrain].FirstOrDefault();
+            }
+            // Rolling probability on weighted random
+            _lastProbabilityResult = Random.Range(0f, 1f);
+            float probabilitySum = 0f;
+            foreach (AIOption dualUtility in Options[abstractAiBrain].FindAll(option => option.Weight == maxWeight)) {
+                probabilitySum += dualUtility.Probability;
+                if (probabilitySum >= _lastProbabilityResult)
+                    return dualUtility;
             }
             return null;
         }
@@ -49,20 +97,19 @@ namespace NodeUtilityAi {
             if (LoadFromMemory(dataTag) != null)
                 throw new Exception("Impossible to save " + dataTag + ", consider using a " + typeof(MemoryCheckNode)
                     + " before using " + typeof(MemoryAccessNode));
-            Memory.Add(dataTag, data);
+            _memory.Add(dataTag, data);
         }
 
         public TaggedData LoadFromMemory(string dataTag) {
             Object dataToReturn;
-            if (!Memory.TryGetValue(dataTag, out dataToReturn)) return null;
+            if (!_memory.TryGetValue(dataTag, out dataToReturn)) return null;
             TaggedData taggedData = new TaggedData {DataTag = dataTag, Data = dataToReturn};
             return taggedData;
         }
         
         public bool ClearFromMemory(string dataTag) {
-            return Memory.Remove(dataTag);
+            return _memory.Remove(dataTag);
         }
         
     }
-
 }

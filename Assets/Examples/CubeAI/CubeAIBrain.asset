@@ -46,17 +46,8 @@ MonoBehaviour:
   position: {x: -168, y: -504}
   ports:
     keys:
-    - Data
     - Value
     values:
-    - _fieldName: Data
-      _node: {fileID: 114069132733827186}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: Value
       _node: {fileID: 114069132733827186}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -68,9 +59,6 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 1
       _dynamic: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}
   Value: 0
 --- !u!114 &114082257568242058
 MonoBehaviour:
@@ -88,17 +76,8 @@ MonoBehaviour:
   position: {x: 504, y: 536}
   ports:
     keys:
-    - Data
     - LinkedOption
     values:
-    - _fieldName: Data
-      _node: {fileID: 114082257568242058}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: 114082257568242058}
       _typeQualifiedName: NodeUtilityAi.Nodes.ActionNode, Assembly-CSharp, Version=0.0.0.0,
@@ -112,9 +91,6 @@ MonoBehaviour:
       _dynamic: 0
   LinkedOption: {fileID: 0}
   Order: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}
 --- !u!114 &114188044490459486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,17 +107,8 @@ MonoBehaviour:
   position: {x: 504, y: 104}
   ports:
     keys:
-    - Data
     - LinkedOption
     values:
-    - _fieldName: Data
-      _node: {fileID: 114188044490459486}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: 114188044490459486}
       _typeQualifiedName: NodeUtilityAi.Nodes.ActionNode, Assembly-CSharp, Version=0.0.0.0,
@@ -155,9 +122,6 @@ MonoBehaviour:
       _dynamic: 0
   LinkedOption: {fileID: 0}
   Order: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}
 --- !u!114 &114325864924439570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,17 +213,8 @@ MonoBehaviour:
   position: {x: -168, y: -600}
   ports:
     keys:
-    - Data
     - Value
     values:
-    - _fieldName: Data
-      _node: {fileID: 114460293886972600}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: Value
       _node: {fileID: 114460293886972600}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -271,9 +226,6 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 1
       _dynamic: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}
   Value: 0
 --- !u!114 &114489021186256158
 MonoBehaviour:
@@ -364,7 +316,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.7
+  UtilityY: 1
 --- !u!114 &114559475456108638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -381,17 +333,8 @@ MonoBehaviour:
   position: {x: -168, y: -56}
   ports:
     keys:
-    - Data
     - Value
     values:
-    - _fieldName: Data
-      _node: {fileID: 114559475456108638}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: Value
       _node: {fileID: 114559475456108638}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -403,9 +346,6 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 1
       _dynamic: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}
   Value: 0
 --- !u!114 &114653460638975014
 MonoBehaviour:
@@ -509,17 +449,8 @@ MonoBehaviour:
   position: {x: -168, y: 248}
   ports:
     keys:
-    - Data
     - Value
     values:
-    - _fieldName: Data
-      _node: {fileID: 114742372783722560}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: Value
       _node: {fileID: 114742372783722560}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -531,9 +462,6 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 1
       _dynamic: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}
   Value: 0
 --- !u!114 &114759693450750638
 MonoBehaviour:
@@ -551,17 +479,8 @@ MonoBehaviour:
   position: {x: -168, y: -152}
   ports:
     keys:
-    - Data
     - Value
     values:
-    - _fieldName: Data
-      _node: {fileID: 114759693450750638}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: Value
       _node: {fileID: 114759693450750638}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -573,9 +492,6 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 1
       _dynamic: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}
   Value: 0
 --- !u!114 &114763608685781972
 MonoBehaviour:
@@ -666,7 +582,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.7
+  UtilityY: 1
 --- !u!114 &114826716113005772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,7 +656,7 @@ MonoBehaviour:
   Utilities: 1
   UtilityMerge: 0
   Multiplier: 1
-  Bonus: 1
+  Bonus: 0
   Actions: {fileID: 0}
 --- !u!114 &114931795543691260
 MonoBehaviour:
@@ -758,17 +674,8 @@ MonoBehaviour:
   position: {x: -168, y: 344}
   ports:
     keys:
-    - Data
     - Value
     values:
-    - _fieldName: Data
-      _node: {fileID: 114931795543691260}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: Value
       _node: {fileID: 114931795543691260}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -780,9 +687,6 @@ MonoBehaviour:
       _direction: 1
       _connectionType: 1
       _dynamic: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}
   Value: 0
 --- !u!114 &114968113269032794
 MonoBehaviour:
@@ -873,7 +777,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.6541797
+  UtilityY: 1
 --- !u!114 &114980709224378122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,17 +869,8 @@ MonoBehaviour:
   position: {x: 504, y: -344}
   ports:
     keys:
-    - Data
     - LinkedOption
     values:
-    - _fieldName: Data
-      _node: {fileID: 114996763123796330}
-      _typeQualifiedName: NodeUtilityAi.Framework.TaggedData, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: 114996763123796330}
       _typeQualifiedName: NodeUtilityAi.Nodes.ActionNode, Assembly-CSharp, Version=0.0.0.0,
@@ -989,6 +884,3 @@ MonoBehaviour:
       _dynamic: 0
   LinkedOption: {fileID: 0}
   Order: 0
-  Data:
-    DataTag: 
-    Data: {fileID: 0}

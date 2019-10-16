@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Dizy\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Dizy\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_xNodeUtilityAI.-435112455.00" t="ExcludeRecursive" />
-    <e p="D:\Local Repository\xNodeUtilityAI" t="IncludeRecursive">
+    <e p="C:\Users\frederic.bast\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\frederic.bast\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_xNodeUtilityAI.1102029970.00" t="ExcludeRecursive" />
+    <e p="U:\UnityProjects\xNodeUtilityAI" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -27,6 +28,9 @@
         <e p="NodeUtilityAi" t="Include">
           <e p="AbstractAIBrain.cs" t="Include" />
           <e p="AbstractAiComponent.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="AiDebuggerEditor.cs" t="Include" />
+          </e>
           <e p="Framework" t="Include">
             <e p="AIAction.cs" t="Include" />
             <e p="AIData.cs" t="Include" />
@@ -36,6 +40,8 @@
           <e p="Nodes" t="Include">
             <e p="ActionNode.cs" t="Include" />
             <e p="CollectionEntryNode.cs" t="Include" />
+            <e p="DataActionNode.cs" t="Include" />
+            <e p="DataEntryNode.cs" t="Include" />
             <e p="EntryNode.cs" t="Include" />
             <e p="MemoryAccessNode.cs" t="Include" />
             <e p="MemoryCheckNode.cs" t="Include" />

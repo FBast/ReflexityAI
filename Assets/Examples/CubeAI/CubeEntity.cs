@@ -27,8 +27,10 @@ namespace Examples.CubeAI {
         }
 
         private void Update() {
-            if (IsDead)
+            if (IsDead) {
                 Stats.text = "DEAD !";
+                GetComponent<CubeAIComponent>().enabled = false;
+            }
             else
                 Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
         }

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b7d7ec2c56a846b4086deae9bd51f8d0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ViewDataDictionary: {instanceID: 0}
+  - ProgressBackground: {fileID: 10904, guid: 0000000000000000f000000000000000, type: 0}
+  - ProgressForground: {fileID: 10904, guid: 0000000000000000f000000000000000, type: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

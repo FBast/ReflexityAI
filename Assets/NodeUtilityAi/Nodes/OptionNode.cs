@@ -15,7 +15,7 @@ namespace NodeUtilityAi.Nodes {
             Min
         }
 
-        //TODO-fred mettre en ConnectionType.Multiple
+        //TODO-fred switch to ConnectionType.Multiple
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public CollectionEntryNode Collection;
         [TextArea] public string Description;
         [Input] public float Utilities = 1;
@@ -26,23 +26,23 @@ namespace NodeUtilityAi.Nodes {
 
         public List<AIOption> GetOptions() {
             List<AIOption> options = new List<AIOption>();
-            //TODO-fred revoir pour une recherche sur plusieurs CollectionEntryNodes
+            //TODO-fred switch to multiple CollectionEntryNodes
             CollectionEntryNode collectionEntryNodes = GetInputPort("Collection").GetInputValue<CollectionEntryNode>();
             List<ActionNode> actionNodes = GetInputPort("Actions").GetInputValues<ActionNode>().ToList();
             if (collectionEntryNodes != null) {
                 while (collectionEntryNodes.CollectionCount > collectionEntryNodes.Index) {
-                    options.Add(new AIOption(actionNodes, GetUtility(), Description));
+                    options.Add(new AIOption(actionNodes, GetUtilityAndWeight(), Description));
                     collectionEntryNodes.Index++;
                 }
                 collectionEntryNodes.Index = 0;
             }
             else {
-                options.Add(new AIOption(actionNodes, GetUtility(), Description));
+                options.Add(new AIOption(actionNodes, GetUtilityAndWeight(), Description));
             }
             return options;
         }
 
-        private Tuple<float, int> GetUtility() {
+        private Tuple<float, int> GetUtilityAndWeight() {
             NodePort utilityPort = GetInputPort("Utilities");
             float utility;
             if (utilityPort.IsConnected) {
