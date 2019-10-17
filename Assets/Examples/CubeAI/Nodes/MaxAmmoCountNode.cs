@@ -1,6 +1,5 @@
-﻿using NodeUtilityAi;
-using NodeUtilityAi.AbstractNodes;
-using NodeUtilityAi.Framework;
+﻿using Plugins.xNodeUtilityAi.AbstractNodes;
+using Plugins.xNodeUtilityAi.Framework;
 
 namespace Examples.CubeAI.Nodes {
     public class MaxAmmoCountNode : SimpleEntryNode {

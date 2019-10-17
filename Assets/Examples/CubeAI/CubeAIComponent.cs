@@ -1,5 +1,4 @@
-﻿using NodeUtilityAi;
-using NodeUtilityAi.Framework;
+﻿using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 
 namespace Examples.CubeAI {

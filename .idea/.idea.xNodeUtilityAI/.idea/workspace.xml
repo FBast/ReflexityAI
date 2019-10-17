@@ -2,79 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIBrain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankAndNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankAndNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankFlattenNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankFlattenNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankNotNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankNotNode.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankOrNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankOrNode.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIBrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIBrain.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentAmmoCountNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentAmmoCountNode.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentHpCountNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentHpCountNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/FireNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/FireNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/HealNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/HealNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxAmmoCountNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxAmmoCountNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxHpCountNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxHpCountNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/ReloadNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/ReloadNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIBrain.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIBrain.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIComponent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIComponent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/AiDebuggerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/AiDebuggerEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/UtilityCurves.curves" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/UtilityCurves.curves" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIAction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIOption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIOption.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/ActionNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/ActionNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/CollectionEntryNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/CollectionEntryNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/DataActionNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/DataActionNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/DataEntryNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/DataEntryNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/EntryNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/EntryNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryAccessNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryAccessNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryCheckNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryCheckNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryClearNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryClearNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MiddleNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MiddleNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/OptionNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/OptionNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankAndNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankAndNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankFlattenNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankFlattenNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankNotNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankNotNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankOrNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankOrNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleActionNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleActionNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleEntryNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleEntryNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/UtilityFunctionNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/UtilityFunctionNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/UtilityInverterNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/UtilityInverterNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/ValueFilterNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/ValueFilterNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/ActionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/ActionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/CollectionEntryNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/CollectionEntryNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataActionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataActionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataEntryNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataEntryNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/EntryNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/EntryNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/MiddleNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/MiddleNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleActionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleActionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleEntryNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleEntryNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/AiDebuggerEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/AiDebuggerEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/UtilityCurves.curves" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/UtilityCurves.curves.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIAction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIAction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIBrain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIBrain.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIOption.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIOption.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AbstractAIComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AbstractAIComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/TaggedData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/TaggedData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/OptionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/OptionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryAccessNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryAccessNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryCheckNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryClearNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryClearNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankAndNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankAndNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankFlattenNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankFlattenNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankNotNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankNotNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankOrNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankOrNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorReflection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorReflection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorReflection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorReflection.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorResources.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorResources.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeGraphTemplate.cs.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeGraphTemplate.cs.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_dot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_dot.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_dot_outer.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_dot_outer.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node_highlight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node_highlight.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node_workfile.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node_workfile.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs.meta" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,39 +114,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentHpCountNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryClearNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxAmmoCountNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentAmmoCountNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/ReloadNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/FireNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIOption.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/TaggedData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIData.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AbstractAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIBrain.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/CollectionEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/AiDebuggerEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankAndNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/MiddleNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/EntryNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleActionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/HealNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/OptionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxHpCountNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryAccessNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -130,7 +135,6 @@
         <option value="$PROJECT_DIR$/Assets/UtilityAI/AbstractAiComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/OptionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentAmmoCountNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentHpCountNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/FireNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/HealNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxAmmoCountNode.cs" />
@@ -175,6 +179,7 @@
         <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilitNode.cs" />
         <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentHpCountNode.cs" />
       </list>
     </option>
   </component>
@@ -252,7 +257,7 @@
       <workItem from="1571237773045" duration="202000" />
       <workItem from="1571238033365" duration="293000" />
       <workItem from="1571256671462" duration="1966000" />
-      <workItem from="1571308785233" duration="1232000" />
+      <workItem from="1571308785233" duration="1845000" />
     </task>
     <servers />
   </component>

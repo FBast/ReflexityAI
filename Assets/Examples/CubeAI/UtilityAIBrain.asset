@@ -20,7 +20,7 @@ MonoBehaviour:
     values:
     - _fieldName: LinkedOption
       _node: {fileID: -8328577186847297002}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -28,6 +28,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   LinkedOption: {fileID: 0}
   Order: 0
@@ -55,11 +56,12 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: -4279659965594252076}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.CollectionEntryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+        Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Utilities
       _node: {fileID: -4279659965594252076}
@@ -71,6 +73,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Multiplier
       _node: {fileID: -4279659965594252076}
@@ -79,6 +82,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Bonus
       _node: {fileID: -4279659965594252076}
@@ -87,10 +91,11 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: -4279659965594252076}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -98,6 +103,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   Collection: {fileID: 0}
   Description: Reload
@@ -134,6 +140,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Value: 0
 --- !u!114 &-2847192676517171213
@@ -164,6 +171,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Value: 0
 --- !u!114 &-2743653046011671476
@@ -186,7 +194,7 @@ MonoBehaviour:
     values:
     - _fieldName: LinkedOption
       _node: {fileID: -2743653046011671476}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -194,6 +202,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   LinkedOption: {fileID: 0}
   Order: 0
@@ -225,6 +234,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Value: 0
 --- !u!114 &11400000
@@ -284,6 +294,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Value: 0
 --- !u!114 &2252001372574295656
@@ -310,11 +321,12 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: 2252001372574295656}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.CollectionEntryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+        Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Utilities
       _node: {fileID: 2252001372574295656}
@@ -326,6 +338,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Multiplier
       _node: {fileID: 2252001372574295656}
@@ -334,6 +347,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Bonus
       _node: {fileID: 2252001372574295656}
@@ -342,10 +356,11 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: 2252001372574295656}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -353,6 +368,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   Collection: {fileID: 0}
   Description: Heal
@@ -389,6 +405,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: MaxX
       _node: {fileID: 2804958587180154056}
@@ -400,6 +417,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: X
       _node: {fileID: 2804958587180154056}
@@ -411,6 +429,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: UtilityY
       _node: {fileID: 2804958587180154056}
@@ -422,6 +441,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   MinX: 0
   X: 0
@@ -450,7 +470,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.9550135
+  UtilityY: 0.5
 --- !u!114 &3033678687618763116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +499,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: MaxX
       _node: {fileID: 3033678687618763116}
@@ -490,6 +511,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: X
       _node: {fileID: 3033678687618763116}
@@ -501,6 +523,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: UtilityY
       _node: {fileID: 3033678687618763116}
@@ -512,6 +535,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   MinX: 0
   X: 0
@@ -540,7 +564,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 1.0003611
+  UtilityY: 0.5000471
 --- !u!114 &3306926615521682196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,6 +593,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Value: 0
 --- !u!114 &4572446815643585470
@@ -638,6 +663,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: MaxX
       _node: {fileID: 6061042253593071775}
@@ -649,6 +675,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: X
       _node: {fileID: 6061042253593071775}
@@ -660,6 +687,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: UtilityY
       _node: {fileID: 6061042253593071775}
@@ -671,6 +699,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   MinX: 0
   X: 0
@@ -699,7 +728,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 1
+  UtilityY: 0.70943046
 --- !u!114 &8273592239287899923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,6 +835,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   Value: 0
 --- !u!114 &8779490541509514164
@@ -828,7 +858,7 @@ MonoBehaviour:
     values:
     - _fieldName: LinkedOption
       _node: {fileID: 8779490541509514164}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -836,6 +866,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
   LinkedOption: {fileID: 0}
   Order: 0
@@ -863,11 +894,12 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: 8886839197104446014}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.CollectionEntryNode, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+        Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
       _connectionType: 1
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Utilities
       _node: {fileID: 8886839197104446014}
@@ -879,6 +911,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Multiplier
       _node: {fileID: 8886839197104446014}
@@ -887,6 +920,7 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Bonus
       _node: {fileID: 8886839197104446014}
@@ -895,10 +929,11 @@ MonoBehaviour:
       connections: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: 8886839197104446014}
-      _typeQualifiedName: NodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -906,6 +941,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 0
+      _typeConstraint: 0
       _dynamic: 0
   Collection: {fileID: 0}
   Description: 'Attack
