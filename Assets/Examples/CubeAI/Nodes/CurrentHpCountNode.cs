@@ -1,5 +1,6 @@
 ﻿using NodeUtilityAi;
-using NodeUtilityAi.Nodes;
+using NodeUtilityAi.AbstractNodes;
+using NodeUtilityAi.Framework;
 
 namespace Examples.CubeAI.Nodes {
     public class CurrentHpCountNode : SimpleEntryNode {

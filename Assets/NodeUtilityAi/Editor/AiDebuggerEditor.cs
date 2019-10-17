@@ -10,8 +10,8 @@ namespace Plugins.NodeUtilityAi.Editor {
     public class AiDebuggerEditor : EditorWindow {
         
         private GameObject _currentGameObject;
-        private Dictionary<AbstractAIBrain, List<AIOption>> _options = new Dictionary<AbstractAIBrain, List<AIOption>>();
-        private Dictionary<AbstractAIBrain, AIOption> _selectedOptions = new Dictionary<AbstractAIBrain, AIOption>();
+        private Dictionary<AIBrain, List<AIOption>> _options = new Dictionary<AIBrain, List<AIOption>>();
+        private Dictionary<AIBrain, AIOption> _selectedOptions = new Dictionary<AIBrain, AIOption>();
         private Gradient _weightGradiant;
         
         [MenuItem("Tool/AI Debugger")]
@@ -67,7 +67,7 @@ namespace Plugins.NodeUtilityAi.Editor {
                 float rowHeight = 20;
                 int i = 0;
                 EditorGUI.LabelField(new Rect(3, 3, position.width - 6, rowHeight), "Brain of " + _currentGameObject.name, labelGuiStyle);
-                foreach (KeyValuePair<AbstractAIBrain,List<AIOption>> valuePair in _options) {
+                foreach (KeyValuePair<AIBrain,List<AIOption>> valuePair in _options) {
                     float weightMax = valuePair.Value.Max(option => option.Weight);
                     float weightMin = valuePair.Value.Min(option => option.Weight);
                     EditorGUI.LabelField(new Rect(3 + i * (columnWidth + 6), 3 + rowHeight, columnWidth, rowHeight), valuePair.Key.name, labelGuiStyle);

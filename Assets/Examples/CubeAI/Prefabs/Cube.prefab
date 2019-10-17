@@ -210,9 +210,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeBetweenRefresh: 0.1
-  AlwaysPickBestChoice: 0
+  AlwaysPickBestChoice: 1
   UtilityAiBrains:
-  - {fileID: 11400000, guid: 2022725c256ecbd44a1ba5dcafde1e73, type: 2}
+  - {fileID: 11400000, guid: 940e163bbff552d459654f2dee74833c, type: 2}
   CubeEntity: {fileID: 0}
 --- !u!1 &3462655324143414681
 GameObject:

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using NodeUtilityAi.Nodes;
+using NodeUtilityAi.AbstractNodes;
 
 namespace NodeUtilityAi.Framework {
     public class AIAction {

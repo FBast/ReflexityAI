@@ -1,6 +1,6 @@
 ﻿using NodeUtilityAi;
+using NodeUtilityAi.AbstractNodes;
 using NodeUtilityAi.Framework;
-using NodeUtilityAi.Nodes;
 
 namespace Examples.CubeAI.Nodes {
     public class ReloadNode : SimpleActionNode {

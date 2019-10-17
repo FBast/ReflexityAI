@@ -1,7 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="" />
+    <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIBrain.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankAndNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankAndNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankFlattenNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankFlattenNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankNotNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankNotNode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankOrNode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankOrNode.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIBrain.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIBrain.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentAmmoCountNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentAmmoCountNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentHpCountNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentHpCountNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/FireNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/FireNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/HealNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/HealNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxAmmoCountNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxAmmoCountNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxHpCountNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxHpCountNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/ReloadNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/ReloadNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIBrain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIBrain.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/AiDebuggerEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/AiDebuggerEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/UtilityCurves.curves" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/UtilityCurves.curves" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIOption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIOption.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/ActionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/ActionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/CollectionEntryNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/CollectionEntryNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/DataActionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/DataActionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/DataEntryNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/DataEntryNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/EntryNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/EntryNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryAccessNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryAccessNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryCheckNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryCheckNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryClearNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MemoryClearNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MiddleNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/MiddleNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/OptionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/OptionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankAndNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankAndNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankFlattenNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankFlattenNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankNotNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankNotNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankOrNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/RankOrNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleActionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleActionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleEntryNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleEntryNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/UtilityFunctionNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/UtilityFunctionNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/UtilityInverterNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/UtilityInverterNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/ValueFilterNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/ValueFilterNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,51 +86,44 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentAmmoCountNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/FireNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Nodes/SimpleEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIBrain.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIBrain.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/HealNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentHpCountNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryClearNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxAmmoCountNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxHpCountNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/CurrentAmmoCountNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/ReloadNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/FireNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIOption.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/TaggedData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AbstractAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIBrain.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/CollectionEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/Editor/AiDebuggerEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/RankAndNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/MiddleNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/EntryNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleEntryNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/HealNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/OptionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Nodes/MaxHpCountNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryAccessNode.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/MultiEntryNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/MiddleNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/InverterNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/FilterNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/ExitNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/EntryNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Editor/UtilityAIGraphEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAIGraph.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/CubeEntity.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/Nodes/CurrentAmmoCountNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/Nodes/MaxAmmoCountNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/Nodes/CurrentHpCountNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/Nodes/MaxHpCountNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/Nodes/HealNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/Nodes/FireNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/Nodes/ReloadNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/UtilityAIGraph.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAiComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/UtilityAIBrain.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAlllIBrain.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAlBrain.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAIBrain.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/AbstractAiComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/CubeAI/CubeAIComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/UtilityNode.cs" />
         <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/RankWeightNode.cs" />
         <option value="$PROJECT_DIR$/Assets/UtilityAI/Nodes/ActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/UtilityAI/AbstractAIBrain.cs" />
@@ -83,6 +150,31 @@
         <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAIComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractAIBrain.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AIBrain.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/Framework/AbstractAIComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/OptionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityFunctionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityInverterNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryAccessNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MemoryNodes/MemoryClearNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/AndNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/FilterNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/FlattenNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/NotNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/OrNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/ActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/CollectionEntryNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/DataEntryNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/EntryNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/MiddleNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/AbstractNodes/SimpleEntryNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/OptionalNodes/EntryFilterNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilitNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/NodeUtilityAi/MainNodes/UtilityNode.cs" />
       </list>
     </option>
   </component>
@@ -94,8 +186,11 @@
     </option>
   </component>
   <component name="ProjectId" id="1RWEJmSyusTbhnc9P2sgVXGS6WW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
@@ -156,6 +251,8 @@
       <workItem from="1569774386255" duration="260000" />
       <workItem from="1571237773045" duration="202000" />
       <workItem from="1571238033365" duration="293000" />
+      <workItem from="1571256671462" duration="1966000" />
+      <workItem from="1571308785233" duration="1232000" />
     </task>
     <servers />
   </component>
@@ -178,6 +275,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
   <component name="WindowStateProjectService">
