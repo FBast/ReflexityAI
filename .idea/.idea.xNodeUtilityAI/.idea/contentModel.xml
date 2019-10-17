@@ -15,14 +15,20 @@
             <e p="Nodes" t="Include">
               <e p="CurrentAmmoCountNode.cs" t="Include" />
               <e p="CurrentHpCountNode.cs" t="Include" />
+              <e p="DataCurrentHpCountNode.cs" t="Include" />
+              <e p="DataMaxHpCountNode.cs" t="Include" />
               <e p="FireNode.cs" t="Include" />
+              <e p="HasTarget.cs" t="Include" />
               <e p="HealNode.cs" t="Include" />
               <e p="MaxAmmoCountNode.cs" t="Include" />
               <e p="MaxHpCountNode.cs" t="Include" />
+              <e p="OtherCubesNode.cs" t="Include" />
               <e p="ReloadNode.cs" t="Include" />
+              <e p="SetTarget.cs" t="Include" />
             </e>
           </e>
         </e>
+        <e p="GameManager.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="xNode" t="Include">
             <e p="Scripts" t="Include">
@@ -91,11 +97,11 @@
               <e p="MemoryClearNode.cs" t="Include" />
             </e>
             <e p="OptionalNodes" t="Include">
+              <e p="EntryFilterNode.cs" t="Include" />
               <e p="RankAndNode.cs" t="Include" />
               <e p="RankFlattenNode.cs" t="Include" />
               <e p="RankNotNode.cs" t="Include" />
               <e p="RankOrNode.cs" t="Include" />
-              <e p="ValueFilterNode.cs" t="Include" />
             </e>
           </e>
         </e>

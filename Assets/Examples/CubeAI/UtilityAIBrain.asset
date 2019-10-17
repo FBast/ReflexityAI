@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Reload Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 408, y: 24}
+  position: {x: -248, y: 104}
   ports:
     keys:
     - LinkedOption
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: Option Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 968, y: -232}
+  position: {x: 312, y: -152}
   ports:
     keys:
     - Collection
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: Current Ammo Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -680}
+  position: {x: -712, y: -600}
   ports:
     keys:
     - Value
@@ -143,6 +143,95 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Value: 0
+--- !u!114 &-3149500813272203088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df6ea1fc9eb84a56b1c889ef5cbd2acf, type: 3}
+  m_Name: Option
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 312, y: -1304}
+  ports:
+    keys:
+    - Collection
+    - Utilities
+    - Multiplier
+    - Bonus
+    - Actions
+    values:
+    - _fieldName: Collection
+      _node: {fileID: -3149500813272203088}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+        Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: LinkedOption
+        node: {fileID: 7948388030205020400}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Utilities
+      _node: {fileID: -3149500813272203088}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: UtilityY
+        node: {fileID: 4504020337149638878}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Multiplier
+      _node: {fileID: -3149500813272203088}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: 2477605427636061047}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Bonus
+      _node: {fileID: -3149500813272203088}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: RankOut
+        node: {fileID: 2434561184113994289}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Actions
+      _node: {fileID: -3149500813272203088}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: LinkedOption
+        node: {fileID: 650509650732122840}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Collection: {fileID: 0}
+  Description: 'Target '
+  Utilities: 1
+  UtilityMerge: 0
+  Multiplier: 1
+  Bonus: 0
+  Actions: {fileID: 0}
 --- !u!114 &-2847192676517171213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +245,7 @@ MonoBehaviour:
   m_Name: Current Ammo Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -216}
+  position: {x: -712, y: -120}
   ports:
     keys:
     - Value
@@ -187,7 +276,7 @@ MonoBehaviour:
   m_Name: Fire Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 408, y: -424}
+  position: {x: -248, y: -344}
   ports:
     keys:
     - LinkedOption
@@ -206,6 +295,53 @@ MonoBehaviour:
       _dynamic: 0
   LinkedOption: {fileID: 0}
   Order: 0
+--- !u!114 &-1866921937441271112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fed5bb1768479d921610c55dd04871, type: 3}
+  m_Name: Data Max Hp Count
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -664, y: -1224}
+  ports:
+    keys:
+    - Data
+    - Value
+    values:
+    - _fieldName: Data
+      _node: {fileID: -1866921937441271112}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: DataOut
+        node: {fileID: 7948388030205020400}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Value
+      _node: {fileID: -1866921937441271112}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: MaxX
+        node: {fileID: 4504020337149638878}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Value: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
 --- !u!114 &-1492904181709445352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,7 +355,7 @@ MonoBehaviour:
   m_Name: Max Ammo Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -152}
+  position: {x: -712, y: -56}
   ports:
     keys:
     - Value
@@ -231,6 +367,84 @@ MonoBehaviour:
       connections:
       - fieldName: MaxX
         node: {fileID: 3033678687618763116}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Value: 0
+--- !u!114 &-1393080565401486127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a2c5dde71e49dc91dadd3b6b75b379, type: 3}
+  m_Name: Data Current Hp Count
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -664, y: -1304}
+  ports:
+    keys:
+    - Data
+    - Value
+    values:
+    - _fieldName: Data
+      _node: {fileID: -1393080565401486127}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: DataOut
+        node: {fileID: 7948388030205020400}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Value
+      _node: {fileID: -1393080565401486127}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: X
+        node: {fileID: 4504020337149638878}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Value: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
+--- !u!114 &-1187499331445944224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdcc653c5a4418bbc2167e42cdfb6bf, type: 3}
+  m_Name: Has Target
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -664, y: -984}
+  ports:
+    keys:
+    - Value
+    values:
+    - _fieldName: Value
+      _node: {fileID: -1187499331445944224}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: RankIn
+        node: {fileID: 2434561184113994289}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
@@ -265,6 +479,15 @@ MonoBehaviour:
   - {fileID: 6061042253593071775}
   - {fileID: -4279659965594252076}
   - {fileID: 2252001372574295656}
+  - {fileID: -3149500813272203088}
+  - {fileID: 4504020337149638878}
+  - {fileID: 7948388030205020400}
+  - {fileID: -1393080565401486127}
+  - {fileID: -1866921937441271112}
+  - {fileID: 650509650732122840}
+  - {fileID: -1187499331445944224}
+  - {fileID: 2434561184113994289}
+  - {fileID: 2477605427636061047}
   - {fileID: 0}
 --- !u!114 &178059516657548659
 MonoBehaviour:
@@ -279,7 +502,7 @@ MonoBehaviour:
   m_Name: Max Ammo Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -616}
+  position: {x: -712, y: -536}
   ports:
     keys:
     - Value
@@ -297,6 +520,54 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Value: 0
+--- !u!114 &650509650732122840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9040fff80e7d46a99db3af728acb44ec, type: 3}
+  m_Name: Set Target
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -232, y: -792}
+  ports:
+    keys:
+    - Data
+    - LinkedOption
+    values:
+    - _fieldName: Data
+      _node: {fileID: 650509650732122840}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: DataOut
+        node: {fileID: 7948388030205020400}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: LinkedOption
+      _node: {fileID: 650509650732122840}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Actions
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  LinkedOption: {fileID: 0}
+  Order: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
 --- !u!114 &2252001372574295656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,7 +581,7 @@ MonoBehaviour:
   m_Name: Option Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 968, y: 264}
+  position: {x: 312, y: 360}
   ports:
     keys:
     - Collection
@@ -377,6 +648,98 @@ MonoBehaviour:
   Multiplier: 1
   Bonus: 0
   Actions: {fileID: 0}
+--- !u!114 &2434561184113994289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d27d03340e6496f98875d5aa19ddce3, type: 3}
+  m_Name: Rank Not
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -136, y: -1000}
+  ports:
+    keys:
+    - RankIn
+    - RankOut
+    values:
+    - _fieldName: RankIn
+      _node: {fileID: 2434561184113994289}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: -1187499331445944224}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: RankOut
+      _node: {fileID: 2434561184113994289}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Bonus
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  RankIn: 0
+  RankOut: 0
+--- !u!114 &2477605427636061047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Data Is Alive
+  m_EditorClassIdentifier: Assembly-CSharp:Examples.CubeAI.Nodes:DataIsAlive
+  graph: {fileID: 11400000}
+  position: {x: -664, y: -1096}
+  ports:
+    keys:
+    - Data
+    - Value
+    values:
+    - _fieldName: Data
+      _node: {fileID: 2477605427636061047}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: DataOut
+        node: {fileID: 7948388030205020400}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Value
+      _node: {fileID: 2477605427636061047}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Multiplier
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  Value: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
 --- !u!114 &2804958587180154056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +753,7 @@ MonoBehaviour:
   m_Name: Utility Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 568, y: -680}
+  position: {x: -88, y: -632}
   ports:
     keys:
     - MinX
@@ -470,7 +833,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.5
+  UtilityY: 0.784
 --- !u!114 &3033678687618763116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,7 +847,7 @@ MonoBehaviour:
   m_Name: Utility Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 568, y: -216}
+  position: {x: -88, y: -120}
   ports:
     keys:
     - MinX
@@ -564,7 +927,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.5000471
+  UtilityY: 0.2999215
 --- !u!114 &3306926615521682196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,7 +941,7 @@ MonoBehaviour:
   m_Name: Current Hp Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -24, y: 232}
+  position: {x: -680, y: 328}
   ports:
     keys:
     - Value
@@ -596,6 +959,100 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Value: 0
+--- !u!114 &4504020337149638878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bcf42891e53c64fadf5b41367caef3, type: 3}
+  m_Name: Utility
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -120, y: -1288}
+  ports:
+    keys:
+    - MinX
+    - X
+    - MaxX
+    - UtilityY
+    values:
+    - _fieldName: MinX
+      _node: {fileID: 4504020337149638878}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: X
+      _node: {fileID: 4504020337149638878}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: -1393080565401486127}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: MaxX
+      _node: {fileID: 4504020337149638878}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: -1866921937441271112}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: UtilityY
+      _node: {fileID: 4504020337149638878}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Utilities
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  MinX: 0
+  X: 0
+  MaxX: 0
+  Function:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.0003611
+      inSlope: -1.000628
+      outSlope: -1.000628
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: -0.00026696362
+      inSlope: -1.000628
+      outSlope: -1.000628
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  UtilityY: 1.0003611
 --- !u!114 &6061042253593071775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,7 +1066,7 @@ MonoBehaviour:
   m_Name: Utility Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 568, y: 248}
+  position: {x: -88, y: 328}
   ports:
     keys:
     - MinX
@@ -689,7 +1146,65 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.70943046
+  UtilityY: 0.46463746
+--- !u!114 &7948388030205020400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 366cea4ec8da4d108cc997adbc9afa17, type: 3}
+  m_Name: Other Cubes
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1208, y: -1496}
+  ports:
+    keys:
+    - LinkedOption
+    - DataOut
+    values:
+    - _fieldName: LinkedOption
+      _node: {fileID: 7948388030205020400}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+        Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Collection
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: DataOut
+      _node: {fileID: 7948388030205020400}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Data
+        node: {fileID: -1393080565401486127}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: -1866921937441271112}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: 650509650732122840}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: 2477605427636061047}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  LinkedOption: {fileID: 0}
+  DataOut:
+    DataTag: 
+    Data: {fileID: 0}
+  DataTag: Data
+  Index: 0
 --- !u!114 &8273592239287899923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,7 +1296,7 @@ MonoBehaviour:
   m_Name: Max Hp Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -24, y: 296}
+  position: {x: -680, y: 392}
   ports:
     keys:
     - Value
@@ -812,7 +1327,7 @@ MonoBehaviour:
   m_Name: Heal Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 408, y: 504}
+  position: {x: -248, y: 600}
   ports:
     keys:
     - LinkedOption
@@ -844,7 +1359,7 @@ MonoBehaviour:
   m_Name: Option Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 968, y: -744}
+  position: {x: 312, y: -648}
   ports:
     keys:
     - Collection
@@ -905,9 +1420,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Collection: {fileID: 0}
-  Description: 'Attack
-
-'
+  Description: Attack
   Utilities: 1
   UtilityMerge: 0
   Multiplier: 1

@@ -9,16 +9,16 @@ namespace Examples.CubeAI {
         public Text Stats;
         public bool IsDead; 
         
-        [Header("Health")]
+        [Header("Parameters")]
         public int MaxHp;
         public int CurrentHp;
-
-        [Header("Weapon")] 
         public Transform CanonOutTransform;
         public GameObject ProjectilePrefab;
         public int ProjectilePower;
         public int MaxAmmo;
         public int CurrentAmmo;
+        public int TargetSpeed;
+        public GameObject Target;
 
         private Color _startingColor;
         
@@ -27,15 +27,16 @@ namespace Examples.CubeAI {
         }
 
         private void Update() {
-            if (IsDead) {
-                Stats.text = "DEAD !";
-                GetComponent<CubeAIComponent>().enabled = false;
+            if (IsDead) return;
+            if (Target) {
+                Vector3 newDir = Vector3.RotateTowards(transform.forward, Target.transform.position - transform.position, TargetSpeed * Time.deltaTime, 0.0f);
+                transform.rotation = Quaternion.LookRotation(newDir);
+                transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
             }
-            else
-                Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
+            Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
         }
 
-        public void FireForward() {
+        public void Fire() {
             if (CurrentAmmo == 0)
                 throw new Exception("No more ammo, the AI should not fire !");
             GameObject instantiate = Instantiate(ProjectilePrefab, CanonOutTransform.position, Quaternion.identity);
@@ -69,8 +70,11 @@ namespace Examples.CubeAI {
         private void OnTriggerEnter(Collider other) {
             MeshRenderer.material.color = Color.red;
             CurrentHp--;
-            if (CurrentHp <= 0)
+            if (CurrentHp <= 0) {
                 IsDead = true;
+                Stats.text = "DEAD !";
+                GetComponent<CubeAIComponent>().enabled = false;
+            }
         }
 
         private void OnTriggerExit(Collider other) {
