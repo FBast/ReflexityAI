@@ -5,7 +5,7 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.OptionalNodes {
-    public class ValueFilterNode : MiddleNode {
+    public class EntryFilterNode : MiddleNode {
 
         public enum FilterType {
             Sum,

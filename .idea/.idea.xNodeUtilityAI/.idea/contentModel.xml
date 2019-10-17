@@ -91,11 +91,11 @@
               <e p="MemoryClearNode.cs" t="Include" />
             </e>
             <e p="OptionalNodes" t="Include">
-              <e p="EntryFilterNode.cs" t="Include" />
               <e p="RankAndNode.cs" t="Include" />
               <e p="RankFlattenNode.cs" t="Include" />
               <e p="RankNotNode.cs" t="Include" />
               <e p="RankOrNode.cs" t="Include" />
+              <e p="ValueFilterNode.cs" t="Include" />
             </e>
           </e>
         </e>

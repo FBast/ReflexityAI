@@ -596,45 +596,6 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Value: 0
---- !u!114 &4572446815643585470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 315321ed814744328cd1ac4f49a73dbc, type: 3}
-  m_Name: Value Filter Node
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -19.50988, y: 7.9199033}
-  ports:
-    keys:
-    - ValuesIn
-    - ValueOut
-    values:
-    - _fieldName: ValuesIn
-      _node: {fileID: 4572446815643585470}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _dynamic: 0
-    - _fieldName: ValueOut
-      _node: {fileID: 4572446815643585470}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _dynamic: 0
-  Filter: 0
-  Negate: 0
-  ValuesIn: 0
-  ValueOut: 0
 --- !u!114 &6061042253593071775
 MonoBehaviour:
   m_ObjectHideFlags: 0
