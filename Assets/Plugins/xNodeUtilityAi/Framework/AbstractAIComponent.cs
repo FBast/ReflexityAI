@@ -12,10 +12,10 @@ using Random = UnityEngine.Random;
 namespace Plugins.xNodeUtilityAi.Framework {
     public class AbstractAIComponent : MonoBehaviour {
         
+        public List<AIBrain> UtilityAiBrains;
         [Range(0.1f, 5f)] public float TimeBetweenRefresh = 0.5f;
         public bool AlwaysPickBestChoice;
-        public List<AIBrain> UtilityAiBrains;
-
+        public BrainType BrainType;
         public readonly Dictionary<AIBrain, List<AIOption>> Options = new Dictionary<AIBrain, List<AIOption>>();
         public Dictionary<AIBrain, AIOption> SelectedOptions = new Dictionary<AIBrain, AIOption>();
         
@@ -112,5 +112,10 @@ namespace Plugins.xNodeUtilityAi.Framework {
             return _memory.Remove(dataTag);
         }
         
+    }
+
+    public enum BrainType {
+        Cooperative,
+        Competitive
     }
 }

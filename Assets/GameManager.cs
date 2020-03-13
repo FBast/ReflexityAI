@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Examples.CubeAI;
+using Examples.CubeAI.Scripts;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {

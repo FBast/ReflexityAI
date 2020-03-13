@@ -2,7 +2,7 @@ using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 
-namespace Examples.CubeAI.Nodes {
+namespace Examples.CubeAI.Scripts.DataActions {
     public class SetTarget : DataActionNode {
 
         public override void Execute(AbstractAIComponent context, AIData aiData) {

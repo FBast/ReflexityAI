@@ -23,8 +23,8 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             }
             return UtilityY;
         }
-        
-        protected float ScaleX(int MinValue, int MaxValue, int x) {
+
+        private float ScaleX(int MinValue, int MaxValue, int x) {
             if (MinValue - MaxValue == 0) return 0;
             if (x < MinValue) x = MinValue;
             if (x > MaxValue) x = MaxValue;
@@ -32,5 +32,4 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
         
     }
-
 }

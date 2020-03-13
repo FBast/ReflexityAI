@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Examples.CubeAI {
+namespace Examples.CubeAI.Scripts {
     public class CubeEntity : MonoBehaviour {
 
         public MeshRenderer MeshRenderer;
@@ -57,14 +57,11 @@ namespace Examples.CubeAI {
             CurrentHp += 2;
             if (CurrentHp > MaxHp) 
                 CurrentHp = MaxHp;
-            Invoke("RollBackColor", 1f);
+            Invoke(nameof(RollBackColor), 1f);
         }
 
         private void RollBackColor() {
-            if (IsDead)
-                MeshRenderer.material.color = Color.black;
-            else
-                MeshRenderer.material.color = _startingColor;
+            MeshRenderer.material.color = IsDead ? Color.black : _startingColor;
         }
         
         private void OnTriggerEnter(Collider other) {

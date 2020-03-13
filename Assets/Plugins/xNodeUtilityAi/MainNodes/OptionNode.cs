@@ -65,6 +65,8 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             else {
                 utility = Utilities;
             }
+            // Utility clamped to 0.01 to avoid 0 division
+            utility = Mathf.Clamp(utility, 0.01f, 1f);
             NodePort bonusPort = GetInputPort("Bonus");
             int bonus = bonusPort.IsConnected ? bonusPort.GetInputValues<int>().Sum() : Bonus;
             NodePort multiplierPort = GetInputPort("Multiplier");

@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Dizy\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Dizy\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_xNodeUtilityAI.-435112455.00" t="ExcludeRecursive" />
-    <e p="D:\Local Repository\xNodeUtilityAI" t="IncludeRecursive">
+    <e p="C:\Users\frederic.bast\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\frederic.bast\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_xNodeUtilityAI.1102029970.00" t="ExcludeRecursive" />
+    <e p="U:\UnityProjects\xNodeUtilityAI" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Examples" t="Include">
           <e p="CubeAI" t="Include">
-            <e p="CubeAiComponent.cs" t="Include" />
-            <e p="CubeEntity.cs" t="Include" />
-            <e p="Nodes" t="Include">
-              <e p="CurrentAmmoCountNode.cs" t="Include" />
-              <e p="CurrentHpCountNode.cs" t="Include" />
-              <e p="DataCurrentHpCountNode.cs" t="Include" />
-              <e p="DataMaxHpCountNode.cs" t="Include" />
-              <e p="FireNode.cs" t="Include" />
-              <e p="HasTarget.cs" t="Include" />
-              <e p="HealNode.cs" t="Include" />
-              <e p="MaxAmmoCountNode.cs" t="Include" />
-              <e p="MaxHpCountNode.cs" t="Include" />
-              <e p="OtherCubesNode.cs" t="Include" />
-              <e p="ReloadNode.cs" t="Include" />
-              <e p="SetTarget.cs" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="CollectionEntries" t="Include">
+                <e p="OtherCubesNode.cs" t="Include" />
+              </e>
+              <e p="CubeAiComponent.cs" t="Include" />
+              <e p="CubeEntity.cs" t="Include" />
+              <e p="DataActions" t="Include">
+                <e p="SetTarget.cs" t="Include" />
+              </e>
+              <e p="DataEntries" t="Include">
+                <e p="DataIsDead.cs" t="Include" />
+              </e>
+              <e p="SimpleActions" t="Include">
+                <e p="FireNode.cs" t="Include" />
+                <e p="HealNode.cs" t="Include" />
+                <e p="ReloadNode.cs" t="Include" />
+              </e>
+              <e p="SimpleEntries" t="Include">
+                <e p="CurrentAmmoCountNode.cs" t="Include" />
+                <e p="CurrentHpCountNode.cs" t="Include" />
+                <e p="DataCurrentHpCountNode.cs" t="Include" />
+                <e p="DataMaxHpCountNode.cs" t="Include" />
+                <e p="HasTarget.cs" t="Include" />
+                <e p="IsFullLife.cs" t="Include" />
+                <e p="MaxAmmoCountNode.cs" t="Include" />
+                <e p="MaxHpCountNode.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>

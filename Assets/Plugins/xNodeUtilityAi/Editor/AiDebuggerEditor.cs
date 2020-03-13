@@ -34,7 +34,7 @@ namespace Plugins.xNodeUtilityAi.Editor {
 
         private void Update() {
             // New selection control
-            if (Selection.activeGameObject != _currentGameObject) {
+            if (Selection.activeGameObject != _currentGameObject || _currentGameObject == null) {
                 // Component control
                 if (Selection.activeGameObject == null || Selection.activeGameObject.GetComponent<AbstractAIComponent>() == null) return;
                 // Update debug data

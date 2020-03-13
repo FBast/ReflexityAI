@@ -20,6 +20,7 @@
     </explicitIncludes>
     <explicitExcludes>
       <Path>.git</Path>
+      <Path>.github</Path>
       <Path>.idea</Path>
       <Path>.vs</Path>
       <Path>Library</Path>
