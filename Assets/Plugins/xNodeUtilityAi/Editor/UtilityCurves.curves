@@ -88,12 +88,12 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - m_Name: Reverse Smoothstep
+  - m_Name: 
     m_Curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: -0.0015335083
+        time: 0
         value: 1
         inSlope: -0.0051165414
         outSlope: -0.0051165414
@@ -103,7 +103,7 @@ MonoBehaviour:
         outWeight: 0.2983729
       - serializedVersion: 3
         time: 1
-        value: -0.0048941374
+        value: 0
         inSlope: -0.012732303
         outSlope: -0.012732303
         tangentMode: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - m_Name: Logit
+  - m_Name: 
     m_Curve:
       serializedVersion: 2
       m_Curve:
@@ -178,7 +178,7 @@ MonoBehaviour:
         outWeight: 0.0018083183
       - serializedVersion: 3
         time: 1
-        value: 0.9968643
+        value: 1
         inSlope: 147.35034
         outSlope: 147.35034
         tangentMode: 0
