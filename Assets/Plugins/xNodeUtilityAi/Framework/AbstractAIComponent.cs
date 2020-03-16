@@ -12,9 +12,14 @@ using Random = UnityEngine.Random;
 namespace Plugins.xNodeUtilityAi.Framework {
     public class AbstractAIComponent : MonoBehaviour {
         
+        [Tooltip("Brains used by the AI")]
         public List<AIBrain> UtilityAiBrains;
+        [Tooltip("Time between each AI evaluations")]
         [Range(0.1f, 5f)] public float TimeBetweenRefresh = 0.5f;
+        [Tooltip("No randomisation between best options")]
         public bool AlwaysPickBestChoice;
+        [Tooltip("Cooperative : One option by brain is executed\n" +
+                 "Competitive : One option for all brain is executed")]
         public BrainType BrainType;
         public readonly Dictionary<AIBrain, List<AIOption>> Options = new Dictionary<AIBrain, List<AIOption>>();
         public Dictionary<AIBrain, AIOption> SelectedOptions = new Dictionary<AIBrain, AIOption>();

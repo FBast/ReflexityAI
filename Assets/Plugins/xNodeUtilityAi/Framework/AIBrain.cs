@@ -15,6 +15,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
             return entryNodes;
         }
-        
+
     }
 }

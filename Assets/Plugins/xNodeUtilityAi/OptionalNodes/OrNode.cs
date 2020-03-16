@@ -1,19 +1,20 @@
-﻿using Plugins.xNodeUtilityAi.AbstractNodes;
+﻿using System.Linq;
+using Plugins.xNodeUtilityAi.AbstractNodes;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.OptionalNodes {
-    public class RankNotNode : MiddleNode {
+    public class OrNode : MiddleNode {
         
-        [Input(ShowBackingValue.Never, ConnectionType.Override)] public int RankIn;
+        [Input(ShowBackingValue.Never)] public int RankIn;
         [Output(connectionType: ConnectionType.Override)] public int RankOut;
-
+        
         public override object GetValue(NodePort port) {
             if (port.fieldName == "RankOut") {
-                return GetInputValue<int>("RankIn") == 0 ? 1 : 0;
+                int[] values = GetInputValues<int>("RankIn");
+                return values.Max();
             }
             return null;
         }
         
     }
-
 }

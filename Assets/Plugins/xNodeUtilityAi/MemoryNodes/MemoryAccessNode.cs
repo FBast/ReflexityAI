@@ -5,7 +5,7 @@ using XNode;
 using Object = UnityEngine.Object;
 
 namespace Plugins.xNodeUtilityAi.MemoryNodes {
-    public class MemoryAccessNode : ActionNode {
+    public class MemoryAccessNode : SimpleActionNode {
 
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public TaggedData Data;
         [Output] public TaggedData LoadData;

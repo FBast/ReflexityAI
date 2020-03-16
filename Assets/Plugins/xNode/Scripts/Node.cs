@@ -45,10 +45,12 @@ namespace XNode {
         public enum TypeConstraint {
             /// <summary> Allow all types of input</summary>
             None,
-            /// <summary> Allow similar and inherited types </summary>
+            /// <summary> Allow connections where input value type is assignable from output value type (eg. ScriptableObject --> Object)</summary>
             Inherited,
             /// <summary> Allow only similar types </summary>
             Strict,
+            /// <summary> Allow connections where output value type is assignable from input value type (eg. Object --> ScriptableObject)</summary>
+            InheritedInverse,
         }
 
 #region Obsolete
@@ -63,7 +65,7 @@ namespace XNode {
 
         [Obsolete("Use AddDynamicInput instead")]
         public NodePort AddInstanceInput(Type type, Node.ConnectionType connectionType = Node.ConnectionType.Multiple, Node.TypeConstraint typeConstraint = TypeConstraint.None, string fieldName = null) {
-            return AddInstanceInput(type, connectionType, typeConstraint, fieldName);
+            return AddDynamicInput(type, connectionType, typeConstraint, fieldName);
         }
 
         [Obsolete("Use AddDynamicOutput instead")]
@@ -117,12 +119,12 @@ namespace XNode {
         protected void OnEnable() {
             if (graphHotfix != null) graph = graphHotfix;
             graphHotfix = null;
-            UpdateStaticPorts();
+            UpdatePorts();
             Init();
         }
 
-        /// <summary> Update static ports to reflect class fields. This happens automatically on enable. </summary>
-        public void UpdateStaticPorts() {
+        /// <summary> Update static ports and dynamic ports managed by DynamicPortLists to reflect class fields. This happens automatically on enable or on redrawing a dynamic port list. </summary>
+        public void UpdatePorts() {
             NodeDataCache.UpdatePorts(this, ports);
         }
 
@@ -260,7 +262,7 @@ namespace XNode {
 
 #region Attributes
         /// <summary> Mark a serializable field as an input port. You can access this through <see cref="GetInputPort(string)"/> </summary>
-        [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
+        [AttributeUsage(AttributeTargets.Field)]
         public class InputAttribute : Attribute {
             public ShowBackingValue backingValue;
             public ConnectionType connectionType;
@@ -283,23 +285,33 @@ namespace XNode {
         }
 
         /// <summary> Mark a serializable field as an output port. You can access this through <see cref="GetOutputPort(string)"/> </summary>
-        [AttributeUsage(AttributeTargets.Field, AllowMultiple = true)]
+        [AttributeUsage(AttributeTargets.Field)]
         public class OutputAttribute : Attribute {
             public ShowBackingValue backingValue;
             public ConnectionType connectionType;
             [Obsolete("Use dynamicPortList instead")]
             public bool instancePortList { get { return dynamicPortList; } set { dynamicPortList = value; } }
             public bool dynamicPortList;
+            public TypeConstraint typeConstraint;
+
+            /// <summary> Mark a serializable field as an output port. You can access this through <see cref="GetOutputPort(string)"/> </summary>
+            /// <param name="backingValue">Should we display the backing value for this port as an editor field? </param>
+            /// <param name="connectionType">Should we allow multiple connections? </param>
+            /// <param name="typeConstraint">Constrains which input connections can be made from this port </param>
+            /// <param name="dynamicPortList">If true, will display a reorderable list of outputs instead of a single port. Will automatically add and display values for lists and arrays </param>
+            public OutputAttribute(ShowBackingValue backingValue = ShowBackingValue.Never, ConnectionType connectionType = ConnectionType.Multiple, TypeConstraint typeConstraint = TypeConstraint.None, bool dynamicPortList = false) {
+                this.backingValue = backingValue;
+                this.connectionType = connectionType;
+                this.dynamicPortList = dynamicPortList;
+                this.typeConstraint = typeConstraint;
+            }
 
             /// <summary> Mark a serializable field as an output port. You can access this through <see cref="GetOutputPort(string)"/> </summary>
             /// <param name="backingValue">Should we display the backing value for this port as an editor field? </param>
             /// <param name="connectionType">Should we allow multiple connections? </param>
             /// <param name="dynamicPortList">If true, will display a reorderable list of outputs instead of a single port. Will automatically add and display values for lists and arrays </param>
-            public OutputAttribute(ShowBackingValue backingValue = ShowBackingValue.Never, ConnectionType connectionType = ConnectionType.Multiple, bool dynamicPortList = false) {
-                this.backingValue = backingValue;
-                this.connectionType = connectionType;
-                this.dynamicPortList = dynamicPortList;
-            }
+            [Obsolete("Use constructor with TypeConstraint")]
+            public OutputAttribute(ShowBackingValue backingValue, ConnectionType connectionType, bool dynamicPortList) : this(backingValue, connectionType, TypeConstraint.None, dynamicPortList) { }
         }
 
         [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]

@@ -17,13 +17,25 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         //TODO-fred switch to ConnectionType.Multiple
-        [Input(ShowBackingValue.Never, ConnectionType.Override)] public CollectionEntryNode Collection;
-        [TextArea] public string Description;
-        [Input] public float Utilities = 1;
+        [Input(ShowBackingValue.Never, ConnectionType.Override), Tooltip("Connect to the Collection Entry Node")] 
+        public CollectionEntryNode Collection;
+        [TextArea, Tooltip("Provide a basic description displayed in the AI Debugger")] 
+        public string Description;
+        [Header("Rank")]
+        [Input, Tooltip("Connect to each Utility Nodes")] 
+        public float Utilities = 1;
+        [Tooltip("Average : The rank is calculated using the average of all Utilities\n"
+            + "Max : The rank is calculated using the maximum value of all Utilities\n"
+            + "Min : The rank is calculated using the minimum value of all Utilities")]
         public MergeType UtilityMerge;
-        [Input] public int Multiplier = 1;
-        [Input] public int Bonus;
-        [Input(ShowBackingValue.Never)] public ActionNode Actions;
+        [Header("Weight")]
+        [Input, Tooltip("Product of the multiplier")] 
+        public int Multiplier = 1;
+        [Input, Tooltip("Sum of the bonus")] 
+        public int Bonus;
+        [Space]
+        [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")] 
+        public ActionNode Actions;
 
         public List<AIOption> GetOptions() {
             List<AIOption> options = new List<AIOption>();
@@ -75,7 +87,5 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             return new Tuple<float, int>(utility, (bonus + 1) * multiplier);
         }
 
-        
-        
     }
 }

@@ -9,7 +9,7 @@ using UnityEngine;
 using Object = UnityEngine.Object;
 
 namespace XNodeEditor {
-    /// <summary> A set of editor-only utilities and extensions for UnityNodeEditorBase </summary>
+    /// <summary> A set of editor-only utilities and extensions for xNode </summary>
     public static class NodeEditorUtilities {
 
         /// <summary>C#'s Script Icon [The one MonoBhevaiour Scripts have].</summary>
@@ -18,6 +18,9 @@ namespace XNodeEditor {
         /// Saves Attribute from Type+Field for faster lookup. Resets on recompiles.
         private static Dictionary<Type, Dictionary<string, Dictionary<Type, Attribute>>> typeAttributes = new Dictionary<Type, Dictionary<string, Dictionary<Type, Attribute>>>();
 
+        /// Saves ordered PropertyAttribute from Type+Field for faster lookup. Resets on recompiles.
+        private static Dictionary<Type, Dictionary<string, List<PropertyAttribute>>> typeOrderedPropertyAttributes = new Dictionary<Type, Dictionary<string, List<PropertyAttribute>>>();
+
         public static bool GetAttrib<T>(Type classType, out T attribOut) where T : Attribute {
             object[] attribs = classType.GetCustomAttributes(typeof(T), false);
             return GetAttrib(attribs, out attribOut);
@@ -25,7 +28,7 @@ namespace XNodeEditor {
 
         public static bool GetAttrib<T>(object[] attribs, out T attribOut) where T : Attribute {
             for (int i = 0; i < attribs.Length; i++) {
-                if (attribs[i] is T){
+                if (attribs[i] is T) {
                     attribOut = attribs[i] as T;
                     return true;
                 }
@@ -36,7 +39,7 @@ namespace XNodeEditor {
 
         public static bool GetAttrib<T>(Type classType, string fieldName, out T attribOut) where T : Attribute {
             // If we can't find field in the first run, it's probably a private field in a base class.
-            FieldInfo field = NodeEditorWindow.GetFieldInfo(classType, fieldName);
+            FieldInfo field = classType.GetFieldInfo(fieldName);
             // This shouldn't happen. Ever.
             if (field == null) {
                 Debug.LogWarning("Field " + fieldName + " couldnt be found");
@@ -82,6 +85,32 @@ namespace XNodeEditor {
 
             attribOut = attr as T;
             return true;
+        }
+
+        public static List<PropertyAttribute> GetCachedPropertyAttribs(Type classType, string fieldName) {
+            Dictionary<string, List<PropertyAttribute>> typeFields;
+            if (!typeOrderedPropertyAttributes.TryGetValue(classType, out typeFields)) {
+                typeFields = new Dictionary<string, List<PropertyAttribute>>();
+                typeOrderedPropertyAttributes.Add(classType, typeFields);
+            }
+
+            List<PropertyAttribute> typeAttributes;
+            if (!typeFields.TryGetValue(fieldName, out typeAttributes)) {
+                FieldInfo field = classType.GetFieldInfo(fieldName);
+                object[] attribs = field.GetCustomAttributes(typeof(PropertyAttribute), true);
+                typeAttributes = attribs.Cast<PropertyAttribute>().Reverse().ToList(); //Unity draws them in reverse
+                typeFields.Add(fieldName, typeAttributes);
+            }
+
+            return typeAttributes;
+        }
+
+        public static bool IsMac() {
+#if UNITY_2017_1_OR_NEWER
+            return SystemInfo.operatingSystemFamily == OperatingSystemFamily.MacOSX;
+#else
+            return SystemInfo.operatingSystem.StartsWith("Mac");
+#endif
         }
 
         /// <summary> Returns true if this can be casted to <see cref="Type"/></summary>
@@ -131,6 +160,24 @@ namespace XNodeEditor {
                     return s.Substring(0, i) + "[" + rank + "]" + s.Substring(i);
                 }
             } else return type.ToString();
+        }
+
+        /// <summary> Returns the default name for the node type. </summary>
+        public static string NodeDefaultName(Type type) {
+            string typeName = type.Name;
+            // Automatically remove redundant 'Node' postfix
+            if (typeName.EndsWith("Node")) typeName = typeName.Substring(0, typeName.LastIndexOf("Node"));
+            typeName = UnityEditor.ObjectNames.NicifyVariableName(typeName);
+            return typeName;
+        }
+
+        /// <summary> Returns the default creation path for the node type. </summary>
+        public static string NodeDefaultPath(Type type) {
+            string typePath = type.ToString().Replace('.', '/');
+            // Automatically remove redundant 'Node' postfix
+            if (typePath.EndsWith("Node")) typePath = typePath.Substring(0, typePath.LastIndexOf("Node"));
+            typePath = UnityEditor.ObjectNames.NicifyVariableName(typePath);
+            return typePath;
         }
 
         /// <summary>Creates a new C# Class.</summary>

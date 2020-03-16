@@ -51,8 +51,6 @@ namespace Examples.CubeAI.Scripts {
         }
 
         public void Heal() {
-            if (CurrentHp == MaxHp)
-                throw new Exception("Maximum health, the AI should not heal !");
             MeshRenderer.material.color = Color.green;
             CurrentHp += 2;
             if (CurrentHp > MaxHp) 

@@ -3,7 +3,7 @@ using Plugins.xNodeUtilityAi.AbstractNodes;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.OptionalNodes {
-    public class RankFlattenNode : MiddleNode {
+    public class FlattenNode : MiddleNode {
 
         public int FlattenValue = 1;
     

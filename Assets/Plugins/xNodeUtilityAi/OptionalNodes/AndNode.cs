@@ -3,7 +3,7 @@ using Plugins.xNodeUtilityAi.AbstractNodes;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.OptionalNodes {
-    public class RankAndNode : MiddleNode {
+    public class AndNode : MiddleNode {
         
         [Input(ShowBackingValue.Never)] public int RankIn;
         [Output(connectionType: ConnectionType.Override)] public int RankOut;

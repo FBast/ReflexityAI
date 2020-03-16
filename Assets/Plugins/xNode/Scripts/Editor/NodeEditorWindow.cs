@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using System;
+using Object = UnityEngine.Object;
 
 namespace XNodeEditor {
     [InitializeOnLoad]
@@ -13,6 +15,14 @@ namespace XNodeEditor {
         private Dictionary<XNode.NodePort, Rect> _portConnectionPoints = new Dictionary<XNode.NodePort, Rect>();
         [SerializeField] private NodePortReference[] _references = new NodePortReference[0];
         [SerializeField] private Rect[] _rects = new Rect[0];
+
+        private Func<bool> isDocked {
+            get {
+                if (_isDocked == null) _isDocked = this.GetIsDockedDelegate();
+                return _isDocked;
+            }
+        }
+        private Func<bool> _isDocked;
 
         [System.Serializable] private class NodePortReference {
             [SerializeField] private XNode.Node _node;
@@ -87,7 +97,7 @@ namespace XNodeEditor {
         /// <summary> Make sure the graph editor is assigned and to the right object </summary>
         private void ValidateGraphEditor() {
             NodeGraphEditor graphEditor = NodeGraphEditor.GetEditor(graph, this);
-            if (this.graphEditor != graphEditor) {
+            if (this.graphEditor != graphEditor && graphEditor != null) {
                 this.graphEditor = graphEditor;
                 graphEditor.OnOpen();
             }
@@ -177,12 +187,13 @@ namespace XNodeEditor {
         }
 
         /// <summary>Open the provided graph in the NodeEditor</summary>
-        public static void Open(XNode.NodeGraph graph) {
-            if (!graph) return;
+        public static NodeEditorWindow Open(XNode.NodeGraph graph) {
+            if (!graph) return null;
 
             NodeEditorWindow w = GetWindow(typeof(NodeEditorWindow), false, "xNode", true) as NodeEditorWindow;
             w.wantsMouseMove = true;
             w.graph = graph;
+            return w;
         }
 
         /// <summary> Repaint all open NodeEditorWindows. </summary>
