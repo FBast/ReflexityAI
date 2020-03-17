@@ -4,7 +4,7 @@ using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 
 namespace Plugins.xNodeUtilityAi.MemoryNodes {
-    public class MemoryClearNode : SimpleActionNode {
+    public class MemoryClearNode : ActionNode {
 
         public override void Execute(AbstractAIComponent context, AIData aiData) {
             foreach (KeyValuePair<string,Object> keyValuePair in aiData) {

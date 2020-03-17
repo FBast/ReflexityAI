@@ -38,24 +38,24 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - m_Name: Reverse Linear
+  - m_Name: 
     m_Curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1.0003611
-        inSlope: -1.000628
-        outSlope: -1.000628
+        value: 1
+        inSlope: -1
+        outSlope: -1
         tangentMode: 34
         weightedMode: 0
         inWeight: 0
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -0.00026696362
-        inSlope: -1.000628
-        outSlope: -1.000628
+        value: 0
+        inSlope: -1
+        outSlope: -1
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334

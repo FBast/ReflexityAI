@@ -1,5 +1,44 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9193968616024657827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db43c46dc6394a2c89f4b97c7c2af24e, type: 3}
+  m_Name: And
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -424, y: -1768}
+  ports:
+    keys:
+    - ValueOut
+    - ValuesIn
+    values:
+    - _fieldName: ValueOut
+      _node: {fileID: -9193968616024657827}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValuesIn
+      _node: {fileID: -9193968616024657827}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  ValuesIn: 0
+  ValueOut: 0
 --- !u!114 &-8328577186847297002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,10 +52,11 @@ MonoBehaviour:
   m_Name: Reload Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -248, y: 104}
+  position: {x: -248, y: 232}
   ports:
     keys:
     - LinkedOption
+    - Data
     values:
     - _fieldName: LinkedOption
       _node: {fileID: -8328577186847297002}
@@ -30,6 +70,60 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -8328577186847297002}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
+  LinkedOption: {fileID: 0}
+  Order: 0
+--- !u!114 &-7770536835681510317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215672513a0b4bd691faa6d43899039b, type: 3}
+  m_Name: Memory Clear
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -56, y: -1912}
+  ports:
+    keys:
+    - LinkedOption
+    - Data
+    values:
+    - _fieldName: LinkedOption
+      _node: {fileID: -7770536835681510317}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -7770536835681510317}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   LinkedOption: {fileID: 0}
   Order: 0
 --- !u!114 &-7330626049815432269
@@ -45,25 +139,38 @@ MonoBehaviour:
   m_Name: Has Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -488}
+  position: {x: -648, y: -456}
   ports:
     keys:
     - Value
+    - Data
     values:
     - _fieldName: Value
       _node: {fileID: -7330626049815432269}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Multiplier
-        node: {fileID: 8886839197104446014}
+      - fieldName: ValueIn
+        node: {fileID: 3159423348165716249}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -7330626049815432269}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   Value: 0
---- !u!114 &-6320599834165815451
+--- !u!114 &-5835097931566081613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,44 +179,94 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Data Is Alive
-  m_EditorClassIdentifier: Assembly-CSharp:Examples.CubeAI.Scripts.SimpleEntries:DataIsAlive
+  m_Script: {fileID: 11500000, guid: 315321ed814744328cd1ac4f49a73dbc, type: 3}
+  m_Name: Filter
+  m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -1128}
+  position: {x: 216, y: -1768}
   ports:
     keys:
-    - Data
-    - Value
+    - ValuesIn
+    - ValueOut
     values:
-    - _fieldName: Data
-      _node: {fileID: -6320599834165815451}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: DataOut
-        node: {fileID: 7948388030205020400}
-        reroutePoints: []
+    - _fieldName: ValuesIn
+      _node: {fileID: -5835097931566081613}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Value
-      _node: {fileID: -6320599834165815451}
+    - _fieldName: ValueOut
+      _node: {fileID: -5835097931566081613}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Multiplier
-        node: {fileID: -3149500813272203088}
-        reroutePoints: []
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Filter: 0
+  Negate: 0
+  ValuesIn: 0
+  ValueOut: 0
+--- !u!114 &-4554188479560766531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e78b4ca31b784b37abfdaef6d5e454b1, type: 3}
+  m_Name: Memory Access
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -536, y: -1944}
+  ports:
+    keys:
+    - Data
+    - LoadData
+    - LinkedOption
+    values:
+    - _fieldName: Data
+      _node: {fileID: -4554188479560766531}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: LoadData
+      _node: {fileID: -4554188479560766531}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: LinkedOption
+      _node: {fileID: -4554188479560766531}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  Value: 0
   Data:
     DataTag: 
     Data: {fileID: 0}
+  LinkedOption: {fileID: 0}
+  Order: 0
+  LoadData:
+    DataTag: 
+    Data: {fileID: 0}
+  DataTag: 
 --- !u!114 &-4279659965594252076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,7 +280,7 @@ MonoBehaviour:
   m_Name: Option Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: -152}
+  position: {x: 312, y: -24}
   ports:
     keys:
     - Collection
@@ -134,7 +291,7 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: -4279659965594252076}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -203,10 +360,11 @@ MonoBehaviour:
   m_Name: Current Ammo Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -648}
+  position: {x: -648, y: -632}
   ports:
     keys:
     - Value
+    - Data
     values:
     - _fieldName: Value
       _node: {fileID: -4130570032482084031}
@@ -220,6 +378,18 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -4130570032482084031}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   Value: 0
 --- !u!114 &-3149500813272203088
 MonoBehaviour:
@@ -234,7 +404,7 @@ MonoBehaviour:
   m_Name: Option
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: -1304}
+  position: {x: 296, y: -1432}
   ports:
     keys:
     - Collection
@@ -245,7 +415,7 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: -3149500813272203088}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -272,8 +442,8 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Value
-        node: {fileID: -6320599834165815451}
+      - fieldName: ValueOut
+        node: {fileID: 8389664352704540870}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -284,8 +454,11 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: RankOut
-        node: {fileID: -711204709885890429}
+      - fieldName: ValueOut
+        node: {fileID: 4117235986624966914}
+        reroutePoints: []
+      - fieldName: ValueOut
+        node: {fileID: 6951571660698167945}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -298,6 +471,9 @@ MonoBehaviour:
       connections:
       - fieldName: LinkedOption
         node: {fileID: 650509650732122840}
+        reroutePoints: []
+      - fieldName: LinkedOption
+        node: {fileID: 7114925655910372590}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -323,10 +499,11 @@ MonoBehaviour:
   m_Name: Current Ammo Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -120}
+  position: {x: -648, y: -8}
   ports:
     keys:
     - Value
+    - Data
     values:
     - _fieldName: Value
       _node: {fileID: -2847192676517171213}
@@ -340,6 +517,18 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -2847192676517171213}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   Value: 0
 --- !u!114 &-2743653046011671476
 MonoBehaviour:
@@ -354,10 +543,11 @@ MonoBehaviour:
   m_Name: Fire Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -248, y: -344}
+  position: {x: -248, y: -152}
   ports:
     keys:
     - LinkedOption
+    - Data
     values:
     - _fieldName: LinkedOption
       _node: {fileID: -2743653046011671476}
@@ -371,6 +561,18 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -2743653046011671476}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   LinkedOption: {fileID: 0}
   Order: 0
 --- !u!114 &-1866921937441271112
@@ -386,7 +588,7 @@ MonoBehaviour:
   m_Name: Data Max Hp Count
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -1224}
+  position: {x: -664, y: -1432}
   ports:
     keys:
     - Data
@@ -416,10 +618,10 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  Value: 0
   Data:
     DataTag: 
     Data: {fileID: 0}
+  Value: 0
 --- !u!114 &-1492904181709445352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,10 +635,11 @@ MonoBehaviour:
   m_Name: Max Ammo Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -56}
+  position: {x: -648, y: 72}
   ports:
     keys:
     - Value
+    - Data
     values:
     - _fieldName: Value
       _node: {fileID: -1492904181709445352}
@@ -450,6 +653,18 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -1492904181709445352}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   Value: 0
 --- !u!114 &-1393080565401486127
 MonoBehaviour:
@@ -464,7 +679,7 @@ MonoBehaviour:
   m_Name: Data Current Hp Count
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -1304}
+  position: {x: -664, y: -1512}
   ports:
     keys:
     - Data
@@ -494,10 +709,10 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  Value: 0
   Data:
     DataTag: 
     Data: {fileID: 0}
+  Value: 0
 --- !u!114 &-1187499331445944224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,25 +726,38 @@ MonoBehaviour:
   m_Name: Has Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -1032}
+  position: {x: -664, y: -1224}
   ports:
     keys:
     - Value
+    - Data
     values:
     - _fieldName: Value
       _node: {fileID: -1187499331445944224}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: RankIn
-        node: {fileID: -711204709885890429}
+      - fieldName: ValueIn
+        node: {fileID: 6951571660698167945}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -1187499331445944224}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   Value: 0
---- !u!114 &-711204709885890429
+--- !u!114 &-806416466191249344
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -538,42 +766,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d27d03340e6496f98875d5aa19ddce3, type: 3}
-  m_Name: Not
+  m_Script: {fileID: 11500000, guid: 84b6d7b1b05042b88d808834429a4337, type: 3}
+  m_Name: Data Is Dead
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -120, y: -1032}
+  position: {x: -664, y: -1352}
   ports:
     keys:
-    - RankIn
-    - RankOut
+    - Data
+    - Value
     values:
-    - _fieldName: RankIn
-      _node: {fileID: -711204709885890429}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+    - _fieldName: Data
+      _node: {fileID: -806416466191249344}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: Value
-        node: {fileID: -1187499331445944224}
+      - fieldName: DataOut
+        node: {fileID: 7948388030205020400}
         reroutePoints: []
       _direction: 0
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: RankOut
-      _node: {fileID: -711204709885890429}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+    - _fieldName: Value
+      _node: {fileID: -806416466191249344}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Bonus
-        node: {fileID: -3149500813272203088}
+      - fieldName: ValueIn
+        node: {fileID: 8389664352704540870}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  RankIn: 0
-  RankOut: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
+  Value: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,17 +817,11 @@ MonoBehaviour:
   m_Name: UtilityAIBrain
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 178059516657548659}
-  - {fileID: -4130570032482084031}
   - {fileID: 2804958587180154056}
   - {fileID: 8886839197104446014}
   - {fileID: -2743653046011671476}
   - {fileID: -8328577186847297002}
   - {fileID: 8779490541509514164}
-  - {fileID: 8625277588503570048}
-  - {fileID: 3306926615521682196}
-  - {fileID: -1492904181709445352}
-  - {fileID: -2847192676517171213}
   - {fileID: 3033678687618763116}
   - {fileID: 6061042253593071775}
   - {fileID: -4279659965594252076}
@@ -605,13 +829,71 @@ MonoBehaviour:
   - {fileID: -3149500813272203088}
   - {fileID: 4504020337149638878}
   - {fileID: 7948388030205020400}
-  - {fileID: -1393080565401486127}
-  - {fileID: -1866921937441271112}
   - {fileID: 650509650732122840}
   - {fileID: -1187499331445944224}
   - {fileID: -7330626049815432269}
-  - {fileID: -6320599834165815451}
-  - {fileID: -711204709885890429}
+  - {fileID: -9193968616024657827}
+  - {fileID: -5835097931566081613}
+  - {fileID: 173213883734395065}
+  - {fileID: 3006738229944450616}
+  - {fileID: -806416466191249344}
+  - {fileID: 6951571660698167945}
+  - {fileID: 3159423348165716249}
+  - {fileID: 8389664352704540870}
+  - {fileID: 7248399506599440429}
+  - {fileID: -4554188479560766531}
+  - {fileID: 2273065825925146299}
+  - {fileID: -7770536835681510317}
+  - {fileID: 4117235986624966914}
+  - {fileID: 7114925655910372590}
+  - {fileID: 1164861899576825953}
+  - {fileID: -2847192676517171213}
+  - {fileID: -4130570032482084031}
+  - {fileID: 3306926615521682196}
+  - {fileID: -1393080565401486127}
+  - {fileID: -1866921937441271112}
+  - {fileID: -1492904181709445352}
+  - {fileID: 178059516657548659}
+  - {fileID: 8625277588503570048}
+--- !u!114 &173213883734395065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d27d03340e6496f98875d5aa19ddce3, type: 3}
+  m_Name: Not
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -216, y: -1768}
+  ports:
+    keys:
+    - ValueOut
+    - ValueIn
+    values:
+    - _fieldName: ValueOut
+      _node: {fileID: 173213883734395065}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueIn
+      _node: {fileID: 173213883734395065}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  ValueIn: 0
+  ValueOut: 0
 --- !u!114 &178059516657548659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,10 +907,11 @@ MonoBehaviour:
   m_Name: Max Ammo Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -584}
+  position: {x: -648, y: -552}
   ports:
     keys:
     - Value
+    - Data
     values:
     - _fieldName: Value
       _node: {fileID: 178059516657548659}
@@ -642,6 +925,18 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: 178059516657548659}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   Value: 0
 --- !u!114 &650509650732122840
 MonoBehaviour:
@@ -656,7 +951,7 @@ MonoBehaviour:
   m_Name: Set Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -248, y: -824}
+  position: {x: -264, y: -936}
   ports:
     keys:
     - Data
@@ -686,11 +981,57 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  LinkedOption: {fileID: 0}
-  Order: 0
   Data:
     DataTag: 
     Data: {fileID: 0}
+  LinkedOption: {fileID: 0}
+  Order: 0
+--- !u!114 &1164861899576825953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44678e692fab43d59735b2599963c042, type: 3}
+  m_Name: In Cooldown
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -664, y: -1096}
+  ports:
+    keys:
+    - Value
+    - Data
+    values:
+    - _fieldName: Value
+      _node: {fileID: 1164861899576825953}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: ValueIn
+        node: {fileID: 4117235986624966914}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: 1164861899576825953}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
+  Value: 0
+  HistoricTag: Target
+  Cooldown: 3
 --- !u!114 &2252001372574295656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,7 +1045,7 @@ MonoBehaviour:
   m_Name: Option Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: 360}
+  position: {x: 312, y: 488}
   ports:
     keys:
     - Collection
@@ -715,7 +1056,7 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: 2252001372574295656}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -771,6 +1112,47 @@ MonoBehaviour:
   Multiplier: 1
   Bonus: 0
   Actions: {fileID: 0}
+--- !u!114 &2273065825925146299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef67b25c15fe4773b264efc6741ec257, type: 3}
+  m_Name: Memory Check
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -56, y: -2008}
+  ports:
+    keys:
+    - Value
+    - Data
+    values:
+    - _fieldName: Value
+      _node: {fileID: 2273065825925146299}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: 2273065825925146299}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
+  Value: 0
 --- !u!114 &2477605427636061047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,7 +1214,7 @@ MonoBehaviour:
   m_Name: Utility Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -72, y: -648}
+  position: {x: -72, y: -616}
   ports:
     keys:
     - MinX
@@ -892,27 +1274,66 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0
+      time: 0
       value: 0
-      inSlope: 10.240727
-      outSlope: 10.240727
-      tangentMode: 0
-      weightedMode: 2
-      inWeight: 0.33333334
-      outWeight: 0.09782622
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: -0.0000007942498
-      outSlope: -0.0000007942498
-      tangentMode: 0
-      weightedMode: 1
-      inWeight: 0.30018085
-      outWeight: 0.33333334
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 1
+  UtilityY: 0.0000005374136
+--- !u!114 &3006738229944450616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407168b5c6cb4b2a9467ac7a645fe53b, type: 3}
+  m_Name: Or
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -632, y: -1768}
+  ports:
+    keys:
+    - ValueOut
+    - ValuesIn
+    values:
+    - _fieldName: ValueOut
+      _node: {fileID: 3006738229944450616}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValuesIn
+      _node: {fileID: 3006738229944450616}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  ValuesIn: 0
+  ValueOut: 0
 --- !u!114 &3033678687618763116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -926,7 +1347,7 @@ MonoBehaviour:
   m_Name: Utility Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -88, y: -120}
+  position: {x: -88, y: 8}
   ports:
     keys:
     - MinX
@@ -987,18 +1408,18 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1.0003611
-      inSlope: -1.000628
-      outSlope: -1.000628
+      value: 1
+      inSlope: -1
+      outSlope: -1
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: -0.00026696362
-      inSlope: -1.000628
-      outSlope: -1.000628
+      value: 0
+      inSlope: -1
+      outSlope: -1
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -1006,7 +1427,54 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: -0.00026696362
+  UtilityY: 1.0003611
+--- !u!114 &3159423348165716249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
+  m_Name: Weight
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -72, y: -440}
+  ports:
+    keys:
+    - ValueIn
+    - ValueOut
+    values:
+    - _fieldName: ValueIn
+      _node: {fileID: 3159423348165716249}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: -7330626049815432269}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: 3159423348165716249}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Multiplier
+        node: {fileID: 8886839197104446014}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  ValueIn: 0
+  IsTrue: 1
+  IsFalse: 0
+  ValueOut: 0
 --- !u!114 &3306926615521682196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1020,10 +1488,11 @@ MonoBehaviour:
   m_Name: Current Hp Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -680, y: 328}
+  position: {x: -680, y: 440}
   ports:
     keys:
     - Value
+    - Data
     values:
     - _fieldName: Value
       _node: {fileID: 3306926615521682196}
@@ -1037,7 +1506,66 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: 3306926615521682196}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   Value: 0
+--- !u!114 &4117235986624966914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
+  m_Name: Converter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -120, y: -1080}
+  ports:
+    keys:
+    - ValueIn
+    - ValueOut
+    values:
+    - _fieldName: ValueIn
+      _node: {fileID: 4117235986624966914}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: 1164861899576825953}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: 4117235986624966914}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Bonus
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  ValueIn: 0
+  IsTrue: -1
+  IsFalse: 0
+  ValueOut: 0
 --- !u!114 &4504020337149638878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,7 +1579,7 @@ MonoBehaviour:
   m_Name: Utility
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -120, y: -1288}
+  position: {x: -120, y: -1480}
   ports:
     keys:
     - MinX
@@ -1112,18 +1640,18 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1.0003611
-      inSlope: -1.000628
-      outSlope: -1.000628
+      value: 1
+      inSlope: -0.9
+      outSlope: -0.9
       tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: -0.00026696362
-      inSlope: -1.000628
-      outSlope: -1.000628
+      value: 0.1
+      inSlope: -0.9
+      outSlope: -0.9
       tangentMode: 34
       weightedMode: 0
       inWeight: 0.33333334
@@ -1131,7 +1659,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.6001099
+  UtilityY: -0.00026696362
 --- !u!114 &6061042253593071775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1145,7 +1673,7 @@ MonoBehaviour:
   m_Name: Utility Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -88, y: 328}
+  position: {x: -88, y: 456}
   ports:
     keys:
     - MinX
@@ -1225,7 +1753,140 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0.49832988
+  UtilityY: 0
+--- !u!114 &6951571660698167945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
+  m_Name: Converter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -120, y: -1208}
+  ports:
+    keys:
+    - ValueIn
+    - ValueOut
+    values:
+    - _fieldName: ValueIn
+      _node: {fileID: 6951571660698167945}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: -1187499331445944224}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: 6951571660698167945}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Bonus
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  ValueIn: 0
+  IsTrue: 0
+  IsFalse: 1
+  ValueOut: 0
+--- !u!114 &7114925655910372590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a61650fa77734d0cbd727eea663dffa6, type: 3}
+  m_Name: Save Historic
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -264, y: -824}
+  ports:
+    keys:
+    - LinkedOption
+    - Data
+    values:
+    - _fieldName: LinkedOption
+      _node: {fileID: 7114925655910372590}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.ActionNode, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Actions
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: 7114925655910372590}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
+  LinkedOption: {fileID: 0}
+  Order: 1
+  HistoricTag: Target
+--- !u!114 &7248399506599440429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b46c0dbaa3c457db9857be6d930c4ee, type: 3}
+  m_Name: Flattener
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -8, y: -1768}
+  ports:
+    keys:
+    - ValueIn
+    - ValueOut
+    values:
+    - _fieldName: ValueIn
+      _node: {fileID: 7248399506599440429}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: 7248399506599440429}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  FlattenValue: 1
+  ValueIn: 0
+  ValueOut: 0
 --- !u!114 &7948388030205020400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1239,7 +1900,7 @@ MonoBehaviour:
   m_Name: Other Cubes
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1208, y: -1496}
+  position: {x: -1224, y: -1624}
   ports:
     keys:
     - LinkedOption
@@ -1247,7 +1908,7 @@ MonoBehaviour:
     values:
     - _fieldName: LinkedOption
       _node: {fileID: 7948388030205020400}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Collection
@@ -1266,13 +1927,7 @@ MonoBehaviour:
         node: {fileID: 650509650732122840}
         reroutePoints: []
       - fieldName: Data
-        node: {fileID: -1393080565401486127}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: -1866921937441271112}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: -6320599834165815451}
+        node: {fileID: -806416466191249344}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1362,6 +2017,53 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   UtilityY: 0
+--- !u!114 &8389664352704540870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
+  m_Name: Converter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -120, y: -1336}
+  ports:
+    keys:
+    - ValueIn
+    - ValueOut
+    values:
+    - _fieldName: ValueIn
+      _node: {fileID: 8389664352704540870}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: -806416466191249344}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: 8389664352704540870}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Multiplier
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  ValueIn: 0
+  IsTrue: 0
+  IsFalse: 1
+  ValueOut: 0
 --- !u!114 &8625277588503570048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1375,10 +2077,11 @@ MonoBehaviour:
   m_Name: Max Hp Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -680, y: 392}
+  position: {x: -680, y: 520}
   ports:
     keys:
     - Value
+    - Data
     values:
     - _fieldName: Value
       _node: {fileID: 8625277588503570048}
@@ -1392,6 +2095,18 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: 8625277588503570048}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   Value: 0
 --- !u!114 &8779490541509514164
 MonoBehaviour:
@@ -1406,10 +2121,11 @@ MonoBehaviour:
   m_Name: Heal Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -248, y: 648}
+  position: {x: -248, y: 776}
   ports:
     keys:
     - LinkedOption
+    - Data
     values:
     - _fieldName: LinkedOption
       _node: {fileID: 8779490541509514164}
@@ -1423,6 +2139,18 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: 8779490541509514164}
+      _typeQualifiedName: Plugins.xNodeUtilityAi.Framework.TaggedData, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data:
+    DataTag: 
+    Data: {fileID: 0}
   LinkedOption: {fileID: 0}
   Order: 0
 --- !u!114 &8886839197104446014
@@ -1449,7 +2177,7 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: 8886839197104446014}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionEntryNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -1473,8 +2201,8 @@ MonoBehaviour:
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Value
-        node: {fileID: -7330626049815432269}
+      - fieldName: ValueOut
+        node: {fileID: 3159423348165716249}
         reroutePoints: []
       _direction: 0
       _connectionType: 0

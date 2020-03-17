@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.AbstractNodes;
+using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.MainNodes;
 using Plugins.xNodeUtilityAi.MemoryNodes;
 using UnityEngine;
+using XNode;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
@@ -25,6 +27,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public Dictionary<AIBrain, AIOption> SelectedOptions = new Dictionary<AIBrain, AIOption>();
         
         private readonly Dictionary<string, Object> _memory = new Dictionary<string, Object>();
+        private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
         private float _lastProbabilityResult;
         private bool _isThinking;
         private float _timeSinceLastRefresh;
@@ -58,6 +61,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             if (utilityAiBrain == null) return;
             // Setup Contexts
             utilityAiBrain.GetNodes<EntryNode>().ForEach(node => node.SetContext(this));
+            utilityAiBrain.GetNodes<DataNode>().ForEach(node => node.SetContext(this));
             utilityAiBrain.GetNodes<ActionNode>().ForEach(node => node.SetContext(this));
             // Add the brain to the option dictionary
             if (Options.ContainsKey(utilityAiBrain)) {
@@ -99,10 +103,12 @@ namespace Plugins.xNodeUtilityAi.Framework {
             return null;
         }
 
-        public void SaveToMemory(string dataTag, Object data) {
+        // Memory
+        
+        public void SaveInMemory(string dataTag, Object data) {
             if (LoadFromMemory(dataTag) != null)
                 throw new Exception("Impossible to save " + dataTag + ", consider using a " + typeof(MemoryCheckNode)
-                    + " before using " + typeof(MemoryAccessNode));
+                    + " before using " + typeof(MemorySaveNode));
             _memory.Add(dataTag, data);
         }
 
@@ -117,6 +123,17 @@ namespace Plugins.xNodeUtilityAi.Framework {
             return _memory.Remove(dataTag);
         }
         
+        // Historic
+
+        public void SaveInHistoric(string historicTag) {
+            if (_historic.ContainsKey(historicTag)) _historic[historicTag] = Time.realtimeSinceStartup;
+            else _historic.Add(historicTag, Time.realtimeSinceStartup);
+        }
+
+        public float HistoricTime(string historicTag) {
+            return _historic.ContainsKey(historicTag) ? _historic[historicTag] : 0;
+        }
+
     }
 
     public enum BrainType {

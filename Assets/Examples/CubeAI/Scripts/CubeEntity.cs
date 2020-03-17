@@ -53,7 +53,7 @@ namespace Examples.CubeAI.Scripts {
         public void Heal() {
             MeshRenderer.material.color = Color.green;
             CurrentHp += 2;
-            if (CurrentHp > MaxHp) 
+            if (CurrentHp > MaxHp)
                 CurrentHp = MaxHp;
             Invoke(nameof(RollBackColor), 1f);
         }

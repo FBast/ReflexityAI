@@ -1,7 +1,9 @@
 ﻿using System;
 using Plugins.xNodeUtilityAi.AbstractNodes;
+using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.MainNodes;
+using Plugins.xNodeUtilityAi.MiddleNodes;
 using XNode;
 using XNodeEditor;
 
@@ -11,28 +13,22 @@ namespace Plugins.xNodeUtilityAi.Editor {
 
         public override string GetNodeMenuName(Type type) {
             if (type == typeof(OptionNode)) {
-                return "MainNodes/OptionNode";
+                return "MainNodes/" + NodeEditorUtilities.NodeDefaultName(type);
             }
             if (type == typeof(UtilityNode)) {
-                return "MainNodes/UtilityNode";
+                return "MainNodes/" + NodeEditorUtilities.NodeDefaultName(type);
+            }
+            if (type == typeof(ConverterNode)) {
+                return "MainNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
             }
             if (type.IsSubclassOf(typeof(MiddleNode))) {
                 return "MiddleNodes/" + NodeEditorUtilities.NodeDefaultName(type);
             }
-            if (type.IsSubclassOf(typeof(DataEntryNode))) {
-                return "EntryNodes/DataEntryNodes/" + NodeEditorUtilities.NodeDefaultName(type);
+            if (type.IsSubclassOf(typeof(DataNode))) {
+                return "DataNodes/" + NodeEditorUtilities.NodeDefaultName(type);
             }
-            if (type.IsSubclassOf(typeof(SimpleEntryNode))) {
-                return "EntryNodes/SimpleEntryNodes/" + NodeEditorUtilities.NodeDefaultName(type);
-            }
-            if (type.IsSubclassOf(typeof(CollectionEntryNode))) {
-                return "EntryNodes/CollectionEntryNodes/" + NodeEditorUtilities.NodeDefaultName(type);
-            }
-            if (type.IsSubclassOf(typeof(DataActionNode))) {
-                return "ActionNodes/DataActionNodes/" + NodeEditorUtilities.NodeDefaultName(type);
-            }
-            if (type.IsSubclassOf(typeof(SimpleActionNode))) {
-                return "ActionNodes/SimpleActionNodes/" + NodeEditorUtilities.NodeDefaultName(type);
+            if (type.IsSubclassOf(typeof(ActionNode))) {
+                return "ActionNodes/" + NodeEditorUtilities.NodeDefaultName(type);
             }
             return null;
         }

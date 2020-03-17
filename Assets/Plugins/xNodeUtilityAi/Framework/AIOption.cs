@@ -1,24 +1,26 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.AbstractNodes;
+using Plugins.xNodeUtilityAi.MainNodes;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     [Serializable]
     public class AIOption {
-
+        
         public List<AIAction> AiActions = new List<AIAction>();
         public float Utility;
         public int Weight;
         public float Probability;
         public string Description;
 
-        public AIOption(List<ActionNode> actionNodes, Tuple<float, int> utility, string description) {
+        public AIOption(List<ActionNode> actionNodes, Tuple<float, int> tuple, string description) {
             // Processing Simple Actions
             actionNodes.ForEach(node => AiActions.Add(new AIAction(node)));
             // Processing Utility
-            Utility = utility.Item1;
-            Weight = utility.Item2;
+            Utility = tuple.Item1;
+            Weight = tuple.Item2;
             AIAction aiActionWithMoreData = AiActions.OrderByDescending(action => action.AiData.Count).First();
             Description = description + string.Join(" ", aiActionWithMoreData.AiData.ToString());
         }
@@ -32,5 +34,4 @@ namespace Plugins.xNodeUtilityAi.Framework {
             return Description + " - Utility " + Utility + " - Rank " + Weight + " - Weight " + Probability;
         }
     }
-
 }

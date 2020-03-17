@@ -3,10 +3,10 @@ using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 
 namespace Plugins.xNodeUtilityAi.MemoryNodes {
-    public class MemoryCheckNode : DataEntryNode {
+    public class MemoryCheckNode : EntryBoolNode {
 
-        protected override int ValueProvider(AbstractAIComponent context) {
-            return GetData<Object>() != null ? 1 : 0;
+        protected override bool ValueProvider(AbstractAIComponent context) {
+            return GetData<Object>() != null;
         }
         
     }

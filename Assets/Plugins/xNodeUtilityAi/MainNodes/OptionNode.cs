@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.AbstractNodes;
+using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 using XNode;
@@ -9,7 +10,7 @@ using XNode;
 namespace Plugins.xNodeUtilityAi.MainNodes {
     [NodeTint(255, 255, 120), NodeWidth(300)]
     public class OptionNode : Node {
-        
+
         public enum MergeType {
             Average,
             Max,
@@ -17,46 +18,51 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         //TODO-fred switch to ConnectionType.Multiple
-        [Input(ShowBackingValue.Never, ConnectionType.Override), Tooltip("Connect to the Collection Entry Node")] 
-        public CollectionEntryNode Collection;
-        [TextArea, Tooltip("Provide a basic description displayed in the AI Debugger")] 
+        [Input(ShowBackingValue.Never, ConnectionType.Override), Tooltip("Connect to the Collection Entry Node")]
+        public CollectionDataNode Collection;
+
+        [TextArea, Tooltip("Provide a basic description displayed in the AI Debugger")]
         public string Description;
-        [Header("Rank")]
-        [Input, Tooltip("Connect to each Utility Nodes")] 
+
+        [Header("Rank")] [Input, Tooltip("Connect to each Utility Nodes")]
         public float Utilities = 1;
+
         [Tooltip("Average : The rank is calculated using the average of all Utilities\n"
-            + "Max : The rank is calculated using the maximum value of all Utilities\n"
-            + "Min : The rank is calculated using the minimum value of all Utilities")]
+                 + "Max : The rank is calculated using the maximum value of all Utilities\n"
+                 + "Min : The rank is calculated using the minimum value of all Utilities")]
         public MergeType UtilityMerge;
-        [Header("Weight")]
-        [Input, Tooltip("Product of the multiplier")] 
+
+        [Header("Weight")] [Input, Tooltip("Product of the multiplier")]
         public int Multiplier = 1;
-        [Input, Tooltip("Sum of the bonus")] 
-        public int Bonus;
-        [Space]
-        [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")] 
+
+        [Input, Tooltip("Sum of the bonus")] public int Bonus;
+
+        [Space] [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")]
         public ActionNode Actions;
 
         public List<AIOption> GetOptions() {
             List<AIOption> options = new List<AIOption>();
             //TODO-fred switch to multiple CollectionEntryNodes
-            CollectionEntryNode collectionEntryNodes = GetInputPort("Collection").GetInputValue<CollectionEntryNode>();
-            List<ActionNode> actionNodes = GetInputPort("Actions").GetInputValues<ActionNode>().ToList();
-            if (collectionEntryNodes != null) {
-                while (collectionEntryNodes.CollectionCount > collectionEntryNodes.Index) {
-                    options.Add(new AIOption(actionNodes, GetUtilityAndWeight(), Description));
-                    collectionEntryNodes.Index++;
+            CollectionDataNode collectionDataNodes =
+                GetInputPort(nameof(Collection)).GetInputValue<CollectionDataNode>();
+            if (collectionDataNodes != null) {
+                while (collectionDataNodes.CollectionCount > collectionDataNodes.Index) {
+                    options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
+                        GetUtilityAndWeight(), Description));
+                    collectionDataNodes.Index++;
                 }
-                collectionEntryNodes.Index = 0;
+
+                collectionDataNodes.Index = 0;
+            } else {
+                options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
+                    GetUtilityAndWeight(), Description));
             }
-            else {
-                options.Add(new AIOption(actionNodes, GetUtilityAndWeight(), Description));
-            }
+
             return options;
         }
 
-        private Tuple<float, int> GetUtilityAndWeight() {
-            NodePort utilityPort = GetInputPort("Utilities");
+        public Tuple<float, int> GetUtilityAndWeight() {
+            NodePort utilityPort = GetInputPort(nameof(Utilities));
             float utility;
             if (utilityPort.IsConnected) {
                 float[] floats = utilityPort.GetInputValues<float>();
@@ -73,18 +79,21 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
-            }
-            else {
+            } else {
                 utility = Utilities;
             }
-            // Utility clamped to 0.01 to avoid 0 division
-            utility = Mathf.Clamp(utility, 0.01f, 1f);
-            NodePort bonusPort = GetInputPort("Bonus");
+
+            // Utility clamped between 0 and 1
+            utility = Mathf.Clamp(utility, 0f, 1f);
+            NodePort bonusPort = GetInputPort(nameof(Bonus));
             int bonus = bonusPort.IsConnected ? bonusPort.GetInputValues<int>().Sum() : Bonus;
-            NodePort multiplierPort = GetInputPort("Multiplier");
-            int multiplier = multiplierPort.IsConnected ? multiplierPort.GetInputValues<int>()
-                .Aggregate((total, next) => total * next) : Multiplier;
-            return new Tuple<float, int>(utility, (bonus + 1) * multiplier);
+            NodePort multiplierPort = GetInputPort(nameof(Multiplier));
+            int multiplier = multiplierPort.IsConnected
+                ? multiplierPort.GetInputValues<int>()
+                    .Aggregate((total, next) => total * next)
+                : Multiplier;
+            if (bonus == 0) bonus = 1;
+            return new Tuple<float, int>(utility, bonus * multiplier);
         }
 
     }

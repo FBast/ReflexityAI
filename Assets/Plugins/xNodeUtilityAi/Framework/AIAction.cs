@@ -1,21 +1,20 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Plugins.xNodeUtilityAi.AbstractNodes;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     public class AIAction {
-        
+
         public Action<AbstractAIComponent, AIData> Action;
         public AIData AiData = new AIData();
         public int Order;
 
         public AIAction(ActionNode actionNode) {
             Action = actionNode.Execute;
-            if (actionNode is DataActionNode node) {
-                // Remove empty data
-                node.GetData().RemoveAll(data => data == null);
-                node.GetData().ForEach(data => AiData.Add(data.DataTag, data.Data));
-            }
+            // Remove empty data
+            actionNode.GetData().RemoveAll(data => data == null);
+            actionNode.GetData().ForEach(data => AiData.Add(data.DataTag, data.Data));
             Order = actionNode.Order;
         }
         
@@ -28,6 +27,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
             Order = order;
         }
-
+        
     }
 }

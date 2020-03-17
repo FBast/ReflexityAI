@@ -1,4 +1,5 @@
 ﻿using Plugins.xNodeUtilityAi.AbstractNodes;
+using Plugins.xNodeUtilityAi.MiddleNodes;
 using UnityEngine;
 using XNode;
 
@@ -17,14 +18,14 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         [Output(connectionType: ConnectionType.Override)] public float UtilityY;
         
         public override object GetValue(NodePort port) {
-            int minX = GetInputValue("MinX", MinX);
-            int maxX = GetInputValue("MaxX", MaxX);
-            int x = GetInputValue("X", X);
             if (port.fieldName == "UtilityY") {
+                int minX = GetInputValue("MinX", MinX);
+                int maxX = GetInputValue("MaxX", MaxX);
+                int x = GetInputValue("X", X);
                 float scaledX = ScaleX(minX, maxX, x);
-                UtilityY = Function.Evaluate(scaledX);
+                return Function.Evaluate(scaledX);
             }
-            return UtilityY;
+            return null;
         }
 
         private float ScaleX(int MinValue, int MaxValue, int x) {
