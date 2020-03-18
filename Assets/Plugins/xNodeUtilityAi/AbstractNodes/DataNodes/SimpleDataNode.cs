@@ -1,10 +1,11 @@
 using Plugins.xNodeUtilityAi.Framework;
+using UnityEngine;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.AbstractNodes.DataNodes {
     public abstract class SimpleDataNode : DataNode {
 
-        [Output] public object DataOut;
+        [Output] public Object DataOut;
         
         protected abstract object ValueProvider(AbstractAIComponent context);
         
