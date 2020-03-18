@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.AbstractNodes;
-using Plugins.xNodeUtilityAi.MainNodes;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     [Serializable]
@@ -21,13 +19,15 @@ namespace Plugins.xNodeUtilityAi.Framework {
             // Processing Utility
             Utility = tuple.Item1;
             Weight = tuple.Item2;
-            AIAction aiActionWithMoreData = AiActions.OrderByDescending(action => action.AiData.Count).First();
-            Description = description + string.Join(" ", aiActionWithMoreData.AiData.ToString());
+            AIAction actionWithData = AiActions.FirstOrDefault(action => action.Data != null);
+            Description = description;
+            if (actionWithData != null) 
+                Description += " " + actionWithData.Data;
         }
 
         public void ExecuteActions(AbstractAIComponent context) {
             AiActions = AiActions.OrderBy(action => action.Order).ToList();
-            AiActions.ForEach(action => action.Action.Invoke(context, action.AiData));
+            AiActions.ForEach(action => action.Action.Invoke(context, action.Data));
         }
 
         public override string ToString() {

@@ -106,9 +106,7 @@
               <e p="AbstractAiComponent.cs" t="Include" />
               <e p="AIAction.cs" t="Include" />
               <e p="AIBrainGraph.cs" t="Include" />
-              <e p="AIData.cs" t="Include" />
               <e p="AIOption.cs" t="Include" />
-              <e p="TaggedData.cs" t="Include" />
             </e>
             <e p="MainNodes" t="Include">
               <e p="ConverterNode.cs" t="Include" />

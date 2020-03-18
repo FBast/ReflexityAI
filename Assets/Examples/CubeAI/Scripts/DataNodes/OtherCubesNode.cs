@@ -9,7 +9,7 @@ namespace Examples.CubeAI.Scripts.DataNodes {
 
         protected override List<Object> CollectionProvider(AbstractAIComponent context) {
             CubeAIComponent cubeAiComponent = (CubeAIComponent) context; 
-            return new List<Object>(GameManager.Cubes.Where(o => o != cubeAiComponent.gameObject));
+            return new List<Object>(GameManager.Cubes.Where(o => o != cubeAiComponent.gameObject).ToList());
         }
         
     }

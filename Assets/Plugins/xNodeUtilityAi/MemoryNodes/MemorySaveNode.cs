@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils.TagList;
@@ -11,13 +10,12 @@ namespace Plugins.xNodeUtilityAi.MemoryNodes {
         [TagListProperty(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] 
         public string MemoryTag;
         
-        public override void Execute(AbstractAIComponent context, AIData aiData) {
-            KeyValuePair<string, Object> firstData = aiData.GetFirstData();
+        public override void Execute(AbstractAIComponent context, Object data) {
             if (string.IsNullOrEmpty(MemoryTag)) 
                 throw new Exception("MemorySaveNode contain no dataTag, please select one");
-            context.SaveInMemory(MemoryTag, firstData.Value);
+            context.SaveInMemory(MemoryTag, data);
         }
-        
+
     }
 
 }

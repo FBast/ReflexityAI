@@ -1,14 +1,13 @@
 ﻿using System.Collections.Generic;
 using Plugins.xNodeUtilityAi.Framework;
+using UnityEngine;
 using XNode;
-using Object = UnityEngine.Object;
 
 namespace Plugins.xNodeUtilityAi.AbstractNodes.DataNodes {
     public abstract class CollectionDataNode : DataNode {
         
         [Output] public CollectionDataNode LinkedOption;
-        [Output] public TaggedData DataOut;
-        public string DataTag = "Data";
+        [Output] public Object DataOut;
         public int Index { get; set; }
 
         public int CollectionCount => CollectionProvider(_context)?.Count ?? 0;
@@ -23,17 +22,9 @@ namespace Plugins.xNodeUtilityAi.AbstractNodes.DataNodes {
                 if (_context == null) return null;
                 List<Object> collection = CollectionProvider(_context);
                 if (collection != null && collection.Count > Index)
-                    return GetData();
+                    return collection[Index];
             }
             return null;
-        }
-        
-        public TaggedData GetData() {
-            TaggedData taggedData = new TaggedData {
-                Data = CollectionProvider(_context)[Index], 
-                DataTag = DataTag
-            };
-            return taggedData;
         }
         
     }

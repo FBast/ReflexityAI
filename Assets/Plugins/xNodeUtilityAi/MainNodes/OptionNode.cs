@@ -6,6 +6,7 @@ using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 using XNode;
+using Object = UnityEngine.Object;
 
 namespace Plugins.xNodeUtilityAi.MainNodes {
     [NodeTint(255, 255, 120), NodeWidth(300)]
@@ -43,16 +44,15 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         public List<AIOption> GetOptions() {
             List<AIOption> options = new List<AIOption>();
             //TODO-fred switch to multiple CollectionEntryNodes
-            CollectionDataNode collectionDataNodes =
-                GetInputPort(nameof(Collection)).GetInputValue<CollectionDataNode>();
-            if (collectionDataNodes != null) {
-                while (collectionDataNodes.CollectionCount > collectionDataNodes.Index) {
+            CollectionDataNode collectionDataNode = GetInputPort(nameof(Collection)).GetInputValue<CollectionDataNode>();
+            if (collectionDataNode != null) {
+                while (collectionDataNode.CollectionCount > collectionDataNode.Index) {
                     options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
                         GetUtilityAndWeight(), Description));
-                    collectionDataNodes.Index++;
+                    collectionDataNode.Index++;
                 }
 
-                collectionDataNodes.Index = 0;
+                collectionDataNode.Index = 0;
             } else {
                 options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
                     GetUtilityAndWeight(), Description));

@@ -25,7 +25,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public readonly Dictionary<AIBrainGraph, List<AIOption>> Options = new Dictionary<AIBrainGraph, List<AIOption>>();
         public Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
         
-        private readonly Dictionary<string, Object> _memory = new Dictionary<string, Object>();
+        private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
         private float _lastProbabilityResult;
         private bool _isThinking;
@@ -104,22 +104,17 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         // Memory
         
-        public void SaveInMemory(string dataTag, Object data) {
-            if (LoadFromMemory(dataTag) != null)
-                throw new Exception("Impossible to save " + dataTag + ", consider using a " + typeof(MemoryCheckNode)
-                    + " before using " + typeof(MemorySaveNode));
-            _memory.Add(dataTag, data);
+        public void SaveInMemory(string memoryTag, object data) {
+            if (_memory.ContainsKey(memoryTag)) _memory[memoryTag] = data;
+            else _memory.Add(memoryTag, data);
         }
 
-        public TaggedData LoadFromMemory(string dataTag) {
-            Object dataToReturn;
-            if (!_memory.TryGetValue(dataTag, out dataToReturn)) return null;
-            TaggedData taggedData = new TaggedData {DataTag = dataTag, Data = dataToReturn};
-            return taggedData;
+        public object LoadFromMemory(string memoryTag) {
+            return _memory.ContainsKey(memoryTag) ? _memory[memoryTag] : null;
         }
         
-        public bool ClearFromMemory(string dataTag) {
-            return _memory.Remove(dataTag);
+        public void ClearFromMemory(string memoryTag) {
+            _memory.Remove(memoryTag);
         }
         
         // Historic

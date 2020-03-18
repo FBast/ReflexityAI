@@ -8,8 +8,8 @@ namespace Plugins.xNodeUtilityAi.AbstractNodes.DataNodes {
         [TagListProperty(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] 
         public string MemoryTag;
         
-        protected override Object ValueProvider(AbstractAIComponent context) {
-            return context.LoadFromMemory(MemoryTag).Data;
+        protected override object ValueProvider(AbstractAIComponent context) {
+            return context.LoadFromMemory(MemoryTag);
         }
 
     }
