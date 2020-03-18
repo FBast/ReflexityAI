@@ -91,6 +91,7 @@
               <e p="DataNodes" t="Include">
                 <e p="CollectionDataNode.cs" t="Include" />
                 <e p="DataNode.cs" t="Include" />
+                <e p="MemoryLoadNode.cs" t="Include" />
                 <e p="SimpleDataNode.cs" t="Include" />
               </e>
               <e p="EntryBoolNode.cs" t="Include" />
@@ -99,12 +100,12 @@
             </e>
             <e p="Editor" t="Include">
               <e p="AiBrainGraphEditor.cs" t="Include" />
-              <e p="AiDebuggerEditor.cs" t="Include" />
+              <e p="AiDebuggerEditorWindow.cs" t="Include" />
             </e>
             <e p="Framework" t="Include">
               <e p="AbstractAiComponent.cs" t="Include" />
               <e p="AIAction.cs" t="Include" />
-              <e p="AIBrain.cs" t="Include" />
+              <e p="AIBrainGraph.cs" t="Include" />
               <e p="AIData.cs" t="Include" />
               <e p="AIOption.cs" t="Include" />
               <e p="TaggedData.cs" t="Include" />
@@ -130,6 +131,15 @@
             <e p="PatternNodes" t="Include">
               <e p="InCooldownNode.cs" t="Include" />
               <e p="SaveHistoricNode.cs" t="Include" />
+            </e>
+            <e p="Utils" t="Include">
+              <e p="TagList" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="TagListDrawer.cs" t="Include" />
+                </e>
+                <e p="TagListHelper.cs" t="Include" />
+                <e p="TagListProperty.cs" t="Include" />
+              </e>
             </e>
           </e>
         </e>

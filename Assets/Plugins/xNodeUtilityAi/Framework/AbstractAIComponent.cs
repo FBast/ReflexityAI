@@ -7,7 +7,6 @@ using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.MainNodes;
 using Plugins.xNodeUtilityAi.MemoryNodes;
 using UnityEngine;
-using XNode;
 using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
@@ -15,7 +14,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
     public class AbstractAIComponent : MonoBehaviour {
         
         [Tooltip("Brains used by the AI")]
-        public List<AIBrain> UtilityAiBrains;
+        public List<AIBrainGraph> UtilityAiBrains;
         [Tooltip("Time between each AI evaluations")]
         [Range(0.1f, 5f)] public float TimeBetweenRefresh = 0.5f;
         [Tooltip("No randomisation between best options")]
@@ -23,8 +22,8 @@ namespace Plugins.xNodeUtilityAi.Framework {
         [Tooltip("Cooperative : One option by brain is executed\n" +
                  "Competitive : One option for all brain is executed")]
         public BrainType BrainType;
-        public readonly Dictionary<AIBrain, List<AIOption>> Options = new Dictionary<AIBrain, List<AIOption>>();
-        public Dictionary<AIBrain, AIOption> SelectedOptions = new Dictionary<AIBrain, AIOption>();
+        public readonly Dictionary<AIBrainGraph, List<AIOption>> Options = new Dictionary<AIBrainGraph, List<AIOption>>();
+        public Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
         
         private readonly Dictionary<string, Object> _memory = new Dictionary<string, Object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
@@ -41,7 +40,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         IEnumerator ThinkAndAct() {
             _isThinking = true;
-            foreach (AIBrain utilityAiBrain in UtilityAiBrains) {
+            foreach (AIBrainGraph utilityAiBrain in UtilityAiBrains) {
                 CalculateOptions(utilityAiBrain);
                 yield return null;
                 AIOption aiOption = ChooseOption(utilityAiBrain);
@@ -57,45 +56,45 @@ namespace Plugins.xNodeUtilityAi.Framework {
             _isThinking = false;
         }
 
-        private void CalculateOptions(AIBrain utilityAiBrain) {
-            if (utilityAiBrain == null) return;
+        private void CalculateOptions(AIBrainGraph aiBrainGraph) {
+            if (aiBrainGraph == null) return;
             // Setup Contexts
-            utilityAiBrain.GetNodes<EntryNode>().ForEach(node => node.SetContext(this));
-            utilityAiBrain.GetNodes<DataNode>().ForEach(node => node.SetContext(this));
-            utilityAiBrain.GetNodes<ActionNode>().ForEach(node => node.SetContext(this));
+            aiBrainGraph.GetNodes<EntryNode>().ForEach(node => node.SetContext(this));
+            aiBrainGraph.GetNodes<DataNode>().ForEach(node => node.SetContext(this));
+            aiBrainGraph.GetNodes<ActionNode>().ForEach(node => node.SetContext(this));
             // Add the brain to the option dictionary
-            if (Options.ContainsKey(utilityAiBrain)) {
-                Options[utilityAiBrain].Clear();
+            if (Options.ContainsKey(aiBrainGraph)) {
+                Options[aiBrainGraph].Clear();
             }
             else {
-                Options.Add(utilityAiBrain, new List<AIOption>());
+                Options.Add(aiBrainGraph, new List<AIOption>());
             }
-            utilityAiBrain.GetNodes<OptionNode>().ForEach(node => Options[utilityAiBrain]
+            aiBrainGraph.GetNodes<OptionNode>().ForEach(node => Options[aiBrainGraph]
                 .AddRange(node.GetOptions()));
             // Return if no option found
-            if (Options[utilityAiBrain].Count == 0) return;
+            if (Options[aiBrainGraph].Count == 0) return;
             // Calculate Probability
-            foreach (AIOption aiOption in Options[utilityAiBrain]) {
-                aiOption.Probability = aiOption.Utility / Options[utilityAiBrain]
+            foreach (AIOption aiOption in Options[aiBrainGraph]) {
+                aiOption.Probability = aiOption.Utility / Options[aiBrainGraph]
                                            .Where(option => option.Weight == aiOption.Weight)
                                            .Sum(option => option.Utility);
             }
             // Order by Weight then Utility
-            Options[utilityAiBrain] = Options[utilityAiBrain].OrderByDescending(option => option.Weight).ThenByDescending(option => option.Utility).ToList();
+            Options[aiBrainGraph] = Options[aiBrainGraph].OrderByDescending(option => option.Weight).ThenByDescending(option => option.Utility).ToList();
         }
 
-        private AIOption ChooseOption(AIBrain aiBrain) {
+        private AIOption ChooseOption(AIBrainGraph aiBrainGraph) {
             // Calcul maxWeight and return null if equal to zero
-            int maxWeight = Options[aiBrain].Max(option => option.Weight);
+            int maxWeight = Options[aiBrainGraph].Max(option => option.Weight);
             if (maxWeight == 0) return null;
             // Returning best option for no random
             if (AlwaysPickBestChoice) {
-                return Options[aiBrain].FirstOrDefault();
+                return Options[aiBrainGraph].FirstOrDefault();
             }
             // Rolling probability on weighted random
             _lastProbabilityResult = Random.Range(0f, 1f);
             float probabilitySum = 0f;
-            foreach (AIOption dualUtility in Options[aiBrain].FindAll(option => option.Weight == maxWeight)) {
+            foreach (AIOption dualUtility in Options[aiBrainGraph].FindAll(option => option.Weight == maxWeight)) {
                 probabilitySum += dualUtility.Probability;
                 if (probabilitySum >= _lastProbabilityResult)
                     return dualUtility;

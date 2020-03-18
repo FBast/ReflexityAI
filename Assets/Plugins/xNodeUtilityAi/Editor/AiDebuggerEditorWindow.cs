@@ -6,16 +6,16 @@ using UnityEditor;
 using UnityEngine;
 
 namespace Plugins.xNodeUtilityAi.Editor {
-    public class AiDebuggerEditor : EditorWindow {
+    public class AiDebuggerEditorWindow : EditorWindow {
         
         private GameObject _currentGameObject;
-        private Dictionary<AIBrain, List<AIOption>> _options = new Dictionary<AIBrain, List<AIOption>>();
-        private Dictionary<AIBrain, AIOption> _selectedOptions = new Dictionary<AIBrain, AIOption>();
+        private Dictionary<AIBrainGraph, List<AIOption>> _options = new Dictionary<AIBrainGraph, List<AIOption>>();
+        private Dictionary<AIBrainGraph, AIOption> _selectedOptions = new Dictionary<AIBrainGraph, AIOption>();
         private Gradient _weightGradiant;
         
         [MenuItem("Tool/AI Debugger")]
         private static void Init() {
-            AiDebuggerEditor window = GetWindow<AiDebuggerEditor>("AI Debugger", true);
+            AiDebuggerEditorWindow window = GetWindow<AiDebuggerEditorWindow>("AI Debugger", true);
             window.Show();
         }
 
@@ -32,7 +32,11 @@ namespace Plugins.xNodeUtilityAi.Editor {
             };
         }
 
-        private void Update() {
+        private void OnInspectorUpdate() {
+            Repaint();
+        }
+
+        private void OnSelectionChange() {
             // New selection control
             if (Selection.activeGameObject != _currentGameObject || _currentGameObject == null) {
                 // Component control
@@ -44,10 +48,6 @@ namespace Plugins.xNodeUtilityAi.Editor {
             }
         }
 
-        private void OnInspectorUpdate() {
-            Repaint();
-        }
-        
         private void OnGUI() {
             GUIStyle labelGuiStyle = new GUIStyle(GUI.skin.label) {
                 alignment = TextAnchor.MiddleCenter
@@ -66,7 +66,7 @@ namespace Plugins.xNodeUtilityAi.Editor {
                 float rowHeight = 20;
                 int i = 0;
                 EditorGUI.LabelField(new Rect(3, 3, position.width - 6, rowHeight), "Brain of " + _currentGameObject.name, labelGuiStyle);
-                foreach (KeyValuePair<AIBrain,List<AIOption>> valuePair in _options) {
+                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in _options) {
                     float weightMax = valuePair.Value.Max(option => option.Weight);
                     float weightMin = valuePair.Value.Min(option => option.Weight);
                     EditorGUI.LabelField(new Rect(3 + i * (columnWidth + 6), 3 + rowHeight, columnWidth, rowHeight), valuePair.Key.name, labelGuiStyle);

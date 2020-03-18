@@ -1,15 +1,16 @@
-﻿using System.Collections.Generic;
-using Plugins.xNodeUtilityAi.AbstractNodes;
+﻿using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.Framework;
-using UnityEngine;
+using Plugins.xNodeUtilityAi.Utils.TagList;
 
 namespace Plugins.xNodeUtilityAi.MemoryNodes {
     public class MemoryClearNode : ActionNode {
 
+        [TagListProperty(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] 
+        public string MemoryTag;
+        
         public override void Execute(AbstractAIComponent context, AIData aiData) {
-            foreach (KeyValuePair<string,Object> keyValuePair in aiData) {
-                context.ClearFromMemory(keyValuePair.Key);
-            }
+            context.ClearFromMemory(MemoryTag);
         }
+        
     }
 }

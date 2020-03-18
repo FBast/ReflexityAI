@@ -9,7 +9,7 @@ namespace Plugins.xNodeUtilityAi.AbstractNodes.DataNodes {
         [Output] public CollectionDataNode LinkedOption;
         [Output] public TaggedData DataOut;
         public string DataTag = "Data";
-        public int Index;
+        public int Index { get; set; }
 
         public int CollectionCount => CollectionProvider(_context)?.Count ?? 0;
 

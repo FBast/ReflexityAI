@@ -1,25 +1,21 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.Framework;
-using XNode;
+using Plugins.xNodeUtilityAi.Utils.TagList;
 using Object = UnityEngine.Object;
 
 namespace Plugins.xNodeUtilityAi.MemoryNodes {
     public class MemorySaveNode : ActionNode {
 
-        [Output] public TaggedData LoadData;
-        public string DataTag;
-        
-        public override object GetValue(NodePort port) {
-            if (port.fieldName == "LoadData") {
-                return _context.LoadFromMemory(DataTag);
-            }
-            return base.GetValue(port);
-        }
+        [TagListProperty(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] 
+        public string MemoryTag;
         
         public override void Execute(AbstractAIComponent context, AIData aiData) {
             KeyValuePair<string, Object> firstData = aiData.GetFirstData();
-            context.SaveInMemory(firstData.Key, firstData.Value);
+            if (string.IsNullOrEmpty(MemoryTag)) 
+                throw new Exception("MemorySaveNode contain no dataTag, please select one");
+            context.SaveInMemory(MemoryTag, firstData.Value);
         }
         
     }

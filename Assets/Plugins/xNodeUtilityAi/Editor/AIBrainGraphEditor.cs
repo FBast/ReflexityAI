@@ -8,7 +8,7 @@ using XNode;
 using XNodeEditor;
 
 namespace Plugins.xNodeUtilityAi.Editor {
-    [CustomNodeGraphEditor(typeof(AIBrain))]
+    [CustomNodeGraphEditor(typeof(AIBrainGraph))]
     public class AIBrainGraphEditor : NodeGraphEditor {
 
         public override string GetNodeMenuName(Type type) {
@@ -36,14 +36,13 @@ namespace Plugins.xNodeUtilityAi.Editor {
         public override string GetPortTooltip(NodePort port) {
             try {
                 Type portType = port.ValueType;
-                string tooltip = "";
-                tooltip = portType.PrettyName();
+                string tooltip = portType.PrettyName();
                 if (port.IsOutput) {
                     object obj = port.node.GetValue(port);
                     tooltip += " = " + (obj != null ? obj.ToString() : "null");
                 }
                 return tooltip;
-            } catch (Exception exception) {
+            } catch (Exception) {
                 return "Unable to recover port value";
             }
         }
