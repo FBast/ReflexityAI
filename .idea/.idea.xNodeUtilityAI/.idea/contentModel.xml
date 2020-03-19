@@ -28,6 +28,7 @@
                 <e p="DataCurrentHpCount.cs" t="Include" />
                 <e p="DataIsAlive.cs" t="Include" />
                 <e p="DataIsDead.cs" t="Include" />
+                <e p="DataIsTarget.cs" t="Include" />
                 <e p="DataMaxHpCount.cs" t="Include" />
                 <e p="HasTarget.cs" t="Include" />
                 <e p="MaxAmmoCount.cs" t="Include" />

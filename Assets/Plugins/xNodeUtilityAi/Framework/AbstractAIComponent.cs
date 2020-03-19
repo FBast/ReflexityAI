@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.MainNodes;
-using Plugins.xNodeUtilityAi.MemoryNodes;
 using UnityEngine;
-using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
 namespace Plugins.xNodeUtilityAi.Framework {
@@ -103,7 +100,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
         // Memory
-        
+
         public void SaveInMemory(string memoryTag, object data) {
             if (_memory.ContainsKey(memoryTag)) _memory[memoryTag] = data;
             else _memory.Add(memoryTag, data);
@@ -134,4 +131,5 @@ namespace Plugins.xNodeUtilityAi.Framework {
         Cooperative,
         Competitive
     }
+
 }

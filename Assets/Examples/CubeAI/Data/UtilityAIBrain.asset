@@ -95,10 +95,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a61650fa77734d0cbd727eea663dffa6, type: 3}
-  m_Name: Save Historic
+  m_Name: Memory Save
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -264, y: -824}
+  position: {x: -264, y: -808}
   ports:
     keys:
     - Data
@@ -108,10 +108,7 @@ MonoBehaviour:
       _node: {fileID: -4897368317677872398}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: DataOut
-        node: {fileID: 7948388030205020400}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -131,7 +128,7 @@ MonoBehaviour:
   Data: {fileID: 0}
   LinkedOption: {fileID: 0}
   Order: 0
-  HistoricTag: truc
+  HistoricTag: Target
 --- !u!114 &-4279659965594252076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +209,53 @@ MonoBehaviour:
   Multiplier: 1
   Bonus: 0
   Actions: {fileID: 0}
+--- !u!114 &-4150197399586118565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
+  m_Name: Converter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -120, y: -1352}
+  ports:
+    keys:
+    - ValueIn
+    - ValueOut
+    values:
+    - _fieldName: ValueIn
+      _node: {fileID: -4150197399586118565}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Value
+        node: {fileID: -1582457027521934120}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: -4150197399586118565}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Multiplier
+        node: {fileID: -3149500813272203088}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  ValueIn: 0
+  IsTrue: 0
+  IsFalse: 1
+  ValueOut: 0
 --- !u!114 &-4130570032482084031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +311,7 @@ MonoBehaviour:
   m_Name: Option
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 280, y: -1432}
+  position: {x: 280, y: -1576}
   ports:
     keys:
     - Collection
@@ -307,6 +351,9 @@ MonoBehaviour:
       connections:
       - fieldName: ValueOut
         node: {fileID: 8389664352704540870}
+        reroutePoints: []
+      - fieldName: ValueOut
+        node: {fileID: -4150197399586118565}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -447,7 +494,7 @@ MonoBehaviour:
   m_Name: Data Max Hp Count
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -664, y: -1432}
+  position: {x: -664, y: -1576}
   ports:
     keys:
     - Value
@@ -467,6 +514,51 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Data
       _node: {fileID: -1866921937441271112}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: DataOut
+        node: {fileID: 7948388030205020400}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data: {fileID: 0}
+  Value: 0
+--- !u!114 &-1582457027521934120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2cc52425ba4e50ae7d3b1bc5455e10, type: 3}
+  m_Name: Data Is Target
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -664, y: -1368}
+  ports:
+    keys:
+    - Value
+    - Data
+    values:
+    - _fieldName: Value
+      _node: {fileID: -1582457027521934120}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: ValueIn
+        node: {fileID: -4150197399586118565}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: -1582457027521934120}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
@@ -534,7 +626,7 @@ MonoBehaviour:
   m_Name: Data Current Hp Count
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -664, y: -1512}
+  position: {x: -664, y: -1656}
   ports:
     keys:
     - Value
@@ -579,7 +671,7 @@ MonoBehaviour:
   m_Name: Has Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -664, y: -1224}
+  position: {x: -664, y: -1240}
   ports:
     keys:
     - Value
@@ -621,7 +713,7 @@ MonoBehaviour:
   m_Name: Data Is Dead
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -664, y: -1352}
+  position: {x: -664, y: -1496}
   ports:
     keys:
     - Value
@@ -696,10 +788,11 @@ MonoBehaviour:
   - {fileID: 178059516657548659}
   - {fileID: 8625277588503570048}
   - {fileID: -4897368317677872398}
+  - {fileID: -1582457027521934120}
+  - {fileID: -4150197399586118565}
   HistoricTags:
-  - truc
-  MemoryTags:
-  - save
+  - Target
+  MemoryTags: []
 --- !u!114 &178059516657548659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,7 +848,7 @@ MonoBehaviour:
   m_Name: Set Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -264, y: -936}
+  position: {x: -264, y: -920}
   ports:
     keys:
     - Data
@@ -801,11 +894,12 @@ MonoBehaviour:
   m_Name: In Cooldown
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -664, y: -1096}
+  position: {x: -664, y: -1112}
   ports:
     keys:
     - Value
     - Data
+    - Cooldown
     values:
     - _fieldName: Value
       _node: {fileID: 1164861899576825953}
@@ -828,10 +922,19 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
+    - _fieldName: Cooldown
+      _node: {fileID: 1164861899576825953}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
   Data: {fileID: 0}
   Value: 0
-  HistoricTag: Target
   Cooldown: 3
+  HistoricTag: Target
 --- !u!114 &2252001372574295656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1208,7 +1311,7 @@ MonoBehaviour:
   m_Name: Current Hp Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -680, y: 440}
+  position: {x: -680, y: 504}
   ports:
     keys:
     - Value
@@ -1250,7 +1353,7 @@ MonoBehaviour:
   m_Name: Converter
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -120, y: -1080}
+  position: {x: -120, y: -1096}
   ports:
     keys:
     - ValueIn
@@ -1297,7 +1400,7 @@ MonoBehaviour:
   m_Name: Utility
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -120, y: -1480}
+  position: {x: -120, y: -1624}
   ports:
     keys:
     - MinX
@@ -1391,7 +1494,7 @@ MonoBehaviour:
   m_Name: Utility Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -88, y: 456}
+  position: {x: -88, y: 520}
   ports:
     keys:
     - MinX
@@ -1485,7 +1588,7 @@ MonoBehaviour:
   m_Name: Converter
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -120, y: -1208}
+  position: {x: -120, y: -1224}
   ports:
     keys:
     - ValueIn
@@ -1532,7 +1635,7 @@ MonoBehaviour:
   m_Name: Other Cubes
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1256, y: -1624}
+  position: {x: -1224, y: -1768}
   ports:
     keys:
     - LinkedOption
@@ -1568,7 +1671,7 @@ MonoBehaviour:
         node: {fileID: 650509650732122840}
         reroutePoints: []
       - fieldName: Data
-        node: {fileID: -4897368317677872398}
+        node: {fileID: -1582457027521934120}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1667,7 +1770,7 @@ MonoBehaviour:
   m_Name: Converter
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -120, y: -1336}
+  position: {x: -120, y: -1480}
   ports:
     keys:
     - ValueIn
@@ -1714,7 +1817,7 @@ MonoBehaviour:
   m_Name: Max Hp Count Node
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -680, y: 520}
+  position: {x: -680, y: 584}
   ports:
     keys:
     - Value

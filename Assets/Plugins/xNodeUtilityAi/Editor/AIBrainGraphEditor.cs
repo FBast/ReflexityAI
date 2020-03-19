@@ -21,6 +21,9 @@ namespace Plugins.xNodeUtilityAi.Editor {
             if (type == typeof(ConverterNode)) {
                 return "MainNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
             }
+            if (type.IsSubclassOf(typeof(EntryNode))) {
+                return "EntryNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
+            }
             if (type.IsSubclassOf(typeof(MiddleNode))) {
                 return "MiddleNodes/" + NodeEditorUtilities.NodeDefaultName(type);
             }

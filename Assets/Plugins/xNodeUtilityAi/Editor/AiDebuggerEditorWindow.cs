@@ -52,7 +52,9 @@ namespace Plugins.xNodeUtilityAi.Editor {
             GUIStyle labelGuiStyle = new GUIStyle(GUI.skin.label) {
                 alignment = TextAnchor.MiddleCenter
             };
-            if (_options == null) {
+            if (!EditorApplication.isPlaying) {
+                EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "The AI Debugger is only available in play mode", labelGuiStyle);
+            } else if (_options == null) {
                 EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "Please select a GameObject with an AbstractAIBrain derived Component", labelGuiStyle);
             } else if (_currentGameObject == null) {
                 EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "It seems that the last selected GameObject is dead, please select another", labelGuiStyle);

@@ -6,9 +6,9 @@ using UnityEngine;
 namespace Plugins.xNodeUtilityAi.PatternNodes {
     public class SaveHistoricNode : ActionNode {
 
-        [TagListProperty(typeof(TagListHelper), nameof(TagListHelper.GetHistoricTags))] 
+        [TagListProperty(typeof(TagListHelper), nameof(TagListHelper.GetHistoricTags))]
         public string HistoricTag;
-        
+
         public override void Execute(AbstractAIComponent context, Object data) {
             context.SaveInHistoric(HistoricTag);
         }
