@@ -3,10 +3,10 @@ using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 
 namespace Examples.CubeAI.Scripts.EntryNodes {
-    public class DataCurrentHpCount : EntryIntNode {
+    public class CubeEntityCurrentHpNode : EntryIntNode {
 
         protected override int ValueProvider(AbstractAIComponent context) {
-            return GetData<GameObject>().GetComponent<CubeEntity>().CurrentHp;
+            return GetData<CubeEntity>().CurrentHp;
         }
         
     }

@@ -10,20 +10,14 @@ namespace Plugins.xNodeUtilityAi.AbstractNodes {
         [Output(connectionType: ConnectionType.Override)] public ActionNode LinkedOption;
         public int Order;
         
-        protected AbstractAIComponent _context;
-        
         public abstract void Execute(AbstractAIComponent context, Object data);
-        
-        public void SetContext(AbstractAIComponent context) {
-            _context = context;
-        }
 
         public Object GetData() {
-            return GetInputPort("Data") != null ? GetInputValue<Object>("Data") : null;
+            return GetInputPort(nameof(Data)) != null ? GetInputValue<Object>(nameof(Data)) : null;
         }
         
         public override object GetValue(NodePort port) {
-            return port.fieldName == "LinkedOption" ? this : null;
+            return port.fieldName == nameof(LinkedOption) ? this : null;
         }
         
     }

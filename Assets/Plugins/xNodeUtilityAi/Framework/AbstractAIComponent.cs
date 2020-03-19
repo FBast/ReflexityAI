@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.AbstractNodes;
-using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.MainNodes;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -37,15 +36,16 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         IEnumerator ThinkAndAct() {
             _isThinking = true;
-            foreach (AIBrainGraph utilityAiBrain in UtilityAiBrains) {
-                CalculateOptions(utilityAiBrain);
+            foreach (AIBrainGraph aiBrainGraph in UtilityAiBrains) {
+                if (aiBrainGraph == null) continue;
+                CalculateOptions(aiBrainGraph);
                 yield return null;
-                AIOption aiOption = ChooseOption(utilityAiBrain);
+                AIOption aiOption = ChooseOption(aiBrainGraph);
                 if (aiOption == null) continue;
-                if (SelectedOptions.ContainsKey(utilityAiBrain)) {
-                    SelectedOptions[utilityAiBrain] = aiOption;
+                if (SelectedOptions.ContainsKey(aiBrainGraph)) {
+                    SelectedOptions[aiBrainGraph] = aiOption;
                 } else {
-                    SelectedOptions.Add(utilityAiBrain, aiOption);
+                    SelectedOptions.Add(aiBrainGraph, aiOption);
                 }
                 aiOption.ExecuteActions(this);
                 yield return null;
@@ -54,11 +54,10 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
         private void CalculateOptions(AIBrainGraph aiBrainGraph) {
-            if (aiBrainGraph == null) return;
+
             // Setup Contexts
             aiBrainGraph.GetNodes<EntryNode>().ForEach(node => node.SetContext(this));
             aiBrainGraph.GetNodes<DataNode>().ForEach(node => node.SetContext(this));
-            aiBrainGraph.GetNodes<ActionNode>().ForEach(node => node.SetContext(this));
             // Add the brain to the option dictionary
             if (Options.ContainsKey(aiBrainGraph)) {
                 Options[aiBrainGraph].Clear();

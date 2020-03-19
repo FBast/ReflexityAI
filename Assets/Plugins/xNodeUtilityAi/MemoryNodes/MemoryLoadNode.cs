@@ -1,8 +1,8 @@
+using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils.TagList;
-using UnityEngine;
 
-namespace Plugins.xNodeUtilityAi.AbstractNodes.DataNodes {
+namespace Plugins.xNodeUtilityAi.MemoryNodes {
     public class MemoryLoadNode : SimpleDataNode {
 
         [TagListProperty(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] 

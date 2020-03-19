@@ -43,6 +43,43 @@ MonoBehaviour:
   Data: {fileID: 0}
   LinkedOption: {fileID: 0}
   Order: 0
+--- !u!114 &-8247867982363597132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62e6de3156a4a728bc1d9d8547e4822, type: 3}
+  m_Name: My Cube Entity
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1208, y: -536}
+  ports:
+    keys:
+    - DataOut
+    values:
+    - _fieldName: DataOut
+      _node: {fileID: -8247867982363597132}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Data
+        node: {fileID: -4130570032482084031}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: 178059516657548659}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: -7330626049815432269}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  DataOut: {fileID: 0}
 --- !u!114 &-7330626049815432269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +90,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cdcc653c5a4418bbc2167e42cdfb6bf, type: 3}
-  m_Name: Has Target
+  m_Name: Cube Entity Has Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -648, y: -456}
@@ -78,13 +115,47 @@ MonoBehaviour:
       _node: {fileID: -7330626049815432269}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: DataOut
+        node: {fileID: -8247867982363597132}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Value: 0
+--- !u!114 &-6951668635857156267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62e6de3156a4a728bc1d9d8547e4822, type: 3}
+  m_Name: My Cube Entity
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1224, y: -1240}
+  ports:
+    keys:
+    - DataOut
+    values:
+    - _fieldName: DataOut
+      _node: {fileID: -6951668635857156267}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Data
+        node: {fileID: -1187499331445944224}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  DataOut: {fileID: 0}
 --- !u!114 &-4897368317677872398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,8 +198,42 @@ MonoBehaviour:
       _dynamic: 0
   Data: {fileID: 0}
   LinkedOption: {fileID: 0}
-  Order: 0
+  Order: 1
   HistoricTag: Target
+--- !u!114 &-4451411571502979384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62e6de3156a4a728bc1d9d8547e4822, type: 3}
+  m_Name: My Cube Entity
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1208, y: 24}
+  ports:
+    keys:
+    - DataOut
+    values:
+    - _fieldName: DataOut
+      _node: {fileID: -4451411571502979384}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Data
+        node: {fileID: -2847192676517171213}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: -1492904181709445352}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  DataOut: {fileID: 0}
 --- !u!114 &-4279659965594252076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +258,7 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: -4279659965594252076}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -266,10 +371,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6972400d5a47a614489d046fbf1aa2b0, type: 3}
-  m_Name: Current Ammo Count Node
+  m_Name: Cube Entity Current Ammo
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -648, y: -632}
+  position: {x: -648, y: -648}
   ports:
     keys:
     - Value
@@ -291,7 +396,10 @@ MonoBehaviour:
       _node: {fileID: -4130570032482084031}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: DataOut
+        node: {fileID: -8247867982363597132}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -322,7 +430,7 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: -3149500813272203088}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -380,17 +488,20 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
-        node: {fileID: 650509650732122840}
+        node: {fileID: 0}
         reroutePoints: []
       - fieldName: LinkedOption
         node: {fileID: -4897368317677872398}
+        reroutePoints: []
+      - fieldName: LinkedOption
+        node: {fileID: 650509650732122840}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   Collection: {fileID: 0}
-  Description: 'Target '
+  Description: Target
   Utilities: 1
   UtilityMerge: 1
   Multiplier: 1
@@ -406,7 +517,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6972400d5a47a614489d046fbf1aa2b0, type: 3}
-  m_Name: Current Ammo Count Node
+  m_Name: Cube Entity Current Ammo
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -648, y: -8}
@@ -431,7 +542,10 @@ MonoBehaviour:
       _node: {fileID: -2847192676517171213}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: DataOut
+        node: {fileID: -4451411571502979384}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -491,7 +605,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43fed5bb1768479d921610c55dd04871, type: 3}
-  m_Name: Data Max Hp Count
+  m_Name: Cube Entity Max Hp
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -664, y: -1576}
@@ -536,7 +650,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e2cc52425ba4e50ae7d3b1bc5455e10, type: 3}
-  m_Name: Data Is Target
+  m_Name: Cube Entity Is Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -664, y: -1368}
@@ -581,7 +695,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d16ae8a554c41568a85badc5906c6d3, type: 3}
-  m_Name: Max Ammo Count Node
+  m_Name: Cube Entity Max Ammo
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -648, y: 72}
@@ -606,7 +720,10 @@ MonoBehaviour:
       _node: {fileID: -1492904181709445352}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: DataOut
+        node: {fileID: -4451411571502979384}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -623,7 +740,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3a2c5dde71e49dc91dadd3b6b75b379, type: 3}
-  m_Name: Data Current Hp Count
+  m_Name: Cube Entity Current Hp
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -664, y: -1656}
@@ -668,7 +785,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cdcc653c5a4418bbc2167e42cdfb6bf, type: 3}
-  m_Name: Has Target
+  m_Name: Cube Entity Has Target
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -664, y: -1240}
@@ -693,7 +810,10 @@ MonoBehaviour:
       _node: {fileID: -1187499331445944224}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: DataOut
+        node: {fileID: -6951668635857156267}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -710,7 +830,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 84b6d7b1b05042b88d808834429a4337, type: 3}
-  m_Name: Data Is Dead
+  m_Name: Cube Entity Is Dead
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -664, y: -1496}
@@ -760,36 +880,40 @@ MonoBehaviour:
   nodes:
   - {fileID: 2804958587180154056}
   - {fileID: 8886839197104446014}
-  - {fileID: -2743653046011671476}
-  - {fileID: -8328577186847297002}
-  - {fileID: 8779490541509514164}
   - {fileID: 3033678687618763116}
   - {fileID: 6061042253593071775}
   - {fileID: -4279659965594252076}
   - {fileID: 2252001372574295656}
   - {fileID: -3149500813272203088}
   - {fileID: 4504020337149638878}
-  - {fileID: 7948388030205020400}
-  - {fileID: 650509650732122840}
-  - {fileID: -1187499331445944224}
-  - {fileID: -7330626049815432269}
-  - {fileID: -806416466191249344}
   - {fileID: 6951571660698167945}
   - {fileID: 3159423348165716249}
   - {fileID: 8389664352704540870}
   - {fileID: 4117235986624966914}
   - {fileID: 1164861899576825953}
+  - {fileID: -4897368317677872398}
+  - {fileID: -4150197399586118565}
+  - {fileID: -2743653046011671476}
+  - {fileID: 8779490541509514164}
+  - {fileID: -8328577186847297002}
   - {fileID: -2847192676517171213}
   - {fileID: -4130570032482084031}
-  - {fileID: 3306926615521682196}
   - {fileID: -1393080565401486127}
-  - {fileID: -1866921937441271112}
-  - {fileID: -1492904181709445352}
-  - {fileID: 178059516657548659}
-  - {fileID: 8625277588503570048}
-  - {fileID: -4897368317677872398}
+  - {fileID: -7330626049815432269}
+  - {fileID: -1187499331445944224}
+  - {fileID: -806416466191249344}
   - {fileID: -1582457027521934120}
-  - {fileID: -4150197399586118565}
+  - {fileID: 178059516657548659}
+  - {fileID: -1492904181709445352}
+  - {fileID: -1866921937441271112}
+  - {fileID: 3922302044121580106}
+  - {fileID: 7948388030205020400}
+  - {fileID: 650509650732122840}
+  - {fileID: -4451411571502979384}
+  - {fileID: -8247867982363597132}
+  - {fileID: -6951668635857156267}
+  - {fileID: 3680257588697662652}
+  - {fileID: 2912519316977920475}
   HistoricTags:
   - Target
   MemoryTags: []
@@ -803,7 +927,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d16ae8a554c41568a85badc5906c6d3, type: 3}
-  m_Name: Max Ammo Count Node
+  m_Name: Cube Entity Max Ammo
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -648, y: -552}
@@ -828,7 +952,10 @@ MonoBehaviour:
       _node: {fileID: 178059516657548659}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: DataOut
+        node: {fileID: -8247867982363597132}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -959,7 +1086,7 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: 2252001372574295656}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -1009,7 +1136,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   Collection: {fileID: 0}
-  Description: Heal
+  Description: Flee
   Utilities: 1
   UtilityMerge: 1
   Multiplier: 1
@@ -1157,6 +1284,51 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   UtilityY: 0.0000005374136
+--- !u!114 &2912519316977920475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43fed5bb1768479d921610c55dd04871, type: 3}
+  m_Name: Cube Entity Max Hp
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -600, y: 600}
+  ports:
+    keys:
+    - Value
+    - Data
+    values:
+    - _fieldName: Value
+      _node: {fileID: 2912519316977920475}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: MaxX
+        node: {fileID: 6061042253593071775}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: Data
+      _node: {fileID: 2912519316977920475}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: DataOut
+        node: {fileID: 3922302044121580106}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  Data: {fileID: 0}
+  Value: 0
 --- !u!114 &3033678687618763116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1225,7 +1397,7 @@ MonoBehaviour:
       _dynamic: 0
   MinX: 0
   X: 0
-  MaxX: 0
+  MaxX: 30
   Function:
     serializedVersion: 2
     m_Curve:
@@ -1298,7 +1470,7 @@ MonoBehaviour:
   IsTrue: 1
   IsFalse: 0
   ValueOut: 0
---- !u!114 &3306926615521682196
+--- !u!114 &3680257588697662652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1307,18 +1479,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abde3e78fc5e489e91b423cdde87a996, type: 3}
-  m_Name: Current Hp Count Node
+  m_Script: {fileID: 11500000, guid: d3a2c5dde71e49dc91dadd3b6b75b379, type: 3}
+  m_Name: Cube Entity Current Hp
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -680, y: 504}
+  position: {x: -600, y: 488}
   ports:
     keys:
     - Value
     - Data
     values:
     - _fieldName: Value
-      _node: {fileID: 3306926615521682196}
+      _node: {fileID: 3680257588697662652}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
@@ -1330,16 +1502,53 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Data
-      _node: {fileID: 3306926615521682196}
+      _node: {fileID: 3680257588697662652}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: DataOut
+        node: {fileID: 3922302044121580106}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Value: 0
+--- !u!114 &3922302044121580106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f62e6de3156a4a728bc1d9d8547e4822, type: 3}
+  m_Name: My Cube Entity
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1192, y: 536}
+  ports:
+    keys:
+    - DataOut
+    values:
+    - _fieldName: DataOut
+      _node: {fileID: 3922302044121580106}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Data
+        node: {fileID: 3680257588697662652}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: 2912519316977920475}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  DataOut: {fileID: 0}
 --- !u!114 &4117235986624966914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1517,7 +1726,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: Value
-        node: {fileID: 3306926615521682196}
+        node: {fileID: 3680257588697662652}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -1529,7 +1738,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: Value
-        node: {fileID: 8625277588503570048}
+        node: {fileID: 2912519316977920475}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -1632,7 +1841,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 366cea4ec8da4d108cc997adbc9afa17, type: 3}
-  m_Name: Other Cubes
+  m_Name: Other Cube Entities
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
   position: {x: -1224, y: -1768}
@@ -1643,7 +1852,7 @@ MonoBehaviour:
     values:
     - _fieldName: LinkedOption
       _node: {fileID: 7948388030205020400}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Collection
@@ -1659,6 +1868,9 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Data
+        node: {fileID: 650509650732122840}
+        reroutePoints: []
+      - fieldName: Data
         node: {fileID: -1393080565401486127}
         reroutePoints: []
       - fieldName: Data
@@ -1666,9 +1878,6 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: Data
         node: {fileID: -806416466191249344}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: 650509650732122840}
         reroutePoints: []
       - fieldName: Data
         node: {fileID: -1582457027521934120}
@@ -1804,48 +2013,6 @@ MonoBehaviour:
   IsTrue: 0
   IsFalse: 1
   ValueOut: 0
---- !u!114 &8625277588503570048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4591bdc29a3432c8f6771f559846c76, type: 3}
-  m_Name: Max Hp Count Node
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -680, y: 584}
-  ports:
-    keys:
-    - Value
-    - Data
-    values:
-    - _fieldName: Value
-      _node: {fileID: 8625277588503570048}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: MaxX
-        node: {fileID: 6061042253593071775}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Data
-      _node: {fileID: 8625277588503570048}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  Data: {fileID: 0}
-  Value: 0
 --- !u!114 &8779490541509514164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1913,7 +2080,7 @@ MonoBehaviour:
     values:
     - _fieldName: Collection
       _node: {fileID: 8886839197104446014}
-      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.DataNodes.CollectionDataNode,
+      _typeQualifiedName: Plugins.xNodeUtilityAi.AbstractNodes.CollectionDataNode,
         Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0

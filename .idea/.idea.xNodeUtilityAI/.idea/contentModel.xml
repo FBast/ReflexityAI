@@ -15,24 +15,22 @@
                 <e p="FireNode.cs" t="Include" />
                 <e p="HealNode.cs" t="Include" />
                 <e p="ReloadNode.cs" t="Include" />
-                <e p="SetTarget.cs" t="Include" />
+                <e p="SetTargetNode.cs" t="Include" />
               </e>
               <e p="CubeAiComponent.cs" t="Include" />
               <e p="CubeEntity.cs" t="Include" />
               <e p="DataNodes" t="Include">
-                <e p="OtherCubesNode.cs" t="Include" />
+                <e p="MyCubeEntityNode.cs" t="Include" />
+                <e p="OtherCubeEntitiesNode.cs" t="Include" />
               </e>
               <e p="EntryNodes" t="Include">
-                <e p="CurrentAmmoCount.cs" t="Include" />
-                <e p="CurrentHpCount.cs" t="Include" />
-                <e p="DataCurrentHpCount.cs" t="Include" />
-                <e p="DataIsAlive.cs" t="Include" />
-                <e p="DataIsDead.cs" t="Include" />
-                <e p="DataIsTarget.cs" t="Include" />
-                <e p="DataMaxHpCount.cs" t="Include" />
-                <e p="HasTarget.cs" t="Include" />
-                <e p="MaxAmmoCount.cs" t="Include" />
-                <e p="MaxHpCount.cs" t="Include" />
+                <e p="CubeEntityCurrentAmmoNode.cs" t="Include" />
+                <e p="CubeEntityCurrentHpNode.cs" t="Include" />
+                <e p="CubeEntityHasTargetNode.cs" t="Include" />
+                <e p="CubeEntityIsDeadNode.cs" t="Include" />
+                <e p="CubeEntityIsTargetNode.cs" t="Include" />
+                <e p="CubeEntityMaxAmmoNode.cs" t="Include" />
+                <e p="CubeEntityMaxHpNode.cs" t="Include" />
               </e>
             </e>
           </e>
@@ -89,15 +87,10 @@
           <e p="xNodeUtilityAI" t="Include">
             <e p="AbstractNodes" t="Include">
               <e p="ActionNode.cs" t="Include" />
-              <e p="DataNodes" t="Include">
-                <e p="CollectionDataNode.cs" t="Include" />
-                <e p="DataNode.cs" t="Include" />
-                <e p="MemoryLoadNode.cs" t="Include" />
-                <e p="SimpleDataNode.cs" t="Include" />
-              </e>
+              <e p="CollectionDataNode.cs" t="Include" />
               <e p="EntryBoolNode.cs" t="Include" />
               <e p="EntryIntNode.cs" t="Include" />
-              <e p="EntryNode.cs" t="Include" />
+              <e p="SimpleDataNode.cs" t="Include" />
             </e>
             <e p="Editor" t="Include">
               <e p="AiBrainGraphEditor.cs" t="Include" />
@@ -108,6 +101,8 @@
               <e p="AIAction.cs" t="Include" />
               <e p="AIBrainGraph.cs" t="Include" />
               <e p="AIOption.cs" t="Include" />
+              <e p="DataNode.cs" t="Include" />
+              <e p="EntryNode.cs" t="Include" />
             </e>
             <e p="MainNodes" t="Include">
               <e p="ConverterNode.cs" t="Include" />
@@ -117,6 +112,7 @@
             <e p="MemoryNodes" t="Include">
               <e p="MemoryCheckNode.cs" t="Include" />
               <e p="MemoryClearNode.cs" t="Include" />
+              <e p="MemoryLoadNode.cs" t="Include" />
               <e p="MemorySaveNode.cs" t="Include" />
             </e>
             <e p="MiddleNodes" t="Include">

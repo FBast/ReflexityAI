@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public static List<GameObject> Cubes;
+    public static List<CubeEntity> CubeEntities;
 
     private void Start() {
-        Cubes = FindObjectsOfType<CubeEntity>().Select(entity => entity.gameObject).ToList();
+        CubeEntities = FindObjectsOfType<CubeEntity>().ToList();
     }
 
 }

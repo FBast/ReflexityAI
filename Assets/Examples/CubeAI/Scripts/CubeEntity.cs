@@ -18,7 +18,7 @@ namespace Examples.CubeAI.Scripts {
         public int MaxAmmo;
         public int CurrentAmmo;
         public int TargetSpeed;
-        public GameObject Target;
+        public CubeEntity Target;
 
         private Color _startingColor;
         

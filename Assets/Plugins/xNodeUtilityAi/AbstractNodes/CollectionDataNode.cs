@@ -3,7 +3,7 @@ using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 using XNode;
 
-namespace Plugins.xNodeUtilityAi.AbstractNodes.DataNodes {
+namespace Plugins.xNodeUtilityAi.AbstractNodes {
     public abstract class CollectionDataNode : DataNode {
         
         [Output] public CollectionDataNode LinkedOption;

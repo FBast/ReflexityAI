@@ -2,11 +2,10 @@
 using Plugins.xNodeUtilityAi.Framework;
 
 namespace Examples.CubeAI.Scripts.EntryNodes {
-    public class CurrentHpCount : EntryIntNode {
+    public class CubeEntityMaxAmmoNode : EntryIntNode {
 
         protected override int ValueProvider(AbstractAIComponent context) {
-            CubeAIComponent cubeAiComponent = (CubeAIComponent) context;
-            return cubeAiComponent.CubeEntity.CurrentHp;
+            return GetData<CubeEntity>().MaxAmmo;
         }
         
     }

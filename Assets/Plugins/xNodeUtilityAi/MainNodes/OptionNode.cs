@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.AbstractNodes;
-using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 using XNode;

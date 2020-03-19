@@ -1,6 +1,5 @@
 ﻿using System;
 using Plugins.xNodeUtilityAi.AbstractNodes;
-using Plugins.xNodeUtilityAi.AbstractNodes.DataNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.MainNodes;
 using Plugins.xNodeUtilityAi.MiddleNodes;

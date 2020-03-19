@@ -3,10 +3,13 @@ using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 
 namespace Examples.CubeAI.Scripts.EntryNodes {
-    public class DataMaxHpCount : EntryIntNode {
+    public class CubeEntityMaxHpNode : EntryIntNode {
 
         protected override int ValueProvider(AbstractAIComponent context) {
-            return GetData<GameObject>().GetComponent<CubeEntity>().MaxHp;
+            CubeEntity cubeEntity = GetData<CubeEntity>();
+            if (cubeEntity == null) 
+                Debug.Log("Strangely, cube entity is null");
+            return cubeEntity.MaxHp;
         }
         
     }
