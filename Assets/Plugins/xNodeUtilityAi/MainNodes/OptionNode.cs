@@ -19,7 +19,7 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         //TODO-fred switch to ConnectionType.Multiple
         [Input(ShowBackingValue.Never, ConnectionType.Override), Tooltip("Connect to the Collection Entry Node")]
-        public CollectionDataNode Collection;
+        public DataCollectionNode dataCollection;
 
         [TextArea, Tooltip("Provide a basic description displayed in the AI Debugger")]
         public string Description;
@@ -43,15 +43,15 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         public List<AIOption> GetOptions() {
             List<AIOption> options = new List<AIOption>();
             //TODO-fred switch to multiple CollectionEntryNodes
-            CollectionDataNode collectionDataNode = GetInputPort(nameof(Collection)).GetInputValue<CollectionDataNode>();
-            if (collectionDataNode != null) {
-                while (collectionDataNode.CollectionCount > collectionDataNode.Index) {
+            DataCollectionNode dataCollectionNode = GetInputPort(nameof(dataCollection)).GetInputValue<DataCollectionNode>();
+            if (dataCollectionNode != null) {
+                while (dataCollectionNode.CollectionCount > dataCollectionNode.Index) {
                     options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
                         GetUtilityAndWeight(), Description));
-                    collectionDataNode.Index++;
+                    dataCollectionNode.Index++;
                 }
 
-                collectionDataNode.Index = 0;
+                dataCollectionNode.Index = 0;
             } else {
                 options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
                     GetUtilityAndWeight(), Description));

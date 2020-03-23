@@ -87,7 +87,7 @@
           <e p="xNodeUtilityAI" t="Include">
             <e p="AbstractNodes" t="Include">
               <e p="ActionNode.cs" t="Include" />
-              <e p="CollectionDataNode.cs" t="Include" />
+              <e p="DataCollectionNode.cs" t="Include" />
               <e p="EntryBoolNode.cs" t="Include" />
               <e p="EntryIntNode.cs" t="Include" />
               <e p="SimpleDataNode.cs" t="Include" />
@@ -119,6 +119,7 @@
               <e p="AndNode.cs" t="Include" />
               <e p="FilterNode.cs" t="Include" />
               <e p="FlattenerNode.cs" t="Include" />
+              <e p="IsNullNode.cs" t="Include" />
               <e p="MiddleNode.cs" t="Include" />
               <e p="NotNode.cs" t="Include" />
               <e p="OrNode.cs" t="Include" />
@@ -127,7 +128,21 @@
               <e p="InCooldownNode.cs" t="Include" />
               <e p="SaveHistoricNode.cs" t="Include" />
             </e>
+            <e p="ReflectionNodes" t="Include">
+              <e p="DataReaderNode.cs" t="Include" />
+              <e p="DataSelectorNode.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DataReaderNodeEditor.cs" t="Include" />
+              </e>
+            </e>
             <e p="Utils" t="Include">
+              <e p="ClassTypeReference" t="Include">
+                <e p="ClassTypeConstraintAttribute.cs" t="Include" />
+                <e p="ClassTypeReference.cs" t="Include" />
+                <e p="Editor" t="Include">
+                  <e p="ClassTypeReferencePropertyDrawer.cs" t="Include" />
+                </e>
+              </e>
               <e p="TagList" t="Include">
                 <e p="Editor" t="Include">
                   <e p="TagListDrawer.cs" t="Include" />

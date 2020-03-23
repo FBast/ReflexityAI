@@ -1,14 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.MainNodes;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     public class AbstractAIComponent : MonoBehaviour {
-        
+
         [Tooltip("Brains used by the AI")]
         public List<AIBrainGraph> UtilityAiBrains;
         [Tooltip("Time between each AI evaluations")]
@@ -54,9 +53,8 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
         private void CalculateOptions(AIBrainGraph aiBrainGraph) {
-
             // Setup Contexts
-            aiBrainGraph.GetNodes<EntryNode>().ForEach(node => node.SetContext(this));
+            aiBrainGraph.CurrentContext = this;
             aiBrainGraph.GetNodes<DataNode>().ForEach(node => node.SetContext(this));
             // Add the brain to the option dictionary
             if (Options.ContainsKey(aiBrainGraph)) {

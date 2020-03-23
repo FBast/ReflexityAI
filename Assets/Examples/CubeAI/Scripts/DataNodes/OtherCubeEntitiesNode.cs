@@ -5,7 +5,7 @@ using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 
 namespace Examples.CubeAI.Scripts.DataNodes {
-    public class OtherCubeEntitiesNode : CollectionDataNode {
+    public class OtherCubeEntitiesNode : DataCollectionNode {
 
         protected override List<Object> CollectionProvider(AbstractAIComponent context) {
             CubeAIComponent cubeAiComponent = (CubeAIComponent) context;

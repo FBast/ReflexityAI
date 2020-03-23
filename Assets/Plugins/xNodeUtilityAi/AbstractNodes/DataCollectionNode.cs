@@ -4,9 +4,9 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.AbstractNodes {
-    public abstract class CollectionDataNode : DataNode {
+    public abstract class DataCollectionNode : DataNode {
         
-        [Output] public CollectionDataNode LinkedOption;
+        [Output] public DataCollectionNode LinkedOption;
         [Output] public Object DataOut;
         public int Index { get; set; }
 

@@ -11,9 +11,11 @@ namespace Plugins.xNodeUtilityAi.AbstractNodes {
         
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(DataOut)) {
-                if (_context == null) return null;
-                object data = ValueProvider(_context);
-                if (data != null) return data;
+                if (graph is AIBrainGraph brainGraph && brainGraph.CurrentContext != null) {
+                    object data = ValueProvider(brainGraph.CurrentContext);
+                    if (data != null) return data;
+                }
+                return null;
             }
             return null;
         }
