@@ -4,13 +4,14 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.AbstractNodes {
-    public abstract class DataCollectionNode : DataNode {
+    public abstract class DataCollectionNode : DataNode, IContextual {
         
         [Output] public DataCollectionNode LinkedOption;
         [Output] public Object DataOut;
         public int Index { get; set; }
-
-        public int CollectionCount => CollectionProvider(_context)?.Count ?? 0;
+        
+        public AbstractAIComponent Context { get; set; }
+        public int CollectionCount => CollectionProvider(Context)?.Count ?? 0;
 
         protected abstract List<Object> CollectionProvider(AbstractAIComponent context);
         
@@ -19,13 +20,13 @@ namespace Plugins.xNodeUtilityAi.AbstractNodes {
                 return this;
             }
             if (port.fieldName == nameof(DataOut)) {
-                if (_context == null) return null;
-                List<Object> collection = CollectionProvider(_context);
+                if (Context == null) return null;
+                List<Object> collection = CollectionProvider(Context);
                 if (collection != null && collection.Count > Index)
                     return collection[Index];
             }
             return null;
         }
-        
+
     }
 }

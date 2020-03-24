@@ -54,8 +54,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         private void CalculateOptions(AIBrainGraph aiBrainGraph) {
             // Setup Contexts
-            aiBrainGraph.CurrentContext = this;
-            aiBrainGraph.GetNodes<DataNode>().ForEach(node => node.SetContext(this));
+            aiBrainGraph.GetNodes<IContextual>().ForEach(node => node.Context = this);
             // Add the brain to the option dictionary
             if (Options.ContainsKey(aiBrainGraph)) {
                 Options[aiBrainGraph].Clear();

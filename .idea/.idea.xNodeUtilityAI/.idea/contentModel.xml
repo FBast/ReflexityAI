@@ -23,15 +23,6 @@
                 <e p="MyCubeEntityNode.cs" t="Include" />
                 <e p="OtherCubeEntitiesNode.cs" t="Include" />
               </e>
-              <e p="EntryNodes" t="Include">
-                <e p="CubeEntityCurrentAmmoNode.cs" t="Include" />
-                <e p="CubeEntityCurrentHpNode.cs" t="Include" />
-                <e p="CubeEntityHasTargetNode.cs" t="Include" />
-                <e p="CubeEntityIsDeadNode.cs" t="Include" />
-                <e p="CubeEntityIsTargetNode.cs" t="Include" />
-                <e p="CubeEntityMaxAmmoNode.cs" t="Include" />
-                <e p="CubeEntityMaxHpNode.cs" t="Include" />
-              </e>
             </e>
           </e>
         </e>
@@ -88,8 +79,6 @@
             <e p="AbstractNodes" t="Include">
               <e p="ActionNode.cs" t="Include" />
               <e p="DataCollectionNode.cs" t="Include" />
-              <e p="EntryBoolNode.cs" t="Include" />
-              <e p="EntryIntNode.cs" t="Include" />
               <e p="SimpleDataNode.cs" t="Include" />
             </e>
             <e p="Editor" t="Include">
@@ -103,9 +92,17 @@
               <e p="AIOption.cs" t="Include" />
               <e p="DataNode.cs" t="Include" />
               <e p="EntryNode.cs" t="Include" />
+              <e p="IContextual.cs" t="Include" />
+              <e p="StringFieldInfoDictionary.cs" t="Include" />
             </e>
             <e p="MainNodes" t="Include">
               <e p="ConverterNode.cs" t="Include" />
+              <e p="DataReaderNode.cs" t="Include" />
+              <e p="DataSelectorNode.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DataReaderNodeEditor.cs" t="Include" />
+                <e p="DataSelectorNodeEditor.cs" t="Include" />
+              </e>
               <e p="OptionNode.cs" t="Include" />
               <e p="UtilityNode.cs" t="Include" />
             </e>
@@ -128,13 +125,6 @@
               <e p="InCooldownNode.cs" t="Include" />
               <e p="SaveHistoricNode.cs" t="Include" />
             </e>
-            <e p="ReflectionNodes" t="Include">
-              <e p="DataReaderNode.cs" t="Include" />
-              <e p="DataSelectorNode.cs" t="Include" />
-              <e p="Editor" t="Include">
-                <e p="DataReaderNodeEditor.cs" t="Include" />
-              </e>
-            </e>
             <e p="Utils" t="Include">
               <e p="ClassTypeReference" t="Include">
                 <e p="ClassTypeConstraintAttribute.cs" t="Include" />
@@ -144,11 +134,11 @@
                 </e>
               </e>
               <e p="TagList" t="Include">
+                <e p="DropdownList.cs" t="Include" />
                 <e p="Editor" t="Include">
-                  <e p="TagListDrawer.cs" t="Include" />
+                  <e p="DropdownListDrawer.cs" t="Include" />
                 </e>
                 <e p="TagListHelper.cs" t="Include" />
-                <e p="TagListProperty.cs" t="Include" />
               </e>
             </e>
           </e>

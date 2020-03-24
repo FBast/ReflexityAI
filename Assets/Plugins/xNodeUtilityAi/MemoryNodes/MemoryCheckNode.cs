@@ -1,16 +1,21 @@
-﻿using Plugins.xNodeUtilityAi.AbstractNodes;
-using Plugins.xNodeUtilityAi.Framework;
+﻿using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils.TagList;
+using XNode;
 
 namespace Plugins.xNodeUtilityAi.MemoryNodes {
-    public class MemoryCheckNode : EntryBoolNode {
+    public class MemoryCheckNode : EntryNode, IContextual {
         
-        [TagListProperty(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] 
-        public string MemoryTag;
+        [Output(connectionType: ConnectionType.Override)] public bool Value;
+        [DropdownList(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] public string MemoryTag;
         
-        protected override bool ValueProvider(AbstractAIComponent context) {
-            return context.LoadFromMemory(MemoryTag) != null;
+        public AbstractAIComponent Context { get; set; }
+        
+        public override object GetValue(NodePort port) {
+            if (port.fieldName == nameof(Value) && Context != null) {
+                return Context.LoadFromMemory(MemoryTag) != null;
+            }
+            return null;
         }
-        
+
     }
 }
