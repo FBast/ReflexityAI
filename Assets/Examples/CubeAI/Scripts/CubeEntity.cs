@@ -17,9 +17,11 @@ namespace Examples.CubeAI.Scripts {
         public int ProjectilePower;
         public int MaxAmmo;
         public int CurrentAmmo;
-        public int TargetSpeed;
+        public int CanonSpeed;
         public CubeEntity Target;
 
+        public int Machin { get; set; }
+        
         private Color _startingColor;
         
         private void Start() {
@@ -29,7 +31,7 @@ namespace Examples.CubeAI.Scripts {
         private void Update() {
             if (IsDead) return;
             if (Target) {
-                Vector3 newDir = Vector3.RotateTowards(transform.forward, Target.transform.position - transform.position, TargetSpeed * Time.deltaTime, 0.0f);
+                Vector3 newDir = Vector3.RotateTowards(transform.forward, Target.transform.position - transform.position, CanonSpeed * Time.deltaTime, 0.0f);
                 transform.rotation = Quaternion.LookRotation(newDir);
                 transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
             }

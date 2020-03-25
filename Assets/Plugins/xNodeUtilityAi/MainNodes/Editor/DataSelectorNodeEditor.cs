@@ -1,41 +1,42 @@
-using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
+using System.Text.RegularExpressions;
+using Plugins.xNodeUtilityAi.Utils;
 using UnityEditor;
 using UnityEngine;
+using XNode;
 using XNodeEditor;
 
 namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
     [CustomNodeEditor(typeof(DataSelectorNode))]
     public class DataSelectorNodeEditor : NodeEditor {
 
-        private KeyValuePair<string, FieldInfo> _choice;
-        private int _choiceIndex;
-        
         private DataSelectorNode _dataSelectorNode;
+        private int _choiceIndex;
+        private string _search = "";
 
         public override void OnBodyGUI() {
-            if (_dataSelectorNode == null) 
-                _dataSelectorNode = target as DataSelectorNode;
-            if (_dataSelectorNode == null) return;
-            // NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataSelectorNode.Data)));
-            if (_dataSelectorNode.Fields.Count > 0) {
-                IEnumerable<string> availablePorts = _dataSelectorNode.Fields.Select(pair => pair.Key)
-                    .Except(_dataSelectorNode.SelectedFields);
-                _choiceIndex = EditorGUILayout.Popup(_choiceIndex, availablePorts.ToArray());
-                _choice = _dataSelectorNode.Fields.ElementAt(_choiceIndex);
-                if (GUILayout.Button("Add")) {
-                    _dataSelectorNode.AddDynamicOutput(_choice.Value.FieldType, fieldName: _choice.Key);
-                    _dataSelectorNode.SelectedFields.Add(_choice.Key);
-                    // EditorUtility.SetDirty(target);
+            if (_dataSelectorNode == null) _dataSelectorNode = (DataSelectorNode) target;
+            serializedObject.Update();
+            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataSelectorNode.Data)));
+            if (_dataSelectorNode.MemberInfos.Count > 0) {
+                EditorGUILayout.BeginHorizontal();
+                GUILayout.Label("Search");
+                _search = EditorGUILayout.TextField(_search);
+                EditorGUILayout.EndHorizontal();
+                string[] choices = _dataSelectorNode.MemberInfos.Select(info => info.Name).ToArray();
+                if (!string.IsNullOrEmpty(_search)) {
+                    Regex regex = new Regex(_search);
+                    choices =  choices.Where(s => regex.IsMatch(s)).ToArray();
                 }
+                _choiceIndex = EditorGUILayout.Popup(_choiceIndex, choices);
+                _dataSelectorNode.SelectedMemberInfo = _dataSelectorNode.MemberInfos.ElementAt(_choiceIndex);
+                NodePort nodePort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Output));
+                nodePort.ValueType = _dataSelectorNode.SelectedMemberInfo.FieldType();
+                NodeEditorGUILayout.AddPortField(nodePort);
             }
-            // NodeEditorGUILayout.DynamicPortList(nameof(_dataSelectorNode.SelectedFields), _dataSelectorNode.SelectedFields.GetType(), 
-            //     serializedObject, NodePort.IO.Output, Node.ConnectionType.Override, Node.TypeConstraint.None, delegate(ReorderableList list) {
-            //         list.displayAdd = false; 
-            //     });
-            base.OnBodyGUI();
+            serializedObject.ApplyModifiedProperties();
         }
 
     }
+
 }

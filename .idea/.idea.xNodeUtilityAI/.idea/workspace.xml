@@ -2,56 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/IContextual.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/IContextual.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataSelectorNodeEditor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataSelectorNodeEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ReflectionUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/UtilityAIBrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/UtilityAIBrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityCurrentAmmoNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityCurrentAmmoNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityCurrentHpNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityCurrentHpNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityHasTargetNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityHasTargetNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityIsDeadNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityIsDeadNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityIsTargetNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityIsTargetNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityMaxAmmoNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityMaxAmmoNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityMaxHpNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityMaxHpNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/DataCollectionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/DataCollectionNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/EntryBoolNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/EntryBoolNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/EntryIntNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/EntryIntNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/SimpleDataNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/SimpleDataNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/DataNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/DataNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/EntryNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/EntryNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryClearNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryClearNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryLoadNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryLoadNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemorySaveNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemorySaveNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/InCooldownNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/InCooldownNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/SaveHistoricNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/SaveHistoricNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/DataReaderNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/DataReaderNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/DataSelectorNode.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/DataSelectorNode.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/Editor/DataReaderNodeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/Editor/DataReaderNodeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/Editor/TagListDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/Editor/DropdownListDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/Editor/TagListDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/Editor/DropdownListDrawer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/TagListProperty.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/DropdownList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/TagListProperty.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/DropdownList.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataReaderNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataReaderNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataSelectorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataSelectorNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataSelectorNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataSelectorNodeEditor.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,14 +39,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/ActionNodes/HealNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/ActionNodes/ReloadNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/ActionNodes/SetTargetNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/DataNodes/OtherCubeEntitiesNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/Editor/ClassTypeReferencePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
@@ -112,12 +68,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataReaderNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/12/db5ddf1a/Action`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ReflectionUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/DataNodes/MyCubeEntityNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -147,8 +102,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/DataNodes/OtherCubeEntitiesNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/AbstractNodes/ActionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityMaxAmmoNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/EntryNodes/CubeEntityMaxHpNode.cs" />
@@ -183,7 +136,6 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/EntrySelectorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/DataSelectorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ReflectionNodes/DataReaderNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataReaderNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataReaderNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/EntryNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/DataNode.cs" />
@@ -196,6 +148,9 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/Editor/DropdownListDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/DropdownListAttribute.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/DropdownList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ReflectionUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataReaderNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataSelectorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataSelectorNodeEditor.cs" />
       </list>
@@ -228,10 +183,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8668">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="14184">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="8668" />
+      <option name="pid" value="14184" />
       <method v="2" />
     </configuration>
     <list>
@@ -292,6 +247,7 @@
       <workItem from="1584719401855" duration="1383000" />
       <workItem from="1584956542743" duration="22210000" />
       <workItem from="1585046994649" duration="18857000" />
+      <workItem from="1585140483232" duration="20044000" />
     </task>
     <servers />
   </component>
@@ -321,101 +277,101 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1213" y="377" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584466204098" />
-    <state width="474" height="466" key="DebuggerActiveHint" timestamp="1585051815328">
+    <state width="474" height="466" key="DebuggerActiveHint" timestamp="1585150046696">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="457" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981469902" />
-    <state width="474" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585051815328" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1585067907144">
+    <state width="474" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585150046696" />
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907144" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1585067907144">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907144" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1585067907144">
+    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722594" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907144" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1585067907144">
+    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907144" />
-    <state width="1877" height="280" key="GridCell.Tab.1.bottom" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.1.bottom" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state width="1877" height="280" key="GridCell.Tab.1.center" timestamp="1585067907144">
+    <state width="1877" height="280" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.1.center" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907144" />
-    <state width="1877" height="280" key="GridCell.Tab.1.left" timestamp="1585067907144">
+    <state width="1877" height="280" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.1.left" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907144" />
-    <state width="1877" height="280" key="GridCell.Tab.1.right" timestamp="1585067907144">
+    <state width="1877" height="280" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.1.right" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907144" />
-    <state width="1877" height="280" key="GridCell.Tab.2.bottom" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.2.bottom" timestamp="1585162514753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722596" />
-    <state width="1877" height="280" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state width="1877" height="280" key="GridCell.Tab.2.center" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514753" />
+    <state width="1877" height="280" key="GridCell.Tab.2.center" timestamp="1585162514753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722596" />
-    <state width="1877" height="280" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state width="1877" height="280" key="GridCell.Tab.2.left" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514753" />
+    <state width="1877" height="280" key="GridCell.Tab.2.left" timestamp="1585162514753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state width="1877" height="280" key="GridCell.Tab.2.right" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514753" />
+    <state width="1877" height="280" key="GridCell.Tab.2.right" timestamp="1585162514753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722596" />
-    <state width="1877" height="280" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state width="1877" height="280" key="GridCell.Tab.3.bottom" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514753" />
+    <state width="1877" height="280" key="GridCell.Tab.3.bottom" timestamp="1585162514753">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state width="1877" height="280" key="GridCell.Tab.3.center" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514753" />
+    <state width="1877" height="280" key="GridCell.Tab.3.center" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state width="1877" height="280" key="GridCell.Tab.3.left" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.3.left" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state width="1877" height="280" key="GridCell.Tab.3.right" timestamp="1585067907145">
+    <state width="1877" height="280" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state width="1877" height="280" key="GridCell.Tab.3.right" timestamp="1585162514752">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584981722595" />
-    <state width="1877" height="280" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585067907145" />
-    <state x="763" y="236" key="RiderGenerateDialog" timestamp="1585057212158">
+    <state width="1877" height="280" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162514752" />
+    <state x="763" y="236" key="RiderGenerateDialog" timestamp="1585161472997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1157" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584980876955" />
-    <state x="763" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585057212158" />
-    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584979966301">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="763" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585161472997" />
+    <state x="43" y="244" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585161346796">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584979966301" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584542377657" />
+    <state x="43" y="244" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585161346796" />
     <state x="881" y="143" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584958840075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -429,11 +385,11 @@
     </state>
     <state x="-1317" y="252" width="714" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584533460792" />
     <state x="603" y="252" width="741" height="606" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1584611372834" />
-    <state x="616" y="161" width="672" height="676" key="search.everywhere.popup" timestamp="1585065114644">
+    <state x="616" y="161" width="672" height="676" key="search.everywhere.popup" timestamp="1585162265744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="161" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1584980469386" />
-    <state x="616" y="161" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585065114644" />
+    <state x="616" y="161" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585162265744" />
     <state x="-1304" y="161" width="672" height="676" key="search.everywhere.popup/1920.1080/1920.1080" timestamp="1584368014249" />
   </component>
   <component name="XDebuggerManager">

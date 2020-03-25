@@ -43,34 +43,6 @@ MonoBehaviour:
   Data: {fileID: 0}
   LinkedOption: {fileID: 0}
   Order: 0
---- !u!114 &-8247867982363597132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f62e6de3156a4a728bc1d9d8547e4822, type: 3}
-  m_Name: My Cube Entity
-  m_EditorClassIdentifier: 
-  graph: {fileID: 0}
-  position: {x: -1432, y: -88}
-  ports:
-    keys:
-    - DataOut
-    values:
-    - _fieldName: DataOut
-      _node: {fileID: -8247867982363597132}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  DataOut: {fileID: 0}
 --- !u!114 &-7330626049815432269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,7 +68,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: DataOut
-        node: {fileID: -8247867982363597132}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -142,36 +114,6 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   DataOut: {fileID: 0}
---- !u!114 &-5744360478192863501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b1a63fe03bad4d4daad69c1a664cf6c, type: 3}
-  m_Name: Data Reader
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -1096, y: -616}
-  ports:
-    keys:
-    - CubeEntity
-    values:
-    - _fieldName: CubeEntity
-      _node: {fileID: -5744360478192863501}
-      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Data
-        node: {fileID: 2956551873414382368}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
 --- !u!114 &-4897368317677872398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +347,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: DataOut
-        node: {fileID: -8247867982363597132}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -601,6 +543,48 @@ MonoBehaviour:
   Data: {fileID: 0}
   LinkedOption: {fileID: 0}
   Order: 0
+--- !u!114 &-2244922228808851376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1a63fe03bad4d4daad69c1a664cf6c, type: 3}
+  m_Name: Data Reader
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1608, y: -456}
+  ports:
+    keys:
+    - OthersCubeEntities
+    - CubeEntity
+    values:
+    - _fieldName: OthersCubeEntities
+      _node: {fileID: -2244922228808851376}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 1
+    - _fieldName: CubeEntity
+      _node: {fileID: -2244922228808851376}
+      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Data
+        node: {fileID: 36876004584499408}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 1
+  BindingFlags: -1
 --- !u!114 &-1866921937441271112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -996,19 +980,60 @@ MonoBehaviour:
   - {fileID: 7948388030205020400}
   - {fileID: 650509650732122840}
   - {fileID: -4451411571502979384}
-  - {fileID: -8247867982363597132}
   - {fileID: -6951668635857156267}
   - {fileID: -1812431158544225145}
   - {fileID: 6378001628440229738}
   - {fileID: 4847715715260290523}
   - {fileID: -1675219893247140184}
-  - {fileID: -5744360478192863501}
-  - {fileID: 2956551873414382368}
+  - {fileID: -2244922228808851376}
+  - {fileID: 36876004584499408}
   ContextType:
     _classRef: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp
   HistoricTags:
   - Target
   MemoryTags: []
+--- !u!114 &36876004584499408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
+  m_Name: Data Selector
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -1240, y: -344}
+  ports:
+    keys:
+    - Data
+    - Output
+    values:
+    - _fieldName: Data
+      _node: {fileID: 36876004584499408}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: CubeEntity
+        node: {fileID: -2244922228808851376}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 36876004584499408}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  Data: {fileID: 0}
+  Output: {fileID: 0}
 --- !u!114 &178059516657548659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,7 +1068,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: DataOut
-        node: {fileID: -8247867982363597132}
+        node: {fileID: 0}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -1403,96 +1428,6 @@ MonoBehaviour:
   <Context>k__BackingField: {fileID: 0}
   Data: {fileID: 0}
   Value: 0
---- !u!114 &2956551873414382368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
-  m_Name: Data Selector
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: -776, y: -648}
-  ports:
-    keys:
-    - Data
-    - ProjectilePrefab
-    - CurrentHp
-    - IsDead
-    - MeshRenderer
-    values:
-    - _fieldName: Data
-      _node: {fileID: 2956551873414382368}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: CubeEntity
-        node: {fileID: -5744360478192863501}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 1
-      _dynamic: 0
-    - _fieldName: ProjectilePrefab
-      _node: {fileID: 2956551873414382368}
-      _typeQualifiedName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: CurrentHp
-      _node: {fileID: 2956551873414382368}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: IsDead
-      _node: {fileID: 2956551873414382368}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: MeshRenderer
-      _node: {fileID: 2956551873414382368}
-      _typeQualifiedName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-  Data: {fileID: 0}
-  SelectedFields:
-  - MeshRenderer
-  - MeshRenderer
-  - ProjectilePower
-  - ProjectilePower
-  - ProjectilePower
-  - MeshRenderer
-  - MeshRenderer
-  - MeshRenderer
-  - MaxHp
-  - MaxHp
-  - MaxHp
-  - MeshRenderer
-  - MeshRenderer
-  - MeshRenderer
-  - IsDead
-  - CurrentHp
-  - ProjectilePrefab
-  - MeshRenderer
 --- !u!114 &3033678687618763116
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -133,6 +133,7 @@
                   <e p="ClassTypeReferencePropertyDrawer.cs" t="Include" />
                 </e>
               </e>
+              <e p="ReflectionUtils.cs" t="Include" />
               <e p="TagList" t="Include">
                 <e p="DropdownList.cs" t="Include" />
                 <e p="Editor" t="Include">
