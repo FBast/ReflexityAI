@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils;
 using UnityEngine;
@@ -12,17 +10,16 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         public AbstractAIComponent Context { get; set; }
 
-        [HideInInspector] public List<MemberInfo> MemberInfos = new List<MemberInfo>();
+        [HideInInspector] public List<ReflectionData> ReflectionDatas = new List<ReflectionData>();
 
         private void OnValidate() {
             if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
-                IEnumerable<MemberInfo> memberInfos = brainGraph.ContextType.Type.GetFieldAndProperties();
+                IEnumerable<ReflectionData> reflectionDatas = brainGraph.ContextType.Type.GetReflectionDatas(Context);
                 ClearDynamicPorts();
-                MemberInfos.Clear();
-                foreach (MemberInfo memberInfo in memberInfos) {
-                    AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple,
-                        TypeConstraint.None, memberInfo.Name);
-                    MemberInfos.Add(memberInfo);
+                ReflectionDatas.Clear();
+                foreach (ReflectionData reflectionData in reflectionDatas) {
+                    AddDynamicOutput(reflectionData.Type, ConnectionType.Multiple, TypeConstraint.None, reflectionData.Name);
+                    ReflectionDatas.Add(reflectionData);
                 }
             }
         }
@@ -33,20 +30,12 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         public override object GetValue(NodePort port) {
-            MemberInfo memberInfo = MemberInfos.FirstOrDefault(info => info.Name == port.fieldName);
-            if (memberInfo != null) {
-                object data = null;
-                if (Context != null) {
-                    data = memberInfo.GetValue(Context);
-                }
-
-                return new Tuple<MemberInfo, object>(memberInfo, data);
-            }
-
-            return null;
+            return ReflectionDatas.FirstOrDefault(reflectionData => reflectionData.Name == port.fieldName);
         }
 
     }
+
+
 }
 
 

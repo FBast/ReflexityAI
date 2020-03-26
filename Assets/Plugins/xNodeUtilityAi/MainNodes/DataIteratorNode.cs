@@ -21,17 +21,15 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             }
             if (port.fieldName == nameof(Data)) {
                 // Récupération d'un tuple avec pour member info un type List<object> et object un context
-                Tuple<MemberInfo, object> tuple = GetInputValue<Tuple<MemberInfo, object>>(nameof(DataList));
-                Type fieldType = tuple.Item1.FieldType();
-                if(fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>)) {
-                    Type genericType = fieldType.GetGenericArguments()[0];
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(DataList));
+                if(reflectionData.Type.IsGenericType && reflectionData.Type.GetGenericTypeDefinition() == typeof(List<>)) {
+                    Type genericType = reflectionData.Type.GetGenericArguments()[0];
                     object data = null;
-                    if (tuple.Item2 != null) {
-                        List<object> collection = (List<object>) tuple.Item1.GetValue(tuple.Item2);
-                        if (collection != null && collection.Count > Index)
-                            data = collection[Index];
+                    if (reflectionData.Data != null) {
+                        List<object> collection = (List<object>) reflectionData.Data;
+                        if (collection.Count > Index) data = collection[Index];
                     }
-                    return new Tuple<MemberInfo, object>(genericType, data);
+                    return new ReflectionData(reflectionData.Name, genericType, data);
                 }
                 throw new Exception("Data Iterator cannot use other type than List<>");
             }

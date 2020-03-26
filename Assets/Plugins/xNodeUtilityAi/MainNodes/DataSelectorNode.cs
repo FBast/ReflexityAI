@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Reflection;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils;
 using XNode;
@@ -12,35 +10,23 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Output;
 
-        public MemberInfo SelectedMemberInfo;
-        public List<MemberInfo> MemberInfos = new List<MemberInfo>();
-
-        public override object GetValue(NodePort port) {
-            if (port.fieldName == nameof(Output)) {
-                Tuple<MemberInfo, object> tuple = GetInputValue<Tuple<MemberInfo, object>>(nameof(Data));
-                object data = null;
-                if (tuple.Item2 != null) {
-                    data = SelectedMemberInfo.GetValue(tuple.Item2);
-                }
-                return new Tuple<MemberInfo, object>(SelectedMemberInfo, data);
-            }
-            return null;
-        }
+        public ReflectionData SelectedReflectionData;
+        public List<ReflectionData> ReflectionDatas = new List<ReflectionData>();
 
         private void OnValidate() {
-            MemberInfos.Clear();
-            Tuple<MemberInfo, object> tuple = GetInputValue<Tuple<MemberInfo, object>>(nameof(Data));
-            foreach (MemberInfo memberInfo in tuple.Item1.FieldType().GetFieldAndProperties()) {
-                MemberInfos.Add(memberInfo);
+            ReflectionDatas.Clear();
+            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+            foreach (ReflectionData innerReflectionData in reflectionData.Type.GetReflectionDatas()) {
+                ReflectionDatas.Add(innerReflectionData);
             }
         }
-
+        
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
-                Tuple<MemberInfo, object> tuple = GetInputValue<Tuple<MemberInfo, object>>(nameof(Data));
-                foreach (MemberInfo memberInfo in tuple.Item1.FieldType().GetFieldAndProperties()) {
-                    MemberInfos.Add(memberInfo);
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+                foreach (ReflectionData innerReflectionData in reflectionData.Type.GetReflectionDatas()) {
+                    ReflectionDatas.Add(innerReflectionData);
                 }
             }
         }
@@ -48,8 +34,20 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         public override void OnRemoveConnection(NodePort port) {
             base.OnRemoveConnection(port);
             if (port.fieldName == nameof(Data) && port.node == this) {
-                MemberInfos.Clear();
+                ReflectionDatas.Clear();
             }
+        }
+        
+        public override object GetValue(NodePort port) {
+            if (port.fieldName == nameof(Output)) {
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+                object data = null;
+                if (reflectionData.Data != null) {
+                    data = SelectedReflectionData.Type.GetValue(reflectionData.Data);
+                }
+                return new ReflectionData(SelectedReflectionData.Name, SelectedReflectionData.Type, data);
+            }
+            return null;
         }
 
     }
