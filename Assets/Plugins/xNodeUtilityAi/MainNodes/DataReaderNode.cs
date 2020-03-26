@@ -11,16 +11,16 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
     public class DataReaderNode : DataNode, IContextual {
 
         public AbstractAIComponent Context { get; set; }
-        
+
         [HideInInspector] public List<MemberInfo> MemberInfos = new List<MemberInfo>();
 
         private void OnValidate() {
             if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
-                MemberInfo[] memberInfos = brainGraph.ContextType.Type.GetFieldAndProperties();
+                IEnumerable<MemberInfo> memberInfos = brainGraph.ContextType.Type.GetFieldAndProperties();
                 ClearDynamicPorts();
                 MemberInfos.Clear();
                 foreach (MemberInfo memberInfo in memberInfos) {
-                    AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, 
+                    AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple,
                         TypeConstraint.None, memberInfo.Name);
                     MemberInfos.Add(memberInfo);
                 }
@@ -35,15 +35,18 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         public override object GetValue(NodePort port) {
             MemberInfo memberInfo = MemberInfos.FirstOrDefault(info => info.Name == port.fieldName);
             if (memberInfo != null) {
-                object context = null;
+                object data = null;
                 if (Context != null) {
-                    context = memberInfo.GetValue(Context);
+                    data = memberInfo.GetValue(Context);
                 }
-                return new Tuple<MemberInfo, object>(memberInfo, context);
+
+                return new Tuple<MemberInfo, object>(memberInfo, data);
             }
+
             return null;
         }
-        
+
     }
 }
+
 

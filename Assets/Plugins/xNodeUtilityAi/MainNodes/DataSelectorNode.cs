@@ -18,11 +18,11 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(Output)) {
                 Tuple<MemberInfo, object> tuple = GetInputValue<Tuple<MemberInfo, object>>(nameof(Data));
-                object context = null;
+                object data = null;
                 if (tuple.Item2 != null) {
-                    context = SelectedMemberInfo.GetValue(tuple.Item2);
+                    data = SelectedMemberInfo.GetValue(tuple.Item2);
                 }
-                return new Tuple<MemberInfo, object>(SelectedMemberInfo, context);
+                return new Tuple<MemberInfo, object>(SelectedMemberInfo, data);
             }
             return null;
         }

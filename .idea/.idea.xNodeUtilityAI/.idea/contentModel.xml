@@ -97,7 +97,7 @@
             </e>
             <e p="MainNodes" t="Include">
               <e p="ConverterNode.cs" t="Include" />
-              <e p="DataIterator.cs" t="Include" />
+              <e p="DataIteratorNode.cs" t="Include" />
               <e p="DataReaderNode.cs" t="Include" />
               <e p="DataSelectorNode.cs" t="Include" />
               <e p="Editor" t="Include">

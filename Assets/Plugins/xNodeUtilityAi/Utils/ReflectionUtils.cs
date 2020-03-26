@@ -8,11 +8,11 @@ namespace Plugins.xNodeUtilityAi.Utils {
 
         private const BindingFlags _defaultBindingFlags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
         
-        public static MemberInfo[] GetFieldAndProperties(this Type type, BindingFlags bindingFlags = _defaultBindingFlags) {
-            return type.GetFields(bindingFlags)
+        public static IEnumerable<MemberInfo> GetFieldAndProperties(this Type type, BindingFlags bindingFlags = _defaultBindingFlags) {
+            return type
+                .GetFields(bindingFlags)
                 .Cast<MemberInfo>()
-                .Concat(type.GetProperties(bindingFlags))
-                .ToArray();
+                .Concat(type.GetProperties(bindingFlags));
         }
 
         public static Type FieldType(this MemberInfo memberInfo) {
