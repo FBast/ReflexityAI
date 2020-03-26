@@ -10,34 +10,20 @@ using XNode;
 namespace Plugins.xNodeUtilityAi.MainNodes {
     public class DataReaderNode : DataNode, IContextual {
 
-        public BindingFlags BindingFlags = (BindingFlags) (-1);
-        
         public AbstractAIComponent Context { get; set; }
         
         [HideInInspector] public List<MemberInfo> MemberInfos = new List<MemberInfo>();
 
         private void OnValidate() {
             if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
-                MemberInfo[] memberInfos = brainGraph.ContextType.Type.GetFieldAndProperties(BindingFlags);
+                MemberInfo[] memberInfos = brainGraph.ContextType.Type.GetFieldAndProperties();
                 ClearDynamicPorts();
                 MemberInfos.Clear();
                 foreach (MemberInfo memberInfo in memberInfos) {
-                    AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.Inherited,
-                        memberInfo.Name);
+                    AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, 
+                        TypeConstraint.None, memberInfo.Name);
                     MemberInfos.Add(memberInfo);
                 }
-                // // Add new field infos
-                // foreach (MemberInfo memberInfo in memberInfos) {
-                //     if (MemberInfos.Contains(memberInfo)) continue;
-                //     AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.None, memberInfo.Name);
-                //     MemberInfos.Add(memberInfo);
-                // }
-                // // Remove old field infos
-                // foreach (MemberInfo memberInfo in MemberInfos) {
-                //     if (memberInfos.Contains(memberInfo)) continue;
-                //     RemoveDynamicPort(memberInfo.Name);
-                //     MemberInfos.Remove(memberInfo);
-                // }
             }
         }
 

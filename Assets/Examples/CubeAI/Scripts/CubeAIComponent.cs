@@ -9,7 +9,7 @@ namespace Examples.CubeAI.Scripts {
         public CubeEntity CubeEntity;
         public List<CubeEntity> OthersCubeEntities => GameManager.CubeEntities
             .Where(entity => entity != CubeEntity).ToList();
-
+        
         private void Awake() {
             CubeEntity = GetComponent<CubeEntity>();
         }

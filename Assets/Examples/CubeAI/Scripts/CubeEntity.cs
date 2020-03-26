@@ -20,7 +20,8 @@ namespace Examples.CubeAI.Scripts {
         public int CanonSpeed;
         public CubeEntity Target;
 
-        public int Machin { get; set; }
+        public Transform Transform => transform;
+        public GameObject GameObject => gameObject;
         
         private Color _startingColor;
         

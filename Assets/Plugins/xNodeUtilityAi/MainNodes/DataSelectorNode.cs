@@ -27,6 +27,14 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             return null;
         }
 
+        private void OnValidate() {
+            MemberInfos.Clear();
+            Tuple<MemberInfo, object> tuple = GetInputValue<Tuple<MemberInfo, object>>(nameof(Data));
+            foreach (MemberInfo memberInfo in tuple.Item1.FieldType().GetFieldAndProperties()) {
+                MemberInfos.Add(memberInfo);
+            }
+        }
+
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {

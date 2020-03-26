@@ -38,5 +38,4 @@ namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
         }
 
     }
-
 }

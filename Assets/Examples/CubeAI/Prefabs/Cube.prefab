@@ -197,7 +197,7 @@ MonoBehaviour:
   ProjectilePower: 30
   MaxAmmo: 10
   CurrentAmmo: 0
-  TargetSpeed: 10
+  CanonSpeed: 0
   Target: {fileID: 0}
 --- !u!114 &1656194801054802152
 MonoBehaviour:
