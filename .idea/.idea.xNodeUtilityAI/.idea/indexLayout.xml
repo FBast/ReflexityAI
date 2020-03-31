@@ -25,7 +25,6 @@
       <Path>.vs</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
-      <Path>Temp</Path>
       <Path>obj</Path>
       <Path>xNodeUtilityAI</Path>
     </explicitExcludes>

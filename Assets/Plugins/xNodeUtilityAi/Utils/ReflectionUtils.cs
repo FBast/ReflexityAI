@@ -8,17 +8,17 @@ namespace Plugins.xNodeUtilityAi.Utils {
 
         private const BindingFlags _defaultBindingFlags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
 
-        public static IEnumerable<ReflectionData> GetReflectionDatas(this Type type, object context = null, BindingFlags bindingFlags = _defaultBindingFlags) {
-            IEnumerable<MemberInfo> memberInfos = type.GetFields(bindingFlags).Cast<MemberInfo>()
+        public static IEnumerable<MemberInfo> GetMemberInfos(this Type type, BindingFlags bindingFlags = _defaultBindingFlags) {
+            return type.GetFields(bindingFlags).Cast<MemberInfo>()
                 .Concat(type.GetProperties(bindingFlags));
-            List<ReflectionData> reflectionDatas = new List<ReflectionData>();
-            foreach (MemberInfo memberInfo in memberInfos) {
-                object data = null;
-                if (context != null)
-                    data = memberInfo.GetValue(context);
-                reflectionDatas.Add(new ReflectionData(memberInfo.Name, memberInfo.FieldType(), data));
-            }
-            return reflectionDatas;
+            // List<ReflectionData> reflectionDatas = new List<ReflectionData>();
+            // foreach (MemberInfo memberInfo in memberInfos) {
+            //     object data = null;
+            //     if (context != null)
+            //         data = memberInfo.GetValue(context);
+            //     reflectionDatas.Add(new ReflectionData(memberInfo.Name, memberInfo.FieldType(), data));
+            // }
+            // return reflectionDatas;
         }
 
         public static Type FieldType(this MemberInfo memberInfo) {

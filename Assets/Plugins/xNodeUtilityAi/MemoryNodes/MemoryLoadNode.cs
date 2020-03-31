@@ -1,5 +1,6 @@
 using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.Framework;
+using Plugins.xNodeUtilityAi.Utils;
 using Plugins.xNodeUtilityAi.Utils.TagList;
 
 namespace Plugins.xNodeUtilityAi.MemoryNodes {
@@ -12,5 +13,12 @@ namespace Plugins.xNodeUtilityAi.MemoryNodes {
             return context.LoadFromMemory(MemoryTag);
         }
 
+        public override ReflectionData GetReflectedValue(string portName) {
+            throw new System.NotImplementedException();
+        }
+
+        public override ReflectionData GetFullValue(string portName) {
+            throw new System.NotImplementedException();
+        }
     }
 }

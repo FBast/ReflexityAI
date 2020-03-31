@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils;
 using UnityEngine;
@@ -10,17 +12,13 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         public AbstractAIComponent Context { get; set; }
 
-        [HideInInspector] public List<ReflectionData> ReflectionDatas = new List<ReflectionData>();
+        private List<MemberInfo> _memberInfos = new List<MemberInfo>();
 
         private void OnValidate() {
-            if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
-                IEnumerable<ReflectionData> reflectionDatas = brainGraph.ContextType.Type.GetReflectionDatas(Context);
-                ClearDynamicPorts();
-                ReflectionDatas.Clear();
-                foreach (ReflectionData reflectionData in reflectionDatas) {
-                    AddDynamicOutput(reflectionData.Type, ConnectionType.Multiple, TypeConstraint.None, reflectionData.Name);
-                    ReflectionDatas.Add(reflectionData);
-                }
+            _memberInfos = GetMemberInfos();
+            ClearDynamicPorts();
+            foreach (MemberInfo memberInfo in _memberInfos) {
+                AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.None, memberInfo.Name);
             }
         }
 
@@ -30,9 +28,31 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         public override object GetValue(NodePort port) {
-            return ReflectionDatas.FirstOrDefault(reflectionData => reflectionData.Name == port.fieldName);
+            return Application.isPlaying
+                ? GetFullValue(port.fieldName)
+                : GetReflectedValue(port.fieldName);
         }
 
+        public List<MemberInfo> GetMemberInfos() {
+            if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
+                return brainGraph.ContextType.Type.GetMemberInfos().ToList();
+            }
+            throw new Exception("No brain graph context type found, please select one");
+        }
+        
+        public override ReflectionData GetReflectedValue(string portName) {
+            MemberInfo firstOrDefault = _memberInfos.FirstOrDefault(info => info.Name == portName);
+            if (firstOrDefault != null)
+                return new ReflectionData(firstOrDefault.Name, firstOrDefault.FieldType(), null);
+            throw new Exception("No reflected data found for " + portName);
+        }
+
+        public override ReflectionData GetFullValue(string portName) {
+            MemberInfo firstOrDefault = _memberInfos.FirstOrDefault(info => info.Name == portName);
+            if (firstOrDefault != null)
+                return new ReflectionData(firstOrDefault.Name, firstOrDefault.FieldType(), firstOrDefault.GetValue(Context));
+            throw new Exception("No reflected data found for " + portName);
+        }
     }
 
 

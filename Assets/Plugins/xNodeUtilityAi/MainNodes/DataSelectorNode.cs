@@ -1,6 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils;
+using UnityEngine;
 using XNode;
 using Object = UnityEngine.Object;
 
@@ -10,45 +13,44 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Output;
 
-        public ReflectionData SelectedReflectionData;
-        public List<ReflectionData> ReflectionDatas = new List<ReflectionData>();
+        public MemberInfo SelectedMemberInfo;
+        public List<MemberInfo> MemberInfos = new List<MemberInfo>();
 
         private void OnValidate() {
-            ReflectionDatas.Clear();
+            MemberInfos.Clear();
             ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-            foreach (ReflectionData innerReflectionData in reflectionData.Type.GetReflectionDatas()) {
-                ReflectionDatas.Add(innerReflectionData);
-            }
+            MemberInfos = reflectionData.Type.GetMemberInfos().ToList();
         }
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-                foreach (ReflectionData innerReflectionData in reflectionData.Type.GetReflectionDatas()) {
-                    ReflectionDatas.Add(innerReflectionData);
-                }
+                MemberInfos = reflectionData.Type.GetMemberInfos().ToList();
             }
         }
         
         public override void OnRemoveConnection(NodePort port) {
             base.OnRemoveConnection(port);
             if (port.fieldName == nameof(Data) && port.node == this) {
-                ReflectionDatas.Clear();
+                MemberInfos.Clear();
             }
         }
         
         public override object GetValue(NodePort port) {
-            if (port.fieldName == nameof(Output)) {
-                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-                object data = null;
-                if (reflectionData.Data != null) {
-                    data = SelectedReflectionData.Type.GetValue(reflectionData.Data);
-                }
-                return new ReflectionData(SelectedReflectionData.Name, SelectedReflectionData.Type, data);
-            }
-            return null;
+            return Application.isPlaying
+                ? GetFullValue(port.fieldName)
+                : GetReflectedValue(port.fieldName);
         }
 
+        public override ReflectionData GetReflectedValue(string portName) {
+            return new ReflectionData(SelectedMemberInfo.Name, SelectedMemberInfo.FieldType(), null);
+        }
+
+        public override ReflectionData GetFullValue(string portName) {
+            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+            return new ReflectionData(SelectedMemberInfo.Name, SelectedMemberInfo.FieldType(), reflectionData.Data);
+        }
+        
     }
 }

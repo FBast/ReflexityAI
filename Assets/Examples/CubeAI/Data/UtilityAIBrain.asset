@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Name: Data Iterator
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -600, y: -504}
+  position: {x: -776, y: -296}
   ports:
     keys:
     - DataList
@@ -419,10 +419,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Object, UnityEngine.CoreModule,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
         Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: OthersCubeEntities
-        node: {fileID: -764197312901632381}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -1008,7 +1005,7 @@ MonoBehaviour:
   m_Name: Data Reader
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -920, y: -408}
+  position: {x: -1096, y: -200}
   ports:
     keys:
     - OthersCubeEntities
@@ -1019,10 +1016,7 @@ MonoBehaviour:
       _typeQualifiedName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: DataList
-        node: {fileID: -3748814370414011680}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -1083,6 +1077,7 @@ MonoBehaviour:
   - {fileID: -764197312901632381}
   - {fileID: 3548914674810358129}
   - {fileID: -3748814370414011680}
+  - {fileID: 7115539466758977981}
   ContextType:
     _classRef: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp
   HistoricTags:
@@ -1636,7 +1631,7 @@ MonoBehaviour:
   m_Name: Data Selector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -600, y: -344}
+  position: {x: -776, y: -136}
   ports:
     keys:
     - Data
@@ -1658,7 +1653,10 @@ MonoBehaviour:
       _node: {fileID: 3548914674810358129}
       _typeQualifiedName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: Data
+        node: {fileID: 7115539466758977981}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
@@ -2152,6 +2150,48 @@ MonoBehaviour:
   IsTrue: 0
   IsFalse: 1
   ValueOut: 0
+--- !u!114 &7115539466758977981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
+  m_Name: Data Selector
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -536, y: -40}
+  ports:
+    keys:
+    - Data
+    - Output
+    values:
+    - _fieldName: Data
+      _node: {fileID: 7115539466758977981}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: 3548914674810358129}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 7115539466758977981}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  Data: {fileID: 0}
+  Output: {fileID: 0}
 --- !u!114 &7948388030205020400
 MonoBehaviour:
   m_ObjectHideFlags: 0

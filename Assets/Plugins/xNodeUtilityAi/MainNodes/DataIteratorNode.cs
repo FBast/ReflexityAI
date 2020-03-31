@@ -35,6 +35,13 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             }
             return null;
         }
-        
+
+        public override ReflectionData GetReflectedValue(string portName) {
+            throw new NotImplementedException();
+        }
+
+        public override ReflectionData GetFullValue(string portName) {
+            throw new NotImplementedException();
+        }
     }
 }
