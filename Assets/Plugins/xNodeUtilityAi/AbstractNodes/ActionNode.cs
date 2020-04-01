@@ -3,7 +3,7 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.AbstractNodes {
-    [NodeTint(255, 120, 120), NodeWidth(400)]
+    [NodeTint(255, 120, 120)]
     public abstract class ActionNode : Node {
         
         [Input(ShowBackingValue.Never)] public Object Data;

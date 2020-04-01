@@ -13,11 +13,11 @@ namespace Examples.CubeAI.Scripts.DataNodes {
             return new List<Object>(GameManager.CubeEntities.Where(entity => entity != cubeAiComponent.CubeEntity));
         }
 
-        public override ReflectionData GetReflectedValue(string portName) {
+        public override object GetReflectedValue(string portName) {
             throw new System.NotImplementedException();
         }
 
-        public override ReflectionData GetFullValue(string portName) {
+        public override object GetFullValue(string portName) {
             throw new System.NotImplementedException();
         }
     }

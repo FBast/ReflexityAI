@@ -13,11 +13,11 @@ namespace Plugins.xNodeUtilityAi.MemoryNodes {
             return context.LoadFromMemory(MemoryTag);
         }
 
-        public override ReflectionData GetReflectedValue(string portName) {
+        public override object GetReflectedValue(string portName) {
             throw new System.NotImplementedException();
         }
 
-        public override ReflectionData GetFullValue(string portName) {
+        public override object GetFullValue(string portName) {
             throw new System.NotImplementedException();
         }
     }

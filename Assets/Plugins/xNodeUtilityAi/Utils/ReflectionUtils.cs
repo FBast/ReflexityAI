@@ -44,16 +44,33 @@ namespace Plugins.xNodeUtilityAi.Utils {
         }
     }
     
-    public struct ReflectionData {
+    public class ReflectionData {
 
         public string Name;
         public Type Type;
         public object Data;
         
+        public ReflectionData() {}
+        
         public ReflectionData(string name, Type type, object data) {
             Name = name;
             Type = type;
             Data = data;
+        }
+
+    }
+
+    [Serializable]
+    public class SerializableReflectionData {
+
+        public string ClassName;
+        public string FieldName;
+
+        public SerializableReflectionData() {}
+
+        public SerializableReflectionData(string className, string fieldName) {
+            ClassName = className;
+            FieldName = fieldName;
         }
 
     }
