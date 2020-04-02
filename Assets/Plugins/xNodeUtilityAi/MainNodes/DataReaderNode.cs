@@ -12,19 +12,21 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         public AbstractAIComponent Context { get; set; }
 
-        private readonly List<MemberInfo> _memberInfos = new List<MemberInfo>();
+        private readonly List<SerializableMemberInfo> SerializableMemberInfos = new List<SerializableMemberInfo>();
 
         private void OnValidate() {
             List<MemberInfo> memberInfos = GetMemberInfos();
             // Add new ports
-            foreach (MemberInfo memberInfo in memberInfos.Where(memberInfo => !_memberInfos.Contains(memberInfo))) {
+            foreach (MemberInfo memberInfo in memberInfos) {
+                if (memberInfos.Any(info => info.Name == memberInfo.Name)) continue;
                 AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.None, memberInfo.Name);
-                _memberInfos.Add(memberInfo);
+                SerializableMemberInfos.Add(memberInfo.ToSerializableMemberInfo());
             }
             // Remove old ports
-            foreach (MemberInfo memberInfo in _memberInfos.Where(memberInfo => !memberInfos.Contains(memberInfo))) {
-                RemoveDynamicPort(memberInfo.Name);
-                _memberInfos.Remove(memberInfo);
+            foreach (SerializableMemberInfo serializableMemberInfo in SerializableMemberInfos) {
+                if (memberInfos.All(info => info.Name != serializableMemberInfo.FieldName)) continue;
+                RemoveDynamicPort(serializableMemberInfo.FieldName);
+                SerializableMemberInfos.Remove(serializableMemberInfo);
             }
         }
 
@@ -35,17 +37,17 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         public override object GetReflectedValue(string portName) {
-            MemberInfo firstOrDefault = GetMemberInfos().FirstOrDefault(info => info.Name == portName);
-            if (firstOrDefault != null)
-                return new ReflectionData(firstOrDefault.Name, firstOrDefault.FieldType(), null);
-            throw new Exception("No reflected data found for " + portName);
+            SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.FieldName == portName);
+            if (firstOrDefault == null) throw new Exception("No reflected data found for " + portName);
+            MemberInfo memberInfo = firstOrDefault.ToMemberInfo();
+            return new ReflectionData(memberInfo.Name, memberInfo.FieldType(), null);
         }
 
         public override object GetFullValue(string portName) {
-            MemberInfo firstOrDefault = GetMemberInfos().FirstOrDefault(info => info.Name == portName);
-            if (firstOrDefault != null)
-                return new ReflectionData(firstOrDefault.Name, firstOrDefault.FieldType(), firstOrDefault.GetValue(Context));
-            throw new Exception("No reflected data found for " + portName);
+            SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.FieldName == portName);
+            if (firstOrDefault == null) throw new Exception("No reflected data found for " + portName);
+            MemberInfo memberInfo = firstOrDefault.ToMemberInfo();
+            return new ReflectionData(memberInfo.Name, memberInfo.FieldType(), memberInfo.GetValue(Context));
         }
         
         private List<MemberInfo> GetMemberInfos() {

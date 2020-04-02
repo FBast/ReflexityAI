@@ -21,6 +21,20 @@ namespace Plugins.xNodeUtilityAi.Utils {
             // return reflectionDatas;
         }
 
+        public static SerializableMemberInfo ToSerializableMemberInfo(this MemberInfo memberInfo) {
+            return new SerializableMemberInfo {
+                FieldName = memberInfo.Name, 
+                TypeName = memberInfo.FieldType().AssemblyQualifiedName
+            };
+        }
+
+        public static MemberInfo ToMemberInfo(this SerializableMemberInfo serializableMemberInfo) {
+            Type type = Type.GetType(serializableMemberInfo.TypeName);
+            if (type == null)
+                throw new Exception("Cannot find type : " + serializableMemberInfo.TypeName);
+            return type.GetMember(serializableMemberInfo.FieldName).FirstOrDefault();
+        }
+
         public static Type FieldType(this MemberInfo memberInfo) {
             switch (memberInfo) {
                 case FieldInfo fieldInfo:
@@ -61,16 +75,16 @@ namespace Plugins.xNodeUtilityAi.Utils {
     }
 
     [Serializable]
-    public class SerializableReflectionData {
+    public class SerializableMemberInfo {
 
-        public string ClassName;
         public string FieldName;
+        public string TypeName;
 
-        public SerializableReflectionData() {}
+        public SerializableMemberInfo() {}
 
-        public SerializableReflectionData(string className, string fieldName) {
-            ClassName = className;
+        public SerializableMemberInfo(string fieldName, string typeName) {
             FieldName = fieldName;
+            TypeName = typeName;
         }
 
     }
