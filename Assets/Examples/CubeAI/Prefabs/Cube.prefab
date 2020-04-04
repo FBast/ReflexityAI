@@ -196,7 +196,7 @@ MonoBehaviour:
     type: 3}
   ProjectilePower: 30
   MaxAmmo: 10
-  CurrentAmmo: 0
+  CurrentAmmo: 10
   CanonSpeed: 0
   Target: {fileID: 0}
 --- !u!114 &1656194801054802152
@@ -217,6 +217,8 @@ MonoBehaviour:
   AlwaysPickBestChoice: 0
   BrainType: 0
   CubeEntity: {fileID: 0}
+  ExempleOfInt: 0
+  ExempleOfBool: 0
 --- !u!1 &3462655324143414681
 GameObject:
   m_ObjectHideFlags: 0

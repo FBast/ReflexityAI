@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -13,49 +14,23 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Output;
 
-        // public SerializableReflectionData SelectedReflectionData;
-        public MemberInfo SelectedMemberInfo;
-        // public List<SerializableReflectionData> ReflectionDatas = new List<SerializableReflectionData>();
-        public List<MemberInfo> MemberInfos = new List<MemberInfo>();
+        public SerializableMemberInfo SelectedSerializableMemberInfo;
+        public List<SerializableMemberInfo> SerializableMemberInfos = new List<SerializableMemberInfo>();
         [HideInInspector] public int ChoiceIndex;
-
-        // private void OnValidate() {
-        //     ReflectionDatas.Clear();
-        //     ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-        //     foreach (MemberInfo memberInfo in reflectionData.Type.GetMemberInfos().ToList()) {
-        //         ReflectionDatas.Add(new SerializableReflectionData(memberInfo.Name, memberInfo.FieldType().AssemblyQualifiedName));
-        //     }
-        // }
         
-        private void OnValidate() {
-            MemberInfos.Clear();
-            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-            MemberInfos = reflectionData.Type.GetMemberInfos().ToList();
-        }
-        
-        // public override void OnCreateConnection(NodePort from, NodePort to) {
-        //     base.OnCreateConnection(from, to);
-        //     OnValidate();
-        // }
-
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-                MemberInfos = reflectionData.Type.GetMemberInfos().ToList();
+                SerializableMemberInfos = reflectionData.Type.GetMemberInfos()
+                    .Select(info => info.ToSerializableMemberInfo()).ToList();
             }
         }
-        
-        // public override void OnRemoveConnection(NodePort port) {
-        //     base.OnRemoveConnection(port);
-        //     OnValidate();
-        // }
-        
+
         public override void OnRemoveConnection(NodePort port) {
             base.OnRemoveConnection(port);
             if (port.fieldName == nameof(Data) && port.node == this) {
-                Debug.Log("DataSelector : OnRemoveConnection");
-                MemberInfos.Clear();
+                SerializableMemberInfos.Clear();
             }
         }
         
@@ -66,12 +41,23 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         public override object GetReflectedValue(string portName) {
-            return new ReflectionData(SelectedMemberInfo.Name, SelectedMemberInfo.FieldType(), null);
+            MemberInfo selectedMemberInfo = SelectedSerializableMemberInfo.ToMemberInfo();
+            return selectedMemberInfo.FieldType().IsPrimitive ? null : 
+                new ReflectionData(selectedMemberInfo.Name, selectedMemberInfo.FieldType(), null);
         }
 
         public override object GetFullValue(string portName) {
+            MemberInfo selectedMemberInfo = SelectedSerializableMemberInfo.ToMemberInfo();
             ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-            return SelectedMemberInfo != null ? new ReflectionData(SelectedMemberInfo.Name, SelectedMemberInfo.FieldType(), reflectionData.Data) : null;
+            MemberInfo firstOrDefault = reflectionData.Type.GetMemberInfos()
+                .FirstOrDefault(info => info.Name == selectedMemberInfo.Name);
+            if (firstOrDefault != null) {
+                return firstOrDefault.FieldType().IsPrimitive
+                    ? firstOrDefault.GetValue(reflectionData.Data)
+                    : new ReflectionData(firstOrDefault.Name, firstOrDefault.FieldType(),
+                        firstOrDefault.GetValue(reflectionData.Data));
+            }
+            throw new Exception("Cannot select member info based on selectedMemberInfo");
         }
         
     }

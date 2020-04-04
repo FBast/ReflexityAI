@@ -12,21 +12,30 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         public AbstractAIComponent Context { get; set; }
 
-        private readonly List<SerializableMemberInfo> SerializableMemberInfos = new List<SerializableMemberInfo>();
+        private List<SerializableMemberInfo> SerializableMemberInfos = new List<SerializableMemberInfo>();
+
+        protected override void Init() {
+            base.Init();
+            OnValidate();
+        }
 
         private void OnValidate() {
-            List<MemberInfo> memberInfos = GetMemberInfos();
-            // Add new ports
-            foreach (MemberInfo memberInfo in memberInfos) {
-                if (memberInfos.Any(info => info.Name == memberInfo.Name)) continue;
-                AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.None, memberInfo.Name);
-                SerializableMemberInfos.Add(memberInfo.ToSerializableMemberInfo());
-            }
-            // Remove old ports
-            foreach (SerializableMemberInfo serializableMemberInfo in SerializableMemberInfos) {
-                if (memberInfos.All(info => info.Name != serializableMemberInfo.FieldName)) continue;
-                RemoveDynamicPort(serializableMemberInfo.FieldName);
-                SerializableMemberInfos.Remove(serializableMemberInfo);
+            if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
+                List<MemberInfo> memberInfos = brainGraph.ContextType.Type.GetMemberInfos().ToList();
+                // Add new ports
+                foreach (MemberInfo memberInfo in memberInfos) {
+                    if (SerializableMemberInfos.Any(info => info.FieldName == memberInfo.Name)) continue;
+                    AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.None, memberInfo.Name);
+                    SerializableMemberInfos.Add(memberInfo.ToSerializableMemberInfo());
+                }
+                // Remove old ports
+                for (int i = SerializableMemberInfos.Count - 1; i >= 0; i--) {
+                    if (memberInfos.Any(info => info.Name == SerializableMemberInfos[i].FieldName)) continue;
+                    RemoveDynamicPort(SerializableMemberInfos[i].FieldName);
+                    SerializableMemberInfos.RemoveAt(i);
+                }
+            } else {
+                throw new Exception("No brain graph context type found, please select one");
             }
         }
 
@@ -40,23 +49,18 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.FieldName == portName);
             if (firstOrDefault == null) throw new Exception("No reflected data found for " + portName);
             MemberInfo memberInfo = firstOrDefault.ToMemberInfo();
-            return new ReflectionData(memberInfo.Name, memberInfo.FieldType(), null);
+            return memberInfo.FieldType().IsPrimitive ? null : 
+                new ReflectionData(memberInfo.Name, memberInfo.FieldType(), null);
         }
 
         public override object GetFullValue(string portName) {
             SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.FieldName == portName);
             if (firstOrDefault == null) throw new Exception("No reflected data found for " + portName);
             MemberInfo memberInfo = firstOrDefault.ToMemberInfo();
-            return new ReflectionData(memberInfo.Name, memberInfo.FieldType(), memberInfo.GetValue(Context));
+            return memberInfo.FieldType().IsPrimitive ? memberInfo.GetValue(Context) : 
+                new ReflectionData(memberInfo.Name, memberInfo.FieldType(), memberInfo.GetValue(Context));
         }
-        
-        private List<MemberInfo> GetMemberInfos() {
-            if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
-                return brainGraph.ContextType.Type.GetMemberInfos().ToList();
-            }
-            throw new Exception("No brain graph context type found, please select one");
-        }
-        
+
     }
 }
 
