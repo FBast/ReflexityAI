@@ -5,7 +5,6 @@ using Plugins.xNodeUtilityAi.AbstractNodes;
 using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 using XNode;
-using Object = UnityEngine.Object;
 
 namespace Plugins.xNodeUtilityAi.MainNodes {
     [NodeTint(255, 255, 120), NodeWidth(300)]

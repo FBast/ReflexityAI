@@ -25,7 +25,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: CubeEntity
-        node: {fileID: -1952939606173623718}
+        node: {fileID: -4400595334944016221}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -50,72 +50,87 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     FieldName: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   SerializableMemberInfos:
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: MeshRenderer
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: Stats
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: CanonOutTransform
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: ProjectilePrefab
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: Target
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: Transform
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: GameObject
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   ChoiceIndex: 9
---- !u!114 &-1952939606173623718
+--- !u!114 &-4400595334944016221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +143,7 @@ MonoBehaviour:
   m_Name: Data Reader
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -968, y: -1608}
+  position: {x: -1112, y: -1624}
   ports:
     keys:
     - CubeEntity
@@ -137,7 +152,7 @@ MonoBehaviour:
     - OthersCubeEntities
     values:
     - _fieldName: CubeEntity
-      _node: {fileID: -1952939606173623718}
+      _node: {fileID: -4400595334944016221}
       _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
@@ -152,7 +167,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
     - _fieldName: ExempleOfInt
-      _node: {fileID: -1952939606173623718}
+      _node: {fileID: -4400595334944016221}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
@@ -161,7 +176,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
     - _fieldName: ExempleOfBool
-      _node: {fileID: -1952939606173623718}
+      _node: {fileID: -4400595334944016221}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
@@ -170,7 +185,7 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 1
     - _fieldName: OthersCubeEntities
-      _node: {fileID: -1952939606173623718}
+      _node: {fileID: -4400595334944016221}
       _typeQualifiedName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
@@ -291,7 +306,7 @@ MonoBehaviour:
   - {fileID: 5007540563150302316}
   - {fileID: -4657610995353838350}
   - {fileID: 6177397126202467225}
-  - {fileID: -1952939606173623718}
+  - {fileID: -4400595334944016221}
   ContextType:
     _classRef: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp
   HistoricTags: []
@@ -444,7 +459,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: CubeEntity
-        node: {fileID: -1952939606173623718}
+        node: {fileID: -4400595334944016221}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -469,68 +484,83 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     FieldName: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   SerializableMemberInfos:
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: MeshRenderer
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: Stats
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: CanonOutTransform
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: ProjectilePrefab
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    IsPrimitive: 1
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: Target
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: Transform
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   - DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     FieldName: GameObject
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+    IsPrimitive: 0
   ChoiceIndex: 8

@@ -1,6 +1,6 @@
+using System;
 using System.Collections.Generic;
 using Plugins.xNodeUtilityAi.Framework;
-using Plugins.xNodeUtilityAi.Utils;
 using UnityEngine;
 using XNode;
 using Object = UnityEngine.Object;
@@ -10,22 +10,22 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public List<Object> DataList;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public DataIteratorNode LinkedOption;
-        // [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Data;
+        [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Data;
 
-        public ReflectionData IteratedReflectionData;
-        public ReflectionData CollectionReflectionData;
-        public int CollectionCount => ((List<object>) IteratedReflectionData.Data)?.Count ?? 0;
+        public Tuple<string, Type, object> IteratedReflectionData;
+        public Tuple<string, Type, object> CollectionReflectionData;
+        public int CollectionCount => ((List<object>) IteratedReflectionData.Item3)?.Count ?? 0;
         public int Index { get; set; }
-
+        
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(DataList) && to.node == this) {
-                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(DataList));
-                if (reflectionData.Type.IsGenericType && reflectionData.Type.GetGenericTypeDefinition() == typeof(List<>)) {
-                    IteratedReflectionData = new ReflectionData {Type = reflectionData.Type.GetGenericArguments()[0]};
-                    IteratedReflectionData.Name = IteratedReflectionData.Type.Name;
-                    AddDynamicOutput(IteratedReflectionData.Type, ConnectionType.Multiple, 
-                        TypeConstraint.Inherited, IteratedReflectionData.Name);
+                Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(DataList));
+                if (reflectionData.Item2.IsGenericType && reflectionData.Item2.GetGenericTypeDefinition() == typeof(List<>)) {
+                    Type type = reflectionData.Item2.GetGenericArguments()[0];
+                    IteratedReflectionData = new Tuple<string, Type, object>(type.Name, type, null);
+                    AddDynamicOutput(IteratedReflectionData.Item2, ConnectionType.Multiple, 
+                        TypeConstraint.Inherited, IteratedReflectionData.Item1);
                 } else {
                     Debug.LogError("DataList can only take List");
                 }
@@ -44,21 +44,14 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             if (port.fieldName == nameof(LinkedOption)) {
                 return this;
             }
-            if (port.fieldName == IteratedReflectionData.Name) {
-                return Application.isPlaying ? GetFullValue(port.fieldName) : GetReflectedValue(port.fieldName);
+            if (port.fieldName == IteratedReflectionData.Item1) {
+                if (!Application.isPlaying) return IteratedReflectionData;
+                CollectionReflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(DataList));
+                List<object> collection = (List<object>) CollectionReflectionData.Item3;
+                return new Tuple<string, Type, object>(CollectionReflectionData.Item1, IteratedReflectionData.Item2, collection[Index]);
             }
             return null;
         }
 
-        public override object GetReflectedValue(string portName) {
-            return IteratedReflectionData;
-        }
-
-        public override object GetFullValue(string portName) {
-            CollectionReflectionData = GetInputValue<ReflectionData>(nameof(DataList));
-            List<object> collection = (List<object>) CollectionReflectionData.Data;
-            return new ReflectionData(CollectionReflectionData.Name, IteratedReflectionData.Type, collection[Index]);
-        }
-        
     }
 }

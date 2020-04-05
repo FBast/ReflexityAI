@@ -93,6 +93,7 @@
               <e p="DataNode.cs" t="Include" />
               <e p="EntryNode.cs" t="Include" />
               <e p="IContextual.cs" t="Include" />
+              <e p="SerializableMemberInfo.cs" t="Include" />
               <e p="StringFieldInfoDictionary.cs" t="Include" />
             </e>
             <e p="MainNodes" t="Include">

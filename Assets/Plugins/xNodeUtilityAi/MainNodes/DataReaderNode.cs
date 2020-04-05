@@ -26,7 +26,7 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
                 foreach (MemberInfo memberInfo in memberInfos) {
                     if (SerializableMemberInfos.Any(info => info.FieldName == memberInfo.Name)) continue;
                     AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.None, memberInfo.Name);
-                    SerializableMemberInfos.Add(memberInfo.ToSerializableMemberInfo());
+                    SerializableMemberInfos.Add(new SerializableMemberInfo(memberInfo));
                 }
                 // Remove old ports
                 for (int i = SerializableMemberInfos.Count - 1; i >= 0; i--) {
@@ -40,25 +40,9 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         public override object GetValue(NodePort port) {
-            return Application.isPlaying
-                ? GetFullValue(port.fieldName)
-                : GetReflectedValue(port.fieldName);
-        }
-
-        public override object GetReflectedValue(string portName) {
-            SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.FieldName == portName);
-            if (firstOrDefault == null) throw new Exception("No reflected data found for " + portName);
-            MemberInfo memberInfo = firstOrDefault.ToMemberInfo();
-            return memberInfo.FieldType().IsPrimitive ? null : 
-                new ReflectionData(memberInfo.Name, memberInfo.FieldType(), null);
-        }
-
-        public override object GetFullValue(string portName) {
-            SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.FieldName == portName);
-            if (firstOrDefault == null) throw new Exception("No reflected data found for " + portName);
-            MemberInfo memberInfo = firstOrDefault.ToMemberInfo();
-            return memberInfo.FieldType().IsPrimitive ? memberInfo.GetValue(Context) : 
-                new ReflectionData(memberInfo.Name, memberInfo.FieldType(), memberInfo.GetValue(Context));
+            SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.FieldName == port.fieldName);
+            if (firstOrDefault == null) throw new Exception("No reflected data found for " + port.fieldName);
+            return Application.isPlaying ? firstOrDefault.GetRuntimeValue(Context) : firstOrDefault.GetEditorValue();
         }
 
     }
