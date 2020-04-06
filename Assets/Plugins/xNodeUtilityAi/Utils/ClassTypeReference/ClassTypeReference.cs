@@ -5,7 +5,6 @@ using System;
 using UnityEngine;
 
 namespace Plugins.xNodeUtilityAi.Utils.ClassTypeReference {
-
 	/// <summary>
 	/// Reference to a class <see cref="System.Type"/> with support for Unity serialization.
 	/// </summary>
@@ -103,5 +102,4 @@ namespace Plugins.xNodeUtilityAi.Utils.ClassTypeReference {
 		}
 
 	}
-
 }

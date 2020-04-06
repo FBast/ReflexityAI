@@ -8,11 +8,12 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.MainNodes {
+    [NodeWidth(300)]
     public class DataReaderNode : DataNode, IContextual {
 
         public AbstractAIComponent Context { get; set; }
 
-        private List<SerializableMemberInfo> SerializableMemberInfos = new List<SerializableMemberInfo>();
+        [HideInInspector] public List<SerializableMemberInfo> SerializableMemberInfos = new List<SerializableMemberInfo>();
 
         protected override void Init() {
             base.Init();
@@ -21,17 +22,18 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         private void OnValidate() {
             if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
-                List<MemberInfo> memberInfos = brainGraph.ContextType.Type.GetMemberInfos().ToList();
+                List<MemberInfo> memberInfos = brainGraph.ContextType.Type.GetFieldAndPropertyInfos().ToList();
                 // Add new ports
                 foreach (MemberInfo memberInfo in memberInfos) {
-                    if (SerializableMemberInfos.Any(info => info.FieldName == memberInfo.Name)) continue;
-                    AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.None, memberInfo.Name);
-                    SerializableMemberInfos.Add(new SerializableMemberInfo(memberInfo));
+                    if (SerializableMemberInfos.Any(info => info.Name == memberInfo.Name)) continue;
+                    SerializableMemberInfo serializableMemberInfo = new SerializableMemberInfo(memberInfo);
+                    AddDynamicOutput(memberInfo.FieldType(), ConnectionType.Multiple, TypeConstraint.None, serializableMemberInfo.PortName);
+                    SerializableMemberInfos.Add(serializableMemberInfo);
                 }
                 // Remove old ports
                 for (int i = SerializableMemberInfos.Count - 1; i >= 0; i--) {
-                    if (memberInfos.Any(info => info.Name == SerializableMemberInfos[i].FieldName)) continue;
-                    RemoveDynamicPort(SerializableMemberInfos[i].FieldName);
+                    if (memberInfos.Any(info => info.Name == SerializableMemberInfos[i].Name)) continue;
+                    RemoveDynamicPort(SerializableMemberInfos[i].PortName);
                     SerializableMemberInfos.RemoveAt(i);
                 }
             } else {
@@ -40,10 +42,12 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         public override object GetValue(NodePort port) {
-            SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.FieldName == port.fieldName);
+            SerializableMemberInfo firstOrDefault = SerializableMemberInfos.FirstOrDefault(info => info.PortName == port.fieldName);
             if (firstOrDefault == null) throw new Exception("No reflected data found for " + port.fieldName);
             return Application.isPlaying ? firstOrDefault.GetRuntimeValue(Context) : firstOrDefault.GetEditorValue();
         }
+        
+
 
     }
 }

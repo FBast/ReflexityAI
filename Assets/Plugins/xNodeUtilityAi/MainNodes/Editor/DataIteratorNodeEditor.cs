@@ -1,3 +1,4 @@
+using System;
 using XNode;
 using XNodeEditor;
 
@@ -11,13 +12,14 @@ namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
         //     if (_dataIteratorNode == null) _dataIteratorNode = (DataIteratorNode) target;
         //     serializedObject.Update();
         //     NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataIteratorNode.DataList)));
-        //     if (_dataIteratorNode.IteratedReflectionData != null) {
-        //         NodePort nodePort = _dataIteratorNode.GetPort(nameof(_dataIteratorNode.DataList));
-        //         nodePort.ValueType = _dataIteratorNode.IteratedReflectionData.Type;
-        //         NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataIteratorNode.Data)));
+        //     bool isLinkedOptionConnected = _dataIteratorNode.GetOutputPort(nameof(_dataIteratorNode.LinkedOption)).IsConnected;
+        //     Tuple<string,Type,object> reflectionData = _dataIteratorNode.IteratedReflectionData;
+        //     if (reflectionData != null && isLinkedOptionConnected) {
+        //         _dataIteratorNode.AddDynamicOutput(reflectionData.Item2, Node.ConnectionType.Multiple, 
+        //             Node.TypeConstraint.Inherited, reflectionData.Item1);
         //     }
         //     serializedObject.ApplyModifiedProperties();
-        // }
+        // }    
 
     }
 }

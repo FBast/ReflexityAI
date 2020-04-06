@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Plugins.xNodeUtilityAi.Utils;
@@ -8,33 +9,43 @@ namespace Plugins.xNodeUtilityAi.Framework {
     public class SerializableMemberInfo {
 
         public string DeclaringTypeName;
-        public string FieldName;
+        public string Name;
+        public string PortName;
         public string TypeName;
         public bool IsPrimitive;
+        public bool IsIteratable;
+        public int Order;
 
         public SerializableMemberInfo(MemberInfo memberInfo) {
             DeclaringTypeName = memberInfo.DeclaringType?.AssemblyQualifiedName;
-            FieldName = memberInfo.Name;
-            TypeName = memberInfo.FieldType().AssemblyQualifiedName;
-            IsPrimitive = memberInfo.FieldType().IsPrimitive;
+            Name = memberInfo.Name;
+            PortName = memberInfo.Name + " (" + memberInfo.MemberType + ")";
+            Type fieldType = memberInfo.FieldType();
+            TypeName = fieldType.AssemblyQualifiedName;
+            IsPrimitive = fieldType.IsPrimitive;
+            if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>)) {
+                IsIteratable = true;
+            }
+            Order = memberInfo.MetadataToken;
         }
 
         public MemberInfo ToMemberInfo() {
             Type declaringType = Type.GetType(DeclaringTypeName);
             if (declaringType == null) throw new Exception("Cannot find declaring type : " + DeclaringTypeName);
-            return declaringType.GetMember(FieldName).FirstOrDefault();
+            return declaringType.GetMember(Name).FirstOrDefault();
         }
 
         public object GetEditorValue() {
             MemberInfo memberInfo = ToMemberInfo();
             return IsPrimitive ? null : 
-                new Tuple<string, Type, object>(FieldName, memberInfo.FieldType(), null);
+                new Tuple<string, Type, object>(Name, memberInfo.FieldType(), null);
         }
 
         public object GetRuntimeValue(object context) {
             MemberInfo memberInfo = ToMemberInfo();
+            if (context == null) throw new Exception("Cannot get Runtime value if context is null");
             return IsPrimitive ? memberInfo.GetValue(context) : 
-                new Tuple<string, Type, object>(FieldName, memberInfo.FieldType(), memberInfo.GetValue(context));
+                new Tuple<string, Type, object>(Name, memberInfo.FieldType(), memberInfo.GetValue(context));
         }
 
     }

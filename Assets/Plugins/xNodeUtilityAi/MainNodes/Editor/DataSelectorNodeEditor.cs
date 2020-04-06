@@ -16,7 +16,8 @@ namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
             serializedObject.Update();
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataSelectorNode.Data)));
             if (_dataSelectorNode.SerializableMemberInfos.Count > 0) {
-                string[] choices = _dataSelectorNode.SerializableMemberInfos.Select(info => info.FieldName).ToArray();
+                string[] choices = _dataSelectorNode.SerializableMemberInfos.Select(info => info.Name).ToArray();
+                //BUG-fred ArgumentException: Getting control 2's position in a group with only 2 controls when doing mouseUp
                 _dataSelectorNode.ChoiceIndex = EditorGUILayout.Popup(_dataSelectorNode.ChoiceIndex, choices);
                 _dataSelectorNode.SelectedSerializableMemberInfo = _dataSelectorNode.SerializableMemberInfos
                     .ElementAt(_dataSelectorNode.ChoiceIndex);

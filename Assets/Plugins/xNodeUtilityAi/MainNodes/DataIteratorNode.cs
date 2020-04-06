@@ -10,11 +10,10 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public List<Object> DataList;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public DataIteratorNode LinkedOption;
-        [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Data;
 
-        public Tuple<string, Type, object> IteratedReflectionData;
+        public Tuple<string, Type, List<object>> IteratedReflectionData;
         public Tuple<string, Type, object> CollectionReflectionData;
-        public int CollectionCount => ((List<object>) IteratedReflectionData.Item3)?.Count ?? 0;
+        public int CollectionCount => IteratedReflectionData.Item3?.Count ?? 0;
         public int Index { get; set; }
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
@@ -23,7 +22,7 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
                 Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(DataList));
                 if (reflectionData.Item2.IsGenericType && reflectionData.Item2.GetGenericTypeDefinition() == typeof(List<>)) {
                     Type type = reflectionData.Item2.GetGenericArguments()[0];
-                    IteratedReflectionData = new Tuple<string, Type, object>(type.Name, type, null);
+                    IteratedReflectionData = new Tuple<string, Type, List<object>>(type.Name, type, null);
                     AddDynamicOutput(IteratedReflectionData.Item2, ConnectionType.Multiple, 
                         TypeConstraint.Inherited, IteratedReflectionData.Item1);
                 } else {

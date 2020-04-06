@@ -8,8 +8,10 @@ namespace Plugins.xNodeUtilityAi.Utils {
 
         private const BindingFlags _defaultBindingFlags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
 
-        public static IEnumerable<MemberInfo> GetMemberInfos(this Type type, BindingFlags bindingFlags = _defaultBindingFlags) {
-            return type.GetFields(bindingFlags).Cast<MemberInfo>().Concat(type.GetProperties(bindingFlags));
+        public static IEnumerable<MemberInfo> GetFieldAndPropertyInfos(this Type type, BindingFlags bindingFlags = _defaultBindingFlags) {
+            return type.GetMembers(bindingFlags)
+                .Where(info => info.MemberType == MemberTypes.Field || info.MemberType == MemberTypes.Property)
+                .OrderBy(info => info.MetadataToken);
         }
 
         public static Type FieldType(this MemberInfo memberInfo) {
@@ -23,6 +25,10 @@ namespace Plugins.xNodeUtilityAi.Utils {
             }
         }
 
+        public static bool IsSameOrSubclass(this Type potentialDescendant, Type potentialBase) {
+            return potentialDescendant.IsSubclassOf(potentialBase) || potentialDescendant == potentialBase;
+        }
+        
         public static object GetValue(this MemberInfo memberInfo, object context) {
             switch (memberInfo) {
                 case FieldInfo fieldInfo:

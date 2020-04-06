@@ -8,10 +8,10 @@ namespace Plugins.xNodeUtilityAi.Framework {
     [CreateAssetMenu(fileName = "UtilityAIBrain", menuName = "UtilityAI/AIBrainGraph")]
     public class AIBrainGraph : NodeGraph {
         
+        [Header("Brain Parameters")] 
         [ClassExtends(typeof(AbstractAIComponent), Grouping = ClassGrouping.None)]
         public ClassTypeReference ContextType;
 
-        [Header("Tags")] 
         public List<string> HistoricTags = new List<string>();
         public List<string> MemoryTags = new List<string>();
         
