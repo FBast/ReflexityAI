@@ -1,8 +1,7 @@
-﻿using Plugins.xNodeUtilityAi.Framework;
-using UnityEngine;
+﻿using UnityEngine;
 using XNode;
 
-namespace Plugins.xNodeUtilityAi.AbstractNodes {
+namespace Plugins.xNodeUtilityAi.Framework {
     [NodeTint(255, 120, 120)]
     public abstract class ActionNode : Node {
         

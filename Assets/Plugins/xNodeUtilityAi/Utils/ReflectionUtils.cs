@@ -8,9 +8,9 @@ namespace Plugins.xNodeUtilityAi.Utils {
 
         private const BindingFlags _defaultBindingFlags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
 
-        public static IEnumerable<MemberInfo> GetFieldAndPropertyInfos(this Type type, BindingFlags bindingFlags = _defaultBindingFlags) {
-            return type.GetMembers(bindingFlags)
-                .Where(info => info.MemberType == MemberTypes.Field || info.MemberType == MemberTypes.Property)
+        public static IEnumerable<MemberInfo> GetMembers(this Type type, MemberTypes memberTypes) {
+            return type.GetMembers(_defaultBindingFlags)
+                .Where(info => (info.MemberType & memberTypes) != 0)
                 .OrderBy(info => info.MetadataToken);
         }
 
@@ -20,8 +20,12 @@ namespace Plugins.xNodeUtilityAi.Utils {
                     return fieldInfo.FieldType;
                 case PropertyInfo propertyInfo:
                     return propertyInfo.PropertyType;
+                case MethodInfo methodInfo:
+                    return methodInfo.ReturnType;
+                case EventInfo eventInfo:
+                    return eventInfo.EventHandlerType;
                 default:
-                    throw new Exception("MemberInfo must be a FieldInfo or PropertyInfo, not a " + memberInfo.MemberType);
+                    throw new Exception("MemberInfo of type " + memberInfo.MemberType + " is not supported");
             }
         }
 
@@ -41,5 +45,4 @@ namespace Plugins.xNodeUtilityAi.Utils {
         }
         
     }
-
 }

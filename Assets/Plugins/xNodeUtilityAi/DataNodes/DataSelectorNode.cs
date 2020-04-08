@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils;
 using UnityEngine;
 using XNode;
 using Object = UnityEngine.Object;
 
-namespace Plugins.xNodeUtilityAi.MainNodes {
+namespace Plugins.xNodeUtilityAi.DataNodes {
     public class DataSelectorNode : DataNode {
         
         [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;
@@ -21,7 +22,7 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
                 Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
-                SerializableMemberInfos = reflectionData.Item2.GetFieldAndPropertyInfos()
+                SerializableMemberInfos = reflectionData.Item2.GetMembers(MemberTypes.Field | MemberTypes.Property)
                     .Select(info => new SerializableMemberInfo(info)).ToList();
             }
         }

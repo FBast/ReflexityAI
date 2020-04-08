@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.xNodeUtilityAi.Framework;
 using UnityEditor;
 using UnityEngine;
 
-namespace Plugins.xNodeUtilityAi.Editor {
+namespace Plugins.xNodeUtilityAi.Framework.Editor {
     public class AiDebuggerEditorWindow : EditorWindow {
         
         private GameObject _currentGameObject;

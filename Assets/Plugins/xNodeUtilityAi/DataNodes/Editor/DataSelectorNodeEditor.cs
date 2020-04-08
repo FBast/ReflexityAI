@@ -1,11 +1,9 @@
 using System.Linq;
-using System.Reflection;
-using Plugins.xNodeUtilityAi.Utils;
 using UnityEditor;
 using XNode;
 using XNodeEditor;
 
-namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
+namespace Plugins.xNodeUtilityAi.DataNodes.Editor {
     [CustomNodeEditor(typeof(DataSelectorNode))]
     public class DataSelectorNodeEditor : NodeEditor {
 
@@ -14,17 +12,19 @@ namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
         public override void OnBodyGUI() {
             if (_dataSelectorNode == null) _dataSelectorNode = (DataSelectorNode) target;
             serializedObject.Update();
-            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataSelectorNode.Data)));
             if (_dataSelectorNode.SerializableMemberInfos.Count > 0) {
                 string[] choices = _dataSelectorNode.SerializableMemberInfos.Select(info => info.Name).ToArray();
                 //BUG-fred ArgumentException: Getting control 2's position in a group with only 2 controls when doing mouseUp
                 _dataSelectorNode.ChoiceIndex = EditorGUILayout.Popup(_dataSelectorNode.ChoiceIndex, choices);
                 _dataSelectorNode.SelectedSerializableMemberInfo = _dataSelectorNode.SerializableMemberInfos
                     .ElementAt(_dataSelectorNode.ChoiceIndex);
-                MemberInfo memberInfo = _dataSelectorNode.SelectedSerializableMemberInfo.ToMemberInfo();
+                NodePort dataPort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Data));
+                NodeEditorGUILayout.AddPortField(dataPort);
                 NodePort nodePort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Output));
-                nodePort.ValueType = memberInfo.FieldType();
+                nodePort.ValueType = _dataSelectorNode.SelectedSerializableMemberInfo.MainType;
                 NodeEditorGUILayout.AddPortField(nodePort);
+            } else {
+                NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataSelectorNode.Data)));
             }
             serializedObject.ApplyModifiedProperties();
         }

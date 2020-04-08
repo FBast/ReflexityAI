@@ -1,8 +1,7 @@
-using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 using XNode;
 
-namespace Plugins.xNodeUtilityAi.AbstractNodes {
+namespace Plugins.xNodeUtilityAi.Framework {
     public abstract class SimpleDataNode : DataNode {
 
         [Output] public Object DataOut;

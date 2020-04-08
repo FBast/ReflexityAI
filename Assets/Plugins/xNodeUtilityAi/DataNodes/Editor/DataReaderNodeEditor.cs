@@ -3,7 +3,7 @@ using Plugins.xNodeUtilityAi.Framework;
 using UnityEditor;
 using XNodeEditor;
 
-namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
+namespace Plugins.xNodeUtilityAi.DataNodes.Editor {
     [CustomNodeEditor(typeof(DataReaderNode))]
     public class DataReaderNodeEditor : NodeEditor {
     

@@ -1,8 +1,6 @@
-using System;
-using XNode;
 using XNodeEditor;
 
-namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
+namespace Plugins.xNodeUtilityAi.DataNodes.Editor {
     [CustomNodeEditor(typeof(DataIteratorNode))]
     public class DataIteratorNodeEditor : NodeEditor {
 

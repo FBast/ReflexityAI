@@ -22,7 +22,7 @@ namespace Examples.CubeAI.Scripts {
 
         public Transform Transform => transform;
         public GameObject GameObject => gameObject;
-        
+
         private Color _startingColor;
         
         private void Start() {
@@ -45,6 +45,10 @@ namespace Examples.CubeAI.Scripts {
             GameObject instantiate = Instantiate(ProjectilePrefab, CanonOutTransform.position, Quaternion.identity);
             instantiate.GetComponent<Rigidbody>().AddForce(transform.forward * ProjectilePower, ForceMode.Impulse);
             CurrentAmmo--;
+        }
+
+        public void Fuck(int penisSize) {
+            
         }
 
         public void Reload() {

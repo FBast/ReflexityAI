@@ -66,28 +66,13 @@
             </e>
           </e>
           <e p="xNodeUtilityAI" t="Include">
-            <e p="AbstractNodes" t="Include">
-              <e p="ActionNode.cs" t="Include" />
-              <e p="DataCollectionNode.cs" t="Include" />
-              <e p="SimpleDataNode.cs" t="Include" />
+            <e p="ActionNodes" t="Include">
+              <e p="ActionLauncherNode.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="ActionLauncherNodeEditor.cs" t="Include" />
+              </e>
             </e>
-            <e p="Editor" t="Include">
-              <e p="AiBrainGraphEditor.cs" t="Include" />
-              <e p="AiDebuggerEditorWindow.cs" t="Include" />
-            </e>
-            <e p="Framework" t="Include">
-              <e p="AbstractAiComponent.cs" t="Include" />
-              <e p="AIAction.cs" t="Include" />
-              <e p="AIBrainGraph.cs" t="Include" />
-              <e p="AIOption.cs" t="Include" />
-              <e p="DataNode.cs" t="Include" />
-              <e p="EntryNode.cs" t="Include" />
-              <e p="IContextual.cs" t="Include" />
-              <e p="SerializableMemberInfo.cs" t="Include" />
-              <e p="StringFieldInfoDictionary.cs" t="Include" />
-            </e>
-            <e p="MainNodes" t="Include">
-              <e p="ConverterNode.cs" t="Include" />
+            <e p="DataNodes" t="Include">
               <e p="DataIteratorNode.cs" t="Include" />
               <e p="DataReaderNode.cs" t="Include" />
               <e p="DataSelectorNode.cs" t="Include" />
@@ -96,6 +81,25 @@
                 <e p="DataReaderNodeEditor.cs" t="Include" />
                 <e p="DataSelectorNodeEditor.cs" t="Include" />
               </e>
+            </e>
+            <e p="Framework" t="Include">
+              <e p="AbstractAiComponent.cs" t="Include" />
+              <e p="ActionNode.cs" t="Include" />
+              <e p="AIAction.cs" t="Include" />
+              <e p="AIBrainGraph.cs" t="Include" />
+              <e p="AIOption.cs" t="Include" />
+              <e p="DataNode.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="AiBrainGraphEditor.cs" t="Include" />
+                <e p="AiDebuggerEditorWindow.cs" t="Include" />
+              </e>
+              <e p="EntryNode.cs" t="Include" />
+              <e p="IContextual.cs" t="Include" />
+              <e p="SerializableMemberInfo.cs" t="Include" />
+              <e p="SimpleDataNode.cs" t="Include" />
+            </e>
+            <e p="MainNodes" t="Include">
+              <e p="ConverterNode.cs" t="Include" />
               <e p="OptionNode.cs" t="Include" />
               <e p="UtilityNode.cs" t="Include" />
             </e>

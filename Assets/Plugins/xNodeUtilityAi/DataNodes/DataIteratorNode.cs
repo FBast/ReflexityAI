@@ -5,7 +5,7 @@ using UnityEngine;
 using XNode;
 using Object = UnityEngine.Object;
 
-namespace Plugins.xNodeUtilityAi.MainNodes {
+namespace Plugins.xNodeUtilityAi.DataNodes {
     public class DataIteratorNode : DataNode {
 
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public List<Object> DataList;

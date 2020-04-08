@@ -1,12 +1,10 @@
 ﻿using System;
-using Plugins.xNodeUtilityAi.AbstractNodes;
-using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.MainNodes;
 using Plugins.xNodeUtilityAi.MiddleNodes;
 using XNode;
 using XNodeEditor;
 
-namespace Plugins.xNodeUtilityAi.Editor {
+namespace Plugins.xNodeUtilityAi.Framework.Editor {
     [CustomNodeGraphEditor(typeof(AIBrainGraph))]
     public class AIBrainGraphEditor : NodeGraphEditor {
 

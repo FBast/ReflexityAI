@@ -7,7 +7,7 @@ using Plugins.xNodeUtilityAi.Utils;
 using UnityEngine;
 using XNode;
 
-namespace Plugins.xNodeUtilityAi.MainNodes {
+namespace Plugins.xNodeUtilityAi.DataNodes {
     [NodeWidth(300)]
     public class DataReaderNode : DataNode, IContextual {
 
@@ -22,7 +22,7 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         private void OnValidate() {
             if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
-                List<MemberInfo> memberInfos = brainGraph.ContextType.Type.GetFieldAndPropertyInfos().ToList();
+                List<MemberInfo> memberInfos = brainGraph.ContextType.Type.GetMembers(MemberTypes.Field | MemberTypes.Property).ToList();
                 // Add new ports
                 foreach (MemberInfo memberInfo in memberInfos) {
                     if (SerializableMemberInfos.Any(info => info.Name == memberInfo.Name)) continue;
@@ -47,9 +47,8 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             return Application.isPlaying ? firstOrDefault.GetRuntimeValue(Context) : firstOrDefault.GetEditorValue();
         }
         
-
-
     }
+
 }
 
 

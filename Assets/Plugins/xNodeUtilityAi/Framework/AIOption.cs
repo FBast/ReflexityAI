@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.xNodeUtilityAi.AbstractNodes;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     [Serializable]
