@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Plugins.xNodeUtilityAi.Framework;
 using UnityEditor;
 using XNode;
 using XNodeEditor;
@@ -13,11 +14,11 @@ namespace Plugins.xNodeUtilityAi.ActionNodes.Editor {
         public override void OnBodyGUI() {
             if (_actionLauncherNode == null) _actionLauncherNode = (ActionLauncherNode) target;
             serializedObject.Update();
-            if (_actionLauncherNode.SerializableMemberInfos.Count > 0) {
+            if (_actionLauncherNode.SerializableMethodInfos.Count > 0) {
                 foreach (NodePort dynamicInput in _actionLauncherNode.DynamicInputs) {
                     NodeEditorGUILayout.PortField(dynamicInput);
                 }
-                string[] choices = _actionLauncherNode.SerializableMemberInfos.Select(info => info.Name).ToArray();
+                string[] choices = _actionLauncherNode.SerializableMethodInfos.Select(info => info.Name).ToArray();
                 //BUG-fred ArgumentException: Getting control 2's position in a group with only 2 controls when doing mouseUp
                 int choiceIndex = EditorGUILayout.Popup(_actionLauncherNode.ChoiceIndex, choices);
                 if (choiceIndex != _actionLauncherNode.ChoiceIndex) {
@@ -35,12 +36,12 @@ namespace Plugins.xNodeUtilityAi.ActionNodes.Editor {
 
         public void UpdateChoice(int choiceIndex) {
             _actionLauncherNode.ChoiceIndex = choiceIndex;
-            _actionLauncherNode.SelectedSerializableMemberInfo = _actionLauncherNode.SerializableMemberInfos
+            _actionLauncherNode.SelectedSerializableMethodInfo = _actionLauncherNode.SerializableMethodInfos
                 .ElementAt(_actionLauncherNode.ChoiceIndex);
             _actionLauncherNode.ClearDynamicPorts();
-            foreach ((string name, string type) valueTuple in _actionLauncherNode.SelectedSerializableMemberInfo.Parameters) {
-                Type parameterType = Type.GetType(valueTuple.type);
-                _actionLauncherNode.AddDynamicInput(parameterType, Node.ConnectionType.Override, Node.TypeConstraint.InheritedInverse, valueTuple.name);
+            foreach (SerializableMethodInfo.Parameter parameter in _actionLauncherNode.SelectedSerializableMethodInfo.Parameters) {
+                Type parameterType = Type.GetType(parameter.TypeName);
+                _actionLauncherNode.AddDynamicInput(parameterType, Node.ConnectionType.Override, Node.TypeConstraint.InheritedInverse, parameter.Name);
             }
         }
 

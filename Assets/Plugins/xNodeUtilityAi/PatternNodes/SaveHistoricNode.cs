@@ -1,6 +1,5 @@
 using Plugins.xNodeUtilityAi.Framework;
 using Plugins.xNodeUtilityAi.Utils.TagList;
-using UnityEngine;
 
 namespace Plugins.xNodeUtilityAi.PatternNodes {
     public class SaveHistoricNode : ActionNode {
@@ -8,9 +7,16 @@ namespace Plugins.xNodeUtilityAi.PatternNodes {
         [DropdownList(typeof(TagListHelper), nameof(TagListHelper.GetHistoricTags))]
         public string HistoricTag;
 
-        public override void Execute(AbstractAIComponent context, Object data) {
-            context.SaveInHistoric(HistoricTag);
+        public override void Execute(object context, object[] parameters) {
+            // context.SaveInHistoric(HistoricTag);
         }
-        
+
+        public override object GetContext() {
+            throw new System.NotImplementedException();
+        }
+
+        public override object[] GetParameters() {
+            throw new System.NotImplementedException();
+        }
     }
 }

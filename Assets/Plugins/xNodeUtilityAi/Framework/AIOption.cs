@@ -24,9 +24,9 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 Description += " " + actionWithData.Data;
         }
 
-        public void ExecuteActions(AbstractAIComponent context) {
+        public void ExecuteActions() {
             AiActions = AiActions.OrderBy(action => action.Order).ToList();
-            AiActions.ForEach(action => action.Action.Invoke(context, action.Data));
+            AiActions.ForEach(action => action.Action.Invoke(action.Context, action.Data));
         }
 
         public override string ToString() {

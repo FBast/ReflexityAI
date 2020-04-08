@@ -46,7 +46,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 } else {
                     SelectedOptions.Add(aiBrainGraph, aiOption);
                 }
-                aiOption.ExecuteActions(this);
+                aiOption.ExecuteActions();
                 yield return null;
             }
             _isThinking = false;

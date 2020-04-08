@@ -4,13 +4,15 @@ using Object = UnityEngine.Object;
 namespace Plugins.xNodeUtilityAi.Framework {
     public class AIAction {
 
-        public Action<AbstractAIComponent, Object> Action;
-        public Object Data;
+        public Action<object, object[]> Action;
+        public object Context;
+        public object[] Data;
         public int Order;
 
         public AIAction(ActionNode actionNode) {
             Action = actionNode.Execute;
-            Data = actionNode.GetData();
+            Context = actionNode.GetContext();
+            Data = actionNode.GetParameters();
             Order = actionNode.Order;
         }
 

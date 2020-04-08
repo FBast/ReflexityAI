@@ -40,15 +40,10 @@ namespace Examples.CubeAI.Scripts {
         }
 
         public void Fire() {
-            if (CurrentAmmo == 0)
-                throw new Exception("No more ammo, the AI should not fire !");
+            if (CurrentAmmo == 0) return;
             GameObject instantiate = Instantiate(ProjectilePrefab, CanonOutTransform.position, Quaternion.identity);
             instantiate.GetComponent<Rigidbody>().AddForce(transform.forward * ProjectilePower, ForceMode.Impulse);
             CurrentAmmo--;
-        }
-
-        public void Fuck(int penisSize) {
-            
         }
 
         public void Reload() {

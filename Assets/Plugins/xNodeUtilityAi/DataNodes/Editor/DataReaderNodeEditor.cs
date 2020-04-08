@@ -13,14 +13,14 @@ namespace Plugins.xNodeUtilityAi.DataNodes.Editor {
             if (_dataReaderNode == null) _dataReaderNode = (DataReaderNode) target;
             serializedObject.Update();
             EditorGUILayout.LabelField("Iterated Data", EditorStyles.boldLabel);
-            foreach (SerializableMemberInfo serializableMemberInfo in _dataReaderNode.SerializableMemberInfos
+            foreach (SerializableFieldOrProperty serializableData in _dataReaderNode.SerializableDatas
                 .Where(info => info.IsIteratable).OrderBy(info => info.Order)) {
-                NodeEditorGUILayout.PortField(_dataReaderNode.GetOutputPort(serializableMemberInfo.PortName));
+                NodeEditorGUILayout.PortField(_dataReaderNode.GetOutputPort(serializableData.PortName));
             }
             EditorGUILayout.LabelField("Simple Data", EditorStyles.boldLabel);
-            foreach (SerializableMemberInfo serializableMemberInfo in _dataReaderNode.SerializableMemberInfos
+            foreach (SerializableFieldOrProperty serializableData in _dataReaderNode.SerializableDatas
                 .Where(info => !info.IsIteratable).OrderBy(info => info.Order)) {
-                NodeEditorGUILayout.PortField(_dataReaderNode.GetOutputPort(serializableMemberInfo.PortName));
+                NodeEditorGUILayout.PortField(_dataReaderNode.GetOutputPort(serializableData.PortName));
             }
             serializedObject.ApplyModifiedProperties();
         }
