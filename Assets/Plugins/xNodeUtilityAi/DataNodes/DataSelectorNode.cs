@@ -12,20 +12,20 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Output;
 
-        public SerializableFieldOrProperty selectedSerializableFieldOrProperty;
-        public List<SerializableFieldOrProperty> SerializableDatas = new List<SerializableFieldOrProperty>();
+        public SerializableMemberInfo SelectedSerializableMemberInfo;
+        public List<SerializableMemberInfo> SerializableDatas = new List<SerializableMemberInfo>();
         [HideInInspector] public int ChoiceIndex;
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
-                Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
-                SerializableDatas.AddRange(reflectionData.Item2
+                Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
+                SerializableDatas.AddRange(inputValue.Item2
                     .GetFields(SerializableMemberInfo.DefaultBindingFlags)
-                    .Select(info => new SerializableFieldOrProperty(info)));
-                SerializableDatas.AddRange(reflectionData.Item2
+                    .Select(info => new SerializableFieldInfo(info)));
+                SerializableDatas.AddRange(inputValue.Item2
                     .GetProperties(SerializableMemberInfo.DefaultBindingFlags)
-                    .Select(info => new SerializableFieldOrProperty(info)));
+                    .Select(info => new SerializablePropertyInfo(info)));
             }
         }
         
@@ -37,10 +37,13 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         }
         
         public override object GetValue(NodePort port) {
-            Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
-            return Application.isPlaying
-                ? selectedSerializableFieldOrProperty.GetRuntimeValue(reflectionData.Item3)
-                : selectedSerializableFieldOrProperty.GetEditorValue();
+            if (port.fieldName == nameof(Output)) {
+                Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
+                return Application.isPlaying
+                    ? SelectedSerializableMemberInfo.GetRuntimeValue(inputValue.Item3)
+                    : SelectedSerializableMemberInfo.GetEditorValue();
+            }
+            return null;
         }
 
     }

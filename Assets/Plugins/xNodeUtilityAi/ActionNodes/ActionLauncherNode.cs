@@ -53,4 +53,41 @@ namespace Plugins.xNodeUtilityAi.ActionNodes {
         }
         
     }
+
+    public class ActionSetterNode : ActionNode {
+
+        public SerializableMethodInfo SelectedSerializableMethodInfo;
+        public List<SerializableMethodInfo> SerializableMethodInfos = new List<SerializableMethodInfo>();
+        [HideInInspector] public int ChoiceIndex;
+
+        public override void OnCreateConnection(NodePort from, NodePort to) {
+            base.OnCreateConnection(from, to);
+            if (to.fieldName == nameof(Data) && to.node == this) {
+                Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
+                SerializableMethodInfos.AddRange(reflectionData.Item2
+                    .GetMethods(SerializableMemberInfo.DefaultBindingFlags)
+                    .Select(info => new SerializableMethodInfo(info)));
+            }
+        }
+        
+        public override void OnRemoveConnection(NodePort port) {
+            base.OnRemoveConnection(port);
+            if (port.fieldName == nameof(Data) && port.node == this) {
+                SerializableMethodInfos.Clear();
+            }
+        }
+        
+        public override void Execute(object context, object[] parameters) {
+            throw new NotImplementedException();
+        }
+
+        public override object GetContext() {
+            throw new NotImplementedException();
+        }
+
+        public override object[] GetParameters() {
+            throw new NotImplementedException();
+        }
+        
+    }
 }

@@ -38,6 +38,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
 
         }
-        
+
     }
 }

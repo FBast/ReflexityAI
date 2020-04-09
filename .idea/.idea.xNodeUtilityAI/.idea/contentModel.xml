@@ -95,9 +95,10 @@
               </e>
               <e p="EntryNode.cs" t="Include" />
               <e p="IContextual.cs" t="Include" />
-              <e p="SerializableFieldOrProperty.cs" t="Include" />
+              <e p="SerializableFieldInfo.cs" t="Include" />
               <e p="SerializableMemberInfo.cs" t="Include" />
               <e p="SerializableMethodInfo.cs" t="Include" />
+              <e p="SerializablePropertyInfo.cs" t="Include" />
               <e p="SimpleDataNode.cs" t="Include" />
             </e>
             <e p="MainNodes" t="Include">

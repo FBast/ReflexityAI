@@ -12,7 +12,7 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
 
         public AbstractAIComponent Context { get; set; }
         
-        [HideInInspector] public List<SerializableFieldOrProperty> SerializableDatas = new List<SerializableFieldOrProperty>();
+        [HideInInspector] public List<SerializableMemberInfo> SerializableMemberInfos = new List<SerializableMemberInfo>();
 
         protected override void Init() {
             base.Init();
@@ -24,25 +24,25 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
                 // Handle fields
                 FieldInfo[] fieldInfos = brainGraph.ContextType.Type.GetFields(SerializableMemberInfo.DefaultBindingFlags);
                 foreach (FieldInfo fieldInfo in fieldInfos) {
-                    if (SerializableDatas.Any(info => info.Name == fieldInfo.Name)) continue;
-                    SerializableFieldOrProperty serializableFieldOrProperty = new SerializableFieldOrProperty(fieldInfo);
-                    AddDynamicOutput(serializableFieldOrProperty.Type, ConnectionType.Multiple, TypeConstraint.None, serializableFieldOrProperty.PortName);
-                    SerializableDatas.Add(serializableFieldOrProperty);
+                    if (SerializableMemberInfos.Any(info => info.Name == fieldInfo.Name)) continue;
+                    SerializableFieldInfo serializableFieldInfo = new SerializableFieldInfo(fieldInfo);
+                    AddDynamicOutput(serializableFieldInfo.Type, ConnectionType.Multiple, TypeConstraint.None, serializableFieldInfo.PortName);
+                    SerializableMemberInfos.Add(serializableFieldInfo);
                 }
                 // Handle properties
                 PropertyInfo[] propertyInfos = brainGraph.ContextType.Type.GetProperties(SerializableMemberInfo.DefaultBindingFlags);
                 foreach (PropertyInfo propertyInfo in propertyInfos) {
-                    if (SerializableDatas.Any(info => info.Name == propertyInfo.Name)) continue;
-                    SerializableFieldOrProperty serializableFieldOrProperty = new SerializableFieldOrProperty(propertyInfo);
+                    if (SerializableMemberInfos.Any(info => info.Name == propertyInfo.Name)) continue;
+                    SerializablePropertyInfo serializableFieldOrProperty = new SerializablePropertyInfo(propertyInfo);
                     AddDynamicOutput(serializableFieldOrProperty.Type, ConnectionType.Multiple, TypeConstraint.None, serializableFieldOrProperty.PortName);
-                    SerializableDatas.Add(serializableFieldOrProperty);
+                    SerializableMemberInfos.Add(serializableFieldOrProperty);
                 }
                 // Remove old ports
-                for (int i = SerializableDatas.Count - 1; i >= 0; i--) {
-                    if (fieldInfos.Any(info => info.Name == SerializableDatas[i].Name)) continue;
-                    if (propertyInfos.Any(info => info.Name == SerializableDatas[i].Name)) continue;
-                    RemoveDynamicPort(SerializableDatas[i].PortName);
-                    SerializableDatas.RemoveAt(i);
+                for (int i = SerializableMemberInfos.Count - 1; i >= 0; i--) {
+                    if (fieldInfos.Any(info => info.Name == SerializableMemberInfos[i].Name)) continue;
+                    if (propertyInfos.Any(info => info.Name == SerializableMemberInfos[i].Name)) continue;
+                    RemoveDynamicPort(SerializableMemberInfos[i].PortName);
+                    SerializableMemberInfos.RemoveAt(i);
                 }
             } else {
                 throw new Exception("No brain graph context type found, please select one");
@@ -50,9 +50,9 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         }
 
         public override object GetValue(NodePort port) {
-            SerializableFieldOrProperty serializableFieldOrProperty = SerializableDatas.FirstOrDefault(info => info.PortName == port.fieldName);
-            if (serializableFieldOrProperty != null) {
-                return Application.isPlaying ? serializableFieldOrProperty.GetRuntimeValue(Context) : serializableFieldOrProperty.GetEditorValue();
+            SerializableMemberInfo serializableMemberInfo = SerializableMemberInfos.FirstOrDefault(info => info.PortName == port.fieldName);
+            if (serializableMemberInfo != null) {
+                return Application.isPlaying ? serializableMemberInfo.GetRuntimeValue(Context) : serializableMemberInfo.GetEditorValue();
             }
             throw new Exception("No reflected data found for " + port.fieldName);
         }

@@ -42,12 +42,11 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             List<AIOption> options = new List<AIOption>();
             DataIteratorNode dataIteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
             if (dataIteratorNode != null) {
-                while (dataIteratorNode.CollectionCount > dataIteratorNode.Index) {
+                while (dataIteratorNode.GetCollectionCount() > dataIteratorNode.Index) {
                     options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
                         GetUtilityAndWeight(), Description));
                     dataIteratorNode.Index++;
                 }
-
                 dataIteratorNode.Index = 0;
             } else {
                 options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
