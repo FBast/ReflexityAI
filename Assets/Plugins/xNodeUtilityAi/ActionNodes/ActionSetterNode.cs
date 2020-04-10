@@ -6,24 +6,22 @@ using UnityEngine;
 using XNode;
 using Object = UnityEngine.Object;
 
-namespace Plugins.xNodeUtilityAi.DataNodes {
-    public class DataSelectorNode : DataNode {
-        
-        [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;
-        [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Output;
+namespace Plugins.xNodeUtilityAi.ActionNodes {
+    public class ActionSetterNode : ActionNode {
 
+        [Input] public Object Value;
         [HideInInspector] public SerializableInfo SelectedSerializableInfo;
         [HideInInspector] public List<SerializableInfo> SerializableInfos = new List<SerializableInfo>();
         [HideInInspector] public int ChoiceIndex;
-        
+
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
-                Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
-                SerializableInfos.AddRange(inputValue.Item2
+                Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
+                SerializableInfos.AddRange(reflectionData.Item2
                     .GetFields(SerializableInfo.DefaultBindingFlags)
                     .Select(info => new SerializableInfo(info)));
-                SerializableInfos.AddRange(inputValue.Item2
+                SerializableInfos.AddRange(reflectionData.Item2
                     .GetProperties(SerializableInfo.DefaultBindingFlags)
                     .Select(info => new SerializableInfo(info)));
             }
@@ -36,15 +34,17 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             }
         }
         
-        public override object GetValue(NodePort port) {
-            if (port.fieldName == nameof(Output)) {
-                Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
-                return Application.isPlaying
-                    ? SelectedSerializableInfo.GetRuntimeValue(inputValue.Item3)
-                    : SelectedSerializableInfo.GetEditorValue();
-            }
-            return null;
+        public override void Execute(object context, object[] parameters) {
+//            SelectedSerializableInfo.SetValue();
         }
 
+        public override object GetContext() {
+            return GetInputValue<Tuple<string, Type, object>>(nameof(Data)).Item3;
+        }
+
+        public override object[] GetParameters() {
+            throw new NotImplementedException();
+        }
+        
     }
 }

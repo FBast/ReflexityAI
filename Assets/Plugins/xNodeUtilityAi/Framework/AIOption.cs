@@ -32,5 +32,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public override string ToString() {
             return Description + " - Utility " + Utility + " - Rank " + Weight + " - Weight " + Probability;
         }
+
     }
 }

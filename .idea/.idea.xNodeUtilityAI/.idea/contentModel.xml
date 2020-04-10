@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Dizy\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Dizy\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_xNodeUtilityAI.-435112455.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Dizy\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Dizy\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_xNodeUtilityAI.-435112455.00" t="ExcludeRecursive" />
     <e p="D:\Local Repository\xNodeUtilityAI" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
@@ -68,8 +68,10 @@
           <e p="xNodeUtilityAI" t="Include">
             <e p="ActionNodes" t="Include">
               <e p="ActionLauncherNode.cs" t="Include" />
+              <e p="ActionSetterNode.cs" t="Include" />
               <e p="Editor" t="Include">
                 <e p="ActionLauncherNodeEditor.cs" t="Include" />
+                <e p="ActionSetterNodeEditor.cs" t="Include" />
               </e>
             </e>
             <e p="DataNodes" t="Include">
@@ -95,10 +97,7 @@
               </e>
               <e p="EntryNode.cs" t="Include" />
               <e p="IContextual.cs" t="Include" />
-              <e p="SerializableFieldInfo.cs" t="Include" />
-              <e p="SerializableMemberInfo.cs" t="Include" />
-              <e p="SerializableMethodInfo.cs" t="Include" />
-              <e p="SerializablePropertyInfo.cs" t="Include" />
+              <e p="SerializableInfo.cs" t="Include" />
               <e p="SimpleDataNode.cs" t="Include" />
             </e>
             <e p="MainNodes" t="Include">
@@ -116,6 +115,7 @@
               <e p="AndNode.cs" t="Include" />
               <e p="FilterNode.cs" t="Include" />
               <e p="FlattenerNode.cs" t="Include" />
+              <e p="IsEqualNode.cs" t="Include" />
               <e p="IsNullNode.cs" t="Include" />
               <e p="MiddleNode.cs" t="Include" />
               <e p="NotNode.cs" t="Include" />

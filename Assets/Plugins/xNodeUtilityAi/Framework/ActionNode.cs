@@ -13,9 +13,5 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public abstract object GetContext();
         public abstract object[] GetParameters();
         
-        // public Object GetData() {
-            // return GetInputPort(nameof(Data)) != null ? GetInputValue<Object>(nameof(Data)) : null;
-        // }
-
     }
 }

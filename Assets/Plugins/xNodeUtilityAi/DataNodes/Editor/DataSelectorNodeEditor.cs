@@ -12,18 +12,18 @@ namespace Plugins.xNodeUtilityAi.DataNodes.Editor {
         public override void OnBodyGUI() {
             if (_dataSelectorNode == null) _dataSelectorNode = (DataSelectorNode) target;
             serializedObject.Update();
-            if (_dataSelectorNode.SerializableDatas.Count > 0) {
-                string[] choices = _dataSelectorNode.SerializableDatas.Select(info => info.Name).ToArray();
+            if (_dataSelectorNode.SerializableInfos.Count > 0) {
+                string[] choices = _dataSelectorNode.SerializableInfos.Select(info => info.Name).ToArray();
                 //BUG-fred ArgumentException: Getting control 2's position in a group with only 2 controls when doing mouseUp
                 _dataSelectorNode.ChoiceIndex = EditorGUILayout.Popup(_dataSelectorNode.ChoiceIndex, choices);
-                _dataSelectorNode.SelectedSerializableMemberInfo = _dataSelectorNode.SerializableDatas
-                    .ElementAt(_dataSelectorNode.ChoiceIndex);
+                _dataSelectorNode.SelectedSerializableInfo = _dataSelectorNode.SerializableInfos.ElementAt(_dataSelectorNode.ChoiceIndex);
                 NodePort dataPort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Data));
                 NodeEditorGUILayout.AddPortField(dataPort);
                 NodePort nodePort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Output));
-                nodePort.ValueType = _dataSelectorNode.SelectedSerializableMemberInfo.Type;
+                nodePort.ValueType = _dataSelectorNode.SelectedSerializableInfo.Type;
                 NodeEditorGUILayout.AddPortField(nodePort);
-            } else {
+            }
+            else {
                 NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataSelectorNode.Data)));
             }
             serializedObject.ApplyModifiedProperties();

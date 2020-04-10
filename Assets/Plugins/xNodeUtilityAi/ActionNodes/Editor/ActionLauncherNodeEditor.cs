@@ -14,11 +14,11 @@ namespace Plugins.xNodeUtilityAi.ActionNodes.Editor {
         public override void OnBodyGUI() {
             if (_actionLauncherNode == null) _actionLauncherNode = (ActionLauncherNode) target;
             serializedObject.Update();
-            if (_actionLauncherNode.SerializableMethodInfos.Count > 0) {
+            if (_actionLauncherNode.SerializableInfos.Count > 0) {
                 foreach (NodePort dynamicInput in _actionLauncherNode.DynamicInputs) {
                     NodeEditorGUILayout.PortField(dynamicInput);
                 }
-                string[] choices = _actionLauncherNode.SerializableMethodInfos.Select(info => info.Name).ToArray();
+                string[] choices = _actionLauncherNode.SerializableInfos.Select(info => info.Name).ToArray();
                 //BUG-fred ArgumentException: Getting control 2's position in a group with only 2 controls when doing mouseUp
                 int choiceIndex = EditorGUILayout.Popup(_actionLauncherNode.ChoiceIndex, choices);
                 if (choiceIndex != _actionLauncherNode.ChoiceIndex) {
@@ -26,20 +26,20 @@ namespace Plugins.xNodeUtilityAi.ActionNodes.Editor {
                 }
                 NodePort dataPort = _actionLauncherNode.GetPort(nameof(_actionLauncherNode.Data));
                 NodeEditorGUILayout.AddPortField(dataPort);
-                NodePort nodePort = _actionLauncherNode.GetPort(nameof(_actionLauncherNode.LinkedOption));
-                NodeEditorGUILayout.AddPortField(nodePort);
+                NodePort linkedOptionPort = _actionLauncherNode.GetPort(nameof(_actionLauncherNode.LinkedOption));
+                NodeEditorGUILayout.AddPortField(linkedOptionPort);
             } else {
                 NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_actionLauncherNode.Data)));
             }
             serializedObject.ApplyModifiedProperties();
         }
-
+        
         public void UpdateChoice(int choiceIndex) {
             _actionLauncherNode.ChoiceIndex = choiceIndex;
-            _actionLauncherNode.SelectedSerializableMethodInfo = _actionLauncherNode.SerializableMethodInfos
+            _actionLauncherNode.SelectedSerializableInfo = _actionLauncherNode.SerializableInfos
                 .ElementAt(_actionLauncherNode.ChoiceIndex);
             _actionLauncherNode.ClearDynamicPorts();
-            foreach (SerializableMethodInfo.Parameter parameter in _actionLauncherNode.SelectedSerializableMethodInfo.Parameters) {
+            foreach (Parameter parameter in _actionLauncherNode.SelectedSerializableInfo.Parameters) {
                 Type parameterType = Type.GetType(parameter.TypeName);
                 _actionLauncherNode.AddDynamicInput(parameterType, Node.ConnectionType.Override, Node.TypeConstraint.InheritedInverse, parameter.Name);
             }
