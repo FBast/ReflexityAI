@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorReflection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorReflection.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorResources.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorResources.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeGraphTemplate.cs.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeGraphTemplate.cs.txt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" afterDir="false" />
-    </list>
+    <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +248,7 @@
       <workItem from="1586514090757" duration="262000" />
       <workItem from="1586514396385" duration="93000" />
       <workItem from="1586514541785" duration="12824000" />
-      <workItem from="1586936312666" duration="16733000" />
+      <workItem from="1586936312666" duration="16778000" />
     </task>
     <servers />
   </component>
