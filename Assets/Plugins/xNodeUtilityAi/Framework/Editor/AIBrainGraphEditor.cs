@@ -10,35 +10,45 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
     [CustomNodeGraphEditor(typeof(AIBrainGraph))]
     public class AIBrainGraphEditor : NodeGraphEditor {
 
-        public override string GetNodeMenuName(Type type) {
+        public override int GetNodeMenuOrder(Type type) {
             // Main Nodes
-            if (type == typeof(OptionNode)) {
-                return "MainNodes/" + NodeEditorUtilities.NodeDefaultName(type);
-            }
-            if (type == typeof(UtilityNode)) {
-                return "MainNodes/" + NodeEditorUtilities.NodeDefaultName(type);
-            }
-            if (type == typeof(ConverterNode)) {
-                return "MainNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
+            if (type == typeof(OptionNode) || type == typeof(UtilityNode) || type == typeof(ConverterNode)) {
+                return 1;
             }
             // Memory Nodes
-            if (type == typeof(MemoryCheckNode)) {
-                return "MemoryNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
+            if (type == typeof(MemoryCheckNode) || type == typeof(MemoryClearNode) || type == typeof(MemoryLoadNode) || 
+                type == typeof(MemorySaveNode)) {
+                return 5;
             }
-            if (type == typeof(MemoryClearNode)) {
-                return "MemoryNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
+            // Pattern Nodes
+            if (type == typeof(InCooldownNode) || type == typeof(SaveHistoricNode)) {
+                return 6;
             }
-            if (type == typeof(MemoryLoadNode)) {
-                return "MemoryNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
+            // Other Nodes
+            if (type.IsSubclassOf(typeof(MiddleNode))) {
+                return 4;
             }
-            if (type == typeof(MemorySaveNode)) {
+            if (type.IsSubclassOf(typeof(DataNode))) {
+                return 2;
+            }
+            if (type.IsSubclassOf(typeof(ActionNode))) {
+                return 3;
+            }
+            return 0;
+        }
+
+        public override string GetNodeMenuName(Type type) {
+            // Main Nodes
+            if (type == typeof(OptionNode) || type == typeof(UtilityNode) || type == typeof(ConverterNode)) {
+                return "MainNodes/" + NodeEditorUtilities.NodeDefaultName(type);
+            }
+            // Memory Nodes
+            if (type == typeof(MemoryCheckNode) || type == typeof(MemoryClearNode) || type == typeof(MemoryLoadNode) || 
+                type == typeof(MemorySaveNode)) {
                 return "MemoryNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
             }
             // Pattern Nodes
-            if (type == typeof(InCooldownNode)) {
-                return "PatternNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
-            }
-            if (type == typeof(SaveHistoricNode)) {
+            if (type == typeof(InCooldownNode) || type == typeof(SaveHistoricNode)) {
                 return "PatternNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
             }
             // Other Nodes

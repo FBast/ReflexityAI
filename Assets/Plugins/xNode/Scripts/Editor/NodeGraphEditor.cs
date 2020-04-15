@@ -41,11 +41,22 @@ namespace XNodeEditor {
                 return NodeEditorUtilities.NodeDefaultPath(type);
         }
 
+        /// <summary> The order by which the menu items are displayed. </summary>
+        public virtual int GetNodeMenuOrder(Type type) {
+            //Check if type has the CreateNodeMenuAttribute
+            XNode.Node.CreateNodeMenuAttribute attrib;
+            if (NodeEditorUtilities.GetAttrib(type, out attrib)) // Return custom path
+                return attrib.order;
+            else
+                return 0;
+        }
+
         /// <summary> Add items for the context menu when right-clicking this node. Override to add custom menu items. </summary>
         public virtual void AddContextMenuItems(GenericMenu menu) {
             Vector2 pos = NodeEditorWindow.current.WindowToGridPosition(Event.current.mousePosition);
-            for (int i = 0; i < NodeEditorReflection.nodeTypes.Length; i++) {
-                Type type = NodeEditorReflection.nodeTypes[i];
+            var nodeTypes = NodeEditorReflection.nodeTypes.OrderBy(type => GetNodeMenuOrder(type)).ToArray();
+            for (int i = 0; i < nodeTypes.Length; i++) {
+                Type type = nodeTypes[i];
 
                 //Get node context menu path
                 string path = GetNodeMenuName(type);
@@ -133,7 +144,7 @@ namespace XNodeEditor {
 
         /// <summary> Deal with objects dropped into the graph through DragAndDrop </summary>
         public virtual void OnDropObjects(UnityEngine.Object[] objects) {
-            Debug.Log("No OnDropObjects override defined for " + GetType());
+            if (GetType() != typeof(NodeGraphEditor)) Debug.Log("No OnDropObjects override defined for " + GetType());
         }
 
         /// <summary> Create a node and save it in the graph asset </summary>
@@ -143,7 +154,7 @@ namespace XNodeEditor {
             Undo.RegisterCreatedObjectUndo(node, "Create Node");
             node.position = position;
             if (node.name == null || node.name.Trim() == "") node.name = NodeEditorUtilities.NodeDefaultName(type);
-            AssetDatabase.AddObjectToAsset(node, target);
+            if (!string.IsNullOrEmpty(AssetDatabase.GetAssetPath(target))) AssetDatabase.AddObjectToAsset(node, target);
             if (NodeEditorPreferences.GetSettings().autoSave) AssetDatabase.SaveAssets();
             NodeEditorWindow.RepaintAll();
             return node;

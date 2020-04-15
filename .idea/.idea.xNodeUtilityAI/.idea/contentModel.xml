@@ -56,12 +56,14 @@
                     <e p="xNode_NodeTemplate.cs.txt" t="Include" />
                   </e>
                 </e>
+                <e p="SceneGraphEditor.cs" t="Include" />
                 <e p="XNodeEditor.asmdef" t="Include" />
               </e>
               <e p="Node.cs" t="Include" />
               <e p="NodeDataCache.cs" t="Include" />
               <e p="NodeGraph.cs" t="Include" />
               <e p="NodePort.cs" t="Include" />
+              <e p="SceneGraph.cs" t="Include" />
               <e p="XNode.asmdef" t="Include" />
             </e>
           </e>
