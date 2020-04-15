@@ -102,6 +102,9 @@
             </e>
             <e p="MainNodes" t="Include">
               <e p="ConverterNode.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="UtilityNodeEditor.cs" t="Include" />
+              </e>
               <e p="OptionNode.cs" t="Include" />
               <e p="UtilityNode.cs" t="Include" />
             </e>
@@ -113,8 +116,6 @@
             </e>
             <e p="MiddleNodes" t="Include">
               <e p="AndNode.cs" t="Include" />
-              <e p="FilterNode.cs" t="Include" />
-              <e p="FlattenerNode.cs" t="Include" />
               <e p="IsEqualNode.cs" t="Include" />
               <e p="IsNullNode.cs" t="Include" />
               <e p="MiddleNode.cs" t="Include" />

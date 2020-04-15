@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.Framework;
@@ -19,11 +18,11 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
-                Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
-                SerializableInfos.AddRange(inputValue.Item2
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+                SerializableInfos.AddRange(reflectionData.Type
                     .GetFields(SerializableInfo.DefaultBindingFlags)
                     .Select(info => new SerializableInfo(info)));
-                SerializableInfos.AddRange(inputValue.Item2
+                SerializableInfos.AddRange(reflectionData.Type
                     .GetProperties(SerializableInfo.DefaultBindingFlags)
                     .Select(info => new SerializableInfo(info)));
             }
@@ -38,9 +37,9 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(Output)) {
-                Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
                 return Application.isPlaying
-                    ? SelectedSerializableInfo.GetRuntimeValue(inputValue.Item3)
+                    ? SelectedSerializableInfo.GetRuntimeValue(reflectionData.Content)
                     : SelectedSerializableInfo.GetEditorValue();
             }
             return null;

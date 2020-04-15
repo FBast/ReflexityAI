@@ -15,8 +15,8 @@ namespace Plugins.xNodeUtilityAi.ActionNodes {
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
-                Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
-                SerializableInfos.AddRange(reflectionData.Item2
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+                SerializableInfos.AddRange(reflectionData.Type
                     .GetMethods(SerializableInfo.DefaultBindingFlags)
                     .Select(info => new SerializableInfo(info)));
             }
@@ -30,14 +30,14 @@ namespace Plugins.xNodeUtilityAi.ActionNodes {
         }
 
         public override object GetContext() {
-            return GetInputValue<Tuple<string, Type, object>>(nameof(Data)).Item3;
+            return GetInputValue<ReflectionData>(nameof(Data)).Content;
         }
         
         public override object[] GetParameters() {
             object[] parameters = null;
             if (SelectedSerializableInfo.Parameters.Count > 0) {
                 parameters = SelectedSerializableInfo.Parameters
-                    .Select(parameter => GetInputValue<Tuple<string, Type, object>>(nameof(parameter.Name))?.Item3)
+                    .Select(parameter => GetInputValue<ReflectionData>(nameof(parameter.Name)).Content)
                     .ToArray();
             }
             return parameters;

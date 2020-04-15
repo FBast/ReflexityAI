@@ -17,11 +17,11 @@ namespace Plugins.xNodeUtilityAi.ActionNodes {
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
-                Tuple<string, Type, object> reflectionData = GetInputValue<Tuple<string, Type, object>>(nameof(Data));
-                SerializableInfos.AddRange(reflectionData.Item2
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+                SerializableInfos.AddRange(reflectionData.Type
                     .GetFields(SerializableInfo.DefaultBindingFlags)
                     .Select(info => new SerializableInfo(info)));
-                SerializableInfos.AddRange(reflectionData.Item2
+                SerializableInfos.AddRange(reflectionData.Type
                     .GetProperties(SerializableInfo.DefaultBindingFlags)
                     .Select(info => new SerializableInfo(info)));
             }
@@ -33,18 +33,22 @@ namespace Plugins.xNodeUtilityAi.ActionNodes {
                 SerializableInfos.Clear();
             }
         }
-        
-        public override void Execute(object context, object[] parameters) {
-//            SelectedSerializableInfo.SetValue();
-        }
 
         public override object GetContext() {
-            return GetInputValue<Tuple<string, Type, object>>(nameof(Data)).Item3;
+            return GetInputValue<ReflectionData>(nameof(Data)).Content;
         }
 
         public override object[] GetParameters() {
-            throw new NotImplementedException();
+            return new[] {GetInputValue<ReflectionData>(nameof(Value)).Content};
+        }
+
+        public override void Execute(object context, object[] parameters) {
+            SelectedSerializableInfo.SetValue(context, parameters[0]);
         }
         
+        public override object GetValue(NodePort port) {
+            return port.fieldName == nameof(LinkedOption) ? this : null;
+        }
+
     }
 }

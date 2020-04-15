@@ -31,9 +31,9 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         public MergeType UtilityMerge;
 
         [Header("Weight")] [Input, Tooltip("Product of the multiplier")]
-        public int Multiplier = 1;
+        [Range(0, 10)] public int Multiplier = 1;
 
-        [Input, Tooltip("Sum of the bonus")] public int Bonus;
+        [Input, Tooltip("Sum of the bonus"), Range(0, 10)] public int Bonus;
 
         [Space] [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")]
         public ActionNode Actions;

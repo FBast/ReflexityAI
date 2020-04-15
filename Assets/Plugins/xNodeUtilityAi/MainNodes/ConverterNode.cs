@@ -12,8 +12,8 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         public int ValueOut;
 
         public override object GetValue(NodePort port) {
-            if (port.fieldName == "ValueOut") {
-                bool valueIn = GetInputValue("ValueIn", ValueIn);
+            if (port.fieldName == nameof(ValueOut)) {
+                bool valueIn = GetInputValue<bool>(nameof(ValueIn));
                 return valueIn ? IsTrue : IsFalse;
             }
             return null;

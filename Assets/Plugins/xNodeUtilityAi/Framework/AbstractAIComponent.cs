@@ -33,7 +33,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             _timeSinceLastRefresh = 0;
         }
 
-        IEnumerator ThinkAndAct() {
+        private IEnumerator ThinkAndAct() {
             _isThinking = true;
             foreach (AIBrainGraph aiBrainGraph in UtilityAiBrains) {
                 if (aiBrainGraph == null) continue;

@@ -64,15 +64,13 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
         public object GetEditorValue() {
-            return IsPrimitive ? null : 
-                new Tuple<string, Type, object>(Name, Type, null);
+            return IsPrimitive ? (object) null : new ReflectionData(Type, null);
         }
         
         public object GetRuntimeValue(object context) {
             MemberInfo memberInfo = GetMemberInfo();
-            if (context == null) throw new Exception("Cannot get Runtime value if context is null");
-            return IsPrimitive ? memberInfo.GetValue(context) : 
-                new Tuple<string, Type, object>(Name, Type, memberInfo.GetValue(context));
+            if (context == null) return GetEditorValue();
+            return IsPrimitive ? memberInfo.GetValue(context) : new ReflectionData(Type, memberInfo.GetValue(context));
         }
 
         public void SetValue(object context, object value) {
@@ -110,6 +108,19 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public Parameter(string name, string typeName) {
             Name = name;
             TypeName = typeName;
+        }
+
+    }
+
+    [Serializable]
+    public struct ReflectionData {
+
+        public Type Type;
+        public object Content;
+
+        public ReflectionData(Type type, object content) {
+            Type = type;
+            Content = content;
         }
 
     }

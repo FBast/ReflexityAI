@@ -38,7 +38,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - m_Name: 
+  - m_Name: Reverse Linear
     m_Curve:
       serializedVersion: 2
       m_Curve:
@@ -88,7 +88,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - m_Name: 
+  - m_Name: Reverse Smoothstep
     m_Curve:
       serializedVersion: 2
       m_Curve:
@@ -138,7 +138,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - m_Name: Inverse Logistic
+  - m_Name: Reverse Logistic
     m_Curve:
       serializedVersion: 2
       m_Curve:
@@ -163,7 +163,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - m_Name: 
+  - m_Name: Logit
     m_Curve:
       serializedVersion: 2
       m_Curve:

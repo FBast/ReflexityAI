@@ -1,6 +1,6 @@
-using System.Collections.Generic;
-using UnityEngine;
+using Plugins.xNodeUtilityAi.Framework;
 using XNode;
+using Object = UnityEngine.Object;
 
 namespace Plugins.xNodeUtilityAi.MiddleNodes {
     public class IsNullNode : MiddleNode {
@@ -10,7 +10,8 @@ namespace Plugins.xNodeUtilityAi.MiddleNodes {
         
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(ValueOut)) {
-                return GetInputValue<Object>(nameof(ValueIn)) == null;
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(ValueIn));
+                return reflectionData.Content == null;
             }
             return null;
         }

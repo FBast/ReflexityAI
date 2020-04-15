@@ -10,7 +10,7 @@ using Object = UnityEngine.Object;
 namespace Plugins.xNodeUtilityAi.DataNodes {
     public class DataIteratorNode : DataNode {
 
-        [Input(ShowBackingValue.Never, ConnectionType.Override)] public List<Object> DataList;
+        [Input(ShowBackingValue.Never, ConnectionType.Override)] public List<Object> List;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public DataIteratorNode LinkedOption;
 
         public int Index { get; set; }
@@ -19,10 +19,10 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
-            if (to.fieldName == nameof(DataList) && to.node == this) {
-                Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(DataList));
-                if (inputValue.Item2.IsGenericType && inputValue.Item2.GetGenericTypeDefinition() == typeof(List<>)) {
-                    Type type = inputValue.Item2.GetGenericArguments()[0];
+            if (to.fieldName == nameof(List) && to.node == this) {
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(List));
+                if (reflectionData.Type.IsGenericType && reflectionData.Type.GetGenericTypeDefinition() == typeof(List<>)) {
+                    Type type = reflectionData.Type.GetGenericArguments()[0];
                     _typeAssemblyName = type.AssemblyQualifiedName;
                     AddDynamicOutput(type, ConnectionType.Multiple, TypeConstraint.Inherited, type.Name);
                 } else {
@@ -33,7 +33,7 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         
         public override void OnRemoveConnection(NodePort port) {
             base.OnRemoveConnection(port);
-            if (port.fieldName == nameof(DataList) && port.node == this) {
+            if (port.fieldName == nameof(List) && port.node == this) {
                 ClearDynamicPorts();
             }
         }
@@ -42,18 +42,18 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             if (port.fieldName == nameof(LinkedOption)) {
                 return this;
             } else {
-                Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(DataList));
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(List));
                 Type type = Type.GetType(_typeAssemblyName);
                 if (!Application.isPlaying) 
-                    return new Tuple<string, Type, object>(port.fieldName, type, null);
-                List<object> collection = ((IEnumerable) inputValue.Item3).Cast<object>().ToList();
-                return new Tuple<string, Type, object>(port.fieldName, type, collection[Index]);
+                    return new ReflectionData(type, null);
+                List<object> collection = ((IEnumerable) reflectionData.Content).Cast<object>().ToList();
+                return new ReflectionData(type, collection[Index]);
             }
         }
 
         public int GetCollectionCount() {
-            Tuple<string, Type, object> inputValue = GetInputValue<Tuple<string, Type, object>>(nameof(DataList));
-            return ((IEnumerable) inputValue.Item3).Cast<object>().Count();
+            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(List));
+            return ((IEnumerable) reflectionData.Content).Cast<object>().Count();
         }
         
     }

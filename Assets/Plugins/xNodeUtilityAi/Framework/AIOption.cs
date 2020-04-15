@@ -20,8 +20,10 @@ namespace Plugins.xNodeUtilityAi.Framework {
             Weight = tuple.Item2;
             AIAction actionWithData = AiActions.FirstOrDefault(action => action.Data != null);
             Description = description;
-            if (actionWithData != null) 
-                Description += " " + actionWithData.Data;
+            if (actionWithData == null) return;
+            foreach (object data in actionWithData.Data) {
+                Description += " " + data;
+            }
         }
 
         public void ExecuteActions() {
