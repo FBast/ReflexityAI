@@ -81,8 +81,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -6833291362059315769}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: X
         node: {fileID: 6893314922638749041}
@@ -1295,8 +1295,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -3714755168623129051}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: MaxX
         node: {fileID: 6893314922638749041}

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="" />
+    <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeAIBrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeAIBrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +20,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ReflectionUtils.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/DropdownList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/44BB9DF9-391F-46C7-A4F7-D2013C0CCAEF/14/eaa0e531/GenericMenu.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/TagListHelper.cs" root0="FORCE_HIGHLIGHTING" />
@@ -25,40 +30,40 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeReference.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/IsEqualNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataSelectorNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/Editor/DataSelectorNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/Editor/DataSelectorNodeEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/Editor/DataReaderNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/EntryNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/EntryNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/Editor/ActionSetterNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/IContextual.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/DataNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIOption.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIOption.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Prophetic-Legacy/Assets/Scripts/Utils/Extensions/GameObjectExtension.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/ActionSetterNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/ActionSetterNode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/UtilityNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/ConverterNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/Editor/ActionLauncherNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,27 +71,26 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemorySaveNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryLoadNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InNodeEditorAttributeProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryClearNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/NotNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/AndNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/MiddleNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/MiddleNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/OrNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/InCooldownNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/InCooldownNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/567DF3E0-9192-41BA-98DB-88BEC4C6696F/96/be15f847/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/IsNullNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/SaveHistoricNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeAIBrain.asset" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/UtilityNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/UtilityNodeEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Cube.prefab" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataReaderNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/DataSelectorNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/DataReaderNode.cs" />
@@ -120,7 +124,6 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/Editor/ActionSetterNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/Editor/ActionLauncherNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAIComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIOption.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/ActionLauncherNode.cs" />
@@ -137,6 +140,8 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/FlattenerNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/FilterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" />
       </list>
     </option>
   </component>
@@ -249,6 +254,7 @@
       <workItem from="1586514396385" duration="93000" />
       <workItem from="1586514541785" duration="12824000" />
       <workItem from="1586936312666" duration="16778000" />
+      <workItem from="1587044727419" duration="1272000" />
     </task>
     <servers />
   </component>
@@ -372,13 +378,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs</url>
-          <line>41</line>
+          <line>44</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" initialLine="41">
             <startOffsets>
-              <option value="1877" />
+              <option value="2038" />
             </startOffsets>
             <endOffsets>
-              <option value="1924" />
+              <option value="2085" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />

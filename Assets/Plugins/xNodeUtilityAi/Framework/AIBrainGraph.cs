@@ -5,7 +5,7 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.xNodeUtilityAi.Framework {
-    [CreateAssetMenu(fileName = "UtilityAIBrain", menuName = "UtilityAI/AIBrainGraph")]
+    [CreateAssetMenu(fileName = "AIBrainGraph", menuName = "ReflexityAI/AIBrainGraph")]
     public class AIBrainGraph : NodeGraph {
         
         [Header("Brain Parameters")] 

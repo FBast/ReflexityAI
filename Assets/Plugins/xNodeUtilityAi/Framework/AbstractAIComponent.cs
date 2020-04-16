@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.MainNodes;
@@ -12,11 +13,13 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public List<AIBrainGraph> UtilityAiBrains;
         [Tooltip("Time between each AI evaluations")]
         [Range(0.1f, 5f)] public float TimeBetweenRefresh = 0.5f;
-        [Tooltip("No randomisation between best options")]
-        public bool AlwaysPickBestChoice;
-        [Tooltip("Cooperative : One option by brain is executed\n" +
-                 "Competitive : One option for all brain is executed")]
-        public BrainType BrainType;
+        [Tooltip("Robotic : Always pick best option\n" +
+                 "Human : Randomize between best options")]
+        public ResolutionType OptionsResolution;
+        //TODO-fred implement multibrain interaction type
+//        [Tooltip("Cooperative : One option by brain is executed\n" +
+//                 "Competitive : One option for all brain is executed")]
+//        public InteractionType MultiBrainInteraction;
         public readonly Dictionary<AIBrainGraph, List<AIOption>> Options = new Dictionary<AIBrainGraph, List<AIOption>>();
         public Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
 
@@ -81,18 +84,22 @@ namespace Plugins.xNodeUtilityAi.Framework {
             int maxWeight = Options[aiBrainGraph].Max(option => option.Weight);
             if (maxWeight == 0) return null;
             // Returning best option for no random
-            if (AlwaysPickBestChoice) {
-                return Options[aiBrainGraph].FirstOrDefault();
+            switch (OptionsResolution) {
+                case ResolutionType.Robotic:
+                    return Options[aiBrainGraph].FirstOrDefault();
+                case ResolutionType.Human:
+                    // Rolling probability on weighted random
+                    _lastProbabilityResult = Random.Range(0f, 1f);
+                    float probabilitySum = 0f;
+                    foreach (AIOption dualUtility in Options[aiBrainGraph].FindAll(option => option.Weight == maxWeight)) {
+                        probabilitySum += dualUtility.Probability;
+                        if (probabilitySum >= _lastProbabilityResult)
+                            return dualUtility;
+                    }
+                    return null;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
-            // Rolling probability on weighted random
-            _lastProbabilityResult = Random.Range(0f, 1f);
-            float probabilitySum = 0f;
-            foreach (AIOption dualUtility in Options[aiBrainGraph].FindAll(option => option.Weight == maxWeight)) {
-                probabilitySum += dualUtility.Probability;
-                if (probabilitySum >= _lastProbabilityResult)
-                    return dualUtility;
-            }
-            return null;
         }
 
         // Memory
@@ -123,7 +130,12 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
     }
 
-    public enum BrainType {
+    public enum ResolutionType {
+        Robotic,
+        Human
+    }
+    
+    public enum InteractionType {
         Cooperative,
         Competitive
     }
