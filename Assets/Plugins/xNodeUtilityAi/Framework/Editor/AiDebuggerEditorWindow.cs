@@ -42,8 +42,8 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
                 if (Selection.activeGameObject == null || Selection.activeGameObject.GetComponent<AbstractAIComponent>() == null) return;
                 // Update debug data
                 _currentGameObject = Selection.activeGameObject;
-                _options = Selection.activeGameObject.GetComponent<AbstractAIComponent>().Options;
-                _selectedOptions = Selection.activeGameObject.GetComponent<AbstractAIComponent>().SelectedOptions;
+                _options = _currentGameObject.GetComponent<AbstractAIComponent>().Options;
+                _selectedOptions = _currentGameObject.GetComponent<AbstractAIComponent>().SelectedOptions;
             }
         }
 
@@ -73,7 +73,7 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
                     EditorGUI.LabelField(new Rect(3 + i * (columnWidth + 6), 3 + rowHeight, columnWidth, rowHeight), valuePair.Key.name, labelGuiStyle);
                     for (int j = 0; j < valuePair.Value.Count; j++) {
                         EditorGUI.ProgressBar(new Rect(3 + i * (columnWidth + 6), 3 + (j + 2) * rowHeight, columnWidth, rowHeight), 
-                            valuePair.Value[j].Probability, valuePair.Value[j].Description + " with Weight " + valuePair.Value[j].Weight + " and Utility " + valuePair.Value[j].Utility);
+                            valuePair.Value[j].Probability, valuePair.Value[j].ToString());
                         Color weightColor;
                         // Option with disqualified weight
                         if (valuePair.Value[j].Weight == 0) {

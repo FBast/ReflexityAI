@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Plugins.xNodeUtilityAi.Utils;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     [Serializable]
@@ -68,9 +67,20 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
         
         public object GetRuntimeValue(object context) {
-            MemberInfo memberInfo = GetMemberInfo();
             if (context == null) return GetEditorValue();
-            return IsPrimitive ? memberInfo.GetValue(context) : new ReflectionData(Type, memberInfo.GetValue(context));
+            MemberInfo memberInfo = GetMemberInfo();
+            object data;
+            switch (memberInfo) {
+                case FieldInfo fieldInfo:
+                    data = fieldInfo.GetValue(context);
+                    break;
+                case PropertyInfo propertyInfo:
+                    data = propertyInfo.GetValue(context);
+                    break;
+                default:
+                    throw new Exception("GetValue only available for FieldInfo or PropertyInfo, not " + memberInfo.MemberType);
+            }
+            return IsPrimitive ? data : new ReflectionData(Type, data);
         }
 
         public void SetValue(object context, object value) {

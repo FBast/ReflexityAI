@@ -16,16 +16,15 @@ namespace Plugins.xNodeUtilityAi.Framework {
         [Tooltip("Robotic : Always pick best option\n" +
                  "Human : Randomize between best options")]
         public ResolutionType OptionsResolution;
-        //TODO-fred implement multibrain interaction type
-//        [Tooltip("Cooperative : One option by brain is executed\n" +
-//                 "Competitive : One option for all brain is executed")]
-//        public InteractionType MultiBrainInteraction;
+        [Tooltip("Cooperative : One option by brain is executed\n" +
+                 "Competitive : One option for all brain is executed")]
+        public InteractionType MultiBrainInteraction;
         public readonly Dictionary<AIBrainGraph, List<AIOption>> Options = new Dictionary<AIBrainGraph, List<AIOption>>();
-        public Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
+        public readonly Dictionary<AIBrainGraph, List<AIOption>> BestOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
+        public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
 
         private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
-        private float _lastProbabilityResult;
         private bool _isThinking;
         private float _timeSinceLastRefresh;
 
@@ -38,67 +37,169 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         private IEnumerator ThinkAndAct() {
             _isThinking = true;
-            foreach (AIBrainGraph aiBrainGraph in UtilityAiBrains) {
-                if (aiBrainGraph == null) continue;
-                CalculateOptions(aiBrainGraph);
-                yield return null;
-                AIOption aiOption = ChooseOption(aiBrainGraph);
-                if (aiOption == null) continue;
-                if (SelectedOptions.ContainsKey(aiBrainGraph)) {
-                    SelectedOptions[aiBrainGraph] = aiOption;
-                } else {
-                    SelectedOptions.Add(aiBrainGraph, aiOption);
-                }
-                aiOption.ExecuteActions();
+            Options.Clear();
+            foreach (AIBrainGraph aiBrainGraph in UtilityAiBrains.Where(aiBrainGraph => aiBrainGraph != null)) {
+                // Calculate all options weight from all brains
+                Options.Add(aiBrainGraph, GetOptions(aiBrainGraph));
                 yield return null;
             }
+            // Fetch best options according to multi brain interaction
+            BestOptionsOnWeight(Options, BestOptions);
+            // Check if weight are not enough to start execution
+            if (IsWeightEnoughForSelection(BestOptions)) {
+                SelectedOptions.Clear();
+                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in Options) {
+                    foreach (AIOption aiOption in valuePair.Value) {
+                        SelectedOptions.Add(valuePair.Key, aiOption);
+                    }
+                }
+            }
+            // Else calculate all options rank from all brains
+            else {
+                // Remove zero from all utility
+                RemoveZeroRankValues(BestOptions);
+                // Fetch selected options according to multi brain interaction and options resolution
+                SelectOptionsOnRank(BestOptions, SelectedOptions);
+            }
+            // Order options for display
+            foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in Options.ToList()) {
+                Options[valuePair.Key] = valuePair.Value
+                    .OrderByDescending(option => option.Weight)
+                    .ThenByDescending(option => option.Rank).ToList();
+            }
+            // Execute selected options
+            ExecuteOptions(SelectedOptions);
             _isThinking = false;
         }
 
-        private void CalculateOptions(AIBrainGraph aiBrainGraph) {
+        private List<AIOption> GetOptions(AIBrainGraph aiBrainGraph) {
+            List<AIOption> aiOptions = new List<AIOption>();
             // Setup Contexts
             aiBrainGraph.GetNodes<IContextual>().ForEach(node => node.Context = this);
-            // Add the brain to the option dictionary
-            if (Options.ContainsKey(aiBrainGraph)) {
-                Options[aiBrainGraph].Clear();
-            }
-            else {
-                Options.Add(aiBrainGraph, new List<AIOption>());
-            }
-            aiBrainGraph.GetNodes<OptionNode>().ForEach(node => Options[aiBrainGraph]
-                .AddRange(node.GetOptions()));
-            // Return if no option found
-            if (Options[aiBrainGraph].Count == 0) return;
-            // Calculate Probability
-            foreach (AIOption aiOption in Options[aiBrainGraph]) {
-                aiOption.Probability = aiOption.Utility / Options[aiBrainGraph]
-                                           .Where(option => option.Weight == aiOption.Weight)
-                                           .Sum(option => option.Utility);
-            }
-            // Order by Weight then Utility
-            Options[aiBrainGraph] = Options[aiBrainGraph].OrderByDescending(option => option.Weight).ThenByDescending(option => option.Utility).ToList();
+            aiBrainGraph.GetNodes<OptionNode>().ForEach(node => aiOptions.AddRange(node.GetOptions()));
+            // Order by Weight
+            return aiOptions.OrderByDescending(option => option.Weight).ToList();
         }
 
-        private AIOption ChooseOption(AIBrainGraph aiBrainGraph) {
-            // Calcul maxWeight and return null if equal to zero
-            int maxWeight = Options[aiBrainGraph].Max(option => option.Weight);
-            if (maxWeight == 0) return null;
-            // Returning best option for no random
-            switch (OptionsResolution) {
-                case ResolutionType.Robotic:
-                    return Options[aiBrainGraph].FirstOrDefault();
-                case ResolutionType.Human:
-                    // Rolling probability on weighted random
-                    _lastProbabilityResult = Random.Range(0f, 1f);
-                    float probabilitySum = 0f;
-                    foreach (AIOption dualUtility in Options[aiBrainGraph].FindAll(option => option.Weight == maxWeight)) {
-                        probabilitySum += dualUtility.Probability;
-                        if (probabilitySum >= _lastProbabilityResult)
-                            return dualUtility;
+        private void BestOptionsOnWeight(Dictionary<AIBrainGraph,List<AIOption>> options, Dictionary<AIBrainGraph,List<AIOption>> bestOptions) {
+            bestOptions.Clear();
+            switch (MultiBrainInteraction) {
+                case InteractionType.Cooperative: {
+                    // Cooperative then take best weight of each brain
+                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
+                        int maxWeight = valuePair.Value.Max(option => option.Weight);
+                        if (maxWeight == 0) continue;
+                        bestOptions.Add(valuePair.Key, valuePair.Value.Where(option => option.Weight == maxWeight).ToList());
                     }
-                    return null;
+                    break;
+                }
+                case InteractionType.Competitive: {
+                    // Competitive then take best weight from all brain
+                    int maxWeight = options.Max(pair => pair.Value.Max(option => option.Weight));
+                    if (maxWeight == 0) return;
+                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
+                        List<AIOption> aiOptions = valuePair.Value.Where(option => option.Weight == maxWeight).ToList();
+                        if (aiOptions.Count > 0) bestOptions.Add(valuePair.Key, aiOptions);
+                    }
+                    break;
+                }
                 default:
                     throw new ArgumentOutOfRangeException();
+            }
+        }
+
+        private bool IsWeightEnoughForSelection(Dictionary<AIBrainGraph,List<AIOption>> options) {
+            switch (MultiBrainInteraction) {
+                case InteractionType.Cooperative:
+                    if (options.Any(valuePair => valuePair.Value.Count > 1)) return false; 
+                    break;
+                case InteractionType.Competitive:
+                    if (options.Sum(pair => pair.Value.Count) > 1) return false;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+            return true;
+        }
+        
+        private void RemoveZeroRankValues(Dictionary<AIBrainGraph, List<AIOption>> bestOptions) {
+            foreach (AIOption option in bestOptions.SelectMany(valuePair => valuePair.Value.Where(option => option.Rank <= 0))) {
+                option.Rank = 0.0001f;
+            }
+        }
+        
+        private void SelectOptionsOnRank(Dictionary<AIBrainGraph, List<AIOption>> options, Dictionary<AIBrainGraph, AIOption> selectedOptions) {
+            selectedOptions.Clear();
+            switch (OptionsResolution) {
+                // Calculate probability
+                case ResolutionType.Human when MultiBrainInteraction == InteractionType.Competitive: {
+                    // Calculate relative probability from all brain options
+                    float rndProbability = Random.Range(0f, 1f);
+                    float probabilitySum = 0;
+                    float rankSum = options.Sum(pair => pair.Value.Sum(option => option.Rank));
+                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
+                        foreach (AIOption aiOption in valuePair.Value) {
+                            aiOption.Probability = aiOption.Rank / rankSum;
+                            probabilitySum += aiOption.Probability;
+                            if (selectedOptions.Count == 0 && probabilitySum >= rndProbability) {
+                                selectedOptions.Add(valuePair.Key, aiOption);
+                            }
+                        }
+                    }
+                    break;
+                }
+                case ResolutionType.Human when MultiBrainInteraction == InteractionType.Cooperative: {
+                    // Calculate relative probability from same brain options
+                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
+                        float rndProbability = Random.Range(0f, 1f);
+                        float probabilitySum = 0;
+                        float rankSum = valuePair.Value.Sum(option => option.Rank);
+                        foreach (AIOption aiOption in valuePair.Value) {
+                            aiOption.Probability = aiOption.Rank / rankSum;
+                            probabilitySum += aiOption.Probability;
+                            if (!selectedOptions.ContainsKey(valuePair.Key) && probabilitySum >= rndProbability) {
+                                selectedOptions.Add(valuePair.Key, aiOption);
+                            }
+                        }
+                    }
+                    break;
+                }
+                case ResolutionType.Robotic when MultiBrainInteraction == InteractionType.Competitive: {
+                    // Calculate absolute probability from all brain options
+                    float maxRank = options.Max(pair => pair.Value.Max(option => option.Rank));
+                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
+                        foreach (AIOption aiOption in valuePair.Value) {
+                            if (SelectedOptions.Count == 0 && aiOption.Rank >= maxRank) {
+                                aiOption.Probability = 1;
+                                SelectedOptions.Add(valuePair.Key, aiOption);
+                            } else {
+                                aiOption.Probability = 0;
+                            }
+                        }
+                    }
+                    break;
+                }
+                case ResolutionType.Robotic when MultiBrainInteraction == InteractionType.Cooperative:
+                    // Calculate absolute probability from same brain options
+                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
+                        foreach (AIOption aiOption in valuePair.Value) {
+                            if (!SelectedOptions.ContainsKey(valuePair.Key) && aiOption.Rank >= valuePair.Value.Max(option => option.Rank)) {
+                                aiOption.Probability = 1;
+                                SelectedOptions.Add(valuePair.Key, aiOption);
+                            } else {
+                                aiOption.Probability = 0;
+                            }
+                        }
+                    }
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
+        
+        private void ExecuteOptions(Dictionary<AIBrainGraph, AIOption> selectedOptions) {
+            foreach (KeyValuePair<AIBrainGraph,AIOption> selectedOption in selectedOptions) {
+                selectedOption.Value.ExecuteActions();
             }
         }
 

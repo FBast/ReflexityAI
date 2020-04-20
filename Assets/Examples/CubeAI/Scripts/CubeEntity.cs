@@ -48,7 +48,7 @@ namespace Examples.CubeAI.Scripts {
         public void Reload() {
             MeshRenderer.material.color = Color.blue;
             CurrentAmmo = MaxAmmo;
-            Invoke("RollBackColor", 0.1f);
+            Invoke(nameof(RollBackColor), 0.1f);
         }
 
         public void Heal() {

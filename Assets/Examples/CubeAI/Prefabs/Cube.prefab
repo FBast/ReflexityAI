@@ -214,8 +214,8 @@ MonoBehaviour:
   UtilityAiBrains:
   - {fileID: 11400000, guid: 940e163bbff552d459654f2dee74833c, type: 2}
   TimeBetweenRefresh: 0.5
-  AlwaysPickBestChoice: 1
-  BrainType: 0
+  OptionsResolution: 1
+  MultiBrainInteraction: 0
   CubeEntity: {fileID: 0}
 --- !u!1 &3462655324143414681
 GameObject:

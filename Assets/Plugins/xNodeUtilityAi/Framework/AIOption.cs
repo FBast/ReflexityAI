@@ -7,7 +7,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
     public class AIOption {
         
         public List<AIAction> AiActions = new List<AIAction>();
-        public float Utility;
+        public float Rank;
         public int Weight;
         public float Probability;
         public string Description;
@@ -16,7 +16,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             // Processing Simple Actions
             actionNodes.ForEach(node => AiActions.Add(new AIAction(node)));
             // Processing Utility
-            Utility = tuple.Item1;
+            Rank = tuple.Item1;
             Weight = tuple.Item2;
             AIAction actionWithData = AiActions.FirstOrDefault(action => action.Data != null);
             Description = description;
@@ -32,7 +32,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
         public override string ToString() {
-            return Description + " - Utility " + Utility + " - Rank " + Weight + " - Weight " + Probability;
+            return Description + " - Rank " + Rank + " - Weight " + Weight + " - Probability " + Probability;
         }
 
     }
