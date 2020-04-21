@@ -8,8 +8,7 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
     public class AiDebuggerEditorWindow : EditorWindow {
         
         private GameObject _currentGameObject;
-        private Dictionary<AIBrainGraph, List<AIOption>> _options = new Dictionary<AIBrainGraph, List<AIOption>>();
-        private Dictionary<AIBrainGraph, AIOption> _selectedOptions = new Dictionary<AIBrainGraph, AIOption>();
+        private AbstractAIComponent _abstractAiComponent;
         private Gradient _weightGradiant;
         
         [MenuItem("Tool/AI Debugger")]
@@ -42,8 +41,7 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
                 if (Selection.activeGameObject == null || Selection.activeGameObject.GetComponent<AbstractAIComponent>() == null) return;
                 // Update debug data
                 _currentGameObject = Selection.activeGameObject;
-                _options = _currentGameObject.GetComponent<AbstractAIComponent>().Options;
-                _selectedOptions = _currentGameObject.GetComponent<AbstractAIComponent>().SelectedOptions;
+                _abstractAiComponent = _currentGameObject.GetComponent<AbstractAIComponent>();
             }
         }
 
@@ -53,21 +51,21 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
             };
             if (!EditorApplication.isPlaying) {
                 EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "The AI Debugger is only available in play mode", labelGuiStyle);
-            } else if (_options == null) {
+            } else if (_abstractAiComponent == null) {
                 EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "Please select a GameObject with an AbstractAIBrain derived Component", labelGuiStyle);
-            } else if (_currentGameObject == null) {
-                EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "It seems that the last selected GameObject is dead, please select another", labelGuiStyle);
-            } else if (_options.Count == 0) {
+            } else if (!_abstractAiComponent.enabled) {
+                EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "It seems that the last selected AbstractAIBrain is sleeping, please select another", labelGuiStyle);
+            } else if (_abstractAiComponent.Options.Count == 0) {
                 EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "No options found for " + _currentGameObject.name, labelGuiStyle);
             }
             else {
                 // Display options
-                int columnNumber = _options.Count;
+                int columnNumber = _abstractAiComponent.Options.Count;
                 float columnWidth = (position.width - 12) / columnNumber;
                 float rowHeight = 20;
                 int i = 0;
                 EditorGUI.LabelField(new Rect(3, 3, position.width - 6, rowHeight), "Brain of " + _currentGameObject.name, labelGuiStyle);
-                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in _options) {
+                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in _abstractAiComponent.Options) {
                     float weightMax = valuePair.Value.Max(option => option.Weight);
                     float weightMin = valuePair.Value.Min(option => option.Weight);
                     EditorGUI.LabelField(new Rect(3 + i * (columnWidth + 6), 3 + rowHeight, columnWidth, rowHeight), valuePair.Key.name, labelGuiStyle);
@@ -80,7 +78,8 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
                             weightColor = new Color(1, 1, 1, 0.5f);
                         } 
                         // Part of the selected options
-                        else if (_selectedOptions.ContainsKey(valuePair.Key) && valuePair.Value[j] == _selectedOptions[valuePair.Key]) {
+                        else if (_abstractAiComponent.SelectedOptions.ContainsKey(valuePair.Key) && valuePair.Value[j] 
+                                 == _abstractAiComponent.SelectedOptions[valuePair.Key]) {
                             weightColor = new Color(0, 0, 0, 0.5f);
                         } 
                         // All options have the same weight

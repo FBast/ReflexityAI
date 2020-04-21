@@ -7,35 +7,47 @@ namespace Plugins.xNodeUtilityAi.Framework {
     [Serializable]
     public class AIOption {
 
-        public OptionNode OptionNode;
         public List<AIAction> AiActions = new List<AIAction>();
         public float Rank;
         public int Weight;
         public float Probability;
         public string Description;
+//        public int IteratorIndex;
 
         public AIOption(OptionNode optionNode) {
             // Saving linked optionNode
-            OptionNode = optionNode;
-            // Processing actions
-            List<ActionNode> actionNodes = OptionNode.GetInputPort(nameof(OptionNode.Actions)).GetInputValues<ActionNode>().ToList();
+            Description = optionNode.Description;
+            Weight = optionNode.GetWeight();
+            Rank = optionNode.GetRank();
+            List<ActionNode> actionNodes = optionNode.GetInputPort(nameof(optionNode.Actions)).GetInputValues<ActionNode>().ToList();
             actionNodes.ForEach(node => AiActions.Add(new AIAction(node)));
-            AIAction actionWithData = AiActions.FirstOrDefault(action => action.Data != null);
-            // Building description
-            Description = OptionNode.Description;
-            if (actionWithData == null) return;
-            foreach (object data in actionWithData.Data) {
-                Description += " " + data;
-            }
+//            // Saving iterator current output
+//            if (optionNode.DataIteratorNode != null) {
+//                IteratorIndex = optionNode.DataIteratorNode.Index;
+//            }
         }
 
-        public void UpdateWeight() {
-            Weight = OptionNode.GetWeight();
-        }
-
-        public void UpdateRank() {
-            Rank = OptionNode.GetRank();
-        }
+//        public void CalculateWeight() {
+//            if (OptionNode.DataIteratorNode != null) {
+//                OptionNode.DataIteratorNode.Index = IteratorIndex;
+//            }
+//            Weight = OptionNode.GetWeight();
+//        }
+//
+//        public void CalculateRank() {
+//            if (OptionNode.DataIteratorNode != null) {
+//                OptionNode.DataIteratorNode.Index = IteratorIndex;
+//            }
+//            Rank = OptionNode.GetRank();
+//        }
+//
+//        public void UpdateActions() {
+//            if (OptionNode.DataIteratorNode != null) {
+//                OptionNode.DataIteratorNode.Index = IteratorIndex;
+//            }
+//            List<ActionNode> actionNodes = OptionNode.GetInputPort(nameof(OptionNode.Actions)).GetInputValues<ActionNode>().ToList();
+//            actionNodes.ForEach(node => AiActions.Add(new AIAction(node)));
+//        }
 
         public void ExecuteActions() {
             AiActions = AiActions.OrderBy(action => action.Order).ToList();
@@ -43,7 +55,14 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
         public override string ToString() {
-            return Description + " - Rank " + Rank + " - Weight " + Weight + " - Probability " + Probability;
+            AIAction actionWithData = AiActions.FirstOrDefault(action => action.Data != null);
+            string description = Description;
+            if (actionWithData != null) {
+                foreach (object data in actionWithData.Data) {
+                    description += " " + data;
+                }
+            }
+            return description + " - Rank " + Rank + " - Weight " + Weight + " - Probability " + Probability;
         }
 
     }

@@ -15,7 +15,7 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
 
         public int Index { get; set; }
         
-        private string _typeAssemblyName;
+        [SerializeField, HideInInspector] private string _typeAssemblyName;
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
@@ -42,15 +42,14 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             if (port.fieldName == nameof(LinkedOption)) {
                 return this;
             } else {
-                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(List));
                 Type type = Type.GetType(_typeAssemblyName);
                 if (!Application.isPlaying) 
                     return new ReflectionData(type, null);
-                List<object> collection = ((IEnumerable) reflectionData.Content).Cast<object>().ToList();
+                List<object> collection = GetCollection().ToList();
                 return new ReflectionData(type, collection[Index]);
             }
         }
-
+        
         public IEnumerable<object> GetCollection() {
             ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(List));
             return (IEnumerable<object>) reflectionData.Content;

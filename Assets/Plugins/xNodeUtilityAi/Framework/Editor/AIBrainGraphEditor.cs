@@ -3,6 +3,7 @@ using Plugins.xNodeUtilityAi.MainNodes;
 using Plugins.xNodeUtilityAi.MemoryNodes;
 using Plugins.xNodeUtilityAi.MiddleNodes;
 using Plugins.xNodeUtilityAi.PatternNodes;
+using UnityEngine;
 using XNode;
 using XNodeEditor;
 
@@ -67,7 +68,14 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
         public override string GetPortTooltip(NodePort port) {
             try {
                 Type portType = port.ValueType;
-                return portType.PrettyName();
+                string tooltip = portType.PrettyName();
+                if (!Application.isPlaying || port.IsInput) return tooltip;
+                object obj = port.node.GetValue(port);
+                if (obj is ReflectionData reflectionData)
+                    tooltip += " = " + (reflectionData.Content ?? "null");
+                else
+                    tooltip += " = " + (obj != null ? obj.ToString() : "null");
+                return tooltip;
             } catch (Exception) {
                 return "Unable to recover port value";
             }

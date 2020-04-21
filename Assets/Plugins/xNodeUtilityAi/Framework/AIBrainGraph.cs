@@ -14,7 +14,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         public List<string> HistoricTags = new List<string>();
         public List<string> MemoryTags = new List<string>();
-        
+
         public List<T> GetNodes<T>() {
             return nodes.Where(node => node is T).Cast<T>().ToList();
         }

@@ -22,11 +22,23 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public readonly Dictionary<AIBrainGraph, List<AIOption>> Options = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, List<AIOption>> BestOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
+//        public List<AIBrainGraph> LocalAIBrains;
 
         private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
         private bool _isThinking;
         private float _timeSinceLastRefresh;
+
+//        private void Start() {
+//            foreach (AIBrainGraph utilityAiBrain in UtilityAiBrains) {
+//                // Create a copy
+//                AIBrainGraph localAIBrain = (AIBrainGraph) utilityAiBrain.Copy();
+//                localAIBrain.name = utilityAiBrain.name + "Of" + gameObject.name;
+//                // Setup Contexts
+//                localAIBrain.GetNodes<IContextual>().ForEach(node => node.Context = this);
+//                LocalAIBrains.Add(localAIBrain);
+//            }
+//        }
 
         private void Update() {
             _timeSinceLastRefresh += Time.deltaTime;
@@ -43,8 +55,10 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 Options.Add(aiBrainGraph, GetOptions(aiBrainGraph));
                 yield return null;
             }
-            // Calculate options weight
-            CalculateOptionsWeight(Options);
+//            // Calculate options weight
+//            foreach (AIOption aiOption in Options.SelectMany(pair => pair.Value)) {
+//                aiOption.CalculateWeight();
+//            }
             // Fetch best options according to multi brain interaction
             BestOptionsOnWeight(Options, BestOptions);
             // Check if weight are not enough to start execution
@@ -58,10 +72,14 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
             // Else calculate options rank
             else {
-                // Calculate options rank
-                CalculateOptionsRank(BestOptions);
+//                // Calculate options rank
+//                foreach (AIOption aiOption in BestOptions.SelectMany(pair => pair.Value)) {
+//                    aiOption.CalculateRank();
+//                }
                 // Remove zero from ranks
-                RemoveZeroRankValues(BestOptions);
+                foreach (AIOption option in BestOptions.SelectMany(valuePair => valuePair.Value.Where(option => option.Rank <= 0))) {
+                    option.Rank = 0.0001f;
+                }
                 // Fetch selected options according to multi brain interaction and options resolution
                 SelectOptionsOnRank(BestOptions, SelectedOptions);
             }
@@ -72,25 +90,23 @@ namespace Plugins.xNodeUtilityAi.Framework {
                     .ThenByDescending(option => option.Rank).ToList();
             }
             // Execute selected options
-            ExecuteOptions(SelectedOptions);
+            foreach (KeyValuePair<AIBrainGraph,AIOption> selectedOption in SelectedOptions) {
+                selectedOption.Value.ExecuteActions();
+            }
             _isThinking = false;
         }
 
         private List<AIOption> GetOptions(AIBrainGraph aiBrainGraph) {
             List<AIOption> aiOptions = new List<AIOption>();
-            // Setup Contexts
-            aiBrainGraph.GetNodes<IContextual>().ForEach(node => node.Context = this);
-            aiBrainGraph.GetNodes<OptionNode>().ForEach(node => aiOptions.AddRange(node.GetOptions()));
-            // Order by Weight
-            return aiOptions.OrderByDescending(option => option.Weight).ToList();
+            foreach (IContextual contextual in aiBrainGraph.GetNodes<IContextual>()) {
+                contextual.Context = this;
+            }
+            foreach (OptionNode optionNode in aiBrainGraph.GetNodes<OptionNode>()) {
+                aiOptions.AddRange(optionNode.GetOptions());
+            }
+            return aiOptions;
         }
 
-        private void CalculateOptionsWeight(Dictionary<AIBrainGraph, List<AIOption>> options) {
-            foreach (AIOption aiOption in options.SelectMany(pair => pair.Value)) {
-                aiOption.UpdateWeight();
-            }
-        }
-        
         private void BestOptionsOnWeight(Dictionary<AIBrainGraph,List<AIOption>> options, Dictionary<AIBrainGraph,List<AIOption>> bestOptions) {
             bestOptions.Clear();
             switch (MultiBrainInteraction) {
@@ -131,19 +147,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
             return true;
         }
-        
-        private void CalculateOptionsRank(Dictionary<AIBrainGraph, List<AIOption>> bestOptions) {
-            foreach (AIOption aiOption in bestOptions.SelectMany(pair => pair.Value)) {
-                aiOption.UpdateRank();
-            }
-        }
-        
-        private void RemoveZeroRankValues(Dictionary<AIBrainGraph, List<AIOption>> bestOptions) {
-            foreach (AIOption option in bestOptions.SelectMany(valuePair => valuePair.Value.Where(option => option.Rank <= 0))) {
-                option.Rank = 0.0001f;
-            }
-        }
-        
+
         private void SelectOptionsOnRank(Dictionary<AIBrainGraph, List<AIOption>> options, Dictionary<AIBrainGraph, AIOption> selectedOptions) {
             selectedOptions.Clear();
             switch (OptionsResolution) {
@@ -210,12 +214,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
-            }
-        }
-        
-        private void ExecuteOptions(Dictionary<AIBrainGraph, AIOption> selectedOptions) {
-            foreach (KeyValuePair<AIBrainGraph,AIOption> selectedOption in selectedOptions) {
-                selectedOption.Value.ExecuteActions();
             }
         }
 

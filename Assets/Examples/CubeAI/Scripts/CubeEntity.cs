@@ -35,7 +35,8 @@ namespace Examples.CubeAI.Scripts {
                 transform.rotation = Quaternion.LookRotation(newDir);
                 transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
             }
-            Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
+            if (Stats)
+                Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
         }
 
         public void Fire() {
@@ -68,7 +69,7 @@ namespace Examples.CubeAI.Scripts {
             CurrentHp--;
             if (CurrentHp <= 0) {
                 IsDead = true;
-                Stats.text = "DEAD !";
+                if (Stats) Stats.text = "DEAD !";
                 GetComponent<CubeAIComponent>().enabled = false;
             }
         }

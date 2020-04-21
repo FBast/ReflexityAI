@@ -7,7 +7,7 @@ namespace Examples.CubeAI.Scripts {
 
         public static List<CubeEntity> CubeEntities = new List<CubeEntity>();
 
-        private void Start() {
+        private void Awake() {
             CubeEntities = FindObjectsOfType<CubeEntity>().ToList();
         }
 

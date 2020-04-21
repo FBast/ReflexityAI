@@ -18,36 +18,46 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         [Input(ShowBackingValue.Never, ConnectionType.Override), Tooltip("Connect to the Data Iterator Node")]
         public DataIteratorNode DataIteratorNode;
-
         [TextArea, Tooltip("Provide a basic description displayed in the AI Debugger")]
         public string Description;
-
+        
         [Header("Rank")] [Input, Tooltip("Connect to each Utility Nodes")]
         public float Utilities = 1;
-
         [Tooltip("Average : The rank is calculated using the average of all Utilities\n"
                  + "Max : The rank is calculated using the maximum value of all Utilities\n"
                  + "Min : The rank is calculated using the minimum value of all Utilities")]
         public MergeType UtilityMerge;
-
+        
         [Header("Weight")] [Input, Tooltip("Product of the multiplier")]
         [Range(0, 10)] public int Multiplier = 1;
-
         [Input, Tooltip("Sum of the bonus"), Range(0, 10)] public int Bonus;
-
+        
         [Space] [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")]
         public ActionNode Actions;
 
+        public override void OnCreateConnection(NodePort from, NodePort to) {
+            base.OnCreateConnection(from, to);
+            if (to.fieldName == nameof(DataIteratorNode) && to.node == this) {
+                DataIteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
+            }
+        }
+
+        public override void OnRemoveConnection(NodePort port) {
+            base.OnRemoveConnection(port);
+            if (port.fieldName == nameof(DataIteratorNode) && port.node == this) {
+                DataIteratorNode = null;
+            }
+        }
+        
         public List<AIOption> GetOptions() {
             List<AIOption> options = new List<AIOption>();
-            DataIteratorNode dataIteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
-            if (dataIteratorNode != null) {
-                List<object> collection = dataIteratorNode.GetCollection().ToList();
-                while (collection.Count > dataIteratorNode.Index) {
+            if (DataIteratorNode != null) {
+                List<object> collection = DataIteratorNode.GetCollection().ToList();
+                DataIteratorNode.Index = 0;
+                while (collection.Count > DataIteratorNode.Index) {
                     options.Add(new AIOption(this));
-                    dataIteratorNode.Index++;
+                    DataIteratorNode.Index++;
                 }
-                dataIteratorNode.Index = 0;
             } else {
                 options.Add(new AIOption(this));
             }
