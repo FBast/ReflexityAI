@@ -42,21 +42,19 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             List<AIOption> options = new List<AIOption>();
             DataIteratorNode dataIteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
             if (dataIteratorNode != null) {
-                while (dataIteratorNode.GetCollectionCount() > dataIteratorNode.Index) {
-                    options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
-                        GetUtilityAndWeight(), Description));
+                List<object> collection = dataIteratorNode.GetCollection().ToList();
+                while (collection.Count > dataIteratorNode.Index) {
+                    options.Add(new AIOption(this));
                     dataIteratorNode.Index++;
                 }
                 dataIteratorNode.Index = 0;
             } else {
-                options.Add(new AIOption(GetInputPort("Actions").GetInputValues<ActionNode>().ToList(),
-                    GetUtilityAndWeight(), Description));
+                options.Add(new AIOption(this));
             }
-
             return options;
         }
 
-        public Tuple<float, int> GetUtilityAndWeight() {
+        public float GetRank() {
             NodePort utilityPort = GetInputPort(nameof(Utilities));
             float utility;
             if (utilityPort.IsConnected) {
@@ -77,18 +75,19 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             } else {
                 utility = Utilities;
             }
-
             // Utility clamped between 0 and 1
-            utility = Mathf.Clamp(utility, 0f, 1f);
+            return Mathf.Clamp(utility, 0f, 1f);
+        }
+
+        public int GetWeight() {
             NodePort bonusPort = GetInputPort(nameof(Bonus));
             int bonus = bonusPort.IsConnected ? bonusPort.GetInputValues<int>().Sum() : Bonus;
             NodePort multiplierPort = GetInputPort(nameof(Multiplier));
             int multiplier = multiplierPort.IsConnected
-                ? multiplierPort.GetInputValues<int>()
-                    .Aggregate((total, next) => total * next)
+                ? multiplierPort.GetInputValues<int>().Aggregate((total, next) => total * next)
                 : Multiplier;
             if (bonus == 0) bonus = 1;
-            return new Tuple<float, int>(utility, bonus * multiplier);
+            return bonus * multiplier;
         }
 
     }

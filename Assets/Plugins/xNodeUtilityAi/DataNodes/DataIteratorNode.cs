@@ -51,10 +51,10 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             }
         }
 
-        public int GetCollectionCount() {
+        public IEnumerable<object> GetCollection() {
             ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(List));
-            return ((IEnumerable) reflectionData.Content).Cast<object>().Count();
+            return (IEnumerable<object>) reflectionData.Content;
         }
-        
+
     }
 }

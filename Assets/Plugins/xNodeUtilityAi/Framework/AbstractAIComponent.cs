@@ -39,10 +39,12 @@ namespace Plugins.xNodeUtilityAi.Framework {
             _isThinking = true;
             Options.Clear();
             foreach (AIBrainGraph aiBrainGraph in UtilityAiBrains.Where(aiBrainGraph => aiBrainGraph != null)) {
-                // Calculate all options weight from all brains
+                // Get all options from all brains
                 Options.Add(aiBrainGraph, GetOptions(aiBrainGraph));
                 yield return null;
             }
+            // Calculate options weight
+            CalculateOptionsWeight(Options);
             // Fetch best options according to multi brain interaction
             BestOptionsOnWeight(Options, BestOptions);
             // Check if weight are not enough to start execution
@@ -54,9 +56,11 @@ namespace Plugins.xNodeUtilityAi.Framework {
                     }
                 }
             }
-            // Else calculate all options rank from all brains
+            // Else calculate options rank
             else {
-                // Remove zero from all utility
+                // Calculate options rank
+                CalculateOptionsRank(BestOptions);
+                // Remove zero from ranks
                 RemoveZeroRankValues(BestOptions);
                 // Fetch selected options according to multi brain interaction and options resolution
                 SelectOptionsOnRank(BestOptions, SelectedOptions);
@@ -81,6 +85,12 @@ namespace Plugins.xNodeUtilityAi.Framework {
             return aiOptions.OrderByDescending(option => option.Weight).ToList();
         }
 
+        private void CalculateOptionsWeight(Dictionary<AIBrainGraph, List<AIOption>> options) {
+            foreach (AIOption aiOption in options.SelectMany(pair => pair.Value)) {
+                aiOption.UpdateWeight();
+            }
+        }
+        
         private void BestOptionsOnWeight(Dictionary<AIBrainGraph,List<AIOption>> options, Dictionary<AIBrainGraph,List<AIOption>> bestOptions) {
             bestOptions.Clear();
             switch (MultiBrainInteraction) {
@@ -120,6 +130,12 @@ namespace Plugins.xNodeUtilityAi.Framework {
                     throw new ArgumentOutOfRangeException();
             }
             return true;
+        }
+        
+        private void CalculateOptionsRank(Dictionary<AIBrainGraph, List<AIOption>> bestOptions) {
+            foreach (AIOption aiOption in bestOptions.SelectMany(pair => pair.Value)) {
+                aiOption.UpdateRank();
+            }
         }
         
         private void RemoveZeroRankValues(Dictionary<AIBrainGraph, List<AIOption>> bestOptions) {

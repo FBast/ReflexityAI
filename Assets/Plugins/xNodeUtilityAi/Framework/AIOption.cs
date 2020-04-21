@@ -1,29 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Plugins.xNodeUtilityAi.MainNodes;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     [Serializable]
     public class AIOption {
-        
+
+        public OptionNode OptionNode;
         public List<AIAction> AiActions = new List<AIAction>();
         public float Rank;
         public int Weight;
         public float Probability;
         public string Description;
 
-        public AIOption(List<ActionNode> actionNodes, Tuple<float, int> tuple, string description) {
-            // Processing Simple Actions
+        public AIOption(OptionNode optionNode) {
+            // Saving linked optionNode
+            OptionNode = optionNode;
+            // Processing actions
+            List<ActionNode> actionNodes = OptionNode.GetInputPort(nameof(OptionNode.Actions)).GetInputValues<ActionNode>().ToList();
             actionNodes.ForEach(node => AiActions.Add(new AIAction(node)));
-            // Processing Utility
-            Rank = tuple.Item1;
-            Weight = tuple.Item2;
             AIAction actionWithData = AiActions.FirstOrDefault(action => action.Data != null);
-            Description = description;
+            // Building description
+            Description = OptionNode.Description;
             if (actionWithData == null) return;
             foreach (object data in actionWithData.Data) {
                 Description += " " + data;
             }
+        }
+
+        public void UpdateWeight() {
+            Weight = OptionNode.GetWeight();
+        }
+
+        public void UpdateRank() {
+            Rank = OptionNode.GetRank();
         }
 
         public void ExecuteActions() {
