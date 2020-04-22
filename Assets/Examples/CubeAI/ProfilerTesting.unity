@@ -130,9 +130,11 @@ GameObject:
   m_Component:
   - component: {fileID: 174573829}
   - component: {fileID: 174573828}
+  - component: {fileID: 174573832}
   - component: {fileID: 174573830}
+  - component: {fileID: 174573831}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: Management
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,13 +180,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UtilityAIBrains:
   - {fileID: 11400000, guid: 940e163bbff552d459654f2dee74833c, type: 2}
-  TimeBetweenRefresh: 0.5
   ResolutionType: 1
   CubePrefab: {fileID: 1656194801054802153, guid: 4faa13a356f88b14683061027ce23697,
     type: 3}
-  XNumber: 7
-  ZNumber: 7
-  Gap: 2
+  XNumber: 5
+  ZNumber: 5
+  Gap: 3
+--- !u!114 &174573831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174573827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31915495a05b8e4449e21ba7a3905cac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &174573832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174573827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aa5db9150286f54591be1a5d1daf415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &546241671
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.Framework;
@@ -45,8 +44,7 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
                 Type type = Type.GetType(_typeAssemblyName);
                 if (!Application.isPlaying) 
                     return new ReflectionData(type, null);
-                List<object> collection = GetCollection().ToList();
-                return new ReflectionData(type, collection[Index]);
+                return new ReflectionData(type, GetCollection().ElementAt(Index));
             }
         }
         

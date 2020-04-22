@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 174573829}
   - component: {fileID: 174573828}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: Management
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,13 +149,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8febcdf163583f3418a7c9e801ccb2c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UtilityAIBrains:
-  - {fileID: 11400000, guid: 940e163bbff552d459654f2dee74833c, type: 2}
-  CubePrefab: {fileID: 1656194801054802153, guid: 4faa13a356f88b14683061027ce23697,
-    type: 3}
-  XNumber: 4
-  ZNumber: 4
-  Gap: 10
 --- !u!4 &174573829
 Transform:
   m_ObjectHideFlags: 0

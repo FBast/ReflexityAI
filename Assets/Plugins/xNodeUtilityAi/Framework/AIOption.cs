@@ -20,7 +20,9 @@ namespace Plugins.xNodeUtilityAi.Framework {
             Weight = optionNode.GetWeight();
             Rank = optionNode.GetRank();
             List<ActionNode> actionNodes = optionNode.GetInputPort(nameof(optionNode.Actions)).GetInputValues<ActionNode>().ToList();
-            actionNodes.ForEach(node => AiActions.Add(new AIAction(node)));
+            foreach (ActionNode actionNode in actionNodes) {
+                AiActions.Add(new AIAction(actionNode));
+            }
 //            // Saving iterator current output
 //            if (optionNode.DataIteratorNode != null) {
 //                IteratorIndex = optionNode.DataIteratorNode.Index;

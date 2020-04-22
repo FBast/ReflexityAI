@@ -14,6 +14,7 @@
               <e p="CubeAiComponent.cs" t="Include" />
               <e p="CubeEntity.cs" t="Include" />
               <e p="CubeSpawner.cs" t="Include" />
+              <e p="FPSCounter.cs" t="Include" />
               <e p="GameManager.cs" t="Include" />
             </e>
           </e>
@@ -100,6 +101,7 @@
               </e>
               <e p="EntryNode.cs" t="Include" />
               <e p="IContextual.cs" t="Include" />
+              <e p="ReflexityManager.cs" t="Include" />
               <e p="SerializableInfo.cs" t="Include" />
               <e p="SimpleDataNode.cs" t="Include" />
             </e>

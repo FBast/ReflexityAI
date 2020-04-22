@@ -7,7 +7,7 @@ namespace Examples.CubeAI.Scripts {
 
         [Header("AI Parameters")]
         public List<AIBrainGraph> UtilityAIBrains;
-        public float TimeBetweenRefresh;
+//        [Range(0.1f, 5f)] public float TimeBetweenRefresh;
         public ResolutionType ResolutionType;
         
         [Header("Spawn Parameters")]
@@ -22,9 +22,10 @@ namespace Examples.CubeAI.Scripts {
             for (int i = 0; i < XNumber; i++) {
                 for (int j = 0; j < ZNumber; j++) {
                     CubeEntity cubeEntity = Instantiate(CubePrefab, newPosition, Quaternion.identity).GetComponent<CubeEntity>();
+                    cubeEntity.name = "Cube " + (i + j);
                     CubeAIComponent cubeAiComponent = cubeEntity.GetComponent<CubeAIComponent>();
                     cubeAiComponent.UtilityAiBrains = UtilityAIBrains;
-                    cubeAiComponent.TimeBetweenRefresh = TimeBetweenRefresh;
+//                    cubeAiComponent.TimeBetweenRefresh = TimeBetweenRefresh;
                     cubeAiComponent.OptionsResolution = ResolutionType;
                     GameManager.CubeEntities.Add(cubeEntity);
                     newPosition.z += Gap;

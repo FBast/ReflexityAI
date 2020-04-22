@@ -34,29 +34,16 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         
         [Space] [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")]
         public ActionNode Actions;
-
-        public override void OnCreateConnection(NodePort from, NodePort to) {
-            base.OnCreateConnection(from, to);
-            if (to.fieldName == nameof(DataIteratorNode) && to.node == this) {
-                DataIteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
-            }
-        }
-
-        public override void OnRemoveConnection(NodePort port) {
-            base.OnRemoveConnection(port);
-            if (port.fieldName == nameof(DataIteratorNode) && port.node == this) {
-                DataIteratorNode = null;
-            }
-        }
         
         public List<AIOption> GetOptions() {
             List<AIOption> options = new List<AIOption>();
-            if (DataIteratorNode != null) {
-                List<object> collection = DataIteratorNode.GetCollection().ToList();
-                DataIteratorNode.Index = 0;
-                while (collection.Count > DataIteratorNode.Index) {
+            DataIteratorNode iteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
+            if (iteratorNode != null) {
+                int collectionSize = iteratorNode.GetCollection().Count();
+                iteratorNode.Index = 0;
+                while (collectionSize > iteratorNode.Index) {
                     options.Add(new AIOption(this));
-                    DataIteratorNode.Index++;
+                    iteratorNode.Index++;
                 }
             } else {
                 options.Add(new AIOption(this));

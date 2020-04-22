@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Or
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -328, y: -1800}
+  position: {x: -312, y: -1656}
   ports:
     keys:
     - ValuesIn
@@ -81,8 +81,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -6833291362059315769}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: X
         node: {fileID: 6893314922638749041}
@@ -286,8 +286,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -6266098795037635933}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: ValuesIn
         node: {fileID: -3538196866417272066}
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: Converter
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -1784}
+  position: {x: -56, y: -1656}
   ports:
     keys:
     - ValueIn
@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Name: Is Null
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -584, y: -1816}
+  position: {x: -568, y: -1672}
   ports:
     keys:
     - ValueIn
@@ -583,8 +583,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -5325723765503951077}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: MaxX
         node: {fileID: -2085150136128595175}
@@ -784,6 +784,9 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: Data
         node: {fileID: -3208752610430399498}
+        reroutePoints: []
+      - fieldName: ValuesIn
+        node: {fileID: -2414897798371381959}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1230,6 +1233,9 @@ MonoBehaviour:
       - fieldName: ValueOut
         node: {fileID: 9038513904726347462}
         reroutePoints: []
+      - fieldName: ValueOut
+        node: {fileID: 6085686371560933803}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -1295,8 +1301,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -3714755168623129051}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: MaxX
         node: {fileID: 6893314922638749041}
@@ -1528,7 +1534,7 @@ MonoBehaviour:
   m_Name: Action Setter
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -1608}
+  position: {x: -56, y: -1512}
   ports:
     keys:
     - Data
@@ -2098,6 +2104,54 @@ MonoBehaviour:
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
+--- !u!114 &-2414897798371381959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b581676763b4451fbb38ac9befec67ad, type: 3}
+  m_Name: Is Equal
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -568, y: -1800}
+  ports:
+    keys:
+    - ValuesIn
+    - ValueOut
+    values:
+    - _fieldName: ValuesIn
+      _node: {fileID: -2414897798371381959}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: CubeEntity
+        node: {fileID: 3223070083157103605}
+        reroutePoints: []
+      - fieldName: CubeEntity (Field)
+        node: {fileID: -4975658638790815718}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: -2414897798371381959}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: ValueIn
+        node: {fileID: 6085686371560933803}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  ValuesIn: {fileID: 0}
+  ValueOut: 0
 --- !u!114 &-2085150136128595175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2541,6 +2595,8 @@ MonoBehaviour:
   - {fileID: -6833291362059315769}
   - {fileID: -3714755168623129051}
   - {fileID: -4208437902751415821}
+  - {fileID: -2414897798371381959}
+  - {fileID: 6085686371560933803}
   ContextType:
     _classRef: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp
   HistoricTags: []
@@ -2623,7 +2679,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 851990697646736078}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: ValueIn
@@ -2972,6 +3028,9 @@ MonoBehaviour:
       - fieldName: Value
         node: {fileID: -3208752610430399498}
         reroutePoints: []
+      - fieldName: ValuesIn
+        node: {fileID: -2414897798371381959}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
@@ -3265,6 +3324,53 @@ MonoBehaviour:
   Multiplier: 1
   Bonus: 0
   Actions: {fileID: 0}
+--- !u!114 &6085686371560933803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
+  m_Name: Converter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -56, y: -1784}
+  ports:
+    keys:
+    - ValueIn
+    - ValueOut
+    values:
+    - _fieldName: ValueIn
+      _node: {fileID: 6085686371560933803}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: ValueOut
+        node: {fileID: -2414897798371381959}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: 6085686371560933803}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Multiplier
+        node: {fileID: -3891943619949678654}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  ValueIn: 0
+  IsTrue: 0
+  IsFalse: 1
+  ValueOut: 0
 --- !u!114 &6473392806437833924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4020,7 +4126,7 @@ MonoBehaviour:
   m_Name: Data Selector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -584, y: -1704}
+  position: {x: -568, y: -1560}
   ports:
     keys:
     - Data
@@ -4245,8 +4351,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 8440787822122956408}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: X
         node: {fileID: -2085150136128595175}
@@ -4430,7 +4536,7 @@ MonoBehaviour:
   m_Name: Data Selector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -856, y: -1816}
+  position: {x: -856, y: -1656}
   ports:
     keys:
     - Data

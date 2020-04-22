@@ -7,12 +7,12 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Plugins.xNodeUtilityAi.Framework {
+    public enum ResolutionType { Robotic, Human }
+    public enum InteractionType { Cooperative, Competitive }
     public class AbstractAIComponent : MonoBehaviour {
 
         [Tooltip("Brains used by the AI")]
         public List<AIBrainGraph> UtilityAiBrains;
-        [Tooltip("Time between each AI evaluations")]
-        [Range(0.1f, 5f)] public float TimeBetweenRefresh = 0.5f;
         [Tooltip("Robotic : Always pick best option\n" +
                  "Human : Randomize between best options")]
         public ResolutionType OptionsResolution;
@@ -22,35 +22,37 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public readonly Dictionary<AIBrainGraph, List<AIOption>> Options = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, List<AIOption>> BestOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
-//        public List<AIBrainGraph> LocalAIBrains;
 
+        public List<AIBrainGraph> LocalAIBrains;
+
+        private static int _aiCount;
+        private static int _aiLeft;
+        private static int _aiTurn;
+        private int _aiTicket;
+            
         private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
-        private bool _isThinking;
-        private float _timeSinceLastRefresh;
 
-//        private void Start() {
-//            foreach (AIBrainGraph utilityAiBrain in UtilityAiBrains) {
-//                // Create a copy
-//                AIBrainGraph localAIBrain = (AIBrainGraph) utilityAiBrain.Copy();
-//                localAIBrain.name = utilityAiBrain.name + "Of" + gameObject.name;
-//                // Setup Contexts
-//                localAIBrain.GetNodes<IContextual>().ForEach(node => node.Context = this);
-//                LocalAIBrains.Add(localAIBrain);
-//            }
-//        }
-
-        private void Update() {
-            _timeSinceLastRefresh += Time.deltaTime;
-            if (_isThinking || _timeSinceLastRefresh <= TimeBetweenRefresh) return;
-            StartCoroutine(ThinkAndAct());
-            _timeSinceLastRefresh = 0;
+        private void Start() {
+            foreach (AIBrainGraph utilityAiBrain in UtilityAiBrains) {
+                // Create a copy
+                AIBrainGraph localAIBrain = (AIBrainGraph) utilityAiBrain.Copy();
+                localAIBrain.name = utilityAiBrain.name + "Of" + gameObject.name;
+                // Setup Contexts
+                foreach (IContextual contextual in localAIBrain.GetNodes<IContextual>()) {
+                    contextual.Context = this;
+                }
+                LocalAIBrains.Add(localAIBrain);
+            }
         }
 
-        private IEnumerator ThinkAndAct() {
-            _isThinking = true;
+        private void OnEnable() {
+            ReflexityManager.AbstractAiComponents.Enqueue(this);
+        }
+
+        public IEnumerator ThinkAndAct() {
             Options.Clear();
-            foreach (AIBrainGraph aiBrainGraph in UtilityAiBrains.Where(aiBrainGraph => aiBrainGraph != null)) {
+            foreach (AIBrainGraph aiBrainGraph in LocalAIBrains.Where(aiBrainGraph => aiBrainGraph != null)) {
                 // Get all options from all brains
                 Options.Add(aiBrainGraph, GetOptions(aiBrainGraph));
                 yield return null;
@@ -61,6 +63,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
 //            }
             // Fetch best options according to multi brain interaction
             BestOptionsOnWeight(Options, BestOptions);
+            yield return null;
             // Check if weight are not enough to start execution
             if (IsWeightEnoughForSelection(BestOptions)) {
                 SelectedOptions.Clear();
@@ -93,14 +96,13 @@ namespace Plugins.xNodeUtilityAi.Framework {
             foreach (KeyValuePair<AIBrainGraph,AIOption> selectedOption in SelectedOptions) {
                 selectedOption.Value.ExecuteActions();
             }
-            _isThinking = false;
         }
 
         private List<AIOption> GetOptions(AIBrainGraph aiBrainGraph) {
             List<AIOption> aiOptions = new List<AIOption>();
-            foreach (IContextual contextual in aiBrainGraph.GetNodes<IContextual>()) {
-                contextual.Context = this;
-            }
+//            foreach (IContextual contextual in aiBrainGraph.GetNodes<IContextual>()) {
+//                contextual.Context = this;
+//            }
             foreach (OptionNode optionNode in aiBrainGraph.GetNodes<OptionNode>()) {
                 aiOptions.AddRange(optionNode.GetOptions());
             }
@@ -243,16 +245,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
             return _historic.ContainsKey(historicTag) ? _historic[historicTag] : 0;
         }
 
-    }
-
-    public enum ResolutionType {
-        Robotic,
-        Human
-    }
-    
-    public enum InteractionType {
-        Cooperative,
-        Competitive
     }
 
 }
