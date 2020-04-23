@@ -18,6 +18,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public List<T> GetNodes<T>() {
             return nodes.Where(node => node is T).Cast<T>().ToList();
         }
-
+        
     }
 }

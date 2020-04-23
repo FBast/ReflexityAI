@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using UnityEngine;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     [Serializable]
@@ -19,6 +18,8 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public bool IsIteratable;
         public bool IsPrimitive;
         public List<Parameter> Parameters = new List<Parameter>();
+        
+        private object _cachedObject;
 
         public Type Type => Type.GetType(TypeName);
 
@@ -63,25 +64,30 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
         }
 
+        public void ClearCache() {
+            _cachedObject = null;
+        }
+        
         public object GetEditorValue() {
             return IsPrimitive ? (object) null : new ReflectionData(Type, null);
         }
         
         public object GetRuntimeValue(object context) {
             if (context == null) return GetEditorValue();
-            MemberInfo memberInfo = GetMemberInfo();
-            object data;
-            switch (memberInfo) {
-                case FieldInfo fieldInfo:
-                    data = fieldInfo.GetValue(context);
-                    break;
-                case PropertyInfo propertyInfo:
-                    data = propertyInfo.GetValue(context);
-                    break;
-                default:
-                    throw new Exception("GetValue only available for FieldInfo or PropertyInfo, not " + memberInfo.MemberType);
+            if (_cachedObject == null) {
+                MemberInfo memberInfo = GetMemberInfo();
+                switch (memberInfo) {
+                    case FieldInfo fieldInfo:
+                        _cachedObject = fieldInfo.GetValue(context);
+                        break;
+                    case PropertyInfo propertyInfo:
+                        _cachedObject = propertyInfo.GetValue(context);
+                        break;
+                    default:
+                        throw new Exception("GetValue only available for FieldInfo or PropertyInfo, not " + memberInfo.MemberType);
+                }
             }
-            return IsPrimitive ? data : new ReflectionData(Type, data);
+            return IsPrimitive ? _cachedObject : new ReflectionData(Type, _cachedObject);
         }
 
         public void SetValue(object context, object value) {
@@ -106,7 +112,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
             if (declaringType == null) throw new Exception("Cannot find declaring type : " + DeclaringTypeName);
             return declaringType.GetMember(Name, MemberTypes, DefaultBindingFlags).FirstOrDefault();
         }
-
 
     }
     

@@ -103,6 +103,7 @@
               <e p="IContextual.cs" t="Include" />
               <e p="ReflexityManager.cs" t="Include" />
               <e p="SerializableInfo.cs" t="Include" />
+              <e p="SerializableInfoDictionary.cs" t="Include" />
               <e p="SimpleDataNode.cs" t="Include" />
             </e>
             <e p="MainNodes" t="Include">
@@ -149,6 +150,7 @@
             </e>
           </e>
         </e>
+        <e p="ReflectionTest.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />

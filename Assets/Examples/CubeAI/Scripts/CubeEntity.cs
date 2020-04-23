@@ -65,6 +65,7 @@ namespace Examples.CubeAI.Scripts {
         }
         
         private void OnTriggerEnter(Collider other) {
+            if (IsDead) return;
             MeshRenderer.material.color = Color.red;
             CurrentHp--;
             if (CurrentHp <= 0) {

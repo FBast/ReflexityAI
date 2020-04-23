@@ -40,11 +40,16 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             DataIteratorNode iteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
             if (iteratorNode != null) {
                 int collectionSize = iteratorNode.GetCollection().Count();
-                iteratorNode.Index = 0;
+                AIBrainGraph brainGraph = (AIBrainGraph) graph;
                 while (collectionSize > iteratorNode.Index) {
+                    //HACK-fred clear selector node from their cache
+                    foreach (DataSelectorNode selectorNode in brainGraph.GetNodes<DataSelectorNode>()) {
+                        selectorNode.SelectedSerializableInfo.ClearCache();
+                    }
                     options.Add(new AIOption(this));
                     iteratorNode.Index++;
                 }
+                iteratorNode.Index = 0;
             } else {
                 options.Add(new AIOption(this));
             }

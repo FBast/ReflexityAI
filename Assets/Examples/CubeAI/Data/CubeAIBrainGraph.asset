@@ -81,8 +81,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -6833291362059315769}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: X
         node: {fileID: 6893314922638749041}
@@ -805,30 +805,34 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-  SerializableInfos:
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CubeEntity
-    TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: CubeEntity (Field)
-    Order: 67108865
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: OthersCubeEntities
-    TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
-      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: OthersCubeEntities (Property)
-    Order: 385875969
-    IsIteratable: 1
-    IsPrimitive: 0
-    Parameters: []
+  InfoDictionary:
+    keys:
+    - CubeEntity
+    - OthersCubeEntities
+    values:
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Name: CubeEntity
+      TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      PortName: CubeEntity (Field)
+      Order: 67108872
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Name: OthersCubeEntities
+      TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: OthersCubeEntities (Property)
+      Order: 385875969
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
 --- !u!114 &-4825942336277752779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -876,30 +880,34 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-  SerializableInfos:
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CubeEntity
-    TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: CubeEntity (Field)
-    Order: 67108865
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: OthersCubeEntities
-    TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
-      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: OthersCubeEntities (Property)
-    Order: 385875969
-    IsIteratable: 1
-    IsPrimitive: 0
-    Parameters: []
+  InfoDictionary:
+    keys:
+    - CubeEntity
+    - OthersCubeEntities
+    values:
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Name: CubeEntity
+      TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      PortName: CubeEntity (Field)
+      Order: 67108872
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Name: OthersCubeEntities
+      TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: OthersCubeEntities (Property)
+      Order: 385875969
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
 --- !u!114 &-4236330640635284376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,30 +955,34 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-  SerializableInfos:
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CubeEntity
-    TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: CubeEntity (Field)
-    Order: 67108865
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: OthersCubeEntities
-    TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
-      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: OthersCubeEntities (Property)
-    Order: 385875969
-    IsIteratable: 1
-    IsPrimitive: 0
-    Parameters: []
+  InfoDictionary:
+    keys:
+    - CubeEntity
+    - OthersCubeEntities (Property)
+    values:
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Name: CubeEntity
+      TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      PortName: CubeEntity (Field)
+      Order: 67108872
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Name: OthersCubeEntities
+      TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: OthersCubeEntities (Property)
+      Order: 385875969
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
 --- !u!114 &-4208437902751415821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1301,8 +1313,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -3714755168623129051}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: MaxX
         node: {fileID: 6893314922638749041}
@@ -1567,7 +1579,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Value
       _node: {fileID: -3208752610430399498}
-      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: CubeEntity
@@ -2080,30 +2092,34 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
-  SerializableInfos:
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CubeEntity
-    TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: CubeEntity (Field)
-    Order: 67108865
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: OthersCubeEntities
-    TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
-      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: OthersCubeEntities (Property)
-    Order: 385875969
-    IsIteratable: 1
-    IsPrimitive: 0
-    Parameters: []
+  InfoDictionary:
+    keys:
+    - CubeEntity
+    - OthersCubeEntities (Property)
+    values:
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Name: CubeEntity
+      TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      PortName: CubeEntity (Field)
+      Order: 67108872
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Name: OthersCubeEntities
+      TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: OthersCubeEntities (Property)
+      Order: 385875969
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
 --- !u!114 &-2414897798371381959
 MonoBehaviour:
   m_ObjectHideFlags: 0

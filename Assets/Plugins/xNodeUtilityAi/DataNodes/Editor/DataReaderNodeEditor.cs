@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.Framework;
 using UnityEditor;
@@ -13,14 +14,14 @@ namespace Plugins.xNodeUtilityAi.DataNodes.Editor {
             if (_dataReaderNode == null) _dataReaderNode = (DataReaderNode) target;
             serializedObject.Update();
             EditorGUILayout.LabelField("Iterated Data", EditorStyles.boldLabel);
-            foreach (SerializableInfo serializableFieldInfo in _dataReaderNode.SerializableInfos
-                .Where(info => info.IsIteratable).OrderBy(info => info.Order)) {
-                NodeEditorGUILayout.PortField(_dataReaderNode.GetOutputPort(serializableFieldInfo.PortName));
+            foreach (KeyValuePair<string,SerializableInfo> valuePair in _dataReaderNode.InfoDictionary.OrderBy(pair => pair.Value.Order)) {
+                if (!valuePair.Value.IsIteratable) continue;
+                NodeEditorGUILayout.PortField(_dataReaderNode.GetOutputPort(valuePair.Value.PortName));
             }
             EditorGUILayout.LabelField("Simple Data", EditorStyles.boldLabel);
-            foreach (SerializableInfo serializableFieldInfo in _dataReaderNode.SerializableInfos
-                .Where(info => !info.IsIteratable).OrderBy(info => info.Order)) {
-                NodeEditorGUILayout.PortField(_dataReaderNode.GetOutputPort(serializableFieldInfo.PortName));
+            foreach (KeyValuePair<string,SerializableInfo> valuePair in _dataReaderNode.InfoDictionary.OrderBy(pair => pair.Value.Order)) {
+                if (valuePair.Value.IsIteratable) continue;
+                NodeEditorGUILayout.PortField(_dataReaderNode.GetOutputPort(valuePair.Value.PortName));
             }
             serializedObject.ApplyModifiedProperties();
         }

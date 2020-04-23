@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Plugins.xNodeUtilityAi.DataNodes;
 using Plugins.xNodeUtilityAi.MainNodes;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -62,8 +63,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
 //                aiOption.CalculateWeight();
 //            }
             // Fetch best options according to multi brain interaction
-            BestOptionsOnWeight(Options, BestOptions);
-            yield return null;
+            yield return BestOptionsOnWeight(Options, BestOptions);
             // Check if weight are not enough to start execution
             if (IsWeightEnoughForSelection(BestOptions)) {
                 SelectedOptions.Clear();
@@ -100,16 +100,16 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         private List<AIOption> GetOptions(AIBrainGraph aiBrainGraph) {
             List<AIOption> aiOptions = new List<AIOption>();
-//            foreach (IContextual contextual in aiBrainGraph.GetNodes<IContextual>()) {
-//                contextual.Context = this;
-//            }
+            foreach (DataSelectorNode dataSelectorNode in aiBrainGraph.GetNodes<DataSelectorNode>()) {
+                dataSelectorNode.SelectedSerializableInfo.ClearCache();
+            }
             foreach (OptionNode optionNode in aiBrainGraph.GetNodes<OptionNode>()) {
                 aiOptions.AddRange(optionNode.GetOptions());
             }
             return aiOptions;
         }
 
-        private void BestOptionsOnWeight(Dictionary<AIBrainGraph,List<AIOption>> options, Dictionary<AIBrainGraph,List<AIOption>> bestOptions) {
+        private IEnumerator BestOptionsOnWeight(Dictionary<AIBrainGraph,List<AIOption>> options, Dictionary<AIBrainGraph,List<AIOption>> bestOptions) {
             bestOptions.Clear();
             switch (MultiBrainInteraction) {
                 case InteractionType.Cooperative: {
@@ -124,7 +124,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 case InteractionType.Competitive: {
                     // Competitive then take best weight from all brain
                     int maxWeight = options.Max(pair => pair.Value.Max(option => option.Weight));
-                    if (maxWeight == 0) return;
+                    if (maxWeight == 0) yield break;
                     foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
                         List<AIOption> aiOptions = valuePair.Value.Where(option => option.Weight == maxWeight).ToList();
                         if (aiOptions.Count > 0) bestOptions.Add(valuePair.Key, aiOptions);
