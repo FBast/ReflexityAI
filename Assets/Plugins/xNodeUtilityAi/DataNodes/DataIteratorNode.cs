@@ -43,8 +43,8 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             } else {
                 Type type = Type.GetType(_typeAssemblyName);
                 if (!Application.isPlaying) 
-                    return new ReflectionData(type, null);
-                return new ReflectionData(type, GetCollection().ElementAt(Index));
+                    return new ReflectionData(type, null, true);
+                return new ReflectionData(type, GetCollection().ElementAt(Index), true);
             }
         }
         

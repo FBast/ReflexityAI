@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using Plugins.xNodeUtilityAi.Framework;
@@ -7,7 +8,7 @@ using XNode;
 
 namespace Plugins.xNodeUtilityAi.DataNodes {
     [NodeWidth(300)]
-    public class DataReaderNode : DataNode, IContextual {
+    public class DataReaderNode : DataNode, IContextual, ICacheable {
 
         public AbstractAIComponent Context { get; set; }
 
@@ -57,6 +58,13 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             throw new Exception("No reflected data found for " + port.fieldName);
         }
 
+        public void ClearCache() {
+            foreach (KeyValuePair<string,SerializableInfo> valuePair in InfoDictionary) {
+                valuePair.Value.ClearCache();
+            }
+        }
+
+        public void ClearShortCache() { }
     }
 }
 

@@ -2,25 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfoDictionary.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfoDictionary.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ReflectionTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ReflectionTest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ICacheable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ICacheable.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeAIBrainGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeAIBrainGraph.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/Editor/DataReaderNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/Editor/DataReaderNodeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataSelectorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataSelectorNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIOption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIOption.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/UtilityNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/UtilityNodeEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/UtilityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/UtilityNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ReflectionTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ReflectionTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,6 +47,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/84/bfb39ea6/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/SceneGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,13 +70,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIOption.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Prophetic-Legacy/Assets/Scripts/Utils/Extensions/GameObjectExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/5c/9ec864d9/AnimationCurve.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,9 +92,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/c5/5d58a236/Array.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemorySaveNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ICacheable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryLoadNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/50/4407dac3/Debug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryCheckNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InNodeEditorAttributeProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryClearNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,11 +103,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/MiddleNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/OrNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/InCooldownNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/IsNullNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/PatternNodes/SaveHistoricNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ReflectionTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/f4/017ce60c/Object.cs" root0="SKIP_HIGHLIGHTING" />
@@ -114,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Thumbnail.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableFieldOrProperty.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/IBackingField.cs" />
         <option value="$PROJECT_DIR$/Assets/SpriteRendererToMesh.cs" />
@@ -132,9 +132,6 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/IsEqualNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/ConverterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/IsNullNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataSelectorNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/UtilityNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/UtilityNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/FlattenerNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/FilterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/ActionSetterNode.cs" />
@@ -146,7 +143,6 @@
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting/Scripts/GameManager1.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting/Scripts/CubeSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AISequencer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIOption.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAIComponent.cs" />
@@ -154,17 +150,22 @@
         <option value="$PROJECT_DIR$/Assets/ReflexityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/IContextual.cs" />
-        <option value="$PROJECT_DIR$/Assets/ReflectionTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ICachable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/Editor/DataReaderNodeEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ICacheable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataSelectorNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIOption.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/UtilityNodeEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/UtilityNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/ReflectionTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfo.cs" />
       </list>
     </option>
   </component>
@@ -208,10 +209,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="24988">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="21536">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="24988" />
+      <option name="pid" value="21536" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -285,6 +286,8 @@
       <workItem from="1587545103962" duration="17930000" />
       <workItem from="1587642874839" duration="11170000" />
       <workItem from="1587659955582" duration="4784000" />
+      <workItem from="1587719799674" duration="16459000" />
+      <workItem from="1587738365609" duration="612000" />
     </task>
     <servers />
   </component>
@@ -316,70 +319,70 @@
     <state width="660" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1035" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
     <state width="1035" height="653" key="DebuggerActiveHint/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.0.bottom" />
+    <state width="937" height="344" key="GridCell.Tab.0.bottom" />
     <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.0.bottom/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.0.center" />
+    <state width="937" height="344" key="GridCell.Tab.0.bottom/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.0.center" />
     <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.0.center/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.0.left" />
+    <state width="937" height="344" key="GridCell.Tab.0.center/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.0.left" />
     <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.0.left/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.0.right" />
+    <state width="937" height="344" key="GridCell.Tab.0.left/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.0.right" />
     <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.0.right/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.1.bottom" />
+    <state width="937" height="344" key="GridCell.Tab.0.right/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.1.bottom" />
     <state width="1877" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.1.bottom/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.1.center" />
+    <state width="937" height="344" key="GridCell.Tab.1.bottom/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.1.center" />
     <state width="1877" height="277" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.1.center/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.1.left" />
+    <state width="937" height="344" key="GridCell.Tab.1.center/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.1.left" />
     <state width="1877" height="277" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.1.left/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.1.right" />
+    <state width="937" height="344" key="GridCell.Tab.1.left/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.1.right" />
     <state width="1877" height="277" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.1.right/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.2.bottom" />
+    <state width="937" height="344" key="GridCell.Tab.1.right/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.2.bottom" />
     <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.2.bottom/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.2.center" />
+    <state width="937" height="344" key="GridCell.Tab.2.bottom/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.2.center" />
     <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.2.center/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.2.left" />
+    <state width="937" height="344" key="GridCell.Tab.2.center/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.2.left" />
     <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.2.left/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.2.right" />
+    <state width="937" height="344" key="GridCell.Tab.2.left/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.2.right" />
     <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.2.right/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.3.bottom" />
+    <state width="937" height="344" key="GridCell.Tab.2.right/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.3.bottom" />
     <state width="1877" height="277" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.3.bottom/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.3.center" />
+    <state width="937" height="344" key="GridCell.Tab.3.bottom/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.3.center" />
     <state width="1877" height="277" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.3.center/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.3.left" />
+    <state width="937" height="344" key="GridCell.Tab.3.center/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.3.left" />
     <state width="1877" height="277" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.3.left/1920.1080/1920.1080" />
-    <state width="1892" height="348" key="GridCell.Tab.3.right" />
+    <state width="937" height="344" key="GridCell.Tab.3.left/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.3.right" />
     <state width="1877" height="277" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state width="1877" height="277" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1892" height="348" key="GridCell.Tab.3.right/1920.1080/1920.1080" />
+    <state width="937" height="344" key="GridCell.Tab.3.right/1920.1080/1920.1080" />
     <state x="-762" y="215" key="RiderGenerateDialog" />
     <state x="-1157" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
     <state x="763" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
@@ -409,32 +412,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs</url>
-          <line>58</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" initialLine="58">
-            <startOffsets>
-              <option value="2653" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2671" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs</url>
-          <line>67</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" initialLine="65">
-            <startOffsets>
-              <option value="2959" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3014" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs</url>
           <line>43</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" initialLine="43">
@@ -452,13 +429,26 @@
           <line>51</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" initialLine="51">
             <startOffsets>
-              <option value="2180" />
+              <option value="2192" />
             </startOffsets>
             <endOffsets>
-              <option value="2256" />
+              <option value="2268" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs</url>
+          <line>57</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" initialLine="57">
+            <startOffsets>
+              <option value="3101" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3170" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

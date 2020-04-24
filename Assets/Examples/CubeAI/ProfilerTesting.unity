@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 174573832}
   - component: {fileID: 174573830}
   - component: {fileID: 174573831}
-  - component: {fileID: 174573833}
   m_Layer: 0
   m_Name: Management
   m_TagString: Untagged
@@ -184,8 +183,8 @@ MonoBehaviour:
   ResolutionType: 1
   CubePrefab: {fileID: 1656194801054802153, guid: 4faa13a356f88b14683061027ce23697,
     type: 3}
-  XNumber: 5
-  ZNumber: 5
+  XNumber: 10
+  ZNumber: 10
   Gap: 3
 --- !u!114 &174573831
 MonoBehaviour:
@@ -212,22 +211,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeResolution: 0
---- !u!114 &174573833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174573827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c432a8da2b7d2aa4eaf3287e8eef5521, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FromData:
-    Value: 10
-  ToData:
-    Value: 0
 --- !u!1 &546241671
 GameObject:
   m_ObjectHideFlags: 0

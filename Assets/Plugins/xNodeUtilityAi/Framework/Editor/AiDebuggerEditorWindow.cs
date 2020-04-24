@@ -55,17 +55,17 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
                 EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "Please select a GameObject with an AbstractAIBrain derived Component", labelGuiStyle);
             } else if (!_abstractAiComponent.enabled) {
                 EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "It seems that the last selected AbstractAIBrain is sleeping, please select another", labelGuiStyle);
-            } else if (_abstractAiComponent.Options.Count == 0) {
+            } else if (_abstractAiComponent.WeightedOptions.Count == 0) {
                 EditorGUI.LabelField(new Rect(0, 0, position.width, position.height), "No options found for " + _currentGameObject.name, labelGuiStyle);
             }
             else {
                 // Display options
-                int columnNumber = _abstractAiComponent.Options.Count;
+                int columnNumber = _abstractAiComponent.WeightedOptions.Count;
                 float columnWidth = (position.width - 12) / columnNumber;
                 float rowHeight = 20;
                 int i = 0;
                 EditorGUI.LabelField(new Rect(3, 3, position.width - 6, rowHeight), "Brain of " + _currentGameObject.name, labelGuiStyle);
-                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in _abstractAiComponent.Options) {
+                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in _abstractAiComponent.WeightedOptions) {
                     float weightMax = valuePair.Value.Max(option => option.Weight);
                     float weightMin = valuePair.Value.Min(option => option.Weight);
                     EditorGUI.LabelField(new Rect(3 + i * (columnWidth + 6), 3 + rowHeight, columnWidth, rowHeight), valuePair.Key.name, labelGuiStyle);

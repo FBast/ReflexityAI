@@ -6,7 +6,7 @@ using XNode;
 using Object = UnityEngine.Object;
 
 namespace Plugins.xNodeUtilityAi.DataNodes {
-    public class DataSelectorNode : DataNode {
+    public class DataSelectorNode : DataNode, ICacheable {
         
         [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Output;
@@ -21,10 +21,10 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
                 SerializableInfos.AddRange(reflectionData.Type
                     .GetFields(SerializableInfo.DefaultBindingFlags)
-                    .Select(info => new SerializableInfo(info)));
+                    .Select(info => new SerializableInfo(info, reflectionData.FromIteration)));
                 SerializableInfos.AddRange(reflectionData.Type
                     .GetProperties(SerializableInfo.DefaultBindingFlags)
-                    .Select(info => new SerializableInfo(info)));
+                    .Select(info => new SerializableInfo(info, reflectionData.FromIteration)));
             }
         }
         
@@ -45,5 +45,12 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             return null;
         }
 
+        public void ClearCache() {
+            SelectedSerializableInfo.ClearCache();
+        }
+
+        public void ClearShortCache() {
+            if (SelectedSerializableInfo.IsShortCache) SelectedSerializableInfo.ClearCache();
+        }
     }
 }

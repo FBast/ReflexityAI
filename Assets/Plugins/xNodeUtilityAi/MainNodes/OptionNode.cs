@@ -18,18 +18,17 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
 
         [Input(ShowBackingValue.Never, ConnectionType.Override), Tooltip("Connect to the Data Iterator Node")]
         public DataIteratorNode DataIteratorNode;
-        [TextArea, Tooltip("Provide a basic description displayed in the AI Debugger")]
-        public string Description;
+        [TextArea, Tooltip("Provide a basic description displayed in the AI Debugger")] public string Description;
         
-        [Header("Rank")] [Input, Tooltip("Connect to each Utility Nodes")]
-        public float Utilities = 1;
+        [Header("Ranking")] 
+        [Input, Tooltip("Connect to each Utility Nodes")] public int Ranks;
         [Tooltip("Average : The rank is calculated using the average of all Utilities\n"
                  + "Max : The rank is calculated using the maximum value of all Utilities\n"
                  + "Min : The rank is calculated using the minimum value of all Utilities")]
-        public MergeType UtilityMerge;
+        public MergeType Merge = MergeType.Max;
         
-        [Header("Weight")] [Input, Tooltip("Product of the multiplier")]
-        [Range(0, 10)] public int Multiplier = 1;
+        [Header("Weighting")] 
+        [Input, Tooltip("Product of the multiplier"), Range(0, 10)] public int Multiplier = 1;
         [Input, Tooltip("Sum of the bonus"), Range(0, 10)] public int Bonus;
         
         [Space] [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")]
@@ -42,12 +41,11 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
                 int collectionSize = iteratorNode.GetCollection().Count();
                 AIBrainGraph brainGraph = (AIBrainGraph) graph;
                 while (collectionSize > iteratorNode.Index) {
-                    //HACK-fred clear selector node from their cache
-                    foreach (DataSelectorNode selectorNode in brainGraph.GetNodes<DataSelectorNode>()) {
-                        selectorNode.SelectedSerializableInfo.ClearCache();
-                    }
                     options.Add(new AIOption(this));
                     iteratorNode.Index++;
+                    foreach (ICacheable cacheable in brainGraph.GetNodes<ICacheable>()) {
+                        cacheable.ClearCache();
+                    }
                 }
                 iteratorNode.Index = 0;
             } else {
@@ -57,28 +55,21 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
         }
 
         public float GetRank() {
-            NodePort utilityPort = GetInputPort(nameof(Utilities));
-            float utility;
+            NodePort utilityPort = GetInputPort(nameof(Ranks));
             if (utilityPort.IsConnected) {
                 float[] floats = utilityPort.GetInputValues<float>();
-                switch (UtilityMerge) {
+                switch (Merge) {
                     case MergeType.Average:
-                        utility = floats.Average();
-                        break;
+                        return floats.Average();
                     case MergeType.Max:
-                        utility = Mathf.Max(floats);
-                        break;
+                        return Mathf.Max(floats);
                     case MergeType.Min:
-                        utility = Mathf.Min(floats);
-                        break;
+                        return Mathf.Min(floats);
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
-            } else {
-                utility = Utilities;
             }
-            // Utility clamped between 0 and 1
-            return Mathf.Clamp(utility, 0f, 1f);
+            return Ranks;
         }
 
         public int GetWeight() {
@@ -90,6 +81,10 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
                 : Multiplier;
             if (bonus == 0) bonus = 1;
             return bonus * multiplier;
+        }
+
+        public ActionNode[] GetActions() {
+            return GetInputPort(nameof(Actions)).GetInputValues<ActionNode>();
         }
 
     }

@@ -100,6 +100,7 @@
                 <e p="AiDebuggerEditorWindow.cs" t="Include" />
               </e>
               <e p="EntryNode.cs" t="Include" />
+              <e p="ICacheable.cs" t="Include" />
               <e p="IContextual.cs" t="Include" />
               <e p="ReflexityManager.cs" t="Include" />
               <e p="SerializableInfo.cs" t="Include" />
@@ -150,7 +151,6 @@
             </e>
           </e>
         </e>
-        <e p="ReflectionTest.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />

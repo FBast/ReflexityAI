@@ -81,8 +81,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -6833291362059315769}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: X
         node: {fileID: 6893314922638749041}
@@ -807,8 +807,8 @@ MonoBehaviour:
       _dynamic: 1
   InfoDictionary:
     keys:
-    - CubeEntity
-    - OthersCubeEntities
+    - CubeEntity (Field)
+    - OthersCubeEntities (Property)
     values:
     - MemberTypes: 4
       DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
@@ -882,8 +882,8 @@ MonoBehaviour:
       _dynamic: 1
   InfoDictionary:
     keys:
-    - CubeEntity
-    - OthersCubeEntities
+    - CubeEntity (Field)
+    - OthersCubeEntities (Property)
     values:
     - MemberTypes: 4
       DeclaringTypeName: Examples.CubeAI.Scripts.CubeAIComponent, Assembly-CSharp,
@@ -957,7 +957,7 @@ MonoBehaviour:
       _dynamic: 1
   InfoDictionary:
     keys:
-    - CubeEntity
+    - CubeEntity (Field)
     - OthersCubeEntities (Property)
     values:
     - MemberTypes: 4
@@ -1107,19 +1107,22 @@ MonoBehaviour:
   m_Name: Utility
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -56, y: -2088}
+  position: {x: -56, y: -2168}
   ports:
     keys:
-    - MinX
-    - X
     - MaxX
-    - UtilityY
+    - X
+    - MinX
+    - Rank
     values:
-    - _fieldName: MinX
+    - _fieldName: MaxX
       _node: {fileID: -4014114861178798701}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: Output
+        node: {fileID: 6473392806437833924}
+        reroutePoints: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -1136,58 +1139,81 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: MaxX
+    - _fieldName: MinX
       _node: {fileID: -4014114861178798701}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: 6473392806437833924}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: UtilityY
+    - _fieldName: Rank
       _node: {fileID: -4014114861178798701}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Utilities
+      - fieldName: Ranks
         node: {fileID: -3891943619949678654}
         reroutePoints: []
       _direction: 1
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-  MinX: 0
+  MinX: -5
   X: 0
-  MaxX: 0
+  MaxX: 1
   Function:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
-      inSlope: -612.4768
-      outSlope: -612.4768
-      tangentMode: 0
-      weightedMode: 2
-      inWeight: 0.33333334
-      outWeight: 0.001305483
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: -616.5052
-      outSlope: -616.5052
-      tangentMode: 0
-      weightedMode: 1
-      inWeight: 0.0013054609
-      outWeight: 0.33333334
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0
+  ScaledFunction:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -5
+      value: -5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  MinY: -5
+  MaxY: 5
+  Rank: 0
 --- !u!114 &-3891943619949678654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,7 +1231,7 @@ MonoBehaviour:
   ports:
     keys:
     - DataIteratorNode
-    - Utilities
+    - Ranks
     - Multiplier
     - Bonus
     - Actions
@@ -1222,12 +1248,12 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Utilities
+    - _fieldName: Ranks
       _node: {fileID: -3891943619949678654}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: UtilityY
+      - fieldName: Rank
         node: {fileID: -4014114861178798701}
         reroutePoints: []
       _direction: 0
@@ -1275,8 +1301,8 @@ MonoBehaviour:
       _dynamic: 0
   DataIteratorNode: {fileID: 3223070083157103605}
   Description: Target
-  Utilities: 1
-  UtilityMerge: 1
+  Ranks: 0
+  Merge: 1
   Multiplier: 1
   Bonus: 0
   Actions: {fileID: 0}
@@ -1313,8 +1339,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -3714755168623129051}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: MaxX
         node: {fileID: 6893314922638749041}
@@ -1579,7 +1605,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Value
       _node: {fileID: -3208752610430399498}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: CubeEntity
@@ -1976,7 +2002,7 @@ MonoBehaviour:
   ports:
     keys:
     - DataIteratorNode
-    - Utilities
+    - Ranks
     - Multiplier
     - Bonus
     - Actions
@@ -1990,12 +2016,12 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Utilities
+    - _fieldName: Ranks
       _node: {fileID: -2668276044570135347}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: UtilityY
+      - fieldName: Rank
         node: {fileID: -716809471401737524}
         reroutePoints: []
       _direction: 0
@@ -2037,10 +2063,10 @@ MonoBehaviour:
       _dynamic: 0
   DataIteratorNode: {fileID: 0}
   Description: Fire
-  Utilities: 1
-  UtilityMerge: 1
+  Ranks: 0
+  Merge: 1
   Multiplier: 1
-  Bonus: 1
+  Bonus: 0
   Actions: {fileID: 0}
 --- !u!114 &-2572141145516914143
 MonoBehaviour:
@@ -2094,7 +2120,7 @@ MonoBehaviour:
       _dynamic: 1
   InfoDictionary:
     keys:
-    - CubeEntity
+    - CubeEntity (Field)
     - OthersCubeEntities (Property)
     values:
     - MemberTypes: 4
@@ -2184,16 +2210,19 @@ MonoBehaviour:
   position: {x: -56, y: -680}
   ports:
     keys:
-    - MinX
-    - X
     - MaxX
-    - UtilityY
+    - X
+    - MinX
+    - Rank
     values:
-    - _fieldName: MinX
+    - _fieldName: MaxX
       _node: {fileID: -2085150136128595175}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: Output
+        node: {fileID: -5325723765503951077}
+        reroutePoints: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -2210,24 +2239,21 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: MaxX
+    - _fieldName: MinX
       _node: {fileID: -2085150136128595175}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: -5325723765503951077}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: UtilityY
+    - _fieldName: Rank
       _node: {fileID: -2085150136128595175}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Utilities
+      - fieldName: Ranks
         node: {fileID: 6706139405866864021}
         reroutePoints: []
       _direction: 1
@@ -2261,7 +2287,15 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0
+  ScaledFunction:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  MinY: -5
+  MaxY: 5
+  Rank: 0
 --- !u!114 &-716809471401737524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2278,16 +2312,19 @@ MonoBehaviour:
   position: {x: -56, y: -1320}
   ports:
     keys:
-    - MinX
-    - X
     - MaxX
-    - UtilityY
+    - X
+    - MinX
+    - Rank
     values:
-    - _fieldName: MinX
+    - _fieldName: MaxX
       _node: {fileID: -716809471401737524}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: Output
+        node: {fileID: 7230447121049487469}
+        reroutePoints: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -2304,24 +2341,21 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: MaxX
+    - _fieldName: MinX
       _node: {fileID: -716809471401737524}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: 7230447121049487469}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: UtilityY
+    - _fieldName: Rank
       _node: {fileID: -716809471401737524}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Utilities
+      - fieldName: Ranks
         node: {fileID: -2668276044570135347}
         reroutePoints: []
       _direction: 1
@@ -2337,8 +2371,8 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 1
+      inSlope: 2
+      outSlope: 2
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
@@ -2346,7 +2380,7 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
+      inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
@@ -2355,7 +2389,33 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0
+  ScaledFunction:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: -5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0
+      value: 5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  MinY: -5
+  MaxY: 5
+  Rank: 0
 --- !u!114 &-457746054194869726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3277,7 +3337,7 @@ MonoBehaviour:
   ports:
     keys:
     - DataIteratorNode
-    - Utilities
+    - Ranks
     - Multiplier
     - Bonus
     - Actions
@@ -3291,12 +3351,12 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Utilities
+    - _fieldName: Ranks
       _node: {fileID: 5941815786400144038}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: UtilityY
+      - fieldName: Rank
         node: {fileID: 6893314922638749041}
         reroutePoints: []
       _direction: 0
@@ -3335,8 +3395,8 @@ MonoBehaviour:
       _dynamic: 0
   DataIteratorNode: {fileID: 0}
   Description: Heal
-  Utilities: 1
-  UtilityMerge: 1
+  Ranks: 0
+  Merge: 1
   Multiplier: 1
   Bonus: 0
   Actions: {fileID: 0}
@@ -3609,7 +3669,7 @@ MonoBehaviour:
   ports:
     keys:
     - DataIteratorNode
-    - Utilities
+    - Ranks
     - Multiplier
     - Bonus
     - Actions
@@ -3623,12 +3683,12 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: Utilities
+    - _fieldName: Ranks
       _node: {fileID: 6706139405866864021}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: UtilityY
+      - fieldName: Rank
         node: {fileID: -2085150136128595175}
         reroutePoints: []
       _direction: 0
@@ -3667,8 +3727,8 @@ MonoBehaviour:
       _dynamic: 0
   DataIteratorNode: {fileID: 0}
   Description: Reload
-  Utilities: 1
-  UtilityMerge: 1
+  Ranks: 0
+  Merge: 1
   Multiplier: 1
   Bonus: 0
   Actions: {fileID: 0}
@@ -3735,16 +3795,19 @@ MonoBehaviour:
   position: {x: -56, y: -184}
   ports:
     keys:
-    - MinX
-    - X
     - MaxX
-    - UtilityY
+    - X
+    - MinX
+    - Rank
     values:
-    - _fieldName: MinX
+    - _fieldName: MaxX
       _node: {fileID: 6893314922638749041}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: Output
+        node: {fileID: -3714755168623129051}
+        reroutePoints: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -3761,24 +3824,21 @@ MonoBehaviour:
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: MaxX
+    - _fieldName: MinX
       _node: {fileID: 6893314922638749041}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: -3714755168623129051}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
-    - _fieldName: UtilityY
+    - _fieldName: Rank
       _node: {fileID: 6893314922638749041}
-      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Utilities
+      - fieldName: Ranks
         node: {fileID: 5941815786400144038}
         reroutePoints: []
       _direction: 1
@@ -3812,7 +3872,15 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UtilityY: 0
+  ScaledFunction:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  MinY: -5
+  MaxY: 5
+  Rank: 0
 --- !u!114 &7230447121049487469
 MonoBehaviour:
   m_ObjectHideFlags: 0

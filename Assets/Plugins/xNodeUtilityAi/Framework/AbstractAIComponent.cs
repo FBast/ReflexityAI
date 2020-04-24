@@ -20,8 +20,8 @@ namespace Plugins.xNodeUtilityAi.Framework {
         [Tooltip("Cooperative : One option by brain is executed\n" +
                  "Competitive : One option for all brain is executed")]
         public InteractionType MultiBrainInteraction;
-        public readonly Dictionary<AIBrainGraph, List<AIOption>> Options = new Dictionary<AIBrainGraph, List<AIOption>>();
-        public readonly Dictionary<AIBrainGraph, List<AIOption>> BestOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
+        public readonly Dictionary<AIBrainGraph, List<AIOption>> WeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
+        public readonly Dictionary<AIBrainGraph, List<AIOption>> BestWeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
 
         public List<AIBrainGraph> LocalAIBrains;
@@ -52,22 +52,18 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
         public IEnumerator ThinkAndAct() {
-            Options.Clear();
+            WeightedOptions.Clear();
             foreach (AIBrainGraph aiBrainGraph in LocalAIBrains.Where(aiBrainGraph => aiBrainGraph != null)) {
-                // Get all options from all brains
-                Options.Add(aiBrainGraph, GetOptions(aiBrainGraph));
+                // Get all options from all brains and calculate Weights
+                WeightedOptions.Add(aiBrainGraph, GetOptions(aiBrainGraph));
                 yield return null;
             }
-//            // Calculate options weight
-//            foreach (AIOption aiOption in Options.SelectMany(pair => pair.Value)) {
-//                aiOption.CalculateWeight();
-//            }
             // Fetch best options according to multi brain interaction
-            yield return BestOptionsOnWeight(Options, BestOptions);
+            yield return BestOptionsOnWeight(WeightedOptions, BestWeightedOptions);
             // Check if weight are not enough to start execution
-            if (IsWeightEnoughForSelection(BestOptions)) {
+            if (IsWeightEnoughForSelection(BestWeightedOptions)) {
                 SelectedOptions.Clear();
-                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in Options) {
+                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in WeightedOptions) {
                     foreach (AIOption aiOption in valuePair.Value) {
                         SelectedOptions.Add(valuePair.Key, aiOption);
                     }
@@ -75,20 +71,21 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
             // Else calculate options rank
             else {
-//                // Calculate options rank
-//                foreach (AIOption aiOption in BestOptions.SelectMany(pair => pair.Value)) {
-//                    aiOption.CalculateRank();
-//                }
-                // Remove zero from ranks
-                foreach (AIOption option in BestOptions.SelectMany(valuePair => valuePair.Value.Where(option => option.Rank <= 0))) {
-                    option.Rank = 0.0001f;
+                // Calculate options rank
+                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in BestWeightedOptions) {
+                    foreach (AIOption aiOption in valuePair.Value) {
+                        foreach (ICacheable cacheable in valuePair.Key.GetNodes<ICacheable>()) {
+                            cacheable.ClearShortCache();
+                        }
+                        aiOption.CalculateRank();
+                    }
                 }
                 // Fetch selected options according to multi brain interaction and options resolution
-                SelectOptionsOnRank(BestOptions, SelectedOptions);
+                SelectOptionsOnRank(BestWeightedOptions, SelectedOptions);
             }
             // Order options for display
-            foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in Options.ToList()) {
-                Options[valuePair.Key] = valuePair.Value
+            foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in WeightedOptions.ToList()) {
+                WeightedOptions[valuePair.Key] = valuePair.Value
                     .OrderByDescending(option => option.Weight)
                     .ThenByDescending(option => option.Rank).ToList();
             }
@@ -100,8 +97,8 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         private List<AIOption> GetOptions(AIBrainGraph aiBrainGraph) {
             List<AIOption> aiOptions = new List<AIOption>();
-            foreach (DataSelectorNode dataSelectorNode in aiBrainGraph.GetNodes<DataSelectorNode>()) {
-                dataSelectorNode.SelectedSerializableInfo.ClearCache();
+            foreach (ICacheable cacheable in aiBrainGraph.GetNodes<ICacheable>()) {
+                cacheable.ClearCache();
             }
             foreach (OptionNode optionNode in aiBrainGraph.GetNodes<OptionNode>()) {
                 aiOptions.AddRange(optionNode.GetOptions());
@@ -246,5 +243,4 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
     }
-
 }

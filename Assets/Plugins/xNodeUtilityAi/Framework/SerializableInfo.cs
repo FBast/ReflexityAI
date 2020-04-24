@@ -18,12 +18,13 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public bool IsIteratable;
         public bool IsPrimitive;
         public List<Parameter> Parameters = new List<Parameter>();
+        public readonly bool IsShortCache;
+        
+        public Type Type => Type.GetType(TypeName);
         
         private object _cachedObject;
-
-        public Type Type => Type.GetType(TypeName);
-
-        public SerializableInfo(FieldInfo fieldInfo) {
+        
+        public SerializableInfo(FieldInfo fieldInfo, bool isShortCache = false) {
             MemberTypes = fieldInfo.MemberType;
             DeclaringTypeName = fieldInfo.DeclaringType?.AssemblyQualifiedName;
             Name = fieldInfo.Name;
@@ -35,9 +36,10 @@ namespace Plugins.xNodeUtilityAi.Framework {
             if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>)) {
                 IsIteratable = true;
             }
+            IsShortCache = isShortCache;
         }
         
-        public SerializableInfo(PropertyInfo propertyInfo) {
+        public SerializableInfo(PropertyInfo propertyInfo, bool isShortCache = false) {
             MemberTypes = propertyInfo.MemberType;
             DeclaringTypeName = propertyInfo.DeclaringType?.AssemblyQualifiedName;
             Name = propertyInfo.Name;
@@ -49,9 +51,10 @@ namespace Plugins.xNodeUtilityAi.Framework {
             if (propertyType.IsGenericType && propertyType.GetGenericTypeDefinition() == typeof(List<>)) {
                 IsIteratable = true;
             }
+            IsShortCache = isShortCache;
         }
         
-        public SerializableInfo(MethodInfo methodInfo) {
+        public SerializableInfo(MethodInfo methodInfo, bool isShortCache = false) {
             MemberTypes = methodInfo.MemberType;
             DeclaringTypeName = methodInfo.DeclaringType?.AssemblyQualifiedName;
             Name = methodInfo.Name;
@@ -62,12 +65,13 @@ namespace Plugins.xNodeUtilityAi.Framework {
             foreach (ParameterInfo parameterInfo in methodInfo.GetParameters()) {
                 Parameters.Add(new Parameter(parameterInfo.Name, parameterInfo.ParameterType.AssemblyQualifiedName));
             }
+            IsShortCache = isShortCache;
         }
 
         public void ClearCache() {
             _cachedObject = null;
         }
-        
+
         public object GetEditorValue() {
             return IsPrimitive ? (object) null : new ReflectionData(Type, null);
         }
@@ -132,10 +136,12 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         public Type Type;
         public object Content;
-
-        public ReflectionData(Type type, object content) {
+        public bool FromIteration;
+        
+        public ReflectionData(Type type, object content, bool fromIteration = false) {
             Type = type;
             Content = content;
+            FromIteration = fromIteration;
         }
 
     }
