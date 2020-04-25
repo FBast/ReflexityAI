@@ -72,7 +72,7 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
                 if (!Application.isPlaying || port.IsInput) return tooltip;
                 object obj = port.node.GetValue(port);
                 if (obj is ReflectionData reflectionData)
-                    tooltip += " = " + (reflectionData.Content ?? "null");
+                    tooltip += " = " + (reflectionData.Value ?? "null");
                 else
                     tooltip += " = " + (obj != null ? obj.ToString() : "null");
                 return tooltip;

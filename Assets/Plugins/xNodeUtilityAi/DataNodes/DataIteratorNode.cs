@@ -7,32 +7,53 @@ using XNode;
 using Object = UnityEngine.Object;
 
 namespace Plugins.xNodeUtilityAi.DataNodes {
-    public class DataIteratorNode : DataNode {
+    public class DataIteratorNode : DataNode, ICacheable {
 
-        [Input(ShowBackingValue.Never, ConnectionType.Override)] public List<Object> List;
+        [Input(ShowBackingValue.Never, ConnectionType.Override)] public List<Object> Enumerable;
         [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public DataIteratorNode LinkedOption;
 
         public int Index { get; set; }
+
+        public Type _argumentType;
+        public Type ArgumentType {
+            get {
+                if (_argumentType == null)
+                    _argumentType = Type.GetType(_typeArgumentName);
+                return _argumentType;
+            }
+        }
+
+        public object _cachedCurrentValue;
+        public object CurrentValue {
+            get {
+                if (_cachedCurrentValue == null) {
+                    _cachedCurrentValue = GetCollection().ElementAt(Index);
+                }
+                return _cachedCurrentValue;
+            }
+        }
         
-        [SerializeField, HideInInspector] private string _typeAssemblyName;
+        public int CollectionCount => GetCollection().Count();
+
+        [SerializeField, HideInInspector] private string _typeArgumentName;
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
             base.OnCreateConnection(from, to);
-            if (to.fieldName == nameof(List) && to.node == this) {
-                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(List));
-                if (reflectionData.Type.IsGenericType && reflectionData.Type.GetGenericTypeDefinition() == typeof(List<>)) {
+            if (to.fieldName == nameof(Enumerable) && to.node == this) {
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Enumerable));
+                if (reflectionData.Type.IsGenericType && reflectionData.Type.GetGenericTypeDefinition().GetInterface(typeof(IEnumerable<>).FullName) != null) {
                     Type type = reflectionData.Type.GetGenericArguments()[0];
-                    _typeAssemblyName = type.AssemblyQualifiedName;
+                    _typeArgumentName = type.AssemblyQualifiedName;
                     AddDynamicOutput(type, ConnectionType.Multiple, TypeConstraint.Inherited, type.Name);
                 } else {
-                    Debug.LogError("DataList can only take List");
+                    Debug.LogError("Enumerable need to be a generic type (List or Array for example)");
                 }
             }
         }
         
         public override void OnRemoveConnection(NodePort port) {
             base.OnRemoveConnection(port);
-            if (port.fieldName == nameof(List) && port.node == this) {
+            if (port.fieldName == nameof(Enumerable) && port.node == this) {
                 ClearDynamicPorts();
             }
         }
@@ -41,17 +62,24 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             if (port.fieldName == nameof(LinkedOption)) {
                 return this;
             } else {
-                Type type = Type.GetType(_typeAssemblyName);
                 if (!Application.isPlaying) 
-                    return new ReflectionData(type, null, true);
-                return new ReflectionData(type, GetCollection().ElementAt(Index), true);
+                    return new ReflectionData(ArgumentType, null, true);
+                return new ReflectionData(ArgumentType, CurrentValue, true);
             }
         }
         
-        public IEnumerable<object> GetCollection() {
-            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(List));
-            return (IEnumerable<object>) reflectionData.Content;
+        private IEnumerable<object> GetCollection() {
+            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Enumerable));
+            return (IEnumerable<object>) reflectionData.Value;
         }
 
+        public void ClearCache() {
+            _cachedCurrentValue = null;
+        }
+
+        public void ClearShortCache() {
+            _cachedCurrentValue = null;
+        }
+        
     }
 }

@@ -34,11 +34,11 @@ namespace Plugins.xNodeUtilityAi.ActionNodes {
         }
 
         public override object GetContext() {
-            return GetInputValue<ReflectionData>(nameof(Data)).Content;
+            return GetInputValue<ReflectionData>(nameof(Data)).Value;
         }
 
         public override object[] GetParameters() {
-            return new[] {GetInputValue<ReflectionData>(nameof(Value)).Content};
+            return new[] {GetInputValue<ReflectionData>(nameof(Value)).Value};
         }
 
         public override void Execute(object context, object[] parameters) {

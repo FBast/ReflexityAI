@@ -39,7 +39,7 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
             if (port.fieldName == nameof(Output)) {
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
                 return Application.isPlaying
-                    ? SelectedSerializableInfo.GetRuntimeValue(reflectionData.Content)
+                    ? SelectedSerializableInfo.GetRuntimeValue(reflectionData.Value)
                     : SelectedSerializableInfo.GetEditorValue();
             }
             return null;

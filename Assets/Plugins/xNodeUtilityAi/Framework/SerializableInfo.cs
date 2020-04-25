@@ -20,9 +20,28 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public List<Parameter> Parameters = new List<Parameter>();
         public readonly bool IsShortCache;
         
-        public Type Type => Type.GetType(TypeName);
+        private Type _cachedType;
+        public Type Type {
+            get {
+                if (_cachedType == null)
+                    _cachedType = Type.GetType(TypeName);
+                return _cachedType;
+            }
+        }
+
+        private MemberInfo _cachedMemberInfo;
+        public MemberInfo MemberInfo {
+            get {
+                if (_cachedMemberInfo == null) {
+                    Type declaringType = Type.GetType(DeclaringTypeName);
+                    if (declaringType == null) throw new Exception("Cannot find declaring type : " + DeclaringTypeName);
+                    _cachedMemberInfo = declaringType.GetMember(Name, MemberTypes, DefaultBindingFlags).FirstOrDefault();
+                }
+                return _cachedMemberInfo;
+            }
+        }
         
-        private object _cachedObject;
+        private object _cachedValue;
         
         public SerializableInfo(FieldInfo fieldInfo, bool isShortCache = false) {
             MemberTypes = fieldInfo.MemberType;
@@ -33,7 +52,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             PortName = fieldInfo.Name + " (" + fieldInfo.MemberType + ")";
             Order = fieldInfo.MetadataToken;
             IsPrimitive = fieldType.IsPrimitive;
-            if (fieldType.IsGenericType && fieldType.GetGenericTypeDefinition() == typeof(List<>)) {
+            if (fieldType.IsGenericType && fieldType.GetInterface(typeof(IEnumerable<>).FullName) != null) {
                 IsIteratable = true;
             }
             IsShortCache = isShortCache;
@@ -48,7 +67,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             PortName = propertyInfo.Name + " (" + propertyInfo.MemberType + ")";
             Order = propertyInfo.MetadataToken;
             IsPrimitive = propertyType.IsPrimitive;
-            if (propertyType.IsGenericType && propertyType.GetGenericTypeDefinition() == typeof(List<>)) {
+            if (propertyType.IsGenericType && propertyType.GetInterface(typeof(IEnumerable<>).FullName) != null) {
                 IsIteratable = true;
             }
             IsShortCache = isShortCache;
@@ -69,7 +88,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
 
         public void ClearCache() {
-            _cachedObject = null;
+            _cachedValue = null;
         }
 
         public object GetEditorValue() {
@@ -78,43 +97,42 @@ namespace Plugins.xNodeUtilityAi.Framework {
         
         public object GetRuntimeValue(object context) {
             if (context == null) return GetEditorValue();
-            if (_cachedObject == null) {
-                MemberInfo memberInfo = GetMemberInfo();
-                switch (memberInfo) {
-                    case FieldInfo fieldInfo:
-                        _cachedObject = fieldInfo.GetValue(context);
-                        break;
-                    case PropertyInfo propertyInfo:
-                        _cachedObject = propertyInfo.GetValue(context);
-                        break;
-                    default:
-                        throw new Exception("GetValue only available for FieldInfo or PropertyInfo, not " + memberInfo.MemberType);
-                }
-            }
-            return IsPrimitive ? _cachedObject : new ReflectionData(Type, _cachedObject);
+            if (_cachedValue == null) _cachedValue = GetValue(context);
+            return IsPrimitive ? _cachedValue : new ReflectionData(Type, _cachedValue);
         }
 
         public void SetValue(object context, object value) {
-            FieldInfo fieldInfo = (FieldInfo) GetMemberInfo();
-            if (fieldInfo != null) {
-                fieldInfo.SetValue(context, value);
-            } else {
-                PropertyInfo propertyInfo = (PropertyInfo) GetMemberInfo();
-                if (propertyInfo != null) {
+            switch (MemberInfo) {
+                case FieldInfo fieldInfo:
+                    fieldInfo.SetValue(context, value);
+                    break;
+                case PropertyInfo propertyInfo:
                     propertyInfo.SetValue(context, value);
-                }
+                    break;
+                default:
+                    throw new Exception("SetValue only available for fieldInfo or propertyInfo, not " + MemberInfo.MemberType);
             }
         }
         
         public void Invoke(object context, object[] parameters) {
-            MethodInfo methodInfo = (MethodInfo) GetMemberInfo();
-            methodInfo.Invoke(context, parameters);
+            switch (MemberInfo) {
+                case MethodInfo methodInfo:
+                    methodInfo.Invoke(context, parameters);
+                    break;
+                default:
+                    throw new Exception("Invoke only available for methodInfo");
+            }
         }
         
-        private MemberInfo GetMemberInfo() {
-            Type declaringType = Type.GetType(DeclaringTypeName);
-            if (declaringType == null) throw new Exception("Cannot find declaring type : " + DeclaringTypeName);
-            return declaringType.GetMember(Name, MemberTypes, DefaultBindingFlags).FirstOrDefault();
+        private object GetValue(object context) {
+            switch (MemberInfo) {
+                case FieldInfo fieldInfo:
+                    return fieldInfo.GetValue(context);
+                case PropertyInfo propertyInfo:
+                    return propertyInfo.GetValue(context);
+                default:
+                    throw new Exception("GetValue only available for FieldInfo or PropertyInfo, not " + MemberInfo.MemberType);
+            }
         }
 
     }
@@ -135,12 +153,12 @@ namespace Plugins.xNodeUtilityAi.Framework {
     public struct ReflectionData {
 
         public Type Type;
-        public object Content;
+        public object Value;
         public bool FromIteration;
         
-        public ReflectionData(Type type, object content, bool fromIteration = false) {
+        public ReflectionData(Type type, object value, bool fromIteration = false) {
             Type = type;
-            Content = content;
+            Value = value;
             FromIteration = fromIteration;
         }
 

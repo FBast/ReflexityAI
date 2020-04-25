@@ -30,14 +30,14 @@ namespace Plugins.xNodeUtilityAi.ActionNodes {
         }
 
         public override object GetContext() {
-            return GetInputValue<ReflectionData>(nameof(Data)).Content;
+            return GetInputValue<ReflectionData>(nameof(Data)).Value;
         }
         
         public override object[] GetParameters() {
             object[] parameters = null;
             if (SelectedSerializableInfo.Parameters.Count > 0) {
                 parameters = SelectedSerializableInfo.Parameters
-                    .Select(parameter => GetInputValue<ReflectionData>(nameof(parameter.Name)).Content)
+                    .Select(parameter => GetInputValue<ReflectionData>(nameof(parameter.Name)).Value)
                     .ToArray();
             }
             return parameters;

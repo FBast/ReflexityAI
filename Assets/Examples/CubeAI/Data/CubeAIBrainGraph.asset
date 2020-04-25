@@ -81,8 +81,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -6833291362059315769}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: X
         node: {fileID: 6893314922638749041}
@@ -286,8 +286,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -6266098795037635933}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: ValuesIn
         node: {fileID: -3538196866417272066}
@@ -583,8 +583,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -5325723765503951077}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: MaxX
         node: {fileID: -2085150136128595175}
@@ -798,7 +798,7 @@ MonoBehaviour:
         Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: List
+      - fieldName: Enumerable
         node: {fileID: 3223070083157103605}
         reroutePoints: []
       _direction: 1
@@ -1187,32 +1187,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ScaledFunction:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: -5
-      value: -5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  MinY: -5
-  MaxY: 5
   Rank: 0
 --- !u!114 &-3891943619949678654
 MonoBehaviour:
@@ -1339,8 +1313,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -3714755168623129051}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: MaxX
         node: {fileID: 6893314922638749041}
@@ -1813,8 +1787,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -2819772004790767663}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: X
         node: {fileID: -716809471401737524}
@@ -2170,11 +2144,11 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: CubeEntity
-        node: {fileID: 3223070083157103605}
-        reroutePoints: []
       - fieldName: CubeEntity (Field)
         node: {fileID: -4975658638790815718}
+        reroutePoints: []
+      - fieldName: CubeEntity
+        node: {fileID: 3223070083157103605}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -2287,14 +2261,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ScaledFunction:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  MinY: -5
-  MaxY: 5
   Rank: 0
 --- !u!114 &-716809471401737524
 MonoBehaviour:
@@ -2389,32 +2355,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ScaledFunction:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: -5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0
-      value: 5
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  MinY: -5
-  MaxY: 5
   Rank: 0
 --- !u!114 &-457746054194869726
 MonoBehaviour:
@@ -2755,7 +2695,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 851990697646736078}
-      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: ValueIn
@@ -3058,11 +2998,11 @@ MonoBehaviour:
   position: {x: -856, y: -2232}
   ports:
     keys:
-    - List
+    - Enumerable
     - LinkedOption
     - CubeEntity
     values:
-    - _fieldName: List
+    - _fieldName: Enumerable
       _node: {fileID: 3223070083157103605}
       _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Object, UnityEngine.CoreModule,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0,
@@ -3111,9 +3051,9 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 1
       _dynamic: 1
-  List: []
+  Enumerable: []
   LinkedOption: {fileID: 0}
-  _typeAssemblyName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+  _typeArgumentName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
 --- !u!114 &5169921804565256108
 MonoBehaviour:
@@ -3872,14 +3812,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ScaledFunction:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  MinY: -5
-  MaxY: 5
   Rank: 0
 --- !u!114 &7230447121049487469
 MonoBehaviour:
@@ -3914,8 +3846,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 7230447121049487469}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: MaxX
         node: {fileID: -716809471401737524}
@@ -4435,8 +4367,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 8440787822122956408}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: X
         node: {fileID: -2085150136128595175}

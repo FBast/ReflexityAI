@@ -11,7 +11,7 @@ namespace Plugins.xNodeUtilityAi.MiddleNodes {
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(ValueOut)) {
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(ValueIn));
-                return reflectionData.Content == null;
+                return reflectionData.Value == null;
             }
             return null;
         }
