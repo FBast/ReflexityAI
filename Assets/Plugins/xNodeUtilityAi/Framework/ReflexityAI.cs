@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.xNodeUtilityAi.MainNodes;
@@ -9,35 +8,36 @@ using Random = UnityEngine.Random;
 namespace Plugins.xNodeUtilityAi.Framework {
     public enum ResolutionType { Robotic, Human }
     public enum InteractionType { Cooperative, Competitive }
-    public class AbstractAIComponent : MonoBehaviour {
+    public class ReflexityAI : MonoBehaviour {
 
-        [Tooltip("Brains used by the AI")]
-        public List<AIBrainGraph> UtilityAiBrains;
+        [Tooltip("Brains copied by the AI")]
+        public List<AIBrainGraph> AIBrains;
+        [Tooltip("If checked the AI will be processed on enable")]
+        public bool OnEnableQueuing = true;
+        [Tooltip("If checked the AI will be automatically processed in loop")]
+        public bool QueuingLoop = true;
         [Tooltip("Robotic : Always pick best option\n" +
                  "Human : Randomize between best options")]
-        public ResolutionType OptionsResolution;
+        public ResolutionType OptionsResolution = ResolutionType.Robotic;
         [Tooltip("Cooperative : One option by brain is executed\n" +
                  "Competitive : One option for all brain is executed")]
-        public InteractionType MultiBrainInteraction;
+        public InteractionType MultiBrainInteraction = InteractionType.Cooperative;
+        [Tooltip("Brains used by the AI")]
+        public List<AIBrainGraph> LocalAIBrains;
+        
         public readonly Dictionary<AIBrainGraph, List<AIOption>> WeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, List<AIOption>> BestWeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
 
-        public List<AIBrainGraph> LocalAIBrains;
-
-        private static int _aiCount;
-        private static int _aiLeft;
-        private static int _aiTurn;
-        private int _aiTicket;
-            
+        private bool _isInQueue;
         private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
 
         private void Start() {
-            foreach (AIBrainGraph utilityAiBrain in UtilityAiBrains) {
+            foreach (AIBrainGraph aiBrain in AIBrains) {
                 // Create a copy
-                AIBrainGraph localAIBrain = (AIBrainGraph) utilityAiBrain.Copy();
-                localAIBrain.name = utilityAiBrain.name + "Of" + gameObject.name;
+                AIBrainGraph localAIBrain = (AIBrainGraph) aiBrain.Copy();
+                localAIBrain.name = aiBrain.name + "Of" + gameObject.name;
                 // Setup Contexts
                 foreach (IContextual contextual in localAIBrain.GetNodes<IContextual>()) {
                     contextual.Context = this;
@@ -46,21 +46,44 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
         }
 
-        
-        
         private void OnEnable() {
-            ReflexityManager.AbstractAiComponents.Enqueue(this);
+            if (!OnEnableQueuing) return;
+            EnqueueAI();
         }
 
-        public IEnumerator ThinkAndAct() {
+        /// <summary>
+        /// Use this method to manually enqueue this AI processing
+        /// </summary>
+        [ContextMenu("Enqueue AI")]
+        public void EnqueueAI() {
+            AIQueue.Queue.Enqueue(this);
+            if (!AIQueue.IsQueuing) StartCoroutine(AIQueue.Queuing());
+        }
+
+        /// <summary>
+        /// Stop the AI queue from processing
+        /// </summary>
+        [ContextMenu("Stop Queue")]
+        public static void StopQueue() {
+            AIQueue.IsQueuing = false;
+        }
+
+        /// <summary>
+        /// Clear all process from the AI queue
+        /// </summary>
+        [ContextMenu("Clear Queue")]
+        public static void ClearQueue() {
+            AIQueue.Queue.Clear();
+        }
+
+        internal void ThinkAndAct() {
             WeightedOptions.Clear();
-            foreach (AIBrainGraph aiBrainGraph in LocalAIBrains.Where(aiBrainGraph => aiBrainGraph != null)) {
+            foreach (AIBrainGraph aiBrain in LocalAIBrains.Where(brainGraph => brainGraph != null)) {
                 // Get all options from all brains and calculate Weights
-                WeightedOptions.Add(aiBrainGraph, GetOptions(aiBrainGraph));
-                yield return null;
+                WeightedOptions.Add(aiBrain, GetOptions(aiBrain));
             }
             // Fetch best options according to multi brain interaction
-            yield return BestOptionsOnWeight(WeightedOptions, BestWeightedOptions);
+            BestOptionsOnWeight(WeightedOptions, BestWeightedOptions);
             // Check if weight are not enough to start execution
             if (IsWeightEnoughForSelection(BestWeightedOptions)) {
                 SelectedOptions.Clear();
@@ -96,18 +119,18 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
         }
 
-        private List<AIOption> GetOptions(AIBrainGraph aiBrainGraph) {
+        private List<AIOption> GetOptions(AIBrainGraph aiBrain) {
             List<AIOption> aiOptions = new List<AIOption>();
-            foreach (ICacheable cacheable in aiBrainGraph.GetNodes<ICacheable>()) {
+            foreach (ICacheable cacheable in aiBrain.GetNodes<ICacheable>()) {
                 cacheable.ClearCache();
             }
-            foreach (OptionNode optionNode in aiBrainGraph.GetNodes<OptionNode>()) {
+            foreach (OptionNode optionNode in aiBrain.GetNodes<OptionNode>()) {
                 aiOptions.AddRange(optionNode.GetOptions());
             }
             return aiOptions;
         }
 
-        private IEnumerator BestOptionsOnWeight(Dictionary<AIBrainGraph,List<AIOption>> options, Dictionary<AIBrainGraph,List<AIOption>> bestOptions) {
+        private void BestOptionsOnWeight(Dictionary<AIBrainGraph,List<AIOption>> options, Dictionary<AIBrainGraph,List<AIOption>> bestOptions) {
             bestOptions.Clear();
             switch (MultiBrainInteraction) {
                 case InteractionType.Cooperative: {
@@ -122,7 +145,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 case InteractionType.Competitive: {
                     // Competitive then take best weight from all brain
                     int maxWeight = options.Max(pair => pair.Value.Max(option => option.Weight));
-                    if (maxWeight == 0) yield break;
+                    if (maxWeight == 0) return;
                     foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
                         List<AIOption> aiOptions = valuePair.Value.Where(option => option.Weight == maxWeight).ToList();
                         if (aiOptions.Count > 0) bestOptions.Add(valuePair.Key, aiOptions);

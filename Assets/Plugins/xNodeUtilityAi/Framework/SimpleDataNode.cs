@@ -6,7 +6,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         [Output] public Object DataOut;
         
-        protected abstract object ValueProvider(AbstractAIComponent context);
+        protected abstract object ValueProvider(ReflexityAI context);
         
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(DataOut)) {

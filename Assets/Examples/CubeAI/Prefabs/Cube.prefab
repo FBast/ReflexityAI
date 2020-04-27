@@ -211,10 +211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b65652ed65b1f48b3528bc3debd197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UtilityAiBrains:
+  AIBrains:
   - {fileID: 11400000, guid: 940e163bbff552d459654f2dee74833c, type: 2}
-  TimeBetweenRefresh: 0.5
-  OptionsResolution: 0
+  OnEnableQueuing: 1
+  QueuingLoop: 1
+  OptionsResolution: 1
   MultiBrainInteraction: 0
   LocalAIBrains: []
   CubeEntity: {fileID: 0}

@@ -9,7 +9,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
     public class AIBrainGraph : NodeGraph {
         
         [Header("Brain Parameters")] 
-        [ClassExtends(typeof(AbstractAIComponent), Grouping = ClassGrouping.None)]
+        [ClassExtends(typeof(ReflexityAI), Grouping = ClassGrouping.None)]
         public ClassTypeReference ContextType;
 
         public List<string> HistoricTags = new List<string>();

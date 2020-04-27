@@ -8,7 +8,7 @@ using Object = UnityEngine.Object;
 namespace Plugins.xNodeUtilityAi.ActionNodes {
     public class ActionSetterNode : ActionNode {
 
-        [Input] public Object Value;
+        [Input(ShowBackingValue.Never, ConnectionType.Override)] public Object Value;
         [HideInInspector] public SerializableInfo SelectedSerializableInfo;
         [HideInInspector] public List<SerializableInfo> SerializableInfos = new List<SerializableInfo>();
         [HideInInspector] public int ChoiceIndex;

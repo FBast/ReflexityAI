@@ -11,10 +11,9 @@
         <e p="Examples" t="Include">
           <e p="CubeAI" t="Include">
             <e p="Scripts" t="Include">
-              <e p="CubeAiComponent.cs" t="Include" />
+              <e p="CubeAi.cs" t="Include" />
               <e p="CubeEntity.cs" t="Include" />
               <e p="CubeSpawner.cs" t="Include" />
-              <e p="FPSCounter.cs" t="Include" />
               <e p="GameManager.cs" t="Include" />
             </e>
           </e>
@@ -89,7 +88,6 @@
               </e>
             </e>
             <e p="Framework" t="Include">
-              <e p="AbstractAiComponent.cs" t="Include" />
               <e p="ActionNode.cs" t="Include" />
               <e p="AIAction.cs" t="Include" />
               <e p="AIBrainGraph.cs" t="Include" />
@@ -102,6 +100,7 @@
               <e p="EntryNode.cs" t="Include" />
               <e p="ICacheable.cs" t="Include" />
               <e p="IContextual.cs" t="Include" />
+              <e p="ReflexityAI.cs" t="Include" />
               <e p="ReflexityManager.cs" t="Include" />
               <e p="SerializableInfo.cs" t="Include" />
               <e p="SerializableInfoDictionary.cs" t="Include" />

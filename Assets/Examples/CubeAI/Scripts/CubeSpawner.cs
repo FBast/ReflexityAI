@@ -1,15 +1,8 @@
-﻿using System.Collections.Generic;
-using Plugins.xNodeUtilityAi.Framework;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Examples.CubeAI.Scripts {
     public class CubeSpawner : MonoBehaviour {
 
-        [Header("AI Parameters")]
-        public List<AIBrainGraph> UtilityAIBrains;
-//        [Range(0.1f, 5f)] public float TimeBetweenRefresh;
-        public ResolutionType ResolutionType;
-        
         [Header("Spawn Parameters")]
         public GameObject CubePrefab;
         public int XNumber;
@@ -23,10 +16,6 @@ namespace Examples.CubeAI.Scripts {
                 for (int j = 0; j < ZNumber; j++) {
                     CubeEntity cubeEntity = Instantiate(CubePrefab, newPosition, Quaternion.identity).GetComponent<CubeEntity>();
                     cubeEntity.name = "Cube " + (i + j);
-                    CubeAIComponent cubeAiComponent = cubeEntity.GetComponent<CubeAIComponent>();
-                    cubeAiComponent.UtilityAiBrains = UtilityAIBrains;
-//                    cubeAiComponent.TimeBetweenRefresh = TimeBetweenRefresh;
-                    cubeAiComponent.OptionsResolution = ResolutionType;
                     GameManager.CubeEntities.Add(cubeEntity);
                     newPosition.z += Gap;
                 }

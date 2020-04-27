@@ -10,7 +10,7 @@ namespace Plugins.xNodeUtilityAi.PatternNodes {
         [Output(connectionType: ConnectionType.Override)] public bool Value;
         [DropdownList(typeof(TagListHelper), nameof(TagListHelper.GetHistoricTags))] public string HistoricTag;
         
-        public AbstractAIComponent Context { get; set; }
+        public ReflexityAI Context { get; set; }
         
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(Value) && Context != null) {

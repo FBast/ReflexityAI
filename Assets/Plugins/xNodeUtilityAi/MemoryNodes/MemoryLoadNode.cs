@@ -7,7 +7,7 @@ namespace Plugins.xNodeUtilityAi.MemoryNodes {
         [DropdownList(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] 
         public string MemoryTag;
         
-        protected override object ValueProvider(AbstractAIComponent context) {
+        protected override object ValueProvider(ReflexityAI context) {
             return context.LoadFromMemory(MemoryTag);
         }
 

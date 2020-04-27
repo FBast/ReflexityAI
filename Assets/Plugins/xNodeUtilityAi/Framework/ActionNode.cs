@@ -5,7 +5,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
     [NodeTint(255, 120, 120)]
     public abstract class ActionNode : Node {
         
-        [Input(ShowBackingValue.Never)] public Object Data;
+        [Input(ShowBackingValue.Never, ConnectionType.Override)] public Object Data;
         [Output(connectionType: ConnectionType.Override)] public ActionNode LinkedOption;
         public int Order;
         

@@ -10,17 +10,26 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
     [NodeWidth(300)]
     public class DataReaderNode : DataNode, IContextual, ICacheable {
 
-        public AbstractAIComponent Context { get; set; }
+        public ReflexityAI Context { get; set; }
 
         [SerializeField] public SerializableInfoDictionary InfoDictionary = new SerializableInfoDictionary();
-
+        [SerializeField, HideInInspector] private string _contextTypeName;
+        
+        
         protected override void Init() {
             base.Init();
             OnValidate();
         }
 
+        [ContextMenu("OnValidate")]
         private void OnValidate() {
             if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
+                // Check if context type has change
+                if (!string.Equals(brainGraph.ContextType.Type.AssemblyQualifiedName, _contextTypeName)) {
+                    _contextTypeName = brainGraph.ContextType.Type.AssemblyQualifiedName;
+                    InfoDictionary.Clear();
+                    ClearDynamicPorts();
+                }
                 // Handle fields
                 FieldInfo[] fieldInfos = brainGraph.ContextType.Type.GetFields(SerializableInfo.DefaultBindingFlags);
                 foreach (FieldInfo fieldInfo in fieldInfos) {
@@ -65,6 +74,7 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         }
 
         public void ClearShortCache() { }
+        
     }
 }
 

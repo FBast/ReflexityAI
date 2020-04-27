@@ -71,7 +71,7 @@ namespace Examples.CubeAI.Scripts {
             if (CurrentHp <= 0) {
                 IsDead = true;
                 if (Stats) Stats.text = "DEAD !";
-                GetComponent<CubeAIComponent>().enabled = false;
+                GetComponent<CubeAi>().enabled = false;
             }
         }
 

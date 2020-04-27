@@ -3,7 +3,7 @@ using Plugins.xNodeUtilityAi.Framework;
 using UnityEngine;
 
 namespace Examples.CubeAI.Scripts {
-    public class CubeAIComponent : AbstractAIComponent {
+    public class CubeAi : ReflexityAI {
         
         // External References
         [HideInInspector] public CubeEntity CubeEntity;

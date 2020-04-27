@@ -8,7 +8,7 @@ namespace Plugins.xNodeUtilityAi.MemoryNodes {
         [Output(connectionType: ConnectionType.Override)] public bool Value;
         [DropdownList(typeof(TagListHelper), nameof(TagListHelper.GetMemoryTags))] public string MemoryTag;
         
-        public AbstractAIComponent Context { get; set; }
+        public ReflexityAI Context { get; set; }
         
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(Value) && Context != null) {
