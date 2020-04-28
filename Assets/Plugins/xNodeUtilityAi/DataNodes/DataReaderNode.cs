@@ -12,49 +12,54 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
 
         public ReflexityAI Context { get; set; }
 
-        [SerializeField] public SerializableInfoDictionary InfoDictionary = new SerializableInfoDictionary();
+        [SerializeField, HideInInspector] public SerializableInfoDictionary InfoDictionary = new SerializableInfoDictionary();
         [SerializeField, HideInInspector] private string _contextTypeName;
-        
         
         protected override void Init() {
             base.Init();
             OnValidate();
         }
 
-        [ContextMenu("OnValidate")]
         private void OnValidate() {
-            if (graph is AIBrainGraph brainGraph && brainGraph.ContextType != null) {
-                // Check if context type has change
-                if (!string.Equals(brainGraph.ContextType.Type.AssemblyQualifiedName, _contextTypeName)) {
-                    _contextTypeName = brainGraph.ContextType.Type.AssemblyQualifiedName;
-                    InfoDictionary.Clear();
-                    ClearDynamicPorts();
+            AIBrainGraph brainGraph = (AIBrainGraph) graph;
+            if (brainGraph.ContextType != null) {
+                if (brainGraph.ContextType.Type != null) {
+                    // Check if context type has change
+                    if (!string.Equals(brainGraph.ContextType.Type.AssemblyQualifiedName, _contextTypeName)) {
+                        _contextTypeName = brainGraph.ContextType.Type.AssemblyQualifiedName;
+                        InfoDictionary.Clear();
+                        ClearDynamicPorts();
+                    }
+                    // Handle fields
+                    FieldInfo[] fieldInfos = brainGraph.ContextType.Type.GetFields(SerializableInfo.DefaultBindingFlags);
+                    foreach (FieldInfo fieldInfo in fieldInfos) {
+                        if (InfoDictionary.Any(pair => pair.Value.Name == fieldInfo.Name)) continue;
+                        SerializableInfo serializableFieldInfo = new SerializableInfo(fieldInfo);
+                        AddDynamicOutput(serializableFieldInfo.Type, ConnectionType.Multiple, TypeConstraint.None, serializableFieldInfo.PortName);
+                        InfoDictionary.Add(serializableFieldInfo.PortName, serializableFieldInfo);
+                    }
+                    // Handle properties
+                    PropertyInfo[] propertyInfos = brainGraph.ContextType.Type.GetProperties(SerializableInfo.DefaultBindingFlags);
+                    foreach (PropertyInfo propertyInfo in propertyInfos) {
+                        if (InfoDictionary.Any(pair => pair.Value.Name == propertyInfo.Name)) continue;
+                        SerializableInfo serializablePropertyInfo = new SerializableInfo(propertyInfo);
+                        AddDynamicOutput(serializablePropertyInfo.Type, ConnectionType.Multiple, TypeConstraint.None, serializablePropertyInfo.PortName);
+                        InfoDictionary.Add(serializablePropertyInfo.PortName, serializablePropertyInfo);
+                    }
+                    // Remove old ports
+                    for (int i = InfoDictionary.Count - 1; i >= 0; i--) {
+                        if (fieldInfos.Any(info => info.Name == InfoDictionary.ElementAt(i).Value.Name)) continue;
+                        if (propertyInfos.Any(info => info.Name == InfoDictionary.ElementAt(i).Value.Name)) continue;
+                        RemoveDynamicPort(InfoDictionary.ElementAt(i).Key);
+                        InfoDictionary.Remove(InfoDictionary.ElementAt(i).Key);
+                    }
+                } 
+                else {
+                    throw new Exception("ContextType seems to have changed, please check the brain parameters");
                 }
-                // Handle fields
-                FieldInfo[] fieldInfos = brainGraph.ContextType.Type.GetFields(SerializableInfo.DefaultBindingFlags);
-                foreach (FieldInfo fieldInfo in fieldInfos) {
-                    if (InfoDictionary.Any(pair => pair.Value.Name == fieldInfo.Name)) continue;
-                    SerializableInfo serializableFieldInfo = new SerializableInfo(fieldInfo);
-                    AddDynamicOutput(serializableFieldInfo.Type, ConnectionType.Multiple, TypeConstraint.None, serializableFieldInfo.PortName);
-                    InfoDictionary.Add(serializableFieldInfo.PortName, serializableFieldInfo);
-                }
-                // Handle properties
-                PropertyInfo[] propertyInfos = brainGraph.ContextType.Type.GetProperties(SerializableInfo.DefaultBindingFlags);
-                foreach (PropertyInfo propertyInfo in propertyInfos) {
-                    if (InfoDictionary.Any(pair => pair.Value.Name == propertyInfo.Name)) continue;
-                    SerializableInfo serializablePropertyInfo = new SerializableInfo(propertyInfo);
-                    AddDynamicOutput(serializablePropertyInfo.Type, ConnectionType.Multiple, TypeConstraint.None, serializablePropertyInfo.PortName);
-                    InfoDictionary.Add(serializablePropertyInfo.PortName, serializablePropertyInfo);
-                }
-                // Remove old ports
-                for (int i = InfoDictionary.Count - 1; i >= 0; i--) {
-                    if (fieldInfos.Any(info => info.Name == InfoDictionary.ElementAt(i).Value.Name)) continue;
-                    if (propertyInfos.Any(info => info.Name == InfoDictionary.ElementAt(i).Value.Name)) continue;
-                    RemoveDynamicPort(InfoDictionary.ElementAt(i).Key);
-                    InfoDictionary.Remove(InfoDictionary.ElementAt(i).Key);
-                }
-            } else {
-                throw new Exception("No brain graph context type found, please select one");
+            } 
+            else {
+                throw new Exception("No brain graph ContextType found, please select one");
             }
         }
 
