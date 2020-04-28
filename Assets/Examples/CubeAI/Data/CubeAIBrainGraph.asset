@@ -793,6 +793,9 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Data
+        node: {fileID: 5169921804565256108}
+        reroutePoints: []
+      - fieldName: Data
         node: {fileID: 8597610753183609117}
         reroutePoints: []
       - fieldName: Data
@@ -808,7 +811,7 @@ MonoBehaviour:
     - OthersCubeEntities (Property)
     values:
     - MemberTypes: 4
-      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Name: CubeEntity
       TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
@@ -819,7 +822,7 @@ MonoBehaviour:
       IsPrimitive: 0
       Parameters: []
     - MemberTypes: 16
-      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Name: OthersCubeEntities
       TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
@@ -830,7 +833,7 @@ MonoBehaviour:
       IsIteratable: 1
       IsPrimitive: 0
       Parameters: []
-  _contextTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+  _contextTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
 --- !u!114 &-4825942336277752779
 MonoBehaviour:
@@ -885,7 +888,7 @@ MonoBehaviour:
     - OthersCubeEntities (Property)
     values:
     - MemberTypes: 4
-      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Name: CubeEntity
       TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
@@ -896,7 +899,7 @@ MonoBehaviour:
       IsPrimitive: 0
       Parameters: []
     - MemberTypes: 16
-      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Name: OthersCubeEntities
       TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
@@ -907,7 +910,7 @@ MonoBehaviour:
       IsIteratable: 1
       IsPrimitive: 0
       Parameters: []
-  _contextTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+  _contextTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
 --- !u!114 &-4236330640635284376
 MonoBehaviour:
@@ -962,7 +965,7 @@ MonoBehaviour:
     - OthersCubeEntities (Property)
     values:
     - MemberTypes: 4
-      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Name: CubeEntity
       TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
@@ -973,7 +976,7 @@ MonoBehaviour:
       IsPrimitive: 0
       Parameters: []
     - MemberTypes: 16
-      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Name: OthersCubeEntities
       TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
@@ -984,7 +987,7 @@ MonoBehaviour:
       IsIteratable: 1
       IsPrimitive: 0
       Parameters: []
-  _contextTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+  _contextTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
 --- !u!114 &-4208437902751415821
 MonoBehaviour:
@@ -2101,7 +2104,7 @@ MonoBehaviour:
     - OthersCubeEntities (Property)
     values:
     - MemberTypes: 4
-      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Name: CubeEntity
       TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
@@ -2112,7 +2115,7 @@ MonoBehaviour:
       IsPrimitive: 0
       Parameters: []
     - MemberTypes: 16
-      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       Name: OthersCubeEntities
       TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
@@ -2123,7 +2126,7 @@ MonoBehaviour:
       IsIteratable: 1
       IsPrimitive: 0
       Parameters: []
-  _contextTypeName: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp, Version=0.0.0.0,
+  _contextTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
 --- !u!114 &-2414897798371381959
 MonoBehaviour:
@@ -2619,7 +2622,7 @@ MonoBehaviour:
   - {fileID: -2414897798371381959}
   - {fileID: 6085686371560933803}
   ContextType:
-    _classRef: Examples.CubeAI.Scripts.CubeAi, Assembly-CSharp
+    _classRef: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp
   HistoricTags: []
   MemoryTags: []
 --- !u!114 &193243240382601767
@@ -3043,14 +3046,11 @@ MonoBehaviour:
       - fieldName: Data
         node: {fileID: 6473392806437833924}
         reroutePoints: []
-      - fieldName: ValuesIn
-        node: {fileID: -2414897798371381959}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: 5169921804565256108}
-        reroutePoints: []
       - fieldName: Value
         node: {fileID: -3208752610430399498}
+        reroutePoints: []
+      - fieldName: ValuesIn
+        node: {fileID: -2414897798371381959}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3084,8 +3084,8 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: CubeEntity
-        node: {fileID: 3223070083157103605}
+      - fieldName: CubeEntity (Field)
+        node: {fileID: -4975658638790815718}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
