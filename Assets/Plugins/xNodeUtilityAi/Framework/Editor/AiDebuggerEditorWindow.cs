@@ -65,7 +65,7 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
                 float rowHeight = 20;
                 int i = 0;
                 EditorGUI.LabelField(new Rect(3, 3, position.width - 6, rowHeight), "Brain of " + _currentGameObject.name, labelGuiStyle);
-                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in _reflexityAi.WeightedOptions) {
+                foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in _reflexityAi.WeightedOptions) {
                     float weightMax = valuePair.Value.Max(option => option.Weight);
                     float weightMin = valuePair.Value.Min(option => option.Weight);
                     EditorGUI.LabelField(new Rect(3 + i * (columnWidth + 6), 3 + rowHeight, columnWidth, rowHeight), valuePair.Key.name, labelGuiStyle);

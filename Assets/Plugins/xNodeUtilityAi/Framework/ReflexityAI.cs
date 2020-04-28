@@ -11,7 +11,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
     public class ReflexityAI : MonoBehaviour {
 
         [Tooltip("Brains copied by the AI")]
-        public List<AIBrainGraph> AIBrains;
+        public List<AIBrainGraph<ReflexityAI>> AIBrains;
         [Tooltip("If checked the AI will be processed on enable")]
         public bool OnEnableQueuing = true;
         [Tooltip("If checked the AI will be automatically processed in loop")]
@@ -23,20 +23,20 @@ namespace Plugins.xNodeUtilityAi.Framework {
                  "Competitive : One option for all brain is executed")]
         public InteractionType MultiBrainInteraction = InteractionType.Cooperative;
         [Tooltip("Brains used by the AI")]
-        public List<AIBrainGraph> LocalAIBrains;
+        public List<AIBrainGraph<ReflexityAI>> LocalAIBrains;
         
-        public readonly Dictionary<AIBrainGraph, List<AIOption>> WeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
-        public readonly Dictionary<AIBrainGraph, List<AIOption>> BestWeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
-        public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
+        public readonly Dictionary<AIBrainGraph<ReflexityAI>, List<AIOption>> WeightedOptions = new Dictionary<AIBrainGraph<ReflexityAI>, List<AIOption>>();
+        public readonly Dictionary<AIBrainGraph<ReflexityAI>, List<AIOption>> BestWeightedOptions = new Dictionary<AIBrainGraph<ReflexityAI>, List<AIOption>>();
+        public readonly Dictionary<AIBrainGraph<ReflexityAI>, AIOption> SelectedOptions = new Dictionary<AIBrainGraph<ReflexityAI>, AIOption>();
 
         private bool _isInQueue;
         private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
 
         private void Start() {
-            foreach (AIBrainGraph aiBrain in AIBrains) {
+            foreach (AIBrainGraph<ReflexityAI> aiBrain in AIBrains) {
                 // Create a copy
-                AIBrainGraph localAIBrain = (AIBrainGraph) aiBrain.Copy();
+                AIBrainGraph<ReflexityAI> localAIBrain = (AIBrainGraph<ReflexityAI>) aiBrain.Copy();
                 localAIBrain.name = aiBrain.name + "Of" + gameObject.name;
                 // Setup Contexts
                 foreach (IContextual contextual in localAIBrain.GetNodes<IContextual>()) {
@@ -78,7 +78,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
 
         internal void ThinkAndAct() {
             WeightedOptions.Clear();
-            foreach (AIBrainGraph aiBrain in LocalAIBrains.Where(brainGraph => brainGraph != null)) {
+            foreach (AIBrainGraph<ReflexityAI> aiBrain in LocalAIBrains.Where(brainGraph => brainGraph != null)) {
                 // Get all options from all brains and calculate Weights
                 WeightedOptions.Add(aiBrain, GetOptions(aiBrain));
             }
@@ -87,7 +87,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             // Check if weight are not enough to start execution
             if (IsWeightEnoughForSelection(BestWeightedOptions)) {
                 SelectedOptions.Clear();
-                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in WeightedOptions) {
+                foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in WeightedOptions) {
                     foreach (AIOption aiOption in valuePair.Value) {
                         SelectedOptions.Add(valuePair.Key, aiOption);
                     }
@@ -96,7 +96,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             // Else calculate options rank
             else {
                 // Calculate options rank
-                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in BestWeightedOptions) {
+                foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in BestWeightedOptions) {
                     foreach (AIOption aiOption in valuePair.Value) {
                         foreach (ICacheable cacheable in valuePair.Key.GetNodes<ICacheable>()) {
                             cacheable.ClearShortCache();
@@ -108,18 +108,18 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 SelectOptionsOnRank(BestWeightedOptions, SelectedOptions);
             }
             // Order options for display
-            foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in WeightedOptions.ToList()) {
+            foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in WeightedOptions.ToList()) {
                 WeightedOptions[valuePair.Key] = valuePair.Value
                     .OrderByDescending(option => option.Weight)
                     .ThenByDescending(option => option.Rank).ToList();
             }
             // Execute selected options
-            foreach (KeyValuePair<AIBrainGraph,AIOption> selectedOption in SelectedOptions) {
+            foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,AIOption> selectedOption in SelectedOptions) {
                 selectedOption.Value.ExecuteActions();
             }
         }
 
-        private List<AIOption> GetOptions(AIBrainGraph aiBrain) {
+        private List<AIOption> GetOptions(AIBrainGraph<ReflexityAI> aiBrain) {
             List<AIOption> aiOptions = new List<AIOption>();
             foreach (ICacheable cacheable in aiBrain.GetNodes<ICacheable>()) {
                 cacheable.ClearCache();
@@ -130,12 +130,12 @@ namespace Plugins.xNodeUtilityAi.Framework {
             return aiOptions;
         }
 
-        private void BestOptionsOnWeight(Dictionary<AIBrainGraph,List<AIOption>> options, Dictionary<AIBrainGraph,List<AIOption>> bestOptions) {
+        private void BestOptionsOnWeight(Dictionary<AIBrainGraph<ReflexityAI>,List<AIOption>> options, Dictionary<AIBrainGraph<ReflexityAI>,List<AIOption>> bestOptions) {
             bestOptions.Clear();
             switch (MultiBrainInteraction) {
                 case InteractionType.Cooperative: {
                     // Cooperative then take best weight of each brain
-                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
+                    foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
                         int maxWeight = valuePair.Value.Max(option => option.Weight);
                         if (maxWeight == 0) continue;
                         bestOptions.Add(valuePair.Key, valuePair.Value.Where(option => option.Weight == maxWeight).ToList());
@@ -146,7 +146,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
                     // Competitive then take best weight from all brain
                     int maxWeight = options.Max(pair => pair.Value.Max(option => option.Weight));
                     if (maxWeight == 0) return;
-                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
+                    foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
                         List<AIOption> aiOptions = valuePair.Value.Where(option => option.Weight == maxWeight).ToList();
                         if (aiOptions.Count > 0) bestOptions.Add(valuePair.Key, aiOptions);
                     }
@@ -157,7 +157,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             }
         }
 
-        private bool IsWeightEnoughForSelection(Dictionary<AIBrainGraph,List<AIOption>> options) {
+        private bool IsWeightEnoughForSelection(Dictionary<AIBrainGraph<ReflexityAI>,List<AIOption>> options) {
             switch (MultiBrainInteraction) {
                 case InteractionType.Cooperative:
                     if (options.Any(valuePair => valuePair.Value.Count > 1)) return false; 
@@ -171,7 +171,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             return true;
         }
 
-        private void SelectOptionsOnRank(Dictionary<AIBrainGraph, List<AIOption>> options, Dictionary<AIBrainGraph, AIOption> selectedOptions) {
+        private void SelectOptionsOnRank(Dictionary<AIBrainGraph<ReflexityAI>, List<AIOption>> options, Dictionary<AIBrainGraph<ReflexityAI>, AIOption> selectedOptions) {
             selectedOptions.Clear();
             switch (OptionsResolution) {
                 // Calculate probability
@@ -180,7 +180,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
                     float rndProbability = Random.Range(0f, 1f);
                     float probabilitySum = 0;
                     float rankSum = options.Sum(pair => pair.Value.Sum(option => option.Rank));
-                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
+                    foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in options) {
                         foreach (AIOption aiOption in valuePair.Value) {
                             aiOption.Probability = aiOption.Rank / rankSum;
                             probabilitySum += aiOption.Probability;
@@ -193,7 +193,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 }
                 case ResolutionType.Human when MultiBrainInteraction == InteractionType.Cooperative: {
                     // Calculate relative probability from same brain options
-                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
+                    foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in options) {
                         float rndProbability = Random.Range(0f, 1f);
                         float probabilitySum = 0;
                         float rankSum = valuePair.Value.Sum(option => option.Rank);
@@ -210,7 +210,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 case ResolutionType.Robotic when MultiBrainInteraction == InteractionType.Competitive: {
                     // Calculate absolute probability from all brain options
                     float maxRank = options.Max(pair => pair.Value.Max(option => option.Rank));
-                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
+                    foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in options) {
                         foreach (AIOption aiOption in valuePair.Value) {
                             if (SelectedOptions.Count == 0 && aiOption.Rank >= maxRank) {
                                 aiOption.Probability = 1;
@@ -224,7 +224,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
                 }
                 case ResolutionType.Robotic when MultiBrainInteraction == InteractionType.Cooperative:
                     // Calculate absolute probability from same brain options
-                    foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
+                    foreach (KeyValuePair<AIBrainGraph<ReflexityAI>,List<AIOption>> valuePair in options) {
                         foreach (AIOption aiOption in valuePair.Value) {
                             if (!SelectedOptions.ContainsKey(valuePair.Key) && aiOption.Rank >= valuePair.Value.Max(option => option.Rank)) {
                                 aiOption.Probability = 1;

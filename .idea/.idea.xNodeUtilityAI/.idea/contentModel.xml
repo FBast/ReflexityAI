@@ -13,6 +13,7 @@
             <e p="Scripts" t="Include">
               <e p="CubeAi.cs" t="Include" />
               <e p="CubeEntity.cs" t="Include" />
+              <e p="CubeGraph.cs" t="Include" />
               <e p="CubeSpawner.cs" t="Include" />
               <e p="GameManager.cs" t="Include" />
             </e>
@@ -133,13 +134,6 @@
               <e p="SaveHistoricNode.cs" t="Include" />
             </e>
             <e p="Utils" t="Include">
-              <e p="ClassTypeReference" t="Include">
-                <e p="ClassTypeConstraintAttribute.cs" t="Include" />
-                <e p="ClassTypeReference.cs" t="Include" />
-                <e p="Editor" t="Include">
-                  <e p="ClassTypeReferencePropertyDrawer.cs" t="Include" />
-                </e>
-              </e>
               <e p="TagList" t="Include">
                 <e p="DropdownList.cs" t="Include" />
                 <e p="Editor" t="Include">

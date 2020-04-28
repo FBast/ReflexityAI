@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7455137236170552063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1a63fe03bad4d4daad69c1a664cf6c, type: 3}
+  m_Name: Data Reader
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -616, y: -1928}
+  ports:
+    keys:
+    - OthersCubeEntities (Property)
+    - CubeEntity (Field)
+    values:
+    - _fieldName: OthersCubeEntities (Property)
+      _node: {fileID: -7455137236170552063}
+      _typeQualifiedName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: CubeEntity (Field)
+      _node: {fileID: -7455137236170552063}
+      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  InfoDictionary:
+    keys:
+    - CubeEntity (Field)
+    - OthersCubeEntities (Property)
+    values:
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: CubeEntity
+      TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      PortName: CubeEntity (Field)
+      Order: 67108865
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: OthersCubeEntities
+      TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: OthersCubeEntities (Property)
+      Order: 385875969
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
+  _contextTypeName: Examples.CubeAI.Scripts.CubeAI, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CubeGraph
+  m_EditorClassIdentifier: Assembly-CSharp:Examples.CubeAI.Scripts:CubeGraph
+  nodes:
+  - {fileID: -7455137236170552063}
+  HistoricTags: []
+  MemoryTags: []

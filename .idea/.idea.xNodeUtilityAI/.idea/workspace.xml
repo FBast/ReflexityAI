@@ -2,8 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAi.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeGraph.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeGraph.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeAIBrainGraph.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeAIBrainGraph.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeConstraintAttribute.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeConstraintAttribute.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeReference.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeReference.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/Editor/ClassTypeReferencePropertyDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/Editor/ClassTypeReferencePropertyDrawer.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,13 +41,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/DropdownList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/TagListHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/Editor/DropdownListDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeConstraintAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/Editor/ClassTypeReferencePropertyDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ClassTypeReference/ClassTypeReference.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/IsEqualNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/84/bfb39ea6/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/SceneGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,6 +61,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/Editor/DataReaderNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/EntryNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/Editor/ActionSetterNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfoDictionary.cs" root0="FORCE_HIGHLIGHTING" />
@@ -72,6 +92,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/Editor/ActionLauncherNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/ActionLauncherNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/c5/5d58a236/Array.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemorySaveNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -83,6 +104,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryClearNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/NotNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/AndNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/MiddleNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/OrNode.cs" root0="SKIP_HIGHLIGHTING" />
@@ -100,8 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/FaceTowardGameObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/TagList/TagListHelper.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableMemberInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableFieldInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializablePropertyInfo.cs" />
@@ -116,9 +136,7 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/FilterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/Editor/ActionLauncherNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Utils/ReflectionUtils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/EntryNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting/Scripts/GameManager1.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting/Scripts/CubeSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AISequencer.cs" />
@@ -137,7 +155,6 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/Editor/UtilityNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/UtilityNode.cs" />
         <option value="$PROJECT_DIR$/Assets/ReflectionTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataIteratorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/Editor/DataIteratorNodeEditor.cs" />
@@ -145,11 +162,16 @@
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AbstractAIComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/ActionSetterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/DataNodes/DataReaderNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAII.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAIIIII.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" />
       </list>
     </option>
@@ -194,10 +216,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="11756">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="17984">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="11756" />
+      <option name="pid" value="17984" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -277,6 +299,7 @@
       <workItem from="1587923707365" duration="1532000" />
       <workItem from="1587980958514" duration="18071000" />
       <workItem from="1588086309634" duration="163000" />
+      <workItem from="1588091537892" duration="4514000" />
     </task>
     <servers />
   </component>
@@ -1499,13 +1522,7 @@
     </reveal-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
-        <watch expression="InfoDictionary.ContainsKey(port.fieldName)" language="C#" custom="RiderImportsList:" />
-        <watch expression="InfoDictionary" language="C#" custom="RiderImportsList:" />
-        <watch expression="port.fieldName" language="C#" custom="RiderImportsList:" />
-        <watch expression="GetCollection().ElementAt(16)" language="C#" custom="RiderImportsList:" />
-        <watch expression="reflectionData.Type.GetGenericTypeDefinition()" language="C#" custom="RiderImportsList:" />
-        <watch expression="reflectionData.Type.GetGenericTypeDefinition()" language="C#" custom="RiderImportsList:" />
-        <watch expression="typeof(IEnumerable&lt;&gt;).IsAssignableFrom(typeof(List&lt;&gt;))" language="C#" custom="RiderImportsList:" />
+        <watch expression="graph as AIBrainGraph&lt;&gt;" language="C#" custom="RiderImportsList:" />
       </configuration>
     </watches-manager>
   </component>
