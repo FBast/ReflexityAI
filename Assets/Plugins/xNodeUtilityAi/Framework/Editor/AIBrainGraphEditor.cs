@@ -46,11 +46,15 @@ namespace Plugins.xNodeUtilityAi.Framework.Editor {
             // Memory Nodes
             if (type == typeof(MemoryCheckNode) || type == typeof(MemoryClearNode) || type == typeof(MemoryLoadNode) || 
                 type == typeof(MemorySaveNode)) {
-                return "MemoryNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
+                return null;
+                //TODO-fred Memory Nodes not available yet
+//                return "MemoryNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
             }
             // Pattern Nodes
             if (type == typeof(InCooldownNode) || type == typeof(SaveHistoricNode)) {
-                return "PatternNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
+                return null;
+                //TODO-fred Pattern Nodes not available yet
+//                return "PatternNodes/"  + NodeEditorUtilities.NodeDefaultName(type);
             }
             // Other Nodes
             if (type.IsSubclassOf(typeof(MiddleNode))) {

@@ -4,14 +4,14 @@ using UnityEngine;
 
 namespace Plugins.xNodeUtilityAi.Framework {
     [Serializable] 
-    public class SerializableInfoDictionary : Dictionary<string, SerializableInfo>, ISerializationCallbackReceiver {
-        [SerializeField] private List<string> keys = new List<string>();
-        [SerializeField] private List<SerializableInfo> values = new List<SerializableInfo>();
+    public abstract class SerializableDictionary<T, U> : Dictionary<T, U>, ISerializationCallbackReceiver {
+        [SerializeField] private List<T> keys = new List<T>();
+        [SerializeField] private List<U> values = new List<U>();
 
         public void OnBeforeSerialize() {
             keys.Clear();
             values.Clear();
-            foreach (KeyValuePair<string, SerializableInfo> pair in this) {
+            foreach (KeyValuePair<T, U> pair in this) {
                 keys.Add(pair.Key);
                 values.Add(pair.Value);
             }
@@ -27,4 +27,6 @@ namespace Plugins.xNodeUtilityAi.Framework {
         }
         
     }
+    [Serializable] public class PortDictionary : SerializableDictionary<string,string>{}
+    [Serializable] public class InfoDictionary : SerializableDictionary<string,SerializableInfo>{}
 }
