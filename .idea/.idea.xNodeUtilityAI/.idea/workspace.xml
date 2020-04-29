@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,6 +84,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MemoryNodes/MemoryClearNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/NotNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/AndNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/d7/c438542a/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/MiddleNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MiddleNodes/OrNode.cs" root0="SKIP_HIGHLIGHTING" />
@@ -135,8 +138,6 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/ActionSetterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ActionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAII.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableInfoDictionary.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/SerializableDictionary.cs" />
@@ -149,6 +150,8 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AIBrainGraphEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/ActionNodes/Editor/ActionSetterNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/ReflexityAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/Editor/AiDebuggerEditorWindow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/MainNodes/OptionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNodeUtilityAi/Framework/AIBrainGraph.cs" />
       </list>
     </option>
@@ -278,7 +281,7 @@
       <workItem from="1588086309634" duration="163000" />
       <workItem from="1588091537892" duration="4514000" />
       <workItem from="1588150542870" duration="9916000" />
-      <workItem from="1588174400607" duration="1999000" />
+      <workItem from="1588174400607" duration="2805000" />
     </task>
     <servers />
   </component>
