@@ -1,6 +1,4 @@
-using System;
 using System.Linq;
-using Plugins.xNodeUtilityAi.Framework;
 using UnityEditor;
 using XNode;
 using XNodeEditor;
@@ -13,8 +11,7 @@ namespace Plugins.xNodeUtilityAi.ActionNodes.Editor {
 
         public override void OnBodyGUI() {
             if (_actionSetterNode == null) _actionSetterNode = (ActionSetterNode) target;
-            serializedObject.Update();
-            if (_actionSetterNode.SerializableInfos.Count > 0) {
+            if (_actionSetterNode.SelectedSerializableInfo != null && _actionSetterNode.SerializableInfos.Count > 0) {
                 NodePort valuePort = _actionSetterNode.GetPort(nameof(_actionSetterNode.Value));
                 valuePort.ValueType = _actionSetterNode.SelectedSerializableInfo.Type;
                 NodeEditorGUILayout.PortField(valuePort);
@@ -31,7 +28,6 @@ namespace Plugins.xNodeUtilityAi.ActionNodes.Editor {
             } else {
                 NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_actionSetterNode.Data)));
             }
-            serializedObject.ApplyModifiedProperties();
         }
 
         public void UpdateChoice(int choiceIndex) {
