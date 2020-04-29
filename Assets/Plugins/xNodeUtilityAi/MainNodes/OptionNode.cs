@@ -39,7 +39,7 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
             DataIteratorNode iteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
             if (iteratorNode != null) {
                 int collectionSize = iteratorNode.CollectionCount;
-                AIBrainGraph<ReflexityAI> brainGraph = (AIBrainGraph<ReflexityAI>) graph;
+                AIBrainGraph brainGraph = (AIBrainGraph) graph;
                 while (collectionSize > iteratorNode.Index) {
                     options.Add(new AIOption(this));
                     iteratorNode.Index++;

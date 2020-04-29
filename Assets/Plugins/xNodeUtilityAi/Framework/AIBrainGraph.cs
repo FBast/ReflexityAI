@@ -9,13 +9,8 @@ namespace Plugins.xNodeUtilityAi.Framework {
     /// <summary>
     /// This class is used for the AIBrainGraphEditor, dont inherit from this
     /// </summary>
-    public abstract class AIBrainGraph : NodeGraph {}
-    /// <summary>
-    /// Inherit from this class if you want to create an AI brain graph
-    /// </summary>
-    /// <typeparam name="T">Reflexity derived class</typeparam>
-    public abstract class AIBrainGraph<T> : AIBrainGraph {
-
+    public abstract class AIBrainGraph : NodeGraph {
+        
         [Header("Brain Parameters")] 
         public List<string> HistoricTags = new List<string>();
         public List<string> MemoryTags = new List<string>();
@@ -23,7 +18,14 @@ namespace Plugins.xNodeUtilityAi.Framework {
         public IEnumerable<U> GetNodes<U>() {
             return nodes.Where(node => node is U).Cast<U>();
         }
-
+        
+    }
+    /// <summary>
+    /// Inherit from this class if you want to create an AI brain graph
+    /// </summary>
+    /// <typeparam name="T">Reflexity derived class</typeparam>
+    public abstract class AIBrainGraph<T> : AIBrainGraph {
+        
         public override Node AddNode(Type type) {
             Node node = base.AddNode(type);
             if (node is DataReaderNode dataReaderNode) {

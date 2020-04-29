@@ -211,11 +211,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b65652ed65b1f48b3528bc3debd197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestWithoutGeneric: {fileID: 11400000, guid: a4723a44e0bd70441aae6bb2d71e77e8, type: 2}
+  AIBrains:
+  - {fileID: 11400000, guid: a4723a44e0bd70441aae6bb2d71e77e8, type: 2}
   OnEnableQueuing: 1
   QueuingLoop: 1
   OptionsResolution: 1
   MultiBrainInteraction: 0
+  LocalAIBrains: []
   CubeEntity: {fileID: 0}
 --- !u!1 &3462655324143414681
 GameObject:

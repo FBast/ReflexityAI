@@ -1495,8 +1495,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -5131487363760819044}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: MaxX
         node: {fileID: 1289431977929314073}
@@ -2475,6 +2475,9 @@ MonoBehaviour:
       - fieldName: Value
         node: {fileID: -6793290240322009571}
         reroutePoints: []
+      - fieldName: ValuesIn
+        node: {fileID: 3129961223765705061}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
@@ -2955,8 +2958,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 2372284499203493106}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: MaxX
         node: {fileID: 7771546304584235007}
@@ -3200,6 +3203,9 @@ MonoBehaviour:
       connections:
       - fieldName: CubeEntity (Field)
         node: {fileID: 2061006948260006363}
+        reroutePoints: []
+      - fieldName: CubeEntity
+        node: {fileID: -843514211336542600}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -4130,8 +4136,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 6402612874136931776}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: X
         node: {fileID: 7771546304584235007}
