@@ -1222,13 +1222,13 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Data
+        node: {fileID: -2400644280000083460}
+        reroutePoints: []
+      - fieldName: Data
         node: {fileID: 6402612874136931776}
         reroutePoints: []
       - fieldName: Data
         node: {fileID: 2372284499203493106}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: -2400644280000083460}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -1306,6 +1306,9 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Data
+        node: {fileID: 1072247159839421151}
+        reroutePoints: []
+      - fieldName: Data
         node: {fileID: 9074881034774369323}
         reroutePoints: []
       - fieldName: Data
@@ -1313,9 +1316,6 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: Data
         node: {fileID: 5566661622240897244}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: 1072247159839421151}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2463,6 +2463,12 @@ MonoBehaviour:
       _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
+      - fieldName: Value
+        node: {fileID: -6793290240322009571}
+        reroutePoints: []
+      - fieldName: ValuesIn
+        node: {fileID: 3129961223765705061}
+        reroutePoints: []
       - fieldName: Data
         node: {fileID: -9175224203462566184}
         reroutePoints: []
@@ -2471,12 +2477,6 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: Data
         node: {fileID: 3413640304841995572}
-        reroutePoints: []
-      - fieldName: Value
-        node: {fileID: -6793290240322009571}
-        reroutePoints: []
-      - fieldName: ValuesIn
-        node: {fileID: 3129961223765705061}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -2879,10 +2879,10 @@ MonoBehaviour:
         node: {fileID: 3129961223765705061}
         reroutePoints: []
       - fieldName: Data
-        node: {fileID: -3674261819807468564}
+        node: {fileID: -6793290240322009571}
         reroutePoints: []
       - fieldName: Data
-        node: {fileID: -6793290240322009571}
+        node: {fileID: -3674261819807468564}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4044,13 +4044,13 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Data
+        node: {fileID: -7486768943615341224}
+        reroutePoints: []
+      - fieldName: Data
         node: {fileID: -8602665108849509112}
         reroutePoints: []
       - fieldName: Data
         node: {fileID: -5131487363760819044}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: -7486768943615341224}
         reroutePoints: []
       _direction: 1
       _connectionType: 0

@@ -16,8 +16,8 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         [HideInInspector] public int ChoiceIndex;
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
-            base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Data) && to.node == this) {
+                SerializableInfos.Clear();
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
                 SerializableInfos.AddRange(reflectionData.Type
                     .GetFields(SerializableInfo.DefaultBindingFlags)
@@ -29,8 +29,7 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         }
         
         public override void OnRemoveConnection(NodePort port) {
-            base.OnRemoveConnection(port);
-            if (port.fieldName == nameof(Data) && port.node == this) {
+            if (port.fieldName == nameof(Data)) {
                 SerializableInfos.Clear();
             }
         }

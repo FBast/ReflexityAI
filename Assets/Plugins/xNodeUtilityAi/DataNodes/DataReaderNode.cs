@@ -13,8 +13,8 @@ namespace Plugins.xNodeUtilityAi.DataNodes {
         
         public ReflexityAI Context { get; set; }
 
-        [SerializeField, HideInInspector] public PortDictionary PortDictionary = new PortDictionary();
-        [SerializeField, HideInInspector] public InfoDictionary InfoDictionary = new InfoDictionary();
+        [HideInInspector] public PortDictionary PortDictionary = new PortDictionary();
+        [HideInInspector] public InfoDictionary InfoDictionary = new InfoDictionary();
         
         [SerializeField, HideInInspector] private string _declaringTypeName;
 
