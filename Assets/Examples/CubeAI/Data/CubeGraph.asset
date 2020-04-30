@@ -2958,8 +2958,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 2372284499203493106}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: MaxX
         node: {fileID: 7771546304584235007}
@@ -2974,10 +2974,10 @@ MonoBehaviour:
     MemberTypes: 4
     DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    Name: CurrentAmmo
+    Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CurrentAmmo (Field)
-    Order: 67108875
+    PortName: MaxHp (Field)
+    Order: 67108869
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3129,7 +3129,7 @@ MonoBehaviour:
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
-  ChoiceIndex: 9
+  ChoiceIndex: 3
 --- !u!114 &2907966425809301007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4136,8 +4136,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 6402612874136931776}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: X
         node: {fileID: 7771546304584235007}
@@ -4152,10 +4152,10 @@ MonoBehaviour:
     MemberTypes: 4
     DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    Name: CurrentAmmo
+    Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CurrentAmmo (Field)
-    Order: 67108875
+    PortName: CurrentHp (Field)
+    Order: 67108870
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4307,7 +4307,7 @@ MonoBehaviour:
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
-  ChoiceIndex: 9
+  ChoiceIndex: 4
 --- !u!114 &7297451011181730025
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ namespace Plugins.xNodeUtilityAi.Framework {
             while (IsQueuing) {
                 yield return new WaitWhile(() => Queue.Count == 0);
                 ReflexityAI dequeue = Queue.Dequeue();
-                ReflexityAI peek = Queue.Peek();
+                ReflexityAI peek = Queue.Count > 0 ? Queue.Peek() : null;
                 if (dequeue && dequeue.enabled && (!peek || peek != dequeue)) {
                     dequeue.ThinkAndAct();
                     if (dequeue.QueuingLoop) Queue.Enqueue(dequeue);

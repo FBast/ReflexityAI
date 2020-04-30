@@ -10,9 +10,10 @@ namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
 
         public override void OnBodyGUI() {
             if (_utilityNode == null) _utilityNode = (UtilityNode) target;
-            NodeEditorGUILayout.PortField(_utilityNode.GetPort(nameof(_utilityNode.MinX)));
-            NodeEditorGUILayout.PortField(_utilityNode.GetPort(nameof(_utilityNode.X)));
-            NodeEditorGUILayout.PortField(_utilityNode.GetPort(nameof(_utilityNode.MaxX)));
+            serializedObject.Update();
+            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_utilityNode.MinX)));
+            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_utilityNode.X	)));
+            NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_utilityNode.MaxX)));
             EditorGUILayout.CurveField(GUIContent.none, _utilityNode.Function, GUILayout.Height(50));
 //            EditorGUILayout.CurveField(GUIContent.none, _utilityNode.ScaledFunction, GUILayout.Height(50));
             NodeEditorGUILayout.AddPortField(_utilityNode.GetPort(nameof(_utilityNode.Rank)));
@@ -22,6 +23,7 @@ namespace Plugins.xNodeUtilityAi.MainNodes.Editor {
 //            keyframes[0].inWeight = _utilityNode.MinX;
 //            keyframes[keyframes.Length - 1].inWeight = _utilityNode.MaxX;
 //            _utilityNode.ScaledFunction.keys = keyframes;
+            serializedObject.ApplyModifiedProperties();
         }
 
     }

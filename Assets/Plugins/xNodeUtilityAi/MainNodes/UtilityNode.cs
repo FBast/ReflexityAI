@@ -25,7 +25,7 @@ namespace Plugins.xNodeUtilityAi.MainNodes {
                 int maxX = GetInputValue(nameof(MaxX), MaxX);
                 int x = GetInputValue(nameof(X), X);
                 float scaledX = ScaleX(minX, maxX, x);
-                return scaledX;
+                return Function.Evaluate(scaledX);
 //                return ScaleY(MinY, MaxY, Function.Evaluate(scaledX));
             }
             return null;
