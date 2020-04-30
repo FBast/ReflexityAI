@@ -11,9 +11,12 @@ namespace Plugins.ReflexityAI.Framework {
         public List<AIAction> AiActions = new List<AIAction>();
         public float Rank;
         public int Weight;
+        public float LowerProbability;
+        public float HigherProbability;
         public float Probability;
         public string Description;
         public int IteratorIndex;
+        public bool IsRanked;
 
         public AIOption(OptionNode optionNode) {
             // Saving linked optionNode
@@ -36,6 +39,7 @@ namespace Plugins.ReflexityAI.Framework {
                 OptionNode.DataIteratorNode.Index = IteratorIndex;
             }
             Rank = OptionNode.GetRank();
+            IsRanked = true;
         }
 
         public void ExecuteActions() {
@@ -52,7 +56,8 @@ namespace Plugins.ReflexityAI.Framework {
                     description += " " + data;
                 }
             }
-            return description + " - Rank " + Rank + " - Weight " + Weight + " - Probability " + Probability;
+            if (IsRanked) return description + " - Weight(" + Weight + ") + Rank (" + Rank + ") = Probability(" + Probability + ")";
+            return description + " - Weight (" + Weight + ") = Probability(" + Probability + ")";
         }
 
     }

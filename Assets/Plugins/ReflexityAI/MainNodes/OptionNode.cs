@@ -54,17 +54,17 @@ namespace Plugins.ReflexityAI.MainNodes {
             return options;
         }
 
-        public float GetRank() {
+        public int GetRank() {
             NodePort utilityPort = GetInputPort(nameof(Ranks));
             if (utilityPort.IsConnected) {
-                float[] floats = utilityPort.GetInputValues<float>();
+                int[] ints = utilityPort.GetInputValues<int>();
                 switch (Merge) {
                     case MergeType.Average:
-                        return floats.Average();
+                        return (int) ints.Average();
                     case MergeType.Max:
-                        return Mathf.Max(floats);
+                        return Mathf.Max(ints);
                     case MergeType.Min:
-                        return Mathf.Min(floats);
+                        return Mathf.Min(ints);
                     default:
                         throw new ArgumentOutOfRangeException();
                 }

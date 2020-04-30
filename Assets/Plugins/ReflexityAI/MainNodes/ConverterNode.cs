@@ -1,3 +1,4 @@
+using Plugins.ReflexityAI.Framework;
 using Plugins.ReflexityAI.MiddleNodes;
 using XNode;
 

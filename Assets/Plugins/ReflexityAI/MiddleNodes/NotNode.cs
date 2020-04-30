@@ -1,4 +1,5 @@
-﻿using XNode;
+﻿using Plugins.ReflexityAI.Framework;
+using XNode;
 
 namespace Plugins.ReflexityAI.MiddleNodes {
     public class NotNode : MiddleNode {

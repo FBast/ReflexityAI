@@ -1,5 +1,5 @@
 ﻿using System;
-using Plugins.ReflexityAI.MiddleNodes;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 using XNode;
 
@@ -14,8 +14,8 @@ namespace Plugins.ReflexityAI.MainNodes {
         public int MaxX = 1;
         [Tooltip("Evaluate the Utility Y using the X values")]
         public AnimationCurve Function = AnimationCurve.Linear(0, 0, 1, 1);
-//        public int MinY = -5;
-//        public int MaxY = 5;
+        public int MinY = -5;
+        public int MaxY = 5;
         [Tooltip("Connect to the Option Node")]
         [Output(connectionType: ConnectionType.Override)] public int Rank;
         
@@ -25,8 +25,7 @@ namespace Plugins.ReflexityAI.MainNodes {
                 int maxX = GetInputValue(nameof(MaxX), MaxX);
                 int x = GetInputValue(nameof(X), X);
                 float scaledX = ScaleX(minX, maxX, x);
-                return Function.Evaluate(scaledX);
-//                return ScaleY(MinY, MaxY, Function.Evaluate(scaledX));
+                return ScaleY(MinY, MaxY, Function.Evaluate(scaledX));
             }
             return null;
         }
@@ -40,8 +39,8 @@ namespace Plugins.ReflexityAI.MainNodes {
         
         private int ScaleY(int minY, int maxY, float y) {
             if (Math.Abs(minY - maxY) <= 0) return 0;
-            return (int) ((maxY - minY) * y - minY);
+            return (int) ((maxY - minY) * y + minY);
         }
-        
+
     }
 }

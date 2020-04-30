@@ -52,6 +52,7 @@
               <e p="EntryNode.cs" t="Include" />
               <e p="ICacheable.cs" t="Include" />
               <e p="IContextual.cs" t="Include" />
+              <e p="MiddleNode.cs" t="Include" />
               <e p="ReflexityAI.cs" t="Include" />
               <e p="ReflexityManager.cs" t="Include" />
               <e p="SerializableDictionary.cs" t="Include" />
@@ -76,7 +77,6 @@
               <e p="AndNode.cs" t="Include" />
               <e p="IsEqualNode.cs" t="Include" />
               <e p="IsNullNode.cs" t="Include" />
-              <e p="MiddleNode.cs" t="Include" />
               <e p="NotNode.cs" t="Include" />
               <e p="OrNode.cs" t="Include" />
             </e>
