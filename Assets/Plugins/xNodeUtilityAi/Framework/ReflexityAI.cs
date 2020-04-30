@@ -19,8 +19,8 @@ namespace Plugins.xNodeUtilityAi.Framework {
         [Tooltip("Robotic : Always pick best option\n" +
                  "Human : Randomize between best options")]
         public ResolutionType OptionsResolution = ResolutionType.Robotic;
-        [Tooltip("Cooperative : One option by brain is executed\n" +
-                 "Competitive : One option for all brain is executed")]
+        [Tooltip("Cooperative : Each best option per brain are executed\n" +
+                 "Competitive : The best option for all brain is executed")]
         public InteractionType MultiBrainInteraction = InteractionType.Cooperative;
         [Tooltip("Brains used by the AI")]
         public List<AIBrainGraph> LocalAIBrains;
