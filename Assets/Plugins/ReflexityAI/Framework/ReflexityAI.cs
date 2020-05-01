@@ -104,8 +104,10 @@ namespace Plugins.ReflexityAI.Framework {
                         aiOption.CalculateRank();
                     }
                 }
+                // Calculate overall ranks
+                CalculateOverallRanks(BestWeightedOptions);
                 // Fetch selected options according to multi brain interaction and options resolution
-                SelectOptionsOnRank(BestWeightedOptions, SelectedOptions);
+                SelectOptionsOnOverallRank(BestWeightedOptions, SelectedOptions);
             }
             // Order options for display
             foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in WeightedOptions.ToList()) {
@@ -171,7 +173,14 @@ namespace Plugins.ReflexityAI.Framework {
             return true;
         }
 
-        private void SelectOptionsOnRank(Dictionary<AIBrainGraph, List<AIOption>> options, Dictionary<AIBrainGraph, AIOption> selectedOptions) {
+        private void CalculateOverallRanks(Dictionary<AIBrainGraph, List<AIOption>> options) {
+            int minRank = options.Min(pair => pair.Value.Min(option => option.Rank));
+            foreach (AIOption option in options.SelectMany(valuePair => valuePair.Value)) {
+                option.OverallRank = option.Rank - minRank + 1;
+            }
+        }
+
+        private void SelectOptionsOnOverallRank(Dictionary<AIBrainGraph, List<AIOption>> options, Dictionary<AIBrainGraph, AIOption> selectedOptions) {
             selectedOptions.Clear();
             switch (OptionsResolution) {
                 // Calculate probability
@@ -179,10 +188,10 @@ namespace Plugins.ReflexityAI.Framework {
                     // Calculate relative probability from all brain options
                     float rndProbability = Random.Range(0f, 1f);
                     float probabilitySum = 0;
-                    float rankSum = options.Sum(pair => pair.Value.Sum(option => option.Rank));
+                    float overallRankSum = options.Sum(pair => pair.Value.Sum(option => option.OverallRank));
                     foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
                         foreach (AIOption aiOption in valuePair.Value) {
-                            aiOption.Probability = aiOption.Rank / rankSum;
+                            aiOption.Probability = aiOption.OverallRank / overallRankSum;
                             probabilitySum += aiOption.Probability;
                             if (selectedOptions.Count == 0 && probabilitySum >= rndProbability) {
                                 selectedOptions.Add(valuePair.Key, aiOption);
@@ -196,9 +205,9 @@ namespace Plugins.ReflexityAI.Framework {
                     foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
                         float rndProbability = Random.Range(0f, 1f);
                         float probabilitySum = 0;
-                        float rankSum = valuePair.Value.Sum(option => option.Rank);
+                        float overallRankSum = options.Sum(pair => pair.Value.Sum(option => option.OverallRank));
                         foreach (AIOption aiOption in valuePair.Value) {
-                            aiOption.Probability = aiOption.Rank / rankSum;
+                            aiOption.Probability = aiOption.OverallRank / overallRankSum;
                             probabilitySum += aiOption.Probability;
                             if (!selectedOptions.ContainsKey(valuePair.Key) && probabilitySum >= rndProbability) {
                                 selectedOptions.Add(valuePair.Key, aiOption);
@@ -209,10 +218,10 @@ namespace Plugins.ReflexityAI.Framework {
                 }
                 case ResolutionType.Robotic when MultiBrainInteraction == InteractionType.Competitive: {
                     // Calculate absolute probability from all brain options
-                    float maxRank = options.Max(pair => pair.Value.Max(option => option.Rank));
+                    float maxOverallRank = options.Max(pair => pair.Value.Max(option => option.OverallRank));
                     foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
                         foreach (AIOption aiOption in valuePair.Value) {
-                            if (SelectedOptions.Count == 0 && aiOption.Rank >= maxRank) {
+                            if (SelectedOptions.Count == 0 && aiOption.OverallRank >= maxOverallRank) {
                                 aiOption.Probability = 1;
                                 SelectedOptions.Add(valuePair.Key, aiOption);
                             } else {
@@ -226,7 +235,8 @@ namespace Plugins.ReflexityAI.Framework {
                     // Calculate absolute probability from same brain options
                     foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options) {
                         foreach (AIOption aiOption in valuePair.Value) {
-                            if (!SelectedOptions.ContainsKey(valuePair.Key) && aiOption.Rank >= valuePair.Value.Max(option => option.Rank)) {
+                            float maxOverallRank = valuePair.Value.Max(option => option.OverallRank);
+                            if (!SelectedOptions.ContainsKey(valuePair.Key) && aiOption.OverallRank >= maxOverallRank) {
                                 aiOption.Probability = 1;
                                 SelectedOptions.Add(valuePair.Key, aiOption);
                             } else {

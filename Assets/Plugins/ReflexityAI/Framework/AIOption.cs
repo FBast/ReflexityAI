@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using Plugins.ReflexityAI.MainNodes;
 
 namespace Plugins.ReflexityAI.Framework {
@@ -9,10 +10,9 @@ namespace Plugins.ReflexityAI.Framework {
 
         public OptionNode OptionNode;
         public List<AIAction> AiActions = new List<AIAction>();
-        public float Rank;
+        public int Rank;
         public int Weight;
-        public float LowerProbability;
-        public float HigherProbability;
+        public float OverallRank;
         public float Probability;
         public string Description;
         public int IteratorIndex;
@@ -56,7 +56,9 @@ namespace Plugins.ReflexityAI.Framework {
                     description += " " + data;
                 }
             }
-            if (IsRanked) return description + " - Weight(" + Weight + ") + Rank (" + Rank + ") = Probability(" + Probability + ")";
+            if (IsRanked) 
+                return description + " - Weight(" + Weight + ") | Rank (" + Rank + ") | " +
+                       "OverallRank (" + OverallRank + ") | Probability(" + Probability + ")";
             return description + " - Weight (" + Weight + ") = Probability(" + Probability + ")";
         }
 

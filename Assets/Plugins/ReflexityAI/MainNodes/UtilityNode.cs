@@ -14,8 +14,8 @@ namespace Plugins.ReflexityAI.MainNodes {
         public int MaxX = 1;
         [Tooltip("Evaluate the Utility Y using the X values")]
         public AnimationCurve Function = AnimationCurve.Linear(0, 0, 1, 1);
-        public int MinY = -5;
         public int MaxY = 5;
+        public int MinY = -5;
         [Tooltip("Connect to the Option Node")]
         [Output(connectionType: ConnectionType.Override)] public int Rank;
         

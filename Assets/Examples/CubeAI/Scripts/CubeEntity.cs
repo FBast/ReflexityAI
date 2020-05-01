@@ -77,6 +77,7 @@ namespace Examples.CubeAI.Scripts {
 
         private void OnTriggerExit(Collider other) {
             RollBackColor();
+            if (IsDead) return;
             Destroy(other.gameObject);
         }
 
