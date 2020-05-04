@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Prophetic-Legacy/Assets/Scripts/Utils/Extensions/GameObjectExtension.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
@@ -122,10 +121,10 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/Editor/UtilityNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" />
       </list>
     </option>
   </component>
