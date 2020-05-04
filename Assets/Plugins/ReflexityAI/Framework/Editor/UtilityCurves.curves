@@ -138,7 +138,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  - m_Name: Reverse Logistic
+  - m_Name: Inverse Logistic
     m_Curve:
       serializedVersion: 2
       m_Curve:
