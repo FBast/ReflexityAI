@@ -75,6 +75,7 @@
             </e>
             <e p="MiddleNodes" t="Include">
               <e p="AndNode.cs" t="Include" />
+              <e p="DistanceNode.cs" t="Include" />
               <e p="IsEqualNode.cs" t="Include" />
               <e p="IsNullNode.cs" t="Include" />
               <e p="NotNode.cs" t="Include" />

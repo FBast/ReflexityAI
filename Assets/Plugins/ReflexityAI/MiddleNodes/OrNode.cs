@@ -6,11 +6,11 @@ namespace Plugins.ReflexityAI.MiddleNodes {
     public class OrNode : MiddleNode {
         
         [Input(ShowBackingValue.Never)] public bool ValuesIn;
-        [Output(connectionType: ConnectionType.Override)] public bool ValueOut;
+        [Output] public bool ValueOut;
         
         public override object GetValue(NodePort port) {
-            if (port.fieldName == "ValueOut") {
-                bool[] values = GetInputValues<bool>("ValuesIn");
+            if (port.fieldName == nameof(ValueOut)) {
+                bool[] values = GetInputValues<bool>(nameof(ValuesIn));
                 return values.Any(value => value);
             }
             return null;

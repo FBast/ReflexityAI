@@ -1461,6 +1461,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  MaxY: 5
+  MinY: -5
   Rank: 0
 --- !u!114 &-5131487363760819044
 MonoBehaviour:
@@ -1887,6 +1889,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  MaxY: 5
+  MinY: -5
   Rank: 0
 --- !u!114 &-3674261819807468564
 MonoBehaviour:
@@ -2583,7 +2587,7 @@ MonoBehaviour:
         node: {fileID: 7598669563378913206}
         reroutePoints: []
       _direction: 1
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   ValuesIn: 0
@@ -2837,6 +2841,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  MaxY: 5
+  MinY: -5
   Rank: 0
 --- !u!114 &2061006948260006363
 MonoBehaviour:
@@ -2851,7 +2857,7 @@ MonoBehaviour:
   m_Name: Data Reader
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -1224, y: -136}
+  position: {x: -1208, y: -136}
   ports:
     keys:
     - OthersCubeEntities (Property)
@@ -4528,6 +4534,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  MaxY: 5
+  MinY: -5
   Rank: 0
 --- !u!114 &8337774532877857809
 MonoBehaviour:
@@ -4572,7 +4580,7 @@ MonoBehaviour:
         node: {fileID: 2907966425809301007}
         reroutePoints: []
       _direction: 1
-      _connectionType: 1
+      _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
   ValuesIn: 0
