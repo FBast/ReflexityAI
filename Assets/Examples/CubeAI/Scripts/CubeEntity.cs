@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace Examples.CubeAI.Scripts {
@@ -17,8 +16,11 @@ namespace Examples.CubeAI.Scripts {
         public int ProjectilePower;
         public int MaxAmmo;
         public int CurrentAmmo;
-        public int TargetSpeed;
+        public int CanonSpeed;
         public CubeEntity Target;
+
+        public Transform Transform => transform;
+        public GameObject GameObject => gameObject;
 
         private Color _startingColor;
         
@@ -29,16 +31,16 @@ namespace Examples.CubeAI.Scripts {
         private void Update() {
             if (IsDead) return;
             if (Target) {
-                Vector3 newDir = Vector3.RotateTowards(transform.forward, Target.transform.position - transform.position, TargetSpeed * Time.deltaTime, 0.0f);
+                Vector3 newDir = Vector3.RotateTowards(transform.forward, Target.transform.position - transform.position, CanonSpeed * Time.deltaTime, 0.0f);
                 transform.rotation = Quaternion.LookRotation(newDir);
                 transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
             }
-            Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
+            if (Stats)
+                Stats.text = "HP : " + CurrentHp + " Ammo : " + CurrentAmmo;
         }
 
         public void Fire() {
-            if (CurrentAmmo == 0)
-                throw new Exception("No more ammo, the AI should not fire !");
+            if (CurrentAmmo == 0) return;
             GameObject instantiate = Instantiate(ProjectilePrefab, CanonOutTransform.position, Quaternion.identity);
             instantiate.GetComponent<Rigidbody>().AddForce(transform.forward * ProjectilePower, ForceMode.Impulse);
             CurrentAmmo--;
@@ -47,7 +49,7 @@ namespace Examples.CubeAI.Scripts {
         public void Reload() {
             MeshRenderer.material.color = Color.blue;
             CurrentAmmo = MaxAmmo;
-            Invoke("RollBackColor", 0.1f);
+            Invoke(nameof(RollBackColor), 0.1f);
         }
 
         public void Heal() {
@@ -63,17 +65,19 @@ namespace Examples.CubeAI.Scripts {
         }
         
         private void OnTriggerEnter(Collider other) {
+            if (IsDead) return;
             MeshRenderer.material.color = Color.red;
             CurrentHp--;
             if (CurrentHp <= 0) {
                 IsDead = true;
-                Stats.text = "DEAD !";
-                GetComponent<CubeAIComponent>().enabled = false;
+                if (Stats) Stats.text = "DEAD !";
+                GetComponent<CubeAI>().enabled = false;
             }
         }
 
         private void OnTriggerExit(Collider other) {
             RollBackColor();
+            if (IsDead) return;
             Destroy(other.gameObject);
         }
 
