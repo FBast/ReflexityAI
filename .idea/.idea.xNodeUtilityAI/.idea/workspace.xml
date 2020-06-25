@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30df4a03-aa08-49a1-83a2-7e63f277cb3c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.xNodeUtilityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/Editor/UtilityNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/Editor/UtilityNodeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataSelectorNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataSelectorNodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,65 +16,48 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C3EEDF0E-79A7-49D7-A0ED-5088A1E1CA8D/5b/8970e455/XNode.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/7a/68b638e1/CustomAttributeExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode.meta" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/84/bfb39ea6/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/SceneGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/47/3aebb41b/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Prophetic-Legacy/Assets/Scripts/Utils/Extensions/GameObjectExtension.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/5c/9ec864d9/AnimationCurve.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/c9/6e9756e2/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/Editor/ActionSetterNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/440D1D09-336D-46EE-B6BA-2229A55AC755/c5/5d58a236/Array.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/Editor/UtilityNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/50/4407dac3/Debug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InNodeEditorAttributeProcessor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Editor/AiDebuggerEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/d7/c438542a/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/43/c668e3a3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4CD14385-55E6-4C0E-AEDA-2393D3C9CF4A/f4/017ce60c/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/IContextual.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataSelectorNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataReaderNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/SceneGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/DataNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Cube.prefab" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InNodeEditorAttributeProcessor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/FPSCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAIComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/ReflexityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" />
@@ -120,12 +102,13 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/FunctionUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/Editor/UtilityNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataSelectorNodeEditor.cs" />
       </list>
     </option>
   </component>
@@ -149,37 +132,35 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hundred Tales" />
     <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="2392">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="2392" />
-      <option name="userSelectedPid" value="false" />
+      <option name="pid" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
     </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -258,6 +239,8 @@
       <workItem from="1588234681835" duration="3302000" />
       <workItem from="1588239922180" duration="7627000" />
       <workItem from="1588334693657" duration="2489000" />
+      <workItem from="1591183665377" duration="745000" />
+      <workItem from="1591988923506" duration="150000" />
     </task>
     <servers />
   </component>
@@ -283,100 +266,102 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1213" y="377" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" />
-    <state x="-1213" y="377" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1035" height="653" key="DebuggerActiveHint" />
-    <state width="660" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1035" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1035" height="653" key="DebuggerActiveHint/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.0.bottom" />
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.0.bottom/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.0.center" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.0.center/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.0.left" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.0.left/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.0.right" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.0.right/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.1.bottom" />
-    <state width="1877" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.1.bottom/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.1.center" />
-    <state width="1877" height="277" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.1.center/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.1.left" />
-    <state width="1877" height="277" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.1.left/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.1.right" />
-    <state width="1877" height="277" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.1.right/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.2.bottom" />
-    <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.2.bottom/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.2.center" />
-    <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.2.center/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.2.left" />
-    <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.2.left/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.2.right" />
-    <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.2.right/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.3.bottom" />
-    <state width="1877" height="277" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.3.bottom/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.3.center" />
-    <state width="1877" height="277" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.3.center/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.3.left" />
-    <state width="1877" height="277" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.3.left/1920.1080/1920.1080" />
-    <state width="1877" height="188" key="GridCell.Tab.3.right" />
-    <state width="1877" height="277" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state width="1877" height="277" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state width="1877" height="188" key="GridCell.Tab.3.right/1920.1080/1920.1080" />
-    <state x="-762" y="215" key="RiderGenerateDialog" />
-    <state x="-1157" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state x="763" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state x="-762" y="215" key="RiderGenerateDialog/1920.1080/1920.1080" />
-    <state x="116" y="108" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" />
-    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state x="116" y="108" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state x="738" y="396" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" />
-    <state x="-1151" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" />
-    <state x="-1151" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state x="738" y="396" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate/1920.1080/1920.1080" />
-    <state x="579" y="143" width="1175" height="526" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" />
-    <state x="579" y="143" width="1175" height="526" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state x="521" y="89" width="954" height="1025" key="dock-window-1" />
-    <state x="521" y="89" width="954" height="1025" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state x="603" y="252" width="741" height="606" key="find.popup" />
-    <state x="-1317" y="252" width="714" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state x="603" y="252" width="741" height="606" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state x="603" y="252" width="741" height="606" key="find.popup/1920.1080/1920.1080" />
-    <state x="266" y="204" width="672" height="676" key="search.everywhere.popup" />
-    <state x="-1304" y="161" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" />
-    <state x="616" y="161" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" />
-    <state x="266" y="204" width="672" height="676" key="search.everywhere.popup/1920.1080/1920.1080" />
+    <state x="-1213" y="377" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1" timestamp="1591183670622" />
+    <state x="-1213" y="377" key="ANALYSIS_DLG_com.jetbrains.rider.actions.impl.cleanup.RiderCodeCleanupAction$actionPerformed$dlg$1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1035" height="653" key="DebuggerActiveHint" timestamp="1591183670622" />
+    <state width="660" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1035" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1035" height="653" key="DebuggerActiveHint/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.0.bottom" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.0.bottom/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.0.center" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.0.center/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.0.left" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.0.left/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.0.right" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.0.right/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.1.bottom" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.1.bottom/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.1.center" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.1.center/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.1.left" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.1.left/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.1.right" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.1.right/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.2.bottom" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.2.bottom/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.2.center" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.2.center/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.2.left" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.2.left/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.2.right" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.2.right/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.3.bottom" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.3.bottom/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.3.center" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.3.center/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.3.left" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.3.left/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.3.right" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="277" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state width="1877" height="188" key="GridCell.Tab.3.right/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state x="-762" y="215" key="RiderGenerateDialog" timestamp="1591183670622" />
+    <state x="-1157" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state x="763" y="236" key="RiderGenerateDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state x="-762" y="215" key="RiderGenerateDialog/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state x="116" y="108" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591183670622" />
+    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state x="116" y="108" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state x="738" y="396" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate" timestamp="1591183670622" />
+    <state x="-1151" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591183670622" />
+    <state x="-1151" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state x="769" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state x="738" y="396" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state x="579" y="143" width="1175" height="526" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1591183670622" />
+    <state x="579" y="143" width="1175" height="526" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state x="521" y="89" width="954" height="1025" key="dock-window-1" timestamp="1591183670622" />
+    <state x="521" y="89" width="954" height="1025" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state x="603" y="252" width="741" height="606" key="find.popup" timestamp="1591183670622" />
+    <state x="-1317" y="252" width="714" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state x="603" y="252" width="741" height="606" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183670622" />
+    <state x="603" y="252" width="741" height="606" key="find.popup/1920.1080/1920.1080" timestamp="1591183670622" />
+    <state x="616" y="161" width="672" height="676" key="search.everywhere.popup" timestamp="1591183789174">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1304" y="161" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591183670622" />
+    <state x="616" y="161" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1591183789174" />
+    <state x="266" y="204" width="672" height="676" key="search.everywhere.popup/1920.1080/1920.1080" timestamp="1591183670622" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1495,11 +1480,6 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
-    <reveal-manager>
-      <revealed-members>
-        <RevealItemInfo typeName="XNode.NodePort+PortConnection" fieldName="port" />
-      </revealed-members>
-    </reveal-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
         <watch expression="name" language="C#" custom="RiderImportsList:" />
