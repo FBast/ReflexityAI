@@ -11,11 +11,10 @@ namespace Plugins.ReflexityAI.DataNodes.Editor {
             if (_dataIteratorNode == null) _dataIteratorNode = (DataIteratorNode) target;
             serializedObject.Update();
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataIteratorNode.Enumerable)));
-            if (_dataIteratorNode.GetInputPort(nameof(_dataIteratorNode.Enumerable)).IsConnected) {
+            if (_dataIteratorNode.GetInputPort(nameof(_dataIteratorNode.Enumerable)).IsConnected && _dataIteratorNode.ArgumentType != null) {
                 NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataIteratorNode.LinkedOption)));
-                NodeEditorGUILayout.PortField(_dataIteratorNode.GetOutputPort(_dataIteratorNode.ArgumentType.Name));
-//                NodePort nodePort = _dataIteratorNode.GetPort(nameof(_dataIteratorNode.Output));
-//                NodeEditorGUILayout.PortField(nodePort);
+                NodePort nodePort = _dataIteratorNode.GetOutputPort(_dataIteratorNode.ArgumentType.Name);
+                NodeEditorGUILayout.PortField(nodePort);
             }
             serializedObject.ApplyModifiedProperties();
         }    

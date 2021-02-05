@@ -19,7 +19,7 @@ namespace Plugins.ReflexityAI.DataNodes {
         public Type ArgumentType {
             get {
                 if (_argumentType == null)
-                    _argumentType = Type.GetType(_typeArgumentName);
+                    _argumentType = Type.GetType(_argumentTypeName);
                 return _argumentType;
             }
         }
@@ -36,7 +36,7 @@ namespace Plugins.ReflexityAI.DataNodes {
         
         public int CollectionCount => GetCollection().Count();
 
-        [SerializeField, HideInInspector] private string _typeArgumentName;
+        [SerializeField, HideInInspector] private string _argumentTypeName;
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
             if (to.fieldName == nameof(Enumerable) && to.node == this) {
@@ -44,7 +44,7 @@ namespace Plugins.ReflexityAI.DataNodes {
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Enumerable));
                 if (reflectionData.Type.IsGenericType && reflectionData.Type.GetGenericTypeDefinition().GetInterface(typeof(IEnumerable<>).FullName) != null) {
                     Type type = reflectionData.Type.GetGenericArguments()[0];
-                    _typeArgumentName = type.AssemblyQualifiedName;
+                    _argumentTypeName = type.AssemblyQualifiedName;
                     AddDynamicOutput(type, ConnectionType.Multiple, TypeConstraint.Inherited, type.Name);
                 } else {
                     Debug.LogError("Enumerable need to be a generic type (List or Array for example)");
@@ -54,6 +54,7 @@ namespace Plugins.ReflexityAI.DataNodes {
         
         public override void OnRemoveConnection(NodePort port) {
             if (port.fieldName == nameof(Enumerable) && port.node == this) {
+                RemoveDynamicPort(ArgumentType.Name);
 //                ClearDynamicPorts();
             }
         }
