@@ -370,3 +370,31 @@ System memory in use after: 71.2 MB.
 Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1923.
 Total: 1.782328 ms (FindLiveObjects: 0.171262 ms CreateObjectMapping: 0.046271 ms MarkObjects: 1.495088 ms  DeleteObjects: 0.068805 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.093563 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.988 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.2 MB.
+System memory in use after: 71.3 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1925.
+Total: 1.930154 ms (FindLiveObjects: 0.200707 ms CreateObjectMapping: 0.062195 ms MarkObjects: 1.580719 ms  DeleteObjects: 0.085631 ms)
+
