@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataIteratorNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataIteratorNodeEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
@@ -16,7 +17,7 @@
     <session id="670136642">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.64" value="1" />
@@ -80,14 +81,14 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataIteratorNodeEditor.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="105" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
+                <state relative-caret-position="374">
+                  <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
                   <folding>
-                    <marker date="1612543348640" expanded="true" signature="6:31" ph="..." />
-                    <marker date="1612543348640" expanded="true" signature="80:1048" ph="{...}" />
-                    <marker date="1612543348640" expanded="true" signature="184:1046" ph="{...}" />
-                    <marker date="1612543348640" expanded="true" signature="281:1035" ph="{...}" />
-                    <marker date="1612543348640" expanded="true" signature="669:969" ph="{...}" />
+                    <marker date="1612543352226" expanded="true" signature="6:31" ph="..." />
+                    <marker date="1612543352226" expanded="true" signature="80:1047" ph="{...}" />
+                    <marker date="1612543352226" expanded="true" signature="184:1045" ph="{...}" />
+                    <marker date="1612543352226" expanded="true" signature="281:1034" ph="{...}" />
+                    <marker date="1612543352226" expanded="true" signature="668:968" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -1032,12 +1033,12 @@
       <workItem from="1612435428393" duration="720000" />
       <workItem from="1612437314333" duration="467000" />
       <workItem from="1612437798868" duration="12496000" />
-      <workItem from="1612513470630" duration="19942000" />
+      <workItem from="1612513470630" duration="20567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33625000" />
+    <option name="totallyTimeSpent" value="34250000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1050,7 +1051,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12633263" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -2067,20 +2067,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataIteratorNodeEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="105" selection-start-line="16" selection-start-column="105" selection-end-line="16" selection-end-column="105" />
-          <folding>
-            <marker date="1612543348640" expanded="true" signature="6:31" ph="..." />
-            <marker date="1612543348640" expanded="true" signature="80:1048" ph="{...}" />
-            <marker date="1612543348640" expanded="true" signature="184:1046" ph="{...}" />
-            <marker date="1612543348640" expanded="true" signature="281:1035" ph="{...}" />
-            <marker date="1612543348640" expanded="true" signature="669:969" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -2105,6 +2091,20 @@
             <marker date="1612543132417" expanded="true" signature="2919:3088" ph="{...}" />
             <marker date="1612543132417" expanded="true" signature="3123:3174" ph="{...}" />
             <marker date="1612543132417" expanded="true" signature="3214:3265" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataIteratorNodeEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <marker date="1612543352226" expanded="true" signature="6:31" ph="..." />
+            <marker date="1612543352226" expanded="true" signature="80:1047" ph="{...}" />
+            <marker date="1612543352226" expanded="true" signature="184:1045" ph="{...}" />
+            <marker date="1612543352226" expanded="true" signature="281:1034" ph="{...}" />
+            <marker date="1612543352226" expanded="true" signature="668:968" ph="{...}" />
           </folding>
         </state>
       </provider>
