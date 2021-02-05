@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.ReflexityAI.MainNodes;
-using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -23,7 +22,7 @@ namespace Plugins.ReflexityAI.Framework {
         [Tooltip("Cooperative : Each best option per brain are executed\n" +
                  "Competitive : The best option for all brain is executed")]
         public InteractionType MultiBrainInteraction = InteractionType.Cooperative;
-        [Tooltip("Brains used by the AI")]
+        [Tooltip("Local copy of the Brains used by the AI for readonly purpose")]
         public List<AIBrainGraph> LocalAIBrains;
         
         public readonly Dictionary<AIBrainGraph, List<AIOption>> WeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
@@ -89,6 +88,7 @@ namespace Plugins.ReflexityAI.Framework {
                 SelectedOptions.Clear();
                 foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in BestWeightedOptions) {
                     foreach (AIOption aiOption in valuePair.Value) {
+                        aiOption.Probability = 1;
                         SelectedOptions.Add(valuePair.Key, aiOption);
                     }
                 }

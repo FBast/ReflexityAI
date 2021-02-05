@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Data Selector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -488, y: -968}
+  position: {x: -488, y: -1208}
   ports:
     keys:
     - Data
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_Name: Is Null
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -488, y: -552}
+  position: {x: -488, y: -568}
   ports:
     keys:
     - ValueIn
@@ -701,6 +701,54 @@ MonoBehaviour:
       _typeConstraint: 0
       _dynamic: 0
   ValueIn: {fileID: 0}
+  ValueOut: 0
+--- !u!114 &-7578698713438904825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b581676763b4451fbb38ac9befec67ad, type: 3}
+  m_Name: Is Equal
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -232, y: -936}
+  ports:
+    keys:
+    - ValuesIn
+    - ValueOut
+    values:
+    - _fieldName: ValuesIn
+      _node: {fileID: -7578698713438904825}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: 3696875022282380510}
+        reroutePoints: []
+      - fieldName: CubeEntity (Field)
+        node: {fileID: 2061006948260006363}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: -7578698713438904825}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: ValueIn
+        node: {fileID: 2805098695444210215}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  ValuesIn: {fileID: 0}
   ValueOut: 0
 --- !u!114 &-7486768943615341224
 MonoBehaviour:
@@ -826,7 +874,7 @@ MonoBehaviour:
   m_Name: Data Selector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -488, y: -888}
+  position: {x: -488, y: -1128}
   ports:
     keys:
     - Data
@@ -1073,7 +1121,7 @@ MonoBehaviour:
   m_Name: Utility
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 40, y: -1032}
+  position: {x: 40, y: -1208}
   ports:
     keys:
     - MinX
@@ -1663,7 +1711,7 @@ MonoBehaviour:
   m_Name: Data Selector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -488, y: -808}
+  position: {x: -488, y: -792}
   ports:
     keys:
     - Data
@@ -1910,7 +1958,7 @@ MonoBehaviour:
   m_Name: Or
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -232, y: -728}
+  position: {x: -232, y: -712}
   ports:
     keys:
     - ValuesIn
@@ -2163,7 +2211,7 @@ MonoBehaviour:
   m_Name: Converter
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 24, y: -712}
+  position: {x: 24, y: -728}
   ports:
     keys:
     - ValueIn
@@ -2278,7 +2326,7 @@ MonoBehaviour:
   Ranks: 0
   Merge: 1
   Multiplier: 1
-  Bonus: 0
+  Bonus: 1
   Actions: {fileID: 0}
 --- !u!114 &-3674261819807468564
 MonoBehaviour:
@@ -2293,7 +2341,7 @@ MonoBehaviour:
   m_Name: Data Selector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -792, y: -552}
+  position: {x: -792, y: -504}
   ports:
     keys:
     - Data
@@ -3064,6 +3112,18 @@ MonoBehaviour:
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: CubeEntities
+    TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: CubeEntities (Field)
+    Order: 67108879
+    IsIteratable: 1
+    IsPrimitive: 0
+    Parameters: []
   - MemberTypes: 16
     DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -3077,10 +3137,20 @@ MonoBehaviour:
   - MemberTypes: 16
     DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+    Name: IsEmptyAmmo
+    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: IsEmptyAmmo (Property)
+    Order: 385875971
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 16
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875971
+    Order: 385875972
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3091,7 +3161,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875972
+    Order: 385875973
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3102,7 +3172,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875973
+    Order: 385875974
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3120,7 +3190,7 @@ MonoBehaviour:
   m_Name: Data Iterator
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -840, y: -1032}
+  position: {x: -840, y: -1272}
   ports:
     keys:
     - Enumerable
@@ -3171,6 +3241,9 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: Value
         node: {fileID: -6793290240322009571}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: 3696875022282380510}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3237,6 +3310,9 @@ MonoBehaviour:
   - {fileID: -2937336195790190701}
   - {fileID: -3031999792752823412}
   - {fileID: 8593508667235280350}
+  - {fileID: 3696875022282380510}
+  - {fileID: -7578698713438904825}
+  - {fileID: 2805098695444210215}
   HistoricTags: []
   MemoryTags: []
 --- !u!114 &287704614793438030
@@ -3810,6 +3886,9 @@ MonoBehaviour:
       - fieldName: ValuesIn
         node: {fileID: 3129961223765705061}
         reroutePoints: []
+      - fieldName: ValuesIn
+        node: {fileID: -7578698713438904825}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -4069,6 +4148,53 @@ MonoBehaviour:
     IsPrimitive: 0
     Parameters: []
   ChoiceIndex: 3
+--- !u!114 &2805098695444210215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
+  m_Name: Converter
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 24, y: -920}
+  ports:
+    keys:
+    - ValueIn
+    - ValueOut
+    values:
+    - _fieldName: ValueIn
+      _node: {fileID: 2805098695444210215}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: ValueOut
+        node: {fileID: -7578698713438904825}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: ValueOut
+      _node: {fileID: 2805098695444210215}
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Bonus
+        node: {fileID: 5686772860135997062}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  ValueIn: 0
+  IsTrue: 1
+  IsFalse: 0
+  ValueOut: 0
 --- !u!114 &2907966425809301007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4082,7 +4208,7 @@ MonoBehaviour:
   m_Name: Converter
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 24, y: -536}
+  position: {x: 24, y: -552}
   ports:
     keys:
     - ValueIn
@@ -4164,6 +4290,254 @@ MonoBehaviour:
       _dynamic: 0
   ValuesIn: {fileID: 0}
   ValueOut: 0
+--- !u!114 &3696875022282380510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
+  m_Name: Data Selector
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -488, y: -984}
+  ports:
+    keys:
+    - Data
+    - Output
+    values:
+    - _fieldName: Data
+      _node: {fileID: 3696875022282380510}
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: CubeEntity
+        node: {fileID: -843514211336542600}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: Output
+      _node: {fileID: 3696875022282380510}
+      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: ValuesIn
+        node: {fileID: -7578698713438904825}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+  Data: {fileID: 0}
+  Output: {fileID: 0}
+  SelectedSerializableInfo:
+    MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: Target
+    TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    PortName: Target (Field)
+    Order: 67108878
+    IsIteratable: 0
+    IsPrimitive: 0
+    Parameters: []
+  SerializableInfos:
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: MeshRenderer
+    TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    PortName: MeshRenderer (Field)
+    Order: 67108867
+    IsIteratable: 0
+    IsPrimitive: 0
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: Stats
+    TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    PortName: Stats (Field)
+    Order: 67108868
+    IsIteratable: 0
+    IsPrimitive: 0
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: IsDead
+    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: IsDead (Field)
+    Order: 67108869
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: MaxHp
+    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: MaxHp (Field)
+    Order: 67108870
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: CurrentHp
+    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: CurrentHp (Field)
+    Order: 67108871
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: CanonOutTransform
+    TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    PortName: CanonOutTransform (Field)
+    Order: 67108872
+    IsIteratable: 0
+    IsPrimitive: 0
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: ProjectilePrefab
+    TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    PortName: ProjectilePrefab (Field)
+    Order: 67108873
+    IsIteratable: 0
+    IsPrimitive: 0
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: ProjectilePower
+    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: ProjectilePower (Field)
+    Order: 67108874
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: MaxAmmo
+    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: MaxAmmo (Field)
+    Order: 67108875
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: CurrentAmmo
+    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: CurrentAmmo (Field)
+    Order: 67108876
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: CanonSpeed
+    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: CanonSpeed (Field)
+    Order: 67108877
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: Target
+    TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    PortName: Target (Field)
+    Order: 67108878
+    IsIteratable: 0
+    IsPrimitive: 0
+    Parameters: []
+  - MemberTypes: 4
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: CubeEntities
+    TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: CubeEntities (Field)
+    Order: 67108879
+    IsIteratable: 1
+    IsPrimitive: 0
+    Parameters: []
+  - MemberTypes: 16
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: IsFullAmmo
+    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: IsFullAmmo (Property)
+    Order: 385875970
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 16
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: IsEmptyAmmo
+    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: IsEmptyAmmo (Property)
+    Order: 385875971
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 16
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: IsFullLife
+    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: IsFullLife (Property)
+    Order: 385875972
+    IsIteratable: 0
+    IsPrimitive: 1
+    Parameters: []
+  - MemberTypes: 16
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: Transform
+    TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    PortName: Transform (Property)
+    Order: 385875973
+    IsIteratable: 0
+    IsPrimitive: 0
+    Parameters: []
+  - MemberTypes: 16
+    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    Name: GameObject
+    TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    PortName: GameObject (Property)
+    Order: 385875974
+    IsIteratable: 0
+    IsPrimitive: 0
+    Parameters: []
+  ChoiceIndex: 11
 --- !u!114 &4124472366614719383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4245,7 +4619,7 @@ MonoBehaviour:
   Ranks: 0
   Merge: 1
   Multiplier: 1
-  Bonus: 0
+  Bonus: 1
   Actions: {fileID: 0}
 --- !u!114 &4428729858040023306
 MonoBehaviour:
@@ -4694,7 +5068,7 @@ MonoBehaviour:
   m_Name: Option
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 472, y: -1160}
+  position: {x: 472, y: -1256}
   ports:
     keys:
     - DataIteratorNode
@@ -4746,7 +5120,10 @@ MonoBehaviour:
       _node: {fileID: 5686772860135997062}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections: []
+      connections:
+      - fieldName: ValueOut
+        node: {fileID: 2805098695444210215}
+        reroutePoints: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
@@ -4768,7 +5145,7 @@ MonoBehaviour:
   Ranks: 0
   Merge: 1
   Multiplier: 1
-  Bonus: 0
+  Bonus: 1
   Actions: {fileID: 0}
 --- !u!114 &5693716149001763719
 MonoBehaviour:
@@ -5171,7 +5548,7 @@ MonoBehaviour:
   Ranks: 0
   Merge: 1
   Multiplier: 1
-  Bonus: 0
+  Bonus: 1
   Actions: {fileID: 0}
 --- !u!114 &7598669563378913206
 MonoBehaviour:
@@ -5329,7 +5706,7 @@ MonoBehaviour:
   m_Name: Or
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -232, y: -552}
+  position: {x: -232, y: -536}
   ports:
     keys:
     - ValuesIn

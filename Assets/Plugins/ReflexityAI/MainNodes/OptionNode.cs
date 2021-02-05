@@ -29,7 +29,7 @@ namespace Plugins.ReflexityAI.MainNodes {
         
         [Header("Weighting")] 
         [Input, Tooltip("Product of the multiplier"), Range(0, 10)] public int Multiplier = 1;
-        [Input, Tooltip("Sum of the bonus"), Range(0, 10)] public int Bonus;
+        [Input, Tooltip("Sum of the bonus"), Range(1, 10)] public int Bonus;
         
         [Space] [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")]
         public ActionNode Actions;
@@ -74,12 +74,11 @@ namespace Plugins.ReflexityAI.MainNodes {
 
         public int GetWeight() {
             NodePort bonusPort = GetInputPort(nameof(Bonus));
-            int bonus = bonusPort.IsConnected ? bonusPort.GetInputValues<int>().Sum() : Bonus;
+            int bonus = bonusPort.IsConnected ? bonusPort.GetInputValues<int>().Sum() + 1 : Bonus;
             NodePort multiplierPort = GetInputPort(nameof(Multiplier));
             int multiplier = multiplierPort.IsConnected
                 ? multiplierPort.GetInputValues<int>().Aggregate((total, next) => total * next)
                 : Multiplier;
-            if (bonus == 0) bonus = 1;
             return bonus * multiplier;
         }
 
