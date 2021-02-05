@@ -8,7 +8,7 @@ using UnityEngine.Serialization;
 using XNode;
 
 namespace Plugins.ReflexityAI.DataNodes {
-    [NodeWidth(300)]
+    [CreateNodeMenu("Reflexity/Data/Reader"), NodeWidth(300)]
     public class DataReaderNode : DataNode, IContextual, ICacheable {
         
         public Framework.ReflexityAI Context { get; set; }

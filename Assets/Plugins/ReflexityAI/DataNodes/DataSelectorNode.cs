@@ -6,6 +6,7 @@ using XNode;
 using Object = UnityEngine.Object;
 
 namespace Plugins.ReflexityAI.DataNodes {
+    [CreateNodeMenu("Reflexity/Data/Selector")]
     public class DataSelectorNode : DataNode, ICacheable {
         
         [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;

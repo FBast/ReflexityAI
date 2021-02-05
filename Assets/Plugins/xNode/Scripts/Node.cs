@@ -51,6 +51,8 @@ namespace XNode {
             Strict,
             /// <summary> Allow connections where output value type is assignable from input value type (eg. Object --> ScriptableObject)</summary>
             InheritedInverse,
+            /// <summary> Allow connections where output value type is assignable from input value or input value type is assignable from output value type</summary>
+            InheritedAny
         }
 
 #region Obsolete
@@ -314,6 +316,7 @@ namespace XNode {
             public OutputAttribute(ShowBackingValue backingValue, ConnectionType connectionType, bool dynamicPortList) : this(backingValue, connectionType, TypeConstraint.None, dynamicPortList) { }
         }
 
+        /// <summary> Manually supply node class with a context menu path </summary>
         [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
         public class CreateNodeMenuAttribute : Attribute {
             public string menuName;
@@ -334,6 +337,20 @@ namespace XNode {
             }
         }
 
+        /// <summary> Prevents Node of the same type to be added more than once (configurable) to a NodeGraph </summary>
+        [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
+        public class DisallowMultipleNodesAttribute : Attribute {
+            // TODO: Make inheritance work in such a way that applying [DisallowMultipleNodes(1)] to type NodeBar : Node
+            //       while type NodeFoo : NodeBar exists, will let you add *either one* of these nodes, but not both.
+            public int max;
+            /// <summary> Prevents Node of the same type to be added more than once (configurable) to a NodeGraph </summary>
+            /// <param name="max"> How many nodes to allow. Defaults to 1. </param>
+            public DisallowMultipleNodesAttribute(int max = 1) {
+                this.max = max;
+            }
+        }
+
+        /// <summary> Specify a color for this node type </summary>
         [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
         public class NodeTintAttribute : Attribute {
             public Color color;
@@ -360,6 +377,7 @@ namespace XNode {
             }
         }
 
+        /// <summary> Specify a width for this node type </summary>
         [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
         public class NodeWidthAttribute : Attribute {
             public int width;

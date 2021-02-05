@@ -7,7 +7,7 @@ namespace Plugins.ReflexityAI.Framework {
     [Serializable]
     public class SerializableInfo {
 
-        public const BindingFlags DefaultBindingFlags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly;
+        public const BindingFlags DefaultBindingFlags = BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static | BindingFlags.DeclaredOnly;
         
         public MemberTypes MemberTypes;
         public string DeclaringTypeName;

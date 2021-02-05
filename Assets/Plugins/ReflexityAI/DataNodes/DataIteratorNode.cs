@@ -7,6 +7,7 @@ using XNode;
 using Object = UnityEngine.Object;
 
 namespace Plugins.ReflexityAI.DataNodes {
+    [CreateNodeMenu("Reflexity/Data/Iterator")]
     public class DataIteratorNode : DataNode, ICacheable {
 
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public List<Object> Enumerable;

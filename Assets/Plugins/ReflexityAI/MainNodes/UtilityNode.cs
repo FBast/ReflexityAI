@@ -4,6 +4,7 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.ReflexityAI.MainNodes {
+    [CreateNodeMenu("Reflexity/Main/Utility")]
     public class UtilityNode : MiddleNode {
         
         [Input(ShowBackingValue.Unconnected, ConnectionType.Override), Tooltip("Scale the 0 on the X axe")] 

@@ -3,6 +3,7 @@ using Plugins.ReflexityAI.Framework;
 using XNode;
 
 namespace Plugins.ReflexityAI.MiddleNodes {
+    [CreateNodeMenu("Reflexity/Middle/Or")]
     public class OrNode : MiddleNode {
         
         [Input(ShowBackingValue.Never)] public bool ValuesIn;

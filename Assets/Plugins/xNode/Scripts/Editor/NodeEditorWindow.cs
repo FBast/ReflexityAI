@@ -77,7 +77,16 @@ namespace XNodeEditor {
         void OnFocus() {
             current = this;
             ValidateGraphEditor();
-            if (graphEditor != null && NodeEditorPreferences.GetSettings().autoSave) AssetDatabase.SaveAssets();
+            if (graphEditor != null) {
+                graphEditor.OnWindowFocus();
+                if (NodeEditorPreferences.GetSettings().autoSave) AssetDatabase.SaveAssets();
+            }
+            
+            dragThreshold = Math.Max(1f, Screen.width / 1000f);
+        }
+        
+        void OnLostFocus() {
+            if (graphEditor != null) graphEditor.OnWindowFocusLost();
         }
 
         [InitializeOnLoadMethod]
@@ -90,7 +99,7 @@ namespace XNodeEditor {
         private static void OnSelectionChanged() {
             XNode.NodeGraph nodeGraph = Selection.activeObject as XNode.NodeGraph;
             if (nodeGraph && !AssetDatabase.Contains(nodeGraph)) {
-                Open(nodeGraph);
+                if (NodeEditorPreferences.GetSettings().openOnCreate) Open(nodeGraph);
             }
         }
 

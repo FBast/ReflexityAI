@@ -4,6 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/Siccity/xNode.svg)](https://github.com/Siccity/xNode/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Siccity/xNode/master/LICENSE.md)
 [![GitHub Wiki](https://img.shields.io/badge/wiki-available-brightgreen.svg)](https://github.com/Siccity/xNode/wiki)
+[![openupm](https://img.shields.io/npm/v/com.github.siccity.xnode?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.github.siccity.xnode/)
 
 [Downloads](https://github.com/Siccity/xNode/releases) / [Asset Store](http://u3d.as/108S) / [Documentation](https://github.com/Siccity/xNode/wiki)
 
@@ -32,7 +33,11 @@ With a minimal footprint, it is ideal as a base for custom state machines, dialo
 * [Getting started](https://github.com/Siccity/xNode/wiki/Getting%20Started) - create your very first node node and graph
 * [Examples branch](https://github.com/Siccity/xNode/tree/examples) - look at other small projects
 
+### Installation
+<details><summary>Instructions</summary>
+
 ### Installing with Unity Package Manager
+***Via Git URL***
 *(Requires Unity version 2018.3.0b7  or above)*
 
 To install this project as a [Git dependency](https://docs.unity3d.com/Manual/upm-git.html) using the Unity Package Manager,
@@ -45,6 +50,29 @@ add the following line to your project's `manifest.json`:
 You will need to have Git installed and available in your system's PATH.
 
 If you are using [Assembly Definitions](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html) in your project, you will need to add `XNode` and/or `XNodeEditor` as Assembly Definition References.
+
+***Via OpenUPM***
+
+The package is available on the [openupm registry](https://openupm.com). It's recommended to install it via [openupm-cli](https://github.com/openupm/openupm-cli).
+
+```
+openupm add com.github.siccity.xnode
+```
+
+### Installing with git
+***Via Git Submodule***
+
+To add xNode as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) in your existing git project,
+run the following git command from your project root:
+
+```
+git submodule add git@github.com:Siccity/xNode.git Assets/Submodules/xNode
+```
+
+### Installing 'the old way'
+If no source control or package manager is available to you, you can simply copy/paste the source files into your assets folder.
+
+</details>
 
 ### Node example:
 ```csharp
@@ -82,5 +110,10 @@ public class MathNode : Node {
 }
 ```
 
+### Plugins
+Plugins are repositories that add functionality to xNode
+* [xNodeGroups](https://github.com/Siccity/xNodeGroups): adds resizable groups
+
+### Community
 Join the [Discord](https://discord.gg/qgPrHv4 "Join Discord server") server to leave feedback or get support.
 Feel free to also leave suggestions/requests in the [issues](https://github.com/Siccity/xNode/issues "Go to Issues") page.

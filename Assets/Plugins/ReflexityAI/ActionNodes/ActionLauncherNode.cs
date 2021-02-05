@@ -5,6 +5,7 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.ReflexityAI.ActionNodes {
+    [CreateNodeMenu("Reflexity/Action/Launcher")]
     public class ActionLauncherNode : ActionNode {
 
         [HideInInspector] public SerializableInfo SelectedSerializableInfo;

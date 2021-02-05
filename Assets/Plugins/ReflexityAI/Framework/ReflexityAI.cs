@@ -30,7 +30,6 @@ namespace Plugins.ReflexityAI.Framework {
         public readonly Dictionary<AIBrainGraph, List<AIOption>> BestWeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
 
-        private bool _isInQueue;
         private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
 
@@ -85,10 +84,10 @@ namespace Plugins.ReflexityAI.Framework {
             }
             // Fetch best options according to multi brain interaction
             BestOptionsOnWeight(WeightedOptions, BestWeightedOptions);
-            // Check if weight are not enough to start execution
+            // Check if weight is enough to start selection
             if (IsWeightEnoughForSelection(BestWeightedOptions)) {
                 SelectedOptions.Clear();
-                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in WeightedOptions) {
+                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in BestWeightedOptions) {
                     foreach (AIOption aiOption in valuePair.Value) {
                         SelectedOptions.Add(valuePair.Key, aiOption);
                     }
@@ -137,7 +136,7 @@ namespace Plugins.ReflexityAI.Framework {
             bestOptions.Clear();
             switch (MultiBrainInteraction) {
                 case InteractionType.Cooperative: {
-                    // Cooperative then take best weight of each brain
+                    // Cooperative then take best weight for each brain
                     foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in options.Where(pair => pair.Value.Count > 0)) {
                         int maxWeight = valuePair.Value.Max(option => option.Weight);
                         if (maxWeight == 0) continue;
@@ -163,7 +162,7 @@ namespace Plugins.ReflexityAI.Framework {
         private bool IsWeightEnoughForSelection(Dictionary<AIBrainGraph,List<AIOption>> options) {
             switch (MultiBrainInteraction) {
                 case InteractionType.Cooperative:
-                    if (options.Any(valuePair => valuePair.Value.Count > 1)) return false; 
+                    if (options.Any(pair => pair.Value.Count > 1)) return false; 
                     break;
                 case InteractionType.Competitive:
                     if (options.Sum(pair => pair.Value.Count) > 1) return false;

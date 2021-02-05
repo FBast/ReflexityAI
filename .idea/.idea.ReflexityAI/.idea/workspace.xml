@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Ammo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Ammo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Cube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Cube.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionLauncherNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionLauncherNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataReaderNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataReaderNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/DataNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/DataNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Editor/AIBrainGraphEditor.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Editor/AIBrainGraphEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/EntryNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/EntryNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/MiddleNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/MiddleNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SimpleDataNode.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SimpleDataNode.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/ConverterNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/ConverterNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryClearNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryClearNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryLoadNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryLoadNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemorySaveNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemorySaveNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/NotNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/NotNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/CONTRIBUTING.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/CONTRIBUTING.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/LICENSE.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/LICENSE.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/README.md.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/README.md.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Attributes/NodeEnum.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/NodeEnumDrawer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InNodeEditorAttributeProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InNodeEditorAttributeProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InNodeEditorAttributeProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InNodeEditorAttributeProcessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InputAttributeDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InputAttributeDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InputAttributeDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/InputAttributeDrawer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/OutputAttributeDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/OutputAttributeDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/OutputAttributeDrawer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Drawers/Odin/OutputAttributeDrawer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/GraphAndNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/GraphAndNodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/GraphAndNodeEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/GraphAndNodeEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/GraphRenameFixAssetProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/GraphRenameFixAssetProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/GraphRenameFixAssetProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/GraphRenameFixAssetProcessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Internal.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Internal.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Internal/RerouteReference.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Internal/RerouteReference.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Internal/RerouteReference.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Internal/RerouteReference.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorPreferences.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorReflection.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorReflection.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorResources.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorResources.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorResources.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/RenamePopup.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeGraphTemplate.cs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeGraphTemplate.cs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeGraphTemplate.cs.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeGraphTemplate.cs.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/ScriptTemplates/xNode_NodeTemplate.cs.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_dot.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_dot.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_dot_outer.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_dot_outer.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node_highlight.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node_highlight.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node_workfile.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/Resources/xnode_node_workfile.psd.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/XNodeEditor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/XNodeEditor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/XNodeEditor.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/XNodeEditor.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeDataCache.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/SceneGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/SceneGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/SceneGraph.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/SceneGraph.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/XNode.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/XNode.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/XNode.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/XNode.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="670136642">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="85" />
+          <entry key="json" value="2" />
+          <entry key="sln" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="85" />
+          <entry key="JSON" value="2" />
+          <entry key="Solution File" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="1342" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="1342" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+              <folding>
+                <marker date="1612457349827" expanded="true" signature="6:97" ph="..." />
+                <marker date="1612457349827" expanded="true" signature="179:3238" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="1048:1095" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="1126:1195" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="1227:1722" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="1285:1612" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="1751:2064" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="2095:2244" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="2273:2484" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="2523:2615" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="2677:2983" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="2821:2973" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="3036:3147" ph="{...}" />
+                <marker date="1612457349827" expanded="true" signature="3182:3232" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+              <folding>
+                <marker date="1612457786694" expanded="false" signature="6:170" ph="..." />
+                <marker date="1612457786694" expanded="true" signature="212:3266" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="319:3264" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="658:851" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="676:841" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="931:1163" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="949:1153" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="1000:1095" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="1398:2201" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="1518:2191" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="1777:2048" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="2274:2456" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="2394:2446" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="2513:2841" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="2571:2615" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="2903:3072" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="3107:3158" ph="{...}" />
+                <marker date="1612457786694" expanded="true" signature="3198:3249" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIBrainGraph.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding>
+                <marker date="1612432620192" expanded="false" signature="6:135" ph="..." />
+                <marker date="1612432620192" expanded="true" signature="177:1341" ph="{...}" />
+                <marker date="1612432620192" expanded="true" signature="183:293" ph="/// This class is used for the AIBrainGraphEditor, dont inherit from this ... " />
+                <marker date="1612432620192" expanded="true" signature="345:650" ph="{...}" />
+                <marker date="1612432620192" expanded="true" signature="563:635" ph="{...}" />
+                <marker date="1612432620192" expanded="true" signature="655:823" ph="/// Inherit from this class if you want to create an AI brain graph ... " />
+                <marker date="1612432620192" expanded="true" signature="881:1339" ph="{...}" />
+                <marker date="1612432620192" expanded="true" signature="940:1139" ph="{...}" />
+                <marker date="1612432620192" expanded="true" signature="1041:1104" ph="{...}" />
+                <marker date="1612432620192" expanded="true" signature="1175:1332" ph="{...}" />
+                <marker date="1612432620192" expanded="true" signature="1259:1322" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <marker date="1612440485911" expanded="false" signature="6:156" ph="..." />
+                <marker date="1612440485911" expanded="true" signature="198:2443" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="305:2441" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="859:1547" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="926:1537" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="1620:1738" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="1670:1728" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="1803:2193" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="1855:2158" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="2228:2290" ph="{...}" />
+                <marker date="1612440485911" expanded="true" signature="2330:2435" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/Editor/DropdownListDrawer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding>
+                <marker date="1612451836980" expanded="false" signature="6:51" ph="..." />
+                <marker date="1612451836980" expanded="true" signature="104:821" ph="{...}" />
+                <marker date="1612451836980" expanded="true" signature="208:819" ph="{...}" />
+                <marker date="1612451836980" expanded="true" signature="368:804" ph="{...}" />
+                <marker date="1612451836980" expanded="true" signature="430:794" ph="{...}" />
+                <marker date="1612451836980" expanded="true" signature="524:780" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <folding>
+                <marker date="1612457786702" expanded="false" signature="6:89" ph="..." />
+                <marker date="1612457786702" expanded="true" signature="125:465" ph="{...}" />
+                <marker date="1612457786702" expanded="true" signature="165:463" ph="{...}" />
+                <marker date="1612457786702" expanded="true" signature="392:456" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="85" column="70" lean-forward="true" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
+              <folding>
+                <marker date="1612515867708" expanded="false" signature="6:176" ph="..." />
+                <marker date="1612515867708" expanded="true" signature="218:13770" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="376:13768" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="706:814" ph="[...]" />
+                <marker date="1612515867708" expanded="true" signature="897:1042" ph="[...]" />
+                <marker date="1612515867708" expanded="true" signature="1836:2340" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="1893:2330" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="2201:2267" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="2374:2452" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="2462:2565" ph="/// Use this method to manually enqueue this AI processing ... " />
+                <marker date="1612515867708" expanded="true" signature="2634:2757" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="2767:2849" ph="/// Stop the AI queue from processing ... " />
+                <marker date="1612515867708" expanded="true" signature="2925:2975" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="2985:3069" ph="/// Clear all process from the AI queue ... " />
+                <marker date="1612515867708" expanded="true" signature="3147:3193" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="3231:5550" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="3370:3525" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="3793:4131" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="3937:4117" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="4006:4099" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="4174:4978" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="4337:4677" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="4406:4659" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="4503:4587" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="5122:5337" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="5470:5540" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="5616:6006" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="5756:5811" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="5890:5966" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="6151:7609" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="6229:7599" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="6484:6773" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="7218:7454" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="7708:8206" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="7753:8171" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="8301:8568" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="8479:8558" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="8720:12858" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="8798:12848" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="9335:9821" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="9408:9799" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="9664:9773" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="10141:10877" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="10447:10855" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="10720:10829" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="11308:11795" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="11381:11773" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="11485:11652" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="12115:12721" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="12188:12699" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="12411:12578" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="12943:13076" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="13133:13223" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="13287:13337" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="13423:13610" ph="{...}" />
+                <marker date="1612515867708" expanded="true" signature="13666:13761" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding>
+                <marker date="1612457398799" expanded="true" signature="101:1012" ph="{...}" />
+                <marker date="1612457398799" expanded="true" signature="291:997" ph="{...}" />
+                <marker date="1612457398799" expanded="true" signature="546:987" ph="{...}" />
+                <marker date="1612457398799" expanded="true" signature="598:883" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+              <folding>
+                <marker date="1612432620193" expanded="false" signature="6:141" ph="..." />
+                <marker date="1612432620193" expanded="true" signature="183:2407" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="230:2405" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="602:1172" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="908:980" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="1080:1162" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="1210:1427" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="1265:1347" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="1466:1645" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="1689:2398" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="1933:2076" ph="{...}" />
+                <marker date="1612432620193" expanded="true" signature="1996:2062" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <marker date="1612432620202" expanded="false" signature="6:78" ph="..." />
+                <marker date="1612432620202" expanded="true" signature="120:888" ph="{...}" />
+                <marker date="1612432620202" expanded="true" signature="154:886" ph="{...}" />
+                <marker date="1612432620202" expanded="true" signature="338:871" ph="{...}" />
+                <marker date="1612432620202" expanded="true" signature="400:861" ph="{...}" />
+                <marker date="1612432620202" expanded="true" signature="677:847" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/AutoDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/ConverterNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/EntryNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/MiddleNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/DataNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/IContextual.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/NotNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ICacheable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNodeGroups/NodeGroup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryLoadNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryClearNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemorySaveNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/DropdownList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/Editor/DropdownListDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionLauncherNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Editor/AIBrainGraphEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionLauncherNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataReaderNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/ConverterNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/NotNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIBrainGraph.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/EntryNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SimpleDataNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/DataNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/MiddleNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryLoadNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemorySaveNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryClearNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/CompareNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/AutoDestroy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-2092" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="776" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Angular</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ReflexityAI" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="ActionNodes" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="DataNodes" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="Framework" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="MainNodes" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="MemoryNodes" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="MiddleNodes" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="PatternNodes" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="Utils" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="Utils" type="1045f7f1:UnityExplorerNode" />
+              <item name="TagList" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="ReflexityAI" type="1045f7f1:UnityExplorerNode" />
+              <item name="Utils" type="1045f7f1:UnityExplorerNode" />
+              <item name="TagList" type="1045f7f1:UnityExplorerNode" />
+              <item name="Editor" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="xNode" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="ReflexityAI" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="1584">
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" value="1584" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="" />
+      <created>1612435424543</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612435424543</updated>
+      <workItem from="1612435428393" duration="720000" />
+      <workItem from="1612437314333" duration="467000" />
+      <workItem from="1612437798868" duration="12496000" />
+      <workItem from="1612513470630" duration="2395000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16078000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31130064" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs</url>
+          <line>88</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" initialLine="88">
+            <startOffsets>
+              <option value="3811" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3835" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.github.siccity.xnode@d58845ee15/package.json" />
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/xNodeGroups/Editor/NodeGroupEditor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/xNodeGroups/NodeGroup.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/xNodeGroups/NodeGroup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataReaderNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionLauncherNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/ConverterNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/NotNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Editor/AIBrainGraphEditor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReflexityAI.sln">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="320" column="21" selection-start-line="320" selection-start-column="21" selection-end-line="320" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SimpleDataNode.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableDictionary.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/IContextual.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ICacheable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/TagListHelper.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/DropdownList.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/EntryNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/DataNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/MiddleNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryLoadNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="7" selection-start-line="4" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemorySaveNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryClearNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="7" selection-start-line="4" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="7" selection-start-line="5" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="7" selection-start-line="6" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/CompareNode.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="20" column="107" selection-start-line="20" selection-start-column="107" selection-end-line="20" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/GameManager.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/AutoDestroy.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <marker date="1612453956825" expanded="true" signature="54:325" ph="{...}" />
+            <marker date="1612453956825" expanded="true" signature="101:323" ph="{...}" />
+            <marker date="1612453956825" expanded="true" signature="169:227" ph="{...}" />
+            <marker date="1612453956825" expanded="true" signature="264:308" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="102" selection-start-line="9" selection-start-column="102" selection-end-line="9" selection-end-column="122" />
+          <folding>
+            <marker date="1612457516880" expanded="false" signature="6:91" ph="..." />
+            <marker date="1612457516880" expanded="true" signature="188:5744" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="795:973" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="813:963" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="1058:1527" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="1076:1517" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="1125:1461" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="1663:2313" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="2210:2262" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="2409:3098" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="2995:3047" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="3190:3855" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="3671:3804" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="3890:3934" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="3975:4067" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="4131:4360" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="4421:4892" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="4455:4882" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="4966:5262" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="5000:5252" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="5320:5737" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="5354:5727" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="5797:5992" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="5916:5985" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="6027:6325" ph="{...}" />
+            <marker date="1612457516880" expanded="true" signature="6212:6318" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding>
+            <marker date="1612457349827" expanded="true" signature="6:97" ph="..." />
+            <marker date="1612457349827" expanded="true" signature="179:3238" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="1048:1095" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="1126:1195" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="1227:1722" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="1285:1612" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="1751:2064" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="2095:2244" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="2273:2484" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="2523:2615" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="2677:2983" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="2821:2973" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="3036:3147" ph="{...}" />
+            <marker date="1612457349827" expanded="true" signature="3182:3232" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <marker date="1612457398799" expanded="true" signature="101:1012" ph="{...}" />
+            <marker date="1612457398799" expanded="true" signature="291:997" ph="{...}" />
+            <marker date="1612457398799" expanded="true" signature="546:987" ph="{...}" />
+            <marker date="1612457398799" expanded="true" signature="598:883" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1612432620202" expanded="false" signature="6:78" ph="..." />
+            <marker date="1612432620202" expanded="true" signature="120:888" ph="{...}" />
+            <marker date="1612432620202" expanded="true" signature="154:886" ph="{...}" />
+            <marker date="1612432620202" expanded="true" signature="338:871" ph="{...}" />
+            <marker date="1612432620202" expanded="true" signature="400:861" ph="{...}" />
+            <marker date="1612432620202" expanded="true" signature="677:847" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <marker date="1612457786702" expanded="false" signature="6:89" ph="..." />
+            <marker date="1612457786702" expanded="true" signature="125:465" ph="{...}" />
+            <marker date="1612457786702" expanded="true" signature="165:463" ph="{...}" />
+            <marker date="1612457786702" expanded="true" signature="392:456" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <marker date="1612440485911" expanded="false" signature="6:156" ph="..." />
+            <marker date="1612440485911" expanded="true" signature="198:2443" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="305:2441" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="859:1547" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="926:1537" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="1620:1738" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="1670:1728" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="1803:2193" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="1855:2158" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="2228:2290" ph="{...}" />
+            <marker date="1612440485911" expanded="true" signature="2330:2435" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/Editor/DropdownListDrawer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <marker date="1612451836980" expanded="false" signature="6:51" ph="..." />
+            <marker date="1612451836980" expanded="true" signature="104:821" ph="{...}" />
+            <marker date="1612451836980" expanded="true" signature="208:819" ph="{...}" />
+            <marker date="1612451836980" expanded="true" signature="368:804" ph="{...}" />
+            <marker date="1612451836980" expanded="true" signature="430:794" ph="{...}" />
+            <marker date="1612451836980" expanded="true" signature="524:780" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <folding>
+            <marker date="1612457786694" expanded="false" signature="6:170" ph="..." />
+            <marker date="1612457786694" expanded="true" signature="212:3266" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="319:3264" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="658:851" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="676:841" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="931:1163" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="949:1153" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="1000:1095" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="1398:2201" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="1518:2191" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="1777:2048" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="2274:2456" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="2394:2446" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="2513:2841" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="2571:2615" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="2903:3072" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="3107:3158" ph="{...}" />
+            <marker date="1612457786694" expanded="true" signature="3198:3249" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIBrainGraph.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <marker date="1612432620192" expanded="false" signature="6:135" ph="..." />
+            <marker date="1612432620192" expanded="true" signature="177:1341" ph="{...}" />
+            <marker date="1612432620192" expanded="true" signature="183:293" ph="/// This class is used for the AIBrainGraphEditor, dont inherit from this ... " />
+            <marker date="1612432620192" expanded="true" signature="345:650" ph="{...}" />
+            <marker date="1612432620192" expanded="true" signature="563:635" ph="{...}" />
+            <marker date="1612432620192" expanded="true" signature="655:823" ph="/// Inherit from this class if you want to create an AI brain graph ... " />
+            <marker date="1612432620192" expanded="true" signature="881:1339" ph="{...}" />
+            <marker date="1612432620192" expanded="true" signature="940:1139" ph="{...}" />
+            <marker date="1612432620192" expanded="true" signature="1041:1104" ph="{...}" />
+            <marker date="1612432620192" expanded="true" signature="1175:1332" ph="{...}" />
+            <marker date="1612432620192" expanded="true" signature="1259:1322" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <marker date="1612432620193" expanded="false" signature="6:141" ph="..." />
+            <marker date="1612432620193" expanded="true" signature="183:2407" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="230:2405" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="602:1172" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="908:980" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="1080:1162" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="1210:1427" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="1265:1347" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="1466:1645" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="1689:2398" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="1933:2076" ph="{...}" />
+            <marker date="1612432620193" expanded="true" signature="1996:2062" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="85" column="70" lean-forward="true" selection-start-line="85" selection-start-column="70" selection-end-line="85" selection-end-column="70" />
+          <folding>
+            <marker date="1612515867708" expanded="false" signature="6:176" ph="..." />
+            <marker date="1612515867708" expanded="true" signature="218:13770" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="376:13768" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="706:814" ph="[...]" />
+            <marker date="1612515867708" expanded="true" signature="897:1042" ph="[...]" />
+            <marker date="1612515867708" expanded="true" signature="1836:2340" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="1893:2330" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="2201:2267" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="2374:2452" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="2462:2565" ph="/// Use this method to manually enqueue this AI processing ... " />
+            <marker date="1612515867708" expanded="true" signature="2634:2757" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="2767:2849" ph="/// Stop the AI queue from processing ... " />
+            <marker date="1612515867708" expanded="true" signature="2925:2975" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="2985:3069" ph="/// Clear all process from the AI queue ... " />
+            <marker date="1612515867708" expanded="true" signature="3147:3193" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="3231:5550" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="3370:3525" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="3793:4131" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="3937:4117" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="4006:4099" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="4174:4978" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="4337:4677" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="4406:4659" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="4503:4587" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="5122:5337" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="5470:5540" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="5616:6006" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="5756:5811" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="5890:5966" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="6151:7609" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="6229:7599" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="6484:6773" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="7218:7454" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="7708:8206" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="7753:8171" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="8301:8568" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="8479:8558" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="8720:12858" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="8798:12848" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="9335:9821" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="9408:9799" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="9664:9773" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="10141:10877" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="10447:10855" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="10720:10829" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="11308:11795" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="11381:11773" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="11485:11652" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="12115:12721" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="12188:12699" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="12411:12578" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="12943:13076" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="13133:13223" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="13287:13337" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="13423:13610" ph="{...}" />
+            <marker date="1612515867708" expanded="true" signature="13666:13761" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

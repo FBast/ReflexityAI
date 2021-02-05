@@ -7,7 +7,7 @@ namespace Examples.CubeAI.Scripts {
         
         // External References
         [HideInInspector] public CubeEntity CubeEntity;
-        public List<CubeEntity> OthersCubeEntities => GameManager.CubeEntities;
+        [HideInInspector] public List<CubeEntity> CubeEntities => CubeEntity.CubeEntities;
         
         private void Awake() {
             CubeEntity = GetComponent<CubeEntity>();

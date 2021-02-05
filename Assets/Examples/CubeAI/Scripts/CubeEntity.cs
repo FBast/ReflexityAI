@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using NUnit.Framework;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Examples.CubeAI.Scripts {
@@ -19,11 +21,20 @@ namespace Examples.CubeAI.Scripts {
         public int CanonSpeed;
         public CubeEntity Target;
 
+        public static List<CubeEntity> CubeEntities = new List<CubeEntity>();
+        
+        public bool IsFullAmmo => CurrentAmmo >= MaxAmmo;
+        public bool IsEmptyAmmo => CurrentAmmo == 0;
+        public bool IsFullLife => CurrentHp >= MaxHp;
         public Transform Transform => transform;
         public GameObject GameObject => gameObject;
 
         private Color _startingColor;
-        
+
+        private void Awake() {
+            CubeEntities.Add(this);
+        }
+
         private void Start() {
             _startingColor = MeshRenderer.material.color;
         }
@@ -81,5 +92,8 @@ namespace Examples.CubeAI.Scripts {
             Destroy(other.gameObject);
         }
 
+        private void OnDestroy() {
+            CubeEntities.Remove(this);
+        }
     }
 }

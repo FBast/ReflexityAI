@@ -1,0 +1,3273 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 7  (6.1.0) 64bit' Language: 'fr' Physical Memory: 32688 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/frederic.bast/Desktop/UnityProjects/ReflexityAI
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62766
+Successfully changed project path to: C:/Users/frederic.bast/Desktop/UnityProjects/ReflexityAI
+C:/Users/frederic.bast/Desktop/UnityProjects/ReflexityAI
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/frederic.bast/Desktop/UnityProjects/ReflexityAI/Assets
+GfxDevice: creating device client; threaded=0
+d3d11: CreateDXGIFactory2(...) not found, fallbacking to CreateDXGIFactory1(...).
+d3d11: QueryInterface(IDXGIFactory5) failed (80004002).
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Vendor:   
+    VRAM:     2986 MB
+    Driver:   23.21.13.8813
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.000917 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 32.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.868 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003385 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.844 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1474 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 66.1 MB.
+System memory in use after: 66.2 MB.
+
+Unloading 82 unused Assets to reduce memory usage. Loaded Objects now: 1900.
+Total: 1.833105 ms (FindLiveObjects: 0.144221 ms CreateObjectMapping: 0.076016 ms MarkObjects: 1.470150 ms  DeleteObjects: 0.141817 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc93d5e36f1c5811827d2d3ce1d5a81') in 0.049008 seconds
+  Import took 0.051672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.562783 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a47121ca25a9cbe36c9518115c74706') in 0.013287 seconds
+  Import took 0.016313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.999125 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc8b38072d15505eb6d47ca7dd74f9b') in 0.012306 seconds
+  Import took 0.015047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.310695 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e7b92702fb1dc07fec8e5d29a72cc8e') in 0.013424 seconds
+  Import took 0.015976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.209643 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6dae5e8296f79c5770f16175697cbcf') in 0.013128 seconds
+  Import took 0.015735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.682385 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bf21c019eb48a5cc279bbb0e7824fff') in 0.015262 seconds
+  Import took 0.017585 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004471 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.245 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.1 MB.
+System memory in use after: 67.3 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1902.
+Total: 1.747174 ms (FindLiveObjects: 0.155037 ms CreateObjectMapping: 0.057688 ms MarkObjects: 1.463540 ms  DeleteObjects: 0.070308 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004175 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.929 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.3 MB.
+System memory in use after: 67.4 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1904.
+Total: 2.063558 ms (FindLiveObjects: 0.256593 ms CreateObjectMapping: 0.086833 ms MarkObjects: 1.668754 ms  DeleteObjects: 0.050177 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003341 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.913 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.4 MB.
+System memory in use after: 67.5 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1906.
+Total: 1.906718 ms (FindLiveObjects: 0.139113 ms CreateObjectMapping: 0.045369 ms MarkObjects: 1.660641 ms  DeleteObjects: 0.060392 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004562 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.357 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.5 MB.
+System memory in use after: 67.6 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1908.
+Total: 1.977326 ms (FindLiveObjects: 0.163450 ms CreateObjectMapping: 0.071209 ms MarkObjects: 1.681373 ms  DeleteObjects: 0.059191 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003416 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.6 MB.
+System memory in use after: 67.7 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1910.
+Total: 1.991748 ms (FindLiveObjects: 0.164952 ms CreateObjectMapping: 0.041764 ms MarkObjects: 1.692490 ms  DeleteObjects: 0.091039 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003482 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.7 MB.
+System memory in use after: 67.8 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1912.
+Total: 2.013081 ms (FindLiveObjects: 0.170060 ms CreateObjectMapping: 0.050477 ms MarkObjects: 1.713522 ms  DeleteObjects: 0.078120 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003413 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.222 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.8 MB.
+System memory in use after: 67.9 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1914.
+Total: 3.097741 ms (FindLiveObjects: 0.151131 ms CreateObjectMapping: 0.049876 ms MarkObjects: 2.848660 ms  DeleteObjects: 0.046571 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003389 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.010 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 67.9 MB.
+System memory in use after: 68.0 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1916.
+Total: 1.675965 ms (FindLiveObjects: 0.152934 ms CreateObjectMapping: 0.051078 ms MarkObjects: 1.431391 ms  DeleteObjects: 0.039360 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003397 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.925 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.0 MB.
+System memory in use after: 68.1 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1918.
+Total: 1.677467 ms (FindLiveObjects: 0.163450 ms CreateObjectMapping: 0.051379 ms MarkObjects: 1.422076 ms  DeleteObjects: 0.039360 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003301 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.025 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.0 MB.
+System memory in use after: 68.2 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1920.
+Total: 1.666050 ms (FindLiveObjects: 0.146925 ms CreateObjectMapping: 0.049576 ms MarkObjects: 1.412762 ms  DeleteObjects: 0.055886 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003322 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.923 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.1 MB.
+System memory in use after: 68.2 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 1921.
+Total: 1.752883 ms (FindLiveObjects: 0.148427 ms CreateObjectMapping: 0.046571 ms MarkObjects: 1.479765 ms  DeleteObjects: 0.077218 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003430 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.985 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.2 MB.
+System memory in use after: 68.3 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1923.
+Total: 1.969815 ms (FindLiveObjects: 0.161347 ms CreateObjectMapping: 0.043567 ms MarkObjects: 1.688584 ms  DeleteObjects: 0.075716 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003330 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.965 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.3 MB.
+System memory in use after: 68.4 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1925.
+Total: 1.850833 ms (FindLiveObjects: 0.131601 ms CreateObjectMapping: 0.043867 ms MarkObjects: 1.601751 ms  DeleteObjects: 0.072711 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003541 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.937 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.4 MB.
+System memory in use after: 68.5 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1927.
+Total: 2.859777 ms (FindLiveObjects: 0.206115 ms CreateObjectMapping: 0.054684 ms MarkObjects: 2.550303 ms  DeleteObjects: 0.047473 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003301 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.949 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.5 MB.
+System memory in use after: 68.6 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1929.
+Total: 1.800956 ms (FindLiveObjects: 0.162549 ms CreateObjectMapping: 0.057087 ms MarkObjects: 1.512515 ms  DeleteObjects: 0.067904 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005101 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.6 MB.
+System memory in use after: 68.7 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1931.
+Total: 2.584555 ms (FindLiveObjects: 0.198604 ms CreateObjectMapping: 0.094344 ms MarkObjects: 2.234520 ms  DeleteObjects: 0.055585 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.132 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.7 MB.
+System memory in use after: 68.8 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1933.
+Total: 1.938867 ms (FindLiveObjects: 0.288141 ms CreateObjectMapping: 0.101856 ms MarkObjects: 1.498994 ms  DeleteObjects: 0.048975 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004635 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.945 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.8 MB.
+System memory in use after: 68.9 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1935.
+Total: 2.242632 ms (FindLiveObjects: 0.213326 ms CreateObjectMapping: 0.096147 ms MarkObjects: 1.844222 ms  DeleteObjects: 0.087133 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003257 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.929 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.9 MB.
+System memory in use after: 69.0 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1937.
+Total: 2.071670 ms (FindLiveObjects: 0.183581 ms CreateObjectMapping: 0.050778 ms MarkObjects: 1.770009 ms  DeleteObjects: 0.065801 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003914 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.916 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.0 MB.
+System memory in use after: 69.1 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1939.
+Total: 2.133265 ms (FindLiveObjects: 0.164051 ms CreateObjectMapping: 0.051078 ms MarkObjects: 1.874869 ms  DeleteObjects: 0.042064 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3285.049829 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633cf0019142062cfa324dadd07c670b') in 0.028988 seconds
+  Import took 0.032173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.964023 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88183d9e2a85191aaeff58db544250f') in 0.014015 seconds
+  Import took 0.016867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.694851 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9956f427743e033753372376797d2f9a') in 0.016119 seconds
+  Import took 0.018601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000732 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9956f427743e033753372376797d2f9a') in 0.012121 seconds
+  Import took 0.014603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.969189 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba702f3036c1e4f1f5ff66501b5b59e6') in 0.012652 seconds
+  Import took 0.015181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.555585 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a88e6485c46d12f6f975bf4fdd2bf9') in 0.020560 seconds
+  Import took 0.023100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.654547 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72accfb84ce6145fa80bfadead64c8f') in 0.013766 seconds
+  Import took 0.016482 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.525861 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e1df4a2771d8309a168153bf45b077') in 0.015335 seconds
+  Import took 0.018405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.853820 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5a03bcd7c1ff53da60ebdfeb6706b5') in 0.013073 seconds
+  Import took 0.016316 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005211 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.913 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.2 MB.
+System memory in use after: 69.3 MB.
+
+Unloading 73 unused Assets to reduce memory usage. Loaded Objects now: 1941.
+Total: 3.034344 ms (FindLiveObjects: 0.207017 ms CreateObjectMapping: 0.222340 ms MarkObjects: 2.529571 ms  DeleteObjects: 0.074214 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.610088 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541b65e0adfa0b7ba25d5abbfb14a4da') in 0.026057 seconds
+  Import took 0.028801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.283916 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e918cdc4be3d89108c081eaf3b54528a') in 0.012833 seconds
+  Import took 0.015282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.980344 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d1f24847691c928263c90ea6ba2f8f9') in 0.014229 seconds
+  Import took 0.019060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.793736 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a62411c53464beb633371b380c7f0b') in 0.013519 seconds
+  Import took 0.016872 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016837 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a62411c53464beb633371b380c7f0b') in 0.015844 seconds
+  Import took 0.019301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.622301 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef823c6e25eb2c66ae293f9fc0775c1a') in 0.012520 seconds
+  Import took 0.014936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.687673 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c83dbc338df94871a0a4967c239099e9') in 0.012865 seconds
+  Import took 0.015427 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.135613 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16529f9367e82a411aa9674f1daedb90') in 0.016391 seconds
+  Import took 0.018936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.807296 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8649cd35e3211a41f8df805799e04a8c') in 0.013168 seconds
+  Import took 0.015544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.833318 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6eea8b3b3b669d2dc499755c0f5d993') in 0.016310 seconds
+  Import took 0.019196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001747 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6eea8b3b3b669d2dc499755c0f5d993') in 0.011879 seconds
+  Import took 0.014507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.339014 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53fc40e28fe7547d1452dded9b09c542') in 0.012750 seconds
+  Import took 0.015380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.937225 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ab17dc8bb312e70534d13a9797bb0b') in 0.026186 seconds
+  Import took 0.029820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.021519 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ab17dc8bb312e70534d13a9797bb0b') in 0.011790 seconds
+  Import took 0.014454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.246802 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47ac287360f70772b01fe5274e3458a1') in 0.013539 seconds
+  Import took 0.016130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.574459 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca15840f1ab7ad0f7e24f4e659b8793') in 0.013591 seconds
+  Import took 0.016039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.391759 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b4608a21d9c01d05cd4bde6dcf8db3') in 0.014288 seconds
+  Import took 0.017122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.576600 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea3b532d511d74f45bf2a2647689e745') in 0.011970 seconds
+  Import took 0.014321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.723035 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02cf27093fd15835b2458ee12f51c438') in 0.014174 seconds
+  Import took 0.016639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.771238 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61fbda7ed6dbae5bccf338719e732cb9') in 0.016854 seconds
+  Import took 0.019578 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.013627 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9073a942a62404c71354e1392488c4b') in 0.012788 seconds
+  Import took 0.015247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.915190 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b6c6b08fb35189e056f961b56e6856') in 0.012420 seconds
+  Import took 0.014879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.830504 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a40e100435cd28b17f5497411a24db97') in 0.018732 seconds
+  Import took 0.022162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.445645 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83904d0f94e0525b45733fb0f59a5bbb') in 0.012407 seconds
+  Import took 0.014837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.941092 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4302dbabd6bb018031b1d27068232ee') in 0.016984 seconds
+  Import took 0.019780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.840792 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81dad6e1a8ea13507629cebd09ceda69') in 0.013580 seconds
+  Import took 0.016100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.477693 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed9fcb5506ebe7dedca14425a1567f0') in 0.012448 seconds
+  Import took 0.014908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.291051 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2375265557abd56f9d3731df88f090') in 0.012655 seconds
+  Import took 0.016157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.752072 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aac0ab8e9d02622b5cfdb986bd2d085') in 0.012543 seconds
+  Import took 0.015200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.081890 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b491ec14f0097c489701fff102a116ca') in 0.025703 seconds
+  Import took 0.028871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.439649 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f8fee50487f827f5335e38a4159368') in 0.012509 seconds
+  Import took 0.015115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.305353 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642f2bc5b1f35c719d5b98973d0086d4') in 0.013272 seconds
+  Import took 0.015729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.793700 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0afda53c839fac205f4fb82d8c086f6c') in 0.012292 seconds
+  Import took 0.014870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.198584 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9add91a4d83ac97c1f43d166f3ad1fb6') in 0.012120 seconds
+  Import took 0.014546 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.829701 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9c6da7c82e31305b81ffd25f534e29') in 0.013137 seconds
+  Import took 0.015545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.040611 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892c84a0ba2178bf723eb154d16294e5') in 0.015040 seconds
+  Import took 0.018385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.989122 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c542a1c9618e7bc0cd51cbf9c40bd6e5') in 0.013096 seconds
+  Import took 0.015650 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003401 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.898 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.3 MB.
+System memory in use after: 69.4 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 1943.
+Total: 1.861349 ms (FindLiveObjects: 0.169159 ms CreateObjectMapping: 0.052881 ms MarkObjects: 1.552175 ms  DeleteObjects: 0.085932 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004827 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.101 seconds
+Platform modules already initialized, skipping
+Script is not up to date after domain reload: guid(ab8099343954454fab122d507d784541) path("Assets/Plugins/ReflexityAI/MiddleNodes/CompareNode.cs") state(2)
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.4 MB.
+System memory in use after: 68.5 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 1945.
+Total: 2.479094 ms (FindLiveObjects: 0.275221 ms CreateObjectMapping: 0.095546 ms MarkObjects: 2.048535 ms  DeleteObjects: 0.057989 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004285 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.5 MB.
+System memory in use after: 68.6 MB.
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 1948.
+Total: 1.702105 ms (FindLiveObjects: 0.180276 ms CreateObjectMapping: 0.039661 ms MarkObjects: 1.405251 ms  DeleteObjects: 0.075415 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 197.091818 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bab53ad8a68d801bdff5c4c8786445c4') in 0.027433 seconds
+  Import took 0.030569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.211742 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed764afa22f5d8a2cb3020f312ad424') in 0.012120 seconds
+  Import took 0.014504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.069552 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edba55e3892b5b26c2cae3a66e588ed') in 0.011508 seconds
+  Import took 0.014115 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.883742 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fac4d46a964b2da93865ade6e77f809') in 0.016773 seconds
+  Import took 0.019611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.782772 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd74500ff7d972695bff1435bebf4c775') in 0.015130 seconds
+  Import took 0.017741 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003322 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.992 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.6 MB.
+System memory in use after: 68.7 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1950.
+Total: 1.855640 ms (FindLiveObjects: 0.174267 ms CreateObjectMapping: 0.039661 ms MarkObjects: 1.570804 ms  DeleteObjects: 0.070007 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009886 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.841 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.7 MB.
+System memory in use after: 68.8 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1952.
+Total: 2.270575 ms (FindLiveObjects: 0.231054 ms CreateObjectMapping: 0.057989 ms MarkObjects: 1.935562 ms  DeleteObjects: 0.044468 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003625 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.875 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.8 MB.
+System memory in use after: 68.9 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1954.
+Total: 2.049737 ms (FindLiveObjects: 0.311877 ms CreateObjectMapping: 0.127695 ms MarkObjects: 1.517623 ms  DeleteObjects: 0.091640 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.934533 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7250e2d6a97a64e9ebf3bc9ed1b79dff') in 0.026668 seconds
+  Import took 0.029277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015549 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7250e2d6a97a64e9ebf3bc9ed1b79dff') in 0.012085 seconds
+  Import took 0.014570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.775758 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '851e628afa6659f57f3355157ff2fd6e') in 0.012200 seconds
+  Import took 0.014695 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005089 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.992 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.9 MB.
+System memory in use after: 69.0 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1956.
+Total: 1.656435 ms (FindLiveObjects: 0.168558 ms CreateObjectMapping: 0.047172 ms MarkObjects: 1.371599 ms  DeleteObjects: 0.068505 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003190 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.830 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.0 MB.
+System memory in use after: 69.1 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1958.
+Total: 1.992650 ms (FindLiveObjects: 0.182379 ms CreateObjectMapping: 0.069406 ms MarkObjects: 1.665749 ms  DeleteObjects: 0.073913 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003216 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.154 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.1 MB.
+System memory in use after: 69.2 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1960.
+Total: 1.679871 ms (FindLiveObjects: 0.178173 ms CreateObjectMapping: 0.061594 ms MarkObjects: 1.400744 ms  DeleteObjects: 0.038158 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003233 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.980 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.2 MB.
+System memory in use after: 69.3 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1962.
+Total: 1.738160 ms (FindLiveObjects: 0.140916 ms CreateObjectMapping: 0.044168 ms MarkObjects: 1.484272 ms  DeleteObjects: 0.068204 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003494 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.861 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.3 MB.
+System memory in use after: 69.4 MB.
+
+Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 1963.
+Total: 1.801557 ms (FindLiveObjects: 0.202510 ms CreateObjectMapping: 0.085331 ms MarkObjects: 1.474356 ms  DeleteObjects: 0.038158 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 446.916879 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b27501427128a7f8e94374ce59832775') in 0.028008 seconds
+  Import took 0.031044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.820692 seconds.
+  path: Assets/Examples/CubeAI/Scripts
+  artifactKey: Guid(e63dc6d25df9daf488f531cb68dd9cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Scripts using Guid(e63dc6d25df9daf488f531cb68dd9cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2adf5c699568d7fd80c497c8dce76ad') in 0.009822 seconds
+  Import took 0.013108 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004463 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.4 MB.
+System memory in use after: 69.5 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1966.
+Total: 1.978528 ms (FindLiveObjects: 0.160145 ms CreateObjectMapping: 0.048374 ms MarkObjects: 1.713823 ms  DeleteObjects: 0.055285 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.792044 seconds.
+  path: Assets/Examples/CubeAI/Scripts/AutoDestroy.cs
+  artifactKey: Guid(3b5d16c314b0d974289b024e0e6e65b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Scripts/AutoDestroy.cs using Guid(3b5d16c314b0d974289b024e0e6e65b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c46ba0dfe3f5061f9d5a469eda3258') in 0.011771 seconds
+  Import took 0.014173 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003372 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.908 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 69.5 MB.
+System memory in use after: 69.6 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1968.
+Total: 1.950585 ms (FindLiveObjects: 0.205214 ms CreateObjectMapping: 0.053782 ms MarkObjects: 1.640210 ms  DeleteObjects: 0.049576 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004633 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.013 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 68.6 MB.
+System memory in use after: 68.7 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1970.
+Total: 2.153095 ms (FindLiveObjects: 0.243072 ms CreateObjectMapping: 0.091941 ms MarkObjects: 1.761596 ms  DeleteObjects: 0.055585 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.306186 seconds.
+  path: Assets/Examples/CubeAI/Prefabs/Ammo.prefab
+  artifactKey: Guid(ac4721d0400892a498cf9de33ae7627b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Prefabs/Ammo.prefab using Guid(ac4721d0400892a498cf9de33ae7627b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772fcfe6c8b34f5efe08bb7a41e37f32') in 0.085123 seconds
+  Import took 0.087813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.329443 seconds.
+  path: Assets/Examples/CubeAI/Prefabs/Ammo.prefab
+  artifactKey: Guid(ac4721d0400892a498cf9de33ae7627b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Prefabs/Ammo.prefab using Guid(ac4721d0400892a498cf9de33ae7627b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b4c5f3722e9031d7374565cb1712c7f') in 0.010377 seconds
+  Import took 0.013262 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003279 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.928 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.7 MB.
+System memory in use after: 71.8 MB.
+
+Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 1980.
+Total: 2.175630 ms (FindLiveObjects: 0.209120 ms CreateObjectMapping: 0.104560 ms MarkObjects: 1.814176 ms  DeleteObjects: 0.046571 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003740 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.858 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1982.
+Total: 1.821688 ms (FindLiveObjects: 0.182680 ms CreateObjectMapping: 0.055886 ms MarkObjects: 1.542861 ms  DeleteObjects: 0.039060 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003312 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.867 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.9 MB.
+System memory in use after: 72.0 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 1984.
+Total: 1.954792 ms (FindLiveObjects: 0.182980 ms CreateObjectMapping: 0.085030 ms MarkObjects: 1.612267 ms  DeleteObjects: 0.073312 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 550.777128 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05eb9d46ade3e6b06507b9da47b8535') in 0.025327 seconds
+  Import took 0.028236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000945 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05eb9d46ade3e6b06507b9da47b8535') in 0.013846 seconds
+  Import took 0.016492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.481723 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8739ec873efec395e1676de2d51e84') in 0.012503 seconds
+  Import took 0.015344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.989669 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb0a1f9b722a84de8569ab58a1814613') in 0.015085 seconds
+  Import took 0.017701 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.643598 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1be0e5866fc19772fc897ed2daea3a') in 0.012577 seconds
+  Import took 0.015108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.430651 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dd29c9d56f281586750c3c82fa40c5d') in 0.011979 seconds
+  Import took 0.014602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.255661 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c73d697a6c4a380bda3bdc3e167dc3') in 0.013422 seconds
+  Import took 0.016103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.751031 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e63413b2599cb5015bb4172adc09befb') in 0.014454 seconds
+  Import took 0.016936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.812437 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ff2713f61c971b30c9f418775c6887') in 0.016386 seconds
+  Import took 0.019048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.747438 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd5c81017ea3d631f9e46235d0dc752') in 0.013182 seconds
+  Import took 0.015845 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.231591 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214daf24de7ec8fbfd27561bd76632a0') in 0.012328 seconds
+  Import took 0.015261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.515022 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9318bfa08f9cf13251af86a6ac9552') in 0.013780 seconds
+  Import took 0.016342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.742645 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e1f684a2220b73ca85ff9c1a1ac550b') in 0.013457 seconds
+  Import took 0.016444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.675161 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f0a5b420f3c27f132634f4c02e101e') in 0.014578 seconds
+  Import took 0.018023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.641502 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e72b77b5a1502be3b2e387ed768e69') in 0.014484 seconds
+  Import took 0.017694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.862888 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac4c212de7c7324ca4ad093abfe24b4d') in 0.013710 seconds
+  Import took 0.016615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.611021 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc53b4157df322f23ab384c6a1686ed') in 0.016255 seconds
+  Import took 0.025167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.404563 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '510c8d742ab51e4e0ce6a7ebda965b50') in 0.013720 seconds
+  Import took 0.016425 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.115454 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '255c4a777f3c83e3341d3d2225120add') in 0.013897 seconds
+  Import took 0.016677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.829411 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '580396a42cca2632a867f0aece122b34') in 0.011884 seconds
+  Import took 0.014418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.160591 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88144ed816ed024d06abd8eaa888c9c2') in 0.012337 seconds
+  Import took 0.015135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.134298 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d6607f27e86e270f863a00b2a541d0') in 0.012302 seconds
+  Import took 0.015316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.855331 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92e191ae5be36b8f75405400fd0c86c6') in 0.012338 seconds
+  Import took 0.015241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.675728 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5def10757311e56cc1f07918d28b6dad') in 0.014942 seconds
+  Import took 0.017387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.507771 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119aa991bc3e5cda59cd39edad1a4bb5') in 0.012295 seconds
+  Import took 0.015297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.981186 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3e6cf7baf5f6061f77b19481a392c1') in 0.015218 seconds
+  Import took 0.018186 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003411 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.844 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.1 MB.
+System memory in use after: 72.2 MB.
+
+Unloading 71 unused Assets to reduce memory usage. Loaded Objects now: 1986.
+Total: 2.308132 ms (FindLiveObjects: 0.191994 ms CreateObjectMapping: 0.115677 ms MarkObjects: 1.941271 ms  DeleteObjects: 0.057688 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 122.210520 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6404e292dd6e5889626d44fbb518c8c') in 0.028806 seconds
+  Import took 0.031760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.731630 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da75b128b5c5f11d650cf063a169b668') in 0.013738 seconds
+  Import took 0.016430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.656083 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c9ea2ae0aff96b31248239f4cf97fb1') in 0.015834 seconds
+  Import took 0.018594 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.357179 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c04a0d3d83e1788d6dbd108a529807') in 0.013887 seconds
+  Import took 0.016834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.526906 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812b7a9d51e567ff1990788e2cb0369c') in 0.018137 seconds
+  Import took 0.020727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.641247 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '067bb61759a7a7f0d16d8ec5d67f5fd0') in 0.013029 seconds
+  Import took 0.015867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.461764 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd98f4d10f6298ca6a39ffce60ca836') in 0.013454 seconds
+  Import took 0.016200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.275900 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba0af39aecf9658dc948d465b7cf34e') in 0.015030 seconds
+  Import took 0.017716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.530032 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3039b429c23cda642dcb25c75a6be12e') in 0.013409 seconds
+  Import took 0.016180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.107194 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14ba0f42f0145a4e57ad5642feb6cc1') in 0.013499 seconds
+  Import took 0.016183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.317814 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bccffe9452fa7427dcd39779207380c4') in 0.014511 seconds
+  Import took 0.020288 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.319677 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa81d95fb3fa1b704ab5c8321a55cfbf') in 0.014425 seconds
+  Import took 0.017205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.215187 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14dac4242b20b34687567895161de16') in 0.019701 seconds
+  Import took 0.022375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.204014 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6448ed21ad1f8b7abe576f6871e3b504') in 0.013422 seconds
+  Import took 0.016054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.560503 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc5d64255e13e59392dd7260b55a1056') in 0.012795 seconds
+  Import took 0.015893 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.684893 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bffd59758e9321dccd6219e8b282cd6c') in 0.014464 seconds
+  Import took 0.017285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.958086 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce6317e6062736244b121799cd737e38') in 0.013626 seconds
+  Import took 0.016559 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.750780 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b72e0800eff21d9f9c0351728f5e83c') in 0.016271 seconds
+  Import took 0.019011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.512496 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5be3efea8c2bd67ab3023099fa4aa541') in 0.014988 seconds
+  Import took 0.018072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.721116 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c1a3a97233c1fb78ae09af23f6cf9aa') in 0.019223 seconds
+  Import took 0.022270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.848248 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5252dabb401e58aeb7f14491cadbc83') in 0.013798 seconds
+  Import took 0.016302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.062304 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ec10654f1eedad74d1976993005bb3') in 0.018545 seconds
+  Import took 0.021558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.920882 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e303f5e59ab05706796baaa56c5dc66') in 0.015989 seconds
+  Import took 0.018751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.214339 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad900e675bea6120f74106985b3e3db') in 0.014544 seconds
+  Import took 0.017883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.309427 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4520e696acc9584d785da5ab06ac9021') in 0.015482 seconds
+  Import took 0.018218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.070924 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d99ed5e51e2027d95fa2cac87dc12d2') in 0.014032 seconds
+  Import took 0.016868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.323136 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f01a3265bb8e4c4fcaa4a8f33262944') in 0.014438 seconds
+  Import took 0.017098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.175469 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a937c52b01fa2279aee70fdc3114ab1') in 0.019926 seconds
+  Import took 0.022539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.719328 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae7055e79795e670d9ceaf6a566556d8') in 0.014760 seconds
+  Import took 0.017534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.256707 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780087ae48230545337a669c86b90311') in 0.014195 seconds
+  Import took 0.017310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.693423 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f8410c6a08d1441b93088550576d9a2') in 0.013791 seconds
+  Import took 0.016396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.994015 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a11801de6e787075fefd81fa9eaf38') in 0.013994 seconds
+  Import took 0.017257 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003261 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.796 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.1 MB.
+System memory in use after: 72.2 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1988.
+Total: 2.049136 ms (FindLiveObjects: 0.202209 ms CreateObjectMapping: 0.040863 ms MarkObjects: 1.764300 ms  DeleteObjects: 0.040863 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004138 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.984 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.2 MB.
+System memory in use after: 72.3 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1990.
+Total: 2.128758 ms (FindLiveObjects: 0.262001 ms CreateObjectMapping: 0.069106 ms MarkObjects: 1.736057 ms  DeleteObjects: 0.060092 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003057 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.831 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.3 MB.
+System memory in use after: 72.4 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1992.
+Total: 1.842119 ms (FindLiveObjects: 0.168858 ms CreateObjectMapping: 0.045369 ms MarkObjects: 1.584325 ms  DeleteObjects: 0.042966 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003493 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.4 MB.
+System memory in use after: 72.5 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1994.
+Total: 2.211985 ms (FindLiveObjects: 0.198904 ms CreateObjectMapping: 0.054383 ms MarkObjects: 1.890493 ms  DeleteObjects: 0.067003 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003982 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.790 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.5 MB.
+System memory in use after: 72.6 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1996.
+Total: 2.453555 ms (FindLiveObjects: 0.289343 ms CreateObjectMapping: 0.097649 ms MarkObjects: 2.019090 ms  DeleteObjects: 0.046271 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003852 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.826 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.5 MB.
+System memory in use after: 72.7 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 1998.
+Total: 1.908220 ms (FindLiveObjects: 0.178774 ms CreateObjectMapping: 0.049576 ms MarkObjects: 1.575611 ms  DeleteObjects: 0.103358 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 576.514673 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272882ea6a864214a2a63c210ab9f706') in 0.028586 seconds
+  Import took 0.031476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.135481 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '543fd46d9062bffb9ed34dc4f3a16bd8') in 0.013758 seconds
+  Import took 0.016194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.840744 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd522ffcad2d88a390550f8ddd16c64') in 0.017941 seconds
+  Import took 0.020639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.911497 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64a8b36dd777ee10c91aea9d14f038e') in 0.013912 seconds
+  Import took 0.016414 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003902 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.784 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.7 MB.
+System memory in use after: 71.8 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2000.
+Total: 1.825894 ms (FindLiveObjects: 0.174868 ms CreateObjectMapping: 0.084129 ms MarkObjects: 1.499295 ms  DeleteObjects: 0.066702 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003470 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.057 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2002.
+Total: 1.812975 ms (FindLiveObjects: 0.154136 ms CreateObjectMapping: 0.050177 ms MarkObjects: 1.569302 ms  DeleteObjects: 0.038459 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003639 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.804 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.9 MB.
+System memory in use after: 72.0 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2004.
+Total: 2.179836 ms (FindLiveObjects: 0.172163 ms CreateObjectMapping: 0.053482 ms MarkObjects: 1.861950 ms  DeleteObjects: 0.091640 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003962 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.062 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.0 MB.
+System memory in use after: 72.1 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2006.
+Total: 2.339981 ms (FindLiveObjects: 0.179975 ms CreateObjectMapping: 0.057989 ms MarkObjects: 2.055746 ms  DeleteObjects: 0.045369 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.994153 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a5d937e4f04c48405e6c073b0c1ad4e') in 0.030693 seconds
+  Import took 0.034105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.176255 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a085d20539452a79c144b9fc14a0268e') in 0.015255 seconds
+  Import took 0.018137 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003404 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.803 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.1 MB.
+System memory in use after: 72.2 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2008.
+Total: 1.829199 ms (FindLiveObjects: 0.178774 ms CreateObjectMapping: 0.050477 ms MarkObjects: 1.532946 ms  DeleteObjects: 0.066101 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003633 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.868 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.2 MB.
+System memory in use after: 72.3 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2010.
+Total: 2.205375 ms (FindLiveObjects: 0.268912 ms CreateObjectMapping: 0.076617 ms MarkObjects: 1.779323 ms  DeleteObjects: 0.079622 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.238 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.3 MB.
+System memory in use after: 72.4 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2012.
+Total: 1.796449 ms (FindLiveObjects: 0.275221 ms CreateObjectMapping: 0.062796 ms MarkObjects: 1.408856 ms  DeleteObjects: 0.048074 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003522 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.123 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.4 MB.
+System memory in use after: 72.5 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2014.
+Total: 1.754084 ms (FindLiveObjects: 0.173966 ms CreateObjectMapping: 0.052280 ms MarkObjects: 1.485774 ms  DeleteObjects: 0.040863 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003782 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.833 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.5 MB.
+System memory in use after: 72.6 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2016.
+Total: 1.718029 ms (FindLiveObjects: 0.173966 ms CreateObjectMapping: 0.048074 ms MarkObjects: 1.429888 ms  DeleteObjects: 0.065200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003293 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.042 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.6 MB.
+System memory in use after: 72.7 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2018.
+Total: 2.784361 ms (FindLiveObjects: 0.173065 ms CreateObjectMapping: 0.057388 ms MarkObjects: 2.496220 ms  DeleteObjects: 0.043567 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003723 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.812 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.6 MB.
+System memory in use after: 72.7 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2020.
+Total: 1.742967 ms (FindLiveObjects: 0.187787 ms CreateObjectMapping: 0.039360 ms MarkObjects: 1.439803 ms  DeleteObjects: 0.075115 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003413 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.810 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.8 MB.
+System memory in use after: 71.9 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2022.
+Total: 1.883883 ms (FindLiveObjects: 0.170661 ms CreateObjectMapping: 0.047773 ms MarkObjects: 1.592137 ms  DeleteObjects: 0.072411 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004176 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.9 MB.
+System memory in use after: 72.0 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2024.
+Total: 2.521158 ms (FindLiveObjects: 0.196801 ms CreateObjectMapping: 0.067003 ms MarkObjects: 2.141077 ms  DeleteObjects: 0.114475 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003397 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.809 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.0 MB.
+System memory in use after: 72.1 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2026.
+Total: 2.599578 ms (FindLiveObjects: 0.267409 ms CreateObjectMapping: 0.121386 ms MarkObjects: 2.143180 ms  DeleteObjects: 0.067003 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003360 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.796 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.1 MB.
+System memory in use after: 72.2 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2028.
+Total: 2.007372 ms (FindLiveObjects: 0.276723 ms CreateObjectMapping: 0.090438 ms MarkObjects: 1.570503 ms  DeleteObjects: 0.069106 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1025.952703 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bea446329162f31c90bce0dd25c3119') in 0.032438 seconds
+  Import took 0.035339 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003966 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.806 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.2 MB.
+System memory in use after: 72.3 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2030.
+Total: 1.738461 ms (FindLiveObjects: 0.182379 ms CreateObjectMapping: 0.055886 ms MarkObjects: 1.424180 ms  DeleteObjects: 0.075115 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 331.467095 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc677debb08acc6fef8699d7678ed52') in 0.027148 seconds
+  Import took 0.029817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.990493 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f5582789f97666ef53e752eadd5a8a') in 0.014269 seconds
+  Import took 0.016832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.359514 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6713b1fd9cd89b650735ccfb8aeecb7') in 0.016795 seconds
+  Import took 0.019447 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.195713 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08eeebd8ec70dcfe0d80e6ea7a431ab1') in 0.014129 seconds
+  Import took 0.016694 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003526 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.816 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.3 MB.
+System memory in use after: 72.4 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2032.
+Total: 1.780224 ms (FindLiveObjects: 0.178774 ms CreateObjectMapping: 0.057688 ms MarkObjects: 1.503200 ms  DeleteObjects: 0.039961 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003378 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.804 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1469 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.4 MB.
+System memory in use after: 72.5 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2034.
+Total: 2.314742 ms (FindLiveObjects: 0.194097 ms CreateObjectMapping: 0.060392 ms MarkObjects: 1.979129 ms  DeleteObjects: 0.079922 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003323 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.930 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.4 MB.
+System memory in use after: 72.5 MB.
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 2035.
+Total: 1.792543 ms (FindLiveObjects: 0.158042 ms CreateObjectMapping: 0.051679 ms MarkObjects: 1.540157 ms  DeleteObjects: 0.042064 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003377 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.042 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.6 MB.
+System memory in use after: 72.7 MB.
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 2037.
+Total: 2.037418 ms (FindLiveObjects: 0.239767 ms CreateObjectMapping: 0.068805 ms MarkObjects: 1.634802 ms  DeleteObjects: 0.092542 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 605.286314 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e867a2361f0c9f67aa7be85f8ee9757') in 0.028072 seconds
+  Import took 0.030799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.950676 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b117a412e01850d5aaa6c3d4d193e83') in 0.014131 seconds
+  Import took 0.016820 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.747713 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe3fc00fa406058ea6c488ba3c5a3d81') in 0.018997 seconds
+  Import took 0.021545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.201323 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccf5725e236ac845afd4b6a9f5734e2f') in 0.016115 seconds
+  Import took 0.018571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.615360 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '061d0e3ad32a113fb6f683eac5f351df') in 0.015168 seconds
+  Import took 0.018607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.620330 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21215d3d8e7c1543f4dccd8087be7d25') in 0.013922 seconds
+  Import took 0.016408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.839228 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '144709593ba3675a297a08996c0617ea') in 0.013335 seconds
+  Import took 0.015875 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.512047 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb01d1772ecde480d267d41229e9330') in 0.016162 seconds
+  Import took 0.018784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.190322 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '546a219a785f269e252df5d95aa7af48') in 0.013377 seconds
+  Import took 0.016019 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004113 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.878 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.7 MB.
+System memory in use after: 72.8 MB.
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 2039.
+Total: 1.970716 ms (FindLiveObjects: 0.203712 ms CreateObjectMapping: 0.072411 ms MarkObjects: 1.640210 ms  DeleteObjects: 0.053181 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003577 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.827 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.7 MB.
+System memory in use after: 72.8 MB.
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 2041.
+Total: 2.106223 ms (FindLiveObjects: 0.189891 ms CreateObjectMapping: 0.059491 ms MarkObjects: 1.783830 ms  DeleteObjects: 0.071810 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003221 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.940 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.9 MB.
+System memory in use after: 72.0 MB.
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 2043.
+Total: 1.968613 ms (FindLiveObjects: 0.177271 ms CreateObjectMapping: 0.052280 ms MarkObjects: 1.666651 ms  DeleteObjects: 0.070909 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 206.665339 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5805a605e5e79444fef3c17029b80c54') in 0.030943 seconds
+  Import took 0.033661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003274 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5805a605e5e79444fef3c17029b80c54') in 0.013585 seconds
+  Import took 0.016261 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.509121 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176bf3e94f3cec5df92da54c2b519b87') in 0.019589 seconds
+  Import took 0.022067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017858 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176bf3e94f3cec5df92da54c2b519b87') in 0.013609 seconds
+  Import took 0.016565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.618611 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7be59e3afee3cf51c4d74d1fe31005c4') in 0.017816 seconds
+  Import took 0.020915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.080705 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe63ff4ab9f0f3a6a66430a07e4e49d') in 0.017129 seconds
+  Import took 0.020308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005780 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abe63ff4ab9f0f3a6a66430a07e4e49d') in 0.016286 seconds
+  Import took 0.018683 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003521 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 71.9 MB.
+System memory in use after: 72.0 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2045.
+Total: 2.165714 ms (FindLiveObjects: 0.199205 ms CreateObjectMapping: 0.079321 ms MarkObjects: 1.845124 ms  DeleteObjects: 0.040863 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 103.302432 seconds.
+  path: Assets/Examples/CubeAI/CubeAI.unity
+  artifactKey: Guid(27d40819fee441b4b92ae8e3e1c2e217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/CubeAI.unity using Guid(27d40819fee441b4b92ae8e3e1c2e217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5cc4e1e4e2cdae544ba76f4e48181fb') in 0.014656 seconds
+  Import took 0.018976 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003308 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.0 MB.
+System memory in use after: 72.1 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2047.
+Total: 1.989044 ms (FindLiveObjects: 0.313079 ms CreateObjectMapping: 0.088636 ms MarkObjects: 1.544664 ms  DeleteObjects: 0.041463 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003910 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+
+(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.871 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1468 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.1 MB.
+System memory in use after: 72.2 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 2049.
+Total: 1.921741 ms (FindLiveObjects: 0.256893 ms CreateObjectMapping: 0.088636 ms MarkObjects: 1.475859 ms  DeleteObjects: 0.098851 ms)
+

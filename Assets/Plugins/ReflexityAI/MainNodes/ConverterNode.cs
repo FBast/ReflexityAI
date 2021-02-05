@@ -3,6 +3,7 @@ using Plugins.ReflexityAI.MiddleNodes;
 using XNode;
 
 namespace Plugins.ReflexityAI.MainNodes {
+    [CreateNodeMenu("Reflexity/Main/Converter")]
     public class ConverterNode : MiddleNode {
         
         [Input(ShowBackingValue.Never, ConnectionType.Override)] 

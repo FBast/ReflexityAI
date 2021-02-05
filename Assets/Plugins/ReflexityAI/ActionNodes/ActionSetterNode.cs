@@ -6,6 +6,7 @@ using XNode;
 using Object = UnityEngine.Object;
 
 namespace Plugins.ReflexityAI.ActionNodes {
+    [CreateNodeMenu("Reflexity/Action/Setter")]
     public class ActionSetterNode : ActionNode {
 
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public Object Value;

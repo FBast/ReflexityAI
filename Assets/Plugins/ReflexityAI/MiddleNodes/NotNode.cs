@@ -2,6 +2,7 @@
 using XNode;
 
 namespace Plugins.ReflexityAI.MiddleNodes {
+    [CreateNodeMenu("Reflexity/Middle/Not")]
     public class NotNode : MiddleNode {
         
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public bool ValueIn;

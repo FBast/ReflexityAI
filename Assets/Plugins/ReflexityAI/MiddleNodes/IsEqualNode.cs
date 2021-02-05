@@ -4,6 +4,7 @@ using XNode;
 using Object = UnityEngine.Object;
 
 namespace Plugins.ReflexityAI.MiddleNodes {
+    [CreateNodeMenu("Reflexity/Middle/IsEqual")]
     public class IsEqualNode : MiddleNode {
         
         [Input(ShowBackingValue.Never)] public Object ValuesIn;

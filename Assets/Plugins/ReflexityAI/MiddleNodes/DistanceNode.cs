@@ -3,6 +3,7 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.ReflexityAI.MiddleNodes {
+    [CreateNodeMenu("Reflexity/Middle/Distance")]
     public class DistanceNode : MiddleNode {
         
         [Input(ShowBackingValue.Never)] public Vector3 FirstValueIn;

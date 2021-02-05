@@ -3,6 +3,7 @@ using Plugins.ReflexityAI.Framework;
 using XNode;
 
 namespace Plugins.ReflexityAI.MiddleNodes {
+    [CreateNodeMenu("Reflexity/Middle/And")]
     public class AndNode : MiddleNode {
         
         [Input(ShowBackingValue.Never)] public bool ValuesIn;
