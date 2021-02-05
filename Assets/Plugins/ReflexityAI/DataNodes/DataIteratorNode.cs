@@ -39,8 +39,8 @@ namespace Plugins.ReflexityAI.DataNodes {
         [SerializeField, HideInInspector] private string _typeArgumentName;
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
-            base.OnCreateConnection(from, to);
             if (to.fieldName == nameof(Enumerable) && to.node == this) {
+                ClearDynamicPorts();
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Enumerable));
                 if (reflectionData.Type.IsGenericType && reflectionData.Type.GetGenericTypeDefinition().GetInterface(typeof(IEnumerable<>).FullName) != null) {
                     Type type = reflectionData.Type.GetGenericArguments()[0];
@@ -53,16 +53,16 @@ namespace Plugins.ReflexityAI.DataNodes {
         }
         
         public override void OnRemoveConnection(NodePort port) {
-            base.OnRemoveConnection(port);
             if (port.fieldName == nameof(Enumerable) && port.node == this) {
-                ClearDynamicPorts();
+//                ClearDynamicPorts();
             }
         }
 
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(LinkedOption)) {
                 return this;
-            } else {
+            } 
+            else {
                 if (!Application.isPlaying) 
                     return new ReflectionData(ArgumentType, null, true);
                 return new ReflectionData(ArgumentType, CurrentValue, true);

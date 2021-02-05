@@ -14,7 +14,6 @@ namespace Plugins.ReflexityAI.DataNodes.Editor {
             serializedObject.Update();
             if (_dataSelectorNode.SerializableInfos.Count > 0) {
                 string[] choices = _dataSelectorNode.SerializableInfos.Select(info => info.Name).ToArray();
-                //BUG-fred ArgumentException: Getting control 2's position in a group with only 2 controls when doing mouseUp
                 _dataSelectorNode.ChoiceIndex = EditorGUILayout.Popup(_dataSelectorNode.ChoiceIndex, choices);
                 _dataSelectorNode.SelectedSerializableInfo = _dataSelectorNode.SerializableInfos.ElementAt(_dataSelectorNode.ChoiceIndex);
                 NodePort dataPort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Data));

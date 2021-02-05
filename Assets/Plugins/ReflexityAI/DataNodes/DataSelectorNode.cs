@@ -18,17 +18,25 @@ namespace Plugins.ReflexityAI.DataNodes {
         
         public override void OnCreateConnection(NodePort from, NodePort to) {
             if (to.fieldName == nameof(Data) && to.node == this) {
-                SerializableInfos.Clear();
-                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-                SerializableInfos.AddRange(reflectionData.Type
-                    .GetFields(SerializableInfo.DefaultBindingFlags)
-                    .Select(info => new SerializableInfo(info, reflectionData.FromIteration)));
-                SerializableInfos.AddRange(reflectionData.Type
-                    .GetProperties(SerializableInfo.DefaultBindingFlags)
-                    .Select(info => new SerializableInfo(info, reflectionData.FromIteration)));
+                UpdateReflectedData();
             }
         }
-        
+
+        private void OnValidate() {
+            UpdateReflectedData();
+        }
+
+        private void UpdateReflectedData() {
+            SerializableInfos.Clear();
+            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+            SerializableInfos.AddRange(reflectionData.Type
+                .GetFields(SerializableInfo.DefaultBindingFlags)
+                .Select(info => new SerializableInfo(info, reflectionData.FromIteration)));
+            SerializableInfos.AddRange(reflectionData.Type
+                .GetProperties(SerializableInfo.DefaultBindingFlags)
+                .Select(info => new SerializableInfo(info, reflectionData.FromIteration)));
+        }
+
         public override void OnRemoveConnection(NodePort port) {
             if (port.fieldName == nameof(Data)) {
                 SerializableInfos.Clear();
