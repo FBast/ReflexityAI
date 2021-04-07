@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Examples/TankArena/Scenes/Shared.unity
+    guid: 4a6c153186703c449ba3eccb77f8f2ba
+  - enabled: 1
+    path: Assets/Examples/TankArena/Scenes/Menu.unity
+    guid: 6e2751227c6080340a1de028c39b055e
+  - enabled: 1
+    path: Assets/Examples/TankArena/Scenes/Game.unity
+    guid: 048d279af9b19254fadabbf10965f0d0
   m_configObjects: {}

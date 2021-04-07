@@ -19,8 +19,216 @@
               <e p="CubeSpawner.cs" t="Include" />
             </e>
           </e>
+          <e p="TankArena" t="Include">
+            <e p="Fonts" t="Include">
+              <e p="Bowlby_One" t="Include">
+                <e p="FontLicense.txt" t="Include" />
+              </e>
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="AI" t="Include">
+                <e p="TankAI.cs" t="Include" />
+                <e p="TankGraph.cs" t="Include" />
+              </e>
+              <e p="Components" t="Include">
+                <e p="DestroyAfterTime.cs" t="Include" />
+                <e p="FreeLookCamera.cs" t="Include" />
+                <e p="ParticleEmissionSetter.cs" t="Include" />
+                <e p="Spinning.cs" t="Include" />
+              </e>
+              <e p="Data" t="Include">
+                <e p="TankSetting.cs" t="Include" />
+              </e>
+              <e p="Entities" t="Include">
+                <e p="BonusEntity.cs" t="Include" />
+                <e p="ShellEntity.cs" t="Include" />
+                <e p="TankEntity.cs" t="Include" />
+                <e p="WaypointEntity.cs" t="Include" />
+              </e>
+              <e p="extensions" t="Include">
+                <e p="DoubleExtension.cs" t="Include" />
+                <e p="PlayerPrefsExtension.cs" t="Include" />
+                <e p="TransformExtension.cs" t="Include" />
+                <e p="Vector2Extension.cs" t="Include" />
+                <e p="Vector3Extension.cs" t="Include" />
+              </e>
+              <e p="Framework" t="Include">
+                <e p="BonusSpawner.cs" t="Include" />
+                <e p="FactionType.cs" t="Include" />
+                <e p="Game.cs" t="Include" />
+                <e p="Match.cs" t="Include" />
+                <e p="Properties.cs" t="Include" />
+                <e p="Stats.cs" t="Include" />
+                <e p="TankSpawner.cs" t="Include" />
+                <e p="Team.cs" t="Include" />
+                <e p="Timer.cs" t="Include" />
+                <e p="WaypointSpawner.cs" t="Include" />
+              </e>
+              <e p="Managers" t="Include">
+                <e p="GameManager.cs" t="Include" />
+              </e>
+              <e p="SOEvents" t="Include">
+                <e p="BaseGameEvent.cs" t="Include" />
+                <e p="BaseGameEventListener.cs" t="Include" />
+                <e p="BoolEvents" t="Include">
+                  <e p="BoolEvent.cs" t="Include" />
+                  <e p="BoolEventListener.cs" t="Include" />
+                  <e p="UnityBoolEvent.cs" t="Include" />
+                </e>
+                <e p="GameObjectEvents" t="Include">
+                  <e p="GameObjectEvent.cs" t="Include" />
+                  <e p="GameObjectEventListener.cs" t="Include" />
+                  <e p="UnityGameObjectEvent.cs" t="Include" />
+                </e>
+                <e p="IGameEventListener.cs" t="Include" />
+                <e p="IntEvents" t="Include">
+                  <e p="IntEvent.cs" t="Include" />
+                  <e p="IntEventListener.cs" t="Include" />
+                  <e p="UnityIntEvent.cs" t="Include" />
+                </e>
+                <e p="StringEvents" t="Include">
+                  <e p="StringEvent.cs" t="Include" />
+                  <e p="StringEventListener.cs" t="Include" />
+                  <e p="UnityStringEvent.cs" t="Include" />
+                </e>
+                <e p="StringObjectEvents" t="Include">
+                  <e p="StringObjectEvent.cs" t="Include" />
+                  <e p="StringObjectEventListener.cs" t="Include" />
+                  <e p="UnityStringObjectEvent.cs" t="Include" />
+                </e>
+                <e p="VoidEvents" t="Include">
+                  <e p="UnityVoidEvent.cs" t="Include" />
+                  <e p="Void.cs" t="Include" />
+                  <e p="VoidEvent.cs" t="Include" />
+                  <e p="VoidEventListener.cs" t="Include" />
+                </e>
+              </e>
+              <e p="SOReferences" t="Include">
+                <e p="CameraReference" t="Include">
+                  <e p="CameraReference.cs" t="Include" />
+                  <e p="CameraVariable.cs" t="Include" />
+                </e>
+                <e p="DictionaryStringObjectReference" t="Include">
+                  <e p="DictionaryStringObjectReference.cs" t="Include" />
+                  <e p="DictionaryStringObjectVariable.cs" t="Include" />
+                </e>
+                <e p="FloatReference" t="Include">
+                  <e p="FloatReference.cs" t="Include" />
+                  <e p="FloatVariable.cs" t="Include" />
+                </e>
+                <e p="GameObjectListReference" t="Include">
+                  <e p="GameObjectListReference.cs" t="Include" />
+                  <e p="GameObjectListVariable.cs" t="Include" />
+                </e>
+                <e p="GameObjectReference" t="Include">
+                  <e p="GameObjectReference.cs" t="Include" />
+                  <e p="GameObjectVariable.cs" t="Include" />
+                </e>
+                <e p="GameReference" t="Include">
+                  <e p="GameReference.cs" t="Include" />
+                  <e p="GameVariable.cs" t="Include" />
+                </e>
+                <e p="IntReference" t="Include">
+                  <e p="IntReference.cs" t="Include" />
+                  <e p="IntVariable.cs" t="Include" />
+                </e>
+                <e p="MatchReference" t="Include">
+                  <e p="MatchReference.cs" t="Include" />
+                  <e p="MatchVariable.cs" t="Include" />
+                </e>
+                <e p="RectReference" t="Include">
+                  <e p="RectReference.cs" t="Include" />
+                  <e p="RectVariable.cs" t="Include" />
+                </e>
+                <e p="RectTransformReference" t="Include">
+                  <e p="RectTransformReference.cs" t="Include" />
+                  <e p="RectTransformVariable.cs" t="Include" />
+                </e>
+                <e p="Reference.cs" t="Include" />
+                <e p="RendererReference" t="Include">
+                  <e p="RendererReference.cs" t="Include" />
+                  <e p="RendererVariable.cs" t="Include" />
+                </e>
+                <e p="StringReference" t="Include">
+                  <e p="StringReference.cs" t="Include" />
+                  <e p="StringVariable.cs" t="Include" />
+                </e>
+                <e p="Texture2DReference" t="Include">
+                  <e p="Texture2DReference.cs" t="Include" />
+                  <e p="Texture2DVariable.cs" t="Include" />
+                </e>
+                <e p="TransformReference" t="Include">
+                  <e p="TransformReference.cs" t="Include" />
+                  <e p="TransformVariable.cs" t="Include" />
+                </e>
+                <e p="Variable.cs" t="Include" />
+                <e p="Vector3Reference" t="Include">
+                  <e p="Vector3Reference.cs" t="Include" />
+                  <e p="Vector3Variable.cs" t="Include" />
+                </e>
+              </e>
+              <e p="UI" t="Include">
+                <e p="CameraSwitchUI.cs" t="Include" />
+                <e p="GameStatsUI.cs" t="Include" />
+                <e p="MatchEndUI.cs" t="Include" />
+                <e p="SettingsUI.cs" t="Include" />
+                <e p="SliderWithLabelUI.cs" t="Include" />
+                <e p="TankNumberUI.cs" t="Include" />
+                <e p="TeamFightUI.cs" t="Include" />
+                <e p="TeamStatLineUI.cs" t="Include" />
+                <e p="TeamTankUI.cs" t="Include" />
+                <e p="TimeChronoUI.cs" t="Include" />
+                <e p="TournamentUI.cs" t="Include" />
+              </e>
+              <e p="Utils" t="Include">
+                <e p="FormationUtils.cs" t="Include" />
+                <e p="Singleton.cs" t="Include" />
+                <e p="Vector3Utils.cs" t="Include" />
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Plugins" t="Include">
+          <e p="HSVPicker" t="Include">
+            <e p="Editor" t="Include">
+              <e p="BoxSliderEditor.cs" t="Include" />
+            </e>
+            <e p="Enums" t="Include">
+              <e p="ColorValues.cs" t="Include" />
+            </e>
+            <e p="Events" t="Include">
+              <e p="ColorChangedEvent.cs" t="Include" />
+              <e p="HSVChangedEvent.cs" t="Include" />
+            </e>
+            <e p="Other" t="Include">
+              <e p="ColorPickerTester.cs" t="Include" />
+              <e p="TiltWindow.cs" t="Include" />
+            </e>
+            <e p="README.txt" t="Include" />
+            <e p="Resources" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Compute" t="Include">
+                  <e p="GenerateSVTexture.compute" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="UI" t="Include">
+              <e p="ColorImage.cs" t="Include" />
+              <e p="ColorLabel.cs" t="Include" />
+              <e p="ColorPicker.cs" t="Include" />
+              <e p="ColorPickerSetup.cs" t="Include" />
+              <e p="ColorPresetManager.cs" t="Include" />
+              <e p="ColorPresets.cs" t="Include" />
+              <e p="ColorSlider.cs" t="Include" />
+              <e p="ColorSliderImage.cs" t="Include" />
+              <e p="HexColorField.cs" t="Include" />
+              <e p="SVBoxSlider.cs" t="Include" />
+            </e>
+            <e p="UtilityScripts" t="Include">
+              <e p="BoxSlider.cs" t="Include" />
+              <e p="HSVUtil.cs" t="Include" />
+            </e>
+          </e>
           <e p="ReflexityAI" t="Include">
             <e p="ActionNodes" t="Include">
               <e p="ActionLauncherNode.cs" t="Include" />
@@ -149,6 +357,37 @@
               <e p="NodeGroupEditor.cs" t="Include" />
             </e>
             <e p="NodeGroup.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
       </e>

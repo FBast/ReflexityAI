@@ -33,6 +33,16 @@ namespace Plugins.ReflexityAI.Framework {
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
 
         private void Start() {
+            Init();
+        }
+
+        private void OnEnable() {
+            if (!OnEnableQueuing) return;
+            EnqueueAI();
+        }
+
+        public void Init() {
+            LocalAIBrains = new List<AIBrainGraph>();
             foreach (AIBrainGraph aiBrain in AIBrains) {
                 // Create a copy
                 AIBrainGraph localAIBrain = (AIBrainGraph) aiBrain.Copy();
@@ -44,12 +54,7 @@ namespace Plugins.ReflexityAI.Framework {
                 LocalAIBrains.Add(localAIBrain);
             }
         }
-
-        private void OnEnable() {
-            if (!OnEnableQueuing) return;
-            EnqueueAI();
-        }
-
+        
         /// <summary>
         /// Use this method to manually enqueue this AI processing
         /// </summary>
