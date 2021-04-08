@@ -1,79 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6520350034542281272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df6ea1fc9eb84a56b1c889ef5cbd2acf, type: 3}
-  m_Name: Option
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 472, y: -248}
-  ports:
-    keys:
-    - DataIteratorNode
-    - Ranks
-    - Multiplier
-    - Bonus
-    - Actions
-    values:
-    - _fieldName: DataIteratorNode
-      _node: {fileID: -6520350034542281272}
-      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Ranks
-      _node: {fileID: -6520350034542281272}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Multiplier
-      _node: {fileID: -6520350034542281272}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Bonus
-      _node: {fileID: -6520350034542281272}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: Actions
-      _node: {fileID: -6520350034542281272}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  DataIteratorNode: {fileID: 0}
-  Description: 
-  Ranks: 0
-  Merge: 1
-  Multiplier: 1
-  Bonus: 0
-  Actions: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +13,316 @@ MonoBehaviour:
   m_Name: DumbMoving
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -6520350034542281272}
+  - {fileID: 5439705410965346860}
+  - {fileID: 8707133485001773114}
   HistoricTags: []
   MemoryTags: []
+--- !u!114 &5439705410965346860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1a63fe03bad4d4daad69c1a664cf6c, type: 3}
+  m_Name: Data Reader
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -936, y: -504}
+  ports:
+    keys:
+    - TankEntity (Field)
+    - AllyFactionType (Field)
+    - EnemyFactionType (Field)
+    - AllFactionType (Field)
+    - BonusEntities (Property)
+    - TankEntities (Property)
+    - EnnemyTankEntities (Property)
+    - AllyTankEntities (Property)
+    - WaypointEntities (Property)
+    values:
+    - _fieldName: TankEntity (Field)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: AllyFactionType (Field)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: EnemyFactionType (Field)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: AllFactionType (Field)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: BonusEntities (Property)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.BonusEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: Enumerable
+        node: {fileID: 8707133485001773114}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: TankEntities (Property)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.TankEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: EnnemyTankEntities (Property)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.TankEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: AllyTankEntities (Property)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.TankEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+    - _fieldName: WaypointEntities (Property)
+      _node: {fileID: 5439705410965346860}
+      _typeQualifiedName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.WaypointEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
+  PortDictionary:
+    keys:
+    - TankEntity
+    - AllyFactionType
+    - EnemyFactionType
+    - AllFactionType
+    - BonusEntities
+    - TankEntities
+    - EnnemyTankEntities
+    - AllyTankEntities
+    - WaypointEntities
+    values:
+    - TankEntity (Field)
+    - AllyFactionType (Field)
+    - EnemyFactionType (Field)
+    - AllFactionType (Field)
+    - BonusEntities (Property)
+    - TankEntities (Property)
+    - EnnemyTankEntities (Property)
+    - AllyTankEntities (Property)
+    - WaypointEntities (Property)
+  InfoDictionary:
+    keys:
+    - TankEntity (Field)
+    - AllyFactionType (Field)
+    - EnemyFactionType (Field)
+    - AllFactionType (Field)
+    - BonusEntities (Property)
+    - TankEntities (Property)
+    - EnnemyTankEntities (Property)
+    - AllyTankEntities (Property)
+    - WaypointEntities (Property)
+    values:
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: TankEntity
+      TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      PortName: TankEntity (Field)
+      Order: 67109063
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: AllyFactionType
+      TypeName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      PortName: AllyFactionType (Field)
+      Order: 67109064
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: EnemyFactionType
+      TypeName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      PortName: EnemyFactionType (Field)
+      Order: 67109065
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: AllFactionType
+      TypeName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      PortName: AllFactionType (Field)
+      Order: 67109066
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: BonusEntities
+      TypeName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.BonusEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: BonusEntities (Property)
+      Order: 385875993
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: TankEntities
+      TypeName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.TankEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: TankEntities (Property)
+      Order: 385875994
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: EnnemyTankEntities
+      TypeName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.TankEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: EnnemyTankEntities (Property)
+      Order: 385875995
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: AllyTankEntities
+      TypeName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.TankEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: AllyTankEntities (Property)
+      Order: 385875996
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
+    - MemberTypes: 16
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: WaypointEntities
+      TypeName: System.Collections.Generic.IEnumerable`1[[Examples.TankArena.Scripts.Entities.WaypointEntity,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      PortName: WaypointEntities (Property)
+      Order: 385875997
+      IsIteratable: 1
+      IsPrimitive: 0
+      Parameters: []
+  _declaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+--- !u!114 &8707133485001773114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 889fcb5e10a64fd2ae8e766b05f06ae5, type: 3}
+  m_Name: Data Iterator
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -424, y: -584}
+  ports:
+    keys:
+    - Enumerable
+    - LinkedOption
+    - BonusEntity
+    values:
+    - _fieldName: Enumerable
+      _node: {fileID: 8707133485001773114}
+      _typeQualifiedName: System.Collections.Generic.List`1[[UnityEngine.Object,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+      connections:
+      - fieldName: BonusEntities (Property)
+        node: {fileID: 5439705410965346860}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: LinkedOption
+      _node: {fileID: 8707133485001773114}
+      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 0
+    - _fieldName: BonusEntity
+      _node: {fileID: 8707133485001773114}
+      _typeQualifiedName: Examples.TankArena.Scripts.Entities.BonusEntity, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 1
+      _dynamic: 1
+  Enumerable: []
+  LinkedOption: {fileID: 0}
+  _argumentTypeName: Examples.TankArena.Scripts.Entities.BonusEntity, Assembly-CSharp,
+    Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

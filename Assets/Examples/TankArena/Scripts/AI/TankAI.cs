@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Examples.TankArena.Scripts.Entities;
 using Examples.TankArena.Scripts.Framework;
-using Plugins.ReflexityAI.Framework;
+using Plugins.Reflexity.Framework;
 using UnityEngine;
 
 namespace Examples.TankArena.Scripts.AI {

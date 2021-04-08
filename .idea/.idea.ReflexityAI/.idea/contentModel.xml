@@ -229,7 +229,7 @@
               <e p="HSVUtil.cs" t="Include" />
             </e>
           </e>
-          <e p="ReflexityAI" t="Include">
+          <e p="Reflexity" t="Include">
             <e p="ActionNodes" t="Include">
               <e p="ActionLauncherNode.cs" t="Include" />
               <e p="ActionSetterNode.cs" t="Include" />

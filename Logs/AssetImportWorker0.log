@@ -3840,3 +3840,67 @@ Received Import Request.
 Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset using Guid(6dfc602bd4d263b41b9b768cd6309094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '680c670c4906371df5ec97fc6bb55bbd') in 0.005743 seconds
   Import took 0.010161 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 955.144870 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset
+  artifactKey: Guid(6dfc602bd4d263b41b9b768cd6309094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset using Guid(6dfc602bd4d263b41b9b768cd6309094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0477b0703ba57856086606ab5258ae33') in 0.003781 seconds
+  Import took 0.007377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002064 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset
+  artifactKey: Guid(6dfc602bd4d263b41b9b768cd6309094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset using Guid(6dfc602bd4d263b41b9b768cd6309094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0477b0703ba57856086606ab5258ae33') in 0.004339 seconds
+  Import took 0.008016 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.278930 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset
+  artifactKey: Guid(6dfc602bd4d263b41b9b768cd6309094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset using Guid(6dfc602bd4d263b41b9b768cd6309094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10817d9c03f1033125e98f3bd0a9fb0d') in 0.003172 seconds
+  Import took 0.006084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.657730 seconds.
+  path: Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs
+  artifactKey: Guid(74f609c5c7eb4e9eb49e8c4e7688723a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs using Guid(74f609c5c7eb4e9eb49e8c4e7688723a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb5e13ea8453143e89a1bc72012ec12') in 0.019027 seconds
+  Import took 0.021947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.792048 seconds.
+  path: Assets/Plugins/ReflexityAI/Framework/ActionNode.cs
+  artifactKey: Guid(98a94d2ad6c540578edd60435a32e73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/ReflexityAI/Framework/ActionNode.cs using Guid(98a94d2ad6c540578edd60435a32e73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33af25223e91aea04159eca3d34e036') in 0.008723 seconds
+  Import took 0.011618 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006272 seconds.
+  path: Assets/Plugins/ReflexityAI/Framework/ActionNode.cs
+  artifactKey: Guid(98a94d2ad6c540578edd60435a32e73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/ReflexityAI/Framework/ActionNode.cs using Guid(98a94d2ad6c540578edd60435a32e73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33af25223e91aea04159eca3d34e036') in 0.002194 seconds
+  Import took 0.005009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.025365 seconds.
+  path: Assets/Plugins/ReflexityAI/Framework/DataNode.cs
+  artifactKey: Guid(81119e5351814a95807533c12bb835aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/ReflexityAI/Framework/DataNode.cs using Guid(81119e5351814a95807533c12bb835aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a0467d3f49b70e65da219eb906ed4c') in 0.008386 seconds
+  Import took 0.012388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003328 seconds.
+  path: Assets/Plugins/ReflexityAI/Framework/DataNode.cs
+  artifactKey: Guid(81119e5351814a95807533c12bb835aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/ReflexityAI/Framework/DataNode.cs using Guid(81119e5351814a95807533c12bb835aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a0467d3f49b70e65da219eb906ed4c') in 0.002384 seconds
+  Import took 0.005620 seconds .
+

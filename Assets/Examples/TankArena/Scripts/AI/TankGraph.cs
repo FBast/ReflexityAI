@@ -1,5 +1,5 @@
 ﻿using System;
-using Plugins.ReflexityAI.Framework;
+using Plugins.Reflexity.Framework;
 using UnityEngine;
 
 namespace Examples.TankArena.Scripts.AI {
