@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.ReflexityAI.Framework;
@@ -18,8 +19,9 @@ namespace Plugins.ReflexityAI.DataNodes {
         public Type _argumentType;
         public Type ArgumentType {
             get {
-                if (_argumentType == null)
+                if (_argumentType == null && _argumentTypeName != null) {
                     _argumentType = Type.GetType(_argumentTypeName);
+                }
                 return _argumentType;
             }
         }
@@ -42,12 +44,12 @@ namespace Plugins.ReflexityAI.DataNodes {
             if (to.fieldName == nameof(Enumerable) && to.node == this) {
                 ClearDynamicPorts();
                 ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Enumerable));
-                if (reflectionData.Type.IsGenericType && reflectionData.Type.GetGenericTypeDefinition().GetInterface(typeof(IEnumerable<>).FullName) != null) {
+                if (typeof(IEnumerable).IsAssignableFrom(reflectionData.Type)) {
                     Type type = reflectionData.Type.GetGenericArguments()[0];
                     _argumentTypeName = type.AssemblyQualifiedName;
                     AddDynamicOutput(type, ConnectionType.Multiple, TypeConstraint.Inherited, type.Name);
                 } else {
-                    Debug.LogError("Enumerable need to be a generic type (List or Array for example)");
+                    Debug.LogError(reflectionData.Type + " must implement IEnumerable");
                 }
             }
         }
@@ -55,7 +57,6 @@ namespace Plugins.ReflexityAI.DataNodes {
         public override void OnRemoveConnection(NodePort port) {
             if (port.fieldName == nameof(Enumerable) && port.node == this) {
                 RemoveDynamicPort(ArgumentType.Name);
-//                ClearDynamicPorts();
             }
         }
 
@@ -64,8 +65,7 @@ namespace Plugins.ReflexityAI.DataNodes {
                 return this;
             } 
             else {
-                if (!Application.isPlaying) 
-                    return new ReflectionData(ArgumentType, null, true);
+                if (!Application.isPlaying) return new ReflectionData(ArgumentType, null, true);
                 return new ReflectionData(ArgumentType, CurrentValue, true);
             }
         }

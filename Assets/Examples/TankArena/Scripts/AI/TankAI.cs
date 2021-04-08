@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using Examples.TankArena.Scripts.Entities;
 using Examples.TankArena.Scripts.Framework;
@@ -12,21 +13,21 @@ namespace Examples.TankArena.Scripts.AI {
         public FactionType AllyFactionType = FactionType.Ally;
         public FactionType EnemyFactionType = FactionType.Enemy;
         public FactionType AllFactionType = FactionType.All;
-        public BonusEntity[] BonusEntities => GetComponent<TankEntity>().BonusReference.Value
-            .Select(o => o.GetComponent<BonusEntity>())
-            .ToArray();
-        public TankEntity[] TankEntities => GetComponent<TankEntity>().TanksReference.Value
-            .Select(o => o.GetComponent<TankEntity>())
-            .ToArray();
-        public TankEntity[] EnnemyTankEntities => TankEntities
-            .Where(entity => entity.GetFaction(TankEntity) == FactionType.Enemy)
-            .ToArray();
-        public TankEntity[] AllyTankEntities => TankEntities
-            .Where(entity => entity.GetFaction(TankEntity) == FactionType.Ally)
-            .ToArray();
-        public WaypointEntity[] WaypointEntities => GetComponent<TankEntity>().WaypointsReference.Value
-            .Select(o => o.GetComponent<WaypointEntity>())
-            .ToArray();
+
+        public IEnumerable<BonusEntity> BonusEntities => GetComponent<TankEntity>().BonusReference.Value
+            .Select(o => o.GetComponent<BonusEntity>());
+
+        public IEnumerable<TankEntity> TankEntities => GetComponent<TankEntity>().TanksReference.Value
+            .Select(o => o.GetComponent<TankEntity>());
+
+        public IEnumerable<TankEntity> EnnemyTankEntities => TankEntities
+            .Where(entity => entity.GetFaction(TankEntity) == FactionType.Enemy);
+
+        public IEnumerable<TankEntity> AllyTankEntities => TankEntities
+            .Where(entity => entity.GetFaction(TankEntity) == FactionType.Ally);
+
+        public IEnumerable<WaypointEntity> WaypointEntities => GetComponent<TankEntity>().WaypointsReference.Value
+            .Select(o => o.GetComponent<WaypointEntity>());
         // End of custom references
 
         private void Awake() {
