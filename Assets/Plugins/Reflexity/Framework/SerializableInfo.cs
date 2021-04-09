@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using JetBrains.Annotations;
 
 namespace Plugins.Reflexity.Framework {
     [Serializable]
@@ -24,7 +25,7 @@ namespace Plugins.Reflexity.Framework {
         private Type _cachedType;
         public Type Type {
             get {
-                if (_cachedType == null)
+                if (_cachedType == null && TypeName != null) 
                     _cachedType = Type.GetType(TypeName);
                 return _cachedType;
             }
@@ -42,7 +43,7 @@ namespace Plugins.Reflexity.Framework {
             }
         }
         
-        private object _cachedValue;
+        [CanBeNull] private object _cachedValue;
         
         public SerializableInfo(FieldInfo fieldInfo, bool isShortCache = false) {
             MemberTypes = fieldInfo.MemberType;
@@ -92,9 +93,14 @@ namespace Plugins.Reflexity.Framework {
             return IsPrimitive ? (object) null : new ReflectionData(Type, null);
         }
         
+        /// <summary>
+        /// Return a primitive or a reflection data including a value field as data
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns></returns>
         public object GetRuntimeValue(object context) {
             if (context == null) return GetEditorValue();
-            if (_cachedValue == null) _cachedValue = GetValue(context);
+            if (_cachedValue == null || Type.IsValueType) _cachedValue = GetValue(context);
             return IsPrimitive ? _cachedValue : new ReflectionData(Type, _cachedValue);
         }
 

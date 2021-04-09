@@ -18,6 +18,18 @@ namespace Plugins.Reflexity.Framework {
         public IEnumerable<U> GetNodes<U>() {
             return nodes.Where(node => node is U).Cast<U>();
         }
+
+        public void ClearCache() {
+            foreach (ICacheable cacheable in GetNodes<ICacheable>()) {
+                cacheable.ClearCache();
+            }
+        }
+        
+        public void ClearShortCache() {
+            foreach (ICacheable cacheable in GetNodes<ICacheable>()) {
+                cacheable.ClearShortCache();
+            }
+        }
         
     }
     /// <summary>

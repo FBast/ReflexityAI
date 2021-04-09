@@ -16,7 +16,6 @@ namespace Plugins.Reflexity.ActionNodes.Editor {
                 valuePort.ValueType = _actionSetterNode.SelectedSerializableInfo.Type;
                 NodeEditorGUILayout.PortField(valuePort);
                 string[] choices = _actionSetterNode.SerializableInfos.Select(info => info.Name).ToArray();
-                //BUG-fred ArgumentException: Getting control 2's position in a group with only 2 controls when doing mouseUp
                 int choiceIndex = EditorGUILayout.Popup(_actionSetterNode.ChoiceIndex, choices);
                 if (choiceIndex != _actionSetterNode.ChoiceIndex) {
                     UpdateChoice(choiceIndex);

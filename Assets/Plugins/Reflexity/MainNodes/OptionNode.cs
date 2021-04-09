@@ -20,7 +20,7 @@ namespace Plugins.Reflexity.MainNodes {
         public DataIteratorNode DataIteratorNode;
         [TextArea, Tooltip("Provide a basic description displayed in the AI Debugger")] public string Description;
         
-        [Header("Ranking")] 
+        [Header("Ranking")]
         [Input, Tooltip("Connect to each Utility Nodes")] public int Ranks;
         [Tooltip("Average : The rank is calculated using the average of all Utilities\n"
                  + "Max : The rank is calculated using the maximum value of all Utilities\n"
@@ -43,9 +43,7 @@ namespace Plugins.Reflexity.MainNodes {
                 while (collectionSize > iteratorNode.Index) {
                     options.Add(new AIOption(this));
                     iteratorNode.Index++;
-                    foreach (ICacheable cacheable in brainGraph.GetNodes<ICacheable>()) {
-                        cacheable.ClearCache();
-                    }
+                    brainGraph.ClearCache();
                 }
                 iteratorNode.Index = 0;
             } else {

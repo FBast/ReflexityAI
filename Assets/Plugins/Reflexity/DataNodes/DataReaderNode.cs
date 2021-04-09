@@ -74,7 +74,7 @@ namespace Plugins.Reflexity.DataNodes {
         }
 
         public void ClearCache() {
-            foreach (KeyValuePair<string,SerializableInfo> valuePair in InfoDictionary) {
+            foreach (KeyValuePair<string, SerializableInfo> valuePair in InfoDictionary) {
                 valuePair.Value.ClearCache();
             }
         }

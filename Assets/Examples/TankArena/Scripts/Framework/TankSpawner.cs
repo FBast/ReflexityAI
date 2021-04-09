@@ -15,7 +15,7 @@ namespace Examples.TankArena.Scripts.Framework {
         [Header("Internal References")] 
         public List<Transform> TeamPositions;
         public Transform TankContent;
-    
+  
         [Header("SO References")] 
         public MatchReference CurrentMatchReference;
         public GameObjectListReference TanksReference;

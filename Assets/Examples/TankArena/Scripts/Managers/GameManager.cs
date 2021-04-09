@@ -11,12 +11,13 @@ using UnityEngine.SceneManagement;
 namespace Examples.TankArena.Scripts.Managers {
 	public class GameManager : Singleton<GameManager> {
 
-		public List<TankSetting> TankSettings = new List<TankSetting>();
+		private List<TankSetting> _tankSettings = new List<TankSetting>();
+		public List<TankSetting> TankSettings => _tankSettings;
 
 		private Dictionary<string, object> _parameters;
 		
 		private void Awake() {
-			TankSettings = AssetDatabase.FindAssets("t:TankSetting", new[] {"Assets"})
+			_tankSettings = AssetDatabase.FindAssets("t:TankSetting", new[] {"Assets"})
 					.Select(AssetDatabase.GUIDToAssetPath)
 					.Select(AssetDatabase.LoadAssetAtPath<TankSetting>)
 					.ToList();

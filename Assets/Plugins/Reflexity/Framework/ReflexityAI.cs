@@ -103,9 +103,7 @@ namespace Plugins.Reflexity.Framework {
                 // Calculate options rank
                 foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in BestWeightedOptions) {
                     foreach (AIOption aiOption in valuePair.Value) {
-                        foreach (ICacheable cacheable in valuePair.Key.GetNodes<ICacheable>()) {
-                            cacheable.ClearShortCache();
-                        }
+                        valuePair.Key.ClearShortCache();
                         aiOption.CalculateRank();
                     }
                 }
@@ -128,9 +126,7 @@ namespace Plugins.Reflexity.Framework {
 
         private List<AIOption> GetOptions(AIBrainGraph aiBrain) {
             List<AIOption> aiOptions = new List<AIOption>();
-            foreach (ICacheable cacheable in aiBrain.GetNodes<ICacheable>()) {
-                cacheable.ClearCache();
-            }
+            aiBrain.ClearCache();
             foreach (OptionNode optionNode in aiBrain.GetNodes<OptionNode>()) {
                 aiOptions.AddRange(optionNode.GetOptions());
             }

@@ -15,6 +15,9 @@ namespace Plugins.Reflexity.DataNodes.Editor {
             if (_dataSelectorNode.SerializableInfos.Count > 0) {
                 string[] choices = _dataSelectorNode.SerializableInfos.Select(info => info.Name).ToArray();
                 _dataSelectorNode.ChoiceIndex = EditorGUILayout.Popup(_dataSelectorNode.ChoiceIndex, choices);
+                // To prevent choice index error after copy
+                if (_dataSelectorNode.ChoiceIndex >= _dataSelectorNode.SerializableInfos.Count)
+                    _dataSelectorNode.ChoiceIndex = 0;
                 _dataSelectorNode.SelectedSerializableInfo = _dataSelectorNode.SerializableInfos.ElementAt(_dataSelectorNode.ChoiceIndex);
                 NodePort dataPort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Data));
                 NodeEditorGUILayout.AddPortField(dataPort);
