@@ -1,4 +1,4 @@
-***This plugin is still in alpha and should not be used in production scoped game***
+***This plugin is still in alpha and should not be used in production ready game***
 
 **This framework allow you to design an Utility AI using a node graph editor provided by xNode. It is a free asset, implementation of the DILL design pattern and compatible with the Unity Engine.
 If you found any bugs or have any requested features please use the Issues tab.**
