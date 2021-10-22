@@ -4,6 +4,7 @@ using System.Linq;
 using Plugins.Reflexity.DataNodes;
 using Plugins.Reflexity.Framework;
 using UnityEngine;
+using UnityEngine.Serialization;
 using XNode;
 
 namespace Plugins.Reflexity.MainNodes {
@@ -25,7 +26,7 @@ namespace Plugins.Reflexity.MainNodes {
         [Tooltip("Average : The rank is calculated using the average of all Utilities\n"
                  + "Max : The rank is calculated using the maximum value of all Utilities\n"
                  + "Min : The rank is calculated using the minimum value of all Utilities")]
-        public MergeType Merge = MergeType.Max;
+        public MergeType Select = MergeType.Max;
         
         [Header("Weighting")] 
         [Input, Tooltip("Product of the multiplier"), Range(0, 10)] public int Multiplier = 1;
@@ -56,7 +57,7 @@ namespace Plugins.Reflexity.MainNodes {
             NodePort utilityPort = GetInputPort(nameof(Ranks));
             if (utilityPort.IsConnected) {
                 int[] ints = utilityPort.GetInputValues<int>();
-                switch (Merge) {
+                switch (Select) {
                     case MergeType.Average:
                         return (int) ints.Average();
                     case MergeType.Max:

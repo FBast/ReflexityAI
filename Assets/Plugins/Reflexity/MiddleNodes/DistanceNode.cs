@@ -14,9 +14,9 @@ namespace Plugins.Reflexity.MiddleNodes {
             if (port.fieldName == nameof(ValueOut)) {
                 ReflectionData firstValue = GetInputValue<ReflectionData>(nameof(FirstValueIn));
                 ReflectionData secondValue = GetInputValue<ReflectionData>(nameof(SecondValueIn));
-                float distance = Vector3.Distance((Vector3) firstValue.Value, (Vector3) secondValue.Value);
-                Debug.Log(distance);
-                return distance;
+                if (firstValue.Value != null && secondValue.Value != null)
+                    return Vector3.Distance((Vector3) firstValue.Value, (Vector3) secondValue.Value);
+                return null;
             }
             return null;
         }

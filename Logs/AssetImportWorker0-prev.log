@@ -1,184 +1,1359 @@
 Using pre-set license
-Built from '2020.3/release' branch; Version is '2020.3.2f1 (8fd9074bf66c) revision 9427207'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 7  (6.1.0) 64bit' Language: 'fr' Physical Memory: 32688 MB
+Built from '2020.3/staging' branch; Version is '2020.3.20f1 (41c4e627c95f) revision 4310246'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.928; Version 2009; 64bit' Language: 'fr' Physical Memory: 32699 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
- COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Unity.exe
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.20f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/frederic.bast/Desktop/UnityProjects/ReflexityAI
+C:/Local Repository/ReflexityAI
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-65014
-Successfully changed project path to: C:/Users/frederic.bast/Desktop/UnityProjects/ReflexityAI
-C:/Users/frederic.bast/Desktop/UnityProjects/ReflexityAI
+64595
+Successfully changed project path to: C:/Local Repository/ReflexityAI
+C:/Local Repository/ReflexityAI
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.27 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 51.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/frederic.bast/Desktop/UnityProjects/ReflexityAI/Assets
+Initialize engine version: 2020.3.20f1 (41c4e627c95f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Local Repository/ReflexityAI/Assets
 GfxDevice: creating device client; threaded=0
-d3d11: CreateDXGIFactory2(...) not found, fallbacking to CreateDXGIFactory1(...).
-d3d11: QueryInterface(IDXGIFactory5) failed (80004002).
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 (ID=0x1e87)
     Vendor:   
-    VRAM:     2986 MB
-    Driver:   23.21.13.8813
+    VRAM:     8010 MB
+    Driver:   27.21.14.5751
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.000906 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001569 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 36.92 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 42.07 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.973 seconds
+- Completed reload, in  0.849 seconds
+Domain Reload Profiling:
+	ReloadAssembly (849ms)
+		BeginReloadAssembly (42ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (334ms)
+			LoadAssemblies (40ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (122ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (136ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (42ms)
+				BeforeProcessingInitializeOnLoad (6ms)
+				ProcessInitializeOnLoadAttributes (63ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002727 seconds.
+Registered in 0.005463 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.905 seconds
+- Completed reload, in  1.001 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1002ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (833ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (391ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (209ms)
+				ProcessInitializeOnLoadMethodAttributes (116ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1752 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.7 MB.
-System memory in use after: 78.8 MB.
+Unloading 2305 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 93.5 MB.
+System memory in use after: 93.7 MB.
 
-Unloading 93 unused Assets to reduce memory usage. Loaded Objects now: 2181.
-Total: 2.065968 ms (FindLiveObjects: 0.219937 ms CreateObjectMapping: 0.061895 ms MarkObjects: 1.630300 ms  DeleteObjects: 0.152033 ms)
+Unloading 122 unused Assets to reduce memory usage. Loaded Objects now: 2705.
+Total: 5.868000 ms (FindLiveObjects: 0.218000 ms CreateObjectMapping: 0.073700 ms MarkObjects: 5.482800 ms  DeleteObjects: 0.092300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Examples/TankArena/AudioClips/ShotFiring.wav
+  artifactKey: Guid(672a9941361ad494a99fba36759eca80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/AudioClips/ShotFiring.wav using Guid(672a9941361ad494a99fba36759eca80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169a4b0405e38264f8fb5bcc5dbdc1ea') in 0.133799 seconds 
+  Import took 0.136739 seconds .
 
 ========================================================================
 Received Import Request.
-  path: Assets/Examples/TankArena/Scripts/Managers/GameManager.cs
-  artifactKey: Guid(3520a0fae9cb2594d93ac59083853572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Examples/TankArena/Scripts/Managers/GameManager.cs using Guid(3520a0fae9cb2594d93ac59083853572) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e546ca91ed2cf6a36fabfd5dbba8a28') in 0.083457 seconds
-  Import took 0.086245 seconds .
+  Time since last request: 0.000227 seconds.
+  path: Assets/Examples/TankArena/Scenes/Shared
+  artifactKey: Guid(f946f1a5fb8203440ba76b6612b6b97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Scenes/Shared using Guid(f946f1a5fb8203440ba76b6612b6b97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '988b75cb8990ae4bd08b057dd99af7f4') in 0.005050 seconds 
+  Import took 0.008219 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.631978 seconds.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Examples/TankArena/AudioClips/MenuMusic.mp3
+  artifactKey: Guid(246ad9725c5c7904a8b08667615edb06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/AudioClips/MenuMusic.mp3 using Guid(246ad9725c5c7904a8b08667615edb06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32bcc2c434c242c216c4e24f752c1615') in 0.012201 seconds 
+  Import took 0.015227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Examples/TankArena/AudioClips/GameMusic.mp3
+  artifactKey: Guid(9856a9e0545295949b6aa3594e2f3845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/AudioClips/GameMusic.mp3 using Guid(9856a9e0545295949b6aa3594e2f3845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc73f90a08e5d98a91ca3be2d4755557') in 0.010577 seconds 
+  Import took 0.013780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Examples/TankArena/AudioClips/ShellExplosion.wav
+  artifactKey: Guid(3a77defcde1caaa40b6f7502547e0c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/AudioClips/ShellExplosion.wav using Guid(3a77defcde1caaa40b6f7502547e0c4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce21ee4c272ccafaf060ef98971a55fe') in 0.013258 seconds 
+  Import took 0.016062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Examples/TankArena/AudioClips/TankExplosion.wav
+  artifactKey: Guid(5c27182a28a7eb942a362e6d198fe0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/AudioClips/TankExplosion.wav using Guid(5c27182a28a7eb942a362e6d198fe0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8750e420185b832b9102d40e33f6dd98') in 0.011749 seconds 
+  Import took 0.014582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Examples/TankArena/AudioClips/BackgroundMusic.wav
+  artifactKey: Guid(8ce5d020a687c314891341b4126d1de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/AudioClips/BackgroundMusic.wav using Guid(8ce5d020a687c314891341b4126d1de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d4aa4eb9a857efbe5923e4c3e9984e') in 0.010404 seconds 
+  Import took 0.013489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.037517 seconds.
+  path: Assets/Examples/TankArena/Scenes/Shared.unity
+  artifactKey: Guid(4a6c153186703c449ba3eccb77f8f2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Scenes/Shared.unity using Guid(4a6c153186703c449ba3eccb77f8f2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079d4e4be363d4bc7533bc85359b6bd5') in 0.005217 seconds 
+  Import took 0.008309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.340331 seconds.
+  path: Assets/Examples/TankArena/Scenes/Menu.unity
+  artifactKey: Guid(6e2751227c6080340a1de028c39b055e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Scenes/Menu.unity using Guid(6e2751227c6080340a1de028c39b055e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e57bcc14b226b11c6a166ce4e66ee2') in 0.005786 seconds 
+  Import took 0.009354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 945.820875 seconds.
+  path: Assets/Examples/TankArena/Editor/UIColor.colors
+  artifactKey: Guid(3ace2a8dd69f42543b084a49930d3f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Editor/UIColor.colors using Guid(3ace2a8dd69f42543b084a49930d3f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29223fbb1ddd56ee51e047ecdd9aea8') in 0.009405 seconds 
+  Import took 0.013580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.687499 seconds.
+  path: Assets/Examples/TankArena/Data/SOEvents/String_OnLoadScene.asset
+  artifactKey: Guid(c2256c64e1dbbf14e84f3562082015bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOEvents/String_OnLoadScene.asset using Guid(c2256c64e1dbbf14e84f3562082015bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd23ba7e0e392e6836155a2798c6cbcd0') in 0.007061 seconds 
+  Import took 0.010156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Examples/TankArena/Data/SOEvents/String_OnReloadScene.asset
+  artifactKey: Guid(f0231fbd441683b4791564e34a05a1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOEvents/String_OnReloadScene.asset using Guid(f0231fbd441683b4791564e34a05a1f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d547dba860a5eb3d7d1c8e6d401bf1') in 0.005134 seconds 
+  Import took 0.007964 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Examples/TankArena/Data/SOEvents/Void_OnExitGame.asset
+  artifactKey: Guid(0cd3e6080492caf4592b610f6981f4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOEvents/Void_OnExitGame.asset using Guid(0cd3e6080492caf4592b610f6981f4ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af704343052127150a6aa6adbfcd6c61') in 0.005503 seconds 
+  Import took 0.008598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Examples/TankArena/Data/SOEvents/String_OnUnloadScene.asset
+  artifactKey: Guid(e2d956d2e010eb14c93613e6056275dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOEvents/String_OnUnloadScene.asset using Guid(e2d956d2e010eb14c93613e6056275dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1d861f9bafb892e060d78f5acd057d') in 0.006687 seconds 
+  Import took 0.009815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Examples/TankArena/Data/SOEvents/Void_OnGameFinished.asset
+  artifactKey: Guid(2d347244babde3744912d94602a0695a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOEvents/Void_OnGameFinished.asset using Guid(2d347244babde3744912d94602a0695a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0530673959a25976288c2a6745cf1a4a') in 0.005576 seconds 
+  Import took 0.008985 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.331251 seconds.
+  path: Assets/Examples/TankArena/Data/SOReferences/Float_CurrentTime.asset
+  artifactKey: Guid(760a5fecbc3648340aca0af7e3c8f520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOReferences/Float_CurrentTime.asset using Guid(760a5fecbc3648340aca0af7e3c8f520) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ce9da0a9adb83f4a5f3b12952cbd594') in 0.008469 seconds 
+  Import took 0.012750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Examples/TankArena/Data/SOReferences/Match_CurrentMatch.asset
+  artifactKey: Guid(5405124dea616db4eb2bce7fa8bcc5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOReferences/Match_CurrentMatch.asset using Guid(5405124dea616db4eb2bce7fa8bcc5e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0f8c76f7d6976b72f58de780eef1b2') in 0.005382 seconds 
+  Import took 0.008133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Examples/TankArena/Data/SOReferences/Float_MaxTime.asset
+  artifactKey: Guid(95d1e99a135185d4f871829560404667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOReferences/Float_MaxTime.asset using Guid(95d1e99a135185d4f871829560404667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d8a20268f721fee7001c7fffd8abc4') in 0.005514 seconds 
+  Import took 0.008247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Examples/TankArena/Data/SOReferences/GameObjectList_Bonus.asset
+  artifactKey: Guid(1372dae88434f9344bdb2febe79e150d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOReferences/GameObjectList_Bonus.asset using Guid(1372dae88434f9344bdb2febe79e150d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac0bd4e98b44ec994af4b6da1eebb1a') in 0.005324 seconds 
+  Import took 0.008090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Examples/TankArena/Data/SOReferences/GameObjectList_Waypoints.asset
+  artifactKey: Guid(974ecc25823053f4c8932762ee118b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOReferences/GameObjectList_Waypoints.asset using Guid(974ecc25823053f4c8932762ee118b4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf0d12ffbe5b7e1261bc6baed84d6c3') in 0.005409 seconds 
+  Import took 0.008605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Examples/TankArena/Data/SOReferences/Game_CurrentGame.asset
+  artifactKey: Guid(7667176be5195bb4a8b87f71efd9aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOReferences/Game_CurrentGame.asset using Guid(7667176be5195bb4a8b87f71efd9aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23afbff9af151c879da89fa14b3b071') in 0.005870 seconds 
+  Import took 0.008873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Examples/TankArena/Data/SOReferences/GameObjectList_Tanks.asset
+  artifactKey: Guid(7ce8d9e744c345148a51d33382a30b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/SOReferences/GameObjectList_Tanks.asset using Guid(7ce8d9e744c345148a51d33382a30b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '705d7670c64f92b6a92ce1309c0ae94f') in 0.005404 seconds 
+  Import took 0.008264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.360982 seconds.
   path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset
   artifactKey: Guid(5b8c8e95878328146b174cb4ce57295b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset using Guid(5b8c8e95878328146b174cb4ce57295b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d8d775848ec1c1bb16b31e29ef74b2c') in 0.019562 seconds
-  Import took 0.023481 seconds .
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset using Guid(5b8c8e95878328146b174cb4ce57295b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd8d49a08e699e7b6a61243851222930') in 0.009665 seconds 
+  Import took 0.012854 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.746733 seconds.
-  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset
-  artifactKey: Guid(5b8c8e95878328146b174cb4ce57295b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset using Guid(5b8c8e95878328146b174cb4ce57295b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc93d3488fd2211703719f3ed2a2dd87') in 0.003947 seconds
-  Import took 0.006793 seconds .
+  Time since last request: 0.000248 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd53563d45bef5d26d8019165b1044738') in 0.004997 seconds 
+  Import took 0.007732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbSetting.asset
+  artifactKey: Guid(aa0148b3ba54c4f449ff2da8df11881e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbSetting.asset using Guid(aa0148b3ba54c4f449ff2da8df11881e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58e91034c5094edbad02ce3a76330d4') in 0.010055 seconds 
+  Import took 0.013045 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003587 seconds.
+Registered in 0.005183 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
 NullReferenceException: Object reference not set to an instance of an object
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002d] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00001] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
 UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
 XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
 
 (Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002d] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00001] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
 UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
 XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
 
 (Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002d] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00001] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
 UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
 XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
 
 (Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002d] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00001] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
 UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
 XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
 
 (Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002d] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00001] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
 UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
 XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
 
 (Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002d] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00001] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
 UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
 XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
 
 (Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
 
 NullReferenceException: Object reference not set to an instance of an object
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002d] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
-  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00001] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
 UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
 XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
 
 (Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004e] in C:\Users\frederic.bast\Desktop\UnityProjects\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
-
-(Filename: Assets/Plugins/xNode/Scripts/Editor/NodeEditorAssetModProcessor.cs Line: 55)
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Local Repository\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <83a38f5397d94e36a22efa3369c82390>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.292 seconds
+- Completed reload, in  0.997 seconds
+Domain Reload Profiling:
+	ReloadAssembly (997ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (843ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (249ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (391ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (126ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1731 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 78.4 MB.
-System memory in use after: 78.5 MB.
+Unloading 2284 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.3 MB.
+System memory in use after: 96.5 MB.
 
-Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 2184.
-Total: 3.084530 ms (FindLiveObjects: 0.257495 ms CreateObjectMapping: 0.112673 ms MarkObjects: 2.644355 ms  DeleteObjects: 0.068806 ms)
+Unloading 101 unused Assets to reduce memory usage. Loaded Objects now: 2716.
+Total: 5.502700 ms (FindLiveObjects: 0.205100 ms CreateObjectMapping: 0.070700 ms MarkObjects: 5.184600 ms  DeleteObjects: 0.041400 ms)
 
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004943 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+UnityEditor.AssetDatabase:LoadAssetAtPath(String, Type)
+XNodeEditor.NodeEditorAssetModProcessor:OnReloadEditor() (at Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:54)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo)
+System.Reflection.MethodBase:Invoke(Object, Object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes()
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at XNodeEditor.NodeEditorAssetModProcessor.OnReloadEditor () [0x0004b] in C:\Local Repository\ReflexityAI\Assets\Plugins\xNode\Scripts\Editor\NodeEditorAssetModProcessor.cs:55 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <83a38f5397d94e36a22efa3369c82390>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Domain Reload Profiling:
+	ReloadAssembly (923ms)
+		BeginReloadAssembly (93ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (779ms)
+			LoadAssemblies (74ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (242ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (49ms)
+				ProcessInitializeOnLoadAttributes (180ms)
+				ProcessInitializeOnLoadMethodAttributes (112ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2284 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.4 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 101 unused Assets to reduce memory usage. Loaded Objects now: 2718.
+Total: 6.158400 ms (FindLiveObjects: 0.178500 ms CreateObjectMapping: 0.080100 ms MarkObjects: 5.854800 ms  DeleteObjects: 0.043800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 230.367015 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a40924468a1e2b7d382b3a3378eda559') in 0.011475 seconds 
+  Import took 0.014797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.724950 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eff99311b4d3c31a3dcb0ee1a8f33f8') in 0.002241 seconds 
+  Import took 0.005652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.984589 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4c0943fd61174a2f0b57377cf86fe6') in 0.002276 seconds 
+  Import took 0.005500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.893111 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9599bdfeddb3b3f339e667862c7d3162') in 0.002212 seconds 
+  Import took 0.005321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.748142 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7449335d85f7d78f0b39efba1f682f50') in 0.002277 seconds 
+  Import took 0.005426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.777120 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91363cb46ebd12abd8e972a246a001ba') in 0.002109 seconds 
+  Import took 0.005339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.236651 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a963d7d310453d63af12088d1b6ad8e') in 0.004344 seconds 
+  Import took 0.007476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.056920 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd88ab8561e8972a10708baa8f2986c') in 0.002484 seconds 
+  Import took 0.005580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.337656 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7699cc4f954a5fc4ad0e53d19b3152c1') in 0.002636 seconds 
+  Import took 0.005797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.882707 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46090dea60a003c273a60252e5508a9c') in 0.002593 seconds 
+  Import took 0.005743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.215296 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+ -> (artifact id: '958227e092c962fa51cd6daf7c8b8ac7') in 0.002922 seconds 
+  Import took 0.006081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.221652 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+ -> (artifact id: '05f2703c13b07422cb55328774e9dc8d') in 0.002931 seconds 
+  Import took 0.006058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.112893 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+ -> (artifact id: '7fa09418b5ddb056f6f9be63a8b1aa66') in 0.003344 seconds 
+  Import took 0.006971 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.024997 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+ -> (artifact id: 'b24a08d0ad4cdbdb03d1529c0976e524') in 0.002974 seconds 
+  Import took 0.006064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.274920 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+ -> (artifact id: '5466e986cfb2aa9d5e66b7b59d3cc220') in 0.003252 seconds 
+  Import took 0.006496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.157502 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+ -> (artifact id: '9832295cd4011752170b071d18d286da') in 0.003570 seconds 
+  Import took 0.007292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.599197 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+ -> (artifact id: 'fc7d834177c27587f96c0868778b058c') in 0.003549 seconds 
+  Import took 0.007145 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.050237 seconds.
+  path: Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset
+  artifactKey: Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbTargeting.asset using Guid(27526220c4238504d8600f7ededa1ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) NullReferenceException: Object reference not set to an instance of an object
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.UpdateReflectedData () [0x0002b] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:32 
+  at Plugins.Reflexity.DataNodes.DataSelectorNode.OnValidate () [0x00000] in C:\Local Repository\ReflexityAI\Assets\Plugins\Reflexity\DataNodes\DataSelectorNode.cs:26 
+
+(Filename: Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs Line: 32)
+
+ -> (artifact id: '6166479ad4ec63b851c232d640f97bf6') in 0.003290 seconds 
+  Import took 0.006409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.068983 seconds.
+  path: Assets/Examples/CubeAI/Data/CubeGraph.asset
+  artifactKey: Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Data/CubeGraph.asset using Guid(a4723a44e0bd70441aae6bb2d71e77e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54bd57bc262657616b9c95a290845aa6') in 0.020768 seconds 
+  Import took 0.024256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.675967 seconds.
+  path: Assets/Examples/CubeAI/Prefabs/Ammo.prefab
+  artifactKey: Guid(ac4721d0400892a498cf9de33ae7627b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Prefabs/Ammo.prefab using Guid(ac4721d0400892a498cf9de33ae7627b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b823a9ace22eee147ebde2fc624479') in 0.048807 seconds 
+  Import took 0.052312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Examples/CubeAI/Prefabs/Cube.prefab
+  artifactKey: Guid(4faa13a356f88b14683061027ce23697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Prefabs/Cube.prefab using Guid(4faa13a356f88b14683061027ce23697) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce8d189fe9fcac3cac0a0dc9124beb68') in 0.023903 seconds 
+  Import took 0.026738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.652684 seconds.
+  path: Assets/Examples/CubeAI/Scripts/CubeEntity.cs
+  artifactKey: Guid(22605c2bd2734d3ca8e0f3f5a4cc8d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Scripts/CubeEntity.cs using Guid(22605c2bd2734d3ca8e0f3f5a4cc8d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27ba9308f9faf71fafb44d7c62f06fb0') in 0.006017 seconds 
+  Import took 0.009119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.411570 seconds.
+  path: Assets/Examples/CubeAI/Scripts/CubeSpawner.cs
+  artifactKey: Guid(b10e5200a3e10f14f89ef9131fd56bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Scripts/CubeSpawner.cs using Guid(b10e5200a3e10f14f89ef9131fd56bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77732a9e3c7057eaeaf360f04dc5f42') in 0.005586 seconds 
+  Import took 0.009004 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.391156 seconds.
+  path: Assets/Examples/CubeAI/Scripts/CubeGraph.cs
+  artifactKey: Guid(6ff709f2644f45538c54e9ffba9f6ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Scripts/CubeGraph.cs using Guid(6ff709f2644f45538c54e9ffba9f6ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb4bdb73709d519ed48069f1aaa4e4b6') in 0.001707 seconds 
+  Import took 0.005228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.417735 seconds.
+  path: Assets/Examples/CubeAI/Scripts/CubeAI.cs
+  artifactKey: Guid(b5b65652ed65b1f48b3528bc3debd197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Scripts/CubeAI.cs using Guid(b5b65652ed65b1f48b3528bc3debd197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e114771e7deed2a89604ff62f36ba37') in 0.005348 seconds 
+  Import took 0.008774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.181803 seconds.
+  path: Assets/Examples/CubeAI/Scripts/AutoDestroy.cs
+  artifactKey: Guid(3b5d16c314b0d974289b024e0e6e65b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/CubeAI/Scripts/AutoDestroy.cs using Guid(3b5d16c314b0d974289b024e0e6e65b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b22423aa8012feba525418fcb87b9d64') in 0.005880 seconds 
+  Import took 0.009475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1084.959053 seconds.
+  path: Assets/Plugins/HSVPicker/Picker 2.0.prefab
+  artifactKey: Guid(916ee089a0d7b63419075f91e1c657ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/HSVPicker/Picker 2.0.prefab using Guid(916ee089a0d7b63419075f91e1c657ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0892ba7e658309ebc488290307c2439a') in 0.047823 seconds 
+  Import took 0.051687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.818810 seconds.
+  path: Assets/Examples/TankArena/AudioMixers/MainMix.mixer
+  artifactKey: Guid(86a7353f2579d476fbaa7f161c2e5d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/AudioMixers/MainMix.mixer using Guid(86a7353f2579d476fbaa7f161c2e5d00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8b0aa795a0db1237d3384777c1c8af3') in 0.008555 seconds 
+  Import took 0.013455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.314354 seconds.
+  path: Assets/Examples/TankArena/Materials/Blue.mat
+  artifactKey: Guid(ff21ff0ea9b18924bb1fdfbb0e58f5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Blue.mat using Guid(ff21ff0ea9b18924bb1fdfbb0e58f5cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207f8a6bc3fcd4d9630b73744a629a0e') in 0.023922 seconds 
+  Import took 0.027110 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Examples/TankArena/Materials/BuildingWhite.mat
+  artifactKey: Guid(d0c31a39c426da94496d2abbf928d525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/BuildingWhite.mat using Guid(d0c31a39c426da94496d2abbf928d525) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '466cd2519cd4d7e18c21088441e30b82') in 0.009902 seconds 
+  Import took 0.012610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Examples/TankArena/Materials/Green.mat
+  artifactKey: Guid(c39933e60e73205419d1f79a2af1fdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Green.mat using Guid(c39933e60e73205419d1f79a2af1fdac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac6dce1f9b26878d29bd65fc29988910') in 0.010923 seconds 
+  Import took 0.013827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Examples/TankArena/Materials/MAT_Fire_Alpha.mat
+  artifactKey: Guid(70359751edd22ec4fb2b5f3f07c001bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/MAT_Fire_Alpha.mat using Guid(70359751edd22ec4fb2b5f3f07c001bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249211c7ab446c84a83edf387c9c5ff5') in 0.037221 seconds 
+  Import took 0.040067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Examples/TankArena/Materials/OilDrums.mat
+  artifactKey: Guid(b3a1f2f69b4c3a84cba5446e31e87c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/OilDrums.mat using Guid(b3a1f2f69b4c3a84cba5446e31e87c20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1feff0f3be5c531c263aa5016367a559') in 0.020142 seconds 
+  Import took 0.022947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Examples/TankArena/Materials/TankColour.mat
+  artifactKey: Guid(12c120f2400576c4f97a98bcca5529bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/TankColour.mat using Guid(12c120f2400576c4f97a98bcca5529bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18039c9720d46e2bc86f68029f1d0cbb') in 0.011603 seconds 
+  Import took 0.014422 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Examples/TankArena/Materials/TankGrey.mat
+  artifactKey: Guid(c4c5f95d06932564c8672b4bafeb1b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/TankGrey.mat using Guid(c4c5f95d06932564c8672b4bafeb1b28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09c23ab93e3685aa02a05c1a6d335c91') in 0.009646 seconds 
+  Import took 0.012507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Examples/TankArena/Materials/BuildingGlass.mat
+  artifactKey: Guid(7e41e83d6bd224b4d99fa3ffa5e3a3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/BuildingGlass.mat using Guid(7e41e83d6bd224b4d99fa3ffa5e3a3a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a65b1e252505242f855883334f4e082') in 0.014017 seconds 
+  Import took 0.017018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Examples/TankArena/Materials/BuildingMetal.mat
+  artifactKey: Guid(e7df269b1d6121e4787b2f27aab18dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/BuildingMetal.mat using Guid(e7df269b1d6121e4787b2f27aab18dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c82fc41b065f0b27fecf0524e785603') in 0.013415 seconds 
+  Import took 0.016289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Examples/TankArena/Materials/TankSmoke.mat
+  artifactKey: Guid(7f16aaa27226a4016aab4275eda79451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/TankSmoke.mat using Guid(7f16aaa27226a4016aab4275eda79451) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb9f39893b5114c7312565d04243171c') in 0.029296 seconds 
+  Import took 0.032116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Examples/TankArena/Materials/TankLights.mat
+  artifactKey: Guid(574c4e070e5dd0a40a02b979f582a836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/TankLights.mat using Guid(574c4e070e5dd0a40a02b979f582a836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '397c3b96713f0d09e187cddaa4ce827c') in 0.010177 seconds 
+  Import took 0.012942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Examples/TankArena/Materials/MAT_Glow.mat
+  artifactKey: Guid(f3849805a6cf9ed42b64886d16aa24c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/MAT_Glow.mat using Guid(f3849805a6cf9ed42b64886d16aa24c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8faf2f459a406e603ef7dc60103962') in 0.030485 seconds 
+  Import took 0.033350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Examples/TankArena/Materials/Brown.mat
+  artifactKey: Guid(65b34bd0b696fd64c809daa8ff1aac63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Brown.mat using Guid(65b34bd0b696fd64c809daa8ff1aac63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf324b08559b8917ff79864d3af909e') in 0.010249 seconds 
+  Import took 0.013137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Examples/TankArena/Materials/YellowDark.mat
+  artifactKey: Guid(4b4b25f923792ce4ab819907a4629058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/YellowDark.mat using Guid(4b4b25f923792ce4ab819907a4629058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f5a9633f7fe50f1445b9d5e9caea24a') in 0.010795 seconds 
+  Import took 0.013746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Examples/TankArena/Materials/YellowLight.mat
+  artifactKey: Guid(2ebf33c8c66048e4392138d1501e6be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/YellowLight.mat using Guid(2ebf33c8c66048e4392138d1501e6be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a2094f2252015f0dc3a9264328891b6') in 0.010884 seconds 
+  Import took 0.013777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Examples/TankArena/Materials/Dust.mat
+  artifactKey: Guid(424be3af6ad117140887d3e652a89d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Dust.mat using Guid(424be3af6ad117140887d3e652a89d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f943a0063bbf02e4d72894b3a660a3') in 0.025328 seconds 
+  Import took 0.028301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Examples/TankArena/Materials/Red.mat
+  artifactKey: Guid(463052f3f7389124f9e7b34b0b931d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Red.mat using Guid(463052f3f7389124f9e7b34b0b931d0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baf9f0864b4301d9ad8f1107e322bad4') in 0.009064 seconds 
+  Import took 0.011780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Examples/TankArena/Materials/White.mat
+  artifactKey: Guid(c0d660c0333c4224098a02ecd84d6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/White.mat using Guid(c0d660c0333c4224098a02ecd84d6232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f4f8e3ece576d4d75d6760804e9f95') in 0.008847 seconds 
+  Import took 0.011700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Examples/TankArena/Materials/Explosion.mat
+  artifactKey: Guid(87bf8b67d0a902842a3b617c1c75d6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Explosion.mat using Guid(87bf8b67d0a902842a3b617c1c75d6e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79ed4855f62cefc8f2baa84d9e2a9fea') in 0.091290 seconds 
+  Import took 0.094234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Examples/TankArena/Materials/MAT_Fire_Add.mat
+  artifactKey: Guid(4bfa83e8cbf524542ba782ba47029dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/MAT_Fire_Add.mat using Guid(4bfa83e8cbf524542ba782ba47029dd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '616878d31ea74dce6aa39cd231a2e44f') in 0.009288 seconds 
+  Import took 0.012046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/Examples/TankArena/Materials/Grey.mat
+  artifactKey: Guid(db9ceca9e86a2724aaa5c3df2991dba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Grey.mat using Guid(db9ceca9e86a2724aaa5c3df2991dba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fbac85f90d98ae62fb80024c58b71c') in 0.009345 seconds 
+  Import took 0.012250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Examples/TankArena/Materials/BuildingGrey.mat
+  artifactKey: Guid(87d2e70ca18454e4f855f8d99afb32e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/BuildingGrey.mat using Guid(87d2e70ca18454e4f855f8d99afb32e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83f8d965e67b44832a848154d43ad32') in 0.009317 seconds 
+  Import took 0.012230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Examples/TankArena/Materials/MAT_Sparks.mat
+  artifactKey: Guid(2275a521c69866b4689735db39f5062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/MAT_Sparks.mat using Guid(2275a521c69866b4689735db39f5062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b8f67e0a599beb4f4ff643764511c0') in 0.009676 seconds 
+  Import took 0.012634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Examples/TankArena/Materials/BuildingStone.mat
+  artifactKey: Guid(03ad6a4c3c0e64440b1d6cee74fc2a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/BuildingStone.mat using Guid(03ad6a4c3c0e64440b1d6cee74fc2a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2adb84a328b8a2abc82489ce1df6bfac') in 0.009378 seconds 
+  Import took 0.012235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Examples/TankArena/Materials/Smoke.mat
+  artifactKey: Guid(d391697c7deb3a0459e0cdc4774e1631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Smoke.mat using Guid(d391697c7deb3a0459e0cdc4774e1631) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7267347c565acfe11e52becb530fa730') in 0.010362 seconds 
+  Import took 0.013295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Examples/TankArena/Materials/Gold.mat
+  artifactKey: Guid(6221f2fbc7212d94cb9c069ee262d824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Materials/Gold.mat using Guid(6221f2fbc7212d94cb9c069ee262d824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f116cb3c38cddd956530f3784815e42') in 0.009428 seconds 
+  Import took 0.012229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.136698 seconds.
+  path: Assets/Examples/TankArena/Models/Building01.fbx
+  artifactKey: Guid(f698f69d64c51f8438d853e5c274e5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Building01.fbx using Guid(f698f69d64c51f8438d853e5c274e5fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308540a2b719082b9ba526238af654b2') in 0.081080 seconds 
+  Import took 0.086227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Examples/TankArena/Models/OilStorage.fbx
+  artifactKey: Guid(e307cb54b57a59342868ad47d1ed0c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/OilStorage.fbx using Guid(e307cb54b57a59342868ad47d1ed0c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3be04bb3128329d50bd9d92ba9ea9d') in 0.014528 seconds 
+  Import took 0.017439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Examples/TankArena/Models/Tank.fbx
+  artifactKey: Guid(002e2a607f5b64c48be0b3b0d8b8bfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Tank.fbx using Guid(002e2a607f5b64c48be0b3b0d8b8bfdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae83418eca44626cbe02a6bee194c6d') in 0.029588 seconds 
+  Import took 0.032700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Examples/TankArena/Models/Rocks03.fbx
+  artifactKey: Guid(fd0d7091fe3f1d24e81321bc2e4209df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Rocks03.fbx using Guid(fd0d7091fe3f1d24e81321bc2e4209df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5855d2bd7a1459c0f3ebb5d4e1a410') in 0.013109 seconds 
+  Import took 0.015934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/Examples/TankArena/Models/Dunes02.fbx
+  artifactKey: Guid(38b4fea28f58d3641980a70a5188e750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Dunes02.fbx using Guid(38b4fea28f58d3641980a70a5188e750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc5106048cc13264320da1d8075a68f') in 0.012987 seconds 
+  Import took 0.015950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Examples/TankArena/Models/Cliff.fbx
+  artifactKey: Guid(12783825d19a606449c1d81b822fb4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Cliff.fbx using Guid(12783825d19a606449c1d81b822fb4a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36e9800102e1d6c46e6da44c4953094') in 0.013939 seconds 
+  Import took 0.016888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Examples/TankArena/Models/Dunes01.fbx
+  artifactKey: Guid(1b0f8caf6ec3ed644bf9751040d84dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Dunes01.fbx using Guid(1b0f8caf6ec3ed644bf9751040d84dcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ed2e22eb84ac75714c051251fbdc2d1') in 0.012697 seconds 
+  Import took 0.015539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Examples/TankArena/Models/Crater01.fbx
+  artifactKey: Guid(aef18f364fed1a64ba495d15dcee610d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Crater01.fbx using Guid(aef18f364fed1a64ba495d15dcee610d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c404fd90b94cdf23802d7466c577a0') in 0.013008 seconds 
+  Import took 0.015938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Examples/TankArena/Models/Shell.fbx
+  artifactKey: Guid(9ed1e8a25f964bd4298944675e425a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Shell.fbx using Guid(9ed1e8a25f964bd4298944675e425a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c814b1ad1936f2c9c1aac07fa2963e') in 0.014649 seconds 
+  Import took 0.017449 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Examples/TankArena/Models/Building02.fbx
+  artifactKey: Guid(7fa610bf2b9bccd48a9b3a6d79f90a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Building02.fbx using Guid(7fa610bf2b9bccd48a9b3a6d79f90a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b9fb82608419a3fcbbb7dda0e0ab52') in 0.014659 seconds 
+  Import took 0.017483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Examples/TankArena/Models/Column02.FBX
+  artifactKey: Guid(74d835b756ff5654f8060c76cbcb4e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Column02.FBX using Guid(74d835b756ff5654f8060c76cbcb4e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e80cee059ad18b5223ce469d20a204') in 0.015672 seconds 
+  Import took 0.018571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Examples/TankArena/Models/Terrain.fbx
+  artifactKey: Guid(126dbcddb53386c4f969fdf0c555e822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Terrain.fbx using Guid(126dbcddb53386c4f969fdf0c555e822) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88f29e6580114b143577527d19aca54') in 0.012690 seconds 
+  Import took 0.015513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Examples/TankArena/Models/Rocks02.fbx
+  artifactKey: Guid(8f90bdc8aeb4bad4db0cb091100a44f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Rocks02.fbx using Guid(8f90bdc8aeb4bad4db0cb091100a44f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd15c72e79ba6dd2cdcc968965e3cb045') in 0.013077 seconds 
+  Import took 0.015996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Examples/TankArena/Models/PumpJack.fbx
+  artifactKey: Guid(d7962f90116a5c94d9a7a2b2e4fbc1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/PumpJack.fbx using Guid(d7962f90116a5c94d9a7a2b2e4fbc1b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e52685061edaf8274b3b67c93b53e6') in 0.033808 seconds 
+  Import took 0.036746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/Examples/TankArena/Models/Radar.fbx
+  artifactKey: Guid(afd58f28713632e419efd8f302698ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Radar.fbx using Guid(afd58f28713632e419efd8f302698ceb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cfa07b83ac6cf30e6aec787e9dacb8') in 0.013095 seconds 
+  Import took 0.015908 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Examples/TankArena/Models/Rocks01.fbx
+  artifactKey: Guid(2964d4e5af87e5245bdd71b73e9b92f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Rocks01.fbx using Guid(2964d4e5af87e5245bdd71b73e9b92f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585f91f23db76da173f4e60347915144') in 0.013036 seconds 
+  Import took 0.015991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Examples/TankArena/Models/Ruins01.fbx
+  artifactKey: Guid(8c99ccdf18f6a404f84ffd08488298d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Ruins01.fbx using Guid(8c99ccdf18f6a404f84ffd08488298d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf2e38d9dcff51b77eeec8f827fdf1d1') in 0.012678 seconds 
+  Import took 0.015575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Examples/TankArena/Models/BustedTank.fbx
+  artifactKey: Guid(8c6d26fe262194242becdec17209d306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/BustedTank.fbx using Guid(8c6d26fe262194242becdec17209d306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab6643c01bb3d4a7d61150f59c2ad87') in 0.013599 seconds 
+  Import took 0.016378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Examples/TankArena/Models/Cow.fbx
+  artifactKey: Guid(961487dad48770a4d867fcbcca1e5950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Cow.fbx using Guid(961487dad48770a4d867fcbcca1e5950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34d2a8f256a0dbcd29dc2392bb51bed6') in 0.012801 seconds 
+  Import took 0.015633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Examples/TankArena/Models/Column01.FBX
+  artifactKey: Guid(8d8760d4504814540ba00eaa1d1f43ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Column01.FBX using Guid(8d8760d4504814540ba00eaa1d1f43ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49bfae7ab52be64daadac24d326cb58') in 0.013857 seconds 
+  Import took 0.016625 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Examples/TankArena/Models/Tree.fbx
+  artifactKey: Guid(50912a5d3c9322a46afa5ca162962a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Tree.fbx using Guid(50912a5d3c9322a46afa5ca162962a5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b704a471a3649ef5efb475ab49b4984e') in 0.012589 seconds 
+  Import took 0.015383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Examples/TankArena/Models/PalmTree.fbx
+  artifactKey: Guid(a1194fc0a76098e499948ecf77b6acdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/PalmTree.fbx using Guid(a1194fc0a76098e499948ecf77b6acdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cfe45fc3bd81b2af8817709fa3b917f') in 0.013828 seconds 
+  Import took 0.016633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Examples/TankArena/Models/Concrete.fbx
+  artifactKey: Guid(a678ab9f67b4ce84093be35214bdb92d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Concrete.fbx using Guid(a678ab9f67b4ce84093be35214bdb92d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8abeeef585e1ae1d8a41a2f0da8c9cc4') in 0.012722 seconds 
+  Import took 0.015506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Examples/TankArena/Models/Cactus.fbx
+  artifactKey: Guid(00b5a8045a3c3914bb0dfdf2d62f05c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Cactus.fbx using Guid(00b5a8045a3c3914bb0dfdf2d62f05c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b971a5c0d0f46356d2b4e6e01bd8d1') in 0.014455 seconds 
+  Import took 0.017369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Examples/TankArena/Models/Helipad.fbx
+  artifactKey: Guid(614b6b69c0bbcd945bb2f83eb02a3436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Helipad.fbx using Guid(614b6b69c0bbcd945bb2f83eb02a3436) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055728a8c8a4e3f201598e467134ee22') in 0.013313 seconds 
+  Import took 0.016171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Examples/TankArena/Models/Refinery.fbx
+  artifactKey: Guid(6e4d8dfe03882c54380948659f725233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Examples/TankArena/Models/Refinery.fbx using Guid(6e4d8dfe03882c54380948659f725233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57770f96b9bceadb23ecae4aabc10d12') in 0.013902 seconds 
+  Import took 0.016932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61.039428 seconds.
+  path: Assets/Resources/BillingMode.json
+  artifactKey: Guid(239bc2fbc67a5124fb22b2bbc2dc6017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/BillingMode.json using Guid(239bc2fbc67a5124fb22b2bbc2dc6017) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29afb85878c535634c730f5e4ebeaa60') in 0.008187 seconds 
+  Import took 0.011345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.734043 seconds.
+  path: Assets/Plugins/xNode/Scripts/XNode.asmdef
+  artifactKey: Guid(b8e24fd1eb19b4226afebb2810e3c19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/xNode/Scripts/XNode.asmdef using Guid(b8e24fd1eb19b4226afebb2810e3c19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46661ff392e542895de02bfceb5d94ab') in 0.006951 seconds 
+  Import took 0.010958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.545411 seconds.
+  path: Assets/Plugins/xNode/Scripts/Editor/XNodeEditor.asmdef
+  artifactKey: Guid(002c1bbed08fa44d282ef34fd5edb138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/xNode/Scripts/Editor/XNodeEditor.asmdef using Guid(002c1bbed08fa44d282ef34fd5edb138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '127b4c63e11c0ae6c162ec38afb72ea3') in 0.006077 seconds 
+  Import took 0.010044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.847843 seconds.
+  path: Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs
+  artifactKey: Guid(d87bbdeb1ede4846a0954396f9665759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs using Guid(d87bbdeb1ede4846a0954396f9665759) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61814cc844f95bb5ecf37705c739be3b') in 0.004996 seconds 
+  Import took 0.008137 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
