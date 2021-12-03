@@ -9,4 +9,4 @@ As example, this is a tank arena game using Unity assets and the ReflexityAI fra
 
 ![Screenshot_195](https://user-images.githubusercontent.com/19430411/67150526-bec50d00-f2b8-11e9-9b88-8d41fe932948.png)
 
-Source code available here : https://github.com/FBast/TankArena
+The source code is available in the example directory.
