@@ -13,7 +13,7 @@ namespace Plugins.Reflexity.MiddleNodes {
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(ValueOut)) {
                 ReflectionData[] list = GetInputValues<ReflectionData>(nameof(ValuesIn));
-                if (list.Length > 0) return list.All(tuple => tuple.Value == list[0].Value);
+                if (list.Length > 0) return list.All(reflectionData => reflectionData.Value == list[0].Value);
             }
             return null;
         }

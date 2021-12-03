@@ -45,47 +45,59 @@ namespace Examples.TankArena.Scripts.Entities {
 
         [Header	("Parameters")]
         public LayerMask CoverLayer;
-
-        public Transform Transform => transform;
-        public int CanonDamage { get; private set; }
-        public int CanonPower { get; private set; }
-        public int TurretSpeed { get; private set; }
-        public int MaxHP { get; private set; }
-        public int ReloadTime { get; private set; }
-        public int CurrentHP { get; private set; }
-        public int ExplosionDamage { get; private set; }
-        public int ExplosionRadius { get; private set; }
-        public int WaypointRadius { get; private set; }
-        public bool IsShellLoaded = true;
-        public Team Team { get; private set; }
+        
+        [Header("Debug Only")]
         public TankEntity Target;
         public Transform Destination;
-
+        public int MaxHp;
+        public int CurrentHp;
+        
         private NavMeshAgent _navMeshAgent;
         private TankAI _tankAi;
+        private float _timeSinceLastShot;
+        private int _canonDamage;
+        private int _canonPower;
+        private int _turretSpeed;
+        private int _reloadTime;
+        private int _explosionDamage;
+        private int _explosionRadius;
+        private int _waypointRadius;
+        private readonly Collider[] _hitColliders = new Collider[10];
+        
+        public Transform Transform => transform;
+        public bool IsShellLoaded => _timeSinceLastShot >= _reloadTime;
+        public bool IsDead => CurrentHp <= 0;
 
+        public Team Team { get; private set; }
+        
+        public TankEntity TankInSight {
+            get {
+                if (!Physics.Raycast(CanonOut.position, CanonOut.forward, out var hit, Mathf.Infinity)) return null;
+                return hit.transform.GetComponent<TankEntity>();
+            }
+        }
+        
         public List<GameObject> Aggressors => TanksReference.Value
             .Where(go => go != null && go.GetComponent<TankEntity>().Target == this).ToList();
+        private int TotalDamages => MaxHp - CurrentHp;
+        private float DamagePercent => (float) TotalDamages / MaxHp;
+        private bool IsAtDestination => _navMeshAgent.remainingDistance < Mathf.Infinity &&
+                                         _navMeshAgent.pathStatus == NavMeshPathStatus.PathComplete &&
+                                         _navMeshAgent.remainingDistance <= 0;
         
-        private readonly Collider[] _hitColliders = new Collider[10];
-        private int _totalDamages => MaxHP - CurrentHP;
-        private float _damagePercent => (float) _totalDamages / MaxHP;
-        private bool _isAtDestination => _navMeshAgent.remainingDistance < Mathf.Infinity &&
-                                          _navMeshAgent.pathStatus == NavMeshPathStatus.PathComplete &&
-                                          _navMeshAgent.remainingDistance <= 0;
-
         private void Awake() {
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _tankAi = GetComponent<TankAI>();
-            MaxHP = PlayerPrefs.GetInt(Properties.PlayerPrefs.HealthPoints, Properties.PlayerPrefsDefault.HealthPoints);
-            CurrentHP = MaxHP;
-            CanonDamage = PlayerPrefs.GetInt(Properties.PlayerPrefs.CanonDamage, Properties.PlayerPrefsDefault.CanonDamage);
-            CanonPower = PlayerPrefs.GetInt(Properties.PlayerPrefs.CanonPower, Properties.PlayerPrefsDefault.CanonPower);
-            TurretSpeed = PlayerPrefs.GetInt(Properties.PlayerPrefs.TurretSpeed, Properties.PlayerPrefsDefault.TurretSpeed);
-            ReloadTime = PlayerPrefs.GetInt(Properties.PlayerPrefs.ReloadTime, Properties.PlayerPrefsDefault.ReloadTime);
-            ExplosionDamage = PlayerPrefs.GetInt(Properties.PlayerPrefs.ExplosionDamage, Properties.PlayerPrefsDefault.ExplosionDamage);
-            ExplosionRadius = PlayerPrefs.GetInt(Properties.PlayerPrefs.ExplosionRadius, Properties.PlayerPrefsDefault.ExplosionRadius);
-            WaypointRadius = PlayerPrefs.GetInt(Properties.PlayerPrefs.WaypointSeekRadius, Properties.PlayerPrefsDefault.WaypointSeekRadius);
+            _navMeshAgent.speed = PlayerPrefs.GetInt(Properties.PlayerPrefs.TankSpeed, Properties.PlayerPrefsDefault.TankSpeed);
+            _canonDamage = PlayerPrefs.GetInt(Properties.PlayerPrefs.CanonDamage, Properties.PlayerPrefsDefault.CanonDamage);
+            _canonPower = PlayerPrefs.GetInt(Properties.PlayerPrefs.CanonPower, Properties.PlayerPrefsDefault.CanonPower);
+            _turretSpeed = PlayerPrefs.GetInt(Properties.PlayerPrefs.TurretSpeed, Properties.PlayerPrefsDefault.TurretSpeed);
+            _reloadTime = PlayerPrefs.GetInt(Properties.PlayerPrefs.ReloadTime, Properties.PlayerPrefsDefault.ReloadTime);
+            _explosionDamage = PlayerPrefs.GetInt(Properties.PlayerPrefs.ExplosionDamage, Properties.PlayerPrefsDefault.ExplosionDamage);
+            _explosionRadius = PlayerPrefs.GetInt(Properties.PlayerPrefs.ExplosionRadius, Properties.PlayerPrefsDefault.ExplosionRadius);
+            _waypointRadius = PlayerPrefs.GetInt(Properties.PlayerPrefs.WaypointSeekRadius, Properties.PlayerPrefsDefault.WaypointSeekRadius);
+            MaxHp = PlayerPrefs.GetInt(Properties.PlayerPrefs.HealthPoints, Properties.PlayerPrefsDefault.HealthPoints);
+            CurrentHp = MaxHp;
         }
 
         public void Init(TankSetting setting, Team team) {
@@ -104,16 +116,17 @@ namespace Examples.TankArena.Scripts.Entities {
         
         private void OnDrawGizmos() {
             Gizmos.color = new Color(0, 1, 0, 0.2f);
-            Gizmos.DrawSphere(transform.position, WaypointRadius);
+            Gizmos.DrawSphere(transform.position, _waypointRadius);
             Gizmos.color = new Color(1, 0, 0, 0.2f);
-            Gizmos.DrawSphere(transform.position, ExplosionRadius);
+            Gizmos.DrawSphere(transform.position, _explosionRadius);
         }
         
         private void Update() {
-            
+            if (IsDead) return;
+            if (!IsShellLoaded) _timeSinceLastShot += Time.deltaTime;
             Debug.DrawRay(CanonOut.position, CanonOut.forward * 100, Color.red);
             if (Target) {
-                Vector3 newDir = Vector3.RotateTowards(Turret.forward, Target.transform.position - Turret.position, TurretSpeed * Time.deltaTime, 0.0f);
+                Vector3 newDir = Vector3.RotateTowards(Turret.forward, Target.transform.position - Turret.position, _turretSpeed * Time.deltaTime, 0.0f);
                 Turret.rotation = Quaternion.LookRotation(newDir);
                 Turret.eulerAngles = new Vector3(0, Turret.eulerAngles.y, 0);
             }
@@ -126,10 +139,10 @@ namespace Examples.TankArena.Scripts.Entities {
                     }
                 }
                 _navMeshAgent.SetDestination(Destination.position);
-                if (_isAtDestination) Destination = null;
+                if (IsAtDestination) Destination = null;
             }
-            SmokeSetter.SetEmissionPercent(_damagePercent);
-            FireSetter.SetEmissionPercent(_damagePercent < 0.5 ? 0 : _damagePercent * 2);
+            SmokeSetter.SetEmissionPercent(DamagePercent);
+            FireSetter.SetEmissionPercent(DamagePercent < 0.5 ? 0 : DamagePercent * 2);
         }
         
         public void Fire() {
@@ -137,32 +150,31 @@ namespace Examples.TankArena.Scripts.Entities {
             Instantiate(CanonShotPrefab, CanonOut.position, CanonShotPrefab.transform.rotation);
             ShotFiring.Play();
             GameObject instantiate = Instantiate(ShellPrefab, CanonOut.position, CanonOut.rotation);
-            instantiate.GetComponent<Rigidbody>().AddForce(CanonOut.transform.forward * CanonPower, ForceMode.Impulse);
+            instantiate.GetComponent<Rigidbody>().AddForce(CanonOut.transform.forward * _canonPower, ForceMode.Impulse);
             instantiate.GetComponent<ShellEntity>().TankEntityOwner = this;
-            instantiate.GetComponent<ShellEntity>().Damage = CanonDamage;
-            IsShellLoaded = false;
-            Invoke(nameof(Reload), ReloadTime);
+            instantiate.GetComponent<ShellEntity>().Damage = _canonDamage;
+            _timeSinceLastShot = 0;
         }
 
         public void DamageByShot(ShellEntity shell) {
-            CurrentHP -= shell.Damage;
+            CurrentHp -= shell.Damage;
             CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += shell.Damage;
             if (shell.TankEntityOwner.Team == Team)
                 CurrentMatchReference.Value.TeamStats[Team].TeamDamage += shell.Damage;
             else
                 CurrentMatchReference.Value.TeamStats[shell.TankEntityOwner.Team].DamageDone += shell.Damage;
-            if (CurrentHP > 0) return;
+            if (CurrentHp > 0) return;
             Die(shell.TankEntityOwner);
         }
 
         public void DamageByExplosion(TankEntity tank) {
-            CurrentHP -= tank.ExplosionDamage;
-            CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += tank.ExplosionDamage;
+            CurrentHp -= tank._explosionDamage;
+            CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += tank._explosionDamage;
             if (tank.Team == Team)
-                CurrentMatchReference.Value.TeamStats[Team].TeamDamage += tank.ExplosionDamage;
+                CurrentMatchReference.Value.TeamStats[Team].TeamDamage += tank._explosionDamage;
             else
-                CurrentMatchReference.Value.TeamStats[tank.Team].DamageDone += tank.ExplosionDamage;
-            if (CurrentHP > 0) return;
+                CurrentMatchReference.Value.TeamStats[tank.Team].DamageDone += tank._explosionDamage;
+            if (CurrentHp > 0) return;
             Die(tank);
         }
 
@@ -178,8 +190,8 @@ namespace Examples.TankArena.Scripts.Entities {
             if (CurrentMatchReference.Value.TeamInMatch.Count() == 1)
                 OnMatchFinished.Raise();
             // Explosion
-            Instantiate(TankExplosionPrefab, transform.position, TankExplosionPrefab.transform.rotation);
-            int size = Physics.OverlapSphereNonAlloc(transform.position, ExplosionRadius, _hitColliders);
+            Instantiate(TankExplosionPrefab, transform.position, transform.rotation);
+            int size = Physics.OverlapSphereNonAlloc(transform.position, _explosionRadius, _hitColliders);
             for (int i = 0; i < size; i++) {
                 TankEntity tankEntity = _hitColliders[i].GetComponent<TankEntity>();
                 if (tankEntity && tankEntity != this) tankEntity.DamageByExplosion(this);
@@ -190,30 +202,18 @@ namespace Examples.TankArena.Scripts.Entities {
                 Instantiate(BustedTankPrefab, transform.position, transform.rotation);
             // Remove from list
             TanksReference.Value.Remove(gameObject);
-            // Destroy
-            Destroy(gameObject);
+            // Disable object
+            gameObject.SetActive(false);
         }
-        
-        private void Reload() {
-            IsShellLoaded = true;
-        }
-        
+
         public void Heal(int healing) {
-            CurrentHP += healing;
-            if (CurrentHP > MaxHP) CurrentHP = MaxHP;
+            CurrentHp += healing;
+            if (CurrentHp > MaxHp) CurrentHp = MaxHp;
         }
 
         public List<GameObject> SeekWaypointInRadius() {
             return WaypointsReference.Value
-                .Where(go => Vector3.Distance(transform.position, go.transform.position) < WaypointRadius).ToList();
-        } 
-        
-        public GameObject TankInRay() {
-            RaycastHit hit;
-            if (Physics.Raycast(CanonOut.position, CanonOut.forward, out hit, Mathf.Infinity)) {
-                if (hit.transform.GetComponent<TankEntity>()) return hit.transform.gameObject;
-            }
-            return null;
+                .Where(go => Vector3.Distance(transform.position, go.transform.position) < _waypointRadius).ToList();
         }
 
         public FactionType GetFaction(TankEntity otherTank) {

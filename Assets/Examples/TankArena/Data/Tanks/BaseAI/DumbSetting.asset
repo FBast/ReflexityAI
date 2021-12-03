@@ -19,3 +19,4 @@ MonoBehaviour:
   TracksColor: {r: 1, g: 1, b: 1, a: 0}
   Brains:
   - {fileID: 11400000, guid: 5b8c8e95878328146b174cb4ce57295b, type: 2}
+  - {fileID: 11400000, guid: 27526220c4238504d8600f7ededa1ba4, type: 2}

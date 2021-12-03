@@ -11,7 +11,12 @@ namespace Examples.TankArena.Scripts.Components {
             public float RateOverTime;
         }
 
+        public float BaseEmission;
         public List<ParticleEmissionSetting> ParticleEmissionSettings;
+
+        private void Awake() {
+            SetEmissionPercent(BaseEmission);
+        }
 
         public void SetEmissionPercent(float percent) {
             foreach (ParticleEmissionSetting emissionSetting in ParticleEmissionSettings) {

@@ -12,6 +12,7 @@ namespace Examples.TankArena.Scripts.UI {
         public SliderWithLabelUI CanonDamage;
         public SliderWithLabelUI CanonPower;
         public SliderWithLabelUI TurretSpeed;
+        public SliderWithLabelUI TankSpeed;
         public SliderWithLabelUI ReloadTime;
         public SliderWithLabelUI WaypointSeekRadius;
         public SliderWithLabelUI ExplosionDamage;
@@ -38,6 +39,9 @@ namespace Examples.TankArena.Scripts.UI {
             });
             TurretSpeed.OnValueChanged.AddListener(delegate(float value) {
                 PlayerPrefs.SetInt(Properties.PlayerPrefs.TurretSpeed, (int) value);
+            });
+            TankSpeed.OnValueChanged.AddListener(delegate(float value) {
+                PlayerPrefs.SetInt(Properties.PlayerPrefs.TankSpeed, (int) value);
             });
             ReloadTime.OnValueChanged.AddListener(delegate(float value) {
                 PlayerPrefs.SetInt(Properties.PlayerPrefs.ReloadTime, (int) value);
@@ -83,6 +87,8 @@ namespace Examples.TankArena.Scripts.UI {
                 Properties.PlayerPrefsDefault.CanonPower);
             TurretSpeed.Value = PlayerPrefs.GetInt(Properties.PlayerPrefs.TurretSpeed,
                 Properties.PlayerPrefsDefault.TurretSpeed);
+            TankSpeed.Value = PlayerPrefs.GetInt(Properties.PlayerPrefs.TankSpeed,
+                Properties.PlayerPrefsDefault.TankSpeed);
             ReloadTime.Value = PlayerPrefs.GetInt(Properties.PlayerPrefs.ReloadTime,
                 Properties.PlayerPrefsDefault.ReloadTime);
             WaypointSeekRadius.Value = PlayerPrefs.GetInt(Properties.PlayerPrefs.WaypointSeekRadius,

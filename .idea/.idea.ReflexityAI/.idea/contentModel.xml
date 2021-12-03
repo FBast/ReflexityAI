@@ -258,6 +258,8 @@
               <e p="ICacheable.cs" t="Include" />
               <e p="IContextual.cs" t="Include" />
               <e p="MiddleNode.cs" t="Include" />
+              <e p="Parameter.cs" t="Include" />
+              <e p="ReflectionData.cs" t="Include" />
               <e p="ReflexityAI.cs" t="Include" />
               <e p="ReflexityManager.cs" t="Include" />
               <e p="SerializableDictionary.cs" t="Include" />

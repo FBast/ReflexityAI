@@ -24,7 +24,7 @@ namespace Examples.TankArena.Scripts.UI {
         }
 
         public void MapCamera() {
-            _tankCamera.SetActive(false);
+            if (_tankCamera) _tankCamera.SetActive(false);
         }
         
         private void Switch(GameObject newCamera) {

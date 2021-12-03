@@ -139,31 +139,4 @@ namespace Plugins.Reflexity.Framework {
         }
 
     }
-    
-    [Serializable]
-    public struct Parameter {
-
-        public string Name;
-        public string TypeName;
-
-        public Parameter(string name, string typeName) {
-            Name = name;
-            TypeName = typeName;
-        }
-
-    }
-
-    public struct ReflectionData {
-
-        public Type Type;
-        public object Value;
-        public bool FromIteration;
-        
-        public ReflectionData(Type type, object value, bool fromIteration = false) {
-            Type = type;
-            Value = value;
-            FromIteration = fromIteration;
-        }
-
-    }
 }

@@ -97,11 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/MiddleNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryLoadNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemorySaveNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryClearNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs" />
@@ -121,7 +116,6 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataIteratorNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs" />
@@ -142,12 +136,18 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataReaderNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/ConverterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/Editor/UtilityNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/UtilityNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/DistanceNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/IsEqualNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/CameraSwitchUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Components/ParticleEmissionSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Properties.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/SettingsUI.cs" />
       </list>
     </option>
   </component>
@@ -178,7 +178,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -226,6 +226,7 @@
       <workItem from="1617894848079" duration="2760000" />
       <workItem from="1617978739926" duration="4702000" />
       <workItem from="1634912575493" duration="1663000" />
+      <workItem from="1638520359383" duration="8861000" />
     </task>
     <servers />
   </component>
@@ -241,10 +242,15 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1634914727475">
+    <state x="2610" y="120" key="SettingsEditor" timestamp="1638522477869">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1634914727475" />
+    <state x="2610" y="120" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638522477869" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638530901302">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1638528392881" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638530901302" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

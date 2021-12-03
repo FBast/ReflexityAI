@@ -10,7 +10,7 @@ namespace Plugins.Reflexity.DataNodes {
     public class DataSelectorNode : DataNode, ICacheable {
         
         [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Inherited)] public Object Data;
-        [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.Inherited)] public Object Output;
+        [Output(ShowBackingValue.Never, ConnectionType.Multiple, TypeConstraint.None)] public Object Output;
 
         [HideInInspector] public SerializableInfo SelectedSerializableInfo;
         [HideInInspector] public List<SerializableInfo> SerializableInfos = new List<SerializableInfo>();

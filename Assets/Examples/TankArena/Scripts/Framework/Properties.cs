@@ -29,6 +29,7 @@ namespace Examples.TankArena.Scripts.Framework {
             public const string GridGap = "GridGap";
             public const string BonusPerSpawnNumber = "BonusPerSpawnNumber";
             public const string BonusPerSpawnFrequency = "BonusPerSpawnFrequency";
+            public const string TankSpeed = "TankSpeed";
         }
         
         public struct PlayerPrefsDefault {
@@ -47,6 +48,7 @@ namespace Examples.TankArena.Scripts.Framework {
             public const int GridGap = 20;
             public const int BonusPerSpawnNumber = 3;
             public const int BonusPerSpawnFrequency = 10;
+            public static int TankSpeed = 5;
         }
         
     }
