@@ -11,19 +11,21 @@ using UnityEngine.SceneManagement;
 namespace Examples.TankArena.Scripts.Managers {
 	public class GameManager : Singleton<GameManager> {
 
-		private List<TankSetting> _tankSettings = new List<TankSetting>();
-		public List<TankSetting> TankSettings => _tankSettings;
-
+		public List<Material> SkyBoxes;
+		
 		private Dictionary<string, object> _parameters;
 		
+		public List<TankSetting> TankSettings { get; private set; }
+		
 		private void Awake() {
-			_tankSettings = AssetDatabase.FindAssets("t:TankSetting", new[] {"Assets"})
+			TankSettings = AssetDatabase.FindAssets("t:TankSetting", new[] {"Assets"})
 					.Select(AssetDatabase.GUIDToAssetPath)
 					.Select(AssetDatabase.LoadAssetAtPath<TankSetting>)
 					.ToList();
 		}
 
 		private void Start() {
+			if (SkyBoxes.Count > 0) RenderSettings.skybox = SkyBoxes[Random.Range(0, SkyBoxes.Count)];
 			LoadScene("Menu");
 		}
 

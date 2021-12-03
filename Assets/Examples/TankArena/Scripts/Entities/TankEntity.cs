@@ -21,11 +21,11 @@ namespace Examples.TankArena.Scripts.Entities {
         public AudioSource ShotFiring;
         public ParticleEmissionSetter SmokeSetter;
         public ParticleEmissionSetter FireSetter;
-        public MeshRenderer TurretMeshRenderer;
-        public MeshRenderer HullMeshRenderer;
-        public MeshRenderer RightTrackMeshRender;
-        public MeshRenderer LeftTrackMeshRender;
-        public MeshRenderer FactionDisk;
+        public Renderer TurretMeshRenderer;
+        public Renderer HullMeshRenderer;
+        public Renderer RightTrackMeshRender;
+        public Renderer LeftTrackMeshRender;
+        public Renderer FactionFlag;
         public GameObject TurretCamera;
 
         [Header("SO References")] 
@@ -108,7 +108,7 @@ namespace Examples.TankArena.Scripts.Entities {
             HullMeshRenderer.material.color = setting.HullColor;
             RightTrackMeshRender.material.color = setting.TracksColor;
             LeftTrackMeshRender.material.color = setting.TracksColor;
-            FactionDisk.material.color = team.Color;
+            FactionFlag.material.color = team.Color;
             _tankAi.AIBrains = setting.Brains;
             _tankAi.Init();
             _tankAi.EnqueueAI();

@@ -31,15 +31,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Editor</find>
-      <find>ReflectionData</find>
-      <find>value</find>
-      <find>Copy</find>
-      <find>GetValue</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -47,6 +38,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Utils/TagList/Editor/DropdownListDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Editor/WeaverRunner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
@@ -129,7 +121,6 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/Editor/ActionSetterNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/Editor/AiDebuggerEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIBrainGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ReflexityAI.cs" />
@@ -145,9 +136,10 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/CameraSwitchUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Components/ParticleEmissionSetter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Properties.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/SettingsUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" />
       </list>
     </option>
   </component>
@@ -226,7 +218,7 @@
       <workItem from="1617894848079" duration="2760000" />
       <workItem from="1617978739926" duration="4702000" />
       <workItem from="1634912575493" duration="1663000" />
-      <workItem from="1638520359383" duration="8861000" />
+      <workItem from="1638520359383" duration="11825000" />
     </task>
     <servers />
   </component>
@@ -246,11 +238,15 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="120" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638522477869" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638530901302">
+    <state x="2523" y="119" width="714" height="801" key="find.popup" timestamp="1638536211386">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1638528392881" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638530901302" />
+    <state x="2523" y="119" width="714" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638536211386" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638547617165">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1638547617165" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638543066670" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
