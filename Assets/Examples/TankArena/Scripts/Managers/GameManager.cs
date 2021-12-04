@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Examples.TankArena.Scripts.Data;
-using Examples.TankArena.Scripts.Framework;
+﻿using Examples.TankArena.Scripts.Framework;
 using Examples.TankArena.Scripts.SOEvents.VoidEvents;
 using Examples.TankArena.Scripts.SOReferences.FloatReference;
 using Examples.TankArena.Scripts.Utils;
-using UnityEditor;
 using UnityEngine;
+using PlayerPrefs = UnityEngine.PlayerPrefs;
 
 namespace Examples.TankArena.Scripts.Managers {
 	public class GameManager : Singleton<GameManager> {
@@ -19,15 +16,6 @@ namespace Examples.TankArena.Scripts.Managers {
 		public FloatReference CurrentTimeReference;
 
 		private bool _isTimeOut;
-		
-		public List<TankSetting> TankSettings { get; private set; }
-		
-		private void Awake() {
-			TankSettings = AssetDatabase.FindAssets("t:TankSetting", new[] {"Assets"})
-					.Select(AssetDatabase.GUIDToAssetPath)
-					.Select(AssetDatabase.LoadAssetAtPath<TankSetting>)
-					.ToList();
-		}
 
 		private void Start() {
 			MaxTimeReference.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.MatchDuration,

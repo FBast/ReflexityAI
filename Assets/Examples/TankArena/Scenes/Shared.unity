@@ -201,7 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbf98c8cac24959a53227e1c01f821a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingScene: Menu
 --- !u!850595691 &1411259400
 LightingSettings:
   m_ObjectHideFlags: 0

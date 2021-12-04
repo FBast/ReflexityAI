@@ -6,14 +6,8 @@ using UnityEngine.SceneManagement;
 
 namespace Examples.TankArena.Scripts.Managers {
     public class CustomSceneManager : Singleton<CustomSceneManager> {
-
-        public string StartingScene;
-		
+        
         private Dictionary<string, object> _parameters;
-		
-        private void Start() {
-            LoadScene(StartingScene);
-        }
 
         public void UnloadScene(string scene) {
             if (!SceneManager.GetSceneByName(scene).isLoaded) return;

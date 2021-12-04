@@ -12,7 +12,7 @@ namespace Examples.TankArena.Scripts.Framework {
             public const string Menu = "Menu";
             public const string Game = "Game";
         }
-
+        
         public struct PlayerPrefs {
             public const string MatchDuration = "MatchTime";
             public const string ExplosionDamage = "ExplosionDamage";
@@ -50,6 +50,6 @@ namespace Examples.TankArena.Scripts.Framework {
             public const int BonusPerSpawnFrequency = 10;
             public static int TankSpeed = 5;
         }
-        
+
     }
 }

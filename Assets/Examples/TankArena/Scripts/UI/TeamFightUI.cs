@@ -32,11 +32,10 @@ namespace Examples.TankArena.Scripts.UI {
         public Toggle TeamDCompositeToggle;
         public List<TMP_Dropdown> TeamDDropdowns;
 
-        private List<TankSetting> _tankSettings = new List<TankSetting>();
-        
+        private List<TankSetting> _tankSettings;
+
         private void Start() {
-//            _settings = DataHandler.GetTankData();
-            _tankSettings = GameManager.Instance.TankSettings;
+            _tankSettings = DataManager.TankSettings;
             InitDropDowns(TeamADropdowns, TeamACompositeToggle);
             InitDropDowns(TeamBDropdowns, TeamBCompositeToggle);
             InitDropDowns(TeamCDropdowns, TeamCCompositeToggle);

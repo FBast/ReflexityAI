@@ -65,6 +65,7 @@
               </e>
               <e p="Managers" t="Include">
                 <e p="CustomSceneManager.cs" t="Include" />
+                <e p="DataManager.cs" t="Include" />
                 <e p="GameManager.cs" t="Include" />
               </e>
               <e p="SOEvents" t="Include">

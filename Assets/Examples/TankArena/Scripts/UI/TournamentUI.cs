@@ -34,7 +34,7 @@ namespace Examples.TankArena.Scripts.UI {
         private List<TankSetting> _tankSettings = new List<TankSetting>();
 
         private void Start() {
-            _tankSettings = GameManager.Instance.TankSettings;
+            _tankSettings = DataManager.TankSettings;
         }
 
         public void AddTeam() {
