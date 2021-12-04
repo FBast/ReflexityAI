@@ -178,7 +178,7 @@ namespace Examples.TankArena.Scripts.Entities {
             Die(tank);
         }
 
-        private void Die(TankEntity killer) {
+        private void Die(TankEntity killer, bool noExplosion = false) {
             if (killer.Team == Team)
                 CurrentMatchReference.Value.TeamStats[Team].TeamKill++;
             else
@@ -190,11 +190,13 @@ namespace Examples.TankArena.Scripts.Entities {
             if (CurrentMatchReference.Value.TeamInMatch.Count() == 1)
                 OnMatchFinished.Raise();
             // Explosion
-            Instantiate(TankExplosionPrefab, transform.position, transform.rotation);
-            int size = Physics.OverlapSphereNonAlloc(transform.position, _explosionRadius, _hitColliders);
-            for (int i = 0; i < size; i++) {
-                TankEntity tankEntity = _hitColliders[i].GetComponent<TankEntity>();
-                if (tankEntity && tankEntity != this) tankEntity.DamageByExplosion(this);
+            if (!noExplosion) {
+                Instantiate(TankExplosionPrefab, transform.position, transform.rotation);
+                int size = Physics.OverlapSphereNonAlloc(transform.position, _explosionRadius, _hitColliders);
+                for (int i = 0; i < size; i++) {
+                    TankEntity tankEntity = _hitColliders[i].GetComponent<TankEntity>();
+                    if (tankEntity && tankEntity != this) tankEntity.DamageByExplosion(this);
+                }
             }
             // Wreck
             if (PlayerPrefsUtils.GetBool(GlobalProperties.PlayerPrefs.ExplosionCreateBustedTank, 

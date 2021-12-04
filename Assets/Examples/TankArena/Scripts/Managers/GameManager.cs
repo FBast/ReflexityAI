@@ -10,10 +10,7 @@ using UnityEngine;
 
 namespace Examples.TankArena.Scripts.Managers {
 	public class GameManager : Singleton<GameManager> {
-		
-		[Header("Data")]
-		public List<Material> SkyBoxes;
-		
+
 		[Header("SO Events")] 
 		public VoidEvent OnTimerFinished;
 
@@ -33,7 +30,6 @@ namespace Examples.TankArena.Scripts.Managers {
 		}
 
 		private void Start() {
-			if (SkyBoxes.Count > 0) RenderSettings.skybox = SkyBoxes[Random.Range(0, SkyBoxes.Count)];
 			MaxTimeReference.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.MatchDuration,
 				GlobalProperties.PlayerPrefsDefault.MatchDuration);
 			Time.timeScale = 1;

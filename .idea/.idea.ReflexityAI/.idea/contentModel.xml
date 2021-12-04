@@ -31,9 +31,9 @@
                 <e p="TankGraph.cs" t="Include" />
               </e>
               <e p="Components" t="Include">
-                <e p="DestroyAfterTime.cs" t="Include" />
                 <e p="FreeLookCamera.cs" t="Include" />
                 <e p="ParticleEmissionSetter.cs" t="Include" />
+                <e p="SkyBoxRandomizer.cs" t="Include" />
                 <e p="Spinning.cs" t="Include" />
               </e>
               <e p="Data" t="Include">
@@ -61,7 +61,6 @@
                 <e p="Stats.cs" t="Include" />
                 <e p="TankSpawner.cs" t="Include" />
                 <e p="Team.cs" t="Include" />
-                <e p="Timer.cs" t="Include" />
                 <e p="WaypointSpawner.cs" t="Include" />
               </e>
               <e p="Managers" t="Include">

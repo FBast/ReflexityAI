@@ -567,6 +567,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1275334483}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1330054783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1330054785}
+  - component: {fileID: 1330054784}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1330054784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330054783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: d16e13902cd4e4c418db6aa16bc4f83b, type: 2}
+--- !u!4 &1330054785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330054783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1391056259
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,8 +718,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1600484567}
   - component: {fileID: 1600484568}
+  - component: {fileID: 1600484569}
   m_Layer: 0
-  m_Name: Managers
+  m_Name: Management
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -703,6 +752,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3520a0fae9cb2594d93ac59083853572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnTimerFinished: {fileID: 11400000, guid: 2d347244babde3744912d94602a0695a, type: 2}
+  MaxTimeReference:
+    Variable: {fileID: 11400000, guid: 95d1e99a135185d4f871829560404667, type: 2}
+  CurrentTimeReference:
+    Variable: {fileID: 11400000, guid: 760a5fecbc3648340aca0af7e3c8f520, type: 2}
+--- !u!114 &1600484569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600484566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d9c38c28f3e1c4a958f836e38aeb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   SkyBoxes:
   - {fileID: 2100000, guid: 9aa8ed67591432941bb76f12eb23ff91, type: 2}
   - {fileID: 2100000, guid: 5c80d49013691df48ac94280337e88ce, type: 2}
@@ -724,11 +790,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7ed994c1997814049b44c36a823bba6c, type: 2}
   - {fileID: 2100000, guid: 20f6d22d93779de4ea6f62f8ab305593, type: 2}
   - {fileID: 2100000, guid: baef7505b9e48404cb74585601f49ff9, type: 2}
-  OnTimerFinished: {fileID: 0}
-  MaxTimeReference:
-    Variable: {fileID: 0}
-  CurrentTimeReference:
-    Variable: {fileID: 0}
 --- !u!1 &1842673606
 GameObject:
   m_ObjectHideFlags: 0

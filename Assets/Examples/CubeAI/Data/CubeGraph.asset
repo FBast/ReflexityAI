@@ -33,15 +33,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -9175224203462566184}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: X
-        node: {fileID: -6793449375390937055}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -64,7 +61,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -75,7 +72,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -85,7 +82,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -95,7 +92,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -105,7 +102,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -116,8 +113,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -127,7 +124,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -137,7 +134,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -147,7 +144,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -157,7 +154,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -167,7 +164,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -178,7 +175,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -190,7 +187,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -200,7 +197,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -210,7 +207,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -220,7 +217,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -231,8 +228,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -242,7 +239,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -280,15 +277,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -8846382049434497743}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: MaxX
-        node: {fileID: -5982553498517609094}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -311,7 +305,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -322,7 +316,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -332,7 +326,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -342,7 +336,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -352,7 +346,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -363,8 +357,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -374,7 +368,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -384,7 +378,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -394,7 +388,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -404,7 +398,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -414,7 +408,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -425,7 +419,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -437,7 +431,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -447,7 +441,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -457,7 +451,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -467,7 +461,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -478,8 +472,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -489,7 +483,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -527,15 +521,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -8602665108849509112}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: X
-        node: {fileID: 1289431977929314073}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -558,7 +549,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -569,7 +560,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -579,7 +570,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -589,7 +580,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -599,7 +590,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -610,8 +601,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -621,7 +612,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -631,7 +622,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -641,7 +632,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -651,7 +642,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -661,7 +652,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -672,7 +663,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -684,7 +675,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -694,7 +685,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -704,7 +695,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -714,7 +705,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -725,8 +716,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -736,7 +727,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -764,10 +755,7 @@ MonoBehaviour:
       _node: {fileID: -7698546880175442895}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Output
-        node: {fileID: -3674261819807468564}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -810,9 +798,6 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: Output
-        node: {fileID: 3696875022282380510}
-        reroutePoints: []
       - fieldName: CubeEntity (Field)
         node: {fileID: 2061006948260006363}
         reroutePoints: []
@@ -867,7 +852,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: -7486768943615341224}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -978,15 +963,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -7374194053921731928}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: MaxX
-        node: {fileID: -6793449375390937055}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -1009,7 +991,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1020,7 +1002,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1030,7 +1012,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1040,7 +1022,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1050,7 +1032,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1061,8 +1043,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -1072,7 +1054,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1082,7 +1064,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1092,7 +1074,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1102,7 +1084,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1112,7 +1094,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1123,7 +1105,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1135,7 +1117,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -1145,7 +1127,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1155,7 +1137,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1165,7 +1147,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1176,8 +1158,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -1187,7 +1169,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1215,7 +1197,7 @@ MonoBehaviour:
     values:
     - _fieldName: MinX
       _node: {fileID: -6793449375390937055}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
@@ -1224,19 +1206,16 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: X
       _node: {fileID: -6793449375390937055}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: -9175224203462566184}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: MaxX
       _node: {fileID: -6793449375390937055}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: Output
@@ -1310,7 +1289,7 @@ MonoBehaviour:
     values:
     - _fieldName: Value
       _node: {fileID: -6793290240322009571}
-      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: CubeEntity
@@ -1334,7 +1313,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: -6793290240322009571}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -1751,7 +1730,7 @@ MonoBehaviour:
     values:
     - _fieldName: MinX
       _node: {fileID: -5982553498517609094}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
@@ -1760,7 +1739,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: X
       _node: {fileID: -5982553498517609094}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: Output
@@ -1772,12 +1751,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: MaxX
       _node: {fileID: -5982553498517609094}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: -8846382049434497743}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -1857,15 +1833,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -5199299751083465987}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: ValuesIn
-        node: {fileID: -5198625762696706527}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -1888,7 +1861,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1899,7 +1872,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1909,7 +1882,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1919,7 +1892,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1929,7 +1902,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1940,8 +1913,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -1951,7 +1924,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1961,7 +1934,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1971,7 +1944,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1981,7 +1954,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1991,7 +1964,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2002,7 +1975,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2014,7 +1987,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2024,7 +1997,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2034,7 +2007,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2044,7 +2017,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2055,8 +2028,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -2066,7 +2039,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2095,9 +2068,6 @@ MonoBehaviour:
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Output
-        node: {fileID: -5199299751083465987}
-        reroutePoints: []
       - fieldName: ValueOut
         node: {fileID: 3129961223765705061}
         reroutePoints: []
@@ -2152,15 +2122,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -5131487363760819044}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: MaxX
-        node: {fileID: 1289431977929314073}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -2183,7 +2150,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2194,7 +2161,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2204,7 +2171,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2214,7 +2181,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2224,7 +2191,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2235,8 +2202,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -2246,7 +2213,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2256,7 +2223,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2266,7 +2233,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2276,7 +2243,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2286,7 +2253,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2297,7 +2264,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2309,7 +2276,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2319,7 +2286,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2329,7 +2296,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2339,7 +2306,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2350,8 +2317,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -2361,7 +2328,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2437,7 +2404,7 @@ MonoBehaviour:
     values:
     - _fieldName: DataIteratorNode
       _node: {fileID: -4711346518026781265}
-      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -2479,7 +2446,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: -4711346518026781265}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -2492,7 +2459,7 @@ MonoBehaviour:
   DataIteratorNode: {fileID: 0}
   Description: Heal
   Ranks: 0
-  Merge: 1
+  Select: 1
   Multiplier: 1
   Bonus: 1
   Actions: {fileID: 0}
@@ -2529,18 +2496,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -3674261819807468564}
-      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: ValueIn
-        node: {fileID: -7698546880175442895}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: -2333738793855404698}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -2564,7 +2525,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2575,7 +2536,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2585,7 +2546,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2595,7 +2556,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2605,7 +2566,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2616,8 +2577,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -2627,7 +2588,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2637,7 +2598,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2647,7 +2608,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2657,7 +2618,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2667,7 +2628,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2678,7 +2639,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2690,7 +2651,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2700,7 +2661,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2710,7 +2671,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2720,7 +2681,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2731,8 +2692,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -2742,7 +2703,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2782,13 +2743,10 @@ MonoBehaviour:
       _node: {fileID: -3031999792752823412}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: ValueIn
-        node: {fileID: 8593508667235280350}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -2811,7 +2769,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2822,7 +2780,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2832,7 +2790,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2842,7 +2800,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2852,7 +2810,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2863,8 +2821,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -2874,7 +2832,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2884,7 +2842,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2894,7 +2852,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2904,7 +2862,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2914,7 +2872,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2925,7 +2883,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2937,7 +2895,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2947,7 +2905,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2957,7 +2915,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2967,7 +2925,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2978,8 +2936,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -2989,7 +2947,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3017,10 +2975,7 @@ MonoBehaviour:
       _node: {fileID: -2937336195790190701}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: 1450132181371540276}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -3074,7 +3029,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: -2400644280000083460}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -3175,25 +3130,22 @@ MonoBehaviour:
       _node: {fileID: -2333738793855404698}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Output
-        node: {fileID: -3674261819807468564}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: -2333738793855404698}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: ValuesIn
         node: {fileID: 8337774532877857809}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -3208,196 +3160,7 @@ MonoBehaviour:
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
-  SerializableInfos:
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: MeshRenderer
-    TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: MeshRenderer (Field)
-    Order: 67108867
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: Stats
-    TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: Stats (Field)
-    Order: 67108868
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: IsDead
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsDead (Field)
-    Order: 67108869
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: MaxHp
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: MaxHp (Field)
-    Order: 67108870
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CurrentHp
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CurrentHp (Field)
-    Order: 67108871
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CanonOutTransform
-    TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: ProjectilePrefab
-    TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: ProjectilePrefab (Field)
-    Order: 67108873
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: ProjectilePower
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: ProjectilePower (Field)
-    Order: 67108874
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: MaxAmmo
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: MaxAmmo (Field)
-    Order: 67108875
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CurrentAmmo
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CurrentAmmo (Field)
-    Order: 67108876
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CanonSpeed
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CanonSpeed (Field)
-    Order: 67108877
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: Target
-    TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: Target (Field)
-    Order: 67108878
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CubeEntities
-    TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
-      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CubeEntities (Field)
-    Order: 67108879
-    IsIteratable: 1
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: IsFullAmmo
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsFullAmmo (Property)
-    Order: 385875970
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: IsEmptyAmmo
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsEmptyAmmo (Property)
-    Order: 385875971
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: IsFullLife
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsFullLife (Property)
-    Order: 385875972
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: Transform
-    TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: GameObject
-    TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: GameObject (Property)
-    Order: 385875974
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
+  SerializableInfos: []
   ChoiceIndex: 2
 --- !u!114 &-843514211336542600
 MonoBehaviour:
@@ -3434,7 +3197,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: -843514211336542600}
-      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: DataIteratorNode
@@ -3565,9 +3328,6 @@ MonoBehaviour:
         node: {fileID: 489479730094005306}
         reroutePoints: []
       - fieldName: Output
-        node: {fileID: 4428729858040023306}
-        reroutePoints: []
-      - fieldName: Output
         node: {fileID: 8669188431373827567}
         reroutePoints: []
       _direction: 0
@@ -3611,10 +3371,7 @@ MonoBehaviour:
       _node: {fileID: 489479730094005306}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Output
-        node: {fileID: 5566661622240897244}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -3666,7 +3423,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: 1072247159839421151}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -3767,7 +3524,7 @@ MonoBehaviour:
     values:
     - _fieldName: MinX
       _node: {fileID: 1289431977929314073}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
@@ -3776,19 +3533,16 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: X
       _node: {fileID: 1289431977929314073}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: -8602665108849509112}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: MaxX
       _node: {fileID: 1289431977929314073}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: Output
@@ -3873,15 +3627,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 1450132181371540276}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: ValueIn
-        node: {fileID: -2937336195790190701}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -3904,7 +3655,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3915,7 +3666,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3925,7 +3676,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3935,7 +3686,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3945,7 +3696,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3956,8 +3707,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -3967,7 +3718,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3977,7 +3728,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3987,7 +3738,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3997,7 +3748,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4007,7 +3758,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4018,7 +3769,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4030,7 +3781,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4040,7 +3791,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4050,7 +3801,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4060,7 +3811,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4071,8 +3822,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -4082,7 +3833,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4210,15 +3961,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 2372284499203493106}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: MaxX
-        node: {fileID: 7771546304584235007}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -4241,7 +3989,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4252,7 +4000,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4262,7 +4010,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4272,7 +4020,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4282,7 +4030,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4293,8 +4041,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -4304,7 +4052,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4314,7 +4062,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4324,7 +4072,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4334,7 +4082,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4344,7 +4092,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4355,7 +4103,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4367,7 +4115,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4377,7 +4125,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4387,7 +4135,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4397,7 +4145,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4408,8 +4156,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -4419,7 +4167,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4599,15 +4347,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 3696875022282380510}
-      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: ValuesIn
-        node: {fileID: -7578698713438904825}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -4631,7 +4376,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4642,7 +4387,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4652,7 +4397,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4662,7 +4407,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4672,7 +4417,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4683,8 +4428,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -4694,7 +4439,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4704,7 +4449,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4714,7 +4459,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4724,7 +4469,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4734,7 +4479,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4745,7 +4490,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4757,7 +4502,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4767,7 +4512,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4777,7 +4522,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4787,7 +4532,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4798,8 +4543,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -4809,7 +4554,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4838,7 +4583,7 @@ MonoBehaviour:
     values:
     - _fieldName: DataIteratorNode
       _node: {fileID: 4124472366614719383}
-      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -4880,7 +4625,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: 4124472366614719383}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -4893,7 +4638,7 @@ MonoBehaviour:
   DataIteratorNode: {fileID: 0}
   Description: Fire
   Ranks: 0
-  Merge: 1
+  Select: 1
   Multiplier: 1
   Bonus: 1
   Actions: {fileID: 0}
@@ -4930,15 +4675,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 4428729858040023306}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: ValuesIn
-        node: {fileID: 287704614793438030}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -4953,196 +4695,7 @@ MonoBehaviour:
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
-  SerializableInfos:
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: MeshRenderer
-    TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: MeshRenderer (Field)
-    Order: 67108867
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: Stats
-    TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: Stats (Field)
-    Order: 67108868
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: IsDead
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsDead (Field)
-    Order: 67108869
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: MaxHp
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: MaxHp (Field)
-    Order: 67108870
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CurrentHp
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CurrentHp (Field)
-    Order: 67108871
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CanonOutTransform
-    TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: ProjectilePrefab
-    TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: ProjectilePrefab (Field)
-    Order: 67108873
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: ProjectilePower
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: ProjectilePower (Field)
-    Order: 67108874
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: MaxAmmo
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: MaxAmmo (Field)
-    Order: 67108875
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CurrentAmmo
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CurrentAmmo (Field)
-    Order: 67108876
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CanonSpeed
-    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CanonSpeed (Field)
-    Order: 67108877
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: Target
-    TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: Target (Field)
-    Order: 67108878
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: CubeEntities
-    TypeName: System.Collections.Generic.List`1[[Examples.CubeAI.Scripts.CubeEntity,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
-      Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: CubeEntities (Field)
-    Order: 67108879
-    IsIteratable: 1
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: IsFullAmmo
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsFullAmmo (Property)
-    Order: 385875970
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: IsEmptyAmmo
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsEmptyAmmo (Property)
-    Order: 385875971
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: IsFullLife
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsFullLife (Property)
-    Order: 385875972
-    IsIteratable: 0
-    IsPrimitive: 1
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: Transform
-    TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 16
-    DeclaringTypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    Name: GameObject
-    TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-    PortName: GameObject (Property)
-    Order: 385875974
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
+  SerializableInfos: []
   ChoiceIndex: 2
 --- !u!114 &5566661622240897244
 MonoBehaviour:
@@ -5177,18 +4730,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 5566661622240897244}
-      _typeQualifiedName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: ValueIn
-        node: {fileID: 489479730094005306}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: 4428729858040023306}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -5212,7 +4759,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5223,7 +4770,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5233,7 +4780,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5243,7 +4790,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5253,7 +4800,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5264,8 +4811,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -5275,7 +4822,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5285,7 +4832,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5295,7 +4842,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5305,7 +4852,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5315,7 +4862,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5326,7 +4873,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5338,7 +4885,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -5348,7 +4895,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5358,7 +4905,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5368,7 +4915,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5379,8 +4926,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -5390,7 +4937,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5419,7 +4966,7 @@ MonoBehaviour:
     values:
     - _fieldName: DataIteratorNode
       _node: {fileID: 5686772860135997062}
-      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -5470,7 +5017,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: 5686772860135997062}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -5483,7 +5030,7 @@ MonoBehaviour:
   DataIteratorNode: {fileID: 0}
   Description: Target
   Ranks: 0
-  Merge: 1
+  Select: 1
   Multiplier: 1
   Bonus: 1
   Actions: {fileID: 0}
@@ -5607,15 +5154,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 6402612874136931776}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: X
-        node: {fileID: 7771546304584235007}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -5638,7 +5182,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5649,7 +5193,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5659,7 +5203,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5669,7 +5213,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5679,7 +5223,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5690,8 +5234,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -5701,7 +5245,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5711,7 +5255,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5721,7 +5265,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5731,7 +5275,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5741,7 +5285,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5752,7 +5296,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5764,7 +5308,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -5774,7 +5318,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5784,7 +5328,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5794,7 +5338,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -5805,8 +5349,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -5816,7 +5360,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -5873,7 +5417,7 @@ MonoBehaviour:
     values:
     - _fieldName: DataIteratorNode
       _node: {fileID: 7297451011181730025}
-      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -5915,7 +5459,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: 7297451011181730025}
-      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -5928,7 +5472,7 @@ MonoBehaviour:
   DataIteratorNode: {fileID: 0}
   Description: Reload
   Ranks: 0
-  Merge: 1
+  Select: 1
   Multiplier: 1
   Bonus: 1
   Actions: {fileID: 0}
@@ -6002,7 +5546,7 @@ MonoBehaviour:
     values:
     - _fieldName: MinX
       _node: {fileID: 7771546304584235007}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections: []
       _direction: 0
@@ -6011,7 +5555,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: X
       _node: {fileID: 7771546304584235007}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: Output
@@ -6023,12 +5567,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: MaxX
       _node: {fileID: 7771546304584235007}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: 2372284499203493106}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -6146,10 +5687,7 @@ MonoBehaviour:
       _node: {fileID: 8593508667235280350}
       _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: -3031999792752823412}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -6203,15 +5741,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 8669188431373827567}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: ValuesIn
-        node: {fileID: 287704614793438030}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -6234,7 +5769,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6245,7 +5780,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6255,7 +5790,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6265,7 +5800,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6275,7 +5810,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6286,8 +5821,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -6297,7 +5832,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6307,7 +5842,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6317,7 +5852,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6327,7 +5862,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6337,7 +5872,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6348,7 +5883,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6360,7 +5895,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -6370,7 +5905,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6380,7 +5915,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6390,7 +5925,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6401,8 +5936,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -6412,7 +5947,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6450,15 +5985,12 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 9074881034774369323}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: X
-        node: {fileID: -5982553498517609094}
-        reroutePoints: []
+      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
       _direction: 1
       _connectionType: 0
-      _typeConstraint: 1
+      _typeConstraint: 0
       _dynamic: 0
   Data: {fileID: 0}
   Output: {fileID: 0}
@@ -6481,7 +6013,7 @@ MonoBehaviour:
     TypeName: UnityEngine.MeshRenderer, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: MeshRenderer (Field)
-    Order: 67108867
+    Order: 67109073
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6492,7 +6024,7 @@ MonoBehaviour:
     TypeName: UnityEngine.UI.Text, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Stats (Field)
-    Order: 67108868
+    Order: 67109074
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6502,7 +6034,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Field)
-    Order: 67108869
+    Order: 67109075
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6512,7 +6044,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67108870
+    Order: 67109076
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6522,7 +6054,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67108871
+    Order: 67109077
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6533,8 +6065,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOutTransform (Field)
-    Order: 67108872
-    IsIteratable: 0
+    Order: 67109078
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 4
@@ -6544,7 +6076,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ProjectilePrefab (Field)
-    Order: 67108873
+    Order: 67109079
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6554,7 +6086,7 @@ MonoBehaviour:
     Name: ProjectilePower
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: ProjectilePower (Field)
-    Order: 67108874
+    Order: 67109080
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6564,7 +6096,7 @@ MonoBehaviour:
     Name: MaxAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxAmmo (Field)
-    Order: 67108875
+    Order: 67109081
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6574,7 +6106,7 @@ MonoBehaviour:
     Name: CurrentAmmo
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentAmmo (Field)
-    Order: 67108876
+    Order: 67109082
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6584,7 +6116,7 @@ MonoBehaviour:
     Name: CanonSpeed
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CanonSpeed (Field)
-    Order: 67108877
+    Order: 67109083
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6595,7 +6127,7 @@ MonoBehaviour:
     TypeName: Examples.CubeAI.Scripts.CubeEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67108878
+    Order: 67109084
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -6607,7 +6139,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CubeEntities (Field)
-    Order: 67108879
+    Order: 67109085
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -6617,7 +6149,7 @@ MonoBehaviour:
     Name: IsFullAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullAmmo (Property)
-    Order: 385875970
+    Order: 385875994
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6627,7 +6159,7 @@ MonoBehaviour:
     Name: IsEmptyAmmo
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsEmptyAmmo (Property)
-    Order: 385875971
+    Order: 385875995
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6637,7 +6169,7 @@ MonoBehaviour:
     Name: IsFullLife
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsFullLife (Property)
-    Order: 385875972
+    Order: 385875996
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -6648,8 +6180,8 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875973
-    IsIteratable: 0
+    Order: 385875997
+    IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
   - MemberTypes: 16
@@ -6659,7 +6191,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: GameObject (Property)
-    Order: 385875974
+    Order: 385875998
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
