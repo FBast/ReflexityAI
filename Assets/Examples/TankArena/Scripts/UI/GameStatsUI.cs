@@ -77,11 +77,11 @@ namespace Examples.TankArena.Scripts.UI {
                 Match match = CurrentGameReference.Value.NextMatch();
                 CurrentGameReference.Value.CurrentMatch = match;
                 CurrentMatchReference.Value = match;
-                OnReloadScene.Raise(Properties.Scenes.Game);
+                OnReloadScene.Raise(GlobalProperties.Scenes.Game);
             }
             else {
-                OnUnloadScene.Raise(Properties.Scenes.Game);
-                OnLoadScene.Raise(Properties.Scenes.Menu);
+                OnUnloadScene.Raise(GlobalProperties.Scenes.Game);
+                OnLoadScene.Raise(GlobalProperties.Scenes.Menu);
             }
         }
 

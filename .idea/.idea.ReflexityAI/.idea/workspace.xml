@@ -1,30 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/CustomSceneManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/CustomSceneManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbMoving.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbSetting.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/BaseAI/DumbSetting.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/World/Tank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/World/Tank.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Game/Timer.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Game/Timer.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Menu/MenuCamera.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Menu/MenuCamera.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Menu/MenuCanvas.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Menu/MenuCanvas.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Menu/MenuLevel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Menu/MenuLevel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Menu/MenuMusic.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/Menu/MenuMusic.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/World/Lights.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/World/Lights.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Menu/Global Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Menu/Global Volume Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Shared.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Shared.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/BonusSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/BonusSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Properties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/GlobalProperties.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Properties.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/GlobalProperties.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Timer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Timer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/WaypointSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/WaypointSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/Editor/ActionSetterNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/Editor/ActionSetterNodeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataReaderNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataReaderNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIBrainGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIBrainGraph.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/Editor/AiDebuggerEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/Editor/AiDebuggerEditorWindow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ReflexityAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ReflexityAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/Editor/UtilityNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/Editor/UtilityNodeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/UtilityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/UtilityNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/DistanceNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/DistanceNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/MatchEndUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/MatchEndUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/SettingsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/SettingsUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe3.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/Packages-Update.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/Packages-Update.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,62 +76,60 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Utils/TagList/Editor/DropdownListDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Editor/WeaverRunner.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataIteratorNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataReaderNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ReflexityAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/DataNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ICacheable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/UtilityNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TournamentUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TeamFightUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/Editor/AiDebuggerEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Extensions/TransformExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Extensions/PlayerPrefsExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Extensions/DoubleExtension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/ConverterNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Extensions/Vector3Extension.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/Editor/UtilityNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/ActionLauncherNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/ActionSetterNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/Editor/ActionSetterNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/IsNullNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/DistanceNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/IsNullNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/AutoDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/AutoDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/UtilityNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/Editor/ActionSetterNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/ActionSetterNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/ConverterNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/ActionLauncherNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/Editor/UtilityNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/Editor/AiDebuggerEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ICacheable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Extensions/Vector3Extension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/DataNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Extensions/PlayerPrefsExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TournamentUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Extensions/DoubleExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Extensions/TransformExtension.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataIteratorNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TeamStatLineUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ReflexityAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataReaderNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TeamFightUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Utils/TagList/Editor/DropdownListDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Editor/WeaverRunner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/IsEqualNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/CompareNode.cs" />
@@ -139,6 +178,8 @@
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Properties.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/SettingsUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Timer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/GlobalProperties.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" />
       </list>
     </option>
@@ -169,6 +210,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -219,6 +261,7 @@
       <workItem from="1617978739926" duration="4702000" />
       <workItem from="1634912575493" duration="1663000" />
       <workItem from="1638520359383" duration="11825000" />
+      <workItem from="1638631906469" duration="644000" />
     </task>
     <servers />
   </component>
@@ -227,6 +270,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>

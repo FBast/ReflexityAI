@@ -117,3 +117,13 @@ The following packages were updated:
   com.unity.textmeshpro from version 3.0.4 to 3.0.6
   com.unity.timeline from version 1.4.6 to 1.4.8
   com.unity.xr.legacyinputhelpers from version 2.1.7 to 2.1.8
+
+=== Sat Dec  4 14:51:34 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.collab-proxy from version 1.11.2 to 1.13.5
+  com.unity.purchasing from version 3.2.2 to 4.0.3
+  com.unity.render-pipelines.universal from version 10.6.0 to 10.7.0

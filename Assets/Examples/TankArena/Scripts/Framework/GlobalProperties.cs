@@ -1,5 +1,5 @@
 namespace Examples.TankArena.Scripts.Framework {
-    public static class Properties {
+    public static class GlobalProperties {
 
         public struct Inputs {
             public const string LeftClick = "Fire1";

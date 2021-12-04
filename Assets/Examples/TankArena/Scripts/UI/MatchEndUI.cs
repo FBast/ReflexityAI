@@ -55,7 +55,7 @@ namespace Examples.TankArena.Scripts.UI {
 
         public void RestartMatch() {
             CurrentMatchReference.Value.ResetStats();
-            OnReloadScene.Raise(Properties.Scenes.Game);
+            OnReloadScene.Raise(GlobalProperties.Scenes.Game);
         }
         
     }

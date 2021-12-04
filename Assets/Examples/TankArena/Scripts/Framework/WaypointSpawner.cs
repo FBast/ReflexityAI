@@ -21,7 +21,7 @@ namespace Examples.TankArena.Scripts.Framework {
         
         private void Start() {
             WaypointsReference.Value = new List<GameObject>();
-            _gridGap = PlayerPrefs.GetInt(Properties.PlayerPrefs.GridGap, Properties.PlayerPrefsDefault.GridGap);
+            _gridGap = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.GridGap, GlobalProperties.PlayerPrefsDefault.GridGap);
             GenerateWaypoints();
         }
 

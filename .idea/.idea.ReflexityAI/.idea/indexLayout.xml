@@ -6,17 +6,24 @@
       <Path>Library/PackageCache/com.unity.ads@3.7.5</Path>
       <Path>Library/PackageCache/com.unity.analytics@3.6.11</Path>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.11.2</Path>
+      <Path>Library/PackageCache/com.unity.collab-proxy@1.13.5</Path>
       <Path>Library/PackageCache/com.unity.ext.nunit@1.0.6</Path>
       <Path>Library/PackageCache/com.unity.ide.rider@2.0.7</Path>
       <Path>Library/PackageCache/com.unity.ide.visualstudio@2.0.11</Path>
       <Path>Library/PackageCache/com.unity.ide.vscode@1.2.4</Path>
       <Path>Library/PackageCache/com.unity.mathematics@1.1.0</Path>
       <Path>Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2</Path>
+      <Path>Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0</Path>
       <Path>Library/PackageCache/com.unity.purchasing@3.2.2</Path>
+      <Path>Library/PackageCache/com.unity.purchasing@4.0.3</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.core@10.6.0</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.core@10.7.0</Path>
       <Path>Library/PackageCache/com.unity.render-pipelines.universal@10.6.0</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.universal@10.7.0</Path>
       <Path>Library/PackageCache/com.unity.searcher@4.3.2</Path>
+      <Path>Library/PackageCache/com.unity.services.core@1.0.1</Path>
       <Path>Library/PackageCache/com.unity.shadergraph@10.6.0</Path>
+      <Path>Library/PackageCache/com.unity.shadergraph@10.7.0</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.29</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@3.0.6</Path>
       <Path>Library/PackageCache/com.unity.timeline@1.4.8</Path>

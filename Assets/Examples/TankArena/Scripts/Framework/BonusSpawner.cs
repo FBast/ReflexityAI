@@ -22,8 +22,8 @@ namespace Examples.TankArena.Scripts.Framework {
         
         private void Awake() {
             BonusReference.Value = new List<GameObject>();
-            _spawnNumber = PlayerPrefs.GetInt(Properties.PlayerPrefs.BonusPerSpawnNumber, Properties.PlayerPrefsDefault.BonusPerSpawnNumber);
-            _spawnRate = PlayerPrefs.GetInt(Properties.PlayerPrefs.BonusPerSpawnFrequency, Properties.PlayerPrefsDefault.BonusPerSpawnFrequency);
+            _spawnNumber = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.BonusPerSpawnNumber, GlobalProperties.PlayerPrefsDefault.BonusPerSpawnNumber);
+            _spawnRate = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.BonusPerSpawnFrequency, GlobalProperties.PlayerPrefsDefault.BonusPerSpawnFrequency);
         }
 
         private void Update() {

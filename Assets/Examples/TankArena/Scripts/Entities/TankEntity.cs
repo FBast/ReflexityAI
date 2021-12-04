@@ -88,15 +88,15 @@ namespace Examples.TankArena.Scripts.Entities {
         private void Awake() {
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _tankAi = GetComponent<TankAI>();
-            _navMeshAgent.speed = PlayerPrefs.GetInt(Properties.PlayerPrefs.TankSpeed, Properties.PlayerPrefsDefault.TankSpeed);
-            _canonDamage = PlayerPrefs.GetInt(Properties.PlayerPrefs.CanonDamage, Properties.PlayerPrefsDefault.CanonDamage);
-            _canonPower = PlayerPrefs.GetInt(Properties.PlayerPrefs.CanonPower, Properties.PlayerPrefsDefault.CanonPower);
-            _turretSpeed = PlayerPrefs.GetInt(Properties.PlayerPrefs.TurretSpeed, Properties.PlayerPrefsDefault.TurretSpeed);
-            _reloadTime = PlayerPrefs.GetInt(Properties.PlayerPrefs.ReloadTime, Properties.PlayerPrefsDefault.ReloadTime);
-            _explosionDamage = PlayerPrefs.GetInt(Properties.PlayerPrefs.ExplosionDamage, Properties.PlayerPrefsDefault.ExplosionDamage);
-            _explosionRadius = PlayerPrefs.GetInt(Properties.PlayerPrefs.ExplosionRadius, Properties.PlayerPrefsDefault.ExplosionRadius);
-            _waypointRadius = PlayerPrefs.GetInt(Properties.PlayerPrefs.WaypointSeekRadius, Properties.PlayerPrefsDefault.WaypointSeekRadius);
-            MaxHp = PlayerPrefs.GetInt(Properties.PlayerPrefs.HealthPoints, Properties.PlayerPrefsDefault.HealthPoints);
+            _navMeshAgent.speed = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.TankSpeed, GlobalProperties.PlayerPrefsDefault.TankSpeed);
+            _canonDamage = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.CanonDamage, GlobalProperties.PlayerPrefsDefault.CanonDamage);
+            _canonPower = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.CanonPower, GlobalProperties.PlayerPrefsDefault.CanonPower);
+            _turretSpeed = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.TurretSpeed, GlobalProperties.PlayerPrefsDefault.TurretSpeed);
+            _reloadTime = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.ReloadTime, GlobalProperties.PlayerPrefsDefault.ReloadTime);
+            _explosionDamage = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.ExplosionDamage, GlobalProperties.PlayerPrefsDefault.ExplosionDamage);
+            _explosionRadius = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.ExplosionRadius, GlobalProperties.PlayerPrefsDefault.ExplosionRadius);
+            _waypointRadius = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.WaypointSeekRadius, GlobalProperties.PlayerPrefsDefault.WaypointSeekRadius);
+            MaxHp = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.HealthPoints, GlobalProperties.PlayerPrefsDefault.HealthPoints);
             CurrentHp = MaxHp;
         }
 
@@ -197,8 +197,8 @@ namespace Examples.TankArena.Scripts.Entities {
                 if (tankEntity && tankEntity != this) tankEntity.DamageByExplosion(this);
             }
             // Wreck
-            if (PlayerPrefsUtils.GetBool(Properties.PlayerPrefs.ExplosionCreateBustedTank, 
-                Properties.PlayerPrefsDefault.ExplosionCreateBustedTank))
+            if (PlayerPrefsUtils.GetBool(GlobalProperties.PlayerPrefs.ExplosionCreateBustedTank, 
+                GlobalProperties.PlayerPrefsDefault.ExplosionCreateBustedTank))
                 Instantiate(BustedTankPrefab, transform.position, transform.rotation);
             // Remove from list
             TanksReference.Value.Remove(gameObject);
