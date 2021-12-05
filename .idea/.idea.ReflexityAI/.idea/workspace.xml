@@ -20,8 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Material.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Material/White.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Material/White.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/CubeAI.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Data/CubeGraph.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Ammo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Ammo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Cube.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Prefabs/Cube.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIQueue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIQueue.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,16 +49,20 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/07C89F75-2069-4139-9913-32D3CF930D48/0c/b1618707/SetupCoroutine.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/AutoDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/UtilityNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Local Repository/ReflexityAI/Assets/Plugins/Reflexity/Framework/AIQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/Editor/ActionSetterNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/ActionSetterNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/ConverterNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/ActionNodes/ActionLauncherNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/Editor/UtilityNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Local Repository/ReflexityAI/Assets/Plugins/Reflexity/Framework/AIQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Local Repository/ReflexityAI/Assets/Plugins/Reflexity/Framework/AIQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/Editor/AiDebuggerEditorWindow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/29A6C194-5F57-4474-95FC-AD42118554C7/ed/27c3adb2/Queue`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIBrainGraph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ICacheable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -71,24 +84,28 @@
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataIteratorNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Local Repository/ReflexityAI/Assets/Plugins/Reflexity/Framework/AIQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Local Repository/ReflexityAI/Assets/Plugins/Reflexity/Framework/AIQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataReaderNode.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/Utils/TagList/Editor/DropdownListDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.multiplayer-hlapi@1.0.2/Editor/WeaverRunner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Local Repository/ReflexityAI/Assets/Plugins/Reflexity/Framework/AIQueue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Local Repository/ReflexityAI/Assets/Plugins/Reflexity/Framework/AIQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/IsEqualNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Local Repository/ReflexityAI/Assets/Plugins/Reflexity/Framework/AIQueue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataSelectorNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs" />
@@ -133,12 +150,13 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ReflexityManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIQueue.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ReflexityAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TournamentUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TeamFightUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Team.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIQueue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" />
       </list>
     </option>
   </component>
@@ -165,6 +183,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
@@ -185,10 +204,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22212">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="22212" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -224,6 +243,7 @@
       <workItem from="1638631906469" duration="2062000" />
       <workItem from="1638637205401" duration="2387000" />
       <workItem from="1638704018527" duration="17794000" />
+      <workItem from="1638743423929" duration="891000" />
     </task>
     <servers />
   </component>
@@ -248,6 +268,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -323,6 +344,10 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="120" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638522477869" />
+    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1638743775315">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1638743775315" />
     <state x="-1317" y="119" width="714" height="801" key="find.popup" timestamp="1638717101831">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

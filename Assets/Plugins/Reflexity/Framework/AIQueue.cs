@@ -15,16 +15,18 @@ namespace Plugins.Reflexity.Framework {
             while (!IsStopped) {
                 yield return new WaitWhile(() => IsPaused);
                 yield return new WaitWhile(() => Queue.Count == 0);
-                ReflexityAI dequeue = Queue.Dequeue();
-                if (Dequeued.Contains(dequeue)) {
-                    Dequeued.Remove(dequeue);
-                } 
-                else {
-                    ReflexityAI peek = Queue.Count > 0 ? Queue.Peek() : null;
-                    if (dequeue && dequeue.enabled && (!peek || peek != dequeue)) {
-                        dequeue.ThinkAndAct();
-                        Queue.Enqueue(dequeue);
-                        yield return null;
+                if (Queue.Count > 0) {
+                    ReflexityAI dequeue = Queue.Dequeue();
+                    if (Dequeued.Contains(dequeue)) {
+                        Dequeued.Remove(dequeue);
+                    } 
+                    else {
+                        ReflexityAI peek = Queue.Count > 0 ? Queue.Peek() : null;
+                        if (dequeue && dequeue.enabled && (!peek || peek != dequeue)) {
+                            dequeue.ThinkAndAct();
+                            Queue.Enqueue(dequeue);
+                            yield return null;
+                        }
                     }
                 }
             }
