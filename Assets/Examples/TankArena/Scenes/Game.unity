@@ -124,7 +124,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 36d19df55aa98d5458ba50b4089a7b3f, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: d6e84d9f4c4a6a242be08793d4290c63, type: 2}
 --- !u!1 &518613150
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,54 +567,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1275334483}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1330054783
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1330054785}
-  - component: {fileID: 1330054784}
-  m_Layer: 0
-  m_Name: Global Volume
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1330054784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330054783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 11400000, guid: d16e13902cd4e4c418db6aa16bc4f83b, type: 2}
---- !u!4 &1330054785
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330054783}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1391056259
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +670,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1600484567}
   - component: {fileID: 1600484568}
-  - component: {fileID: 1600484569}
   m_Layer: 0
   m_Name: Management
   m_TagString: Untagged
@@ -757,39 +708,6 @@ MonoBehaviour:
     Variable: {fileID: 11400000, guid: 95d1e99a135185d4f871829560404667, type: 2}
   CurrentTimeReference:
     Variable: {fileID: 11400000, guid: 760a5fecbc3648340aca0af7e3c8f520, type: 2}
---- !u!114 &1600484569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1600484566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18d9c38c28f3e1c4a958f836e38aeb64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SkyBoxes:
-  - {fileID: 2100000, guid: 9aa8ed67591432941bb76f12eb23ff91, type: 2}
-  - {fileID: 2100000, guid: 5c80d49013691df48ac94280337e88ce, type: 2}
-  - {fileID: 2100000, guid: 56113b3b655ab7349bab4d7d405c258a, type: 2}
-  - {fileID: 2100000, guid: 5c57bb9da366e944a8f4ae9be4f413ec, type: 2}
-  - {fileID: 2100000, guid: 6225fa8890cf025489e57d3aa1d87260, type: 2}
-  - {fileID: 2100000, guid: bbbcd551076325545ba102ba8c308520, type: 2}
-  - {fileID: 2100000, guid: ddbcbb3899687ea469ed4a5fce1532df, type: 2}
-  - {fileID: 2100000, guid: 8fc56946a1b593c4d8e3e0e94483338e, type: 2}
-  - {fileID: 2100000, guid: 5464c15ff9c6ca04cb5790c1773e76fa, type: 2}
-  - {fileID: 2100000, guid: 022e71752654d3f4fa0cbe71b312ad20, type: 2}
-  - {fileID: 2100000, guid: c7a8e24b01cf73e4bad6eb3cb7d40acc, type: 2}
-  - {fileID: 2100000, guid: bbe9494f815f3c340956427c884b72a0, type: 2}
-  - {fileID: 2100000, guid: 52fcefd712182d743a781fde12426775, type: 2}
-  - {fileID: 2100000, guid: 135a7036ca1a07b4e9e162d80e6b6e77, type: 2}
-  - {fileID: 2100000, guid: ed1387202b1349540a5d6464f0f27488, type: 2}
-  - {fileID: 2100000, guid: 2441c79940171dc43b33badf9fe97828, type: 2}
-  - {fileID: 2100000, guid: 528363c5c1cf6a7458140c6851c77b68, type: 2}
-  - {fileID: 2100000, guid: 7ed994c1997814049b44c36a823bba6c, type: 2}
-  - {fileID: 2100000, guid: 20f6d22d93779de4ea6f62f8ab305593, type: 2}
-  - {fileID: 2100000, guid: baef7505b9e48404cb74585601f49ff9, type: 2}
 --- !u!1 &1842673606
 GameObject:
   m_ObjectHideFlags: 0

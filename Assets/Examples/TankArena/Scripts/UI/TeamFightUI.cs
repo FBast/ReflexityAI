@@ -65,36 +65,36 @@ namespace Examples.TankArena.Scripts.UI {
         public void CreateGame() {
             Game game = new Game();
             if (TeamADropdowns.Sum(dropdown => dropdown.value) > 0) {
-                game.Teams.Add(new Team
-                {
+                game.Teams.Add(new Team {
+                    Color = Color.red,
                     TankSettings = (from playerDropdown in TeamADropdowns 
                         where playerDropdown.value != 0 
-                        select _tankSettings[playerDropdown.value - 1]).ToList(),
-                    Color = Color.red
+                        select _tankSettings[playerDropdown.value - 1]).ToList()
                 });
             }
             if (TeamBDropdowns.Sum(dropdown => dropdown.value) > 0) {
                 game.Teams.Add(new Team {
+                    Color = Color.green,
                     TankSettings = (from playerDropdown in TeamBDropdowns
                         where playerDropdown.value != 0
-                        select _tankSettings[playerDropdown.value - 1]).ToList(),
-                    Color = Color.green
+                        select _tankSettings[playerDropdown.value - 1]).ToList()
+ 
                 });
             }
             if (TeamCDropdowns.Sum(dropdown => dropdown.value) > 0) {
                 game.Teams.Add(new Team {
+                    Color = Color.blue,
                     TankSettings = (from playerDropdown in TeamCDropdowns
                         where playerDropdown.value != 0
-                        select _tankSettings[playerDropdown.value - 1]).ToList(),
-                    Color = Color.blue
+                        select _tankSettings[playerDropdown.value - 1]).ToList()
                 });
             }
             if (TeamDDropdowns.Sum(dropdown => dropdown.value) > 0) {
                 game.Teams.Add(new Team {
+                    Color = Color.yellow,
                     TankSettings = (from playerDropdown in TeamDDropdowns
                         where playerDropdown.value != 0
-                        select _tankSettings[playerDropdown.value - 1]).ToList(),
-                    Color = Color.yellow
+                        select _tankSettings[playerDropdown.value - 1]).ToList()
                 });
             }
             game.SetupTeamFight();

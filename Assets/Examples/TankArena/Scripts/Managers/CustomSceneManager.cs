@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Examples.TankArena.Scripts.Utils;
@@ -6,8 +7,16 @@ using UnityEngine.SceneManagement;
 
 namespace Examples.TankArena.Scripts.Managers {
     public class CustomSceneManager : Singleton<CustomSceneManager> {
+
+        public string StartingScene;
         
+        public Action OnNewActiveScene;
+
         private Dictionary<string, object> _parameters;
+
+        private void Awake() {
+            LoadScene(StartingScene);
+        }
 
         public void UnloadScene(string scene) {
             if (!SceneManager.GetSceneByName(scene).isLoaded) return;
@@ -43,6 +52,7 @@ namespace Examples.TankArena.Scripts.Managers {
                 yield return null;
             }
             SceneManager.SetActiveScene(SceneManager.GetSceneByName(scene));
+            OnNewActiveScene?.Invoke();
         }
 		
         public object GetParam(string paramKey) {

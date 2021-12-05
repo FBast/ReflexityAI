@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Plugins.Reflexity.MainNodes;
+using Object = UnityEngine.Object;
 
 namespace Plugins.Reflexity.Framework {
     [Serializable]
@@ -52,7 +53,11 @@ namespace Plugins.Reflexity.Framework {
             // Add description based on data (for iteration)
             if (actionWithData != null) {
                 foreach (object data in actionWithData.Data) {
-                    description += " " + data;
+                    if (data is Object obj) 
+                        description += " (" + obj.name + ")";
+                    else 
+                        description += " (" + data + ")";
+                    
                 }
             }
             if (IsRanked) 

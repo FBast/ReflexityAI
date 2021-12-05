@@ -2,7 +2,6 @@
 using System.Linq;
 using Examples.TankArena.Scripts.Extensions;
 using Examples.TankArena.Scripts.Framework;
-using Examples.TankArena.Scripts.SOReferences.GameObjectListReference;
 using UnityEngine;
 
 namespace Examples.TankArena.Scripts.Entities {
@@ -10,22 +9,29 @@ namespace Examples.TankArena.Scripts.Entities {
 
         [Header("Parameters")] 
         public LayerMask CoverLayer;
-        
-        [Header("SO References")]
-        public GameObjectListReference TanksReference;
-        
+
         public Transform Transform => transform;
+        
+        public static List<WaypointEntity> WaypointEntities = new List<WaypointEntity>();
+
+        private void Awake() {
+            WaypointEntities.Add(this);
+        }
+
+        private void OnDestroy() {
+            WaypointEntities.Remove(this);
+        }
         
         public int ObserverCount(TankEntity hider, FactionType seekersFaction) {
             if (seekersFaction == FactionType.All) {
                 return transform.InLineOfView(hider.transform,
-                    TanksReference.Value
+                    TankEntity.TankEntities
                         .Select(o => o.GetComponent<TankEntity>())
                         .Where(entity => entity != hider)
                         .Select(entity => entity.transform).ToList(), CoverLayer).Count;
             }
             return transform.InLineOfView(hider.transform,
-                TanksReference.Value
+                TankEntity.TankEntities
                     .Select(o => o.GetComponent<TankEntity>())
                     .Where(entity => entity != hider && hider.GetFaction(entity) == seekersFaction)
                     .Select(entity => entity.transform).ToList(), CoverLayer).Count;
@@ -35,6 +41,6 @@ namespace Examples.TankArena.Scripts.Entities {
             if (seeker == null) return false;
             return transform.InLineOfView(hider.transform, new List<Transform> {seeker.transform}, CoverLayer).Count == 0;
         }
-        
+
     }
 }

@@ -14,8 +14,6 @@ namespace Plugins.Reflexity.Framework {
         public List<AIBrainGraph> AIBrains;
         [Tooltip("If checked the AI will be processed on enable")]
         public bool OnEnableQueuing = true;
-        [Tooltip("If checked the AI will be automatically processed in loop")]
-        public bool QueuingLoop = true;
         [Tooltip("Robotic : Always pick best option\n" +
                  "Human : Randomize between best options")]
         public ResolutionType OptionsResolution = ResolutionType.Robotic;
@@ -28,17 +26,21 @@ namespace Plugins.Reflexity.Framework {
         public readonly Dictionary<AIBrainGraph, List<AIOption>> WeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, List<AIOption>> BestWeightedOptions = new Dictionary<AIBrainGraph, List<AIOption>>();
         public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
-
         private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
+        private static readonly AIQueue _aiQueue = new AIQueue();
 
         private void Start() {
             Init();
         }
 
         private void OnEnable() {
-            if (!OnEnableQueuing) return;
+            if (!_aiQueue.IsStopped) StartCoroutine(_aiQueue.Queuing());
             EnqueueAI();
+        }
+
+        private void OnDisable() {
+           DequeueAI();
         }
 
         public void Init() {
@@ -60,26 +62,47 @@ namespace Plugins.Reflexity.Framework {
         /// </summary>
         [ContextMenu("Enqueue AI")]
         public void EnqueueAI() {
-            AIQueue.Queue.Enqueue(this);
-            if (!AIQueue.IsQueuing) StartCoroutine(AIQueue.Queuing());
+            if (_aiQueue.Queue.Contains(this)) {
+                Debug.Log("Queue already contains " + gameObject.name + " AI");
+            } 
+            else {
+                _aiQueue.Queue.Enqueue(this);
+                if (!_aiQueue.IsPaused) StartCoroutine(_aiQueue.Queuing());
+            }
         }
 
         /// <summary>
-        /// Stop the AI queue from processing
+        /// Use this method to manually dequeue this AI processing
         /// </summary>
-        [ContextMenu("Stop Queue")]
-        public static void StopQueue() {
-            AIQueue.IsQueuing = false;
+        [ContextMenu("Dequeue AI")]
+        public void DequeueAI() {
+            if (!_aiQueue.Queue.Contains(this)) {
+                Debug.Log("Queue does not contains " + gameObject.name + " AI");
+            }
+            else if (_aiQueue.Dequeued.Contains(this)) {
+                Debug.Log("AI " + gameObject.name + " is already in dequeue process");
+            }
+            else {
+                _aiQueue.Dequeued.Add(this);
+            }
         }
-
+        
         /// <summary>
-        /// Clear all process from the AI queue
+        /// Use this method to pause/unpause the AI queue
         /// </summary>
-        [ContextMenu("Clear Queue")]
-        public static void ClearQueue() {
-            AIQueue.Queue.Clear();
+        [ContextMenu("Pause/Unpause queue")]
+        public void PauseQueue() {
+            _aiQueue.IsPaused = !_aiQueue.IsPaused;
         }
-
+        
+        /// <summary>
+        /// Use this method to stop the AI queue
+        /// </summary>
+        [ContextMenu("Stop queue")]
+        public void StopQueue() {
+            _aiQueue.IsStopped = true;
+        }
+        
         internal void ThinkAndAct() {
             WeightedOptions.Clear();
             foreach (AIBrainGraph aiBrain in LocalAIBrains.Where(brainGraph => brainGraph != null)) {

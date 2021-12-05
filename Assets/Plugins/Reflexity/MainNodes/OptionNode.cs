@@ -4,7 +4,6 @@ using System.Linq;
 using Plugins.Reflexity.DataNodes;
 using Plugins.Reflexity.Framework;
 using UnityEngine;
-using UnityEngine.Serialization;
 using XNode;
 
 namespace Plugins.Reflexity.MainNodes {

@@ -257,6 +257,7 @@
               <e p="AIAction.cs" t="Include" />
               <e p="AIBrainGraph.cs" t="Include" />
               <e p="AIOption.cs" t="Include" />
+              <e p="AIQueue.cs" t="Include" />
               <e p="DataNode.cs" t="Include" />
               <e p="Editor" t="Include">
                 <e p="AiDebuggerEditorWindow.cs" t="Include" />
@@ -268,7 +269,6 @@
               <e p="Parameter.cs" t="Include" />
               <e p="ReflectionData.cs" t="Include" />
               <e p="ReflexityAI.cs" t="Include" />
-              <e p="ReflexityManager.cs" t="Include" />
               <e p="SerializableDictionary.cs" t="Include" />
               <e p="SerializableInfo.cs" t="Include" />
             </e>

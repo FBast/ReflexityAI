@@ -27,13 +27,10 @@ namespace Examples.TankArena.Scripts.Entities {
         public Renderer LeftTrackMeshRender;
         public Renderer FactionFlag;
         public GameObject TurretCamera;
-
+        
         [Header("SO References")] 
         public MatchReference CurrentMatchReference;
-        public GameObjectListReference WaypointsReference;
-        public GameObjectListReference TanksReference;
-        public GameObjectListReference BonusReference;
-        
+
         [Header("SO Events")] 
         public VoidEvent OnMatchFinished;
         
@@ -48,9 +45,11 @@ namespace Examples.TankArena.Scripts.Entities {
         
         [Header("Debug Only")]
         public TankEntity Target;
-        public Transform Destination;
+        public Vector3 Destination;
         public int MaxHp;
         public int CurrentHp;
+        
+        public static List<TankEntity> TankEntities = new List<TankEntity>();
         
         private NavMeshAgent _navMeshAgent;
         private TankAI _tankAi;
@@ -64,10 +63,6 @@ namespace Examples.TankArena.Scripts.Entities {
         private int _waypointRadius;
         private readonly Collider[] _hitColliders = new Collider[10];
         
-        public Transform Transform => transform;
-        public bool IsShellLoaded => _timeSinceLastShot >= _reloadTime;
-        public bool IsDead => CurrentHp <= 0;
-
         public Team Team { get; private set; }
         
         public TankEntity TankInSight {
@@ -77,8 +72,12 @@ namespace Examples.TankArena.Scripts.Entities {
             }
         }
         
-        public List<GameObject> Aggressors => TanksReference.Value
+        public Transform Transform => transform;
+        public bool IsShellLoaded => _timeSinceLastShot >= _reloadTime;
+        public bool IsDead => CurrentHp <= 0;
+        public List<TankEntity> Aggressors => TankEntities
             .Where(go => go != null && go.GetComponent<TankEntity>().Target == this).ToList();
+        
         private int TotalDamages => MaxHp - CurrentHp;
         private float DamagePercent => (float) TotalDamages / MaxHp;
         private bool IsAtDestination => _navMeshAgent.remainingDistance < Mathf.Infinity &&
@@ -88,6 +87,7 @@ namespace Examples.TankArena.Scripts.Entities {
         private void Awake() {
             _navMeshAgent = GetComponent<NavMeshAgent>();
             _tankAi = GetComponent<TankAI>();
+            TankEntities.Add(this);
             _navMeshAgent.speed = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.TankSpeed, GlobalProperties.PlayerPrefsDefault.TankSpeed);
             _canonDamage = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.CanonDamage, GlobalProperties.PlayerPrefsDefault.CanonDamage);
             _canonPower = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.CanonPower, GlobalProperties.PlayerPrefsDefault.CanonPower);
@@ -98,6 +98,10 @@ namespace Examples.TankArena.Scripts.Entities {
             _waypointRadius = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.WaypointSeekRadius, GlobalProperties.PlayerPrefsDefault.WaypointSeekRadius);
             MaxHp = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.HealthPoints, GlobalProperties.PlayerPrefsDefault.HealthPoints);
             CurrentHp = MaxHp;
+        }
+
+        private void OnDestroy() {
+            TankEntities.Remove(this);
         }
 
         public void Init(TankSetting setting, Team team) {
@@ -130,7 +134,7 @@ namespace Examples.TankArena.Scripts.Entities {
                 Turret.rotation = Quaternion.LookRotation(newDir);
                 Turret.eulerAngles = new Vector3(0, Turret.eulerAngles.y, 0);
             }
-            if (Destination) {
+            if (Destination != Vector3.zero) {
                 Vector3[] pathCorners = _navMeshAgent.path.corners;
                 if (pathCorners.Length > 0) {
                     Debug.DrawLine(transform.position, pathCorners[0], Color.green);
@@ -138,8 +142,8 @@ namespace Examples.TankArena.Scripts.Entities {
                         Debug.DrawLine(pathCorners[i - 1], pathCorners[i], Color.green);
                     }
                 }
-                _navMeshAgent.SetDestination(Destination.position);
-                if (IsAtDestination) Destination = null;
+                _navMeshAgent.SetDestination(Destination);
+                if (IsAtDestination) Destination = Vector3.zero;
             }
             SmokeSetter.SetEmissionPercent(DamagePercent);
             FireSetter.SetEmissionPercent(DamagePercent < 0.5 ? 0 : DamagePercent * 2);
@@ -155,7 +159,7 @@ namespace Examples.TankArena.Scripts.Entities {
             instantiate.GetComponent<ShellEntity>().Damage = _canonDamage;
             _timeSinceLastShot = 0;
         }
-
+        
         public void DamageByShot(ShellEntity shell) {
             CurrentHp -= shell.Damage;
             CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += shell.Damage;
@@ -175,7 +179,7 @@ namespace Examples.TankArena.Scripts.Entities {
             else
                 CurrentMatchReference.Value.TeamStats[tank.Team].DamageDone += tank._explosionDamage;
             if (CurrentHp > 0) return;
-            Die(tank);
+            Die(tank, true);
         }
 
         private void Die(TankEntity killer, bool noExplosion = false) {
@@ -202,8 +206,6 @@ namespace Examples.TankArena.Scripts.Entities {
             if (PlayerPrefsUtils.GetBool(GlobalProperties.PlayerPrefs.ExplosionCreateBustedTank, 
                 GlobalProperties.PlayerPrefsDefault.ExplosionCreateBustedTank))
                 Instantiate(BustedTankPrefab, transform.position, transform.rotation);
-            // Remove from list
-            TanksReference.Value.Remove(gameObject);
             // Disable object
             gameObject.SetActive(false);
         }
@@ -213,8 +215,8 @@ namespace Examples.TankArena.Scripts.Entities {
             if (CurrentHp > MaxHp) CurrentHp = MaxHp;
         }
 
-        public List<GameObject> SeekWaypointInRadius() {
-            return WaypointsReference.Value
+        public List<WaypointEntity> SeekWaypointInRadius() {
+            return WaypointEntity.WaypointEntities
                 .Where(go => Vector3.Distance(transform.position, go.transform.position) < _waypointRadius).ToList();
         }
 

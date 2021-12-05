@@ -35,9 +35,10 @@ namespace Examples.TankArena.Scripts.Framework {
         private void GenerateTankTeam(Team team, Transform centerPosition) {
             // Generate
             List<GameObject> tanks = new List<GameObject>();
-            foreach (TankSetting tankSetting in team.TankSettings) {
+            for (int i = 0; i < team.TankSettings.Count; i++) {
                 GameObject instantiate = Instantiate(TankPrefab, centerPosition.position, Quaternion.identity, TankContent);
-                instantiate.GetComponent<TankEntity>().Init(tankSetting, team);
+                instantiate.GetComponent<TankEntity>().Init(team.TankSettings[i], team);
+                instantiate.name = team.TeamName + " Tank " + i;
                 tanks.Add(instantiate);
             }
             // Setup position
