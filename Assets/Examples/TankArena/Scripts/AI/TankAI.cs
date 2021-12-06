@@ -10,9 +10,6 @@ namespace Examples.TankArena.Scripts.AI {
 
         // Your custom references here
         [HideInInspector] public TankEntity TankEntity;
-        public FactionType AllyFactionType = FactionType.Ally;
-        public FactionType EnemyFactionType = FactionType.Enemy;
-        public FactionType AllFactionType = FactionType.All;
 
         public IEnumerable<BonusEntity> BonusEntities => BonusEntity.BonusEntities;
         public IEnumerable<TankEntity> TankEntities => TankEntity.TankEntities;
@@ -21,8 +18,6 @@ namespace Examples.TankArena.Scripts.AI {
             .Where(entity => entity.GetFaction(TankEntity) == FactionType.Enemy);
         public IEnumerable<TankEntity> AllyTankEntities => TankEntities
             .Where(entity => entity.GetFaction(TankEntity) == FactionType.Ally);
-
-
         // End of custom references
 
         private void Awake() {

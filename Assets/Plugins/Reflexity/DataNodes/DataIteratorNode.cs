@@ -56,7 +56,9 @@ namespace Plugins.Reflexity.DataNodes {
         
         public override void OnRemoveConnection(NodePort port) {
             if (port.fieldName == nameof(Enumerable) && port.node == this) {
-                ClearDynamicPorts();
+                foreach (NodePort nodePort in GetOutputPort(ArgumentType.Name).GetConnections()) {
+                    nodePort.ClearConnections();
+                }
                 _argumentType = null;
                 _argumentTypeName = string.Empty;
             }
@@ -72,17 +74,17 @@ namespace Plugins.Reflexity.DataNodes {
             }
         }
         
-        private IEnumerable<object> GetCollection() {
-            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Enumerable));
-            return (IEnumerable<object>) reflectionData.Value;
-        }
-
         public void ClearCache() {
             _cachedCurrentValue = null;
         }
 
         public void ClearShortCache() {
             _cachedCurrentValue = null;
+        }
+        
+        private IEnumerable<object> GetCollection() {
+            ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Enumerable));
+            return (IEnumerable<object>) reflectionData.Value;
         }
         
     }

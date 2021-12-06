@@ -6,8 +6,8 @@ namespace Plugins.Reflexity.MiddleNodes {
     [CreateNodeMenu("Reflexity/Middle/Distance")]
     public class DistanceNode : MiddleNode {
         
-        [Input(ShowBackingValue.Never)] public Vector3 FirstValueIn;
-        [Input(ShowBackingValue.Never)] public Vector3 SecondValueIn;
+        [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Strict)] public Vector3 FirstValueIn;
+        [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Strict)] public Vector3 SecondValueIn;
         [Output] public float ValueOut;
         
         public override object GetValue(NodePort port) {

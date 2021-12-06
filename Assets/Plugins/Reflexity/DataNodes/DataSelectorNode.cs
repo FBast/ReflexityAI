@@ -23,6 +23,36 @@ namespace Plugins.Reflexity.DataNodes {
             }
         }
 
+        public override void OnRemoveConnection(NodePort port) {
+            if (port.fieldName == nameof(Data)) {
+                foreach (NodePort nodePort in GetPort(nameof(Output)).GetConnections()) {
+                    nodePort.ClearConnections();
+                }
+                SerializableInfos.Clear();
+                SelectedSerializableInfo = null;
+                ChoiceIndex = 0;
+                ChoiceName = string.Empty;
+            }
+        }
+
+        public override object GetValue(NodePort port) {
+            if (port.fieldName == nameof(Output)) {
+                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
+                return Application.isPlaying
+                    ? SelectedSerializableInfo.GetRuntimeValue(reflectionData.Value)
+                    : SelectedSerializableInfo.GetEditorValue();
+            }
+            return null;
+        }
+        
+        public void ClearCache() {
+            SelectedSerializableInfo.ClearCache();
+        }
+
+        public void ClearShortCache() {
+            if (SelectedSerializableInfo.IsShortCache) SelectedSerializableInfo.ClearCache();
+        }
+        
         private void OnValidate() {
             UpdateReflectedData();
         }
@@ -38,32 +68,5 @@ namespace Plugins.Reflexity.DataNodes {
                 .Select(info => new SerializableInfo(info, reflectionData.FromIteration)));
         }
 
-        public override void OnRemoveConnection(NodePort port) {
-            if (port.fieldName == nameof(Data)) {
-                SerializableInfos.Clear();
-                SelectedSerializableInfo = null;
-                ChoiceIndex = 0;
-                ChoiceName = string.Empty;
-                GetPort(nameof(Output)).ClearConnections();
-            }
-        }
-        
-        public override object GetValue(NodePort port) {
-            if (port.fieldName == nameof(Output)) {
-                ReflectionData reflectionData = GetInputValue<ReflectionData>(nameof(Data));
-                return Application.isPlaying
-                    ? SelectedSerializableInfo.GetRuntimeValue(reflectionData.Value)
-                    : SelectedSerializableInfo.GetEditorValue();
-            }
-            return null;
-        }
-
-        public void ClearCache() {
-            SelectedSerializableInfo.ClearCache();
-        }
-
-        public void ClearShortCache() {
-            if (SelectedSerializableInfo.IsShortCache) SelectedSerializableInfo.ClearCache();
-        }
     }
 }
