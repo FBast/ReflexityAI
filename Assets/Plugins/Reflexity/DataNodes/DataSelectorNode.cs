@@ -15,7 +15,6 @@ namespace Plugins.Reflexity.DataNodes {
         [HideInInspector] public SerializableInfo SelectedSerializableInfo;
         [HideInInspector] public List<SerializableInfo> SerializableInfos = new List<SerializableInfo>();
         [HideInInspector] public int ChoiceIndex;
-        [HideInInspector] public string ChoiceName;
 
         public override void OnCreateConnection(NodePort from, NodePort to) {
             if (to.fieldName == nameof(Data) && to.node == this) {
@@ -30,8 +29,6 @@ namespace Plugins.Reflexity.DataNodes {
                 }
                 SerializableInfos.Clear();
                 SelectedSerializableInfo = null;
-                // ChoiceIndex = 0;
-                // ChoiceName = string.Empty;
             }
         }
 

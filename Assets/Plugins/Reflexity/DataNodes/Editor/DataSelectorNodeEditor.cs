@@ -14,28 +14,28 @@ namespace Plugins.Reflexity.DataNodes.Editor {
             serializedObject.Update();
             if (_dataSelectorNode.SerializableInfos.Count > 0) {
                 string[] choices = _dataSelectorNode.SerializableInfos.Select(info => info.Name).ToArray();
-                // If the choiceName does not match the choiceIndex and the choiceName is not empty
-                if (_dataSelectorNode.ChoiceName != choices[_dataSelectorNode.ChoiceIndex] &&
-                    _dataSelectorNode.ChoiceName != string.Empty) {
-                    // Disconnect Data port
-                    _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Data)).ClearConnections();
-                } else {
-                    // If the last index is retrieved then process
-                    _dataSelectorNode.ChoiceIndex = EditorGUILayout.Popup(_dataSelectorNode.ChoiceIndex, choices);
-                    _dataSelectorNode.ChoiceName = choices[_dataSelectorNode.ChoiceIndex];
-                    _dataSelectorNode.SelectedSerializableInfo = _dataSelectorNode.SerializableInfos
-                        .ElementAt(_dataSelectorNode.ChoiceIndex);
-                    NodePort dataPort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Data));
-                    NodeEditorGUILayout.AddPortField(dataPort);
-                    NodePort nodePort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Output));
-                    nodePort.ValueType = _dataSelectorNode.SelectedSerializableInfo.Type;
-                    NodeEditorGUILayout.AddPortField(nodePort);
+                int choiceIndex = EditorGUILayout.Popup(_dataSelectorNode.ChoiceIndex, choices);
+                if (choiceIndex != _dataSelectorNode.ChoiceIndex) {
+                    UpdateChoice(choiceIndex);
                 }
+                _dataSelectorNode.SelectedSerializableInfo = _dataSelectorNode.SerializableInfos.ElementAt(_dataSelectorNode.ChoiceIndex);
+                NodePort dataPort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Data));
+                NodeEditorGUILayout.AddPortField(dataPort);
+                NodePort outputPort = _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Output));
+                outputPort.ValueType = _dataSelectorNode.SelectedSerializableInfo.Type;
+                NodeEditorGUILayout.AddPortField(outputPort);
             }
             else {
                 NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_dataSelectorNode.Data)));
             }
             serializedObject.ApplyModifiedProperties();
+        }
+        
+        public void UpdateChoice(int choiceIndex) {
+            _dataSelectorNode.ChoiceIndex = choiceIndex;
+            foreach (NodePort nodePort in _dataSelectorNode.GetPort(nameof(_dataSelectorNode.Output)).GetConnections()) {
+                nodePort.ClearConnections();
+            }
         }
         
     }

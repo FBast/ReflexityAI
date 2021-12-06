@@ -24,6 +24,8 @@ namespace Plugins.Reflexity.ActionNodes.Editor {
                 if (choiceIndex != _actionLauncherNode.ChoiceIndex) {
                     UpdateChoice(choiceIndex);
                 }
+                _actionLauncherNode.SelectedSerializableInfo = _actionLauncherNode.SerializableInfos
+                    .ElementAt(_actionLauncherNode.ChoiceIndex);
                 NodePort dataPort = _actionLauncherNode.GetPort(nameof(_actionLauncherNode.Data));
                 NodeEditorGUILayout.AddPortField(dataPort);
                 NodePort linkedOptionPort = _actionLauncherNode.GetPort(nameof(_actionLauncherNode.LinkedOption));
@@ -36,8 +38,6 @@ namespace Plugins.Reflexity.ActionNodes.Editor {
         
         public void UpdateChoice(int choiceIndex) {
             _actionLauncherNode.ChoiceIndex = choiceIndex;
-            _actionLauncherNode.SelectedSerializableInfo = _actionLauncherNode.SerializableInfos
-                .ElementAt(_actionLauncherNode.ChoiceIndex);
             _actionLauncherNode.ClearDynamicPorts();
             foreach (Parameter parameter in _actionLauncherNode.SelectedSerializableInfo.Parameters) {
                 Type parameterType = Type.GetType(parameter.TypeName);
