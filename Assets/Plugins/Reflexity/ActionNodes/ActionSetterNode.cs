@@ -32,7 +32,6 @@ namespace Plugins.Reflexity.ActionNodes {
             if (port.fieldName == nameof(Data) && port.node == this) {
                 SerializableInfos.Clear();
                 SelectedSerializableInfo = null;
-                // ChoiceIndex = 0;
             }
         }
 

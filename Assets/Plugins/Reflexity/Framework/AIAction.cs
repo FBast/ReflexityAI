@@ -12,7 +12,8 @@ namespace Plugins.Reflexity.Framework {
             Action = actionNode.Execute;
             Context = actionNode.GetContext();
             Data = actionNode.GetParameters();
-            Order = actionNode.Order;
+            // NodeAction order is not implemented for now
+            Order = 0;
         }
 
     }

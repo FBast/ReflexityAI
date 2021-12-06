@@ -10,6 +10,7 @@ namespace Examples.TankArena.Scripts.AI {
 
         // Your custom references here
         [HideInInspector] public TankEntity TankEntity;
+        [HideInInspector] public BonusEntity BonusEntity;
 
         public IEnumerable<BonusEntity> BonusEntities => BonusEntity.BonusEntities;
         public IEnumerable<TankEntity> TankEntities => TankEntity.TankEntities;

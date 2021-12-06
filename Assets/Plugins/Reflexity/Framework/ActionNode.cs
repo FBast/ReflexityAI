@@ -6,8 +6,7 @@ namespace Plugins.Reflexity.Framework {
     public abstract class ActionNode : Node {
         
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public Object Data;
-        [Output(connectionType: ConnectionType.Override)] public ActionNode LinkedOption;
-        public int Order;
+        [Output(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Strict)] public ActionNode LinkedOption;
         
         public abstract void Execute(object context, object[] parameters);
         public abstract object GetContext();

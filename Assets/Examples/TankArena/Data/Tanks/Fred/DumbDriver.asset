@@ -524,6 +524,7 @@ MonoBehaviour:
     - EnnemyTankEntities (Property)
     - AllyTankEntities (Property)
     - WaypointEntities (Property)
+    - BonusEntity (Field)
     values:
     - _fieldName: TankEntity (Field)
       _node: {fileID: -973489774802397290}
@@ -593,6 +594,15 @@ MonoBehaviour:
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 1
+    - _fieldName: BonusEntity (Field)
+      _node: {fileID: -973489774802397290}
+      _typeQualifiedName: Examples.TankArena.Scripts.Entities.BonusEntity, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 1
   PortDictionary:
     keys:
     - TankEntity
@@ -601,6 +611,7 @@ MonoBehaviour:
     - EnnemyTankEntities
     - AllyTankEntities
     - WaypointEntities
+    - BonusEntity
     values:
     - TankEntity (Field)
     - BonusEntities (Property)
@@ -608,6 +619,7 @@ MonoBehaviour:
     - EnnemyTankEntities (Property)
     - AllyTankEntities (Property)
     - WaypointEntities (Property)
+    - BonusEntity (Field)
   InfoDictionary:
     keys:
     - TankEntity (Field)
@@ -616,6 +628,7 @@ MonoBehaviour:
     - EnnemyTankEntities (Property)
     - AllyTankEntities (Property)
     - WaypointEntities (Property)
+    - BonusEntity (Field)
     values:
     - MemberTypes: 4
       DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
@@ -688,6 +701,17 @@ MonoBehaviour:
       IsIteratable: 1
       IsPrimitive: 0
       Parameters: []
+    - MemberTypes: 4
+      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Name: BonusEntity
+      TypeName: Examples.TankArena.Scripts.Entities.BonusEntity, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      PortName: BonusEntity (Field)
+      Order: 67109064
+      IsIteratable: 0
+      IsPrimitive: 0
+      Parameters: []
   _declaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
     Culture=neutral, PublicKeyToken=null
 --- !u!114 &11400000
@@ -709,10 +733,10 @@ MonoBehaviour:
   - {fileID: -973489774802397290}
   - {fileID: 1247785758557392595}
   - {fileID: 7730413262766031456}
-  - {fileID: 5725050692500596065}
   - {fileID: 6038094014334709581}
   - {fileID: -1445356624111236547}
   - {fileID: -4821338635641268499}
+  - {fileID: 5725050692500596065}
   HistoricTags: []
   MemoryTags: []
 --- !u!114 &1247785758557392595
@@ -832,7 +856,7 @@ MonoBehaviour:
   m_Name: Distance
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1992, y: -888}
+  position: {x: 1992, y: -872}
   ports:
     keys:
     - SecondValueIn
@@ -908,7 +932,7 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 0
       _connectionType: 1
-      _typeConstraint: 0
+      _typeConstraint: 2
       _dynamic: 0
     - _fieldName: Data
       _node: {fileID: 5725050692500596065}
@@ -932,11 +956,10 @@ MonoBehaviour:
         reroutePoints: []
       _direction: 1
       _connectionType: 1
-      _typeConstraint: 0
+      _typeConstraint: 2
       _dynamic: 0
   Data: {fileID: 0}
   LinkedOption: {fileID: 0}
-  Order: 0
   Value: {fileID: 0}
   SelectedSerializableInfo:
     MemberTypes: 4
@@ -1682,11 +1705,11 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: Value
-        node: {fileID: 5725050692500596065}
-        reroutePoints: []
       - fieldName: FirstValueIn
         node: {fileID: 3529683048803666886}
+        reroutePoints: []
+      - fieldName: Value
+        node: {fileID: 5725050692500596065}
         reroutePoints: []
       _direction: 1
       _connectionType: 0

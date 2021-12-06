@@ -30,8 +30,8 @@ namespace Plugins.Reflexity.DataNodes {
                 }
                 SerializableInfos.Clear();
                 SelectedSerializableInfo = null;
-                ChoiceIndex = 0;
-                ChoiceName = string.Empty;
+                // ChoiceIndex = 0;
+                // ChoiceName = string.Empty;
             }
         }
 

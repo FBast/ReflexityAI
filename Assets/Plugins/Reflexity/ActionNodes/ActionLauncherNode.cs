@@ -26,6 +26,7 @@ namespace Plugins.Reflexity.ActionNodes {
             base.OnRemoveConnection(port);
             if (port.fieldName == nameof(Data) && port.node == this) {
                 SerializableInfos.Clear();
+                SelectedSerializableInfo = null;
             }
         }
 
