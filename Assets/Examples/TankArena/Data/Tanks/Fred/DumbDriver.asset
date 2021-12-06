@@ -37,7 +37,10 @@ MonoBehaviour:
       _node: {fileID: -4821338635641268499}
       _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: DataIteratorNode
+        node: {fileID: -4255651049643908595}
+        reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 1
@@ -84,7 +87,10 @@ MonoBehaviour:
       _node: {fileID: -4255651049643908595}
       _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
+      connections:
+      - fieldName: LinkedOption
+        node: {fileID: -4821338635641268499}
+        reroutePoints: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -513,9 +519,6 @@ MonoBehaviour:
   ports:
     keys:
     - TankEntity (Field)
-    - AllyFactionType (Field)
-    - EnemyFactionType (Field)
-    - AllFactionType (Field)
     - BonusEntities (Property)
     - TankEntities (Property)
     - EnnemyTankEntities (Property)
@@ -533,33 +536,6 @@ MonoBehaviour:
       - fieldName: Data
         node: {fileID: 5725050692500596065}
         reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: AllyFactionType (Field)
-      _node: {fileID: -973489774802397290}
-      _typeQualifiedName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: EnemyFactionType (Field)
-      _node: {fileID: -973489774802397290}
-      _typeQualifiedName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 1
-    - _fieldName: AllFactionType (Field)
-      _node: {fileID: -973489774802397290}
-      _typeQualifiedName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -620,9 +596,6 @@ MonoBehaviour:
   PortDictionary:
     keys:
     - TankEntity
-    - AllyFactionType
-    - EnemyFactionType
-    - AllFactionType
     - BonusEntities
     - TankEntities
     - EnnemyTankEntities
@@ -630,9 +603,6 @@ MonoBehaviour:
     - WaypointEntities
     values:
     - TankEntity (Field)
-    - AllyFactionType (Field)
-    - EnemyFactionType (Field)
-    - AllFactionType (Field)
     - BonusEntities (Property)
     - TankEntities (Property)
     - EnnemyTankEntities (Property)
@@ -641,9 +611,6 @@ MonoBehaviour:
   InfoDictionary:
     keys:
     - TankEntity (Field)
-    - AllyFactionType (Field)
-    - EnemyFactionType (Field)
-    - AllFactionType (Field)
     - BonusEntities (Property)
     - TankEntities (Property)
     - EnnemyTankEntities (Property)
@@ -658,39 +625,6 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       PortName: TankEntity (Field)
       Order: 67109063
-      IsIteratable: 0
-      IsPrimitive: 0
-      Parameters: []
-    - MemberTypes: 4
-      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      Name: AllyFactionType
-      TypeName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      PortName: AllyFactionType (Field)
-      Order: 67109064
-      IsIteratable: 0
-      IsPrimitive: 0
-      Parameters: []
-    - MemberTypes: 4
-      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      Name: EnemyFactionType
-      TypeName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      PortName: EnemyFactionType (Field)
-      Order: 67109065
-      IsIteratable: 0
-      IsPrimitive: 0
-      Parameters: []
-    - MemberTypes: 4
-      DeclaringTypeName: Examples.TankArena.Scripts.AI.TankAI, Assembly-CSharp, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      Name: AllFactionType
-      TypeName: Examples.TankArena.Scripts.Framework.FactionType, Assembly-CSharp,
-        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      PortName: AllFactionType (Field)
-      Order: 67109066
       IsIteratable: 0
       IsPrimitive: 0
       Parameters: []
@@ -814,7 +748,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 1247785758557392595}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
+      _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Data
@@ -901,22 +835,10 @@ MonoBehaviour:
   position: {x: 1992, y: -888}
   ports:
     keys:
-    - FirstValueIn
     - SecondValueIn
+    - FirstValueIn
     - ValueOut
     values:
-    - _fieldName: FirstValueIn
-      _node: {fileID: 3529683048803666886}
-      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Output
-        node: {fileID: 7730413262766031456}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
     - _fieldName: SecondValueIn
       _node: {fileID: 3529683048803666886}
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -926,8 +848,20 @@ MonoBehaviour:
         node: {fileID: -1445356624111236547}
         reroutePoints: []
       _direction: 0
-      _connectionType: 0
-      _typeConstraint: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: FirstValueIn
+      _node: {fileID: 3529683048803666886}
+      _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: Output
+        node: {fileID: 7730413262766031456}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
       _dynamic: 0
     - _fieldName: ValueOut
       _node: {fileID: 3529683048803666886}
@@ -1748,11 +1682,11 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: FirstValueIn
-        node: {fileID: 3529683048803666886}
-        reroutePoints: []
       - fieldName: Value
         node: {fileID: 5725050692500596065}
+        reroutePoints: []
+      - fieldName: FirstValueIn
+        node: {fileID: 3529683048803666886}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
