@@ -9,7 +9,7 @@ namespace Plugins.Reflexity.ActionNodes {
     [CreateNodeMenu("Reflexity/Action/Setter")]
     public class ActionSetterNode : ActionNode {
 
-        [Input(ShowBackingValue.Never, ConnectionType.Override)] public Object Value;
+        [Input(ShowBackingValue.Never, ConnectionType.Override, TypeConstraint.Strict)] public Object Value;
         [HideInInspector] public SerializableInfo SelectedSerializableInfo;
         [HideInInspector] public List<SerializableInfo> SerializableInfos = new List<SerializableInfo>();
         [HideInInspector] public int ChoiceIndex;
@@ -31,6 +31,8 @@ namespace Plugins.Reflexity.ActionNodes {
             base.OnRemoveConnection(port);
             if (port.fieldName == nameof(Data) && port.node == this) {
                 SerializableInfos.Clear();
+                SelectedSerializableInfo = null;
+                // ChoiceIndex = 0;
             }
         }
 
