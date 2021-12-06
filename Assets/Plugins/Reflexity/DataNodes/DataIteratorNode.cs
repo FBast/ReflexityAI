@@ -19,7 +19,7 @@ namespace Plugins.Reflexity.DataNodes {
         public Type _argumentType;
         public Type ArgumentType {
             get {
-                if (_argumentType == null && _argumentTypeName != null) {
+                if (_argumentType == null && _argumentTypeName != string.Empty) {
                     _argumentType = Type.GetType(_argumentTypeName);
                 }
                 return _argumentType;
@@ -56,7 +56,9 @@ namespace Plugins.Reflexity.DataNodes {
         
         public override void OnRemoveConnection(NodePort port) {
             if (port.fieldName == nameof(Enumerable) && port.node == this) {
-                RemoveDynamicPort(ArgumentType.Name);
+                ClearDynamicPorts();
+                _argumentType = null;
+                _argumentTypeName = string.Empty;
             }
         }
 

@@ -24,10 +24,7 @@ MonoBehaviour:
       _node: {fileID: -8375299939493503399}
       _typeQualifiedName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: TankEntity
-        node: {fileID: -5648708492508959291}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 0
@@ -987,8 +984,8 @@ MonoBehaviour:
       - fieldName: Data
         node: {fileID: -6768309573980539026}
         reroutePoints: []
-      - fieldName: Value
-        node: {fileID: -8375299939493503399}
+      - fieldName: Data
+        node: {fileID: 5824371377897712951}
         reroutePoints: []
       - fieldName: Data
         node: {fileID: 5229758820806433460}
@@ -1024,10 +1021,7 @@ MonoBehaviour:
       _node: {fileID: -5545843161644487597}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Output
-        node: {fileID: 5824371377897712951}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 1
@@ -1607,9 +1601,6 @@ MonoBehaviour:
       connections:
       - fieldName: Data
         node: {fileID: -8375299939493503399}
-        reroutePoints: []
-      - fieldName: Data
-        node: {fileID: 5824371377897712951}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3058,8 +3049,8 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: TankEntity (Field)
-        node: {fileID: -2913901877822243946}
+      - fieldName: TankEntity
+        node: {fileID: -5648708492508959291}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -3069,10 +3060,7 @@ MonoBehaviour:
       _node: {fileID: 5824371377897712951}
       _typeQualifiedName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-      connections:
-      - fieldName: Data
-        node: {fileID: -5545843161644487597}
-        reroutePoints: []
+      connections: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 0
@@ -3080,14 +3068,14 @@ MonoBehaviour:
   Data: {fileID: 0}
   Output: {fileID: 0}
   SelectedSerializableInfo:
-    MemberTypes: 16
+    MemberTypes: 4
     DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: Transform
+    Name: CanonOut
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-    PortName: Transform (Property)
-    Order: 385875980
+    PortName: CanonOut (Field)
+    Order: 67109007
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3409,8 +3397,8 @@ MonoBehaviour:
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
-  ChoiceIndex: 25
-  ChoiceName: Transform
+  ChoiceIndex: 0
+  ChoiceName: CanonOut
 --- !u!114 &6047106079854313704
 MonoBehaviour:
   m_ObjectHideFlags: 0
