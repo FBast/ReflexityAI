@@ -1,6 +1,6 @@
 using XNode;
 
 namespace Plugins.Reflexity.Framework {
-    [NodeTint(31, 122, 31)]
+    [NodeTint(53, 212, 69)]
     public abstract class DataNode : Node {}
 }

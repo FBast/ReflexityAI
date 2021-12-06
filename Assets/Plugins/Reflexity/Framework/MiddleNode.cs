@@ -1,6 +1,6 @@
 ﻿using XNode;
 
 namespace Plugins.Reflexity.Framework {
-    [NodeTint(31, 54, 122)]
+    [NodeTint(53, 190, 212)]
     public abstract class MiddleNode : Node {}
 }

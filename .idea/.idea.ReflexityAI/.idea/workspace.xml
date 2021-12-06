@@ -21,13 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbGunner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbGunner.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/FactionType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/FactionType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataIteratorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataIteratorNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/DistanceNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/DistanceNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ActionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/DataNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/DataNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/MiddleNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/MiddleNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,9 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/AI/TankGraph.cs" />
@@ -132,7 +126,6 @@
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/CameraSwitchUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/BonusEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/WaypointEntity.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIOption.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Entities/TankEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ReflexityManager.cs" />
@@ -149,6 +142,10 @@
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataSelectorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/DataIteratorNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataSelectorNodeEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/MiddleNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/DataNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/OptionNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/ActionNode.cs" />
       </list>
     </option>
   </component>
@@ -236,7 +233,7 @@
       <workItem from="1638637205401" duration="2387000" />
       <workItem from="1638704018527" duration="17794000" />
       <workItem from="1638743423929" duration="891000" />
-      <workItem from="1638798108281" duration="4963000" />
+      <workItem from="1638798108281" duration="5563000" />
     </task>
     <servers />
   </component>
@@ -362,15 +359,15 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1638743775315" />
-    <state x="-1317" y="119" width="714" height="801" key="find.popup" timestamp="1638717101831">
+    <state x="-1317" y="119" width="714" height="801" key="find.popup" timestamp="1638808664494">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1317" y="119" width="714" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1638717101831" />
+    <state x="-1317" y="119" width="714" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1638808664494" />
     <state x="2523" y="119" width="714" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638536211386" />
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638808091335">
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1638808760376">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1638808091335" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1638808760376" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1638798719886" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1638547617165" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638543066670" />

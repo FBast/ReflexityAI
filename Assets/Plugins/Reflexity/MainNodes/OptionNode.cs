@@ -7,7 +7,7 @@ using UnityEngine;
 using XNode;
 
 namespace Plugins.Reflexity.MainNodes {
-    [CreateNodeMenu("Reflexity/Main/Option"), NodeWidth(300), NodeTint(122, 122, 31)]
+    [CreateNodeMenu("Reflexity/Main/Option"), NodeWidth(300), NodeTint(212, 206, 53)]
     public class OptionNode : Node {
 
         public enum MergeType {
