@@ -19,7 +19,7 @@ namespace XNode {
             }
         }
 
-        public IO direction {
+        public IO direction { 
             get { return _direction; }
             internal set { _direction = value; }
         }
