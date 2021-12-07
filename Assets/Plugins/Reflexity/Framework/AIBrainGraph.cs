@@ -24,13 +24,7 @@ namespace Plugins.Reflexity.Framework {
                 cacheable.ClearCache();
             }
         }
-        
-        public void ClearShortCache() {
-            foreach (ICacheable cacheable in GetNodes<ICacheable>()) {
-                cacheable.ClearShortCache();
-            }
-        }
-        
+
     }
     /// <summary>
     /// Inherit from this class if you want to create an AI brain graph

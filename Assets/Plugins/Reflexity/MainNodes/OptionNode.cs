@@ -29,11 +29,11 @@ namespace Plugins.Reflexity.MainNodes {
         
         [Header("Weighting")] 
         [Input, Tooltip("Product of the multiplier"), Range(0, 10)] public int Multiplier = 1;
-        [Input, Tooltip("Sum of the bonus"), Range(1, 10)] public int Bonus;
+        [Input, Tooltip("Sum of the bonus"), Range(1, 10)] public int Bonus = 1;
         
         [Space] [Input(ShowBackingValue.Never), Tooltip("Connect to each Action Nodes")]
         public ActionNode Actions;
-        
+
         public List<AIOption> GetOptions() {
             List<AIOption> options = new List<AIOption>();
             DataIteratorNode iteratorNode = GetInputPort(nameof(DataIteratorNode)).GetInputValue<DataIteratorNode>();
@@ -41,7 +41,7 @@ namespace Plugins.Reflexity.MainNodes {
                 int collectionSize = iteratorNode.CollectionCount;
                 AIBrainGraph brainGraph = (AIBrainGraph) graph;
                 while (collectionSize > iteratorNode.Index) {
-                    options.Add(new AIOption(this));
+                    options.Add(new AIOption(this, iteratorNode));
                     iteratorNode.Index++;
                     brainGraph.ClearCache();
                 }

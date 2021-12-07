@@ -10,9 +10,6 @@ namespace Examples.TankArena.Scripts.Entities {
         
         [Header("SO References")]
         public MatchReference MatchReference;
-        
-        [Header("Parameters")]
-        public int Healing;
 
         public static List<BonusEntity> BonusEntities = new List<BonusEntity>();
         

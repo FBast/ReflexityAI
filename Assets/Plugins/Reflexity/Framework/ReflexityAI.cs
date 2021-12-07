@@ -119,16 +119,8 @@ namespace Plugins.Reflexity.Framework {
                     }
                 }
             }
-            // Else calculate options rank
+            // Else calculate overall ranks
             else {
-                // Calculate options rank
-                foreach (KeyValuePair<AIBrainGraph,List<AIOption>> valuePair in BestWeightedOptions) {
-                    foreach (AIOption aiOption in valuePair.Value) {
-                        valuePair.Key.ClearShortCache();
-                        aiOption.CalculateRank();
-                    }
-                }
-                // Calculate overall ranks
                 CalculateOverallRanks(BestWeightedOptions);
                 // Fetch selected options according to multi brain interaction and options resolution
                 SelectOptionsOnOverallRank(BestWeightedOptions, SelectedOptions);

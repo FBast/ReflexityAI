@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Plugins.Reflexity.DataNodes;
 using Plugins.Reflexity.MainNodes;
 using Object = UnityEngine.Object;
 
@@ -15,31 +16,19 @@ namespace Plugins.Reflexity.Framework {
         public float OverallRank;
         public float Probability;
         public string Description;
-        public int IteratorIndex;
-        public bool IsRanked;
 
-        public AIOption(OptionNode optionNode) {
+        public AIOption(OptionNode optionNode, DataIteratorNode dataIteratorNode = null) {
             // Saving linked optionNode
             OptionNode = optionNode;
             Description = OptionNode.Description;
             // Calculate weight
             Weight = OptionNode.GetWeight();
+            // Calculate rank
+            Rank = OptionNode.GetRank();
             // Fetch actions
             foreach (ActionNode actionNode in OptionNode.GetActions()) {
                 AiActions.Add(new AIAction(actionNode));
             }
-            // Saving iterator current output
-            if (OptionNode.DataIteratorNode != null) {
-                IteratorIndex = OptionNode.DataIteratorNode.Index;
-            }
-        }
-
-        public void CalculateRank() {
-            if (OptionNode.DataIteratorNode != null) {
-                OptionNode.DataIteratorNode.Index = IteratorIndex;
-            }
-            Rank = OptionNode.GetRank();
-            IsRanked = true;
         }
 
         public void ExecuteActions() {
@@ -60,10 +49,8 @@ namespace Plugins.Reflexity.Framework {
                     
                 }
             }
-            if (IsRanked) 
-                return description + " - Weight(" + Weight + ") | Rank (" + Rank + ") | " +
-                       "OverallRank (" + OverallRank + ") | Probability(" + Probability + ")";
-            return description + " - Weight (" + Weight + ") = Probability(" + Probability + ")";
+            return description + " - Weight (" + Weight + ") | Rank (" + Rank + ") | " +
+                   "OverallRank (" + OverallRank + ") | Probability(" + Probability + ")";
         }
 
     }

@@ -77,7 +77,7 @@ namespace Examples.TankArena.Scripts.Entities {
         public bool IsDead => CurrentHp <= 0;
         public List<TankEntity> Aggressors => TankEntities
             .Where(go => go != null && go.GetComponent<TankEntity>().Target == this).ToList();
-        
+        public int AgressorsCount => Aggressors.Count;
         private int TotalDamages => MaxHp - CurrentHp;
         private float DamagePercent => (float) TotalDamages / MaxHp;
         private bool IsAtDestination => _navMeshAgent.remainingDistance < Mathf.Infinity &&
@@ -115,7 +115,6 @@ namespace Examples.TankArena.Scripts.Entities {
             FactionFlag.material.color = team.Color;
             _tankAi.AIBrains = setting.Brains;
             _tankAi.Init();
-            _tankAi.EnqueueAI();
         }
         
         private void OnDrawGizmos() {
