@@ -14955,12 +14955,6 @@ MonoBehaviour:
   TurretCamera: {fileID: 7043326029204013415}
   CurrentMatchReference:
     Variable: {fileID: 11400000, guid: 5405124dea616db4eb2bce7fa8bcc5e6, type: 2}
-  WaypointsReference:
-    Variable: {fileID: 11400000, guid: 974ecc25823053f4c8932762ee118b4b, type: 2}
-  TanksReference:
-    Variable: {fileID: 11400000, guid: 7ce8d9e744c345148a51d33382a30b07, type: 2}
-  BonusReference:
-    Variable: {fileID: 11400000, guid: 1372dae88434f9344bdb2febe79e150d, type: 2}
   OnMatchFinished: {fileID: 11400000, guid: 2d347244babde3744912d94602a0695a, type: 2}
   ShellPrefab: {fileID: 192454, guid: 008ecb1b70bec724fa2cd34255b0d8f8, type: 3}
   CanonShotPrefab: {fileID: 195792, guid: 284bae83e39190c459a86d91f74bc6e1, type: 3}
@@ -14971,7 +14965,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1335
   Target: {fileID: 0}
-  Destination: {fileID: 0}
+  Destination: {x: 0, y: 0, z: 0}
   MaxHp: 0
   CurrentHp: 0
 --- !u!114 &6334775136059622303
@@ -14987,15 +14981,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AIBrains: []
-  OnEnableQueuing: 0
-  QueuingLoop: 1
+  OnEnableQueuing: 1
   OptionsResolution: 0
   MultiBrainInteraction: 0
   LocalAIBrains: []
   TankEntity: {fileID: 0}
-  AllyFactionType: 0
-  EnemyFactionType: 1
-  AllFactionType: 2
+  BonusEntity: {fileID: 0}
 --- !u!1 &7043326029204013415
 GameObject:
   m_ObjectHideFlags: 0
@@ -15093,6 +15084,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2

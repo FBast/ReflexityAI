@@ -12,8 +12,6 @@ namespace Plugins.Reflexity.Framework {
 
         [Tooltip("Brains copied by the AI")]
         public List<AIBrainGraph> AIBrains;
-        [Tooltip("If checked the AI will be processed on enable")]
-        public bool OnEnableQueuing = true;
         [Tooltip("Robotic : Always pick best option\n" +
                  "Human : Randomize between best options")]
         public ResolutionType OptionsResolution = ResolutionType.Robotic;
