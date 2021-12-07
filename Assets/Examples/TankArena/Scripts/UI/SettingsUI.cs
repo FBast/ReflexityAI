@@ -8,6 +8,10 @@ namespace Examples.TankArena.Scripts.UI {
 
         [Header("Internal References")] 
         public SliderWithLabelUI MatchDuration;
+        public SliderWithLabelUI PointsPerTeamKill;
+        public SliderWithLabelUI PointsPerKill;
+        public SliderWithLabelUI PointsPerBonus;
+        public SliderWithLabelUI PointsForVictory;
         public SliderWithLabelUI HealthPoints;
         public SliderWithLabelUI CanonDamage;
         public SliderWithLabelUI CanonPower;
@@ -27,6 +31,18 @@ namespace Examples.TankArena.Scripts.UI {
         private void Start() {
             MatchDuration.OnValueChanged.AddListener(delegate(float value) {
                 PlayerPrefs.SetInt(GlobalProperties.PlayerPrefs.MatchDuration, (int) value);
+            });
+            PointsPerTeamKill.OnValueChanged.AddListener(delegate(float value) {
+                PlayerPrefs.SetInt(GlobalProperties.PlayerPrefs.PointsPerTeamKill, (int) value);
+            });
+            PointsPerKill.OnValueChanged.AddListener(delegate(float value) {
+                PlayerPrefs.SetInt(GlobalProperties.PlayerPrefs.PointsPerKill, (int) value);
+            });
+            PointsPerBonus.OnValueChanged.AddListener(delegate(float value) {
+                PlayerPrefs.SetInt(GlobalProperties.PlayerPrefs.PointsPerBonus, (int) value);
+            });
+            PointsForVictory.OnValueChanged.AddListener(delegate(float value) {
+                PlayerPrefs.SetInt(GlobalProperties.PlayerPrefs.PointsForVictory, (int) value);
             });
             HealthPoints.OnValueChanged.AddListener(delegate(float value) {
                 PlayerPrefs.SetInt(GlobalProperties.PlayerPrefs.HealthPoints, (int) value);
@@ -79,6 +95,14 @@ namespace Examples.TankArena.Scripts.UI {
         private void UpdateSettings() {
             MatchDuration.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.MatchDuration,
                 GlobalProperties.PlayerPrefsDefault.MatchDuration);
+            PointsPerTeamKill.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerTeamKill,
+                GlobalProperties.PlayerPrefsDefault.PointsPerTeamKill);
+            PointsPerKill.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerKill,
+                GlobalProperties.PlayerPrefsDefault.PointsPerKill);
+            PointsPerBonus.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerBonus,
+                GlobalProperties.PlayerPrefsDefault.PointsPerBonus);
+            PointsForVictory.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsForVictory,
+                GlobalProperties.PlayerPrefsDefault.PointsForVictory);
             HealthPoints.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.HealthPoints,
                 GlobalProperties.PlayerPrefsDefault.HealthPoints);
             CanonDamage.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.CanonDamage,

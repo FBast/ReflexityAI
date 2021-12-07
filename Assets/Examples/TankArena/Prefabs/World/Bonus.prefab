@@ -57,6 +57,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &1176356717171435919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -106,9 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24e2947f5330463409bf1e775d6a7def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BonusReference:
-    Variable: {fileID: 11400000, guid: 1372dae88434f9344bdb2febe79e150d, type: 2}
   BonusExplosionPrefab: {fileID: 151086, guid: 6bc6d0dd8b8428e4ca316513f2cf13c6, type: 3}
+  MatchReference:
+    Variable: {fileID: 11400000, guid: 5405124dea616db4eb2bce7fa8bcc5e6, type: 2}
   Healing: 10
 --- !u!114 &7484004724161896744
 MonoBehaviour:

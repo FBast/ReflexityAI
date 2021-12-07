@@ -1,12 +1,6 @@
 namespace Examples.TankArena.Scripts.Framework {
     public static class GlobalProperties {
-
-        public struct Inputs {
-            public const string LeftClick = "Fire1";
-            public const string RightClick = "Fire2";
-            public const string WheelClick = "Fire3";
-        }
-
+        
         public struct Scenes {
             public const string Shared = "Shared";
             public const string Menu = "Menu";
@@ -15,6 +9,10 @@ namespace Examples.TankArena.Scripts.Framework {
         
         public struct PlayerPrefs {
             public const string MatchDuration = "MatchTime";
+            public const string PointsPerKill = "PointsPerKill";
+            public const string PointsPerTeamKill = "PointsPerTeamKill";
+            public const string PointsPerBonus = "PointsPerBonus";
+            public const string PointsForVictory = "PointsIfVictory";
             public const string ExplosionDamage = "ExplosionDamage";
             public const string ExplosionRadius = "ExplosionRadius";
             public const string ExplosionCreateBustedTank = "ExplosionCreateBustedTank";
@@ -34,6 +32,10 @@ namespace Examples.TankArena.Scripts.Framework {
         
         public struct PlayerPrefsDefault {
             public const int MatchDuration = 120;
+            public const int PointsPerKill = 2;
+            public const int PointsPerTeamKill = -1;
+            public const int PointsPerBonus = 1;
+            public const int PointsForVictory = 3;
             public const int ExplosionDamage = 1;
             public const int ExplosionRadius = 5;
             public const bool ExplosionCreateBustedTank = true;
@@ -48,7 +50,7 @@ namespace Examples.TankArena.Scripts.Framework {
             public const int GridGap = 20;
             public const int BonusPerSpawnNumber = 3;
             public const int BonusPerSpawnFrequency = 10;
-            public static int TankSpeed = 5;
+            public const int TankSpeed = 5;
         }
 
     }

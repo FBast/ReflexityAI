@@ -156,17 +156,15 @@ namespace Examples.TankArena.Scripts.Entities {
             GameObject instantiate = Instantiate(ShellPrefab, CanonOut.position, CanonOut.rotation);
             instantiate.GetComponent<Rigidbody>().AddForce(CanonOut.transform.forward * _canonPower, ForceMode.Impulse);
             instantiate.GetComponent<ShellEntity>().TankEntityOwner = this;
-            instantiate.GetComponent<ShellEntity>().Damage = _canonDamage;
+            instantiate.GetComponent<ShellEntity>().CanonDamage = _canonDamage;
             _timeSinceLastShot = 0;
         }
         
         public void DamageByShot(ShellEntity shell) {
-            CurrentHp -= shell.Damage;
-            CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += shell.Damage;
-            if (shell.TankEntityOwner.Team == Team)
-                CurrentMatchReference.Value.TeamStats[Team].TeamDamage += shell.Damage;
-            else
-                CurrentMatchReference.Value.TeamStats[shell.TankEntityOwner.Team].DamageDone += shell.Damage;
+            CurrentHp -= shell.CanonDamage;
+            CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += shell.CanonDamage;
+            if (shell.TankEntityOwner.Team != Team)
+                CurrentMatchReference.Value.TeamStats[shell.TankEntityOwner.Team].DamageDone += shell.CanonDamage;
             if (CurrentHp > 0) return;
             Die(shell.TankEntityOwner);
         }
@@ -174,9 +172,7 @@ namespace Examples.TankArena.Scripts.Entities {
         public void DamageByExplosion(TankEntity tank) {
             CurrentHp -= tank._explosionDamage;
             CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += tank._explosionDamage;
-            if (tank.Team == Team)
-                CurrentMatchReference.Value.TeamStats[Team].TeamDamage += tank._explosionDamage;
-            else
+            if (tank.Team != Team)
                 CurrentMatchReference.Value.TeamStats[tank.Team].DamageDone += tank._explosionDamage;
             if (CurrentHp > 0) return;
             Die(tank, true);
@@ -189,8 +185,6 @@ namespace Examples.TankArena.Scripts.Entities {
                 CurrentMatchReference.Value.TeamStats[killer.Team].KillCount++;
             CurrentMatchReference.Value.TeamStats[Team].LossCount++;
             CurrentMatchReference.Value.TeamStats[Team].TankLeft--;
-            if (CurrentMatchReference.Value.TeamStats[Team].TankLeft == 0) 
-                CurrentMatchReference.Value.TeamStats[Team].IsDefeated = true;
             if (CurrentMatchReference.Value.TeamInMatch.Count() == 1)
                 OnMatchFinished.Raise();
             // Explosion

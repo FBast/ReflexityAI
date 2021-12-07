@@ -10,7 +10,7 @@ namespace Examples.TankArena.Scripts.Framework {
         public Dictionary<Team, Stats> TeamStats = new Dictionary<Team, Stats>();
  
         public IEnumerable<Team> TeamInMatch => TeamStats
-            .Where(pair => !pair.Value.IsDefeated)
+            .Where(pair => pair.Value.TankLeft > 0)
             .Select(pair => pair.Key);
         
         public Match(List<Team> teams) {

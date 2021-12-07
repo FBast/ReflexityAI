@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
+using Examples.TankArena.Scripts.SOReferences.MatchReference;
 using UnityEngine;
 
 namespace Examples.TankArena.Scripts.Entities {
     public class BonusEntity : MonoBehaviour {
-
+        
         [Header("Prefabs")]
         public GameObject BonusExplosionPrefab;
+        
+        [Header("SO References")]
+        public MatchReference MatchReference;
         
         [Header("Parameters")]
         public int Healing;
@@ -24,10 +28,11 @@ namespace Examples.TankArena.Scripts.Entities {
 
         private void OnTriggerEnter(Collider other) {
             Instantiate(BonusExplosionPrefab, transform.position, Quaternion.identity);
-            if (other.gameObject.GetComponent<TankEntity>()) {
-                other.gameObject.GetComponent<TankEntity>().Heal(Healing);
+            TankEntity tankEntity = other.gameObject.GetComponent<TankEntity>();
+            if (tankEntity != null) {
+                MatchReference.Value.TeamStats[tankEntity.Team].BonusCount++;
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
         }
     }
 }

@@ -29,38 +29,40 @@ namespace Examples.TankArena.Scripts.UI {
         private void OnEnable() {
             // Calculate game stats
             foreach (KeyValuePair<Team,Stats> teamStat in CurrentMatchReference.Value.TeamStats) {
-                CurrentGameReference.Value.TeamStats[teamStat.Key].VictoryPoint += teamStat.Value.VictoryPoint;
                 CurrentGameReference.Value.TeamStats[teamStat.Key].TankLeft += teamStat.Value.TankLeft;
-                CurrentGameReference.Value.TeamStats[teamStat.Key].KillCount += teamStat.Value.KillCount;
                 CurrentGameReference.Value.TeamStats[teamStat.Key].LossCount += teamStat.Value.LossCount;
-                CurrentGameReference.Value.TeamStats[teamStat.Key].TeamKill += teamStat.Value.TeamKill;
                 CurrentGameReference.Value.TeamStats[teamStat.Key].DamageDone += teamStat.Value.DamageDone;
                 CurrentGameReference.Value.TeamStats[teamStat.Key].DamageSuffered += teamStat.Value.DamageSuffered;
-                CurrentGameReference.Value.TeamStats[teamStat.Key].TeamDamage += teamStat.Value.TeamDamage;
+                CurrentGameReference.Value.TeamStats[teamStat.Key].TeamKill += teamStat.Value.TeamKill;
+                CurrentGameReference.Value.TeamStats[teamStat.Key].KillCount += teamStat.Value.KillCount;
+                CurrentGameReference.Value.TeamStats[teamStat.Key].BonusCount += teamStat.Value.BonusCount;
+                CurrentGameReference.Value.TeamStats[teamStat.Key].VictoryPoints += teamStat.Value.VictoryPoints;
+                CurrentGameReference.Value.TeamStats[teamStat.Key].TotalPoints += teamStat.Value.TotalPoints;
             }
             // Display stats
-            foreach (KeyValuePair<Team,Stats> teamStat in CurrentGameReference.Value.TeamStats.OrderByDescending(pair => pair.Value.VictoryPoint)) {
+            foreach (KeyValuePair<Team,Stats> teamStat in CurrentGameReference.Value.TeamStats.OrderByDescending(pair => pair.Value.TotalPoints)) {
                 TeamStatLineUI teamStatLineUi = Instantiate(TeamStatLine, StatsContent.transform)
                     .GetComponent<TeamStatLineUI>();
-                teamStatLineUi.VictoryPointText.text = teamStat.Value.VictoryPoint.ToString();
                 teamStatLineUi.TeamNameText.text = teamStat.Key.TeamName;
                 teamStatLineUi.TeamNameText.color = teamStat.Key.Color;
                 teamStatLineUi.TankLeftText.text = teamStat.Value.TankLeft.ToString();
-                teamStatLineUi.KillCountText.text = teamStat.Value.KillCount.ToString();
                 teamStatLineUi.LossCountText.text = teamStat.Value.LossCount.ToString();
-                teamStatLineUi.TeamKillText.text = teamStat.Value.TeamKill.ToString();
                 teamStatLineUi.DamageDoneText.text = teamStat.Value.DamageDone.ToString();
                 teamStatLineUi.DamageSufferedText.text = teamStat.Value.DamageSuffered.ToString();
-                teamStatLineUi.TeamDamageText.text = teamStat.Value.TeamDamage.ToString();
+                teamStatLineUi.TeamKillText.text = teamStat.Value.TeamKill.ToString();
+                teamStatLineUi.KillCountText.text = teamStat.Value.KillCount.ToString();
+                teamStatLineUi.BonusCountText.text = teamStat.Value.BonusCount.ToString();
+                teamStatLineUi.VictoryPointsText.text = teamStat.Value.VictoryPoints.ToString();
+                teamStatLineUi.TotalPoints.text = teamStat.Value.TotalPoints.ToString();
             }
             // Display context
             if (CurrentGameReference.Value.NextMatch() != null) {
                 ContextText.text = "Next match : " + string.Join(" vs ", CurrentGameReference.Value.NextMatch().Teams.Select(i => i.TeamName).ToArray());
             }
             else {
-                int maxVictoryPoint = CurrentGameReference.Value.TeamStats.Max(pair => pair.Value.VictoryPoint);
+                int maxVictoryPoint = CurrentGameReference.Value.TeamStats.Max(pair => pair.Value.TotalPoints);
                 ContextText.text = "Victory for " + string.Join(" & ", CurrentGameReference.Value.TeamStats
-                    .Where(pair => pair.Value.VictoryPoint == maxVictoryPoint)
+                    .Where(pair => pair.Value.TotalPoints == maxVictoryPoint)
                     .Select(pair => pair.Key.TeamName)
                     .ToArray());
             }
