@@ -20,23 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbDriver.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbDriver.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbGunner.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbGunner.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbSetting.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbSetting.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/PeacefulSetting.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/PeacefulSetting.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/BackgroundMusic.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/BackgroundMusic.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/GameMusic.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/GameMusic.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/GameMusic.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/GameMusic.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/MenuMusic.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/MenuMusic.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/MenuMusic.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/AudioClips/MenuMusic.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/UI/TeamStatLine.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/UI/TeamStatLine.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbDriver.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbDriver.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbGunner.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbGunner.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbSetting.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbSetting.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/PeacefulSetting.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/PeacefulSetting.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Shared.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Shared.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Components/SkyBoxRandomizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Components/SkyBoxRandomizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Stats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/MatchEndUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/MatchEndUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TeamStatLineUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TeamStatLineUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/DataManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/DataNodes/Editor/DataReaderNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/Editor/AiDebuggerEditorWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/ConverterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" />
@@ -155,6 +161,7 @@
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Components/SkyBoxRandomizer.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/MatchEndUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/DataManager.cs" />
       </list>
     </option>
   </component>
@@ -248,6 +255,7 @@
       <workItem from="1639064396174" duration="9000" />
       <workItem from="1639064429978" duration="1404000" />
       <workItem from="1639065901252" duration="758000" />
+      <workItem from="1639067047150" duration="950000" />
     </task>
     <servers />
   </component>
@@ -380,11 +388,11 @@
     </state>
     <state x="-1317" y="119" width="714" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1638808664494" />
     <state x="2523" y="119" width="714" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638536211386" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639065828978">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639067802736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1639064653233" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1639065828978" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1639067802736" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1638547617165" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638543066670" />
   </component>

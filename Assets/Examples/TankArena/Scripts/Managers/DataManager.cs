@@ -1,15 +1,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using Examples.TankArena.Scripts.Data;
-using UnityEditor;
+using UnityEngine;
 
 namespace Examples.TankArena.Scripts.Managers {
-    public static class DataManager {
+    public class DataManager : MonoBehaviour {
+
+        public static List<TankSetting> TankSettings;
         
-        public static List<TankSetting> TankSettings => AssetDatabase.FindAssets("t:TankSetting", new[] {"Assets"})
-            .Select(AssetDatabase.GUIDToAssetPath)
-            .Select(AssetDatabase.LoadAssetAtPath<TankSetting>)
-            .ToList();
+        private void Awake() {
+            TankSettings = Resources.LoadAll<TankSetting>("Tanks").ToList();
+        }
+
+
         
     }
 }
