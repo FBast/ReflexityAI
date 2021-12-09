@@ -13,10 +13,10 @@ namespace Plugins.Reflexity.MainNodes.Editor {
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_utilityNode.MinX)));
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_utilityNode.X)));
             NodeEditorGUILayout.PropertyField(serializedObject.FindProperty(nameof(_utilityNode.MaxX)));
-            _utilityNode.MaxY = EditorGUILayout.FloatField("Max Rank", _utilityNode.MaxY);
+            _utilityNode.MaxY = EditorGUILayout.IntField("Max Rank", _utilityNode.MaxY);
             EditorGUILayout.CurveField(GUIContent.none, _utilityNode.Function, GUILayout.Height(50));
             NodeEditorGUILayout.AddPortField(_utilityNode.GetPort(nameof(_utilityNode.Rank)));
-            _utilityNode.MinY = EditorGUILayout.FloatField("Min Rank", _utilityNode.MinY);
+            _utilityNode.MinY = EditorGUILayout.IntField("Min Rank", _utilityNode.MinY);
         }
 
     }

@@ -16,14 +16,16 @@ namespace Plugins.Reflexity.MainNodes {
         [Tooltip("Evaluate the Utility Y using the X values")]
         public AnimationCurve Function = AnimationCurve.Linear(0, 0, 1, 1);
         [Output(connectionType: ConnectionType.Override), Tooltip("Connect to the Option Node")] public int Rank;
-        public float MaxY = 5;
-        public float MinY = -5;
+        public int MaxY = 5;
+        public int MinY = -5;
         
         public override object GetValue(NodePort port) {
             if (port.fieldName == nameof(Rank)) {
-                float minX = GetInputValue(nameof(MinX), MinX);
-                float maxX = GetInputValue(nameof(MaxX), MaxX);
-                float x = GetInputValue(nameof(X), X);
+                NodePort minXPort = GetInputPort(nameof(MinX));
+                float minX = minXPort.IsConnected ? Convert.ToSingle(minXPort.GetInputValue()) : MinX;
+                NodePort maxXPort = GetInputPort(nameof(MaxX));
+                float maxX = maxXPort.IsConnected ? Convert.ToSingle(maxXPort.GetInputValue()) : MaxX;
+                float x = Convert.ToSingle(GetInputPort(nameof(X)).GetInputValue());
                 float scaledX = ScaleX(minX, maxX, x);
                 return ScaleY(MinY, MaxY, Function.Evaluate(scaledX));
             }
