@@ -15,6 +15,15 @@ namespace Examples.TankArena.Scripts.Managers {
 		public FloatReference MaxTimeReference;
 		public FloatReference CurrentTimeReference;
 
+		public int PointPerKill => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsForVictory,
+			GlobalProperties.PlayerPrefsDefault.PointsForVictory);
+		public int PointPerBonus => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerBonus,
+			GlobalProperties.PlayerPrefsDefault.PointsPerBonus);
+		public int PointPerTeamKill => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerTeamKill,
+			GlobalProperties.PlayerPrefsDefault.PointsPerTeamKill);
+		public int PointPerVictory => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsForVictory,
+			GlobalProperties.PlayerPrefsDefault.PointsForVictory);
+		
 		private bool _isTimeOut;
 
 		private void Start() {

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Examples.TankArena.Scripts.Framework;
+using Examples.TankArena.Scripts.Managers;
 using Examples.TankArena.Scripts.SOEvents.StringEvents;
 using Examples.TankArena.Scripts.SOReferences.GameReference;
 using Examples.TankArena.Scripts.SOReferences.MatchReference;
@@ -36,7 +37,7 @@ namespace Examples.TankArena.Scripts.UI {
                 CurrentGameReference.Value.TeamStats[teamStat.Key].TeamKill += teamStat.Value.TeamKill;
                 CurrentGameReference.Value.TeamStats[teamStat.Key].KillCount += teamStat.Value.KillCount;
                 CurrentGameReference.Value.TeamStats[teamStat.Key].BonusCount += teamStat.Value.BonusCount;
-                CurrentGameReference.Value.TeamStats[teamStat.Key].VictoryPoints += teamStat.Value.VictoryPoints;
+                CurrentGameReference.Value.TeamStats[teamStat.Key].VictoryNumber += teamStat.Value.VictoryNumber;
                 CurrentGameReference.Value.TeamStats[teamStat.Key].TotalPoints += teamStat.Value.TotalPoints;
             }
             // Display stats
@@ -45,14 +46,16 @@ namespace Examples.TankArena.Scripts.UI {
                     .GetComponent<TeamStatLineUI>();
                 teamStatLineUi.TeamNameText.text = teamStat.Key.TeamName;
                 teamStatLineUi.TeamNameText.color = teamStat.Key.Color;
+                
                 teamStatLineUi.TankLeftText.text = teamStat.Value.TankLeft.ToString();
-                teamStatLineUi.LossCountText.text = teamStat.Value.LossCount.ToString();
+                teamStatLineUi.TankLostTest.text = teamStat.Value.LossCount.ToString();
                 teamStatLineUi.DamageDoneText.text = teamStat.Value.DamageDone.ToString();
                 teamStatLineUi.DamageSufferedText.text = teamStat.Value.DamageSuffered.ToString();
-                teamStatLineUi.TeamKillText.text = teamStat.Value.TeamKill.ToString();
-                teamStatLineUi.KillCountText.text = teamStat.Value.KillCount.ToString();
-                teamStatLineUi.BonusCountText.text = teamStat.Value.BonusCount.ToString();
-                teamStatLineUi.VictoryPointsText.text = teamStat.Value.VictoryPoints.ToString();
+                
+                teamStatLineUi.AllyKilledText.text = teamStat.Value.TeamKill + " (x" + GameManager.Instance.PointPerTeamKill + ")";
+                teamStatLineUi.EnemyKilledText.text = teamStat.Value.KillCount + " (x" + GameManager.Instance.PointPerKill + ")";
+                teamStatLineUi.BonusCollectedText.text = teamStat.Value.BonusCount + " (x" + GameManager.Instance.PointPerBonus + ")";
+                teamStatLineUi.VictoryNumberText.text = teamStat.Value.VictoryNumber + " (x" + GameManager.Instance.PointPerVictory + ")";
                 teamStatLineUi.TotalPoints.text = teamStat.Value.TotalPoints.ToString();
             }
             // Display context

@@ -8,14 +8,14 @@ namespace Examples.TankArena.Scripts.UI {
         public TextMeshProUGUI TeamNameText;
         
         public TextMeshProUGUI TankLeftText;
-        public TextMeshProUGUI LossCountText;
+        [FormerlySerializedAs("LossCountText")] public TextMeshProUGUI TankLostTest;
         public TextMeshProUGUI DamageDoneText;
         public TextMeshProUGUI DamageSufferedText;
 
-        public TextMeshProUGUI TeamKillText;
-        public TextMeshProUGUI KillCountText;
-        public TextMeshProUGUI BonusCountText;
-        public TextMeshProUGUI VictoryPointsText;
+        [FormerlySerializedAs("TeamKillText")] public TextMeshProUGUI AllyKilledText;
+        [FormerlySerializedAs("KillCountText")] public TextMeshProUGUI EnemyKilledText;
+        [FormerlySerializedAs("BonusCountText")] public TextMeshProUGUI BonusCollectedText;
+        [FormerlySerializedAs("VictoryPointsText")] public TextMeshProUGUI VictoryNumberText;
         public TextMeshProUGUI TotalPoints;
 
     }

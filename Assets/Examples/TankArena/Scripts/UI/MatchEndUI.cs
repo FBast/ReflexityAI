@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Examples.TankArena.Scripts.Framework;
+using Examples.TankArena.Scripts.Managers;
 using Examples.TankArena.Scripts.SOEvents.StringEvents;
 using Examples.TankArena.Scripts.SOReferences.MatchReference;
 using UnityEngine;
@@ -19,15 +20,15 @@ namespace Examples.TankArena.Scripts.UI {
 
         [Header("SO Events")] 
         public StringEvent OnReloadScene;
-  
+
         private void OnEnable() {
             foreach (KeyValuePair<Team,Stats> teamStat in CurrentMatchReference.Value.TeamStats) {
-                if (teamStat.Value.TankLeft > 0 && CurrentMatchReference.Value.TeamStats.All(pair => pair.Value.TankLeft == 0))
-                    teamStat.Value.VictoryPoints = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsForVictory, GlobalProperties.PlayerPrefsDefault.PointsForVictory);
-                teamStat.Value.TotalPoints += teamStat.Value.TeamKill * PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerTeamKill, GlobalProperties.PlayerPrefsDefault.PointsPerTeamKill);
-                teamStat.Value.TotalPoints += teamStat.Value.KillCount * PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerKill, GlobalProperties.PlayerPrefsDefault.PointsPerKill);
-                teamStat.Value.TotalPoints += teamStat.Value.BonusCount * PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerBonus, GlobalProperties.PlayerPrefsDefault.PointsPerBonus);
-                teamStat.Value.TotalPoints += teamStat.Value.VictoryPoints;
+                if (teamStat.Value.TankLeft > 0 && CurrentMatchReference.Value.TeamStats.All(pair => pair.Value.TankLeft == 0)) 
+                    teamStat.Value.VictoryNumber = 1;
+                teamStat.Value.TotalPoints += teamStat.Value.TeamKill * GameManager.Instance.PointPerTeamKill;
+                teamStat.Value.TotalPoints += teamStat.Value.KillCount * GameManager.Instance.PointPerKill;
+                teamStat.Value.TotalPoints += teamStat.Value.BonusCount * GameManager.Instance.PointPerBonus;
+                teamStat.Value.TotalPoints += teamStat.Value.VictoryNumber;
             }
             // Display stats
             foreach (KeyValuePair<Team,Stats> teamStat in CurrentMatchReference.Value.TeamStats.OrderByDescending(pair => pair.Value.TotalPoints)) {
@@ -36,14 +37,14 @@ namespace Examples.TankArena.Scripts.UI {
                 teamStatLineUi.TeamNameText.color = teamStat.Key.Color;
                 
                 teamStatLineUi.TankLeftText.text = teamStat.Value.TankLeft.ToString();
-                teamStatLineUi.LossCountText.text = teamStat.Value.LossCount.ToString();
+                teamStatLineUi.TankLostTest.text = teamStat.Value.LossCount.ToString();
                 teamStatLineUi.DamageDoneText.text = teamStat.Value.DamageDone.ToString();
                 teamStatLineUi.DamageSufferedText.text = teamStat.Value.DamageSuffered.ToString();
 
-                teamStatLineUi.TeamKillText.text = teamStat.Value.TeamKill.ToString();
-                teamStatLineUi.KillCountText.text = teamStat.Value.KillCount.ToString();
-                teamStatLineUi.BonusCountText.text = teamStat.Value.BonusCount.ToString();
-                teamStatLineUi.VictoryPointsText.text = teamStat.Value.VictoryPoints.ToString();
+                teamStatLineUi.AllyKilledText.text = teamStat.Value.TeamKill + " (x" + GameManager.Instance.PointPerTeamKill + ")";
+                teamStatLineUi.EnemyKilledText.text = teamStat.Value.KillCount + " (x" + GameManager.Instance.PointPerKill + ")";
+                teamStatLineUi.BonusCollectedText.text = teamStat.Value.BonusCount + " (x" + GameManager.Instance.PointPerBonus + ")";
+                teamStatLineUi.VictoryNumberText.text = teamStat.Value.VictoryNumber + " (x" + GameManager.Instance.PointPerVictory + ")";
                 teamStatLineUi.TotalPoints.text = teamStat.Value.TotalPoints.ToString();
             }
         }

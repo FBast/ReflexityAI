@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 375221846927449976}
   - component: {fileID: 8987532625532768469}
   m_Layer: 5
-  m_Name: KillCount
+  m_Name: EnemyKilled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kill Count
+  m_text: Enemy Killed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 5968056822180025403}
   - component: {fileID: 619632638658456639}
   m_Layer: 5
-  m_Name: BonusCount
+  m_Name: BonusCollected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bonus Count
+  m_text: Bonus Collected
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 3263454848784262709}
   - component: {fileID: 2600896256468433592}
   m_Layer: 5
-  m_Name: VictoryPoints
+  m_Name: VictoryNumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Victory Point
+  m_text: Victory Number
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 5733846311071065310}
   - component: {fileID: 138083326301170078}
   m_Layer: 5
-  m_Name: LossCount
+  m_Name: TankLost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Loss Count
+  m_text: Tank Lost
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1218,7 +1218,7 @@ GameObject:
   - component: {fileID: 5784337160258921197}
   - component: {fileID: 3931348334508146741}
   m_Layer: 5
-  m_Name: TeamKill
+  m_Name: AllyKilled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1271,7 +1271,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Team Kill
+  m_text: Ally Killed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1410,13 +1410,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TeamNameText: {fileID: 3383702033645236241}
   TankLeftText: {fileID: 3487785864506123613}
-  LossCountText: {fileID: 138083326301170078}
+  TankLostTest: {fileID: 138083326301170078}
   DamageDoneText: {fileID: 7280609865377154088}
   DamageSufferedText: {fileID: 6345554321903339979}
-  TeamKillText: {fileID: 3931348334508146741}
-  KillCountText: {fileID: 8987532625532768469}
-  BonusCountText: {fileID: 619632638658456639}
-  VictoryPointsText: {fileID: 2600896256468433592}
+  AllyKilledText: {fileID: 3931348334508146741}
+  EnemyKilledText: {fileID: 8987532625532768469}
+  BonusCollectedText: {fileID: 619632638658456639}
+  VictoryNumberText: {fileID: 2600896256468433592}
   TotalPoints: {fileID: 785085897979687040}
 --- !u!114 &517996224706011444
 MonoBehaviour:

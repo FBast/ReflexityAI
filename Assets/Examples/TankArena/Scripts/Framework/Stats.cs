@@ -9,7 +9,7 @@ namespace Examples.TankArena.Scripts.Framework {
         public int TeamKill;
         public int KillCount;
         public int BonusCount;
-        public int VictoryPoints;
+        public int VictoryNumber;
         public int TotalPoints;
 
     }

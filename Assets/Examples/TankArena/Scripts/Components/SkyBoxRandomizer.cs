@@ -8,9 +8,14 @@ namespace Examples.TankArena.Scripts.Components {
         
         public List<Material> SkyBoxes;
 
+        private Material _skyBox;
+
         private void Awake() {
+            if (SkyBoxes.Count <= 0) return; 
+            _skyBox = SkyBoxes[Random.Range(0, SkyBoxes.Count)];
+            RenderSettings.skybox = _skyBox;
             CustomSceneManager.Instance.OnNewActiveScene = delegate {
-                if (SkyBoxes.Count > 0) RenderSettings.skybox = SkyBoxes[Random.Range(0, SkyBoxes.Count)];
+                RenderSettings.skybox = _skyBox;
             };
         }
 
