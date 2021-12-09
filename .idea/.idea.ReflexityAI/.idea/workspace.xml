@@ -20,30 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbDriver.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbDriver.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbGunner.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbGunner.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbSetting.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/DumbSetting.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/PeacefulSetting.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Fred/PeacefulSetting.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbDriver.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbDriver.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbGunner.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbGunner.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbSetting.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/DumbSetting.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/PeacefulSetting.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Data/Tanks/Fred/PeacefulSetting.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Shared.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Shared.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/DataManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/DataManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/BonusSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/BonusSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/WaypointSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/WaypointSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,8 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/Editor/AiDebuggerEditorWindow.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MainNodes/ConverterNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/SerializableInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/IsEqualNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Components/ParticleEmissionSetter.cs" />
@@ -125,7 +103,6 @@
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TournamentUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/TeamFightUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/Team.cs" />
-        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/Framework/AIQueue.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Reflexity/MiddleNodes/DistanceNode.cs" />
@@ -162,6 +139,9 @@
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/MatchEndUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/GameStatsUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/DataManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/BonusSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/WaypointSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/TankSpawner.cs" />
       </list>
     </option>
   </component>
@@ -200,6 +180,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/TankArena\xNodeUtilityAI.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Dizy\Desktop\TankArena" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -221,6 +209,7 @@
     <list>
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+      <item itemvalue="Standalone Player.Standalone Player" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -255,7 +244,7 @@
       <workItem from="1639064396174" duration="9000" />
       <workItem from="1639064429978" duration="1404000" />
       <workItem from="1639065901252" duration="758000" />
-      <workItem from="1639067047150" duration="950000" />
+      <workItem from="1639067047150" duration="2019000" />
     </task>
     <servers />
   </component>
@@ -383,16 +372,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="476" y="164" width="774" height="1027" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1639064621662" />
-    <state x="-1317" y="119" width="714" height="801" key="find.popup" timestamp="1638808664494">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="603" y="119" width="714" height="801" key="find.popup" timestamp="1639068770258">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1317" y="119" width="714" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1638808664494" />
+    <state x="603" y="119" width="714" height="801" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1639068770258" />
     <state x="2523" y="119" width="714" height="801" key="find.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638536211386" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639067802736">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1639069002495">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@-1920.0.1920.1040" timestamp="1639064653233" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1639067802736" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1639069002495" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1638547617165" />
     <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1638543066670" />
   </component>

@@ -18,15 +18,8 @@ namespace Examples.TankArena.Scripts.Framework {
   
         [Header("SO References")] 
         public MatchReference CurrentMatchReference;
-        public GameObjectListReference TanksReference;
 
-        [Header("Parameters")] 
-        public int LookAtSpeed;
-        
-        private Transform _targetLookAt;
-        
         private void Start() {
-            TanksReference.Value = new List<GameObject>();
             for (int i = 0; i < CurrentMatchReference.Value.Teams.Count; i++) {
                 GenerateTankTeam(CurrentMatchReference.Value.Teams[i], TeamPositions[i]);
             }
@@ -46,7 +39,6 @@ namespace Examples.TankArena.Scripts.Framework {
             for (int i = 0; i < tanks.Count; i++) {
                 tanks[i].transform.position = centerPosition.position + skirmished[i];
             }
-            TanksReference.Value.AddRange(tanks);
         }
 
     }

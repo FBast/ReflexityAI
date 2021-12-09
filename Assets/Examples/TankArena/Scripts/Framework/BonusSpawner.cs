@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Examples.TankArena.Scripts.Entities;
 using Examples.TankArena.Scripts.SOReferences.GameObjectListReference;
 using UnityEngine;
 
@@ -11,17 +12,13 @@ namespace Examples.TankArena.Scripts.Framework {
         [Header("Parameters")]
         public string BonusName;
 
-        [Header("SO References")] 
-        public GameObjectListReference BonusReference;
-        
         private GameObject _spawnedBonus;
         private float _timeSinceBonusUsed;
         private int _spawnedNumber;
         private int _spawnRate;
         private int _spawnNumber;
-        
+
         private void Awake() {
-            BonusReference.Value = new List<GameObject>();
             _spawnNumber = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.BonusPerSpawnNumber, GlobalProperties.PlayerPrefsDefault.BonusPerSpawnNumber);
             _spawnRate = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.BonusPerSpawnFrequency, GlobalProperties.PlayerPrefsDefault.BonusPerSpawnFrequency);
         }
@@ -34,7 +31,6 @@ namespace Examples.TankArena.Scripts.Framework {
                 spawnPosition.y = BonusPrefab.transform.position.y;
                 _spawnedBonus = Instantiate(BonusPrefab, spawnPosition, Quaternion.identity, transform);
                 _spawnedBonus.name = BonusName;
-                BonusReference.Value.Add(_spawnedBonus);
                 _timeSinceBonusUsed = 0;
                 _spawnedNumber++;
             }

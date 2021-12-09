@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using Examples.TankArena.Scripts.Extensions;
-using Examples.TankArena.Scripts.SOReferences.GameObjectListReference;
+﻿using Examples.TankArena.Scripts.Extensions;
 using UnityEngine;
 
 namespace Examples.TankArena.Scripts.Framework {
@@ -14,13 +12,9 @@ namespace Examples.TankArena.Scripts.Framework {
         public Transform GridEnd;
         public Transform WaypointContent;
 
-        [Header("SO References")] 
-        public GameObjectListReference WaypointsReference;
-        
         private int _gridGap;
         
         private void Start() {
-            WaypointsReference.Value = new List<GameObject>();
             _gridGap = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.GridGap, GlobalProperties.PlayerPrefsDefault.GridGap);
             GenerateWaypoints();
         }
@@ -38,7 +32,6 @@ namespace Examples.TankArena.Scripts.Framework {
                     if (!position.IsPositionOnNavMesh()) continue;
                     GameObject instantiate = Instantiate(WaypointPrefab, position, Quaternion.identity, WaypointContent);
                     instantiate.name = (int) position.x + ", " + (int) position.z;
-                    WaypointsReference.Value.Add(instantiate);
                 }
             }
         }
