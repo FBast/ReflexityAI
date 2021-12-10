@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerName: Fred
   TankName: Peaceful
-  TurretColor: {r: 1, g: 1, b: 1, a: 0}
-  HullColor: {r: 1, g: 1, b: 1, a: 0}
-  TracksColor: {r: 1, g: 1, b: 1, a: 0}
+  TurretColor: {r: 0, g: 0.9098039, b: 1, a: 0}
+  HullColor: {r: 0, g: 0.90836334, b: 1, a: 0}
+  TracksColor: {r: 0, g: 0.9098039, b: 1, a: 0}
   Brains:
   - {fileID: 11400000, guid: 4ddfa73f3a79ba14db02b2ba15f2ee48, type: 2}
