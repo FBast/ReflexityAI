@@ -20,33 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/BonusDriver.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/BonusDriver.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/GoodGunner.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/GoodGunner.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/KamikazeDriver.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/KamikazeDriver.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/KamikazeSetting.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/KamikazeSetting.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/RunnerSetting.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/RunnerSetting.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Mickael.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Mickael/BardDriver.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Mickael/BardDriver.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Mickael/BardGunner.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Mickael/BardGunner.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Mickael/BardSettings.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Mickael/BardSettings.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/World/Tank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Prefabs/World/Tank.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/DumbGunner.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/DumbGunner.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/DumbGunner.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Resources/Tanks/Fred/DumbGunner.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/BonusSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/BonusSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/GlobalProperties.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Framework/GlobalProperties.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/Managers/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/MatchEndUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/TankArena/Scripts/UI/MatchEndUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/BillingMode.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/BillingMode.json.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,6 +247,7 @@
       <workItem from="1639065901252" duration="758000" />
       <workItem from="1639067047150" duration="2019000" />
       <workItem from="1639153852727" duration="1094000" />
+      <workItem from="1639159362916" duration="621000" />
     </task>
     <servers />
   </component>
