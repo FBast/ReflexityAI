@@ -15,8 +15,8 @@ namespace Examples.TankArena.Scripts.Managers {
 		public FloatReference MaxTimeReference;
 		public FloatReference CurrentTimeReference;
 
-		public int PointPerKill => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsForVictory,
-			GlobalProperties.PlayerPrefsDefault.PointsForVictory);
+		public int PointPerKill => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerKill,
+			GlobalProperties.PlayerPrefsDefault.PointsPerKill);
 		public int PointPerBonus => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerBonus,
 			GlobalProperties.PlayerPrefsDefault.PointsPerBonus);
 		public int PointPerTeamKill => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerTeamKill,

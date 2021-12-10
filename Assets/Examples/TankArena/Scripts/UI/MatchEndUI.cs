@@ -23,7 +23,7 @@ namespace Examples.TankArena.Scripts.UI {
 
         private void OnEnable() {
             foreach (KeyValuePair<Team,Stats> teamStat in CurrentMatchReference.Value.TeamStats) {
-                if (teamStat.Value.TankLeft > 0 && CurrentMatchReference.Value.TeamStats.All(pair => pair.Value.TankLeft == 0)) 
+                if (teamStat.Value.TankLeft > 0 && CurrentMatchReference.Value.TeamStats.Sum(pair => pair.Value.TankLeft) == teamStat.Value.TankLeft) 
                     teamStat.Value.VictoryNumber = 1;
                 teamStat.Value.TotalPoints += teamStat.Value.TeamKill * GameManager.Instance.PointPerTeamKill;
                 teamStat.Value.TotalPoints += teamStat.Value.KillCount * GameManager.Instance.PointPerKill;

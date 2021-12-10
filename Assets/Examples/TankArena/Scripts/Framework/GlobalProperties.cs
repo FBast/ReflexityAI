@@ -31,7 +31,7 @@ namespace Examples.TankArena.Scripts.Framework {
         }
         
         public struct PlayerPrefsDefault {
-            public const int MatchDuration = 120;
+            public const int MatchDuration = 60;
             public const int PointsPerKill = 2;
             public const int PointsPerTeamKill = -1;
             public const int PointsPerBonus = 1;
@@ -40,17 +40,17 @@ namespace Examples.TankArena.Scripts.Framework {
             public const int ExplosionRadius = 5;
             public const bool ExplosionCreateBustedTank = true;
             public const int CanonDamage = 1;
-            public const int CanonPower = 50;
+            public const int CanonPower = 100;
             public const int TurretSpeed = 10;
             public const int HealthPoints = 5;
-            public const int ReloadTime = 5;
+            public const int ReloadTime = 3;
             public const int WaypointSeekRadius = 50;
             public const bool AlwaysPickBestChoice = true;
             public const int SecondsBetweenRefresh = 1;
             public const int GridGap = 20;
             public const int BonusPerSpawnNumber = 3;
             public const int BonusPerSpawnFrequency = 10;
-            public const int TankSpeed = 5;
+            public const int TankSpeed = 10;
         }
 
     }
