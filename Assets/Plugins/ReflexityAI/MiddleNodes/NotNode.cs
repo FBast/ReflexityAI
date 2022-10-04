@@ -1,7 +1,7 @@
-﻿using Plugins.Reflexity.Framework;
+﻿using Plugins.ReflexityAI.Framework;
 using XNode;
 
-namespace Plugins.Reflexity.MiddleNodes {
+namespace Plugins.ReflexityAI.MiddleNodes {
     [CreateNodeMenu("Reflexity/Middle/Not")]
     public class NotNode : MiddleNode {
         

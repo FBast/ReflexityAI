@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.Reflexity.DataNodes;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.DataNodes;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 using XNode;
 
-namespace Plugins.Reflexity.MainNodes {
+namespace Plugins.ReflexityAI.MainNodes {
     [CreateNodeMenu("Reflexity/Main/Option"), NodeWidth(300), NodeTint(212, 206, 53)]
     public class OptionNode : Node {
 

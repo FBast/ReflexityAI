@@ -1,4 +1,4 @@
-﻿namespace Plugins.Reflexity.MemoryNodes {
+﻿namespace Plugins.ReflexityAI.MemoryNodes {
 //    [CreateNodeMenu("Reflexity/Memory/Save")]
 //    public class MemorySaveNode : ActionNode {
 //

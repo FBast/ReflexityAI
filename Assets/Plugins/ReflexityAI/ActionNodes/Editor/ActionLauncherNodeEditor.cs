@@ -1,11 +1,11 @@
 using System;
 using System.Linq;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEditor;
 using XNode;
 using XNodeEditor;
 
-namespace Plugins.Reflexity.ActionNodes.Editor {
+namespace Plugins.ReflexityAI.ActionNodes.Editor {
     [CustomNodeEditor(typeof(ActionLauncherNode))]
     public class ActionLauncherNodeEditor : NodeEditor {
 

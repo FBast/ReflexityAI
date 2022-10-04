@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.Reflexity.MainNodes;
+using Plugins.ReflexityAI.MainNodes;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
     public enum ResolutionType { Robotic, Human }
     public enum InteractionType { Cooperative, Competitive }
     public class ReflexityAI : MonoBehaviour {
@@ -26,22 +26,22 @@ namespace Plugins.Reflexity.Framework {
         public readonly Dictionary<AIBrainGraph, AIOption> SelectedOptions = new Dictionary<AIBrainGraph, AIOption>();
         private readonly Dictionary<string, object> _memory = new Dictionary<string, object>();
         private readonly Dictionary<string, float> _historic = new Dictionary<string, float>();
-        private static readonly AIQueue _aiQueue = new AIQueue();
+        private static readonly AILoop AILoop = new AILoop();
 
         private void Start() {
             Init();
+            AILoop.Start(this);
         }
 
         private void OnEnable() {
-            if (!_aiQueue.IsStopped) StartCoroutine(_aiQueue.Queuing());
-            EnqueueAI();
+            EnloopAI();
         }
 
         private void OnDisable() {
-           DequeueAI();
+           DeloopAI();
         }
 
-        public void Init() {
+        private void Init() {
             LocalAIBrains = new List<AIBrainGraph>();
             foreach (AIBrainGraph aiBrain in AIBrains) {
                 // Create a copy
@@ -56,49 +56,35 @@ namespace Plugins.Reflexity.Framework {
         }
         
         /// <summary>
-        /// Use this method to manually enqueue this AI processing
+        /// Use this method to manually enloop this AI processing
         /// </summary>
-        [ContextMenu("Enqueue AI")]
-        public void EnqueueAI() {
-            if (_aiQueue.Queue.Contains(this)) {
-                Debug.Log("Queue already contains " + gameObject.name + " AI");
-            } 
-            else {
-                _aiQueue.Queue.Enqueue(this);
-                if (!_aiQueue.IsPaused) StartCoroutine(_aiQueue.Queuing());
-            }
+        [ContextMenu("Enloop AI")]
+        public void EnloopAI() {
+            AILoop.EnloopAI(this);
         }
 
         /// <summary>
-        /// Use this method to manually dequeue this AI processing
+        /// Use this method to manually deloop this AI processing
         /// </summary>
-        [ContextMenu("Dequeue AI")]
-        public void DequeueAI() {
-            if (!_aiQueue.Queue.Contains(this)) {
-                Debug.Log("Queue does not contains " + gameObject.name + " AI");
-            }
-            else if (_aiQueue.Dequeued.Contains(this)) {
-                Debug.Log("AI " + gameObject.name + " is already in dequeue process");
-            }
-            else {
-                _aiQueue.Dequeued.Add(this);
-            }
+        [ContextMenu("Deloop AI")]
+        public void DeloopAI() {
+            AILoop.DeloopAI(this);
         }
         
         /// <summary>
-        /// Use this method to pause/unpause the AI queue
+        /// Use this method to pause/unpause the AI loop
         /// </summary>
-        [ContextMenu("Pause/Unpause queue")]
-        public void PauseQueue() {
-            _aiQueue.IsPaused = !_aiQueue.IsPaused;
+        [ContextMenu("Pause/Unpause loop")]
+        public void PauseLoop() {
+            AILoop.IsPaused = !AILoop.IsPaused;
         }
-        
+
         /// <summary>
-        /// Use this method to stop the AI queue
+        /// Clear the AI loop
         /// </summary>
-        [ContextMenu("Stop queue")]
-        public void StopQueue() {
-            _aiQueue.IsStopped = true;
+        [ContextMenu("Clear loop")]
+        public void ClearLoop() {
+            AILoop.Clear();
         }
         
         internal void ThinkAndAct() {

@@ -3,7 +3,7 @@ using UnityEditor;
 using XNode;
 using XNodeEditor;
 
-namespace Plugins.Reflexity.ActionNodes.Editor {
+namespace Plugins.ReflexityAI.ActionNodes.Editor {
     [CustomNodeEditor(typeof(ActionSetterNode))]
     public class ActionSetterNodeEditor : NodeEditor {
 

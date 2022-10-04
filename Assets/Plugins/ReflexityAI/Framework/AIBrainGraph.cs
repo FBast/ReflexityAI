@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.Reflexity.DataNodes;
+using Plugins.ReflexityAI.DataNodes;
 using UnityEngine;
 using XNode;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
     /// <summary>
     /// This class is used for the AIBrainGraphEditor, dont inherit from this
     /// </summary>

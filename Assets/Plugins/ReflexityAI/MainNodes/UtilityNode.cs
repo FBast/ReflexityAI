@@ -1,9 +1,9 @@
 ﻿using System;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 using XNode;
 
-namespace Plugins.Reflexity.MainNodes {
+namespace Plugins.ReflexityAI.MainNodes {
     [CreateNodeMenu("Reflexity/Main/Utility")]
     public class UtilityNode : MiddleNode {
         

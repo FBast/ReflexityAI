@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 using XNode;
 using Object = UnityEngine.Object;
 
-namespace Plugins.Reflexity.ActionNodes {
+namespace Plugins.ReflexityAI.ActionNodes {
     [CreateNodeMenu("Reflexity/Action/Setter")]
     public class ActionSetterNode : ActionNode {
 

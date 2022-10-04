@@ -1,7 +1,7 @@
 ﻿
 // using XNodeEditor;
 
-namespace Plugins.Reflexity.Utils.TagList {
+namespace Plugins.ReflexityAI.Utils.TagList {
     public static class TagListHelper {
     
         public static string[] GetHistoricTags() {

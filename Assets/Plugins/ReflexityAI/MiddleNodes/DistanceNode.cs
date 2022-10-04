@@ -1,8 +1,8 @@
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 using XNode;
 
-namespace Plugins.Reflexity.MiddleNodes {
+namespace Plugins.ReflexityAI.MiddleNodes {
     [CreateNodeMenu("Reflexity/Middle/Distance")]
     public class DistanceNode : MiddleNode {
         

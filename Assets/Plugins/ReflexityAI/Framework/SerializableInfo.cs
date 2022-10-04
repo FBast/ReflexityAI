@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using JetBrains.Annotations;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
     [Serializable]
     public class SerializableInfo {
 

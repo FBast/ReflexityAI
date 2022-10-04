@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using XNode;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
     [NodeTint(212, 53, 53)]
     public abstract class ActionNode : Node {
         

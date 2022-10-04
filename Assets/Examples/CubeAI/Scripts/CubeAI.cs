@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 
 namespace Examples.CubeAI.Scripts {

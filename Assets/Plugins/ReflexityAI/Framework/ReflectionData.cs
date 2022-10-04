@@ -1,6 +1,6 @@
 using System;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
 	public struct ReflectionData {
 
 		public Type Type;

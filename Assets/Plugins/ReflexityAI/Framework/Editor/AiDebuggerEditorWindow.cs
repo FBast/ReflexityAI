@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Plugins.Reflexity.Framework.Editor {
+namespace Plugins.ReflexityAI.Framework.Editor {
     public class AiDebuggerEditorWindow : EditorWindow {
         
         private GameObject _currentGameObject;

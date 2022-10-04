@@ -2,7 +2,7 @@
 using System.Reflection;
 using UnityEngine;
 
-namespace Plugins.Reflexity.Utils.TagList {
+namespace Plugins.ReflexityAI.Utils.TagList {
     public class DropdownList : PropertyAttribute {
 
         public string[] List { get; }

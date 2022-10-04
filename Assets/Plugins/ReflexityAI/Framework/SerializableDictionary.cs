@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
     [Serializable] 
     public abstract class SerializableDictionary<T, U> : Dictionary<T, U>, ISerializationCallbackReceiver {
         [SerializeField] private List<T> keys = new List<T>();

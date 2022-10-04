@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 using UnityEngine.Serialization;
 using XNode;
 
-namespace Plugins.Reflexity.DataNodes {
+namespace Plugins.ReflexityAI.DataNodes {
     [CreateNodeMenu("Reflexity/Data/Reader"), NodeWidth(300)]
     public class DataReaderNode : DataNode, IContextual, ICacheable {
         
-        public ReflexityAI Context { get; set; }
+        public Framework.ReflexityAI Context { get; set; }
 
         [HideInInspector] public PortDictionary PortDictionary = new PortDictionary();
         [HideInInspector] public InfoDictionary InfoDictionary = new InfoDictionary();

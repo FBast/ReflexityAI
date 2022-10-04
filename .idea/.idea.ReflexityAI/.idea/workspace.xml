@@ -19,7 +19,61 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="" />
+    <list default="true" id="677a9b3e-7cbe-491d-9214-49bfad4de78e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AILoop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ReflexityAI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/ProfilerTesting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionLauncherNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionLauncherNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/ActionSetterNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/Editor/ActionLauncherNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/Editor/ActionLauncherNodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/Editor/ActionSetterNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/ActionNodes/Editor/ActionSetterNodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataIteratorNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataReaderNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataReaderNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/DataSelectorNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataIteratorNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataIteratorNodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataReaderNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataReaderNodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataSelectorNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/DataNodes/Editor/DataSelectorNodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIBrainGraph.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIBrainGraph.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIOption.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIQueue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AIQueue.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/AILoop.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ActionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/DataNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/DataNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Editor/AiDebuggerEditorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Editor/AiDebuggerEditorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/EntryNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/EntryNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ICacheable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ICacheable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/IContextual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/IContextual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/MiddleNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/MiddleNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Parameter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/Parameter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflectionData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflectionData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/ReflexityAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableDictionary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableDictionary.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Framework/SerializableInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/ConverterNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/ConverterNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/Editor/UtilityNodeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/Editor/UtilityNodeEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/OptionNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MainNodes/UtilityNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryCheckNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryClearNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryClearNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryLoadNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemoryLoadNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemorySaveNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MemoryNodes/MemorySaveNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/AndNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/DistanceNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsEqualNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/IsNullNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/NotNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/NotNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/MiddleNodes/OrNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/InCooldownNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/PatternNodes/SaveHistoricNode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/DropdownList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/DropdownList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/Editor/DropdownListDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/Editor/DropdownListDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/TagListHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/ReflexityAI/Utils/TagList/TagListHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/SceneGraphEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,20 +82,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/XNode/Scripts/Editor/NodeGraphEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/XNode/Scripts/Node.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/XNode/Scripts/Editor/NodeEditorAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/31/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/XNode/Scripts/Editor/NodeEditorGUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/CubeGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/XNode/Scripts/NodeGraph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/XNode/Scripts/Editor/NodeEditorGUILayout.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Examples/CubeAI/Scripts/AutoDestroy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/xNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/XNode/Scripts/NodePort.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/XNode/Scripts/Editor/NodeEditorUtilities.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -176,7 +239,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9fb48539-59e8-4c12-b913-774697559faf" name="Default Changelist" comment="" />
+      <changelist id="677a9b3e-7cbe-491d-9214-49bfad4de78e" name="Changes" comment="" />
       <created>1612435424543</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -206,6 +269,7 @@
       <workItem from="1639153852727" duration="1094000" />
       <workItem from="1639159362916" duration="621000" />
       <workItem from="1664462896159" duration="38000" />
+      <workItem from="1664887544567" duration="3292000" />
     </task>
     <servers />
   </component>

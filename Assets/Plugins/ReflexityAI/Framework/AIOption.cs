@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.Reflexity.DataNodes;
-using Plugins.Reflexity.MainNodes;
+using Plugins.ReflexityAI.DataNodes;
+using Plugins.ReflexityAI.MainNodes;
 using Object = UnityEngine.Object;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
     [Serializable]
     public class AIOption {
 

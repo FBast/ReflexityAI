@@ -1,7 +1,7 @@
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using XNode;
 
-namespace Plugins.Reflexity.MainNodes {
+namespace Plugins.ReflexityAI.MainNodes {
     [CreateNodeMenu("Reflexity/Main/Converter")]
     public class ConverterNode : MiddleNode {
         

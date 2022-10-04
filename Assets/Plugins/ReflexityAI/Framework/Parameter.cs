@@ -1,6 +1,6 @@
 using System;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
 	[Serializable]
 	public struct Parameter {
 

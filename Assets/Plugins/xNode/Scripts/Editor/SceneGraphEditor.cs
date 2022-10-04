@@ -19,7 +19,7 @@ namespace XNodeEditor {
                         Type[] graphTypes = NodeEditorReflection.GetDerivedTypes(typeof(NodeGraph));
                         GenericMenu menu = new GenericMenu();
                         for (int i = 0; i < graphTypes.Length; i++) {
-                            Type graphType = graphTypes[i];
+                            graphType = graphTypes[i];
                             menu.AddItem(new GUIContent(graphType.Name), false, () => CreateGraph(graphType));
                         }
                         menu.ShowAsContext();

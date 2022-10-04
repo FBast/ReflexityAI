@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using XNode;
 
-namespace Plugins.Reflexity.MiddleNodes {
+namespace Plugins.ReflexityAI.MiddleNodes {
     [CreateNodeMenu("Reflexity/Middle/Or")]
     public class OrNode : MiddleNode {
         

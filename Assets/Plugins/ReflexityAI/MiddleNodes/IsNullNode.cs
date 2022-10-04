@@ -1,8 +1,8 @@
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using XNode;
 using Object = UnityEngine.Object;
 
-namespace Plugins.Reflexity.MiddleNodes {
+namespace Plugins.ReflexityAI.MiddleNodes {
     [CreateNodeMenu("Reflexity/Middle/IsNull")]
     public class IsNullNode : MiddleNode {
         

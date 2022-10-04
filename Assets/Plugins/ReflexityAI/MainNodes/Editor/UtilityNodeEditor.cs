@@ -2,7 +2,7 @@
 using UnityEngine;
 using XNodeEditor;
 
-namespace Plugins.Reflexity.MainNodes.Editor {
+namespace Plugins.ReflexityAI.MainNodes.Editor {
     [CustomNodeEditor(typeof(UtilityNode))]
     public class UtilityNodeEditor : NodeEditor {
 

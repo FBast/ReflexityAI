@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace Plugins.Reflexity.Utils.TagList.Editor {
+namespace Plugins.ReflexityAI.Utils.TagList.Editor {
     [CustomPropertyDrawer(typeof(DropdownList))]
     public class DropdownListDrawer : PropertyDrawer {
         

@@ -1,4 +1,4 @@
-namespace Plugins.Reflexity.PatternNodes {
+namespace Plugins.ReflexityAI.PatternNodes {
 //    [CreateNodeMenu("Reflexity/Pattern/InCooldown")]
 //    public class InCooldownNode : EntryNode, IContextual {
 //

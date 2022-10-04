@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEditor;
 using XNode;
 using XNodeEditor;
 
-namespace Plugins.Reflexity.DataNodes.Editor {
+namespace Plugins.ReflexityAI.DataNodes.Editor {
     [CustomNodeEditor(typeof(DataReaderNode))]
     public class DataReaderNodeEditor : NodeEditor {
     

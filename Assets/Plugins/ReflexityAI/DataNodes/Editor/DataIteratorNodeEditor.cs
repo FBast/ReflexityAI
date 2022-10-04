@@ -1,7 +1,7 @@
 using XNode;
 using XNodeEditor;
 
-namespace Plugins.Reflexity.DataNodes.Editor {
+namespace Plugins.ReflexityAI.DataNodes.Editor {
     [CustomNodeEditor(typeof(DataIteratorNode))]
     public class DataIteratorNodeEditor : NodeEditor {
 

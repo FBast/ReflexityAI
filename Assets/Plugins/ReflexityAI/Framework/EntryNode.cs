@@ -1,5 +1,5 @@
 ﻿using XNode;
 
-namespace Plugins.Reflexity.Framework {
+namespace Plugins.ReflexityAI.Framework {
     public abstract class EntryNode : Node {}
 }

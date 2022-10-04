@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 using XNode;
 
-namespace Plugins.Reflexity.ActionNodes {
+namespace Plugins.ReflexityAI.ActionNodes {
     [CreateNodeMenu("Reflexity/Action/Launcher")]
     public class ActionLauncherNode : ActionNode {
 

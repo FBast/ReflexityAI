@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using System.Linq;
-using Plugins.Reflexity.Framework;
+using Plugins.ReflexityAI.Framework;
 using UnityEngine;
 using XNode;
 using Object = UnityEngine.Object;
 
-namespace Plugins.Reflexity.DataNodes {
+namespace Plugins.ReflexityAI.DataNodes {
     [CreateNodeMenu("Reflexity/Data/Selector")]
     public class DataSelectorNode : DataNode, ICacheable {
         
