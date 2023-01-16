@@ -1,5 +1,4 @@
 ﻿using Examples.TankArena.Scripts.Framework;
-using Examples.TankArena.Scripts.SOReferences.MatchReference;
 using UnityEngine;
 
 namespace Examples.TankArena.Scripts.UI {
@@ -8,17 +7,14 @@ namespace Examples.TankArena.Scripts.UI {
         [Header("Prefabs")] 
         public GameObject TeamTankPrefab;
 
-        [Header("SO References")] 
-        public MatchReference CurrentMatchReference;
-
         private void Update() {
             ClearTeamTanks();
-            foreach (Team team in CurrentMatchReference.Value.Teams) {
+            foreach (Team team in GlobalFields.CurrentMatch.Teams) {
                 GameObject instantiate = Instantiate(TeamTankPrefab, transform);
                 TeamTankUI teamTankUi = instantiate.GetComponent<TeamTankUI>();
                 teamTankUi.TeamNameText.text = team.TeamName;
                 teamTankUi.TeamNameText.color = team.Color;
-                for (int i = 0; i < CurrentMatchReference.Value.TeamStats[team].TankLeft; i++) {
+                for (int i = 0; i < GlobalFields.CurrentMatch.TeamStats[team].TankLeft; i++) {
                     teamTankUi.AddTankImage();
                 }
             }

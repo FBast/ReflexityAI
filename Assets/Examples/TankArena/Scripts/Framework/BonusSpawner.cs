@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Examples.TankArena.Scripts.Entities;
-using Examples.TankArena.Scripts.SOReferences.GameObjectListReference;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Examples.TankArena.Scripts.Framework {
     public class BonusSpawner : MonoBehaviour {

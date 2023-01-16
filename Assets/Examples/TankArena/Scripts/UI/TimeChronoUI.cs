@@ -1,5 +1,5 @@
 ﻿using System.Globalization;
-using Examples.TankArena.Scripts.SOReferences.FloatReference;
+using Examples.TankArena.Scripts.Framework;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,16 +11,12 @@ namespace Examples.TankArena.Scripts.UI {
         public Image TimeCircle;
         public TextMeshProUGUI TimeText;
 
-        [Header("SO References")] 
-        public FloatReference MaxTimeReference;
-        public FloatReference CurrentTimeReference;
-
         private int _timeLeft;
     
         private void Update() {
-            _timeLeft = Mathf.FloorToInt(MaxTimeReference.Value - CurrentTimeReference.Value);
+            _timeLeft = Mathf.FloorToInt(GlobalFields.MaxTime - GlobalFields.CurrentTime);
             TimeText.text = _timeLeft.ToString(CultureInfo.CurrentCulture);
-            TimeCircle.fillAmount = 1 - CurrentTimeReference.Value / MaxTimeReference.Value;
+            TimeCircle.fillAmount = 1 - GlobalFields.CurrentTime / GlobalFields.MaxTime;
         }
     }
 }

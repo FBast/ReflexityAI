@@ -2,8 +2,6 @@
 using System.Linq;
 using Examples.TankArena.Scripts.Framework;
 using Examples.TankArena.Scripts.Managers;
-using Examples.TankArena.Scripts.SOEvents.StringEvents;
-using Examples.TankArena.Scripts.SOReferences.MatchReference;
 using UnityEngine;
 
 namespace Examples.TankArena.Scripts.UI {
@@ -14,16 +12,10 @@ namespace Examples.TankArena.Scripts.UI {
 
         [Header("Internal References")] 
         public Transform StatsContent;
-        
-        [Header("SO References")] 
-        public MatchReference CurrentMatchReference;
-
-        [Header("SO Events")] 
-        public StringEvent OnReloadScene;
 
         private void OnEnable() {
-            foreach (KeyValuePair<Team,Stats> teamStat in CurrentMatchReference.Value.TeamStats) {
-                if (teamStat.Value.TankLeft > 0 && CurrentMatchReference.Value.TeamStats.Sum(pair => pair.Value.TankLeft) == teamStat.Value.TankLeft) 
+            foreach (KeyValuePair<Team,Stats> teamStat in GlobalFields.CurrentMatch.TeamStats) {
+                if (teamStat.Value.TankLeft > 0 && GlobalFields.CurrentMatch.TeamStats.Sum(pair => pair.Value.TankLeft) == teamStat.Value.TankLeft) 
                     teamStat.Value.VictoryNumber = 1;
                 teamStat.Value.TotalPoints += teamStat.Value.TeamKill * GameManager.Instance.PointPerTeamKill;
                 teamStat.Value.TotalPoints += teamStat.Value.KillCount * GameManager.Instance.PointPerKill;
@@ -31,7 +23,7 @@ namespace Examples.TankArena.Scripts.UI {
                 teamStat.Value.TotalPoints += teamStat.Value.VictoryNumber;
             }
             // Display stats
-            foreach (KeyValuePair<Team,Stats> teamStat in CurrentMatchReference.Value.TeamStats.OrderByDescending(pair => pair.Value.TotalPoints)) {
+            foreach (KeyValuePair<Team,Stats> teamStat in GlobalFields.CurrentMatch.TeamStats.OrderByDescending(pair => pair.Value.TotalPoints)) {
                 TeamStatLineUI teamStatLineUi = Instantiate(TeamStatLine, StatsContent.transform).GetComponent<TeamStatLineUI>();
                 teamStatLineUi.TeamNameText.text = teamStat.Key.TeamName;
                 teamStatLineUi.TeamNameText.color = teamStat.Key.Color;
@@ -56,8 +48,8 @@ namespace Examples.TankArena.Scripts.UI {
         }
 
         public void RestartMatch() {
-            CurrentMatchReference.Value.ResetStats();
-            OnReloadScene.Raise(GlobalProperties.Scenes.Game);
+            GlobalFields.CurrentMatch.ResetStats();
+            GlobalActions.OnReloadScene.Invoke(GlobalProperties.Scenes.Game);
         }
         
     }

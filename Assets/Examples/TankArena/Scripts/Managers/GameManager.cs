@@ -1,19 +1,10 @@
 ﻿using Examples.TankArena.Scripts.Framework;
-using Examples.TankArena.Scripts.SOEvents.VoidEvents;
-using Examples.TankArena.Scripts.SOReferences.FloatReference;
 using Examples.TankArena.Scripts.Utils;
 using UnityEngine;
 using PlayerPrefs = UnityEngine.PlayerPrefs;
 
 namespace Examples.TankArena.Scripts.Managers {
 	public class GameManager : Singleton<GameManager> {
-
-		[Header("SO Events")] 
-		public VoidEvent OnTimerFinished;
-
-		[Header("SO References")] 
-		public FloatReference MaxTimeReference;
-		public FloatReference CurrentTimeReference;
 
 		public int PointPerKill => PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.PointsPerKill,
 			GlobalProperties.PlayerPrefsDefault.PointsPerKill);
@@ -27,17 +18,17 @@ namespace Examples.TankArena.Scripts.Managers {
 		private bool _isTimeOut;
 
 		private void Start() {
-			MaxTimeReference.Value = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.MatchDuration,
+			GlobalFields.MaxTime = PlayerPrefs.GetInt(GlobalProperties.PlayerPrefs.MatchDuration,
 				GlobalProperties.PlayerPrefsDefault.MatchDuration);
 			Time.timeScale = 1;
 		}
 
 		private void Update() {
 			if (_isTimeOut) return;
-			CurrentTimeReference.Value += Time.deltaTime;
-			if (CurrentTimeReference.Value < MaxTimeReference.Value) return;
+			GlobalFields.CurrentTime += Time.deltaTime;
+			if (GlobalFields.CurrentTime < GlobalFields.MaxTime) return;
 			_isTimeOut = true;
-			OnTimerFinished.Raise();
+			GlobalActions.OnTimerFinished.Invoke();
 		}
 
 		public void PauseTime(bool pause) {
@@ -45,7 +36,7 @@ namespace Examples.TankArena.Scripts.Managers {
 		}
         
 		private void OnDestroy() {
-			CurrentTimeReference.Value = 0;
+			GlobalFields.CurrentTime = 0;
 		}
 		
 	}

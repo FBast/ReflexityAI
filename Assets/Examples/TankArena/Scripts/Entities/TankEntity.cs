@@ -6,9 +6,6 @@ using Examples.TankArena.Scripts.Components;
 using Examples.TankArena.Scripts.Data;
 using Examples.TankArena.Scripts.Extensions;
 using Examples.TankArena.Scripts.Framework;
-using Examples.TankArena.Scripts.SOEvents.VoidEvents;
-using Examples.TankArena.Scripts.SOReferences.GameObjectListReference;
-using Examples.TankArena.Scripts.SOReferences.MatchReference;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -27,13 +24,7 @@ namespace Examples.TankArena.Scripts.Entities {
         public Renderer LeftTrackMeshRender;
         public Renderer FactionFlag;
         public GameObject TurretCamera;
-        
-        [Header("SO References")] 
-        public MatchReference CurrentMatchReference;
 
-        [Header("SO Events")] 
-        public VoidEvent OnMatchFinished;
-        
         [Header("Prefabs")]
         public GameObject ShellPrefab;
         public GameObject CanonShotPrefab;
@@ -114,7 +105,6 @@ namespace Examples.TankArena.Scripts.Entities {
             LeftTrackMeshRender.material.color = setting.TracksColor;
             FactionFlag.material.color = team.Color;
             _tankAi.AIBrains = setting.Brains;
-            _tankAi.Init();
         }
         
         private void OnDrawGizmos() {
@@ -161,31 +151,31 @@ namespace Examples.TankArena.Scripts.Entities {
         
         public void DamageByShot(ShellEntity shell) {
             CurrentHp -= shell.CanonDamage;
-            CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += shell.CanonDamage;
+            GlobalFields.CurrentMatch.TeamStats[Team].DamageSuffered += shell.CanonDamage;
             if (shell.TankEntityOwner.Team != Team)
-                CurrentMatchReference.Value.TeamStats[shell.TankEntityOwner.Team].DamageDone += shell.CanonDamage;
+                GlobalFields.CurrentMatch.TeamStats[shell.TankEntityOwner.Team].DamageDone += shell.CanonDamage;
             if (CurrentHp > 0) return;
             Die(shell.TankEntityOwner);
         }
 
         public void DamageByExplosion(TankEntity tank) {
             CurrentHp -= tank._explosionDamage;
-            CurrentMatchReference.Value.TeamStats[Team].DamageSuffered += tank._explosionDamage;
+            GlobalFields.CurrentMatch.TeamStats[Team].DamageSuffered += tank._explosionDamage;
             if (tank.Team != Team)
-                CurrentMatchReference.Value.TeamStats[tank.Team].DamageDone += tank._explosionDamage;
+                GlobalFields.CurrentMatch.TeamStats[tank.Team].DamageDone += tank._explosionDamage;
             if (CurrentHp > 0) return;
             Die(tank, true);
         }
 
         private void Die(TankEntity killer, bool noExplosion = false) {
             if (killer.Team == Team)
-                CurrentMatchReference.Value.TeamStats[Team].TeamKill++;
+                GlobalFields.CurrentMatch.TeamStats[Team].TeamKill++;
             else
-                CurrentMatchReference.Value.TeamStats[killer.Team].KillCount++;
-            CurrentMatchReference.Value.TeamStats[Team].LossCount++;
-            CurrentMatchReference.Value.TeamStats[Team].TankLeft--;
-            if (CurrentMatchReference.Value.TeamInMatch.Count() == 1)
-                OnMatchFinished.Raise();
+                GlobalFields.CurrentMatch.TeamStats[killer.Team].KillCount++;
+            GlobalFields.CurrentMatch.TeamStats[Team].LossCount++;
+            GlobalFields.CurrentMatch.TeamStats[Team].TankLeft--;
+            if (GlobalFields.CurrentMatch.TeamInMatch.Count() == 1)
+                GlobalActions.OnMatchFinished.Invoke();
             // Explosion
             if (!noExplosion) {
                 Instantiate(TankExplosionPrefab, transform.position, transform.rotation);

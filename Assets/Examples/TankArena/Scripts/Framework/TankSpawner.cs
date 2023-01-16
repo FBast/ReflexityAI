@@ -1,8 +1,5 @@
 ﻿using System.Collections.Generic;
-using Examples.TankArena.Scripts.Data;
 using Examples.TankArena.Scripts.Entities;
-using Examples.TankArena.Scripts.SOReferences.GameObjectListReference;
-using Examples.TankArena.Scripts.SOReferences.MatchReference;
 using Examples.TankArena.Scripts.Utils;
 using UnityEngine;
 
@@ -15,13 +12,10 @@ namespace Examples.TankArena.Scripts.Framework {
         [Header("Internal References")] 
         public List<Transform> TeamPositions;
         public Transform TankContent;
-  
-        [Header("SO References")] 
-        public MatchReference CurrentMatchReference;
 
         private void Start() {
-            for (int i = 0; i < CurrentMatchReference.Value.Teams.Count; i++) {
-                GenerateTankTeam(CurrentMatchReference.Value.Teams[i], TeamPositions[i]);
+            for (int i = 0; i < GlobalFields.CurrentMatch.Teams.Count; i++) {
+                GenerateTankTeam(GlobalFields.CurrentMatch.Teams[i], TeamPositions[i]);
             }
         }
 

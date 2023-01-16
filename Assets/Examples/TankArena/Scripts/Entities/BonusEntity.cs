@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Examples.TankArena.Scripts.SOReferences.MatchReference;
+using Examples.TankArena.Scripts.Framework;
 using UnityEngine;
 
 namespace Examples.TankArena.Scripts.Entities {
@@ -7,9 +7,6 @@ namespace Examples.TankArena.Scripts.Entities {
         
         [Header("Prefabs")]
         public GameObject BonusExplosionPrefab;
-        
-        [Header("SO References")]
-        public MatchReference MatchReference;
 
         public static List<BonusEntity> BonusEntities = new List<BonusEntity>();
         
@@ -27,7 +24,7 @@ namespace Examples.TankArena.Scripts.Entities {
             Instantiate(BonusExplosionPrefab, transform.position, Quaternion.identity);
             TankEntity tankEntity = other.gameObject.GetComponent<TankEntity>();
             if (tankEntity != null) {
-                MatchReference.Value.TeamStats[tankEntity.Team].BonusCount++;
+                GlobalFields.CurrentMatch.TeamStats[tankEntity.Team].BonusCount++;
                 Destroy(gameObject);
             }
         }

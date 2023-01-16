@@ -2,55 +2,55 @@ namespace Examples.TankArena.Scripts.Framework {
     public static class GlobalProperties {
         
         public struct Scenes {
-            public const string Shared = "Shared";
-            public const string Menu = "Menu";
-            public const string Game = "Game";
+            public static string Shared => "Shared";
+            public static string Menu => "Menu";
+            public static string Game => "Game";
         }
         
         public struct PlayerPrefs {
-            public const string MatchDuration = "MatchTime";
-            public const string PointsPerKill = "PointsPerKill";
-            public const string PointsPerTeamKill = "PointsPerTeamKill";
-            public const string PointsPerBonus = "PointsPerBonus";
-            public const string PointsForVictory = "PointsIfVictory";
-            public const string ExplosionDamage = "ExplosionDamage";
-            public const string ExplosionRadius = "ExplosionRadius";
-            public const string ExplosionCreateBustedTank = "ExplosionCreateBustedTank";
-            public const string CanonDamage = "CanonDamage";
-            public const string CanonPower = "CanonPower";
-            public const string TurretSpeed = "TurretSpeed";
-            public const string HealthPoints = "MaxHp";
-            public const string ReloadTime = "ReloadTime";
-            public const string WaypointSeekRadius = "WaypointSeekRadius";
-            public const string AlwaysPickBestChoice = "AlwaysPickBestChoice";
-            public const string SecondsBetweenRefresh = "TimeBetweenRefresh";
-            public const string GridGap = "GridGap";
-            public const string BonusPerSpawnNumber = "BonusPerSpawnNumber";
-            public const string BonusPerSpawnFrequency = "BonusPerSpawnFrequency";
-            public const string TankSpeed = "TankSpeed";
+            public static string MatchDuration => "MatchTime";
+            public static string PointsPerKill => "PointsPerKill";
+            public static string PointsPerTeamKill => "PointsPerTeamKill";
+            public static string PointsPerBonus => "PointsPerBonus";
+            public static string PointsForVictory => "PointsIfVictory";
+            public static string ExplosionDamage => "ExplosionDamage";
+            public static string ExplosionRadius => "ExplosionRadius";
+            public static string ExplosionCreateBustedTank => "ExplosionCreateBustedTank";
+            public static string CanonDamage => "CanonDamage";
+            public static string CanonPower => "CanonPower";
+            public static string TurretSpeed => "TurretSpeed";
+            public static string HealthPoints => "MaxHp";
+            public static string ReloadTime => "ReloadTime";
+            public static string WaypointSeekRadius => "WaypointSeekRadius";
+            public static string AlwaysPickBestChoice => "AlwaysPickBestChoice";
+            public static string SecondsBetweenRefresh => "TimeBetweenRefresh";
+            public static string GridGap => "GridGap";
+            public static string BonusPerSpawnNumber => "BonusPerSpawnNumber";
+            public static string BonusPerSpawnFrequency => "BonusPerSpawnFrequency";
+            public static string TankSpeed => "TankSpeed";
         }
         
         public struct PlayerPrefsDefault {
-            public const int MatchDuration = 60;
-            public const int PointsPerKill = 2;
-            public const int PointsPerTeamKill = -1;
-            public const int PointsPerBonus = 1;
-            public const int PointsForVictory = 3;
-            public const int ExplosionDamage = 1;
-            public const int ExplosionRadius = 5;
-            public const bool ExplosionCreateBustedTank = true;
-            public const int CanonDamage = 1;
-            public const int CanonPower = 100;
-            public const int TurretSpeed = 10;
-            public const int HealthPoints = 5;
-            public const int ReloadTime = 3;
-            public const int WaypointSeekRadius = 50;
-            public const bool AlwaysPickBestChoice = true;
-            public const int SecondsBetweenRefresh = 1;
-            public const int GridGap = 20;
-            public const int BonusPerSpawnNumber = 3;
-            public const int BonusPerSpawnFrequency = 10;
-            public const int TankSpeed = 10;
+            public static int MatchDuration => 60;
+            public static int PointsPerKill => 2;
+            public static int PointsPerTeamKill => -1;
+            public static int PointsPerBonus => 1;
+            public static int PointsForVictory => 3;
+            public static int ExplosionDamage => 1;
+            public static int ExplosionRadius => 5;
+            public static bool ExplosionCreateBustedTank => true;
+            public static int CanonDamage => 1;
+            public static int CanonPower => 100;
+            public static int TurretSpeed => 10;
+            public static int HealthPoints => 5;
+            public static int ReloadTime => 3;
+            public static int WaypointSeekRadius => 50;
+            public static bool AlwaysPickBestChoice => true;
+            public static int SecondsBetweenRefresh => 1;
+            public static int GridGap => 20;
+            public static int BonusPerSpawnNumber => 3;
+            public static int BonusPerSpawnFrequency => 10;
+            public static int TankSpeed => 10;
         }
 
     }

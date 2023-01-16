@@ -3,8 +3,6 @@ using System.Linq;
 using Examples.TankArena.Scripts.Data;
 using Examples.TankArena.Scripts.Framework;
 using Examples.TankArena.Scripts.Managers;
-using Examples.TankArena.Scripts.SOReferences.GameReference;
-using Examples.TankArena.Scripts.SOReferences.MatchReference;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,10 +22,6 @@ namespace Examples.TankArena.Scripts.UI {
         public List<TMP_Dropdown> TankSettingsDropdowns;
         public ColorPicker ColorPicker;
 
-        [Header("SO References")] 
-        public GameReference CurrentGameReference;
-        public MatchReference CurrentMatchReference;
-    
         private List<Team> _teams = new List<Team>();
         private Dictionary<Team, GameObject> _teamToggles = new Dictionary<Team, GameObject>();
         private Team _currentTeam;
@@ -116,8 +110,8 @@ namespace Examples.TankArena.Scripts.UI {
             };
             game.SetupTournament();
             game.CurrentMatch = game.NextMatch();
-            CurrentGameReference.Value = game;
-            CurrentMatchReference.Value = game.CurrentMatch;
+            GlobalFields.CurrentGame = game;
+            GlobalFields.CurrentMatch = game.CurrentMatch;
         }
 
     }

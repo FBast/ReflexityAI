@@ -3,18 +3,12 @@ using System.Linq;
 using Examples.TankArena.Scripts.Data;
 using Examples.TankArena.Scripts.Framework;
 using Examples.TankArena.Scripts.Managers;
-using Examples.TankArena.Scripts.SOReferences.GameReference;
-using Examples.TankArena.Scripts.SOReferences.MatchReference;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Examples.TankArena.Scripts.UI {
     public class TeamFightUI : MonoBehaviour {
-
-        [Header("SO References")]
-        public GameReference CurrentGameReference;
-        public MatchReference CurrentMatchReference;
 
         [Header("Team A References")]
         public Toggle TeamACompositeToggle;
@@ -99,8 +93,8 @@ namespace Examples.TankArena.Scripts.UI {
             }
             game.SetupTeamFight();
             game.CurrentMatch = game.NextMatch();
-            CurrentGameReference.Value = game;
-            CurrentMatchReference.Value = game.CurrentMatch;
+            GlobalFields.CurrentGame = game;
+            GlobalFields.CurrentMatch = game.CurrentMatch;
         }
         
     }
