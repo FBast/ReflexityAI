@@ -95,6 +95,8 @@ namespace Examples.TankArena.Scripts.UI {
             game.CurrentMatch = game.NextMatch();
             GlobalFields.CurrentGame = game;
             GlobalFields.CurrentMatch = game.CurrentMatch;
+            GlobalActions.OnUnloadScene.Invoke(GlobalProperties.Scenes.Menu);
+            GlobalActions.OnLoadScene.Invoke(GlobalProperties.Scenes.Game);
         }
         
     }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d836126a860f4c12851dc93aef4c8798, type: 3}
   m_Name: Action Setter
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 2488, y: -648}
   ports:
     keys:
@@ -46,7 +46,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: -8375299939493503399}
-      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6ea1fc9eb84a56b1c889ef5cbd2acf, type: 3}
   m_Name: Option
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 3032, y: -1080}
   ports:
     keys:
@@ -414,7 +414,7 @@ MonoBehaviour:
     values:
     - _fieldName: DataIteratorNode
       _node: {fileID: -5992514119913607570}
-      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -459,7 +459,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: -5992514119913607570}
-      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption
@@ -491,7 +491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 889fcb5e10a64fd2ae8e766b05f06ae5, type: 3}
   m_Name: Data Iterator
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 1304, y: -1208}
   ports:
     keys:
@@ -514,7 +514,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: -5648708492508959291}
-      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: DataIteratorNode
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
   m_Name: Data Selector
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 1848, y: -1080}
   ports:
     keys:
@@ -602,7 +602,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: position (Property)
-    Order: 385877688
+    Order: 385877698
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -614,7 +614,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: position (Property)
-    Order: 385877688
+    Order: 385877698
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -625,7 +625,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localPosition (Property)
-    Order: 385877689
+    Order: 385877699
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -636,7 +636,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: eulerAngles (Property)
-    Order: 385877690
+    Order: 385877700
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -647,7 +647,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localEulerAngles (Property)
-    Order: 385877691
+    Order: 385877701
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -658,7 +658,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: right (Property)
-    Order: 385877692
+    Order: 385877702
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -669,7 +669,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: up (Property)
-    Order: 385877693
+    Order: 385877703
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -680,7 +680,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: forward (Property)
-    Order: 385877694
+    Order: 385877704
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -691,7 +691,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: rotation (Property)
-    Order: 385877695
+    Order: 385877705
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -702,7 +702,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localRotation (Property)
-    Order: 385877696
+    Order: 385877706
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -713,7 +713,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localScale (Property)
-    Order: 385877698
+    Order: 385877708
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -724,7 +724,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: parent (Property)
-    Order: 385877699
+    Order: 385877709
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -735,7 +735,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: worldToLocalMatrix (Property)
-    Order: 385877701
+    Order: 385877711
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -746,7 +746,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localToWorldMatrix (Property)
-    Order: 385877702
+    Order: 385877712
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -757,7 +757,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: root (Property)
-    Order: 385877703
+    Order: 385877713
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -767,7 +767,7 @@ MonoBehaviour:
     Name: childCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: childCount (Property)
-    Order: 385877704
+    Order: 385877714
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -778,7 +778,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: lossyScale (Property)
-    Order: 385877705
+    Order: 385877715
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -788,7 +788,7 @@ MonoBehaviour:
     Name: hasChanged
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: hasChanged (Property)
-    Order: 385877706
+    Order: 385877716
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -798,7 +798,7 @@ MonoBehaviour:
     Name: hierarchyCapacity
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: hierarchyCapacity (Property)
-    Order: 385877707
+    Order: 385877717
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -808,7 +808,7 @@ MonoBehaviour:
     Name: hierarchyCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: hierarchyCount (Property)
-    Order: 385877708
+    Order: 385877718
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -825,7 +825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
   m_Name: Converter
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 2488, y: -856}
   ports:
     keys:
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
   m_Name: Converter
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 2536, y: -280}
   ports:
     keys:
@@ -919,7 +919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5782974d0548629c677ed40bccc8cc, type: 3}
   m_Name: Action Launcher
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 2248, y: 104}
   ports:
     keys:
@@ -940,7 +940,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: LinkedOption
       _node: {fileID: -3466444215346728052}
-      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Actions
@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b1a63fe03bad4d4daad69c1a664cf6c, type: 3}
   m_Name: Data Reader
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 856, y: -1096}
   ports:
     keys:
@@ -1317,7 +1317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
   m_Name: Data Selector
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 1848, y: -984}
   ports:
     keys:
@@ -1358,7 +1358,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: position (Property)
-    Order: 385877688
+    Order: 385877698
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1370,7 +1370,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: position (Property)
-    Order: 385877688
+    Order: 385877698
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1381,7 +1381,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localPosition (Property)
-    Order: 385877689
+    Order: 385877699
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1392,7 +1392,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: eulerAngles (Property)
-    Order: 385877690
+    Order: 385877700
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1403,7 +1403,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localEulerAngles (Property)
-    Order: 385877691
+    Order: 385877701
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1414,7 +1414,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: right (Property)
-    Order: 385877692
+    Order: 385877702
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1425,7 +1425,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: up (Property)
-    Order: 385877693
+    Order: 385877703
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1436,7 +1436,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: forward (Property)
-    Order: 385877694
+    Order: 385877704
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1447,7 +1447,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: rotation (Property)
-    Order: 385877695
+    Order: 385877705
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1458,7 +1458,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localRotation (Property)
-    Order: 385877696
+    Order: 385877706
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1469,7 +1469,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localScale (Property)
-    Order: 385877698
+    Order: 385877708
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1480,7 +1480,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: parent (Property)
-    Order: 385877699
+    Order: 385877709
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -1491,7 +1491,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: worldToLocalMatrix (Property)
-    Order: 385877701
+    Order: 385877711
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1502,7 +1502,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Matrix4x4, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: localToWorldMatrix (Property)
-    Order: 385877702
+    Order: 385877712
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1513,7 +1513,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: root (Property)
-    Order: 385877703
+    Order: 385877713
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -1523,7 +1523,7 @@ MonoBehaviour:
     Name: childCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: childCount (Property)
-    Order: 385877704
+    Order: 385877714
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1534,7 +1534,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: lossyScale (Property)
-    Order: 385877705
+    Order: 385877715
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1544,7 +1544,7 @@ MonoBehaviour:
     Name: hasChanged
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: hasChanged (Property)
-    Order: 385877706
+    Order: 385877716
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1554,7 +1554,7 @@ MonoBehaviour:
     Name: hierarchyCapacity
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: hierarchyCapacity (Property)
-    Order: 385877707
+    Order: 385877717
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1564,7 +1564,7 @@ MonoBehaviour:
     Name: hierarchyCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: hierarchyCount (Property)
-    Order: 385877708
+    Order: 385877718
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -1595,8 +1595,6 @@ MonoBehaviour:
   - {fileID: 9088667624123106568}
   - {fileID: 398190027940994915}
   - {fileID: -3466444215346728052}
-  - {fileID: 6404886698100673814}
-  - {fileID: 6709006292567774245}
   - {fileID: 6694926882622017009}
   - {fileID: -4961519716477982827}
   - {fileID: -5648708492508959291}
@@ -1606,6 +1604,7 @@ MonoBehaviour:
   - {fileID: -5485467460354783935}
   - {fileID: -1251119350928541249}
   - {fileID: 137142054640817869}
+  - {fileID: 6418571565006161545}
   HistoricTags: []
   MemoryTags: []
 --- !u!114 &137142054640817869
@@ -1620,7 +1619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f32ba448a5e42aeb9a5a9b9747a52b6, type: 3}
   m_Name: Distance
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 2152, y: -1064}
   ports:
     keys:
@@ -1679,7 +1678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
   m_Name: Converter
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 2536, y: -152}
   ports:
     keys:
@@ -1726,7 +1725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
   m_Name: Data Selector
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 1576, y: -1080}
   ports:
     keys:
@@ -1767,7 +1766,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -1779,7 +1778,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOut (Field)
-    Order: 67109012
+    Order: 67109087
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -1790,7 +1789,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Turret (Field)
-    Order: 67109013
+    Order: 67109088
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -1801,7 +1800,7 @@ MonoBehaviour:
     TypeName: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: ShotFiring (Field)
-    Order: 67109014
+    Order: 67109089
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1812,7 +1811,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: SmokeSetter (Field)
-    Order: 67109015
+    Order: 67109090
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1823,7 +1822,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: FireSetter (Field)
-    Order: 67109016
+    Order: 67109091
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1834,7 +1833,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretMeshRenderer (Field)
-    Order: 67109017
+    Order: 67109092
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1845,7 +1844,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: HullMeshRenderer (Field)
-    Order: 67109018
+    Order: 67109093
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1856,7 +1855,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: RightTrackMeshRender (Field)
-    Order: 67109019
+    Order: 67109094
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1867,7 +1866,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: LeftTrackMeshRender (Field)
-    Order: 67109020
+    Order: 67109095
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1878,7 +1877,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: FactionFlag (Field)
-    Order: 67109021
+    Order: 67109096
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1889,29 +1888,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretCamera (Field)
-    Order: 67109022
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: CurrentMatchReference
-    TypeName: Examples.TankArena.Scripts.SOReferences.MatchReference.MatchReference,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: CurrentMatchReference (Field)
-    Order: 67109023
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: OnMatchFinished
-    TypeName: Examples.TankArena.Scripts.SOEvents.VoidEvents.VoidEvent, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: OnMatchFinished (Field)
-    Order: 67109024
+    Order: 67109097
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1922,7 +1899,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ShellPrefab (Field)
-    Order: 67109025
+    Order: 67109098
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1933,7 +1910,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonShotPrefab (Field)
-    Order: 67109026
+    Order: 67109099
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1944,7 +1921,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TankExplosionPrefab (Field)
-    Order: 67109027
+    Order: 67109100
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1955,7 +1932,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: BustedTankPrefab (Field)
-    Order: 67109028
+    Order: 67109101
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1966,7 +1943,7 @@ MonoBehaviour:
     TypeName: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CoverLayer (Field)
-    Order: 67109029
+    Order: 67109102
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1977,7 +1954,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67109030
+    Order: 67109103
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1988,7 +1965,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Destination (Field)
-    Order: 67109031
+    Order: 67109104
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -1998,7 +1975,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67109032
+    Order: 67109105
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2008,7 +1985,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67109033
+    Order: 67109106
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2020,7 +1997,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: TankEntities (Field)
-    Order: 67109034
+    Order: 67109107
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2031,7 +2008,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Team (Property)
-    Order: 385875978
+    Order: 385876003
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2042,7 +2019,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: TankInSight (Property)
-    Order: 385875979
+    Order: 385876004
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2053,7 +2030,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2063,7 +2040,7 @@ MonoBehaviour:
     Name: IsShellLoaded
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsShellLoaded (Property)
-    Order: 385875981
+    Order: 385876006
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2073,7 +2050,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Property)
-    Order: 385875982
+    Order: 385876007
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2085,7 +2062,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: Aggressors (Property)
-    Order: 385875983
+    Order: 385876008
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2095,11 +2072,11 @@ MonoBehaviour:
     Name: AgressorsCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: AgressorsCount (Property)
-    Order: 385875984
+    Order: 385876009
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
-  ChoiceIndex: 25
+  ChoiceIndex: 23
 --- !u!114 &1416216259208173327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2112,7 +2089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
   m_Name: Data Selector
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 1576, y: -984}
   ports:
     keys:
@@ -2153,7 +2130,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2165,7 +2142,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOut (Field)
-    Order: 67109012
+    Order: 67109087
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2176,7 +2153,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Turret (Field)
-    Order: 67109013
+    Order: 67109088
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2187,7 +2164,7 @@ MonoBehaviour:
     TypeName: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: ShotFiring (Field)
-    Order: 67109014
+    Order: 67109089
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2198,7 +2175,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: SmokeSetter (Field)
-    Order: 67109015
+    Order: 67109090
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2209,7 +2186,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: FireSetter (Field)
-    Order: 67109016
+    Order: 67109091
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2220,7 +2197,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretMeshRenderer (Field)
-    Order: 67109017
+    Order: 67109092
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2231,7 +2208,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: HullMeshRenderer (Field)
-    Order: 67109018
+    Order: 67109093
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2242,7 +2219,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: RightTrackMeshRender (Field)
-    Order: 67109019
+    Order: 67109094
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2253,7 +2230,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: LeftTrackMeshRender (Field)
-    Order: 67109020
+    Order: 67109095
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2264,7 +2241,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: FactionFlag (Field)
-    Order: 67109021
+    Order: 67109096
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2275,29 +2252,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretCamera (Field)
-    Order: 67109022
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: CurrentMatchReference
-    TypeName: Examples.TankArena.Scripts.SOReferences.MatchReference.MatchReference,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: CurrentMatchReference (Field)
-    Order: 67109023
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: OnMatchFinished
-    TypeName: Examples.TankArena.Scripts.SOEvents.VoidEvents.VoidEvent, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: OnMatchFinished (Field)
-    Order: 67109024
+    Order: 67109097
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2308,7 +2263,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ShellPrefab (Field)
-    Order: 67109025
+    Order: 67109098
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2319,7 +2274,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonShotPrefab (Field)
-    Order: 67109026
+    Order: 67109099
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2330,7 +2285,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TankExplosionPrefab (Field)
-    Order: 67109027
+    Order: 67109100
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2341,7 +2296,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: BustedTankPrefab (Field)
-    Order: 67109028
+    Order: 67109101
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2352,7 +2307,7 @@ MonoBehaviour:
     TypeName: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CoverLayer (Field)
-    Order: 67109029
+    Order: 67109102
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2363,7 +2318,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67109030
+    Order: 67109103
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2374,7 +2329,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Destination (Field)
-    Order: 67109031
+    Order: 67109104
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2384,7 +2339,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67109032
+    Order: 67109105
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2394,7 +2349,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67109033
+    Order: 67109106
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2406,7 +2361,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: TankEntities (Field)
-    Order: 67109034
+    Order: 67109107
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2417,7 +2372,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Team (Property)
-    Order: 385875978
+    Order: 385876003
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2428,7 +2383,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: TankInSight (Property)
-    Order: 385875979
+    Order: 385876004
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2439,7 +2394,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2449,7 +2404,7 @@ MonoBehaviour:
     Name: IsShellLoaded
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsShellLoaded (Property)
-    Order: 385875981
+    Order: 385876006
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2459,7 +2414,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Property)
-    Order: 385875982
+    Order: 385876007
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2471,7 +2426,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: Aggressors (Property)
-    Order: 385875983
+    Order: 385876008
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2481,11 +2436,11 @@ MonoBehaviour:
     Name: AgressorsCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: AgressorsCount (Property)
-    Order: 385875984
+    Order: 385876009
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
-  ChoiceIndex: 25
+  ChoiceIndex: 23
 --- !u!114 &5010062194994770884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2498,7 +2453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5bcf42891e53c64fadf5b41367caef3, type: 3}
   m_Name: Utility
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 2488, y: -1064}
   ports:
     keys:
@@ -2591,7 +2546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
   m_Name: Data Selector
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 1576, y: -856}
   ports:
     keys:
@@ -2612,7 +2567,7 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 5229758820806433460}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: ValueIn
@@ -2628,10 +2583,10 @@ MonoBehaviour:
     MemberTypes: 16
     DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: IsDead
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsDead (Property)
-    Order: 385875982
+    Name: AgressorsCount
+    TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: AgressorsCount (Property)
+    Order: 385876009
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2643,7 +2598,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOut (Field)
-    Order: 67109012
+    Order: 67109087
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2654,7 +2609,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Turret (Field)
-    Order: 67109013
+    Order: 67109088
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2665,7 +2620,7 @@ MonoBehaviour:
     TypeName: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: ShotFiring (Field)
-    Order: 67109014
+    Order: 67109089
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2676,7 +2631,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: SmokeSetter (Field)
-    Order: 67109015
+    Order: 67109090
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2687,7 +2642,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: FireSetter (Field)
-    Order: 67109016
+    Order: 67109091
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2698,7 +2653,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretMeshRenderer (Field)
-    Order: 67109017
+    Order: 67109092
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2709,7 +2664,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: HullMeshRenderer (Field)
-    Order: 67109018
+    Order: 67109093
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2720,7 +2675,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: RightTrackMeshRender (Field)
-    Order: 67109019
+    Order: 67109094
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2731,7 +2686,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: LeftTrackMeshRender (Field)
-    Order: 67109020
+    Order: 67109095
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2742,7 +2697,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: FactionFlag (Field)
-    Order: 67109021
+    Order: 67109096
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2753,29 +2708,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretCamera (Field)
-    Order: 67109022
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: CurrentMatchReference
-    TypeName: Examples.TankArena.Scripts.SOReferences.MatchReference.MatchReference,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: CurrentMatchReference (Field)
-    Order: 67109023
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: OnMatchFinished
-    TypeName: Examples.TankArena.Scripts.SOEvents.VoidEvents.VoidEvent, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: OnMatchFinished (Field)
-    Order: 67109024
+    Order: 67109097
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2786,7 +2719,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ShellPrefab (Field)
-    Order: 67109025
+    Order: 67109098
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2797,7 +2730,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonShotPrefab (Field)
-    Order: 67109026
+    Order: 67109099
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2808,7 +2741,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TankExplosionPrefab (Field)
-    Order: 67109027
+    Order: 67109100
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2819,7 +2752,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: BustedTankPrefab (Field)
-    Order: 67109028
+    Order: 67109101
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2830,7 +2763,7 @@ MonoBehaviour:
     TypeName: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CoverLayer (Field)
-    Order: 67109029
+    Order: 67109102
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2841,7 +2774,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67109030
+    Order: 67109103
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2852,7 +2785,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Destination (Field)
-    Order: 67109031
+    Order: 67109104
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2862,7 +2795,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67109032
+    Order: 67109105
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2872,7 +2805,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67109033
+    Order: 67109106
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2884,7 +2817,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: TankEntities (Field)
-    Order: 67109034
+    Order: 67109107
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2895,7 +2828,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Team (Property)
-    Order: 385875978
+    Order: 385876003
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2906,7 +2839,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: TankInSight (Property)
-    Order: 385875979
+    Order: 385876004
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -2917,7 +2850,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2927,7 +2860,7 @@ MonoBehaviour:
     Name: IsShellLoaded
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsShellLoaded (Property)
-    Order: 385875981
+    Order: 385876006
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2937,7 +2870,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Property)
-    Order: 385875982
+    Order: 385876007
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2949,7 +2882,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: Aggressors (Property)
-    Order: 385875983
+    Order: 385876008
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -2959,7 +2892,7 @@ MonoBehaviour:
     Name: AgressorsCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: AgressorsCount (Property)
-    Order: 385875984
+    Order: 385876009
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -2976,8 +2909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
   m_Name: Data Selector
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1608, y: -168}
+  graph: {fileID: 0}
+  position: {x: 1592, y: -264}
   ports:
     keys:
     - Data
@@ -2997,12 +2930,9 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 5571499505272665449}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
       connections:
-      - fieldName: Data
-        node: {fileID: 7406973223928053737}
-        reroutePoints: []
       - fieldName: ValueIn
         node: {fileID: 6694926882622017009}
         reroutePoints: []
@@ -3016,13 +2946,12 @@ MonoBehaviour:
     MemberTypes: 16
     DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: TankInSight
-    TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-    PortName: TankInSight (Property)
-    Order: 385875979
+    Name: IsShellLoaded
+    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+    PortName: IsShellLoaded (Property)
+    Order: 385876006
     IsIteratable: 0
-    IsPrimitive: 0
+    IsPrimitive: 1
     Parameters: []
   SerializableInfos:
   - MemberTypes: 4
@@ -3032,7 +2961,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOut (Field)
-    Order: 67109012
+    Order: 67109087
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3043,7 +2972,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Turret (Field)
-    Order: 67109013
+    Order: 67109088
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3054,7 +2983,7 @@ MonoBehaviour:
     TypeName: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: ShotFiring (Field)
-    Order: 67109014
+    Order: 67109089
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3065,7 +2994,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: SmokeSetter (Field)
-    Order: 67109015
+    Order: 67109090
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3076,7 +3005,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: FireSetter (Field)
-    Order: 67109016
+    Order: 67109091
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3087,7 +3016,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretMeshRenderer (Field)
-    Order: 67109017
+    Order: 67109092
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3098,7 +3027,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: HullMeshRenderer (Field)
-    Order: 67109018
+    Order: 67109093
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3109,7 +3038,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: RightTrackMeshRender (Field)
-    Order: 67109019
+    Order: 67109094
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3120,7 +3049,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: LeftTrackMeshRender (Field)
-    Order: 67109020
+    Order: 67109095
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3131,7 +3060,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: FactionFlag (Field)
-    Order: 67109021
+    Order: 67109096
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3142,29 +3071,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretCamera (Field)
-    Order: 67109022
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: CurrentMatchReference
-    TypeName: Examples.TankArena.Scripts.SOReferences.MatchReference.MatchReference,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: CurrentMatchReference (Field)
-    Order: 67109023
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: OnMatchFinished
-    TypeName: Examples.TankArena.Scripts.SOEvents.VoidEvents.VoidEvent, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: OnMatchFinished (Field)
-    Order: 67109024
+    Order: 67109097
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3175,7 +3082,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ShellPrefab (Field)
-    Order: 67109025
+    Order: 67109098
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3186,7 +3093,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonShotPrefab (Field)
-    Order: 67109026
+    Order: 67109099
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3197,7 +3104,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TankExplosionPrefab (Field)
-    Order: 67109027
+    Order: 67109100
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3208,7 +3115,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: BustedTankPrefab (Field)
-    Order: 67109028
+    Order: 67109101
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3219,7 +3126,7 @@ MonoBehaviour:
     TypeName: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CoverLayer (Field)
-    Order: 67109029
+    Order: 67109102
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3230,7 +3137,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67109030
+    Order: 67109103
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3241,7 +3148,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Destination (Field)
-    Order: 67109031
+    Order: 67109104
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3251,7 +3158,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67109032
+    Order: 67109105
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3261,7 +3168,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67109033
+    Order: 67109106
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3273,7 +3180,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: TankEntities (Field)
-    Order: 67109034
+    Order: 67109107
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3284,7 +3191,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Team (Property)
-    Order: 385875978
+    Order: 385876003
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3295,7 +3202,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: TankInSight (Property)
-    Order: 385875979
+    Order: 385876004
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3306,7 +3213,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3316,7 +3223,7 @@ MonoBehaviour:
     Name: IsShellLoaded
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsShellLoaded (Property)
-    Order: 385875981
+    Order: 385876006
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3326,7 +3233,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Property)
-    Order: 385875982
+    Order: 385876007
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3338,7 +3245,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: Aggressors (Property)
-    Order: 385875983
+    Order: 385876008
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3348,7 +3255,7 @@ MonoBehaviour:
     Name: AgressorsCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: AgressorsCount (Property)
-    Order: 385875984
+    Order: 385876009
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3365,8 +3272,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b581676763b4451fbb38ac9befec67ad, type: 3}
   m_Name: Is Equal
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 2152, y: -168}
+  graph: {fileID: 0}
+  position: {x: 2200, y: -104}
   ports:
     keys:
     - ValuesIn
@@ -3378,7 +3285,7 @@ MonoBehaviour:
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Output
-        node: {fileID: 7406973223928053737}
+        node: {fileID: 6418571565006161545}
         reroutePoints: []
       - fieldName: Output
         node: {fileID: 8389483754144246571}
@@ -3401,7 +3308,7 @@ MonoBehaviour:
       _dynamic: 0
   ValuesIn: {fileID: 0}
   ValueOut: 0
---- !u!114 &6404886698100673814
+--- !u!114 &6418571565006161545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3414,31 +3321,31 @@ MonoBehaviour:
   m_Name: Data Selector
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 1624, y: -408}
+  position: {x: 1880, y: -136}
   ports:
     keys:
     - Data
     - Output
     values:
     - _fieldName: Data
-      _node: {fileID: 6404886698100673814}
+      _node: {fileID: 6418571565006161545}
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: TankEntity (Field)
-        node: {fileID: 6903820323503161636}
+      - fieldName: Output
+        node: {fileID: 7406973223928053737}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
       _typeConstraint: 1
       _dynamic: 0
     - _fieldName: Output
-      _node: {fileID: 6404886698100673814}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _node: {fileID: 6418571565006161545}
+      _typeQualifiedName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: ValueIn
-        node: {fileID: 6709006292567774245}
+      - fieldName: ValuesIn
+        node: {fileID: 6047106079854313704}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -3450,12 +3357,13 @@ MonoBehaviour:
     MemberTypes: 16
     DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: IsShellLoaded
-    TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
-    PortName: IsShellLoaded (Property)
-    Order: 385875981
+    Name: Team
+    TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    PortName: Team (Property)
+    Order: 385876003
     IsIteratable: 0
-    IsPrimitive: 1
+    IsPrimitive: 0
     Parameters: []
   SerializableInfos:
   - MemberTypes: 4
@@ -3465,7 +3373,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOut (Field)
-    Order: 67109012
+    Order: 67109087
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3476,7 +3384,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Turret (Field)
-    Order: 67109013
+    Order: 67109088
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3487,7 +3395,7 @@ MonoBehaviour:
     TypeName: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: ShotFiring (Field)
-    Order: 67109014
+    Order: 67109089
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3498,7 +3406,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: SmokeSetter (Field)
-    Order: 67109015
+    Order: 67109090
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3509,7 +3417,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: FireSetter (Field)
-    Order: 67109016
+    Order: 67109091
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3520,7 +3428,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretMeshRenderer (Field)
-    Order: 67109017
+    Order: 67109092
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3531,7 +3439,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: HullMeshRenderer (Field)
-    Order: 67109018
+    Order: 67109093
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3542,7 +3450,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: RightTrackMeshRender (Field)
-    Order: 67109019
+    Order: 67109094
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3553,7 +3461,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: LeftTrackMeshRender (Field)
-    Order: 67109020
+    Order: 67109095
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3564,7 +3472,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: FactionFlag (Field)
-    Order: 67109021
+    Order: 67109096
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3575,29 +3483,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretCamera (Field)
-    Order: 67109022
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: CurrentMatchReference
-    TypeName: Examples.TankArena.Scripts.SOReferences.MatchReference.MatchReference,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: CurrentMatchReference (Field)
-    Order: 67109023
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: OnMatchFinished
-    TypeName: Examples.TankArena.Scripts.SOEvents.VoidEvents.VoidEvent, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: OnMatchFinished (Field)
-    Order: 67109024
+    Order: 67109097
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3608,7 +3494,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ShellPrefab (Field)
-    Order: 67109025
+    Order: 67109098
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3619,7 +3505,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonShotPrefab (Field)
-    Order: 67109026
+    Order: 67109099
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3630,7 +3516,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TankExplosionPrefab (Field)
-    Order: 67109027
+    Order: 67109100
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3641,7 +3527,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: BustedTankPrefab (Field)
-    Order: 67109028
+    Order: 67109101
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3652,7 +3538,7 @@ MonoBehaviour:
     TypeName: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CoverLayer (Field)
-    Order: 67109029
+    Order: 67109102
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3663,7 +3549,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67109030
+    Order: 67109103
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3674,7 +3560,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Destination (Field)
-    Order: 67109031
+    Order: 67109104
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3684,7 +3570,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67109032
+    Order: 67109105
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3694,7 +3580,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67109033
+    Order: 67109106
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3706,7 +3592,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: TankEntities (Field)
-    Order: 67109034
+    Order: 67109107
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3717,7 +3603,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Team (Property)
-    Order: 385875978
+    Order: 385876003
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3728,7 +3614,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: TankInSight (Property)
-    Order: 385875979
+    Order: 385876004
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -3739,7 +3625,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3749,7 +3635,7 @@ MonoBehaviour:
     Name: IsShellLoaded
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsShellLoaded (Property)
-    Order: 385875981
+    Order: 385876006
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3759,7 +3645,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Property)
-    Order: 385875982
+    Order: 385876007
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -3771,7 +3657,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: Aggressors (Property)
-    Order: 385875983
+    Order: 385876008
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -3781,11 +3667,11 @@ MonoBehaviour:
     Name: AgressorsCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: AgressorsCount (Property)
-    Order: 385875984
+    Order: 385876009
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
-  ChoiceIndex: 26
+  ChoiceIndex: 21
 --- !u!114 &6694926882622017009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3798,7 +3684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 267846d5d12546a8b59b37c1df7e51a4, type: 3}
   m_Name: Is Null
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 1896, y: -296}
   ports:
     keys:
@@ -3831,53 +3717,6 @@ MonoBehaviour:
       _dynamic: 0
   ValueIn: {fileID: 0}
   ValueOut: 0
---- !u!114 &6709006292567774245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3023ac1ab28e42e0b9991263c2feb6b0, type: 3}
-  m_Name: Converter
-  m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 2536, y: -408}
-  ports:
-    keys:
-    - ValueIn
-    - ValueOut
-    values:
-    - _fieldName: ValueIn
-      _node: {fileID: 6709006292567774245}
-      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Output
-        node: {fileID: 6404886698100673814}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: ValueOut
-      _node: {fileID: 6709006292567774245}
-      _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: Bonus
-        node: {fileID: 9088667624123106568}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-  ValueIn: 0
-  IsTrue: 1
-  IsFalse: 0
-  ValueOut: 0
 --- !u!114 &6903820323503161636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3890,7 +3729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b1a63fe03bad4d4daad69c1a664cf6c, type: 3}
   m_Name: Data Reader
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 1112, y: -184}
   ports:
     keys:
@@ -3907,9 +3746,6 @@ MonoBehaviour:
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: Data
-        node: {fileID: 6404886698100673814}
-        reroutePoints: []
-      - fieldName: Data
         node: {fileID: 5571499505272665449}
         reroutePoints: []
       - fieldName: Data
@@ -3917,6 +3753,9 @@ MonoBehaviour:
         reroutePoints: []
       - fieldName: Data
         node: {fileID: -3466444215346728052}
+        reroutePoints: []
+      - fieldName: Data
+        node: {fileID: 7406973223928053737}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4081,8 +3920,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
   m_Name: Data Selector
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1896, y: -168}
+  graph: {fileID: 0}
+  position: {x: 1592, y: -136}
   ports:
     keys:
     - Data
@@ -4093,8 +3932,8 @@ MonoBehaviour:
       _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: Output
-        node: {fileID: 5571499505272665449}
+      - fieldName: TankEntity (Field)
+        node: {fileID: 6903820323503161636}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -4102,11 +3941,11 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 7406973223928053737}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: ValuesIn
-        node: {fileID: 6047106079854313704}
+      - fieldName: Data
+        node: {fileID: 6418571565006161545}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -4118,11 +3957,11 @@ MonoBehaviour:
     MemberTypes: 16
     DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: Team
-    TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
+    Name: TankInSight
+    TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    PortName: Team (Property)
-    Order: 385875978
+    PortName: TankInSight (Property)
+    Order: 385876004
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4134,7 +3973,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOut (Field)
-    Order: 67109012
+    Order: 67109087
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4145,7 +3984,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Turret (Field)
-    Order: 67109013
+    Order: 67109088
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4156,7 +3995,7 @@ MonoBehaviour:
     TypeName: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: ShotFiring (Field)
-    Order: 67109014
+    Order: 67109089
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4167,7 +4006,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: SmokeSetter (Field)
-    Order: 67109015
+    Order: 67109090
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4178,7 +4017,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: FireSetter (Field)
-    Order: 67109016
+    Order: 67109091
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4189,7 +4028,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretMeshRenderer (Field)
-    Order: 67109017
+    Order: 67109092
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4200,7 +4039,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: HullMeshRenderer (Field)
-    Order: 67109018
+    Order: 67109093
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4211,7 +4050,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: RightTrackMeshRender (Field)
-    Order: 67109019
+    Order: 67109094
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4222,7 +4061,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: LeftTrackMeshRender (Field)
-    Order: 67109020
+    Order: 67109095
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4233,7 +4072,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: FactionFlag (Field)
-    Order: 67109021
+    Order: 67109096
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4244,29 +4083,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretCamera (Field)
-    Order: 67109022
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: CurrentMatchReference
-    TypeName: Examples.TankArena.Scripts.SOReferences.MatchReference.MatchReference,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: CurrentMatchReference (Field)
-    Order: 67109023
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: OnMatchFinished
-    TypeName: Examples.TankArena.Scripts.SOEvents.VoidEvents.VoidEvent, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: OnMatchFinished (Field)
-    Order: 67109024
+    Order: 67109097
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4277,7 +4094,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ShellPrefab (Field)
-    Order: 67109025
+    Order: 67109098
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4288,7 +4105,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonShotPrefab (Field)
-    Order: 67109026
+    Order: 67109099
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4299,7 +4116,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TankExplosionPrefab (Field)
-    Order: 67109027
+    Order: 67109100
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4310,7 +4127,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: BustedTankPrefab (Field)
-    Order: 67109028
+    Order: 67109101
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4321,7 +4138,7 @@ MonoBehaviour:
     TypeName: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CoverLayer (Field)
-    Order: 67109029
+    Order: 67109102
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4332,7 +4149,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67109030
+    Order: 67109103
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4343,7 +4160,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Destination (Field)
-    Order: 67109031
+    Order: 67109104
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4353,7 +4170,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67109032
+    Order: 67109105
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4363,7 +4180,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67109033
+    Order: 67109106
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4375,7 +4192,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: TankEntities (Field)
-    Order: 67109034
+    Order: 67109107
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4386,7 +4203,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Team (Property)
-    Order: 385875978
+    Order: 385876003
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4397,7 +4214,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: TankInSight (Property)
-    Order: 385875979
+    Order: 385876004
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4408,7 +4225,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4418,7 +4235,7 @@ MonoBehaviour:
     Name: IsShellLoaded
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsShellLoaded (Property)
-    Order: 385875981
+    Order: 385876006
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4428,7 +4245,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Property)
-    Order: 385875982
+    Order: 385876007
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4440,7 +4257,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: Aggressors (Property)
-    Order: 385875983
+    Order: 385876008
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4450,11 +4267,11 @@ MonoBehaviour:
     Name: AgressorsCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: AgressorsCount (Property)
-    Order: 385875984
+    Order: 385876009
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
-  ChoiceIndex: 23
+  ChoiceIndex: 22
 --- !u!114 &8389483754144246571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4467,8 +4284,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2827c1507e748c9b2a173d783df7bc8, type: 3}
   m_Name: Data Selector
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
-  position: {x: 1896, y: -40}
+  graph: {fileID: 0}
+  position: {x: 1880, y: -40}
   ports:
     keys:
     - Data
@@ -4488,8 +4305,8 @@ MonoBehaviour:
       _dynamic: 0
     - _fieldName: Output
       _node: {fileID: 8389483754144246571}
-      _typeQualifiedName: UnityEngine.Object, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      _typeQualifiedName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: ValuesIn
         node: {fileID: 6047106079854313704}
@@ -4508,7 +4325,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Team (Property)
-    Order: 385875978
+    Order: 385876003
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4520,7 +4337,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonOut (Field)
-    Order: 67109012
+    Order: 67109087
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4531,7 +4348,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Turret (Field)
-    Order: 67109013
+    Order: 67109088
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4542,7 +4359,7 @@ MonoBehaviour:
     TypeName: UnityEngine.AudioSource, UnityEngine.AudioModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: ShotFiring (Field)
-    Order: 67109014
+    Order: 67109089
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4553,7 +4370,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: SmokeSetter (Field)
-    Order: 67109015
+    Order: 67109090
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4564,7 +4381,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Components.ParticleEmissionSetter, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     PortName: FireSetter (Field)
-    Order: 67109016
+    Order: 67109091
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4575,7 +4392,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretMeshRenderer (Field)
-    Order: 67109017
+    Order: 67109092
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4586,7 +4403,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: HullMeshRenderer (Field)
-    Order: 67109018
+    Order: 67109093
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4597,7 +4414,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: RightTrackMeshRender (Field)
-    Order: 67109019
+    Order: 67109094
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4608,7 +4425,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: LeftTrackMeshRender (Field)
-    Order: 67109020
+    Order: 67109095
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4619,7 +4436,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Renderer, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: FactionFlag (Field)
-    Order: 67109021
+    Order: 67109096
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4630,29 +4447,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TurretCamera (Field)
-    Order: 67109022
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: CurrentMatchReference
-    TypeName: Examples.TankArena.Scripts.SOReferences.MatchReference.MatchReference,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: CurrentMatchReference (Field)
-    Order: 67109023
-    IsIteratable: 0
-    IsPrimitive: 0
-    Parameters: []
-  - MemberTypes: 4
-    DeclaringTypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    Name: OnMatchFinished
-    TypeName: Examples.TankArena.Scripts.SOEvents.VoidEvents.VoidEvent, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    PortName: OnMatchFinished (Field)
-    Order: 67109024
+    Order: 67109097
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4663,7 +4458,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: ShellPrefab (Field)
-    Order: 67109025
+    Order: 67109098
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4674,7 +4469,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CanonShotPrefab (Field)
-    Order: 67109026
+    Order: 67109099
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4685,7 +4480,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: TankExplosionPrefab (Field)
-    Order: 67109027
+    Order: 67109100
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4696,7 +4491,7 @@ MonoBehaviour:
     TypeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: BustedTankPrefab (Field)
-    Order: 67109028
+    Order: 67109101
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4707,7 +4502,7 @@ MonoBehaviour:
     TypeName: UnityEngine.LayerMask, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: CoverLayer (Field)
-    Order: 67109029
+    Order: 67109102
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4718,7 +4513,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Target (Field)
-    Order: 67109030
+    Order: 67109103
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4729,7 +4524,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Destination (Field)
-    Order: 67109031
+    Order: 67109104
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4739,7 +4534,7 @@ MonoBehaviour:
     Name: MaxHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: MaxHp (Field)
-    Order: 67109032
+    Order: 67109105
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4749,7 +4544,7 @@ MonoBehaviour:
     Name: CurrentHp
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: CurrentHp (Field)
-    Order: 67109033
+    Order: 67109106
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4761,7 +4556,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: TankEntities (Field)
-    Order: 67109034
+    Order: 67109107
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4772,7 +4567,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Framework.Team, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: Team (Property)
-    Order: 385875978
+    Order: 385876003
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4783,7 +4578,7 @@ MonoBehaviour:
     TypeName: Examples.TankArena.Scripts.Entities.TankEntity, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     PortName: TankInSight (Property)
-    Order: 385875979
+    Order: 385876004
     IsIteratable: 0
     IsPrimitive: 0
     Parameters: []
@@ -4794,7 +4589,7 @@ MonoBehaviour:
     TypeName: UnityEngine.Transform, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
     PortName: Transform (Property)
-    Order: 385875980
+    Order: 385876005
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4804,7 +4599,7 @@ MonoBehaviour:
     Name: IsShellLoaded
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsShellLoaded (Property)
-    Order: 385875981
+    Order: 385876006
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4814,7 +4609,7 @@ MonoBehaviour:
     Name: IsDead
     TypeName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: IsDead (Property)
-    Order: 385875982
+    Order: 385876007
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
@@ -4826,7 +4621,7 @@ MonoBehaviour:
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
       Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: Aggressors (Property)
-    Order: 385875983
+    Order: 385876008
     IsIteratable: 1
     IsPrimitive: 0
     Parameters: []
@@ -4836,11 +4631,11 @@ MonoBehaviour:
     Name: AgressorsCount
     TypeName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
     PortName: AgressorsCount (Property)
-    Order: 385875984
+    Order: 385876009
     IsIteratable: 0
     IsPrimitive: 1
     Parameters: []
-  ChoiceIndex: 23
+  ChoiceIndex: 21
 --- !u!114 &9088667624123106568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4853,7 +4648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6ea1fc9eb84a56b1c889ef5cbd2acf, type: 3}
   m_Name: Option
   m_EditorClassIdentifier: 
-  graph: {fileID: 11400000}
+  graph: {fileID: 0}
   position: {x: 3032, y: -392}
   ports:
     keys:
@@ -4865,7 +4660,7 @@ MonoBehaviour:
     values:
     - _fieldName: DataIteratorNode
       _node: {fileID: 9088667624123106568}
-      _typeQualifiedName: Plugins.Reflexity.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.ReflexityAI.DataNodes.DataIteratorNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections: []
       _direction: 0
@@ -4900,17 +4695,14 @@ MonoBehaviour:
       _node: {fileID: 9088667624123106568}
       _typeQualifiedName: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: ValueOut
-        node: {fileID: 6709006292567774245}
-        reroutePoints: []
+      connections: []
       _direction: 0
       _connectionType: 0
       _typeConstraint: 0
       _dynamic: 0
     - _fieldName: Actions
       _node: {fileID: 9088667624123106568}
-      _typeQualifiedName: Plugins.Reflexity.Framework.ActionNode, Assembly-CSharp-firstpass,
+      _typeQualifiedName: Plugins.ReflexityAI.Framework.ActionNode, Assembly-CSharp-firstpass,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: LinkedOption

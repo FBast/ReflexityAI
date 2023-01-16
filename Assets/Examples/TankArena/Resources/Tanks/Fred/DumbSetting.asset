@@ -18,5 +18,5 @@ MonoBehaviour:
   HullColor: {r: 1, g: 1, b: 0, a: 0}
   TracksColor: {r: 1, g: 1, b: 0, a: 0}
   Brains:
-  - {fileID: 11400000, guid: 4ddfa73f3a79ba14db02b2ba15f2ee48, type: 2}
+  - {fileID: 11400000, guid: b77845444bee7d5408cac9957e559358, type: 2}
   - {fileID: 11400000, guid: c857f9825784d43448b203858efaee5e, type: 2}
