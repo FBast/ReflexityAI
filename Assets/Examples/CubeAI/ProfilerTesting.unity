@@ -169,8 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CubePrefab: {fileID: 1656194801054802153, guid: 4faa13a356f88b14683061027ce23697,
     type: 3}
-  XNumber: 30
-  ZNumber: 30
+  XNumber: 10
+  ZNumber: 10
   Gap: 3
 --- !u!1 &546241671
 GameObject:
