@@ -20,7 +20,7 @@ namespace Plugins.ReflexityAI.Framework {
         public void Stop() {
             _hasStarted = false;
         }
-
+        
         private IEnumerator Looping() {
             while (_hasStarted) {
                 yield return new WaitWhile(() => IsPaused);

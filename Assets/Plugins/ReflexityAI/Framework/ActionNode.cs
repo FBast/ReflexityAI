@@ -2,7 +2,7 @@
 using XNode;
 
 namespace Plugins.ReflexityAI.Framework {
-    [NodeTint(212, 53, 53)]
+    [NodeTint(80, 0, 0)]
     public abstract class ActionNode : Node {
         
         [Input(ShowBackingValue.Never, ConnectionType.Override)] public Object Data;
